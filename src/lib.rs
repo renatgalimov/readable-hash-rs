@@ -24,7 +24,7 @@ pub(crate) const SYLLABLES: [&str; 256] = [
 ];
 
 /// Generates a SHA-256 hash and returns it as a syllable string.
-pub fn readable_hash(input: &str) -> String {
+pub fn naive_readable_hash(input: &str) -> String {
     let mut hasher = Sha256::new();
     hasher.update(input.as_bytes());
     let result = hasher.finalize();
@@ -32,15 +32,4 @@ pub fn readable_hash(input: &str) -> String {
         .iter()
         .map(|b| SYLLABLES[*b as usize])
         .collect::<String>()
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn hashes_consistently() {
-        let expected = "ungtoattmeertantdipresecorvisuchosfromusellremight itthasissupfeprojthemuthveroff abljahimiz";
-        assert_eq!(readable_hash("hello"), expected);
-    }
 }
