@@ -18,7 +18,7 @@ pub(crate) const SYLLABLES: [&str; 256] = [
     "le", "ab", "om", "sa", "ul", "ant ", "co", "if", "uld ", "ist ", "hav", "ons ", "la", "we",
     "from ", "me", "had ", "but ", "her ", "which ", "so", "ag", "int", "se", "est", "ol", "os",
     "qu", "un", "this ", "ev", "ect ", "ers", "iv", "em", "not ", "am", "by", "ess", "und", "ad",
-    "il", "his", "ir", "all", "for", "was ", "id", "de", "with ", "et", "that ", "be", "ut", "ic",
+    "il", "his", "ir", "all ", "for", "was ", "id", "de", "with ", "et", "that ", "be", "ut", "ic",
     "us", "el", "ur", "he", "ent ", "as", "or", "al", "ar", "is", "an", "u", "ing ", "at", "it",
     "es", "to", "and ", "en", "on", "of", "ed ", "o", "in", "er", "i", "a", "y", "the ", "e",
 ];
