@@ -1,3 +1,5 @@
+//! Generate human-readable strings from SHA-256 hashes.
+
 use sha2::{Digest, Sha256};
 
 /// Syllables used for obfuscating lowercase words.

@@ -2,6 +2,13 @@
 name = "readable-hash"
 version = "0.1.0"
 edition = "2024"
+description = "Generate human-readable strings from SHA-256 hashes using syllable mapping"
+readme = "README.md"
+repository = "https://github.com/renatgalimov/readable-hash-rs"
+documentation = "https://docs.rs/readable-hash"
+license = "MIT"
+keywords = ["hash", "sha256", "readable"]
+categories = ["cryptography", "encoding"]
 
 [dependencies]
 sha2 = "0.10"
