@@ -25,7 +25,19 @@ pub(crate) const SYLLABLES: [&str; 256] = [
     "es", "to", "and ", "en", "on", "of", "ed ", "o", "in", "er", "i", "a", "y", "the ", "e",
 ];
 
-/// Generates a SHA-256 hash and returns it as a syllable string.
+/// Generates a SHA-256 hash and returns it as a sentence in a made-up language.
+///
+/// # Examples
+///
+/// ```rust
+/// use readable_hash::naive_readable_hash;
+///
+/// let sentence = naive_readable_hash("hello");
+/// assert_eq!(
+///     sentence,
+///     "ungtoattmeertant dipresecorvisuch osfrom usellremight itthasiss upfeprojthem uthver off abljahim iz",
+/// );
+/// ```
 pub fn naive_readable_hash(input: &str) -> String {
     let mut hasher = Sha256::new();
     hasher.update(input.as_bytes());
