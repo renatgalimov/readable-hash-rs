@@ -1,0 +1,42 @@
+name: Lint
+
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - main
+  # Replace pull_request with pull_request_target if you
+  # plan to use this action with forks, see the Limitations section
+  pull_request:
+    branches:
+      - main
+
+# Down scope as necessary via https://docs.github.com/en/actions/security-guides/automatic-token-authentication#modifying-the-permissions-for-the-github_token
+permissions:
+  checks: write
+  contents: write
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v4
+
+      - name: Run Lint Action (Clippy + rustfmt with auto-fix)
+        uses: wearerequired/lint-action@df31ae8635c46366688e0bea44d7aba2e1468813
+        with:
+          # Turn on global auto-fix + commit
+          auto_fix: true
+          commit_message: "chore(lint): auto-fix with ${linter}"
+
+          # ---- rustfmt ----
+          rustfmt: true
+
+          # ---- clippy ----
+          clippy: true
+          # Make CI fail on any clippy warning (but still attempt auto-fix first)
+          clippy_args: "--all-targets --all-features -- -D warnings"
