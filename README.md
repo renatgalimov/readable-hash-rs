@@ -38,8 +38,10 @@ python models/train_tokenizer.py models/sample_corpus.txt
 ```
 
 This writes the tokenizer files into `models/tokenizer/`. You can verify that
-the tokenizer works by encoding text with the helper script:
+the tokenizer works by encoding text with the helper script. The training
+script normalizes input using Unicode NFKC and lowercases it prior to
+tokenization, so differently cased forms produce the same tokens:
 
 ```bash
-python models/tokenizer_check.py models/tokenizer/tokenizer.json "hello world"
+python models/tokenizer_check.py models/tokenizer/tokenizer.json "Hello WORLD"
 ```

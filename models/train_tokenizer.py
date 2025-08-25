@@ -16,6 +16,7 @@ from pathlib import Path
 from typing import Iterable
 
 from tokenizers import ByteLevelBPETokenizer
+from tokenizers.normalizers import Lowercase, NFKC, Sequence
 
 DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parent / "tokenizer"
 
@@ -36,8 +37,13 @@ def train_tokenizer(
     min_frequency: int = 2,
     special_tokens: Iterable[str] | None = None,
 ) -> None:
-    """Train and save a Byte-Level BPE tokenizer."""
+    """Train and save a Byte-Level BPE tokenizer.
+
+    The input text is normalized using Unicode NFKC and lowercased before
+    training to ensure consistent results.
+    """
     tokenizer = ByteLevelBPETokenizer()
+    tokenizer.normalizer = Sequence([NFKC(), Lowercase()])
     tokenizer.train(
         files=list(files),
         vocab_size=vocab_size,
