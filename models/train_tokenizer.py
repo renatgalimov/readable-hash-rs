@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
-"""Train a Byte-Level BPE tokenizer using HuggingFace tokenizers.
-
-This script expects one or more plain text files that will be used to
-train a tokenizer. The resulting vocabulary, merges and ``tokenizer.json``
-are written to an output directory (default: ``tokenizer``).
-
-Example usage:
-    python train_tokenizer.py data.txt --output-dir my_tokenizer
-"""
+"""Train a BPE tokenizer with explicit word boundary markers."""
 
 from __future__ import annotations
 
@@ -15,8 +7,11 @@ import argparse
 from pathlib import Path
 from typing import Iterable
 
-from tokenizers import ByteLevelBPETokenizer
+from tokenizers import Tokenizer
+from tokenizers.models import BPE
 from tokenizers.normalizers import Lowercase, NFKC, Sequence
+from tokenizers.pre_tokenizers import Whitespace
+from tokenizers.trainers import BpeTrainer
 
 DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parent / "tokenizer"
 
@@ -37,23 +32,34 @@ def train_tokenizer(
     min_frequency: int = 2,
     special_tokens: Iterable[str] | None = None,
 ) -> None:
-    """Train and save a Byte-Level BPE tokenizer.
+    """Train and save a Byte-Level BPE tokenizer with word boundaries.
 
     The input text is normalized using Unicode NFKC and lowercased before
-    training to ensure consistent results.
+    training to ensure consistent results. Tokens that continue a word are
+    prefixed with ``##`` while tokens that end a word receive a ``</w>``
+    suffix. A token without the prefix starts a word, and the presence of the
+    suffix marks that the word ends at that token.
     """
-    tokenizer = ByteLevelBPETokenizer()
+    model = BPE(
+        continuing_subword_prefix="##",
+        end_of_word_suffix="</w>",
+    )
+    tokenizer = Tokenizer(model)
     tokenizer.normalizer = Sequence([NFKC(), Lowercase()])
-    tokenizer.train(
-        files=list(files),
+    tokenizer.pre_tokenizer = Whitespace()
+
+    trainer = BpeTrainer(
         vocab_size=vocab_size,
         min_frequency=min_frequency,
         special_tokens=list(special_tokens or DEFAULT_SPECIAL_TOKENS),
+        continuing_subword_prefix="##",
+        end_of_word_suffix="</w>",
     )
+    tokenizer.train(list(files), trainer)
 
     out_dir = Path(output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    tokenizer.save_model(str(out_dir))
+    tokenizer.model.save(str(out_dir))
     tokenizer.save(str(out_dir / "tokenizer.json"))
 
 
@@ -75,3 +81,4 @@ if __name__ == "__main__":
         vocab_size=args.vocab_size,
         min_frequency=args.min_frequency,
     )
+
