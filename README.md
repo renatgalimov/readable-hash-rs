@@ -45,3 +45,16 @@ tokenization, so differently cased forms produce the same tokens:
 ```bash
 python models/tokenizer_check.py models/tokenizer/tokenizer.json "Hello WORLD"
 ```
+
+## Bigram model
+
+With a tokenizer trained, a simple bigram language model can be built from the
+corpus:
+
+```bash
+python models/train_bigram.py models/tokenizer/tokenizer.json models/sample_corpus.txt
+```
+
+The tokenizer must define start (`<s>`) and end (`</s>`) tokens, which the
+script uses to mark boundaries when computing bigram transitions. It writes
+``bigram.json`` containing transition probabilities between token ids.
