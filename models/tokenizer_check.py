@@ -12,8 +12,9 @@ def main() -> None:
     args = parser.parse_args()
 
     tokenizer = Tokenizer.from_file(args.tokenizer)
-    encoding = tokenizer.encode(args.text)
-    print(encoding.ids)
+    encoding = tokenizer.encode(args.text, add_special_tokens=False)
+    paired_tokens = list(zip(encoding.tokens, encoding.ids))
+    print(paired_tokens)
 
 
 if __name__ == "__main__":

@@ -7,7 +7,7 @@ tokens. The resulting model is written as JSON where each key is a token id
 mapping to a dictionary of successor token ids and their probabilities.
 
 Example usage:
-    python train_bigram.py tokenizer/tokenizer.json sample_corpus.txt
+    python train_bigram.py sample_corpus.txt
 """
 
 from __future__ import annotations
@@ -20,12 +20,15 @@ from typing import Iterable
 
 from tokenizers import Tokenizer
 
+DEFAULT_TOKENIZER_PATH = (
+    Path(__file__).resolve().parent / "tokenizer" / "tokenizer.json"
+)
 DEFAULT_OUTPUT_FILE = Path(__file__).resolve().parent / "bigram.json"
 
 
 def train_bigram(
     input_files: Iterable[str],
-    tokenizer_path: str | Path,
+    tokenizer_path: str | Path = DEFAULT_TOKENIZER_PATH,
     output_file: str | Path = DEFAULT_OUTPUT_FILE,
 ) -> None:
     """Train and save a bigram language model.
@@ -33,7 +36,9 @@ def train_bigram(
     The model estimates transition probabilities between token ids produced by
     the tokenizer. The tokenizer **must** define start (``<s>``) and end
     (``</s>``) tokens; each input line is wrapped with these tokens before
-    collecting bigram statistics.
+    collecting bigram statistics. Token sequences are validated so that
+    continuation tokens (prefixed with ``##``) only follow tokens that do not
+    end a word (those lacking the ``</w>`` suffix).
     """
 
     tokenizer = Tokenizer.from_file(str(tokenizer_path))
@@ -48,9 +53,22 @@ def train_bigram(
     for file_path in input_files:
         with open(file_path, "r", encoding="utf-8") as file_handle:
             for line in file_handle:
-                token_ids = tokenizer.encode(line).ids
+                encoding = tokenizer.encode(line, add_special_tokens=False)
+                token_ids = encoding.ids
+                token_strs = encoding.tokens
                 if not token_ids:
                     continue
+
+                prev = "<s>"
+                for tok in token_strs:
+                    if tok.startswith("##"):
+                        if prev == "<s>" or prev.endswith("</w>"):
+                            raise ValueError(f"Token {tok!r} cannot start a word")
+                    else:
+                        if prev != "<s>" and not prev.endswith("</w>"):
+                            raise ValueError(f"Token {tok!r} must be a continuation")
+                    prev = tok
+
                 tokens = [start_id] + token_ids + [end_id]
                 for current_id, next_id in zip(tokens, tokens[1:]):
                     counts[current_id][next_id] += 1
@@ -72,8 +90,14 @@ def train_bigram(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("tokenizer", help="Path to tokenizer.json")
-    parser.add_argument("files", nargs="+", help="Training text files")
+    parser.add_argument(
+        "files", nargs="+", help="Training text files"
+    )
+    parser.add_argument(
+        "--tokenizer",
+        default=DEFAULT_TOKENIZER_PATH,
+        help="Path to tokenizer.json",
+    )
     parser.add_argument(
         "--output",
         default=DEFAULT_OUTPUT_FILE,

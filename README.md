@@ -27,7 +27,7 @@ fn main() {
 ## Tokenizer
 
 The `models/` directory bundles a small sample corpus and Python utilities for
-training a Byte-Level BPE tokenizer using the
+training a BPE tokenizer with explicit word boundary markers using the
 [`tokenizers`](https://github.com/huggingface/tokenizers) library.
 
 Install dependencies and train the tokenizer:
@@ -40,7 +40,9 @@ python models/train_tokenizer.py models/sample_corpus.txt
 This writes the tokenizer files into `models/tokenizer/`. You can verify that
 the tokenizer works by encoding text with the helper script. The training
 script normalizes input using Unicode NFKC and lowercases it prior to
-tokenization, so differently cased forms produce the same tokens:
+tokenization, so differently cased forms produce the same tokens. Tokens that
+continue a word are prefixed with `##`, while tokens finishing a word carry a
+`</w>` suffix.
 
 ```bash
 python models/tokenizer_check.py models/tokenizer/tokenizer.json "Hello WORLD"
@@ -52,9 +54,11 @@ With a tokenizer trained, a simple bigram language model can be built from the
 corpus:
 
 ```bash
-python models/train_bigram.py models/tokenizer/tokenizer.json models/sample_corpus.txt
+python models/train_bigram.py models/sample_corpus.txt
 ```
 
 The tokenizer must define start (`<s>`) and end (`</s>`) tokens, which the
-script uses to mark boundaries when computing bigram transitions. It writes
-``bigram.json`` containing transition probabilities between token ids.
+script uses to mark sentence boundaries. It also verifies that tokens respect
+word-boundary markers (`##` prefixes and `</w>` suffixes) before accumulating
+statistics. The result is written to ``bigram.json`` and stores transition
+probabilities between token ids.
