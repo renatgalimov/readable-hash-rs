@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Train a bigram language model using a pre-trained tokenizer.
+"""Train an n-gram language model using a pre-trained tokenizer.
 
 This script reads one or more text files, tokenizes the contents with a
-provided tokenizer, and computes bigram transition probabilities between
-tokens. The resulting model is written as JSON where each key is a token id
-mapping to a dictionary of successor token ids and their probabilities.
+provided tokenizer, and computes n-gram transition probabilities between
+tokens. The resulting model is written as JSON where each key is a
+space-delimited sequence of ``n-1`` token ids mapping to a dictionary of
+successor token ids and their probabilities.
 
 Example usage:
-    python train_bigram.py sample_corpus.txt
+    python train_ngram.py sample_corpus.txt -n 3
 """
 
 from __future__ import annotations
@@ -16,30 +17,34 @@ import argparse
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
-from typing import Iterable
+from typing import Iterable, Tuple
 
 from tokenizers import Tokenizer
 
 DEFAULT_TOKENIZER_PATH = (
     Path(__file__).resolve().parent / "tokenizer" / "tokenizer.json"
 )
-DEFAULT_OUTPUT_FILE = Path(__file__).resolve().parent / "bigram.json"
+DEFAULT_OUTPUT_FILE = Path(__file__).resolve().parent / "ngram.json"
 
 
-def train_bigram(
+def train_ngram(
     input_files: Iterable[str],
+    n: int,
     tokenizer_path: str | Path = DEFAULT_TOKENIZER_PATH,
     output_file: str | Path = DEFAULT_OUTPUT_FILE,
 ) -> None:
-    """Train and save a bigram language model.
+    """Train and save an n-gram language model.
 
     The model estimates transition probabilities between token ids produced by
     the tokenizer. The tokenizer **must** define start (``<s>``) and end
-    (``</s>``) tokens; each input line is wrapped with these tokens before
-    collecting bigram statistics. Token sequences are validated so that
-    continuation tokens (prefixed with ``##``) only follow tokens that do not
-    end a word (those lacking the ``</w>`` suffix).
+    (``</s>``) tokens; each input line is wrapped with ``n-1`` start tokens and
+    a single end token before collecting statistics. Token sequences are
+    validated so that continuation tokens (prefixed with ``##``) only follow
+    tokens that do not end a word (those lacking the ``</w>`` suffix).
     """
+
+    if n < 1:
+        raise ValueError("n must be at least 1")
 
     tokenizer = Tokenizer.from_file(str(tokenizer_path))
     start_id = tokenizer.token_to_id("<s>")
@@ -47,8 +52,8 @@ def train_bigram(
     if start_id is None or end_id is None:
         raise ValueError("Tokenizer must include <s> and </s> tokens")
 
-    counts: dict[int, Counter[int]] = defaultdict(Counter)
-    totals: Counter[int] = Counter()
+    counts: dict[Tuple[int, ...], Counter[int]] = defaultdict(Counter)
+    totals: Counter[Tuple[int, ...]] = Counter()
 
     for file_path in input_files:
         with open(file_path, "r", encoding="utf-8") as file_handle:
@@ -69,17 +74,19 @@ def train_bigram(
                             raise ValueError(f"Token {tok!r} must be a continuation")
                     prev = tok
 
-                tokens = [start_id] + token_ids + [end_id]
-                for current_id, next_id in zip(tokens, tokens[1:]):
-                    counts[current_id][next_id] += 1
-                    totals[current_id] += 1
+                tokens = [start_id] * (n - 1) + token_ids + [end_id]
+                for i in range(len(tokens) - n + 1):
+                    context = tuple(tokens[i : i + n - 1])
+                    next_id = tokens[i + n - 1]
+                    counts[context][next_id] += 1
+                    totals[context] += 1
 
     model = {
-        str(current_id): {
-            str(next_id): count / totals[current_id]
+        " ".join(map(str, context)): {
+            str(next_id): count / totals[context]
             for next_id, count in successor_counts.items()
         }
-        for current_id, successor_counts in counts.items()
+        for context, successor_counts in counts.items()
     }
 
     out_path = Path(output_file)
@@ -94,6 +101,12 @@ if __name__ == "__main__":
         "files", nargs="+", help="Training text files"
     )
     parser.add_argument(
+        "-n",
+        type=int,
+        default=2,
+        help="Order of the n-gram model",
+    )
+    parser.add_argument(
         "--tokenizer",
         default=DEFAULT_TOKENIZER_PATH,
         help="Path to tokenizer.json",
@@ -101,8 +114,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output",
         default=DEFAULT_OUTPUT_FILE,
-        help="Where to write the bigram model JSON",
+        help="Where to write the n-gram model JSON",
     )
     args = parser.parse_args()
 
-    train_bigram(args.files, args.tokenizer, args.output)
+    train_ngram(args.files, args.n, args.tokenizer, args.output)
