@@ -48,17 +48,19 @@ continue a word are prefixed with `##`, while tokens finishing a word carry a
 python models/tokenizer_check.py models/tokenizer/tokenizer.json "Hello WORLD"
 ```
 
-## Bigram model
+## N-gram model
 
-With a tokenizer trained, a simple bigram language model can be built from the
+With a tokenizer trained, an n-gram language model can be built from the
 corpus:
 
 ```bash
-python models/train_bigram.py models/sample_corpus.txt
+python models/train_ngram.py models/sample_corpus.txt
 ```
+
+Pass `-n` to control the order (default 2 for bigrams).
 
 The tokenizer must define start (`<s>`) and end (`</s>`) tokens, which the
 script uses to mark sentence boundaries. It also verifies that tokens respect
 word-boundary markers (`##` prefixes and `</w>` suffixes) before accumulating
-statistics. The result is written to ``bigram.json`` and stores transition
+statistics. The result is written to ``ngram.json`` and stores transition
 probabilities between token ids.
