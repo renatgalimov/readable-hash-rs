@@ -74666,17 +74666,20 @@ impl<'a> BitReader<'a> {
     }
 }
 
-/// Calculate target token count based on input byte length.
-fn calculate_target_tokens(input_bytes: usize) -> usize {
-    // Approximately 7 bits per token, minimum 2, maximum 16
+/// Calculate target token count based on input byte length and max tokens.
+fn calculate_target_tokens<const MAX_TOKENS: usize>(input_bytes: usize) -> usize {
+    // Approximately 7 bits per token, minimum 2, maximum MAX_TOKENS
     let estimated = (input_bytes * 8) / 7 + 1;
-    estimated.clamp(2, 16)
+    estimated.clamp(2, MAX_TOKENS)
 }
 
 /// Generate an English-like word from entropy bytes.
-pub fn generate_word(entropy: &[u8]) -> String {
+///
+/// The `MAX_TOKENS` const generic parameter controls the maximum number of
+/// tokens in the generated word, if there is enough entropy.
+pub fn generate_word<const MAX_TOKENS: usize>(entropy: &[u8]) -> String {
     let mut reader = BitReader::new(entropy);
-    let target_tokens = calculate_target_tokens(entropy.len());
+    let target_tokens = calculate_target_tokens::<MAX_TOKENS>(entropy.len());
     let mut tokens: Vec<u16> = Vec::with_capacity(target_tokens);
     let mut result = String::new();
 

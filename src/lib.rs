@@ -66,22 +66,21 @@ pub fn naive_readable_hash(input: &str) -> String {
 /// let words = english_word_hash("hello");
 /// // Returns multiple English-like words derived from the hash
 /// ```
+/// Maximum number of tokens in an english word hash.
+pub const MAX_TOKENS: usize = 16;
+
+/// Bytes of entropy needed for generating a 16-token word.
+const ENTROPY_BYTES: usize = 32;
+
 pub fn english_word_hash(input: &str) -> String {
     let mut hasher = Shake256::default();
     XofUpdate::update(&mut hasher, input.as_bytes());
     let mut reader = hasher.finalize_xof();
 
-    // Generate multiple words using SHAKE256's extendable output
-    // Each word consumes 6 bytes of entropy
-    let num_words = 6;
-    let mut words = Vec::with_capacity(num_words);
+    // Generate enough entropy for a 16-token word
+    let mut entropy = [0u8; ENTROPY_BYTES];
+    reader.read(&mut entropy);
 
-    for _ in 0..num_words {
-        let mut entropy = [0u8; 6];
-        reader.read(&mut entropy);
-        let word = english_word::generate_word(&entropy);
-        words.push(word);
-    }
-
-    words.join(" ")
+    // Generate a single word with up to MAX_TOKENS tokens
+    english_word::generate_word::<MAX_TOKENS>(&entropy)
 }

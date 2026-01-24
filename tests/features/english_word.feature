@@ -6,8 +6,22 @@ Feature: Generate English-like words from hash
     Then the result should be "<output>"
 
     Examples:
-      | input | output                                                       |
-      | hello | magnaux crossues rejuring quizaches sublizes olemented       |
-      | world | dabberies gateja pennomic mirobbed chilefied hoghtened       |
-      | test  | yttington glomerate engioned slapture prieverence appleinus  |
-      |       | roubbility amerimented buntimented silentine youndron fewyse |
+      | input | output                                       |
+      | hello | magnaunguineymwaiticolimercipid              |
+      | world | dabberimentatigollertujaniardalgerian        |
+      | test  | yttinghillamsbiassiveringaywitchi            |
+      |       | roubbirthyreniefoominatomitantinizing        |
+
+  Scenario Outline: all hashes are single words
+    Given the input "<input>"
+    When the english word hash is generated
+    Then the result should be a single word
+
+    Examples:
+      | input       |
+      | hello       |
+      | world       |
+      | test        |
+      |             |
+      | foo         |
+      | longer text |

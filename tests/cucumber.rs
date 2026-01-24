@@ -25,7 +25,29 @@ fn generate_english_word_hash(world: &mut HashWorld) {
 
 #[then(expr = "the result should be {string}")]
 fn check_result(world: &mut HashWorld, expected: String) {
-    assert_eq!(world.output, expected);
+    // Trim trailing spaces for comparison since cucumber tables trim them
+    assert_eq!(world.output.trim_end(), expected.trim_end());
+}
+
+#[then(expr = "the result should have length {int}")]
+fn check_length(world: &mut HashWorld, expected_length: usize) {
+    assert_eq!(
+        world.output.len(),
+        expected_length,
+        "Expected length {}, got {} for output: '{}'",
+        expected_length,
+        world.output.len(),
+        world.output
+    );
+}
+
+#[then("the result should be a single word")]
+fn check_single_word(world: &mut HashWorld) {
+    assert!(
+        !world.output.contains(' '),
+        "Expected single word (no spaces), got: '{}'",
+        world.output
+    );
 }
 
 fn main() {
