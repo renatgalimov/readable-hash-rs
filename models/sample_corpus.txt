@@ -1,3 +1,0 @@
-Hello world.
-This is a small sample dataset for training a tokenizer.
-It contains a few lines of text to demonstrate usage.
