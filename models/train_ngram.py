@@ -2,10 +2,10 @@
 """Train an n-gram language model using a pre-trained tokenizer.
 
 This script reads one or more text files, tokenizes the contents with a
-provided tokenizer, and computes n-gram transition probabilities between
-tokens. The resulting model is written as JSON where each key is a
-space-delimited sequence of ``n-1`` token ids mapping to a dictionary of
-successor token ids and their probabilities.
+provided tokenizer, and computes n-gram successor frequencies between
+tokens. The resulting model is written as a JSON list where each element
+contains a predecessor token sequence of length ``n-1`` and a list of
+successor tokens ordered by frequency.
 
 Example usage:
     python train_ngram.py sample_corpus.txt -n 3
@@ -35,33 +35,29 @@ def train_ngram(
 ) -> None:
     """Train and save an n-gram language model.
 
-    The model estimates transition probabilities between token ids produced by
-    the tokenizer. The tokenizer **must** define start (``<s>``) and end
-    (``</s>``) tokens; each input line is wrapped with ``n-1`` start tokens and
-    a single end token before collecting statistics. Token sequences are
-    validated so that continuation tokens (prefixed with ``##``) only follow
-    tokens that do not end a word (those lacking the ``</w>`` suffix).
+    The model records successor token frequencies rather than probabilities.
+    The tokenizer **must** define start (``<s>``) and end (``</s>``) tokens;
+    each input line is wrapped with ``n-1`` start tokens and a single end
+    token before collecting statistics. Token sequences are validated so that
+    continuation tokens (prefixed with ``##``) only follow tokens that do not
+    end a word (those lacking the ``</w>`` suffix).
     """
 
     if n < 1:
         raise ValueError("n must be at least 1")
 
     tokenizer = Tokenizer.from_file(str(tokenizer_path))
-    start_id = tokenizer.token_to_id("<s>")
-    end_id = tokenizer.token_to_id("</s>")
-    if start_id is None or end_id is None:
+    if tokenizer.token_to_id("<s>") is None or tokenizer.token_to_id("</s>") is None:
         raise ValueError("Tokenizer must include <s> and </s> tokens")
 
-    counts: dict[Tuple[int, ...], Counter[int]] = defaultdict(Counter)
-    totals: Counter[Tuple[int, ...]] = Counter()
+    counts: dict[Tuple[str, ...], Counter[str]] = defaultdict(Counter)
 
     for file_path in input_files:
         with open(file_path, "r", encoding="utf-8") as file_handle:
             for line in file_handle:
                 encoding = tokenizer.encode(line, add_special_tokens=False)
-                token_ids = encoding.ids
                 token_strs = encoding.tokens
-                if not token_ids:
+                if not token_strs:
                     continue
 
                 prev = "<s>"
@@ -74,20 +70,16 @@ def train_ngram(
                             raise ValueError(f"Token {tok!r} must be a continuation")
                     prev = tok
 
-                tokens = [start_id] * (n - 1) + token_ids + [end_id]
+                tokens = ["<s>"] * (n - 1) + token_strs + ["</s>"]
                 for i in range(len(tokens) - n + 1):
                     context = tuple(tokens[i : i + n - 1])
-                    next_id = tokens[i + n - 1]
-                    counts[context][next_id] += 1
-                    totals[context] += 1
+                    next_token = tokens[i + n - 1]
+                    counts[context][next_token] += 1
 
-    model = {
-        " ".join(map(str, context)): {
-            str(next_id): count / totals[context]
-            for next_id, count in successor_counts.items()
-        }
-        for context, successor_counts in counts.items()
-    }
+    model: list[list[list[str], list[str]]] = []
+    for context, successor_counts in counts.items():
+        sorted_successors = [tok for tok, _ in successor_counts.most_common()]
+        model.append([list(context), sorted_successors])
 
     out_path = Path(output_file)
     out_path.parent.mkdir(parents=True, exist_ok=True)
