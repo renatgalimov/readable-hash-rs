@@ -2325,7 +2325,7 @@ pub const TRANSITION_INDEX: [(u32, u16); 1024] = [
 ];
 
 /// Transition data: (next_token_id, cumulative_probability as u16)
-pub const TRANSITION_DATA: [(u16, u16); 47632] = [
+pub static TRANSITION_DATA: [(u16, u16); 47632] = [
     (674, 37647),
     (965, 53450),
     (609, 55309),
@@ -50989,7 +50989,7 @@ pub const END_TRANSITION_INDEX: [(u32, u16); 1024] = [
 ];
 
 /// End transition data: (end_token_id, cumulative_probability as u16)
-pub const END_TRANSITION_DATA: [(u16, u16); 23626] = [
+pub static END_TRANSITION_DATA: [(u16, u16); 23626] = [
     (505, 65535),
     (469, 32767),
     (326, 65535),
@@ -74632,8 +74632,8 @@ fn find_token(transitions: &[(u16, u16)], value: u16) -> u16 {
 fn token_text(token_id: u16) -> &'static str {
     let token = TOKENS[token_id as usize];
     let token = token.strip_prefix('^').unwrap_or(token);
-    let token = token.strip_suffix('$').unwrap_or(token);
-    token
+    
+    (token.strip_suffix('$').unwrap_or(token)) as _
 }
 
 /// Bit reader for consuming entropy from bytes.
