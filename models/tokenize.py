@@ -25,6 +25,10 @@ NUM_END_TOKENS = 256
 NUM_MIDDLE_TOKENS = 512
 TOTAL_VOCAB_SIZE = NUM_BEGINNING_TOKENS + NUM_END_TOKENS + NUM_MIDDLE_TOKENS
 
+MAX_TOKENS_PER_WORD = 16
+MIN_TOKENS_PER_WORD = 2
+BITS_PER_TOKEN_ESTIMATE = 7
+
 
 def extract_words(text: str) -> list[str]:
     """Extract lowercase words from text."""
@@ -120,6 +124,7 @@ def tokenize_word(word: str, vocab: dict[str, int]) -> list[str]:
                     best_token = candidate
                     best_length = length
                     break
+                continue
 
             if position + length == len(word):
                 candidate = f"{substring}{EOS}"
@@ -134,12 +139,25 @@ def tokenize_word(word: str, vocab: dict[str, int]) -> list[str]:
                 break
 
         if best_token is None:
+            char = word[position]
             if is_beginning:
-                best_token = f"{BOS}{word[position]}"
+                candidate = f"{BOS}{char}"
+                if candidate in vocab:
+                    best_token = candidate
+                elif char in vocab:
+                    best_token = char
+                else:
+                    best_token = candidate
             elif is_end:
-                best_token = f"{word[position]}{EOS}"
+                candidate = f"{char}{EOS}"
+                if candidate in vocab:
+                    best_token = candidate
+                elif char in vocab:
+                    best_token = char
+                else:
+                    best_token = candidate
             else:
-                best_token = word[position]
+                best_token = char
             best_length = 1
 
         tokens.append(best_token)
@@ -148,22 +166,30 @@ def tokenize_word(word: str, vocab: dict[str, int]) -> list[str]:
     return tokens
 
 
-def get_beginning_bigram(tokens: list[str]) -> tuple[str, str] | None:
-    """Get the beginning bigram (first two tokens) only if second is not an end token."""
-    if len(tokens) < 2:
-        return None
-    if tokens[1].endswith(EOS):
-        return None
-    return (tokens[0], tokens[1])
+def build_cumulative_list(counts: Counter[int]) -> list[list[int | float]]:
+    """Convert counts to cumulative probability list sorted by frequency."""
+    total = sum(counts.values())
+    if total == 0:
+        return []
+    items = sorted(counts.items(), key=lambda x: -x[1])
+    cumulative = 0.0
+    result: list[list[int | float]] = []
+    for token_id, count in items:
+        cumulative += count / total
+        result.append([token_id, round(cumulative, 6)])
+    return result
 
 
-def get_beginning_end_bigram(tokens: list[str]) -> tuple[str, str] | None:
-    """Get beginning-end bigram only if word has exactly 2 tokens and second is an end token."""
-    if len(tokens) != 2:
-        return None
-    if not tokens[1].endswith(EOS):
-        return None
-    return (tokens[0], tokens[1])
+def build_cumulative_transitions(
+    counts: dict[int, Counter[int]],
+) -> dict[str, list[list[int | float]]]:
+    """Convert transition counts to cumulative probability dict."""
+    result: dict[str, list[list[int | float]]] = {}
+    for token_id, next_counts in counts.items():
+        cumulative_list = build_cumulative_list(next_counts)
+        if cumulative_list:
+            result[str(token_id)] = cumulative_list
+    return result
 
 
 def main():
@@ -219,173 +245,49 @@ def main():
     print("Building vocabulary...")
     vocab = build_vocabulary(beginning_counts, end_counts, middle_counts)
 
-    print("Building bigram models...")
-    beginning_next_counts: dict[str, Counter[str]] = defaultdict(Counter)
-    beginning_end_counts: dict[str, Counter[str]] = defaultdict(Counter)
-    four_gram_counts: Counter[tuple[str, str, str, str]] = Counter()
-    four_gram_a_counts: Counter[str] = Counter()
-    four_gram_ab_counts: Counter[tuple[str, str]] = Counter()
-    four_gram_abc_counts: Counter[tuple[str, str, str]] = Counter()
+    print("Building transition models...")
+    begin_counts: Counter[int] = Counter()
+    transition_counts: dict[int, Counter[int]] = defaultdict(Counter)
+    end_transition_counts: dict[int, Counter[int]] = defaultdict(Counter)
 
+    skipped_words = 0
     for word in all_words:
         tokens = tokenize_word(word, vocab)
+        if not tokens:
+            continue
 
-        beginning_next = get_beginning_bigram(tokens)
-        if beginning_next:
-            first, second = beginning_next
-            beginning_next_counts[first][second] += 1
+        try:
+            token_ids = [vocab[token] for token in tokens]
+        except KeyError:
+            skipped_words += 1
+            continue
 
-        beginning_end = get_beginning_end_bigram(tokens)
-        if beginning_end:
-            first, end = beginning_end
-            beginning_end_counts[first][end] += 1
+        begin_counts[token_ids[0]] += 1
 
-        middle_tokens = tokens[1:-1]
-        for index in range(len(middle_tokens) - 3):
-            four_gram = tuple(middle_tokens[index : index + 4])
-            a, b, c, d = four_gram
-            four_gram_counts[four_gram] += 1
-            four_gram_a_counts[a] += 1
-            four_gram_ab_counts[(a, b)] += 1
-            four_gram_abc_counts[(a, b, c)] += 1
+        for index in range(len(token_ids) - 1):
+            current_id = token_ids[index]
+            next_id = token_ids[index + 1]
+
+            if NUM_BEGINNING_TOKENS <= next_id < NUM_BEGINNING_TOKENS + NUM_END_TOKENS:
+                end_transition_counts[current_id][next_id] += 1
+            else:
+                transition_counts[current_id][next_id] += 1
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     base_name = input_files[0].stem if args.input else "stdin"
 
-    tokenizer_data = {
-        "bos": BOS,
-        "eos": EOS,
-        "num_beginning_tokens": NUM_BEGINNING_TOKENS,
-        "num_end_tokens": NUM_END_TOKENS,
-        "num_middle_tokens": NUM_MIDDLE_TOKENS,
-        "vocab": vocab,
-        "id_to_token": {str(token_id): token for token, token_id in vocab.items()},
-    }
-    tokenizer_path = args.output_dir / f"{base_name}-tokenizer.json"
-    tokenizer_path.write_text(json.dumps(tokenizer_data, indent=2), encoding="utf-8")
-
-    vocab_items = sorted(vocab.items(), key=lambda item: item[1])
-    token_order = [token for token, _ in vocab_items]
-    token_rank = {token: index for index, token in enumerate(token_order)}
-    beginning_tokens = [
-        token
-        for token, token_id in vocab_items
-        if token_id < NUM_BEGINNING_TOKENS
-    ]
-
-    total_beginning_next = sum(
-        sum(counter.values()) for counter in beginning_next_counts.values()
-    )
-    total_beginning_end = sum(
-        sum(counter.values()) for counter in beginning_end_counts.values()
-    )
-
-    beginning_next_model = []
-    for first in beginning_tokens:
-        seconds = beginning_next_counts.get(first, Counter())
-        first_total = sum(seconds.values())
-        if total_beginning_next > 0:
-            first_probability = first_total / total_beginning_next
-        else:
-            first_probability = 0.0
-        ordered_seconds = [
-            [
-                second,
-                count,
-                (count / first_total) if first_total > 0 else 0.0,
-            ]
-            for second, count in sorted(
-                seconds.items(),
-                key=lambda item: (
-                    -(item[1] / first_total) if first_total > 0 else 0.0,
-                    token_rank.get(item[0], 10**9),
-                ),
-            )
-        ]
-        beginning_next_model.append([first, first_probability, ordered_seconds])
-    beginning_next_model.sort(
-        key=lambda item: (-item[1], token_rank.get(item[0], 10**9))
-    )
-    beginning_end_model = []
-    for first in beginning_tokens:
-        ends = beginning_end_counts.get(first, Counter())
-        first_total = sum(ends.values())
-        if total_beginning_end > 0:
-            first_probability = first_total / total_beginning_end
-        else:
-            first_probability = 0.0
-        ordered_ends = [
-            [
-                end,
-                count,
-                (count / first_total) if first_total > 0 else 0.0,
-            ]
-            for end, count in sorted(
-                ends.items(),
-                key=lambda item: (
-                    -(item[1] / first_total) if first_total > 0 else 0.0,
-                    token_rank.get(item[0], 10**9),
-                ),
-            )
-        ]
-        beginning_end_model.append([first, first_probability, ordered_ends])
-    beginning_end_model.sort(
-        key=lambda item: (-item[1], token_rank.get(item[0], 10**9))
-    )
-
-    total_four_grams = sum(four_gram_counts.values())
-    four_gram_model: list[list[object]] = []
-    for a, a_count in four_gram_a_counts.items():
-        a_probability = (a_count / total_four_grams) if total_four_grams > 0 else 0.0
-        b_entries: list[list[object]] = []
-        for (ab_a, b), ab_count in four_gram_ab_counts.items():
-            if ab_a != a:
-                continue
-            b_probability = (ab_count / a_count) if a_count > 0 else 0.0
-            c_entries: list[list[object]] = []
-            for (abc_a, abc_b, c), abc_count in four_gram_abc_counts.items():
-                if abc_a != a or abc_b != b:
-                    continue
-                c_probability = (abc_count / ab_count) if ab_count > 0 else 0.0
-                d_entries: list[list[object]] = []
-                for (abcd_a, abcd_b, abcd_c, d), abcd_count in (
-                    four_gram_counts.items()
-                ):
-                    if abcd_a != a or abcd_b != b or abcd_c != c:
-                        continue
-                    d_probability = (abcd_count / abc_count) if abc_count > 0 else 0.0
-                    d_entries.append([d, abcd_count, d_probability])
-                d_entries.sort(
-                    key=lambda item: (-item[2], token_rank.get(item[0], 10**9))
-                )
-                if len(d_entries) >= 2:
-                    c_entries.append([c, abc_count, c_probability, d_entries])
-            c_entries.sort(
-                key=lambda item: (-item[2], token_rank.get(item[0], 10**9))
-            )
-            if len(c_entries) >= 2:
-                b_entries.append([b, ab_count, b_probability, c_entries])
-        b_entries.sort(
-            key=lambda item: (-item[2], token_rank.get(item[0], 10**9))
-        )
-        if len(b_entries) >= 2:
-            four_gram_model.append([a, a_count, a_probability, b_entries])
-    four_gram_model.sort(
-        key=lambda item: (-item[2], token_rank.get(item[0], 10**9))
-    )
+    id_to_token = {token_id: token for token, token_id in vocab.items()}
+    id_to_token_list = [id_to_token.get(i, f"[UNK:{i}]") for i in range(TOTAL_VOCAB_SIZE)]
 
     model_data = {
+        "version": "1.0",
         "total_words": len(all_words),
-        "beginning_next": beginning_next_model,
-        "beginning_end": beginning_end_model,
-        "four_gram": four_gram_model,
+        "vocab": vocab,
+        "id_to_token": id_to_token_list,
+        "begin_transitions": build_cumulative_list(begin_counts),
+        "transitions": build_cumulative_transitions(transition_counts),
+        "end_transitions": build_cumulative_transitions(end_transition_counts),
     }
-    if len(beginning_next_model) != NUM_BEGINNING_TOKENS:
-        print(
-            "Error: beginning_next must include exactly "
-            f"{NUM_BEGINNING_TOKENS} entries, got {len(beginning_next_model)}"
-        )
-        return 1
     model_path = args.output_dir / f"{base_name}-model.json"
     model_path.write_text(json.dumps(model_data, indent=2), encoding="utf-8")
 
@@ -398,7 +300,11 @@ def main():
     print(f"  End tokens (256-511): {actual_end}")
     print(f"  Middle tokens (512-1023): {actual_middle}")
     print(f"Total words processed: {len(all_words)}")
-    print(f"Saved tokenizer to {tokenizer_path}")
+    if skipped_words > 0:
+        print(f"Skipped words (unknown tokens): {skipped_words}")
+    print(f"Begin transitions: {len(model_data['begin_transitions'])} beginning tokens")
+    print(f"Middle transitions: {len(model_data['transitions'])} tokens have next-token data")
+    print(f"End transitions: {len(model_data['end_transitions'])} tokens have end-token data")
     print(f"Saved model to {model_path}")
 
 
