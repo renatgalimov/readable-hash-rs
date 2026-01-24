@@ -2,6 +2,8 @@
 
 use sha2::{Digest, Sha256};
 
+mod english_word;
+
 /// Syllables used for obfuscating lowercase words.
 pub(crate) const SYLLABLES: [&str; 256] = [
     "plac", "most ", "sam", "ke", "uth", "arl ", "het", "giv", "fa", "first ", "own ", "li", "van",
@@ -46,4 +48,43 @@ pub fn naive_readable_hash(input: &str) -> String {
         .iter()
         .map(|b| SYLLABLES[*b as usize])
         .collect::<String>()
+}
+
+/// Generates a SHA-256 hash and returns it as English-like words.
+///
+/// Uses an n-gram language model trained on English words to generate
+/// pronounceable output. Each word consumes some entropy from the hash.
+///
+/// # Examples
+///
+/// ```rust
+/// use readable_hash::english_word_hash;
+///
+/// let words = english_word_hash("hello");
+/// // Returns multiple English-like words derived from the hash
+/// ```
+pub fn english_word_hash(input: &str) -> String {
+    let mut hasher = Sha256::new();
+    hasher.update(input.as_bytes());
+    let hash_bytes = hasher.finalize();
+
+    // Generate multiple words from the 32-byte hash
+    // Each word consumes approximately 6-8 bytes
+    let mut words = Vec::new();
+    let mut offset = 0;
+    let bytes_per_word = 6;
+
+    while offset + bytes_per_word <= hash_bytes.len() {
+        let word = english_word::generate_word(&hash_bytes[offset..offset + bytes_per_word]);
+        words.push(word);
+        offset += bytes_per_word;
+    }
+
+    // Use remaining bytes for a shorter word if any
+    if offset < hash_bytes.len() {
+        let word = english_word::generate_word(&hash_bytes[offset..]);
+        words.push(word);
+    }
+
+    words.join(" ")
 }

@@ -67,9 +67,32 @@ Word length scales with input bytes:
 | 8           | 10                |
 | 16          | 16 (max)          |
 
+## Generate Rust Code
+
+Convert the model to Rust code for use in the library:
+
+```bash
+python3 generate_rust.py training-data/english-lowercase-model.json
+```
+
+This generates `../src/english_word.rs` containing:
+- Static token vocabulary
+- Transition tables with cumulative probabilities
+- `generate_word()` function for word generation
+
+### Rust API
+
+```rust
+use readable_hash::english_word_hash;
+
+let words = english_word_hash("hello");
+// "basember durangle misinual sancture execony weary"
+```
+
 ## Files
 
 - `tokenize.py` - Vocabulary builder, tokenizer, and model trainer
+- `generate_rust.py` - Generate Rust code from model
 - `extract_words.py` - Extract unique words from corpus
 - `test_tokenizer.py` - Test tokenization of words
 - `training-data/` - Generated model files
