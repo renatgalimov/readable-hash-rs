@@ -1,6 +1,8 @@
 //! Generate human-readable strings from SHA-256 hashes.
 
 use sha2::{Digest, Sha256};
+use sha3::Shake256;
+use sha3::digest::{ExtendableOutput, Update as XofUpdate, XofReader};
 
 mod english_word;
 
@@ -42,7 +44,7 @@ pub(crate) const SYLLABLES: [&str; 256] = [
 /// ```
 pub fn naive_readable_hash(input: &str) -> String {
     let mut hasher = Sha256::new();
-    hasher.update(input.as_bytes());
+    Digest::update(&mut hasher, input.as_bytes());
     let result = hasher.finalize();
     result
         .iter()
@@ -50,10 +52,11 @@ pub fn naive_readable_hash(input: &str) -> String {
         .collect::<String>()
 }
 
-/// Generates a SHA-256 hash and returns it as English-like words.
+/// Generates a SHAKE256 hash and returns it as English-like words.
 ///
 /// Uses an n-gram language model trained on English words to generate
-/// pronounceable output. Each word consumes some entropy from the hash.
+/// pronounceable output. SHAKE256 provides extendable output, allowing
+/// us to generate exactly the entropy needed for each word.
 ///
 /// # Examples
 ///
@@ -64,25 +67,19 @@ pub fn naive_readable_hash(input: &str) -> String {
 /// // Returns multiple English-like words derived from the hash
 /// ```
 pub fn english_word_hash(input: &str) -> String {
-    let mut hasher = Sha256::new();
-    hasher.update(input.as_bytes());
-    let hash_bytes = hasher.finalize();
+    let mut hasher = Shake256::default();
+    XofUpdate::update(&mut hasher, input.as_bytes());
+    let mut reader = hasher.finalize_xof();
 
-    // Generate multiple words from the 32-byte hash
-    // Each word consumes approximately 6-8 bytes
-    let mut words = Vec::new();
-    let mut offset = 0;
-    let bytes_per_word = 6;
+    // Generate multiple words using SHAKE256's extendable output
+    // Each word consumes 6 bytes of entropy
+    let num_words = 6;
+    let mut words = Vec::with_capacity(num_words);
 
-    while offset + bytes_per_word <= hash_bytes.len() {
-        let word = english_word::generate_word(&hash_bytes[offset..offset + bytes_per_word]);
-        words.push(word);
-        offset += bytes_per_word;
-    }
-
-    // Use remaining bytes for a shorter word if any
-    if offset < hash_bytes.len() {
-        let word = english_word::generate_word(&hash_bytes[offset..]);
+    for _ in 0..num_words {
+        let mut entropy = [0u8; 6];
+        reader.read(&mut entropy);
+        let word = english_word::generate_word(&entropy);
         words.push(word);
     }
 
