@@ -1,6 +1,6 @@
 use cucumber::{World as _, given, then, when};
 use futures::executor::block_on;
-use readable_hash::{naive_readable_hash, english_word_hash};
+use readable_hash::{english_word_hash, naive_readable_hash};
 
 #[derive(Debug, Default, cucumber::World)]
 struct HashWorld {
