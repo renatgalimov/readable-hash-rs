@@ -9,14 +9,90 @@ The system uses a position-aware tokenizer with 1024 tokens:
 - **End tokens** (256-511): End of word, e.g., `ing$`, `ed$`, `s$`
 - **Middle tokens** (512-1023): Middle of word, e.g., `er`, `at`, `ion`
 
+## Algorithm Details
+
+### 1) Extract words
+
+The trainer lowercases text and extracts alphabetic words only:
+
+- Regex: `[a-z]+`
+- Non-ASCII letters and punctuation are ignored.
+
+### 2) Collect n-gram counts
+
+For each word, the trainer counts n-grams up to length 6:
+
+- **Beginning n-grams:** `^` + prefix of length 1..6
+- **End n-grams:** suffix of length 1..6 + `$`
+- **Middle n-grams:** all substrings that start after the first character and
+  end before the last character
+
+This yields three frequency tables: beginning, middle, and end.
+
+### 3) Build a fixed-size vocabulary (1024 tokens)
+
+The vocabulary is built by frequency within each position class:
+
+- Top 256 beginning tokens (0–255); unused slots are filled with
+  `[UNUSED_BEG_*]`.
+- Top 256 end tokens (256–511); unused slots are filled with
+  `[UNUSED_END_*]`.
+- Top 512 middle tokens (512–1023); unused slots are filled with
+  `[UNUSED_MID_*]`.
+
+The `id_to_token` array is derived from the vocabulary so IDs are contiguous.
+
+### 4) Tokenize words (greedy, position-aware)
+
+Each word is tokenized using greedy longest-match up to 6 characters:
+
+1. At each position, try the longest candidate substring.
+2. If at the beginning, prefer `^substring` tokens.
+3. If at the end, prefer `substring$` tokens.
+4. If the entire word fits, allow `^substring$`.
+5. If no candidate is found, fall back to a single-character token.
+
+This produces a token sequence per word, typically 2–16 tokens.
+
+### 5) Build transition counts
+
+The model is a bigram transition table over token IDs:
+
+- `begin_transitions`: frequency of first tokens in each word.
+- `transitions`: counts for token → token where the next token is **not** an end
+  token.
+- `end_transitions`: counts for token → end-token.
+
+### 6) Convert to cumulative probability tables
+
+For each transition list, counts are converted to cumulative probabilities and
+sorted by descending frequency. This enables binary search over cumulative
+probabilities during generation.
+
 ## Usage
 
-### Train the Model
+### Build a Generator Model
 
 ```bash
 python3 tokenize.py training-data/english-lowercase.txt -o training-data/
 ```
 
+`tokenize.py` accepts one or more `.txt` files or directories. If you pass a
+directory, it will scan `**/*.txt`. If you pass no input files, it reads from
+stdin.
+
+```bash
+# multiple input files
+python3 tokenize.py corpus/a.txt corpus/b.txt -o training-data/
+
+# directory input
+python3 tokenize.py corpus/ -o training-data/
+
+# stdin input
+cat corpus/a.txt | python3 tokenize.py -o training-data/
+```
+
+The output model filename is based on the first input file stem (or `stdin`).
 This generates `training-data/english-lowercase-model.json` containing:
 - `vocab`: Token to ID mapping
 - `id_to_token`: ID to token mapping (array)
