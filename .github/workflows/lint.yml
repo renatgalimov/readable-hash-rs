@@ -24,14 +24,13 @@ jobs:
 
     steps:
       - name: Check out Git repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Run Lint Action (Clippy + rustfmt with auto-fix)
         uses: wearerequired/lint-action@df31ae8635c46366688e0bea44d7aba2e1468813
         with:
           # Turn on global auto-fix + commit
-          auto_fix: true
-          commit_message: "chore(lint): auto-fix with ${linter}"
+          auto_fix: false
 
           # ---- rustfmt ----
           rustfmt: true

@@ -1,0 +1,92 @@
+name: Performance README
+
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-performance:
+    runs-on: ubuntu-latest
+    env:
+      PERF_ITERATIONS: "200"
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Resolve tags
+        id: tags
+        run: |
+          git fetch --tags --force
+          current_tag="${{ github.event.release.tag_name }}"
+          if [[ -z "$current_tag" ]]; then
+            current_tag="$(git tag --sort=-v:refname | head -n 1)"
+          fi
+          previous_tag="$(git tag --sort=-v:refname | grep -v "^${current_tag}$" | head -n 1)"
+          if [[ -z "$previous_tag" ]]; then
+            echo "No previous tag found." >&2
+            exit 1
+          fi
+          echo "current=$current_tag" >> "$GITHUB_OUTPUT"
+          echo "previous=$previous_tag" >> "$GITHUB_OUTPUT"
+
+      - name: Benchmark latest tag
+        id: latest
+        run: |
+          worktree_root="$(mktemp -d)"
+          echo "worktree_root=$worktree_root" >> "$GITHUB_OUTPUT"
+          git worktree add "$worktree_root/latest" "${{ steps.tags.outputs.current }}"
+          result="$(scripts/bench_pipefog.sh "$worktree_root/latest/Cargo.toml" "$PERF_ITERATIONS" "$GITHUB_WORKSPACE/tests/perf_sample.json")"
+          echo "$result"
+          echo "total_ms=$(echo "$result" | awk -F= '/total_time_ms=/{print $2}')" >> "$GITHUB_OUTPUT"
+
+      - name: Benchmark previous tag
+        id: previous
+        run: |
+          worktree_root="${{ steps.latest.outputs.worktree_root }}"
+          git worktree add "$worktree_root/previous" "${{ steps.tags.outputs.previous }}"
+          result="$(scripts/bench_pipefog.sh "$worktree_root/previous/Cargo.toml" "$PERF_ITERATIONS" "$GITHUB_WORKSPACE/tests/perf_sample.json")"
+          echo "$result"
+          echo "total_ms=$(echo "$result" | awk -F= '/total_time_ms=/{print $2}')" >> "$GITHUB_OUTPUT"
+
+      - name: Update README
+        run: |
+          ./scripts/update_perf_readme.py \
+            --readme README.md \
+            --latest-tag "${{ steps.tags.outputs.current }}" \
+            --latest-ms "${{ steps.latest.outputs.total_ms }}" \
+            --previous-tag "${{ steps.tags.outputs.previous }}" \
+            --previous-ms "${{ steps.previous.outputs.total_ms }}" \
+            --iterations "${PERF_ITERATIONS}"
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: "Update performance benchmarks"
+          title: "Update performance benchmarks"
+          body: "Automated performance update for latest vs previous release tag."
+          branch: "automation/perf-readme"
+          delete-branch: true
+          add-paths: |
+            README.md
+
+      - name: Clean up worktrees
+        if: always()
+        run: |
+          worktree_root="${{ steps.latest.outputs.worktree_root }}"
+          if [[ -n "$worktree_root" && -d "$worktree_root" ]]; then
+            git worktree remove "$worktree_root/latest" --force || true
+            git worktree remove "$worktree_root/previous" --force || true
+            rm -rf "$worktree_root"
+          fi

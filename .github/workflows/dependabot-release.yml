@@ -1,0 +1,66 @@
+name: Dependabot Release
+
+on:
+  pull_request_target:
+    types:
+      - closed
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    if: github.actor == 'dependabot[bot]' && github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Bump patch version
+        id: bump
+        run: |
+          python3 - <<'PY' > /tmp/new_version.txt
+          import re
+          from pathlib import Path
+
+          cargo_toml = Path("Cargo.toml")
+          contents = cargo_toml.read_text(encoding="utf-8")
+          match = re.search(r'(?m)^version\\s*=\\s*"([0-9]+)\\.([0-9]+)\\.([0-9]+)"\\s*$', contents)
+          if not match:
+            raise SystemExit("Cargo.toml version not found")
+          major, minor, patch = map(int, match.groups())
+          new_version = f"{major}.{minor}.{patch + 1}"
+          updated = re.sub(
+              r'(?m)^version\\s*=\\s*"[0-9]+\\.[0-9]+\\.[0-9]+"\\s*$',
+              f'version = "{new_version}"',
+              contents,
+              count=1,
+          )
+          cargo_toml.write_text(updated, encoding="utf-8")
+          print(new_version)
+          PY
+          echo "new_version=$(cat /tmp/new_version.txt)" >> "$GITHUB_OUTPUT"
+
+      - name: Commit version bump
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add Cargo.toml
+          git commit -m "Bump version to v${{ steps.bump.outputs.new_version }}"
+
+      - name: Tag release
+        run: |
+          git tag "v${{ steps.bump.outputs.new_version }}"
+          git push origin HEAD:main
+          git push origin "v${{ steps.bump.outputs.new_version }}"
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "v${{ steps.bump.outputs.new_version }}" \
+            --title "v${{ steps.bump.outputs.new_version }}" \
+            --generate-notes
