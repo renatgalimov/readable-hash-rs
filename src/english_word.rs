@@ -73685,7 +73685,7 @@ fn find_token(transitions: &[(u16, u16)], value: u16) -> u16 {
 fn token_text(token_id: u16) -> &'static str {
     let token = TOKENS[token_id as usize];
     let token = token.strip_prefix('^').unwrap_or(token);
-    
+
     (token.strip_suffix('$').unwrap_or(token)) as _
 }
 
