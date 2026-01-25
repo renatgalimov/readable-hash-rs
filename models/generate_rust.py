@@ -153,7 +153,7 @@ impl<'a> BitReader<'a> {
     }
 
     fn bits_remaining(&self) -> usize {
-        self.data.len() * 8 - self.bit_pos
+        (self.data.len() * 8).saturating_sub(self.bit_pos)
     }
 }
 
@@ -169,6 +169,9 @@ fn calculate_target_tokens<const MAX_TOKENS: usize>(input_bytes: usize) -> usize
 /// The `MAX_TOKENS` const generic parameter controls the maximum number of
 /// tokens in the generated word, if there is enough entropy.
 pub fn generate_word<const MAX_TOKENS: usize>(entropy: &[u8]) -> String {
+    if entropy.is_empty() {
+        return String::new();
+    }
     let mut reader = BitReader::new(entropy);
     let target_tokens = calculate_target_tokens::<MAX_TOKENS>(entropy.len());
     let mut tokens: Vec<u16> = Vec::with_capacity(target_tokens);

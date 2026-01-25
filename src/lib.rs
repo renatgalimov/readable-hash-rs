@@ -4,7 +4,7 @@ use sha2::{Digest, Sha256};
 use sha3::Shake256;
 use sha3::digest::{ExtendableOutput, Update as XofUpdate, XofReader};
 
-mod english_word;
+pub mod english_word;
 
 /// Syllables used for obfuscating lowercase words.
 pub(crate) const SYLLABLES: [&str; 256] = [
