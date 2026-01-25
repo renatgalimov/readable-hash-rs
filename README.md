@@ -29,6 +29,19 @@ fn main() {
 }
 ```
 
+More examples (StdHasher + `naive_readable_hash`):
+
+```text
+"I" -> "onlsuch popeall befons ig"
+"a" -> "agrconsigweundaccsomthen "
+"me" -> "ons ight ecekught ecelke"
+"random" -> "gutexortught lient ugh ek"
+"middle" -> "ent was ight rodonplacugh go"
+"words" -> "men faend contitrepoem"
+"supercalifragilisticexpialidocious" -> "ern takorduthpajabut he"
+"pneumonoultramicroscopicsilicovolcanoconiosis" -> "dithem ittinhetleheag"
+```
+
 ## Tokenizer
 
 The `models/` directory bundles a small sample corpus and Python utilities for

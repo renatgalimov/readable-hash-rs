@@ -219,6 +219,18 @@ where
 /// Reads bytes from the hasher and generates a single continuous word.
 /// For finite hashers, uses all available bytes.
 /// For infinite hashers, reads bytes proportional to input length (minimum 8).
+///
+/// # Examples
+/// ```
+/// use readable_hash::{english_word_hash, StdHasher};
+///
+/// assert_eq!(english_word_hash::<StdHasher, _>("I"), "waged");
+/// assert_eq!(english_word_hash::<StdHasher, _>("different"), "imaumates");
+/// assert_eq!(
+///     english_word_hash::<StdHasher, _>("pneumonoultramicroscopicsilicovolcanoconiosis"),
+///     "dummaricardemastria"
+/// );
+/// ```
 pub fn english_word_hash<H, T>(input: T) -> String
 where
     H: ReadableHasher,
