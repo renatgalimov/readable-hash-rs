@@ -1,12 +1,158 @@
-//! Generate human-readable strings from SHA-256 hashes.
+//! Generate human-readable strings from hash outputs.
+//!
+//! This crate provides configurable hashers and multiple output formats
+//! for generating memorable, pronounceable strings from arbitrary input.
 
-use sha2::{Digest, Sha256};
-use sha3::Shake256;
+use std::hash::{DefaultHasher, Hasher};
+
+#[cfg(feature = "shake256")]
 use sha3::digest::{ExtendableOutput, Update as XofUpdate, XofReader};
+#[cfg(feature = "shake256")]
+use sha3::Shake256;
 
 pub mod english_word;
+mod traits;
 
-/// Syllables used for obfuscating lowercase words.
+// ============================================================================
+// Core Traits
+// ============================================================================
+
+/// Trait for reading bytes from a hash output.
+pub trait ByteReader {
+    /// Read bytes into the destination buffer. Returns bytes read.
+    fn read(&mut self, dest: &mut [u8]) -> usize;
+
+    /// Returns remaining bytes, or `None` if infinite.
+    fn remaining(&self) -> Option<usize>;
+}
+
+/// Trait for hashers that produce readable hashes.
+pub trait ReadableHasher: Default {
+    type Reader: ByteReader;
+
+    fn update(&mut self, data: &[u8]);
+    fn finalize(self) -> Self::Reader;
+}
+
+// ============================================================================
+// StdHasher (8 bytes output)
+// ============================================================================
+
+#[derive(Default)]
+pub struct StdHasher<H: Hasher + Default = DefaultHasher> {
+    hasher: H,
+}
+
+impl<H: Hasher + Default> ReadableHasher for StdHasher<H> {
+    type Reader = StdHasherReader;
+
+    fn update(&mut self, data: &[u8]) {
+        self.hasher.write(data);
+    }
+
+    fn finalize(self) -> Self::Reader {
+        StdHasherReader {
+            bytes: self.hasher.finish().to_le_bytes(),
+            position: 0,
+        }
+    }
+}
+
+pub struct StdHasherReader {
+    bytes: [u8; 8],
+    position: usize,
+}
+
+impl ByteReader for StdHasherReader {
+    fn read(&mut self, dest: &mut [u8]) -> usize {
+        let available = 8 - self.position;
+        let bytes_to_read = dest.len().min(available);
+        dest[..bytes_to_read].copy_from_slice(&self.bytes[self.position..self.position + bytes_to_read]);
+        self.position += bytes_to_read;
+        bytes_to_read
+    }
+
+    fn remaining(&self) -> Option<usize> {
+        Some(8 - self.position)
+    }
+}
+
+// ============================================================================
+// Shake256Hasher (infinite output)
+// ============================================================================
+
+#[cfg(feature = "shake256")]
+#[derive(Default)]
+pub struct Shake256Hasher {
+    hasher: Shake256,
+}
+
+#[cfg(feature = "shake256")]
+impl ReadableHasher for Shake256Hasher {
+    type Reader = Shake256Reader;
+
+    fn update(&mut self, data: &[u8]) {
+        XofUpdate::update(&mut self.hasher, data);
+    }
+
+    fn finalize(self) -> Self::Reader {
+        Shake256Reader {
+            reader: self.hasher.finalize_xof(),
+        }
+    }
+}
+
+#[cfg(feature = "shake256")]
+pub struct Shake256Reader {
+    reader: sha3::Shake256Reader,
+}
+
+#[cfg(feature = "shake256")]
+impl ByteReader for Shake256Reader {
+    fn read(&mut self, dest: &mut [u8]) -> usize {
+        XofReader::read(&mut self.reader, dest);
+        dest.len()
+    }
+
+    fn remaining(&self) -> Option<usize> {
+        None
+    }
+}
+
+// ============================================================================
+// SliceReader - ByteReader for byte slices
+// ============================================================================
+
+/// A ByteReader that wraps a byte slice.
+pub struct SliceReader<'a> {
+    data: &'a [u8],
+    position: usize,
+}
+
+impl<'a> SliceReader<'a> {
+    pub fn new(data: &'a [u8]) -> Self {
+        Self { data, position: 0 }
+    }
+}
+
+impl<'a> ByteReader for SliceReader<'a> {
+    fn read(&mut self, dest: &mut [u8]) -> usize {
+        let available = self.data.len() - self.position;
+        let bytes_to_read = dest.len().min(available);
+        dest[..bytes_to_read].copy_from_slice(&self.data[self.position..self.position + bytes_to_read]);
+        self.position += bytes_to_read;
+        bytes_to_read
+    }
+
+    fn remaining(&self) -> Option<usize> {
+        Some(self.data.len() - self.position)
+    }
+}
+
+// ============================================================================
+// Syllables
+// ============================================================================
+
 pub(crate) const SYLLABLES: [&str; 256] = [
     "plac", "most ", "sam", "ke", "uth", "arl ", "het", "giv", "fa", "first ", "own ", "li", "van",
     "form ", "pres", "ond", "men ", "bef", "old ", "agr", "must ", "two ", "ight ", "mak", "cons",
@@ -29,58 +175,99 @@ pub(crate) const SYLLABLES: [&str; 256] = [
     "es", "to", "and ", "en", "on", "of", "ed ", "o", "in", "er", "i", "a", "y", "the ", "e",
 ];
 
-/// Generates a SHA-256 hash and returns it as a sentence in a made-up language.
-///
-/// # Examples
-///
-/// ```rust
-/// use readable_hash::naive_readable_hash;
-///
-/// let sentence = naive_readable_hash("hello");
-/// assert_eq!(
-///     sentence,
-///     "ungtoattmeertant dipresecorvisuch osfrom usellremight itthasiss upfeprojthem uthver off abljahim iz",
-/// );
-/// ```
-pub fn naive_readable_hash(input: &str) -> String {
-    let mut hasher = Sha256::new();
-    Digest::update(&mut hasher, input.as_bytes());
-    let result = hasher.finalize();
-    result
-        .iter()
-        .map(|b| SYLLABLES[*b as usize])
-        .collect::<String>()
-}
+// ============================================================================
+// Public API
+// ============================================================================
 
-/// Generates a SHAKE256 hash and returns it as English-like words.
+/// Generate naive readable hash (syllable-based).
 ///
-/// Uses an n-gram language model trained on English words to generate
-/// pronounceable output. SHAKE256 provides extendable output, allowing
-/// us to generate exactly the entropy needed for each word.
-///
-/// # Examples
-///
-/// ```rust
-/// use readable_hash::english_word_hash;
-///
-/// let words = english_word_hash("hello");
-/// // Returns multiple English-like words derived from the hash
-/// ```
-/// Maximum number of tokens in an english word hash.
-pub const MAX_TOKENS: usize = 16;
+/// For finite hashers, uses all available bytes.
+/// For infinite hashers, reads bytes proportional to input length (minimum 8).
+pub fn naive_readable_hash<H, T>(input: T) -> String
+where
+    H: ReadableHasher,
+    T: AsRef<[u8]>,
+{
+    let input_bytes = input.as_ref();
+    let input_len = input_bytes.len();
 
-/// Bytes of entropy needed for generating a 16-token word.
-const ENTROPY_BYTES: usize = 32;
+    let mut hasher = H::default();
+    hasher.update(input_bytes);
+    let mut reader = hasher.finalize();
 
-pub fn english_word_hash(input: &str) -> String {
-    let mut hasher = Shake256::default();
-    XofUpdate::update(&mut hasher, input.as_bytes());
-    let mut reader = hasher.finalize_xof();
+    let bytes_to_read = match reader.remaining() {
+        Some(remaining) => remaining,
+        None => input_len.max(8),
+    };
 
-    // Generate enough entropy for a 16-token word
-    let mut entropy = [0u8; ENTROPY_BYTES];
+    let mut entropy = vec![0u8; bytes_to_read];
     reader.read(&mut entropy);
 
-    // Generate a single word with up to MAX_TOKENS tokens
-    english_word::generate_word::<MAX_TOKENS>(&entropy)
+    entropy.iter().map(|byte| SYLLABLES[*byte as usize]).collect()
+}
+
+/// Generate english-like word hash.
+///
+/// Reads bytes from the hasher and generates a single continuous word.
+/// For finite hashers, uses all available bytes.
+/// For infinite hashers, reads bytes proportional to input length (minimum 8).
+pub fn english_word_hash<H, T>(input: T) -> String
+where
+    H: ReadableHasher,
+    T: AsRef<[u8]>,
+{
+    let input_bytes = input.as_ref();
+    let input_len = input_bytes.len();
+
+    let mut hasher = H::default();
+    hasher.update(input_bytes);
+    let reader = hasher.finalize();
+
+    // For infinite readers, wrap with a length limiter
+    let bytes_limit = match reader.remaining() {
+        Some(_) => None, // Finite: use all
+        None => Some(input_len.max(8)), // Infinite: limit to input length
+    };
+
+    let mut limited_reader = LimitedByteReader::new(reader, bytes_limit);
+    english_word::generate_word(&mut limited_reader)
+}
+
+/// A ByteReader wrapper that limits the number of bytes read.
+struct LimitedByteReader<R: ByteReader> {
+    inner: R,
+    remaining: Option<usize>,
+}
+
+impl<R: ByteReader> LimitedByteReader<R> {
+    fn new(inner: R, limit: Option<usize>) -> Self {
+        Self {
+            inner,
+            remaining: limit,
+        }
+    }
+}
+
+impl<R: ByteReader> ByteReader for LimitedByteReader<R> {
+    fn read(&mut self, dest: &mut [u8]) -> usize {
+        let max_read = match self.remaining {
+            Some(remaining) if remaining == 0 => return 0,
+            Some(remaining) => dest.len().min(remaining),
+            None => dest.len(),
+        };
+
+        let bytes_read = self.inner.read(&mut dest[..max_read]);
+        if let Some(ref mut remaining) = self.remaining {
+            *remaining = remaining.saturating_sub(bytes_read);
+        }
+        bytes_read
+    }
+
+    fn remaining(&self) -> Option<usize> {
+        match (self.remaining, self.inner.remaining()) {
+            (Some(limit), Some(inner_remaining)) => Some(limit.min(inner_remaining)),
+            (Some(limit), None) => Some(limit),
+            (None, inner_remaining) => inner_remaining,
+        }
+    }
 }
