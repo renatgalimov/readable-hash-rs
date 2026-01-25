@@ -10,7 +10,6 @@ jobs:
   coverage:
     if: github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
-    environment: main
     steps:
       - uses: actions/checkout@v6
 
