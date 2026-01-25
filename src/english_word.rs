@@ -73691,65 +73691,12 @@ fn token_text(token_id: u16) -> &'static str {
     token
 }
 
-/// Bit reader that wraps a ByteReader, buffering bytes and reading bits.
-struct BitReader<'a, R: ByteReader> {
-    reader: &'a mut R,
-    buffer: Vec<u8>,
-    bit_pos: usize,
-    exhausted: bool,
-}
-
-impl<'a, R: ByteReader> BitReader<'a, R> {
-    fn new(reader: &'a mut R) -> Self {
-        Self {
-            reader,
-            buffer: Vec::new(),
-            bit_pos: 0,
-            exhausted: false,
-        }
+fn read_byte<R: ByteReader>(reader: &mut R) -> Option<u8> {
+    let mut byte_buffer = [0u8; 1];
+    if reader.read(&mut byte_buffer) == 0 {
+        return None;
     }
-
-    /// Ensure we have at least `bits` available in the buffer.
-    fn ensure_bits(&mut self, bits: usize) -> bool {
-        if self.exhausted {
-            return self.bits_available() >= bits;
-        }
-
-        let bytes_needed = (self.bit_pos + bits + 7) / 8;
-        while self.buffer.len() < bytes_needed {
-            let mut byte = [0u8; 1];
-            if self.reader.read(&mut byte) == 0 {
-                self.exhausted = true;
-                break;
-            }
-            self.buffer.push(byte[0]);
-        }
-        self.bits_available() >= bits
-    }
-
-    fn bits_available(&self) -> usize {
-        (self.buffer.len() * 8).saturating_sub(self.bit_pos)
-    }
-
-    fn read_u8(&mut self) -> Option<u8> {
-        if !self.ensure_bits(8) {
-            return None;
-        }
-
-        let mut result: u8 = 0;
-        for _ in 0..8 {
-            let byte_idx = self.bit_pos / 8;
-            let bit_idx = self.bit_pos % 8;
-            let bit = (self.buffer[byte_idx] >> (7 - bit_idx)) & 1;
-            result = (result << 1) | (bit as u8);
-            self.bit_pos += 1;
-        }
-        Some(result)
-    }
-
-    fn has_more(&mut self) -> bool {
-        self.ensure_bits(8)
-    }
+    Some(byte_buffer[0])
 }
 
 /// Generate an English-like word with a minimum target length.
@@ -73758,11 +73705,10 @@ impl<'a, R: ByteReader> BitReader<'a, R> {
 /// the target length, it will stop at the shortest possible length
 /// that is >= target_len when such an end token is available.
 pub fn generate_word_with_target_len<R: ByteReader>(reader: &mut R, target_len: usize) -> String {
-    let mut bit_reader = BitReader::new(reader);
     let mut result = String::new();
 
     // Select beginning token
-    let Some(begin_value) = bit_reader.read_u8() else {
+    let Some(begin_value) = read_byte(reader) else {
         return String::new();
     };
     let first_token = find_token(&BEGIN_TRANSITIONS, begin_value);
@@ -73786,7 +73732,7 @@ pub fn generate_word_with_target_len<R: ByteReader>(reader: &mut R, target_len: 
             }
 
             if can_reach_target {
-                let value = bit_reader.read_u8().unwrap_or(0);
+                let value = read_byte(reader).unwrap_or(0);
                 let mut end_token = find_token(end_trans, value);
                 if current_len + token_text(end_token).len() < target_len {
                     if let Some((end_id, _)) = end_trans
@@ -73807,7 +73753,7 @@ pub fn generate_word_with_target_len<R: ByteReader>(reader: &mut R, target_len: 
         if len == 0 {
             break;
         }
-        let Some(value) = bit_reader.read_u8() else {
+        let Some(value) = read_byte(reader) else {
             break;
         };
         let trans = &TRANSITION_DATA[start as usize..(start as usize + len as usize)];
@@ -73815,9 +73761,6 @@ pub fn generate_word_with_target_len<R: ByteReader>(reader: &mut R, target_len: 
         result.push_str(token_text(next_token));
         current_token = next_token;
         current_len = result.len();
-        if !bit_reader.has_more() && current_len >= target_len {
-            continue;
-        }
     }
 
     result
@@ -73829,12 +73772,11 @@ pub fn generate_word_with_target_len<R: ByteReader>(reader: &mut R, target_len: 
 /// is exhausted. The word consists of a beginning token, zero or more
 /// middle tokens, and an end token.
 pub fn generate_word<R: ByteReader>(reader: &mut R) -> String {
-    let mut bit_reader = BitReader::new(reader);
     let mut tokens: Vec<u16> = Vec::new();
     let mut result = String::new();
 
     // Select beginning token
-    let Some(begin_value) = bit_reader.read_u8() else {
+    let Some(begin_value) = read_byte(reader) else {
         return String::new();
     };
     let first_token = find_token(&BEGIN_TRANSITIONS, begin_value);
@@ -73842,13 +73784,13 @@ pub fn generate_word<R: ByteReader>(reader: &mut R) -> String {
     result.push_str(token_text(first_token));
 
     // Select middle tokens while we have entropy
-    while bit_reader.has_more() {
+    loop {
         let current = *tokens.last().unwrap() as usize;
         let (start, len) = TRANSITION_INDEX[current];
         if len == 0 {
             break;
         }
-        let Some(value) = bit_reader.read_u8() else {
+        let Some(value) = read_byte(reader) else {
             break;
         };
         let trans = &TRANSITION_DATA[start as usize..(start as usize + len as usize)];
@@ -73862,7 +73804,7 @@ pub fn generate_word<R: ByteReader>(reader: &mut R) -> String {
         let (start, len) = END_TRANSITION_INDEX[current as usize];
         if len > 0 {
             let trans = &END_TRANSITION_DATA[start as usize..(start as usize + len as usize)];
-            let value = bit_reader.read_u8().unwrap_or(0);
+            let value = read_byte(reader).unwrap_or(0);
             let end_token = find_token(trans, value);
             tokens.push(end_token);
             result.push_str(token_text(end_token));
