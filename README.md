@@ -1,5 +1,10 @@
 [![Rust](https://github.com/renatgalimov/readable-hash-rs/actions/workflows/rust.yml/badge.svg)](https://github.com/renatgalimov/readable-hash-rs/actions/workflows/rust.yml)
 [![Lint](https://github.com/renatgalimov/readable-hash-rs/actions/workflows/lint.yml/badge.svg)](https://github.com/renatgalimov/readable-hash-rs/actions/workflows/lint.yml)
+[![Tests](https://github.com/renatgalimov/readable-hash-rs/actions/workflows/tests.yml/badge.svg)](https://github.com/renatgalimov/readable-hash-rs/actions/workflows/tests.yml)
+[![Coverage](https://github.com/renatgalimov/readable-hash-rs/actions/workflows/coverage.yml/badge.svg)](https://github.com/renatgalimov/readable-hash-rs/actions/workflows/coverage.yml)
+[![Fuzz](https://github.com/renatgalimov/readable-hash-rs/actions/workflows/fuzz.yml/badge.svg)](https://github.com/renatgalimov/readable-hash-rs/actions/workflows/fuzz.yml)
+[![Semgrep](https://github.com/renatgalimov/readable-hash-rs/actions/workflows/semgrep.yml/badge.svg)](https://github.com/renatgalimov/readable-hash-rs/actions/workflows/semgrep.yml)
+[![Crates.io](https://img.shields.io/crates/v/readable-hash.svg)](https://crates.io/crates/readable-hash)
 
 # readable-hash-rs
 Human-readable hashes for Rust, producing sentences in a made-up language.
