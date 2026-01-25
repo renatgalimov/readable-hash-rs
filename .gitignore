@@ -21,3 +21,5 @@ target
 #.idea/
 /models/corpus/
 __pycache__
+fuzz/artifacts/
+fuzz/corpus/
