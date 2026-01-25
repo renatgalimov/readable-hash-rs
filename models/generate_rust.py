@@ -199,6 +199,80 @@ impl<'a, R: ByteReader> BitReader<'a, R> {
     }
 }
 
+/// Generate an English-like word with a minimum target length.
+///
+/// The output always ends with an end token. If it cannot exactly match
+/// the target length, it will stop at the shortest possible length
+/// that is >= target_len when such an end token is available.
+pub fn generate_word_with_target_len<R: ByteReader>(
+    reader: &mut R,
+    target_len: usize,
+) -> String {
+    let mut bit_reader = BitReader::new(reader);
+    let mut result = String::new();
+
+    // Select beginning token
+    let Some(begin_value) = bit_reader.read_u8() else {
+        return String::new();
+    };
+    let first_token = find_token(&BEGIN_TRANSITIONS, begin_value);
+    result.push_str(token_text(first_token));
+    let mut current_token = first_token;
+    let mut current_len = result.len();
+
+    loop {
+        let (end_start, end_len) = END_TRANSITION_INDEX[current_token as usize];
+        if end_len > 0 {
+            let end_trans =
+                &END_TRANSITION_DATA[end_start as usize..(end_start as usize + end_len as usize)];
+            let mut can_reach_target = current_len >= target_len;
+            if !can_reach_target {
+                for (end_id, _) in end_trans {
+                    if current_len + token_text(*end_id).len() >= target_len {
+                        can_reach_target = true;
+                        break;
+                    }
+                }
+            }
+
+            if can_reach_target {
+                let value = bit_reader.read_u8().unwrap_or(0);
+                let mut end_token = find_token(end_trans, value);
+                if current_len + token_text(end_token).len() < target_len {
+                    if let Some((end_id, _)) = end_trans
+                        .iter()
+                        .find(|(end_id, _)| current_len + token_text(*end_id).len() >= target_len)
+                    {
+                        end_token = *end_id;
+                    } else if let Some((end_id, _)) = end_trans.last() {
+                        end_token = *end_id;
+                    }
+                }
+                result.push_str(token_text(end_token));
+                break;
+            }
+        }
+
+        let (start, len) = TRANSITION_INDEX[current_token as usize];
+        if len == 0 {
+            break;
+        }
+        let Some(value) = bit_reader.read_u8() else {
+            break;
+        };
+        let trans = &TRANSITION_DATA[start as usize..(start as usize + len as usize)];
+        let next_token = find_token(trans, value);
+        result.push_str(token_text(next_token));
+        current_token = next_token;
+        current_len = result.len();
+        if !bit_reader.has_more() && current_len >= target_len {
+            continue;
+        }
+    }
+
+    result
+}
+
 /// Generate an English-like word from a ByteReader.
 ///
 /// Reads bytes from the reader and generates tokens until the reader

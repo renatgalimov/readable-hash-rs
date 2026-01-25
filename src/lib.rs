@@ -241,7 +241,7 @@ where
     };
 
     let mut limited_reader = LimitedByteReader::new(reader, bytes_limit);
-    english_word::generate_word(&mut limited_reader)
+    english_word::generate_word_with_target_len(&mut limited_reader, input_len)
 }
 
 /// A ByteReader wrapper that limits the number of bytes read.

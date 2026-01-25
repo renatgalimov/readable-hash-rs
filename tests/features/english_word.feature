@@ -10,9 +10,9 @@ Feature: Generate English-like words from hash
 
     Examples:
       | input | output       |
-      | hello | hipportivershauvor |
-      | world | excentshipmovaced |
-      | test  | amaharbaulticulhand |
+      | hello | hired |
+      | world | exist |
+      | test  | amens |
       |       |                  |
 
   Scenario Outline: all hashes are single words
