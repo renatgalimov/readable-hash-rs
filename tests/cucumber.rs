@@ -1,12 +1,23 @@
 use cucumber::{World as _, given, then, when};
 use futures::executor::block_on;
-use readable_hash::{english_word, english_word_hash, naive_readable_hash};
+use readable_hash::{english_word, english_word_hash, naive_readable_hash, SliceReader, StdHasher};
+#[cfg(feature = "shake256")]
+use readable_hash::Shake256Hasher;
+
+#[derive(Debug, Default, Clone, Copy, PartialEq)]
+enum HasherType {
+    #[default]
+    Std,
+    #[cfg(feature = "shake256")]
+    Shake256,
+}
 
 #[derive(Debug, Default, cucumber::World)]
 struct HashWorld {
     input: String,
     output: String,
     entropy: Vec<u8>,
+    hasher_type: HasherType,
 }
 
 #[given(expr = "the input {string}")]
@@ -14,14 +25,33 @@ fn set_input(world: &mut HashWorld, input: String) {
     world.input = input;
 }
 
+#[given("using the std hasher")]
+fn use_std_hasher(world: &mut HashWorld) {
+    world.hasher_type = HasherType::Std;
+}
+
+#[cfg(feature = "shake256")]
+#[given("using the shake256 hasher")]
+fn use_shake256_hasher(world: &mut HashWorld) {
+    world.hasher_type = HasherType::Shake256;
+}
+
 #[when("the hash is generated")]
 fn generate_hash(world: &mut HashWorld) {
-    world.output = naive_readable_hash(&world.input);
+    world.output = match world.hasher_type {
+        HasherType::Std => naive_readable_hash::<StdHasher, _>(&world.input),
+        #[cfg(feature = "shake256")]
+        HasherType::Shake256 => naive_readable_hash::<Shake256Hasher, _>(&world.input),
+    };
 }
 
 #[when("the english word hash is generated")]
 fn generate_english_word_hash(world: &mut HashWorld) {
-    world.output = english_word_hash(&world.input);
+    world.output = match world.hasher_type {
+        HasherType::Std => english_word_hash::<StdHasher, _>(&world.input),
+        #[cfg(feature = "shake256")]
+        HasherType::Shake256 => english_word_hash::<Shake256Hasher, _>(&world.input),
+    };
 }
 
 #[then(expr = "the result should be {string}")]
@@ -56,34 +86,10 @@ fn set_entropy(world: &mut HashWorld, hex: String) {
     world.entropy = hex::decode(&hex).expect("Invalid hex string");
 }
 
-#[when(expr = "a word is generated with max {int} tokens")]
-fn generate_word_with_max_tokens(world: &mut HashWorld, max_tokens: usize) {
-    world.output = match max_tokens {
-        2 => english_word::generate_word::<2>(&world.entropy),
-        4 => english_word::generate_word::<4>(&world.entropy),
-        8 => english_word::generate_word::<8>(&world.entropy),
-        16 => english_word::generate_word::<16>(&world.entropy),
-        _ => panic!("Unsupported max_tokens value: {}", max_tokens),
-    };
-}
-
-#[then(expr = "the result should have at most {int} tokens")]
-fn check_max_tokens(world: &mut HashWorld, max_tokens: usize) {
-    // Count tokens by looking at the structure of the output
-    // This is approximate - we check the word isn't too long
-    // A more accurate test would require exposing token boundaries
-    let output_len = world.output.len();
-    // Each token produces at least 1 character, typically 2-4
-    // So max_tokens * 6 is a reasonable upper bound
-    let max_expected_len = max_tokens * 6;
-    assert!(
-        output_len <= max_expected_len,
-        "Output '{}' (len={}) exceeds expected max length {} for {} tokens",
-        world.output,
-        output_len,
-        max_expected_len,
-        max_tokens
-    );
+#[when("a word is generated from the entropy")]
+fn generate_word_from_entropy(world: &mut HashWorld) {
+    let mut reader = SliceReader::new(&world.entropy);
+    world.output = english_word::generate_word(&mut reader);
 }
 
 fn main() {

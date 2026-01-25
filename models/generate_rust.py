@@ -109,7 +109,9 @@ def generate_rust_code(model: dict) -> str:
     lines.append("")
 
     # Add helper functions
-    lines.append("""/// Find token by binary searching cumulative probabilities.
+    lines.append("""use crate::ByteReader;
+
+/// Find token by binary searching cumulative probabilities.
 fn find_token(transitions: &[(u16, u16)], value: u16) -> u16 {
     for (token_id, cumulative) in transitions {
         if *cumulative >= value {
@@ -127,86 +129,107 @@ fn token_text(token_id: u16) -> &'static str {
     token
 }
 
-/// Bit reader for consuming entropy from bytes.
-struct BitReader<'a> {
-    data: &'a [u8],
+/// Bit reader that wraps a ByteReader, buffering bytes and reading bits.
+struct BitReader<'a, R: ByteReader> {
+    reader: &'a mut R,
+    buffer: Vec<u8>,
     bit_pos: usize,
+    exhausted: bool,
 }
 
-impl<'a> BitReader<'a> {
-    fn new(data: &'a [u8]) -> Self {
-        Self { data, bit_pos: 0 }
+impl<'a, R: ByteReader> BitReader<'a, R> {
+    fn new(reader: &'a mut R) -> Self {
+        Self {
+            reader,
+            buffer: Vec::new(),
+            bit_pos: 0,
+            exhausted: false,
+        }
     }
 
-    fn read_u16(&mut self) -> u16 {
+    /// Ensure we have at least `bits` available in the buffer.
+    fn ensure_bits(&mut self, bits: usize) -> bool {
+        if self.exhausted {
+            return self.bits_available() >= bits;
+        }
+
+        let bytes_needed = (self.bit_pos + bits + 7) / 8;
+        while self.buffer.len() < bytes_needed {
+            let mut byte = [0u8; 1];
+            if self.reader.read(&mut byte) == 0 {
+                self.exhausted = true;
+                break;
+            }
+            self.buffer.push(byte[0]);
+        }
+        self.bits_available() >= bits
+    }
+
+    fn bits_available(&self) -> usize {
+        (self.buffer.len() * 8).saturating_sub(self.bit_pos)
+    }
+
+    fn read_u16(&mut self) -> Option<u16> {
+        if !self.ensure_bits(16) {
+            return None;
+        }
+
         let mut result: u16 = 0;
         for _ in 0..16 {
             let byte_idx = self.bit_pos / 8;
             let bit_idx = self.bit_pos % 8;
-            if byte_idx < self.data.len() {
-                let bit = (self.data[byte_idx] >> (7 - bit_idx)) & 1;
-                result = (result << 1) | (bit as u16);
-            }
+            let bit = (self.buffer[byte_idx] >> (7 - bit_idx)) & 1;
+            result = (result << 1) | (bit as u16);
             self.bit_pos += 1;
         }
-        result
+        Some(result)
     }
 
-    fn bits_remaining(&self) -> usize {
-        (self.data.len() * 8).saturating_sub(self.bit_pos)
+    fn has_more(&mut self) -> bool {
+        self.ensure_bits(8)
     }
 }
 
-/// Calculate target token count based on input byte length and max tokens.
-fn calculate_target_tokens<const MAX_TOKENS: usize>(input_bytes: usize) -> usize {
-    // Approximately 7 bits per token, minimum 2, maximum MAX_TOKENS
-    let estimated = (input_bytes * 8) / 7 + 1;
-    estimated.clamp(2, MAX_TOKENS)
-}
-
-/// Generate an English-like word from entropy bytes.
+/// Generate an English-like word from a ByteReader.
 ///
-/// The `MAX_TOKENS` const generic parameter controls the maximum number of
-/// tokens in the generated word, if there is enough entropy.
-pub fn generate_word<const MAX_TOKENS: usize>(entropy: &[u8]) -> String {
-    if entropy.is_empty() {
-        return String::new();
-    }
-    let mut reader = BitReader::new(entropy);
-    let target_tokens = calculate_target_tokens::<MAX_TOKENS>(entropy.len());
-    let mut tokens: Vec<u16> = Vec::with_capacity(target_tokens);
+/// Reads bytes from the reader and generates tokens until the reader
+/// is exhausted. The word consists of a beginning token, zero or more
+/// middle tokens, and an end token.
+pub fn generate_word<R: ByteReader>(reader: &mut R) -> String {
+    let mut bit_reader = BitReader::new(reader);
+    let mut tokens: Vec<u16> = Vec::new();
     let mut result = String::new();
 
     // Select beginning token
-    let begin_value = reader.read_u16();
+    let Some(begin_value) = bit_reader.read_u16() else {
+        return String::new();
+    };
     let first_token = find_token(&BEGIN_TRANSITIONS, begin_value);
     tokens.push(first_token);
     result.push_str(token_text(first_token));
 
-    // Select middle tokens
-    while tokens.len() < target_tokens - 1 && reader.bits_remaining() >= 8 {
+    // Select middle tokens while we have entropy
+    while bit_reader.has_more() {
         let current = *tokens.last().unwrap() as usize;
         let (start, len) = TRANSITION_INDEX[current];
         if len == 0 {
             break;
         }
+        let Some(value) = bit_reader.read_u16() else {
+            break;
+        };
         let trans = &TRANSITION_DATA[start as usize..(start as usize + len as usize)];
-        let value = reader.read_u16();
         let next_token = find_token(trans, value);
         tokens.push(next_token);
         result.push_str(token_text(next_token));
     }
 
-    // Select end token
+    // Select end token using remaining bits or default
     if let Some(&current) = tokens.last() {
         let (start, len) = END_TRANSITION_INDEX[current as usize];
         if len > 0 {
             let trans = &END_TRANSITION_DATA[start as usize..(start as usize + len as usize)];
-            let value = if reader.bits_remaining() >= 16 {
-                reader.read_u16()
-            } else {
-                0
-            };
+            let value = bit_reader.read_u16().unwrap_or(0);
             let end_token = find_token(trans, value);
             tokens.push(end_token);
             result.push_str(token_text(end_token));
