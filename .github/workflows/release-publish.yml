@@ -24,7 +24,7 @@ jobs:
           sed -i "s/^version[ =].*/version = \"${tag_version}\"/" Cargo.toml
 
       - name: Refresh Cargo.lock
-        run: cargo update -p pipefog
+        run: cargo update -p readable-hash-rs
 
       - name: Publish crate
         env:
