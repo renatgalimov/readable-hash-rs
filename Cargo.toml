@@ -1,6 +1,6 @@
 [package]
 name = "readable-hash"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "Generate sentences in a made-up language from SHA-256 hashes using syllable mapping"
 readme = "README.md"
