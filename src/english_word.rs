@@ -73734,6 +73734,7 @@ pub fn generate_word<const MAX_TOKENS: usize>(entropy: &[u8]) -> String {
     if entropy.is_empty() {
         return String::new();
     }
+
     let mut reader = BitReader::new(entropy);
     let target_tokens = calculate_target_tokens::<MAX_TOKENS>(entropy.len());
     let mut tokens: Vec<u16> = Vec::with_capacity(target_tokens);
