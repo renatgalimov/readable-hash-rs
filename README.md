@@ -69,3 +69,41 @@ script uses to mark sentence boundaries. It also verifies that tokens respect
 word-boundary markers (`##` prefixes and `</w>` suffixes) before accumulating
 statistics. The result is written to ``ngram.json`` and stores transition
 probabilities between token ids.
+
+## Generating the 8-bit model
+
+Use the built-in tokenizer/trainer to produce a JSON model with 8-bit
+cumulative thresholds (0..=255):
+
+```bash
+python models/tokenize.py models/sample_corpus.txt -o training-data
+```
+
+This writes `training-data/<input>-model.json` with 8-bit cumulative transition
+tables and includes `probability_resolution_bits: 8` in the metadata.
+
+## Entropy consumption and weighted transitions (8-bit)
+
+The Rust generator turns a fixed byte slice of entropy into a sequence of
+tokens by repeatedly sampling transitions from a weighted distribution encoded
+as cumulative probabilities with 8-bit resolution.
+
+**Entropy consumption**
+- A `BitReader` wraps the entropy bytes and exposes a bit cursor.
+- Each token choice reads 8 bits, yielding a value in `0..=255`. If fewer than
+  8 bits remain, generation stops (or falls back to a default for the end
+  token).
+- Using 8-bit chunks reduces entropy usage per step and matches the transition
+  tables’ resolution.
+
+**Weighted transition selection**
+- Transitions are stored as `(token_id, cumulative_probability)` pairs with
+  cumulative values in `0..=255` (u8).
+- Given an 8-bit value, the code selects the first entry whose cumulative
+  probability is greater than or equal to the value. If no entry matches (a
+  safety fallback), it returns the last token.
+- For example, with two options `(A, 127)` and `(B, 255)`, values `0..=127`
+  yield `A`, and `128..=255` yield `B`.
+
+In summary: entropy is consumed in fixed 8-bit chunks, and those chunks are
+interpreted through cumulative probability tables to pick the next token.

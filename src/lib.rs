@@ -6,9 +6,9 @@
 use std::hash::{DefaultHasher, Hasher};
 
 #[cfg(feature = "shake256")]
-use sha3::digest::{ExtendableOutput, Update as XofUpdate, XofReader};
-#[cfg(feature = "shake256")]
 use sha3::Shake256;
+#[cfg(feature = "shake256")]
+use sha3::digest::{ExtendableOutput, Update as XofUpdate, XofReader};
 
 pub mod english_word;
 mod traits;
@@ -67,7 +67,8 @@ impl ByteReader for StdHasherReader {
     fn read(&mut self, dest: &mut [u8]) -> usize {
         let available = 8 - self.position;
         let bytes_to_read = dest.len().min(available);
-        dest[..bytes_to_read].copy_from_slice(&self.bytes[self.position..self.position + bytes_to_read]);
+        dest[..bytes_to_read]
+            .copy_from_slice(&self.bytes[self.position..self.position + bytes_to_read]);
         self.position += bytes_to_read;
         bytes_to_read
     }
@@ -139,7 +140,8 @@ impl<'a> ByteReader for SliceReader<'a> {
     fn read(&mut self, dest: &mut [u8]) -> usize {
         let available = self.data.len() - self.position;
         let bytes_to_read = dest.len().min(available);
-        dest[..bytes_to_read].copy_from_slice(&self.data[self.position..self.position + bytes_to_read]);
+        dest[..bytes_to_read]
+            .copy_from_slice(&self.data[self.position..self.position + bytes_to_read]);
         self.position += bytes_to_read;
         bytes_to_read
     }
@@ -189,6 +191,9 @@ where
     T: AsRef<[u8]>,
 {
     let input_bytes = input.as_ref();
+    if input_bytes.is_empty() {
+        return String::new();
+    }
     let input_len = input_bytes.len();
 
     let mut hasher = H::default();
@@ -203,7 +208,10 @@ where
     let mut entropy = vec![0u8; bytes_to_read];
     reader.read(&mut entropy);
 
-    entropy.iter().map(|byte| SYLLABLES[*byte as usize]).collect()
+    entropy
+        .iter()
+        .map(|byte| SYLLABLES[*byte as usize])
+        .collect()
 }
 
 /// Generate english-like word hash.
@@ -217,6 +225,9 @@ where
     T: AsRef<[u8]>,
 {
     let input_bytes = input.as_ref();
+    if input_bytes.is_empty() {
+        return String::new();
+    }
     let input_len = input_bytes.len();
 
     let mut hasher = H::default();
@@ -225,7 +236,7 @@ where
 
     // For infinite readers, wrap with a length limiter
     let bytes_limit = match reader.remaining() {
-        Some(_) => None, // Finite: use all
+        Some(_) => None,                // Finite: use all
         None => Some(input_len.max(8)), // Infinite: limit to input length
     };
 

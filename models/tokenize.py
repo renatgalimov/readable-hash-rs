@@ -27,7 +27,7 @@ TOTAL_VOCAB_SIZE = NUM_BEGINNING_TOKENS + NUM_END_TOKENS + NUM_MIDDLE_TOKENS
 
 MAX_TOKENS_PER_WORD = 16
 MIN_TOKENS_PER_WORD = 2
-BITS_PER_TOKEN_ESTIMATE = 7
+BITS_PER_TOKEN_ESTIMATE = 8
 
 
 def extract_words(text: str) -> list[str]:
@@ -166,25 +166,33 @@ def tokenize_word(word: str, vocab: dict[str, int]) -> list[str]:
     return tokens
 
 
-def build_cumulative_list(counts: Counter[int]) -> list[list[int | float]]:
-    """Convert counts to cumulative probability list sorted by frequency."""
+def build_cumulative_list(counts: Counter[int]) -> list[list[int]]:
+    """Convert counts to cumulative thresholds in 0..=255 sorted by frequency."""
     total = sum(counts.values())
     if total == 0:
         return []
-    items = sorted(counts.items(), key=lambda x: -x[1])
-    cumulative = 0.0
-    result: list[list[int | float]] = []
+    items = sorted(counts.items(), key=lambda item: -item[1])
+    cumulative_count = 0
+    last_threshold = 0
+    result: list[list[int]] = []
     for token_id, count in items:
-        cumulative += count / total
-        result.append([token_id, round(cumulative, 6)])
+        cumulative_count += count
+        threshold = round(cumulative_count * 255 / total)
+        if threshold < last_threshold:
+            threshold = last_threshold
+        if threshold > 255:
+            threshold = 255
+        result.append([token_id, threshold])
+        last_threshold = threshold
+    result[-1][1] = 255
     return result
 
 
 def build_cumulative_transitions(
     counts: dict[int, Counter[int]],
-) -> dict[str, list[list[int | float]]]:
-    """Convert transition counts to cumulative probability dict."""
-    result: dict[str, list[list[int | float]]] = {}
+) -> dict[str, list[list[int]]]:
+    """Convert transition counts to cumulative threshold dict."""
+    result: dict[str, list[list[int]]] = {}
     for token_id, next_counts in counts.items():
         cumulative_list = build_cumulative_list(next_counts)
         if cumulative_list:
@@ -280,7 +288,8 @@ def main():
     id_to_token_list = [id_to_token.get(i, f"[UNK:{i}]") for i in range(TOTAL_VOCAB_SIZE)]
 
     model_data = {
-        "version": "1.0",
+        "version": "1.1",
+        "probability_resolution_bits": 8,
         "total_words": len(all_words),
         "vocab": vocab,
         "id_to_token": id_to_token_list,

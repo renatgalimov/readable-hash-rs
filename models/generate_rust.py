@@ -35,21 +35,24 @@ def generate_rust_code(model: dict) -> str:
     lines.append("];")
     lines.append("")
 
-    # Begin transitions: [(token_id, cumulative_prob_u16), ...]
-    # Convert float probabilities to u16 (0-65535) for efficiency
+    # Begin transitions: [(token_id, cumulative_prob_u8), ...]
+    # Convert float probabilities to u8 (0-255) for efficiency
     lines.append("/// Beginning token transitions.")
-    lines.append("/// Format: (token_id, cumulative_probability as u16)")
-    lines.append(f"pub const BEGIN_TRANSITIONS: [(u16, u16); {len(begin_transitions)}] = [")
+    lines.append("/// Format: (token_id, cumulative_probability as u8)")
+    lines.append(f"pub const BEGIN_TRANSITIONS: [(u16, u8); {len(begin_transitions)}] = [")
     for token_id, cumulative in begin_transitions:
-        cum_u16 = min(65535, int(cumulative * 65535))
-        lines.append(f"    ({token_id}, {cum_u16}),")
+        if isinstance(cumulative, float) and cumulative <= 1.0:
+            cum_u8 = min(255, int(cumulative * 255))
+        else:
+            cum_u8 = min(255, int(cumulative))
+        lines.append(f"    ({token_id}, {cum_u8}),")
     lines.append("];")
     lines.append("")
 
     # Build transition arrays
     # We need a compact representation. Use a flat array with index pointers.
     # Format: TRANSITION_INDEX[token_id] = (start, len) into TRANSITION_DATA
-    # TRANSITION_DATA = [(next_token_id, cumulative_u16), ...]
+    # TRANSITION_DATA = [(next_token_id, cumulative_u8), ...]
 
     transition_index = []
     transition_data = []
@@ -58,8 +61,11 @@ def generate_rust_code(model: dict) -> str:
         if key in transitions:
             start = len(transition_data)
             for next_id, cumulative in transitions[key]:
-                cum_u16 = min(65535, int(cumulative * 65535))
-                transition_data.append((next_id, cum_u16))
+                if isinstance(cumulative, float) and cumulative <= 1.0:
+                    cum_u8 = min(255, int(cumulative * 255))
+                else:
+                    cum_u8 = min(255, int(cumulative))
+                transition_data.append((next_id, cum_u8))
             length = len(transition_data) - start
             transition_index.append((start, length))
         else:
@@ -72,10 +78,10 @@ def generate_rust_code(model: dict) -> str:
     lines.append("];")
     lines.append("")
 
-    lines.append("/// Transition data: (next_token_id, cumulative_probability as u16)")
-    lines.append(f"pub const TRANSITION_DATA: [(u16, u16); {len(transition_data)}] = [")
-    for next_id, cum_u16 in transition_data:
-        lines.append(f"    ({next_id}, {cum_u16}),")
+    lines.append("/// Transition data: (next_token_id, cumulative_probability as u8)")
+    lines.append(f"pub const TRANSITION_DATA: [(u16, u8); {len(transition_data)}] = [")
+    for next_id, cum_u8 in transition_data:
+        lines.append(f"    ({next_id}, {cum_u8}),")
     lines.append("];")
     lines.append("")
 
@@ -87,8 +93,11 @@ def generate_rust_code(model: dict) -> str:
         if key in end_transitions:
             start = len(end_transition_data)
             for next_id, cumulative in end_transitions[key]:
-                cum_u16 = min(65535, int(cumulative * 65535))
-                end_transition_data.append((next_id, cum_u16))
+                if isinstance(cumulative, float) and cumulative <= 1.0:
+                    cum_u8 = min(255, int(cumulative * 255))
+                else:
+                    cum_u8 = min(255, int(cumulative))
+                end_transition_data.append((next_id, cum_u8))
             length = len(end_transition_data) - start
             end_transition_index.append((start, length))
         else:
@@ -101,10 +110,10 @@ def generate_rust_code(model: dict) -> str:
     lines.append("];")
     lines.append("")
 
-    lines.append("/// End transition data: (end_token_id, cumulative_probability as u16)")
-    lines.append(f"pub const END_TRANSITION_DATA: [(u16, u16); {len(end_transition_data)}] = [")
-    for next_id, cum_u16 in end_transition_data:
-        lines.append(f"    ({next_id}, {cum_u16}),")
+    lines.append("/// End transition data: (end_token_id, cumulative_probability as u8)")
+    lines.append(f"pub const END_TRANSITION_DATA: [(u16, u8); {len(end_transition_data)}] = [")
+    for next_id, cum_u8 in end_transition_data:
+        lines.append(f"    ({next_id}, {cum_u8}),")
     lines.append("];")
     lines.append("")
 
@@ -112,7 +121,7 @@ def generate_rust_code(model: dict) -> str:
     lines.append("""use crate::ByteReader;
 
 /// Find token by binary searching cumulative probabilities.
-fn find_token(transitions: &[(u16, u16)], value: u16) -> u16 {
+fn find_token(transitions: &[(u16, u8)], value: u8) -> u16 {
     for (token_id, cumulative) in transitions {
         if *cumulative >= value {
             return *token_id;
@@ -169,17 +178,17 @@ impl<'a, R: ByteReader> BitReader<'a, R> {
         (self.buffer.len() * 8).saturating_sub(self.bit_pos)
     }
 
-    fn read_u16(&mut self) -> Option<u16> {
-        if !self.ensure_bits(16) {
+    fn read_u8(&mut self) -> Option<u8> {
+        if !self.ensure_bits(8) {
             return None;
         }
 
-        let mut result: u16 = 0;
-        for _ in 0..16 {
+        let mut result: u8 = 0;
+        for _ in 0..8 {
             let byte_idx = self.bit_pos / 8;
             let bit_idx = self.bit_pos % 8;
             let bit = (self.buffer[byte_idx] >> (7 - bit_idx)) & 1;
-            result = (result << 1) | (bit as u16);
+            result = (result << 1) | (bit as u8);
             self.bit_pos += 1;
         }
         Some(result)
@@ -201,7 +210,7 @@ pub fn generate_word<R: ByteReader>(reader: &mut R) -> String {
     let mut result = String::new();
 
     // Select beginning token
-    let Some(begin_value) = bit_reader.read_u16() else {
+    let Some(begin_value) = bit_reader.read_u8() else {
         return String::new();
     };
     let first_token = find_token(&BEGIN_TRANSITIONS, begin_value);
@@ -215,7 +224,7 @@ pub fn generate_word<R: ByteReader>(reader: &mut R) -> String {
         if len == 0 {
             break;
         }
-        let Some(value) = bit_reader.read_u16() else {
+        let Some(value) = bit_reader.read_u8() else {
             break;
         };
         let trans = &TRANSITION_DATA[start as usize..(start as usize + len as usize)];
@@ -229,7 +238,7 @@ pub fn generate_word<R: ByteReader>(reader: &mut R) -> String {
         let (start, len) = END_TRANSITION_INDEX[current as usize];
         if len > 0 {
             let trans = &END_TRANSITION_DATA[start as usize..(start as usize + len as usize)];
-            let value = bit_reader.read_u16().unwrap_or(0);
+            let value = bit_reader.read_u8().unwrap_or(0);
             let end_token = find_token(trans, value);
             tokens.push(end_token);
             result.push_str(token_text(end_token));

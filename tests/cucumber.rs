@@ -1,8 +1,8 @@
 use cucumber::{World as _, given, then, when};
 use futures::executor::block_on;
-use readable_hash::{english_word, english_word_hash, naive_readable_hash, SliceReader, StdHasher};
 #[cfg(feature = "shake256")]
 use readable_hash::Shake256Hasher;
+use readable_hash::{SliceReader, StdHasher, english_word, english_word_hash, naive_readable_hash};
 
 #[derive(Debug, Default, Clone, Copy, PartialEq)]
 enum HasherType {

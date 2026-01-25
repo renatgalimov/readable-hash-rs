@@ -10,10 +10,10 @@ Feature: Generate English-like words from hash
 
     Examples:
       | input | output       |
-      | hello | hierostators |
-      | world | bunkokser    |
-      | test  | amritorimore |
-      |       | backahard    |
+      | hello | hipportivershauvor |
+      | world | excentshipmovaced |
+      | test  | amaharbaulticulhand |
+      |       |                  |
 
   Scenario Outline: all hashes are single words
     Given the input "<input>"
@@ -36,10 +36,10 @@ Feature: Generate English-like words from hash
 
     Examples:
       | hex          | output   |
-      | DEADBEEF     | symore   |
-      | DEADBEEFCAFE | symorius |
-      | 00000000     | revers   |
-      | FFFFFFFF     | ovens    |
+      | DEADBEEF     | syruleole |
+      | DEADBEEFCAFE | syruleolynther |
+      | 00000000     | reversatis |
+      | FFFFFFFF     | xpugnees |
 
   Scenario: generate_word handles empty entropy
     Given the entropy bytes ""

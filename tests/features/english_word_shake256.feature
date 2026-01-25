@@ -11,7 +11,7 @@ Feature: Generate English-like words from hash with SHAKE256
 
     Examples:
       | input | output        |
-      | hello | magnaunging   |
-      | world | dabberimented |
-      | test  | yttinghip     |
-      |       | roubbirth     |
+      | hello | maxxicancularderly |
+      | world | filesiasticitativerst |
+      | test  | yanatomixxedult |
+      |       |                     |
