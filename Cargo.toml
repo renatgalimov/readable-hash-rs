@@ -2,7 +2,7 @@
 name = "readable-hash"
 version = "0.1.1"
 edition = "2024"
-description = "Generate sentences in a made-up language from SHA-256 hashes using syllable mapping"
+description = "Human-readable hash representations for easy verification and data obfuscation"
 readme = "README.md"
 repository = "https://github.com/renatgalimov/readable-hash-rs"
 documentation = "https://docs.rs/readable-hash"

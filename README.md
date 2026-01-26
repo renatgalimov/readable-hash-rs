@@ -7,7 +7,12 @@
 [![Crates.io](https://img.shields.io/crates/v/readable-hash.svg)](https://crates.io/crates/readable-hash)
 
 # readable-hash-rs
-Human-readable hashes for Rust, producing sentences in a made-up language.
+
+Hashes like `a7b9c3d4e5f6...` are hard to read, compare, and remember. This crate transforms hash bytes into pronounceable text, making them easier on human eyes.
+
+You might use this when verifying file integrity visually, or when you need consistent pseudonyms for names and addresses without caring much about cryptographic strength. It's also handy during debugging when you want to quickly tell hashes apart.
+
+This crate is not trying to be the most secure, fastest, or most entropy-efficient solution. The goal is simply readability.
 
 ## Usage
 
