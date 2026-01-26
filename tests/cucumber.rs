@@ -2,7 +2,7 @@ use cucumber::{World as _, given, then, when};
 use futures::executor::block_on;
 #[cfg(feature = "shake256")]
 use readable_hash::Shake256Hasher;
-use readable_hash::{SliceReader, StdHasher, english_word, english_word_hash, naive_readable_hash};
+use readable_hash::{SliceReader, StdHasher, english_word, english_word_hash};
 
 #[derive(Debug, Default, Clone, Copy, PartialEq)]
 enum HasherType {
@@ -34,15 +34,6 @@ fn use_std_hasher(world: &mut HashWorld) {
 #[given("using the shake256 hasher")]
 fn use_shake256_hasher(world: &mut HashWorld) {
     world.hasher_type = HasherType::Shake256;
-}
-
-#[when("the hash is generated")]
-fn generate_hash(world: &mut HashWorld) {
-    world.output = match world.hasher_type {
-        HasherType::Std => naive_readable_hash::<StdHasher, _>(&world.input),
-        #[cfg(feature = "shake256")]
-        HasherType::Shake256 => naive_readable_hash::<Shake256Hasher, _>(&world.input),
-    };
 }
 
 #[when("the english word hash is generated")]

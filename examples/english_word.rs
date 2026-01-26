@@ -1,6 +1,6 @@
 #[cfg(feature = "shake256")]
 use readable_hash::Shake256Hasher;
-use readable_hash::{StdHasher, english_word_hash, naive_readable_hash};
+use readable_hash::{StdHasher, english_word_hash};
 
 fn main() {
     println!("StdHasher examples:");
@@ -19,10 +19,6 @@ fn main() {
     println!(
         "  english_word_hash(\"\")      -> {}",
         english_word_hash::<StdHasher, _>("")
-    );
-    println!(
-        "  naive_readable_hash(\"hello\") -> {}",
-        naive_readable_hash::<StdHasher, _>("hello")
     );
 
     #[cfg(feature = "shake256")]
@@ -44,10 +40,6 @@ fn main() {
         println!(
             "  english_word_hash(\"\")      -> {}",
             english_word_hash::<Shake256Hasher, _>("")
-        );
-        println!(
-            "  naive_readable_hash(\"hello\") -> {}",
-            naive_readable_hash::<Shake256Hasher, _>("hello")
         );
     }
 }

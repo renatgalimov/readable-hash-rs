@@ -22,29 +22,24 @@ Add the crate to your `Cargo.toml`:
 readable-hash = "0.1"
 ```
 
-Generate a hash sentence:
+Generate a readable hash:
 
 ```rust
-use readable_hash::naive_readable_hash;
+use readable_hash::{english_word_hash, StdHasher};
 
 fn main() {
-    let sentence = naive_readable_hash("hello");
-    println!("{sentence}");
-    // ungtoattmeertant dipresecorvisuch osfrom usellremight itthasiss upfeprojthem uthver off abljahim iz
+    let word = english_word_hash::<StdHasher, _>("hello");
+    println!("{word}");
+    // thatised
 }
 ```
 
-More examples (StdHasher + `naive_readable_hash`):
+More examples:
 
 ```text
-"I" -> "onlsuch popeall befons ig"
-"a" -> "agrconsigweundaccsomthen "
-"me" -> "ons ight ecekught ecelke"
-"random" -> "gutexortught lient ugh ek"
-"middle" -> "ent was ight rodonplacugh go"
-"words" -> "men faend contitrepoem"
-"supercalifragilisticexpialidocious" -> "ern takorduthpajabut he"
-"pneumonoultramicroscopicsilicovolcanoconiosis" -> "dithem ittinhetleheag"
+"I" -> "waged"
+"different" -> "imaumates"
+"pneumonoultramicroscopicsilicovolcanoconiosis" -> "dummaricardemastria"
 ```
 
 ## Tokenizer
