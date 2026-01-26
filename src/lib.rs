@@ -1,7 +1,14 @@
-//! Generate human-readable strings from hash outputs.
+//! Hashes like `a7b9c3d4e5f6...` are hard to read, compare, and remember.
+//! This crate transforms hash bytes into pronounceable text, making them
+//! easier on human eyes.
 //!
-//! This crate provides configurable hashers and multiple output formats
-//! for generating memorable, pronounceable strings from arbitrary input.
+//! You might use this when verifying file integrity visually, or when you
+//! need consistent pseudonyms for names and addresses without caring much
+//! about cryptographic strength. It's also handy during debugging when you
+//! want to quickly tell hashes apart.
+//!
+//! This crate is not trying to be the most secure, fastest, or most
+//! entropy-efficient solution. The goal is simply readability.
 
 use std::hash::{DefaultHasher, Hasher};
 
@@ -11,7 +18,6 @@ use sha3::Shake256;
 use sha3::digest::{ExtendableOutput, Update as XofUpdate, XofReader};
 
 pub mod english_word;
-mod traits;
 
 // ============================================================================
 // Core Traits
@@ -274,7 +280,7 @@ impl<R: ByteReader> LimitedByteReader<R> {
 impl<R: ByteReader> ByteReader for LimitedByteReader<R> {
     fn read(&mut self, dest: &mut [u8]) -> usize {
         let max_read = match self.remaining {
-            Some(remaining) if remaining == 0 => return 0,
+            Some(0) => return 0,
             Some(remaining) => dest.len().min(remaining),
             None => dest.len(),
         };
