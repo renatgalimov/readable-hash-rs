@@ -19,4 +19,4 @@ jobs:
         run: cargo install cargo-fuzz
 
       - name: Run fuzzing (short)
-        run: cargo +nightly fuzz run obfuscate_json -- -max_total_time=30
+        run: cargo +nightly fuzz run generate_word -- -max_total_time=30
