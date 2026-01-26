@@ -18,7 +18,6 @@ use sha3::Shake256;
 use sha3::digest::{ExtendableOutput, Update as XofUpdate, XofReader};
 
 pub mod english_word;
-mod traits;
 
 // ============================================================================
 // Core Traits
@@ -281,7 +280,7 @@ impl<R: ByteReader> LimitedByteReader<R> {
 impl<R: ByteReader> ByteReader for LimitedByteReader<R> {
     fn read(&mut self, dest: &mut [u8]) -> usize {
         let max_read = match self.remaining {
-            Some(remaining) if remaining == 0 => return 0,
+            Some(0) => return 0,
             Some(remaining) => dest.len().min(remaining),
             None => dest.len(),
         };
