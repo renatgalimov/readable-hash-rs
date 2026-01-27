@@ -22,3 +22,10 @@ repos:
         language: system
         types: [rust]
         pass_filenames: false
+
+      - id: cargo-test
+        name: cargo test
+        entry: cargo test --all-features
+        language: system
+        types: [rust]
+        pass_filenames: false
