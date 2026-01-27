@@ -18,6 +18,7 @@ use sha3::Shake256;
 use sha3::digest::{ExtendableOutput, Update as XofUpdate, XofReader};
 
 pub mod english_word;
+mod english_word_data;
 
 // ============================================================================
 // Core Traits
