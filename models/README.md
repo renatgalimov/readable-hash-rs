@@ -151,10 +151,10 @@ Convert the model to Rust code for use in the library:
 python3 generate_rust.py training-data/english-lowercase-model.json
 ```
 
-This generates `../src/english_word.rs` containing:
+This generates `../src/english_word_data.rs` containing:
 - Static token vocabulary
 - Transition tables with cumulative probabilities
-- `generate_word()` function for word generation
+- Data tables used by `english_word`'s generation functions
 
 ### Rust API
 
