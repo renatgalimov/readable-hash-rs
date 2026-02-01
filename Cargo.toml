@@ -1,6 +1,6 @@
 [package]
 name = "readable-hash"
-version = "0.1.1"
+version = "0.10.3"
 edition = "2024"
 description = "Human-readable hash representations for easy verification and data obfuscation"
 readme = "README.md"

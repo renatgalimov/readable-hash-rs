@@ -14,9 +14,11 @@ def escape_rust_string(s: str) -> str:
 def generate_rust_code(model: dict) -> str:
     """Generate Rust module code from the model."""
     id_to_token = model["id_to_token"]
-    begin_transitions = model["begin_transitions"]
-    transitions = model["transitions"]
-    end_transitions = model["end_transitions"]
+    ngrams = model["ngrams"]
+    end_ngrams = model["end_ngrams"]
+    ngram_size = int(model["ngram_size"])
+    probability_bits = int(model["probability_resolution_bits"])
+    probability_max = (1 << probability_bits) - 1
 
     lines = []
     lines.append("//! N-gram model for generating English-like words from entropy.")
@@ -35,85 +37,112 @@ def generate_rust_code(model: dict) -> str:
     lines.append("];")
     lines.append("")
 
-    # Begin transitions: [(token_id, cumulative_prob_u8), ...]
-    # Convert float probabilities to u8 (0-255) for efficiency
-    lines.append("/// Beginning token transitions.")
-    lines.append("/// Format: (`token_id`, `cumulative_probability` as u8)")
-    lines.append(f"pub const BEGIN_TRANSITIONS: [(u16, u8); {len(begin_transitions)}] = [")
-    for token_id, cumulative in begin_transitions:
-        if isinstance(cumulative, float) and cumulative <= 1.0:
-            cum_u8 = min(255, int(cumulative * 255))
-        else:
-            cum_u8 = min(255, int(cumulative))
-        lines.append(f"    ({token_id}, {cum_u8}),")
-    lines.append("];")
+    lines.append(f"pub const NGRAM_SIZE: usize = {ngram_size};")
+    lines.append("pub const NONE_TOKEN: u16 = u16::MAX;")
+    lines.append(f"pub const PROBABILITY_BITS: u8 = {probability_bits};")
+    lines.append(f"pub const PROBABILITY_MAX: u32 = {probability_max};")
     lines.append("")
 
-    # Build transition arrays
-    # We need a compact representation. Use a flat array with index pointers.
-    # Format: TRANSITION_INDEX[token_id] = (start, len) into TRANSITION_DATA
-    # TRANSITION_DATA = [(next_token_id, cumulative_u8), ...]
+    def encode_token(token: int | None) -> int:
+        return 65535 if token is None else int(token)
 
-    transition_index = []
-    transition_data = []
-    for token_id in range(len(id_to_token)):
-        key = str(token_id)
-        if key in transitions:
+    def context_sort_key(value: tuple[int | None, ...]) -> tuple[int, ...]:
+        return tuple(encode_token(item) for item in value)
+
+    def build_transition_tables(
+        raw_ngrams: list[list[object]],
+        *,
+        filter_fn=None,
+    ) -> tuple[list[tuple[int | None, ...]], list[tuple[int, int]], list[tuple[int, int]]]:
+        context_len = max(ngram_size - 1, 0)
+        context_counts: dict[tuple[int | None, ...], list[tuple[int | None, int]]] = {}
+        for ngram, weight in raw_ngrams:
+            if len(ngram) != ngram_size:
+                raise ValueError("ngram size does not match model ngram_size")
+            context = tuple(ngram[:-1])
+            next_token = ngram[-1]
+            if filter_fn and not filter_fn(next_token):
+                continue
+            context_counts.setdefault(context, []).append((next_token, int(weight)))
+
+        contexts = sorted(context_counts.keys(), key=context_sort_key)
+        transition_index: list[tuple[int, int]] = []
+        transition_data: list[tuple[int, int]] = []
+        for context in contexts:
             start = len(transition_data)
-            for next_id, cumulative in transitions[key]:
-                if isinstance(cumulative, float) and cumulative <= 1.0:
-                    cum_u8 = min(255, int(cumulative * 255))
-                else:
-                    cum_u8 = min(255, int(cumulative))
-                transition_data.append((next_id, cum_u8))
+            cumulative = 0
+            for next_token, weight in context_counts[context]:
+                cumulative += weight
+                transition_data.append((encode_token(next_token), cumulative))
             length = len(transition_data) - start
             transition_index.append((start, length))
-        else:
-            transition_index.append((0, 0))
+        return contexts, transition_index, transition_data
 
-    lines.append("/// Index into `TRANSITION_DATA`: (start, length) for each token.")
-    lines.append(f"pub const TRANSITION_INDEX: [(u32, u16); {len(transition_index)}] = [")
-    for start, length in transition_index:
+    def is_end_token(token: int | None) -> bool:
+        if token is None:
+            return False
+        return 256 <= int(token) < 512
+
+    context_len = max(ngram_size - 1, 0)
+    lines.append(f"pub const CONTEXT_LEN: usize = {context_len};")
+
+    middle_contexts, middle_index, middle_data = build_transition_tables(
+        ngrams, filter_fn=lambda token: not is_end_token(token)
+    )
+    lines.append(
+        f"pub const MIDDLE_CONTEXTS: [[u16; {context_len}]; {len(middle_contexts)}] = ["
+    )
+    for context in middle_contexts:
+        encoded = [encode_token(item) for item in context]
+        lines.append("    [" + ", ".join(str(item) for item in encoded) + "],")
+    lines.append("];")
+    lines.append("")
+
+    lines.append("/// Index into `MIDDLE_TRANSITION_DATA`: (start, length) for each context.")
+    lines.append(
+        f"pub const MIDDLE_TRANSITION_INDEX: [(u32, u16); {len(middle_index)}] = ["
+    )
+    for start, length in middle_index:
         lines.append(f"    ({start}, {length}),")
     lines.append("];")
     lines.append("")
 
-    lines.append("/// Transition data: (`next_token_id`, `cumulative_probability` as u8)")
-    lines.append(f"pub static TRANSITION_DATA: [(u16, u8); {len(transition_data)}] = [")
-    for next_id, cum_u8 in transition_data:
-        lines.append(f"    ({next_id}, {cum_u8}),")
+    lines.append("/// Middle transition data: (`next_token_id`, `cumulative_weight`)")
+    lines.append(
+        f"pub static MIDDLE_TRANSITION_DATA: [(u16, u32); {len(middle_data)}] = ["
+    )
+    for next_id, cumulative in middle_data:
+        lines.append(f"    ({next_id}, {cumulative}),")
     lines.append("];")
     lines.append("")
 
-    # End transitions - same format
-    end_transition_index = []
-    end_transition_data = []
-    for token_id in range(len(id_to_token)):
-        key = str(token_id)
-        if key in end_transitions:
-            start = len(end_transition_data)
-            for next_id, cumulative in end_transitions[key]:
-                if isinstance(cumulative, float) and cumulative <= 1.0:
-                    cum_u8 = min(255, int(cumulative * 255))
-                else:
-                    cum_u8 = min(255, int(cumulative))
-                end_transition_data.append((next_id, cum_u8))
-            length = len(end_transition_data) - start
-            end_transition_index.append((start, length))
-        else:
-            end_transition_index.append((0, 0))
+    end_contexts, end_index, end_data = build_transition_tables(
+        end_ngrams, filter_fn=is_end_token
+    )
+    lines.append(
+        f"pub const END_CONTEXTS: [[u16; {context_len}]; {len(end_contexts)}] = ["
+    )
+    for context in end_contexts:
+        encoded = [encode_token(item) for item in context]
+        lines.append("    [" + ", ".join(str(item) for item in encoded) + "],")
+    lines.append("];")
+    lines.append("")
 
-    lines.append("/// Index into `END_TRANSITION_DATA`: (start, length) for each token.")
-    lines.append(f"pub const END_TRANSITION_INDEX: [(u32, u16); {len(end_transition_index)}] = [")
-    for start, length in end_transition_index:
+    lines.append("/// Index into `END_TRANSITION_DATA`: (start, length) for each context.")
+    lines.append(
+        f"pub const END_TRANSITION_INDEX: [(u32, u16); {len(end_index)}] = ["
+    )
+    for start, length in end_index:
         lines.append(f"    ({start}, {length}),")
     lines.append("];")
     lines.append("")
 
-    lines.append("/// End transition data: (`end_token_id`, `cumulative_probability` as u8)")
-    lines.append(f"pub static END_TRANSITION_DATA: [(u16, u8); {len(end_transition_data)}] = [")
-    for next_id, cum_u8 in end_transition_data:
-        lines.append(f"    ({next_id}, {cum_u8}),")
+    lines.append("/// End transition data: (`end_token_id`, `cumulative_weight`)")
+    lines.append(
+        f"pub static END_TRANSITION_DATA: [(u16, u32); {len(end_data)}] = ["
+    )
+    for next_id, cumulative in end_data:
+        lines.append(f"    ({next_id}, {cumulative}),")
     lines.append("];")
     lines.append("")
 
@@ -153,9 +182,8 @@ def main():
 
     print(f"Generated {len(rust_code)} bytes of Rust code")
     print(f"  Tokens: {len(model['id_to_token'])}")
-    print(f"  Begin transitions: {len(model['begin_transitions'])}")
-    print(f"  Middle transitions: {len(model['transitions'])}")
-    print(f"  End transitions: {len(model['end_transitions'])}")
+    print(f"  N-grams: {len(model['ngrams'])}")
+    print(f"  End n-grams: {len(model['end_ngrams'])}")
 
 
 if __name__ == "__main__":
