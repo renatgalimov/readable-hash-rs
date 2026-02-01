@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Train a position-aware tokenizer and build a bigram model for word beginnings.
+"""Train a position-aware tokenizer and build an n-gram model for word beginnings.
 
 Token ID layout:
 - 0-255: beginning tokens (^a, ^th, ^un, ...)
@@ -8,7 +8,7 @@ Token ID layout:
 
 Total vocabulary size: 1024
 
-The bigram model captures: beginning_token -> next_token transitions.
+The n-gram model captures fixed-length token sequences.
 """
 
 import argparse
@@ -166,43 +166,95 @@ def tokenize_word(word: str, vocab: dict[str, int]) -> list[str]:
     return tokens
 
 
-def build_cumulative_list(counts: Counter[int]) -> list[list[int]]:
-    """Convert counts to cumulative thresholds in 0..=255 sorted by frequency."""
-    total = sum(counts.values())
-    if total == 0:
+def quantize_counts(
+    counts: Counter[int],
+    max_value: int,
+    temperature: float,
+    smoothing_alpha: float,
+) -> list[tuple[int, int]]:
+    """Quantize counts into integer weights that sum to max_value."""
+    if not counts:
         return []
-    items = sorted(counts.items(), key=lambda item: -item[1])
-    cumulative_count = 0
-    last_threshold = 0
-    result: list[list[int]] = []
-    for token_id, count in items:
-        cumulative_count += count
-        threshold = round(cumulative_count * 255 / total)
-        if threshold < last_threshold:
-            threshold = last_threshold
-        if threshold > 255:
-            threshold = 255
-        result.append([token_id, threshold])
-        last_threshold = threshold
-    result[-1][1] = 255
+    if temperature <= 0:
+        raise ValueError("temperature must be greater than 0")
+    if smoothing_alpha < 0:
+        raise ValueError("smoothing_alpha must be >= 0")
+    exponent = 1.0 / temperature
+    adjusted: list[tuple[int, float]] = []
+    adjusted_map: dict[int, float] = {}
+    for token_id, count in counts.items():
+        weight = (float(count) + smoothing_alpha) ** exponent
+        adjusted.append((token_id, weight))
+        adjusted_map[token_id] = weight
+    items = sorted(adjusted, key=lambda item: -item[1])
+    bases: list[tuple[int, int, float]] = []
+    adjusted_total = sum(weight for _, weight in items)
+    if adjusted_total <= 0:
+        return []
+    if max_value < len(items):
+        base_total = 0
+        for token_id, weight in items:
+            exact = weight * max_value / adjusted_total
+            base = int(exact)
+            base_total += base
+            bases.append((token_id, base, exact - base))
+    else:
+        base_total = len(items)
+        remaining_pool = max_value - base_total
+        for token_id, weight in items:
+            exact = weight * remaining_pool / adjusted_total
+            base = 1 + int(exact)
+            base_total += base - 1
+            bases.append((token_id, base, exact - int(exact)))
+    remaining = max_value - base_total
+    if remaining > 0:
+        bases.sort(key=lambda item: item[2], reverse=True)
+        for index in range(remaining):
+            token_id, base, remainder = bases[index]
+            bases[index] = (token_id, base + 1, remainder)
+        bases.sort(key=lambda item: -adjusted_map[item[0]])
+    return [(token_id, weight) for token_id, weight, _ in bases]
+
+
+def build_ngram_quantized_list(
+    ngram_counts: Counter[tuple[int | None, ...]],
+    max_value: int,
+    temperature: float,
+    smoothing_alpha: float,
+) -> list[list[object]]:
+    """Convert n-gram counts to a flat list of [ngram, weight]."""
+    if not ngram_counts:
+        return []
+    context_counts: dict[tuple[int | None, ...], Counter[int | None]] = defaultdict(Counter)
+    for ngram, count in ngram_counts.items():
+        context = ngram[:-1]
+        next_token = ngram[-1]
+        context_counts[context][next_token] += count
+
+    result: list[list[object]] = []
+    def sort_key(value: tuple[int | None, ...]) -> tuple[int, ...]:
+        return tuple(-1 if item is None else item for item in value)
+
+    for context in sorted(context_counts.keys(), key=sort_key):
+        quantized = quantize_counts(
+            context_counts[context],
+            max_value,
+            temperature,
+            smoothing_alpha,
+        )
+        for next_token, weight in quantized:
+            ngram = list(context) + [next_token]
+            result.append([ngram, weight])
     return result
 
 
-def build_cumulative_transitions(
-    counts: dict[int, Counter[int]],
-) -> dict[str, list[list[int]]]:
-    """Convert transition counts to cumulative threshold dict."""
-    result: dict[str, list[list[int]]] = {}
-    for token_id, next_counts in counts.items():
-        cumulative_list = build_cumulative_list(next_counts)
-        if cumulative_list:
-            result[str(token_id)] = cumulative_list
-    return result
+def is_end_token(token_id: int) -> bool:
+    return NUM_BEGINNING_TOKENS <= token_id < NUM_BEGINNING_TOKENS + NUM_END_TOKENS
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Train a position-aware tokenizer and build bigram model"
+        description="Train a position-aware tokenizer and build n-gram model"
     )
     parser.add_argument(
         "input",
@@ -216,6 +268,33 @@ def main():
         type=Path,
         default=Path("training-data"),
         help="Output directory (default: training-data)",
+    )
+    parser.add_argument(
+        "-n",
+        "--ngram-size",
+        type=int,
+        default=2,
+        help="N-gram size for the model (default: 2)",
+    )
+    parser.add_argument(
+        "-p",
+        "--probability-bits",
+        type=int,
+        default=8,
+        help="Probability resolution bits for quantized weights (default: 8)",
+    )
+    parser.add_argument(
+        "-t",
+        "--temperature",
+        type=float,
+        default=1.0,
+        help="Temperature for smoothing token probabilities (default: 1.0)",
+    )
+    parser.add_argument(
+        "--smoothing-alpha",
+        type=float,
+        default=0.0,
+        help="Additive smoothing for token counts per context (default: 0.0)",
     )
     args = parser.parse_args()
 
@@ -254,11 +333,29 @@ def main():
     vocab = build_vocabulary(beginning_counts, end_counts, middle_counts)
 
     print("Building transition models...")
-    begin_counts: Counter[int] = Counter()
-    transition_counts: dict[int, Counter[int]] = defaultdict(Counter)
-    end_transition_counts: dict[int, Counter[int]] = defaultdict(Counter)
+    ngram_counts: Counter[tuple[int | None, ...]] = Counter()
+    end_ngram_counts: Counter[tuple[int | None, ...]] = Counter()
 
     skipped_words = 0
+    ngram_size = args.ngram_size
+    if ngram_size < 1:
+        print("Error: n-gram size must be at least 1")
+        return 1
+
+    probability_bits = args.probability_bits
+    if probability_bits < 1:
+        print("Error: probability resolution bits must be at least 1")
+        return 1
+    temperature = args.temperature
+    if temperature <= 0:
+        print("Error: temperature must be greater than 0")
+        return 1
+    smoothing_alpha = args.smoothing_alpha
+    if smoothing_alpha < 0:
+        print("Error: smoothing alpha must be >= 0")
+        return 1
+    max_probability_value = (1 << probability_bits) - 1
+
     for word in all_words:
         tokens = tokenize_word(word, vocab)
         if not tokens:
@@ -270,16 +367,17 @@ def main():
             skipped_words += 1
             continue
 
-        begin_counts[token_ids[0]] += 1
-
-        for index in range(len(token_ids) - 1):
-            current_id = token_ids[index]
-            next_id = token_ids[index + 1]
-
-            if NUM_BEGINNING_TOKENS <= next_id < NUM_BEGINNING_TOKENS + NUM_END_TOKENS:
-                end_transition_counts[current_id][next_id] += 1
-            else:
-                transition_counts[current_id][next_id] += 1
+        for position_index in range(len(token_ids)):
+            ngram: list[int | None] = []
+            start_index = position_index - (ngram_size - 1)
+            for history_index in range(start_index, position_index + 1):
+                if history_index < 0:
+                    ngram.append(None)
+                else:
+                    ngram.append(token_ids[history_index])
+            ngram_counts[tuple(ngram)] += 1
+            if is_end_token(token_ids[position_index]):
+                end_ngram_counts[tuple(ngram)] += 1
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     base_name = input_files[0].stem if args.input else "stdin"
@@ -288,14 +386,20 @@ def main():
     id_to_token_list = [id_to_token.get(i, f"[UNK:{i}]") for i in range(TOTAL_VOCAB_SIZE)]
 
     model_data = {
-        "version": "1.1",
-        "probability_resolution_bits": 8,
+        "version": "2.0",
+        "probability_resolution_bits": probability_bits,
+        "ngram_size": args.ngram_size,
+        "temperature": temperature,
+        "smoothing_alpha": smoothing_alpha,
         "total_words": len(all_words),
         "vocab": vocab,
         "id_to_token": id_to_token_list,
-        "begin_transitions": build_cumulative_list(begin_counts),
-        "transitions": build_cumulative_transitions(transition_counts),
-        "end_transitions": build_cumulative_transitions(end_transition_counts),
+        "ngrams": build_ngram_quantized_list(
+            ngram_counts, max_probability_value, temperature, smoothing_alpha
+        ),
+        "end_ngrams": build_ngram_quantized_list(
+            end_ngram_counts, max_probability_value, temperature, smoothing_alpha
+        ),
     }
     model_path = args.output_dir / f"{base_name}-model.json"
     model_path.write_text(json.dumps(model_data, indent=2), encoding="utf-8")
@@ -311,9 +415,8 @@ def main():
     print(f"Total words processed: {len(all_words)}")
     if skipped_words > 0:
         print(f"Skipped words (unknown tokens): {skipped_words}")
-    print(f"Begin transitions: {len(model_data['begin_transitions'])} beginning tokens")
-    print(f"Middle transitions: {len(model_data['transitions'])} tokens have next-token data")
-    print(f"End transitions: {len(model_data['end_transitions'])} tokens have end-token data")
+    print(f"N-grams: {len(model_data['ngrams'])} sequences")
+    print(f"End n-grams: {len(model_data['end_ngrams'])} sequences")
     print(f"Saved model to {model_path}")
 
 
