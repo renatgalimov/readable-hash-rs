@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Run Lint Action (Clippy + rustfmt with auto-fix)
-        uses: wearerequired/lint-action@df31ae8635c46366688e0bea44d7aba2e1468813
+        uses: wearerequired/lint-action@84fb7e55e974d7a828ee45c45485f08d3614c8d9
         with:
           # Turn on global auto-fix + commit
           auto_fix: false
