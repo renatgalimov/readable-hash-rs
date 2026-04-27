@@ -11,7 +11,7 @@ Feature: Generate English-like words from hash with SHAKE256
 
     Examples:
       | input | output        |
-      | hello | mason |
-      | world | fining |
-      | test  | yates |
+      | hello | eying |
+      | world | ender |
+      | test  | notions |
       |       |                     |
