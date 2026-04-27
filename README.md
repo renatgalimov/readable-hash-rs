@@ -42,58 +42,25 @@ More examples:
 "pneumonoultramicroscopicsilicovolcanoconiosis" -> "dummaricardemastria"
 ```
 
-## Tokenizer
+## Training data and models
 
-The `models/` directory bundles a small sample corpus and Python utilities for
-training a BPE tokenizer with explicit word boundary markers using the
-[`tokenizers`](https://github.com/huggingface/tokenizers) library.
+The `models/` directory contains the current tokenizer, n-gram trainer, and
+model conversion utilities. The workflow uses a position-aware tokenizer and
+8-bit cumulative probability tables. For full details, see
+`models/README.md`.
 
-Install dependencies and train the tokenizer:
-
-```bash
-pip install -r models/requirements.txt
-python models/train_tokenizer.py models/sample_corpus.txt
-```
-
-This writes the tokenizer files into `models/tokenizer/`. You can verify that
-the tokenizer works by encoding text with the helper script. The training
-script normalizes input using Unicode NFKC and lowercases it prior to
-tokenization, so differently cased forms produce the same tokens. Tokens that
-continue a word are prefixed with `##`, while tokens finishing a word carry a
-`</w>` suffix.
+To train a model from text files and emit a JSON model with 8-bit cumulative
+thresholds:
 
 ```bash
-python models/tokenizer_check.py models/tokenizer/tokenizer.json "Hello WORLD"
+python3 models/tokenize.py models/training-data/english-lowercase.txt -o models/training-data/
 ```
 
-## N-gram model
-
-With a tokenizer trained, an n-gram language model can be built from the
-corpus:
+To convert that model into Rust source for the crate:
 
 ```bash
-python models/train_ngram.py models/sample_corpus.txt
+python3 models/generate_rust.py models/training-data/english-lowercase-model.json
 ```
-
-Pass `-n` to control the order (default 2 for bigrams).
-
-The tokenizer must define start (`<s>`) and end (`</s>`) tokens, which the
-script uses to mark sentence boundaries. It also verifies that tokens respect
-word-boundary markers (`##` prefixes and `</w>` suffixes) before accumulating
-statistics. The result is written to ``ngram.json`` and stores transition
-probabilities between token ids.
-
-## Generating the 8-bit model
-
-Use the built-in tokenizer/trainer to produce a JSON model with 8-bit
-cumulative thresholds (0..=255):
-
-```bash
-python models/tokenize.py models/sample_corpus.txt -o training-data
-```
-
-This writes `training-data/<input>-model.json` with 8-bit cumulative transition
-tables and includes `probability_resolution_bits: 8` in the metadata.
 
 ## Entropy consumption and weighted transitions (8-bit)
 
