@@ -24,7 +24,7 @@ jobs:
 
     steps:
       - name: Check out Git repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Run Lint Action (Clippy + rustfmt with auto-fix)
         uses: wearerequired/lint-action@84fb7e55e974d7a828ee45c45485f08d3614c8d9
