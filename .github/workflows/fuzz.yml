@@ -19,7 +19,7 @@ jobs:
         run: cargo install cargo-fuzz
 
       - name: Restore fuzz corpus and dictionary
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         with:
           path: |
             fuzz/corpus
@@ -52,7 +52,7 @@ jobs:
         run: gh cache delete fuzz-corpus || true
 
       - name: Save fuzz corpus and dictionary
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         if: always() && github.ref == 'refs/heads/main'
         with:
           path: |
