@@ -54,20 +54,19 @@ Each word is tokenized using greedy longest-match up to 6 characters:
 
 This produces a token sequence per word, typically 2–16 tokens.
 
-### 5) Build transition counts
+### 5) Build n-gram counts
 
-The model is a bigram transition table over token IDs:
+The model is a flat n-gram table over token IDs (size configurable):
 
-- `begin_transitions`: frequency of first tokens in each word.
-- `transitions`: counts for token → token where the next token is **not** an end
-  token.
-- `end_transitions`: counts for token → end-token.
+- `ngrams`: counts of fixed-length token sequences. Short prefixes are left
+  padded with `null` to reach `ngram_size`.
+- `end_ngrams`: counts of fixed-length token sequences whose final token is
+  an end token.
 
-### 6) Convert to cumulative probability tables
+### 6) Convert to quantized probability tables
 
-For each transition list, counts are converted to cumulative probabilities and
-sorted by descending frequency. This enables binary search over cumulative
-probabilities during generation.
+For each list, counts are converted to quantized integer weights (based on
+`probability_resolution_bits`) and sorted by descending frequency.
 
 ## Usage
 
@@ -96,13 +95,54 @@ The output model filename is based on the first input file stem (or `stdin`).
 This generates `training-data/english-lowercase-model.json` containing:
 - `vocab`: Token to ID mapping
 - `id_to_token`: ID to token mapping (array)
-- `begin_transitions`: Cumulative probabilities for first token selection
-- `transitions`: Token-to-token transition probabilities
-- `end_transitions`: Token-to-end-token transition probabilities
+- `ngrams`: Flat list of n-gram sequences with quantized weights
+- `end_ngrams`: Flat list of end-token n-gram sequences with quantized weights
+ - `temperature`: Temperature used to smooth token probabilities
+ - `smoothing_alpha`: Additive smoothing applied per context
+
+### N-gram Size
+
+The model uses a fixed n-gram size, configured at training time:
+
+```bash
+python3 tokenize.py corpus/ -o training-data/ --ngram-size 4
+```
+
+This value is stored in the output JSON as `ngram_size`.
+
+### Probability Resolution Bits
+
+Probabilities are quantized into integer weights using the requested resolution:
+
+```bash
+python3 tokenize.py corpus/ -o training-data/ --probability-bits 10
+```
+
+The quantized range is `0..(2^probability_resolution_bits - 1)` and the weights
+sum to the maximum value within each selection context.
+
+### Temperature
+
+Temperature smooths the distribution before quantization:
+
+```bash
+python3 tokenize.py corpus/ -o training-data/ --temperature 1.5
+```
+
+Values greater than 1.0 flatten the distribution, values below 1.0 sharpen it.
+
+### Additive Smoothing
+
+Additive smoothing ensures every token observed in a context retains some
+probability after quantization:
+
+```bash
+python3 tokenize.py corpus/ -o training-data/ --smoothing-alpha 1.0
+```
 
 ### Generate Words from Bytes
 
-The model converts entropy (bytes) into English-like words using cumulative probability distributions.
+The model converts entropy (bytes) into English-like words using quantized weights.
 
 **Example: 0xDEADBEEF (4 bytes)**
 ```
@@ -118,16 +158,15 @@ Output: snattenotlausece
 
 ### Word Generation Algorithm
 
-1. **Select beginning token**: Use first 8 bits to index into `begin_transitions`
-2. **Select middle tokens**: For each token, use bits to select from `transitions[current_token]`
-3. **Select end token**: Use remaining bits to select from `end_transitions[current_token]`
+1. **Select tokens**: Use the last `ngram_size - 1` tokens (left
+   padded with `null`) to select from `ngrams`
+2. **Select end token**: Use the same context to select from `end_ngrams`
 
-The cumulative probability format enables O(log n) binary search:
+The probability format is quantized:
 ```json
 {
-  "begin_transitions": [[token_id, cumulative_prob], ...],
-  "transitions": {"token_id": [[next_id, cumulative_prob], ...]},
-  "end_transitions": {"token_id": [[end_id, cumulative_prob], ...]}
+  "ngrams": [[[id_or_null, id_or_null, id], weight], ...],
+  "end_ngrams": [[[id_or_null, id_or_null, end_id], weight], ...]
 }
 ```
 
@@ -153,8 +192,9 @@ python3 generate_rust.py training-data/english-lowercase-model.json
 
 This generates `../src/english_word_data.rs` containing:
 - Static token vocabulary
-- Transition tables with cumulative probabilities
-- Data tables used by `english_word`'s generation functions
+- Transition tables for generation functions
+
+Note: `generate_rust.py` currently expects the legacy transition format.
 
 ### Rust API
 
