@@ -172,11 +172,11 @@ impl<'a> ByteReader for SliceReader<'a> {
 /// ```
 /// use readable_hash::{english_word_hash, StdHasher};
 ///
-/// assert_eq!(english_word_hash::<StdHasher, _>("I"), "waged");
-/// assert_eq!(english_word_hash::<StdHasher, _>("different"), "imaumates");
+/// assert_eq!(english_word_hash::<StdHasher, _>("I"), "banal");
+/// assert_eq!(english_word_hash::<StdHasher, _>("different"), "heardness");
 /// assert_eq!(
 ///     english_word_hash::<StdHasher, _>("pneumonoultramicroscopicsilicovolcanoconiosis"),
-///     "dummaricardemastria"
+///     "mouncero"
 /// );
 /// ```
 pub fn english_word_hash<H, T>(input: T) -> String
