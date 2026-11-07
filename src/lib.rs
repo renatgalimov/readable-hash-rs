@@ -19,6 +19,10 @@ use sha3::digest::{ExtendableOutput, Update as XofUpdate, XofReader};
 
 pub mod english_word;
 mod english_word_data;
+mod reversible;
+mod reversible_v1_data;
+
+pub use reversible::{decode_u64, encode_u64};
 
 // ============================================================================
 // Core Traits
