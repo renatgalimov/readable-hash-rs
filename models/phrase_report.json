@@ -1,0 +1,11 @@
+{
+ "statistics": {
+  "begin_attested": 128,
+  "corpus_words": 94080,
+  "end16_attested_fraction": 0.7115885416666666,
+  "end32_attested_fraction": 0.4763590494791667,
+  "middle_attested_fraction": 0.6162109375,
+  "segmented_words": 62942,
+  "skipped_words": 31138
+ }
+}

@@ -9,6 +9,16 @@
 //!
 //! This crate is not trying to be the most secure, fastest, or most
 //! entropy-efficient solution. The goal is simply readability.
+//!
+//! # Reversible phrases
+//!
+//! [`encode_u64`] and [`decode_u64`] turn any 64-bit value into an English-like phrase and back,
+//! exactly. See [`phrase`] for the format.
+//!
+//! ```
+//! let phrase = readable_hash::encode_u64(42);
+//! assert_eq!(readable_hash::decode_u64(&phrase), Some(42));
+//! ```
 
 use std::hash::{DefaultHasher, Hasher};
 
@@ -19,6 +29,10 @@ use sha3::digest::{ExtendableOutput, Update as XofUpdate, XofReader};
 
 pub mod english_word;
 mod english_word_data;
+pub mod phrase;
+mod phrase_data;
+
+pub use phrase::{decode_u64, encode_u64};
 
 // ============================================================================
 // Core Traits
