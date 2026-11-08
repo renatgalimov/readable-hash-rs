@@ -1,0 +1,632 @@
+[
+ {
+  "label": "fixed:0x0",
+  "value_hex": "0x0000000000000000",
+  "value": "0",
+  "v4": "abandaia abandaal abandaia",
+  "dyn_en_unique": "revers revers revers",
+  "dyn_en_fineweb": "ofference ofference ofference",
+  "dyn_tr_fineweb": "hastalık hastalık hastalık",
+  "dyn_en_unique_mix_v1": "revers revers revers"
+ },
+ {
+  "label": "fixed:0x1",
+  "value_hex": "0x0000000000000001",
+  "value": "1",
+  "v4": "adaiaca abandaal abandaia",
+  "dyn_en_unique": "revers revers revert",
+  "dyn_en_fineweb": "ofference ofference offerenting",
+  "dyn_tr_fineweb": "hastalık hastalık hastalım",
+  "dyn_en_unique_mix_v1": "unmorapex beaufficative panowkle"
+ },
+ {
+  "label": "fixed:0x2",
+  "value_hex": "0x0000000000000002",
+  "value": "2",
+  "v4": "alarbable abandaal abandaia",
+  "dyn_en_unique": "revers revers reveryths",
+  "dyn_en_fineweb": "ofference ofference offerential",
+  "dyn_tr_fineweb": "hastalık hastalık hastalığı",
+  "dyn_en_unique_mix_v1": "seignopling hornutinan secelocue"
+ },
+ {
+  "label": "fixed:0x3",
+  "value_hex": "0x0000000000000003",
+  "value": "3",
+  "v4": "anacaia abandaal abandaia",
+  "dyn_en_unique": "revers revers reverythy",
+  "dyn_en_fineweb": "ofference ofference offerention",
+  "dyn_tr_fineweb": "hastalık hastalık hastalıdır",
+  "dyn_en_unique_mix_v1": "reapodils procrucleon tabumorrence"
+ },
+ {
+  "label": "fixed:0x2a",
+  "value_hex": "0x000000000000002a",
+  "value": "42",
+  "v4": "exactaca abandaal abandaia",
+  "dyn_en_unique": "revers revers reverymotor",
+  "dyn_en_fineweb": "ofference ofference officulus",
+  "dyn_tr_fineweb": "hastalık hastalık hastalıglar",
+  "dyn_en_unique_mix_v1": "beadbarious haydovied temposopping"
+ },
+ {
+  "label": "fixed:0xff",
+  "value_hex": "0x00000000000000ff",
+  "value": "255",
+  "v4": "wobuba abandaal abandaia",
+  "dyn_en_unique": "revers revers reverywals",
+  "dyn_en_fineweb": "ofference ofference offended",
+  "dyn_tr_fineweb": "hastalık hastalık hastanin",
+  "dyn_en_unique_mix_v1": "eastasbut iriventices reviolbes"
+ },
+ {
+  "label": "fixed:0x100",
+  "value_hex": "0x0000000000000100",
+  "value": "256",
+  "v4": "abbabiage abandaal abandaia",
+  "dyn_en_unique": "revers revers reverygon",
+  "dyn_en_fineweb": "ofference ofference offenda",
+  "dyn_tr_fineweb": "hastalık hastalık hastance",
+  "dyn_en_unique_mix_v1": "paciencement sofreola telegravius"
+ },
+ {
+  "label": "fixed:0x3e8",
+  "value_hex": "0x00000000000003e8",
+  "value": "1000",
+  "v4": "shaemada abandaal abandaia",
+  "dyn_en_unique": "revers revers reverlagow",
+  "dyn_en_fineweb": "ofference ofference offolutting",
+  "dyn_tr_fineweb": "hastalık hastalık hastroudi",
+  "dyn_en_unique_mix_v1": "masconple detaxix tactyloit"
+ },
+ {
+  "label": "fixed:0xffff",
+  "value_hex": "0x000000000000ffff",
+  "value": "65535",
+  "v4": "woundhoan abandaal abandaia",
+  "dyn_en_unique": "revers revers remadilloes",
+  "dyn_en_fineweb": "ofference ofference olecapage",
+  "dyn_tr_fineweb": "hastalık hastalık hapudip",
+  "dyn_en_unique_mix_v1": "massomime tangfirmes bestinimois"
+ },
+ {
+  "label": "fixed:0x75bcd15",
+  "value_hex": "0x00000000075bcd15",
+  "value": "123456789",
+  "v4": "certiwking couchaberal abandaia",
+  "dyn_en_unique": "revers reverymous sawbariding",
+  "dyn_en_fineweb": "ofference officuld baffload",
+  "dyn_tr_fineweb": "hastalık hastalıgre yeyişittle",
+  "dyn_en_unique_mix_v1": "pawdmotive requisephus rodovados"
+ },
+ {
+  "label": "fixed:0xffffffff",
+  "value_hex": "0x00000000ffffffff",
+  "value": "4294967295",
+  "v4": "woundzz wofuciable abandaia",
+  "dyn_en_unique": "revers reverlazy aeobrotus",
+  "dyn_en_fineweb": "ofference offlous hordomodate",
+  "dyn_tr_fineweb": "hastalık hastrios sikiyasel",
+  "dyn_en_unique_mix_v1": "bertwarra sophaefed procratified"
+ },
+ {
+  "label": "fixed:0x100000000",
+  "value_hex": "0x0000000100000000",
+  "value": "4294967296",
+  "v4": "abandaia abduba abandaia",
+  "dyn_en_unique": "revers reverlazy aeobrota",
+  "dyn_en_fineweb": "ofference offlous hordomodium",
+  "dyn_tr_fineweb": "hastalık hastrios sikiyasek",
+  "dyn_en_unique_mix_v1": "sepakbos bawcohos talphistian"
+ },
+ {
+  "label": "fixed:0x7fffffffffffffff",
+  "value_hex": "0x7fffffffffffffff",
+  "value": "9223372036854775807",
+  "v4": "woundzz woundruz woundzine",
+  "dyn_en_unique": "deathlesomes farcissolton poispoones",
+  "dyn_en_fineweb": "procerylink analgapipe boattabour",
+  "dyn_tr_fineweb": "safteresan sezülislar desteriyası",
+  "dyn_en_unique_mix_v1": "untizle bactroadian cathorcium"
+ },
+ {
+  "label": "fixed:0x8000000000000000",
+  "value_hex": "0x8000000000000000",
+  "value": "9223372036854775808",
+  "v4": "abandaia abandaal abandaims",
+  "dyn_en_unique": "deathlesomes farcissolton poispooner",
+  "dyn_en_fineweb": "procerylink analgapipe boattabox",
+  "dyn_tr_fineweb": "safteresan sezülislar desteriyal",
+  "dyn_en_unique_mix_v1": "effeet bourkneve disobrovies"
+ },
+ {
+  "label": "fixed:0xfffffffffffffffe",
+  "value_hex": "0xfffffffffffffffe",
+  "value": "18446744073709551614",
+  "v4": "wizzz woundruz woundzy",
+  "dyn_en_unique": "panibasible iodlipoise meanjoto",
+  "dyn_en_fineweb": "leverbcale icemilaid totalitamins",
+  "dyn_tr_fineweb": "tativeyması disfusal bilsinekleyeyle",
+  "dyn_en_unique_mix_v1": "seventicipps remadoffish bastiffeep"
+ },
+ {
+  "label": "fixed:0xffffffffffffffff",
+  "value_hex": "0xffffffffffffffff",
+  "value": "18446744073709551615",
+  "v4": "woundzz woundruz woundzy",
+  "dyn_en_unique": "panibasible iodlipoise meanjotism",
+  "dyn_en_fineweb": "leverbcale icemilaid totalitaminal",
+  "dyn_tr_fineweb": "tativeyması disfusal bilsineklemeye",
+  "dyn_en_unique_mix_v1": "mainkwing unfacipium sixpectly"
+ },
+ {
+  "label": "fixed:0x243f6a8885a308d3",
+  "value_hex": "0x243f6a8885a308d3",
+  "value": "2611923443488327891",
+  "v4": "orierling chairasseth steinctare",
+  "dyn_en_unique": "epidicement hamaditating hauggirley",
+  "dyn_en_fineweb": "thravacum secelemmit lastcoverge",
+  "dyn_tr_fineweb": "içişöropla olanıyısty insiyajlar",
+  "dyn_en_unique_mix_v1": "palacramen ramissineve matrifacity"
+ },
+ {
+  "label": "fixed:0xdeadbeefcafebabe",
+  "value_hex": "0xdeadbeefcafebabe",
+  "value": "16045690984503098046",
+  "v4": "jerredy favoureth hereivation",
+  "dyn_en_unique": "serarimpion rodolwey solebrosius",
+  "dyn_en_fineweb": "lockbrator fondlodies facerysal",
+  "dyn_tr_fineweb": "günecihra üniliksiz delazben",
+  "dyn_en_unique_mix_v1": "debivoirless distraribey ediculluit"
+ },
+ {
+  "label": "fixed:0x5555555555555555",
+  "value_hex": "0x5555555555555555",
+  "value": "6148914691236517205",
+  "v4": "overflinless overflanny exonemont",
+  "dyn_en_unique": "unworleman sootiduition depopus",
+  "dyn_en_fineweb": "epilebration ombrangel daffeutening",
+  "dyn_tr_fineweb": "dakibiplu ürobiyada saçrafken",
+  "dyn_en_unique_mix_v1": "mawbunax tearchion cooposcund"
+ },
+ {
+  "label": "fixed:0xaaaaaaaaaaaaaaaa",
+  "value_hex": "0xaaaaaaaaaaaaaaaa",
+  "value": "12297829382473034410",
+  "v4": "exonemory exonetces overflinny",
+  "dyn_en_unique": "macbasits rosadstow settucinate",
+  "dyn_en_fineweb": "wolgression ancertcoin paperbation",
+  "dyn_tr_fineweb": "helaçram daneciktur tabihset",
+  "dyn_en_unique_mix_v1": "bedhovig gamefartz lauggio"
+ },
+ {
+  "label": "fixed:0xf0f0f0f0f0f0f0f",
+  "value_hex": "0x0f0f0f0f0f0f0f0f",
+  "value": "1085102592571150095",
+  "v4": "broughings interrobous ricawder",
+  "dyn_en_unique": "requipagon beadilward raffairmer",
+  "dyn_en_fineweb": "anglypaid digemodas necrepended",
+  "dyn_tr_fineweb": "hayişterip kastehayeyi dinlensfu",
+  "dyn_en_unique_mix_v1": "patrimonix hazzires maznemis"
+ },
+ {
+  "label": "fixed:0xf0f0f0f0f0f0f0f0",
+  "value_hex": "0xf0f0f0f0f0f0f0f0",
+  "value": "17361641481138401520",
+  "v4": "tablemote ladwed cravicius",
+  "dyn_en_unique": "pantwopei holdburda sassposie",
+  "dyn_en_fineweb": "derivejs fibertarps besipabins",
+  "dyn_tr_fineweb": "medluncy telasefs medropliği",
+  "dyn_en_unique_mix_v1": "serendaffey ithcocium sabindhood"
+ },
+ {
+  "label": "fixed:0xff00ff00ff00ff",
+  "value_hex": "0x00ff00ff00ff00ff",
+  "value": "71777214294589695",
+  "v4": "wobundy annizan revoceable",
+  "dyn_en_unique": "remoraptis tercotnois passuncier",
+  "dyn_en_fineweb": "owleaded lilawyed taxvicting",
+  "dyn_tr_fineweb": "hayabebiye buttükbaz taçtuldiler",
+  "dyn_en_unique_mix_v1": "depedigit sibholded requitthen"
+ },
+ {
+  "label": "fixed:0xff00ff00ff00ff00",
+  "value_hex": "0xff00ff00ff00ff00",
+  "value": "18374966859414961920",
+  "v4": "abutifal voglafs creaguez",
+  "dyn_en_unique": "patersbae sojodotum unhemekes",
+  "dyn_en_fineweb": "leathtable suckorcity bassifinist",
+  "dyn_tr_fineweb": "tabarekenin hegecibu bezirica",
+  "dyn_en_unique_mix_v1": "defabumini litiriggie sombirfist"
+ },
+ {
+  "label": "fixed:0x101010101010101",
+  "value_hex": "0x0101010101010101",
+  "value": "72340172838076673",
+  "v4": "adanslce archiater croacharial",
+  "dyn_en_unique": "remoraging lithnoplant solukewed",
+  "dyn_en_fineweb": "owlegial proficiopes leximum",
+  "dyn_tr_fineweb": "hayabedesi dayabesty badeppma",
+  "dyn_en_unique_mix_v1": "matermekes lambuclily soladidating"
+ },
+ {
+  "label": "fixed:0x8000000000000001",
+  "value_hex": "0x8000000000000001",
+  "value": "9223372036854775809",
+  "v4": "adaiaca abandaal abandaims",
+  "dyn_en_unique": "deathlesomes farcissolton poispooney",
+  "dyn_en_fineweb": "procerylink analgapipe boattabow",
+  "dyn_tr_fineweb": "safteresan sezülislar desteriyacak",
+  "dyn_en_unique_mix_v1": "renavivator regamorta iodosime"
+ },
+ {
+  "label": "fixed:0xffffffff0000",
+  "value_hex": "0x0000ffffffff0000",
+  "value": "281474976645120",
+  "v4": "abandoay woundruz creagansan",
+  "dyn_en_unique": "reverythful gascillots ililoid",
+  "dyn_en_fineweb": "offerestern condefixity nestmarily",
+  "dyn_tr_fineweb": "hastalıyden tetvekiye birinemenizle",
+  "dyn_en_unique_mix_v1": "betovadox dishoffrif evoiduary"
+ },
+ {
+  "label": "fixed:0x123456789abcdef0",
+  "value_hex": "0x123456789abcdef0",
+  "value": "1311768467463790320",
+  "v4": "taunellus sidestire blakedoes",
+  "dyn_en_unique": "remeloquire lightcaype safeeblour",
+  "dyn_en_fineweb": "anceset fizmothen aligibly",
+  "dyn_tr_fineweb": "ilâdefli olayletrisi tadıgmear",
+  "dyn_en_unique_mix_v1": "betthracon bersuivate raregamius"
+ },
+ {
+  "label": "pow2:8",
+  "value_hex": "0x0000000000000100",
+  "value": "256",
+  "v4": "abbabiage abandaal abandaia",
+  "dyn_en_unique": "revers revers reverygon",
+  "dyn_en_fineweb": "ofference ofference offenda",
+  "dyn_tr_fineweb": "hastalık hastalık hastance",
+  "dyn_en_unique_mix_v1": "paciencement sofreola telegravius"
+ },
+ {
+  "label": "pow2:16",
+  "value_hex": "0x0000000000010000",
+  "value": "65536",
+  "v4": "abandoaa abandaal abandaia",
+  "dyn_en_unique": "revers revers remadillot",
+  "dyn_en_fineweb": "ofference ofference olecapack",
+  "dyn_tr_fineweb": "hastalık hastalık hapudiyor",
+  "dyn_en_unique_mix_v1": "secreaveted profargrap isefilliam"
+ },
+ {
+  "label": "pow2:24",
+  "value_hex": "0x0000000001000000",
+  "value": "16777216",
+  "v4": "abandaia arabala abandaia",
+  "dyn_en_unique": "revers reverythy sinefathed",
+  "dyn_en_fineweb": "ofference offerentists perilbootch",
+  "dyn_tr_fineweb": "hastalık hastalır delisarımlara",
+  "dyn_en_unique_mix_v1": "unmadovaire prowdjure octfumeric"
+ },
+ {
+  "label": "pow2:40",
+  "value_hex": "0x0000010000000000",
+  "value": "1099511627776",
+  "v4": "abandaia abandaation abandaia",
+  "dyn_en_unique": "revers eusting cabigeriel",
+  "dyn_en_fineweb": "ofference hassficiation bactominator",
+  "dyn_tr_fineweb": "hastalık ürksıtlan yenivehalarla",
+  "dyn_en_unique_mix_v1": "reverrocida axxlved besimadale"
+ },
+ {
+  "label": "pow2:48",
+  "value_hex": "0x0001000000000000",
+  "value": "281474976710656",
+  "v4": "abandaia abandaal croachabla",
+  "dyn_en_unique": "reverythful gascillots izbulos",
+  "dyn_en_fineweb": "offerestern condefixity hopedivied",
+  "dyn_tr_fineweb": "hastalıyden tetvekiye birahzalese",
+  "dyn_en_unique_mix_v1": "eastbolda siphaefee howpatcher"
+ },
+ {
+  "label": "pow2:56",
+  "value_hex": "0x0100000000000000",
+  "value": "72057594037927936",
+  "v4": "abandaia abandaal abandaua",
+  "dyn_en_unique": "remoravenire potakebon unlagicive",
+  "dyn_en_fineweb": "owlemming eeristiviation couldlifies",
+  "dyn_tr_fineweb": "hayabestinin ayıysarettir sadıçrayı",
+  "dyn_en_unique_mix_v1": "depezzied matrifacive soapodbie"
+ },
+ {
+  "label": "lcg:0",
+  "value_hex": "0x01f7577d6a4da38e",
+  "value": "141678109451461518",
+  "v4": "briddleated eshyton sitteila",
+  "dyn_en_unique": "remosage cowdstable soludoffle",
+  "dyn_en_fineweb": "optogginal wieloactive toennawable",
+  "dyn_tr_fineweb": "hakfram ginzistır olamımıs",
+  "dyn_en_unique_mix_v1": "devarokes proclussia tenibursch"
+ },
+ {
+  "label": "lcg:1",
+  "value_hex": "0x87ec17fb84d6b345",
+  "value": "9794229658656879429",
+  "v4": "liddenily carrowy altailey",
+  "dyn_en_unique": "berndealie idolwart sillimellah",
+  "dyn_en_fineweb": "pronoyote beaughthood annautdon",
+  "dyn_tr_fineweb": "sattükreye hakrap kepissebilir",
+  "dyn_en_unique_mix_v1": "pantlevious benegadium bouccohoon"
+ },
+ {
+  "label": "lcg:2",
+  "value_hex": "0x26afceeba73d3f70",
+  "value": "2787674205884071792",
+  "v4": "tawhtx cortemits unguerras",
+  "dyn_en_unique": "evaromoire ejustada farcopotism",
+  "dyn_en_fineweb": "yadowdog panomacol egaciary",
+  "dyn_tr_fineweb": "ülpahd giveyhli helloslim",
+  "dyn_en_unique_mix_v1": "majibute talsampter lathiopog"
+ },
+ {
+  "label": "lcg:3",
+  "value_hex": "0xd60d2f0debd437ff",
+  "value": "15424036035651450879",
+  "v4": "womencle fundbato docteas",
+  "dyn_en_unique": "searkham izirless ligurrugged",
+  "dyn_en_fineweb": "horresomed refinishes rebohlex",
+  "dyn_tr_fineweb": "macektory bebedeşisi sobarıfu",
+  "dyn_en_unique_mix_v1": "patronewas larginituses disloypour"
+ },
+ {
+  "label": "lcg:4",
+  "value_hex": "0xdd27cfe6fee7da22",
+  "value": "15935934397499824674",
+  "v4": "dappresle visimous unfishot",
+  "dyn_en_unique": "serenaddena azsidily baircarae",
+  "dyn_en_fineweb": "logitalogy looscematch thypoween",
+  "dyn_tr_fineweb": "güzetibası bavgruya teorlutik",
+  "dyn_en_unique_mix_v1": "matailoch distraniquo pokettines"
+ },
+ {
+  "label": "lcg:5",
+  "value_hex": "0xc8b3913cd929b749",
+  "value": "14462062518944249673",
+  "v4": "membroons safessic thirngth",
+  "dyn_en_unique": "mailosmoring raventechius materfamized",
+  "dyn_en_fineweb": "neutrasonal dorkbow annivarial",
+  "dyn_tr_fineweb": "dezalanılmanın butibiplara sikillenmeden",
+  "dyn_en_unique_mix_v1": "rebulovan hanswovening sizurrily"
+ },
+ {
+  "label": "lcg:6",
+  "value_hex": "0x0ea5c6732f26f024",
+  "value": "1055467885702869028",
+  "v4": "disaginious interrurgling hieroxation",
+  "dyn_en_unique": "requittlex faucydog sensfearies",
+  "dyn_en_fineweb": "annodevists ohmigos towebcoon",
+  "dyn_tr_fineweb": "haydontane seçevenite divarlayat",
+  "dyn_en_unique_mix_v1": "renewadder samadiville disembibine"
+ },
+ {
+  "label": "lcg:7",
+  "value_hex": "0x59c5096b075593a3",
+  "value": "6468586795076785059",
+  "v4": "deeproia courievaded curamily",
+  "dyn_en_unique": "unhovecoat faintupidine gamethomum",
+  "dyn_en_fineweb": "etimeply pantinectation topifidable",
+  "dyn_tr_fineweb": "dallanajdır kebartreyi baracavda",
+  "dyn_en_unique_mix_v1": "unreuwable samphdor renoymee"
+ },
+ {
+  "label": "lcg:8",
+  "value_hex": "0x7622383d078f51f6",
+  "value": "8512428080454652406",
+  "v4": "treattae craglyad luderdan",
+  "dyn_en_unique": "deribunax makbolinus simphbunal",
+  "dyn_en_fineweb": "arbolisation ostroelex wagogivious",
+  "dyn_tr_fineweb": "bedanstene ilâdigion ümiyorsup",
+  "dyn_en_unique_mix_v1": "unfirmentes tetranshage idesitance"
+ },
+ {
+  "label": "lcg:9",
+  "value_hex": "0x18d977f7216ff38d",
+  "value": "1790594230158095245",
+  "v4": "breccurous astitiony forlorded",
+  "dyn_en_unique": "renowbud sigitigns makholicia",
+  "dyn_en_fineweb": "ipathy foxcemation hadmorap",
+  "dyn_tr_fineweb": "ilşkeolü bamünolda güvertoya",
+  "dyn_en_unique_mix_v1": "evenila secuffre poorkjer"
+ },
+ {
+  "label": "lcg:10",
+  "value_hex": "0xa1f411c5fef94418",
+  "value": "11669972076507776024",
+  "v4": "chilennius vinectating althannus",
+  "dyn_en_unique": "bestowbeat bashafarias serviendmen",
+  "dyn_en_fineweb": "maestrogade coupographant weirposes",
+  "dyn_tr_fineweb": "çöptağı hayatlarsun balıçkını",
+  "dyn_en_unique_mix_v1": "madroggers coekwives saddims"
+ },
+ {
+  "label": "lcg:11",
+  "value_hex": "0xf2fd144e33f86187",
+  "value": "17509173252398276999",
+  "v4": "balageuum neopedins dazalez",
+  "dyn_en_unique": "pawriegal terehode equitoxtus",
+  "dyn_en_fineweb": "denosignon timekeeply torrhausting",
+  "dyn_tr_fineweb": "meşvenci hatibistler daneantese",
+  "dyn_en_unique_mix_v1": "maknadom distraintilius offirward"
+ },
+ {
+  "label": "lcg:12",
+  "value_hex": "0x83dba6462a059f0a",
+  "value": "9501370659151126282",
+  "v4": "blawpaca ernesbot torsepish",
+  "dyn_en_unique": "depulocating tamagocend menssefus",
+  "dyn_en_fineweb": "prosposciation baccurgeon merithbration",
+  "dyn_tr_fineweb": "sakarıtayi yerülüşü bilirprida",
+  "dyn_en_unique_mix_v1": "secresquam deuthlip lamorapps"
+ },
+ {
+  "label": "lcg:13",
+  "value_hex": "0x552b21ebad1c6c11",
+  "value": "6137036213327784977",
+  "v4": "calmuginion gravisage samaginery",
+  "dyn_en_unique": "unwontentic seascellity haunclush",
+  "dyn_en_fineweb": "epiecasting prematorbid confightest",
+  "dyn_tr_fineweb": "dakillenesi sektükelten inaniyormudu",
+  "dyn_en_unique_mix_v1": "devigabed coorbirty tamayware"
+ },
+ {
+  "label": "lcg:14",
+  "value_hex": "0xb65ec16a70e7ef4c",
+  "value": "13141153425618628428",
+  "v4": "mortituna largiads pionensite",
+  "dyn_en_unique": "masterlots sempeisake depronnaar",
+  "dyn_en_fineweb": "fidecomove idothesity abnostigae",
+  "dyn_tr_fineweb": "allahseyi tasiyuluş buğendikesi",
+  "dyn_en_unique_mix_v1": "redfacious tearvouco soldfixation"
+ },
+ {
+  "label": "lcg:15",
+  "value_hex": "0x10ff5b9cb71f45ab",
+  "value": "1224798352313370027",
+  "v4": "fanclii priciniel soweald",
+  "dyn_en_unique": "retacessing songworler capidaffle",
+  "dyn_en_fineweb": "anchnoculates folloutouch optimilment",
+  "dyn_tr_fineweb": "ilkedilecek tabejpor sogulugda",
+  "dyn_en_unique_mix_v1": "patrimodir falhommon ozkroat"
+ },
+ {
+  "label": "lcg:16",
+  "value_hex": "0x69f06dd4fbfd955e",
+  "value": "7633722129921185118",
+  "v4": "quailrox subdidas brevesces",
+  "dyn_en_unique": "defiquasing sicilifish unhomarce",
+  "dyn_en_fineweb": "behoolaster noirlonic sumplivities",
+  "dyn_tr_fineweb": "socioinca hemaatoman sikilagede",
+  "dyn_en_unique_mix_v1": "depondiculating melgamma hazbigual"
+ },
+ {
+  "label": "lcg:17",
+  "value_hex": "0xb23a3f67e7ca64d5",
+  "value": "12842647002903373013",
+  "v4": "overdraued crewlex lullacere",
+  "dyn_en_unique": "massoppere owcallic lapnextus",
+  "dyn_en_fineweb": "firequiring lenivoiring somelinguish",
+  "dyn_tr_fineweb": "alanıldiken üsluison hayajürt",
+  "dyn_en_unique_mix_v1": "mawdmote odioctaking unhealthley"
+ },
+ {
+  "label": "lcg:18",
+  "value_hex": "0xd414e8ed09f9e5c0",
+  "value": "15282095540347200960",
+  "v4": "julexts enerpods cougolour",
+  "dyn_en_unique": "sexcifix pacilimint hakrocheur",
+  "dyn_en_fineweb": "honobcol panawarment faircautting",
+  "dyn_tr_fineweb": "makstildiler dinletileniyor sarsunulus",
+  "dyn_en_unique_mix_v1": "revelopote lamophroe teutocosh"
+ },
+ {
+  "label": "lcg:19",
+  "value_hex": "0x4dd566846a0f240f",
+  "value": "5608501629860914191",
+  "v4": "brocommas erboatty feroverer",
+  "dyn_en_unique": "unfeigs unfaltilure profiliquan",
+  "dyn_en_fineweb": "seaffinary hospares isoleucts",
+  "dyn_tr_fineweb": "kasterebeler olanılıksinin etkillemedi",
+  "dyn_en_unique_mix_v1": "paddicarden haileaches unpraimeric"
+ },
+ {
+  "label": "lcg:20",
+  "value_hex": "0x3eb90d8a8faf48f2",
+  "value": "4519658589810280690",
+  "v4": "thonopped jerobens cunexer",
+  "dyn_en_unique": "eaggliar covergebro tampeivait",
+  "dyn_en_fineweb": "retrimosay bayhemid neurbcars",
+  "dyn_tr_fineweb": "tellektın kakaleflere alçssasa",
+  "dyn_en_unique_mix_v1": "secubigel evigourries retaffloch"
+ },
+ {
+  "label": "lcg:21",
+  "value_hex": "0x847abf597b4161d9",
+  "value": "9546152751206064601",
+  "v4": "plagislal steershaw pettiere",
+  "dyn_en_unique": "benefiquy safeiginee pawbars",
+  "dyn_en_fineweb": "protoucciary toenagrah arthilbric",
+  "dyn_tr_fineweb": "samislamadı mafekolar beticibla",
+  "dyn_en_unique_mix_v1": "magedillany capididaw coqualifia"
+ },
+ {
+  "label": "lcg:22",
+  "value_hex": "0xbb9caf9e70bd5b74",
+  "value": "13518873276490537844",
+  "v4": "torsorus kinneghus cellamnus",
+  "dyn_en_unique": "matabasson tarreightly tenectogne",
+  "dyn_en_fineweb": "solabookies suschemic sonaviold",
+  "dyn_tr_fineweb": "alerreşine sineantiyi berecil",
+  "dyn_en_unique_mix_v1": "regacinoid ethinsitive papacian"
+ },
+ {
+  "label": "lcg:23",
+  "value_hex": "0x26876d07639320b3",
+  "value": "2776307573799985331",
+  "v4": "goatrision bristheon steakface",
+  "dyn_en_unique": "evarapee papathraw libaccession",
+  "dyn_en_fineweb": "yakpolitate requilivised couravelenly",
+  "dyn_tr_fineweb": "ülsibim kaşayattı balıktayın",
+  "dyn_en_unique_mix_v1": "magismaeus pandpillane izteth"
+ },
+ {
+  "label": "defaulthasher:hello",
+  "value_hex": "0xe2e77b41cb4e1f9e",
+  "value": "16350172494705860510",
+  "v4": "crazader filianm subtencium",
+  "dyn_en_unique": "secondnow unpredulk baywatcham",
+  "dyn_en_fineweb": "locomony tenodewart genifinance",
+  "dyn_tr_fineweb": "gübcriz sirkedifs talillektin",
+  "dyn_en_unique_mix_v1": "matrifies tabourvium unbursmily"
+ },
+ {
+  "label": "defaulthasher:example",
+  "value_hex": "0xcf5a8cd89871f5e5",
+  "value": "14941409575653471717",
+  "v4": "scalwash riccently notewart",
+  "dyn_en_unique": "secrobosure tamadiceful proclotlime",
+  "dyn_en_fineweb": "bundfinai notichoundry dawledia",
+  "dyn_tr_fineweb": "malörizlerde hematofra alkneğinde",
+  "dyn_en_unique_mix_v1": "earhewy besembacis coffrivain"
+ },
+ {
+  "label": "defaulthasher:readable hash",
+  "value_hex": "0x2c7a41eed845d8e0",
+  "value": "3204946578914007264",
+  "v4": "rejurians riolubd maypias",
+  "dyn_en_unique": "earctic gascillefly babjodized",
+  "dyn_en_fineweb": "wiseeigners whosphother fabridimized",
+  "dyn_tr_fineweb": "üforlantı gibiyahı invatur",
+  "dyn_en_unique_mix_v1": "reascessie seconceloid unlomedits"
+ },
+ {
+  "label": "defaulthasher:hello world",
+  "value_hex": "0xb1b1f2e707e4ac8a",
+  "value": "12804282289674824842",
+  "v4": "blastolers cressenaire jemmagne",
+  "dyn_en_unique": "massborum bersmise hopendiwow",
+  "dyn_en_fineweb": "fifraigate rediregic bedrotaps",
+  "dyn_tr_fineweb": "hegelenimlerde çötilmeli hankestir",
+  "dyn_en_unique_mix_v1": "bestroppop unboldcala galopolitating"
+ },
+ {
+  "label": "defaulthasher:readable-hash-rs",
+  "value_hex": "0xadfab36d5371e5ce",
+  "value": "12536529794871977422",
+  "v4": "naphurred mumbricion pawritis",
+  "dyn_en_unique": "maxxpeth teledowdly tapenewaite",
+  "dyn_en_fineweb": "frenagrain sinodemire honchbos",
+  "dyn_tr_fineweb": "hemaşayın solizönü tabeziraz",
+  "dyn_en_unique_mix_v1": "rebecophia depenee camplacel"
+ }
+]

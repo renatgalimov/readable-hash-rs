@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fill 64 bits: the spaces game</title>
+<style>
+  :root {
+    --paper: #f5f5f5; --box: #ffffff; --ink: #2d3142; --muted: #4f5d75;
+    --accent: #eb6c36; --word: #2f7f73; --cont: #b3bac8; --end: #6c7893; --line: #c9ccd4;
+    --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--sans); background: var(--paper); color: var(--ink); padding: 24px 20px 28px; }
+  .frame { max-width: 720px; margin: 0 auto; }
+  .eyebrow { font: 500 10px var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+  .count { margin: 6px 0 12px; font: 600 22px var(--mono); font-variant-numeric: tabular-nums; }
+  .count small { font-size: 13px; font-weight: 400; color: var(--muted); }
+  .meter { display: flex; align-items: center; gap: 10px; }
+  .gauge { flex: 1; display: grid; grid-template-columns: repeat(64, 1fr); gap: 2px; }
+  .bit { aspect-ratio: 1; border: 1px solid var(--line); border-radius: 2px; background: var(--box); transition: background .25s; }
+  .bit.on { border-color: transparent; }
+  .bit.missing { border: 1.5px dashed var(--accent); }
+  .spare { display: none; align-items: center; gap: 2px; font: 11px var(--mono); color: var(--accent); white-space: nowrap; }
+  .spare.show { display: flex; }
+  .spare .bit { width: 10px; border-style: dashed; border-color: var(--accent); }
+  .spare b { margin-left: 6px; font-weight: 600; }
+  .key { display: grid; grid-template-columns: 10px repeat(4, auto) 1fr; gap: 3px 14px; align-items: center; margin-top: 10px; font: 11px var(--mono); color: var(--muted); }
+  .key i { width: 10px; height: 10px; border-radius: 2px; }
+  .key b { font-weight: 500; color: var(--ink); }
+  .key .note { grid-column: 2 / -1; }
+  .formula { margin-top: 10px; min-height: 1.5em; font: 12px var(--mono); color: var(--muted); overflow-wrap: anywhere; }
+  .phrase { display: flex; flex-wrap: wrap; align-items: center; row-gap: 8px; margin: 18px 0 4px; min-height: 40px; }
+  .word { display: flex; gap: 3px; }
+  .slot { min-width: 36px; height: 36px; padding: 0 6px; display: grid; place-items: center; border: 1.2px dashed var(--line); border-radius: 4px; font: 500 15px var(--mono); color: var(--ink); }
+  .slot.w { border-color: var(--word); }
+  .slot.b { border-color: var(--ink); }
+  .slot.e { border-color: var(--end); }
+  .slot.unknown { color: var(--muted); }
+  .slot.preview { opacity: .55; }
+  .space { width: 26px; height: 36px; display: grid; place-items: center; color: var(--accent); font: 600 18px var(--mono); }
+  .msg { margin: 14px 0 12px; min-height: 2.8em; font-size: 14.5px; line-height: 1.45; text-wrap: pretty; }
+  .msg b { font-weight: 600; }
+  .why { margin: 0 0 12px; padding: 8px 12px; border-left: 3px solid var(--accent); background: var(--box); font-size: 13px; line-height: 1.45; color: var(--muted); text-wrap: pretty; }
+  .why b { color: var(--ink); font-weight: 600; }
+  .choices { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+  .choices button { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--box); cursor: pointer; font: 12px var(--mono); color: var(--muted); }
+  .choices button:hover, .choices button:focus-visible { border-color: var(--accent); outline: none; color: var(--ink); }
+  .choices button { text-align: left; }
+  .choices button .detail { margin-top: -4px; font-size: 11px; color: var(--muted); }
+  .choices button b.detail { font-weight: 600; color: var(--accent); }
+  .mini { display: flex; align-items: center; }
+  .mini i { width: 9px; height: 9px; border-radius: 2px; margin-right: 2px; border: 1px solid var(--cont); }
+  .mini i.w { background: var(--word); border-color: var(--word); }
+  .mini i.b { background: var(--ink); border-color: var(--ink); }
+  .mini i.e { background: var(--end); border-color: var(--end); }
+  .actions { display: flex; gap: 8px; margin-top: 14px; }
+  .actions button { font: 13px var(--sans); padding: 7px 14px; border-radius: 6px; border: 1px solid var(--line); background: var(--box); color: var(--ink); cursor: pointer; }
+  .actions button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .actions button:disabled { opacity: .4; cursor: default; }
+  .actions button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  @media (max-width: 560px) { .gauge { grid-template-columns: repeat(32, 1fr); } .key { grid-template-columns: 10px repeat(4, auto); } }
+  @media (prefers-reduced-motion: reduce) { .bit { transition: none; } }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="eyebrow">Fill 64 bits</div>
+  <div class="count"><span id="count">0</span> <small>/ 64 bits</small></div>
+  <div class="meter">
+    <div class="gauge" id="gauge" role="meter" aria-label="Bits stored" aria-valuemin="0" aria-valuemax="64" aria-valuenow="0"></div>
+    <div class="spare" id="spare"></div>
+  </div>
+  <div class="key" id="key"></div>
+  <div class="formula" id="formula"></div>
+  <div class="phrase" id="phrase" aria-live="polite"></div>
+  <p class="msg" id="msg"></p>
+  <div id="panel"></div>
+  <div class="actions">
+    <button type="button" class="primary" id="random">Fill randomly</button>
+    <button type="button" id="undo">Undo</button>
+    <button type="button" id="reset">Start over</button>
+  </div>
+</div>
+<script>
+"use strict";
+const BEGIN = __BEGIN__;
+const MIDDLE = __CONT__;
+const END = __END__;
+
+// The phrase: eleven tokens in up to four words of 2 to 5 tokens each. That allows 32 layouts, so the
+// layout stores exactly log2 32 = 5 bits. The player picks it one word length at a time; an option is
+// worth log2(layouts possible before / layouts it leaves), so every path adds up to the same 5 bits.
+// A page with one option left is skipped.
+const TOTAL_TOKENS = 11;
+const MAX_WORDS = 4;
+const LENGTHS = [2, 3, 4, 5];
+const ORDINALS = ["first", "second", "third", "fourth"];
+
+// Every token is a choice from a pool; it takes log2(pool size) bits.
+const TOKENS = {
+  b: { color: "var(--ink)", name: "Black", role: "beginning", pool: BEGIN },
+  c: { color: "var(--cont)", name: "Light grey", role: "middle", pool: MIDDLE },
+  e: { color: "var(--end)", name: "Dark grey", role: "ending", pool: END },
+};
+const LENGTH_COLOR = "var(--accent)";
+const pale = (color) => `color-mix(in srgb, ${color} 55%, white)`;
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+const round = (x) => Math.round(x * 1e6) / 1e6;  // log2 sums like 1.42 + 3.58 should print as 5
+const fmt = (x) => (Number.isInteger(round(x)) ? String(round(x)) : x.toFixed(2));
+const bitWord = (x) => `${fmt(x)} bit${round(x) === 1 ? "" : "s"}`;
+const tokenBits = (k) => Math.log2(TOKENS[k].pool.length);
+const kindAt = (n, j) => (j === 0 ? "b" : j === n - 1 ? "e" : "c");
+const wordKinds = (n) => Array.from({ length: n }, (_, j) => kindAt(n, j));
+const wordBits = (n) => wordKinds(n).reduce((sum, k) => sum + tokenBits(k), 0);
+const orList = (items) => (items.length < 2 ? items.join("") : items.slice(0, -1).join(", ") + " or " + items[items.length - 1]);
+const plural = (count, word) => `${count} ${word}${count === 1 ? "" : "s"}`;
+
+function describeWord(n) {
+  const middles = n - 2;
+  const parts = [`a beginning (${bitWord(tokenBits("b"))})`];
+  if (middles === 1) parts.push(`1 middle (${bitWord(tokenBits("c"))})`);
+  if (middles > 1) parts.push(`${middles} middles (${bitWord(tokenBits("c"))} each)`);
+  parts.push(`an ending (${bitWord(tokenBits("e"))})`);
+  const list = parts.slice(0, -1).join(", ") + " and " + parts[parts.length - 1];
+  return `${n} tokens: ${list}. Together that’s ${bitWord(wordBits(n))}`;
+}
+
+// history: one entry per length the player chose: { value, bits }
+const state = { history: [], preview: null, timer: null };
+const chosen = () => state.history.map((e) => e.value);
+const used = (lengths) => lengths.reduce((sum, n) => sum + n, 0);
+
+// How many layouts can `rest` tokens still become, when `words` words already exist?
+const layoutCache = new Map();
+function layoutCount(rest, words) {
+  if (rest === 0) return 1;
+  if (rest < 0 || words >= MAX_WORDS) return 0;
+  const key = `${rest}/${words}`;
+  if (!layoutCache.has(key)) layoutCache.set(key, LENGTHS.reduce((sum, n) => sum + layoutCount(rest - n, words + 1), 0));
+  return layoutCache.get(key);
+}
+const ALL_LAYOUTS = layoutCount(TOTAL_TOKENS, 0);
+
+// The options for the next word (each with the layouts it leaves and its bits), plus why any are missing.
+function lengthOptions(lengths) {
+  const left = TOTAL_TOKENS - used(lengths);
+  const words = lengths.length;
+  const possible = layoutCount(left, words);
+  const options = [];
+  const dropped = [];
+  for (const n of LENGTHS) {
+    const rest = left - n;
+    const leaves = layoutCount(rest, words + 1);
+    if (rest < 0) dropped.push({ n, why: `${n} is more than the ${left} tokens left` });
+    else if (rest > 0 && words + 1 >= MAX_WORDS) dropped.push({ n, why: `${n} would leave ${rest} tokens with no word left to hold them` });
+    else if (rest === 1) dropped.push({ n, why: `${n} would leave a single token, and every word needs at least 2` });
+    else if (!leaves && words + 2 === MAX_WORDS) dropped.push({ n, why: `${n} would leave ${rest} tokens for the last word, which holds at most 5` });
+    else if (!leaves) dropped.push({ n, why: `${n} would leave ${rest} tokens that can’t make legal words` });
+    else options.push({ value: n, leaves, bits: Math.log2(possible / leaves) });
+  }
+  return { left, possible, options, dropped };
+}
+
+// All word lengths known so far: the chosen ones, then any that are forced (one option left).
+function layout() {
+  const lengths = chosen();
+  while (used(lengths) < TOTAL_TOKENS) {
+    const { options } = lengthOptions(lengths);
+    if (options.length !== 1) break;
+    lengths.push(options[0].value);
+  }
+  return lengths;
+}
+const forcedFrom = () => chosen().length;  // words at or after this index were forced
+
+// Why 11 and not 10: one token fewer loses that token's bits and a whole bit of layout.
+function whyElevenTokens() {
+  const fewer = TOTAL_TOKENS - 1;
+  const fewerLayouts = layoutCount(fewer, 0);
+  const fewerBits = Math.floor(Math.log2(fewerLayouts));  // a binary index can use only a power-of-two share
+  const layoutBits = Math.log2(ALL_LAYOUTS);
+  const best = fewerBits + fewer * tokenBits("c") + MAX_WORDS * (tokenBits("b") - tokenBits("c"));
+  return `<b>Why ${TOTAL_TOKENS} tokens?</b> With ${fewer}, only ${fewerLayouts} layouts fit, and a binary number can use just `
+    + `${2 ** fewerBits} of them: ${bitWord(fewerBits)} of layout instead of ${bitWord(layoutBits)}. `
+    + `The phrase would hold at most ${bitWord(best)}, short of 64. The only fix would be bigger pools, `
+    + `and bigger pools mean rarer tokens and words that don’t sound normal. `
+    + `So the ${TOTAL_TOKENS}th token pays for itself: ${bitWord(tokenBits("c"))} of its own, `
+    + `plus ${bitWord(layoutBits - fewerBits)} of layout because the words can be split in more ways.`;
+}
+
+function nextStep() {
+  const lengths = layout();
+  if (used(lengths) >= TOTAL_TOKENS) return null;
+  const info = lengthOptions(lengths);
+  const w = lengths.length;
+  const parts = [];
+  if (w === 0) {
+    parts.push(`The phrase has ${TOTAL_TOKENS} tokens in up to ${MAX_WORDS} words of 2 to 5 tokens each. `
+      + `That allows ${ALL_LAYOUTS} layouts, so the layout stores log₂ ${ALL_LAYOUTS} = ${bitWord(Math.log2(ALL_LAYOUTS))}, picked one word length at a time.`);
+  } else {
+    parts.push(`The ${ORDINALS[w - 1]} word is ${describeWord(lengths[w - 1])}.`);
+    parts.push(`That leaves ${info.left} tokens for at most ${plural(MAX_WORDS - w, "more word")}: ${plural(info.possible, "layout")} ${info.possible === 1 ? "is" : "are"} still possible.`);
+  }
+  const reasons = info.dropped;
+  if (reasons.length) {
+    // Merge the "too long" reasons into one: "4 and 5 are more than the 3 tokens left".
+    const tooLong = reasons.filter((d) => d.n > info.left).map((d) => String(d.n));
+    const whys = reasons.filter((d) => d.n <= info.left).map((d) => d.why);
+    if (tooLong.length === 1) whys.push(`${tooLong[0]} is more than the ${info.left} tokens left`);
+    if (tooLong.length > 1) whys.push(`${tooLong.slice(0, -1).join(", ")} and ${tooLong[tooLong.length - 1]} are more than the ${info.left} tokens left`);
+    parts.push(`Not ${orList(reasons.map((d) => String(d.n)))}: ${whys.join("; ")}.`);
+  }
+  parts.push(`How long is the <b>${ORDINALS[w]} word</b>? Each option keeps some of the ${info.possible} layouts; `
+    + `the fewer it keeps, the more it tells, so it’s worth log₂(${info.possible} ÷ layouts kept).`);
+  return {
+    prompt: parts.join(" "),
+    note: w === 0 ? whyElevenTokens() : "",
+    options: info.options.map((o) => ({
+      ...o,
+      label: `${o.value} tokens`,
+      keeps: `keeps ${o.leaves} of ${info.possible}`,
+      mini: wordKinds(o.value),
+    })),
+  };
+}
+
+const bits = [];
+for (let i = 0; i < 64; i++) { const b = el("div", "bit"); b.title = "bit " + (i + 1); $("gauge").append(b); bits.push(b); }
+
+function renderKey() {
+  const key = $("key");
+  const row = (color, name, role, choices, size) => {
+    const swatch = el("i");
+    swatch.style.background = color;
+    key.append(swatch, el("b", null, name), el("span", null, role), el("span", null, choices), el("span", null, size), el("span"));
+  };
+  row(LENGTH_COLOR, "Orange", "word lengths", `${ALL_LAYOUTS} layouts`, `${bitWord(Math.log2(ALL_LAYOUTS))} in all`);
+  for (const k of Object.keys(TOKENS)) {
+    const t = TOKENS[k];
+    row(t.color, t.name, t.role, `${t.pool.length} choices`, bitWord(tokenBits(k)));
+  }
+  const paleSwatch = el("i");
+  paleSwatch.style.background = pale(TOKENS.b.color);
+  key.append(paleSwatch, el("span", "note", "Pale: bits a word will take once its tokens are picked."));
+}
+
+function paint(box, i, ranges, total) {
+  const parts = [];
+  for (const r of ranges) {
+    const a = Math.max(r.a, i), b = Math.min(r.b, i + 1);
+    if (b > a) parts.push(`${r.c} ${((a - i) * 100).toFixed(1)}% ${((b - i) * 100).toFixed(1)}%`);
+  }
+  const fill = Math.min(1, Math.max(0, total - i));
+  if (!parts.length) { box.style.background = ""; box.classList.remove("on"); return; }
+  if (fill < 1) parts.push(`transparent ${(fill * 100).toFixed(1)}% 100%`);
+  box.style.background = `linear-gradient(to right, ${parts.join(", ")}), var(--box)`;
+  box.classList.toggle("on", fill >= 1);
+}
+
+// Each word adds the bits of its length choice, then the bits its tokens will take.
+function renderGauge() {
+  const segs = [];
+  const terms = [];
+  layout().forEach((n, w) => {
+    const entry = state.history[w];
+    const choice = entry ? entry.bits : 0;
+    if (choice) segs.push({ c: LENGTH_COLOR, bits: choice });
+    terms.push(fmt(choice));
+    const kinds = wordKinds(n);
+    kinds.forEach((k) => segs.push({ c: pale(TOKENS[k].color), bits: tokenBits(k) }));
+    const parts = kinds.map((k) => fmt(tokenBits(k)));
+    terms.push(parts.length > 1 ? `(${parts.join(" + ")})` : parts[0]);
+  });
+  let pos = 0;
+  const ranges = segs.map((s) => { const r = { c: s.c, a: pos, b: pos + s.bits }; pos = r.b; return r; });
+  pos = round(pos);
+  bits.forEach((box, i) => paint(box, i, ranges, pos));
+  const done = used(layout()) >= TOTAL_TOKENS;
+  bits.forEach((box, i) => box.classList.toggle("missing", done && i >= pos));
+  const spare = $("spare");
+  spare.replaceChildren();
+  if (pos > 64) {
+    for (let i = 64; i < Math.ceil(pos); i++) { const b = el("div", "bit"); paint(b, i, ranges, pos); spare.append(b); }
+    spare.append(el("b", null, "+" + fmt(pos - 64) + " spare"));
+  }
+  spare.classList.toggle("show", pos > 64);
+  $("count").textContent = fmt(pos);
+  $("gauge").setAttribute("aria-valuenow", Math.min(64, pos).toFixed(2));
+  $("formula").textContent = terms.length ? terms.join(" + ") + " = " + fmt(pos) + " bits" : "";
+  return pos;
+}
+
+function renderPhrase() {
+  const box = $("phrase");
+  box.replaceChildren();
+  const words = layout().map((n) => ({ n, preview: false }));
+  // The word being decided right now: a "?" placeholder, or a faded preview while hovering an option.
+  if (nextStep()) words.push({ n: state.preview, preview: true });
+  words.forEach(({ n, preview }, w) => {
+    if (w > 0) box.append(el("div", "space", "␣"));
+    const word = el("div", "word");
+    if (!n) {
+      word.append(el("div", "slot unknown", "?"));
+    } else {
+      for (const k of wordKinds(n)) {
+        const slot = el("div", "slot " + k);
+        if (preview) slot.classList.add("preview");
+        word.append(slot);
+      }
+    }
+    box.append(word);
+  });
+}
+
+function renderPanel(total) {
+  const panel = $("panel");
+  panel.replaceChildren();
+  const step = nextStep();
+  if (!step) {
+    const lengths = layout();
+    const verdict = total < 64
+      ? `<b>${fmt(total)} bits: ${bitWord(64 - total)} short of 64.</b>`
+      : total === 64 ? "<b>Exactly 64 bits.</b>" : `<b>${fmt(total)} bits: ${bitWord(total - 64)} to spare.</b>`;
+    const parts = [];
+    const lastChosen = forcedFrom() - 1;
+    if (lastChosen >= 0) parts.push(`The ${ORDINALS[lastChosen]} word is ${describeWord(lengths[lastChosen])}.`);
+    lengths.slice(forcedFrom()).forEach((n, i) => {
+      const w = forcedFrom() + i;
+      parts.push(`The ${ORDINALS[w]} word takes the remaining ${n} tokens. Only one layout was left, so its length adds 0 bits; its tokens add ${bitWord(wordBits(n))}.`);
+    });
+    const lengthBits = state.history.map((e) => fmt(e.bits));
+    parts.push(`The layout is ${lengths.join(" + ")}, one of ${ALL_LAYOUTS}: its length choices add up to ${lengthBits.join(" + ")} = ${bitWord(Math.log2(ALL_LAYOUTS))}, whichever way you got here.`);
+    parts.push(`${verdict} Picking the tokens isn’t designed yet.`);
+    $("msg").innerHTML = parts.join(" ");
+    return;
+  }
+  $("msg").innerHTML = step.prompt;
+  if (step.note) {
+    const why = el("p", "why");
+    why.innerHTML = step.note;
+    panel.append(why);
+  }
+  const grid = el("div", "choices");
+  step.options.forEach((option) => {
+    const btn = el("button");
+    btn.type = "button";
+    const mini = el("span", "mini");
+    option.mini.forEach((k) => mini.append(el("i", k)));
+    btn.append(mini, el("span", null, option.label), el("span", "detail", option.keeps), el("b", "detail", bitWord(option.bits)));
+    btn.addEventListener("click", () => choose(step, option));
+    btn.addEventListener("mouseenter", () => { state.preview = option.value; renderPhrase(); });
+    btn.addEventListener("focus", () => { state.preview = option.value; renderPhrase(); });
+    btn.addEventListener("mouseleave", () => { state.preview = null; renderPhrase(); });
+    grid.append(btn);
+  });
+  panel.append(grid);
+}
+
+function render() {
+  const total = renderGauge();
+  renderPhrase();
+  renderPanel(total);
+  $("random").disabled = !nextStep() || state.timer !== null;
+  $("undo").disabled = state.timer !== null || state.history.length === 0;
+}
+
+function choose(step, option) {
+  state.history.push({ value: option.value, bits: option.bits });
+  state.preview = null;
+  render();
+}
+function stop() { if (state.timer !== null) { clearInterval(state.timer); state.timer = null; } }
+function step() {
+  const s = nextStep();
+  if (!s) return false;
+  // Weight each option by the layouts it keeps, so every layout is equally likely, as with a random 5-bit number.
+  let ticket = Math.random() * s.options.reduce((sum, o) => sum + o.leaves, 0);
+  choose(s, s.options.find((o) => (ticket -= o.leaves) < 0) || s.options[s.options.length - 1]);
+  return nextStep() !== null;
+}
+function fillRandomly() {
+  stop();
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) { while (step()); render(); return; }
+  state.timer = setInterval(() => { if (!step()) { stop(); render(); } }, 260);
+  render();
+}
+$("random").addEventListener("click", fillRandomly);
+$("undo").addEventListener("click", () => { state.history.pop(); render(); });
+$("reset").addEventListener("click", () => { stop(); state.history = []; state.preview = null; render(); });
+renderKey();
+render();
+</script>
+</body>
+</html>

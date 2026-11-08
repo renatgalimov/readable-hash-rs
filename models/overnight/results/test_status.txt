@@ -1,0 +1,28 @@
+run: 2026-11-07T20:12:10+03:00  branch: feature/reversible-u64
+== cargo fmt --all -- --check
+fmt ok
+== cargo test (default)
+test result: ok. 30 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 10.65s
+19 scenarios (15 passed, 4 skipped)
+64 steps (60 passed, 4 skipped)
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+== cargo test --all-features
+test result: ok. 30 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 10.74s
+19 scenarios (19 passed)
+76 steps (76 passed)
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+== cargo clippy --all-targets --all-features -- -D warnings
+    Checking readable-hash v0.1.1 (/home/agent/projects/readable-hash-rs-reversible)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.29s
+clippy exit: 0
+== python tests (unittest style scripts)
+test_phrase_model.py: OK
+test_phrase_v3.py: OK
+test_phrase_v4.py: OK
+test_reversible_tables.py: OK
+overnight/test_dyn.py: OK
+overnight/test_lenmin.py: OK
+== python-vs-rust cross-check (lenmin)
+model=lm-en-unique-b256-c64-t5-constrained-cur-w2-4 checked=40128 example_rows=64 mismatches=0
+note: test_obfuscation.py and test_tokenizer.py are manual argparse CLI tools, not unit tests; not run. pytest not installed; unittest used.
+note: default cucumber run skips 4 shake256 scenarios (feature-gated); --all-features runs all 19.

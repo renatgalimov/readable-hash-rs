@@ -1,0 +1,31 @@
+{"language": "en", "source": "unique", "cap": 16, "words": 3, "max_tokens": 5, "log2_capacity": null, "error": "insufficient: W=250113 log2(W^3)=53.797 < 64"}
+{"language": "en", "source": "unique", "cap": 32, "words": 3, "max_tokens": 5, "log2_capacity": 66.01449550618025, "error": null}
+{"language": "en", "source": "unique", "cap": 64, "words": 3, "max_tokens": 5, "log2_capacity": 73.68805960007343, "error": null}
+{"language": "en", "source": "unique", "cap": 128, "words": 3, "max_tokens": 5, "log2_capacity": 75.84715440185538, "error": null}
+{"language": "en", "source": "unique", "cap": 256, "words": 3, "max_tokens": 5, "log2_capacity": 75.84715440185538, "error": null}
+{"language": "en", "source": "fineweb-occ", "cap": 16, "words": 3, "max_tokens": 5, "log2_capacity": null, "error": "insufficient: W=119606 log2(W^3)=50.604 < 64"}
+{"language": "en", "source": "fineweb-occ", "cap": 32, "words": 3, "max_tokens": 5, "log2_capacity": null, "error": "insufficient: W=1150250 log2(W^3)=60.401 < 64"}
+{"language": "en", "source": "fineweb-occ", "cap": 64, "words": 3, "max_tokens": 5, "log2_capacity": 65.03618721932055, "error": null}
+{"language": "en", "source": "fineweb-occ", "cap": 128, "words": 3, "max_tokens": 5, "log2_capacity": 67.03105524755813, "error": null}
+{"language": "en", "source": "fineweb-occ", "cap": 256, "words": 3, "max_tokens": 5, "log2_capacity": 67.31417565089625, "error": null}
+{"language": "en", "source": "fineweb-type", "cap": 16, "words": 3, "max_tokens": 5, "log2_capacity": null, "error": "insufficient: W=187934 log2(W^3)=52.560 < 64"}
+{"language": "en", "source": "fineweb-type", "cap": 32, "words": 3, "max_tokens": 5, "log2_capacity": null, "error": "insufficient: W=1746646 log2(W^3)=62.208 < 64"}
+{"language": "en", "source": "fineweb-type", "cap": 64, "words": 3, "max_tokens": 5, "log2_capacity": 66.09264182343476, "error": null}
+{"language": "en", "source": "fineweb-type", "cap": 128, "words": 3, "max_tokens": 5, "log2_capacity": 67.7687518394867, "error": null}
+{"language": "en", "source": "fineweb-type", "cap": 256, "words": 3, "max_tokens": 5, "log2_capacity": 67.814714184218, "error": null}
+{"language": "tr", "source": "fineweb-occ", "cap": 16, "words": 3, "max_tokens": 5, "log2_capacity": null, "error": "insufficient: W=199792 log2(W^3)=52.824 < 64"}
+{"language": "tr", "source": "fineweb-occ", "cap": 32, "words": 3, "max_tokens": 5, "log2_capacity": 64.62871867233542, "error": null}
+{"language": "tr", "source": "fineweb-occ", "cap": 64, "words": 3, "max_tokens": 5, "log2_capacity": 70.34650330360219, "error": null}
+{"language": "tr", "source": "fineweb-occ", "cap": 128, "words": 3, "max_tokens": 5, "log2_capacity": 72.83297129731203, "error": null}
+{"language": "tr", "source": "fineweb-occ", "cap": 256, "words": 3, "max_tokens": 5, "log2_capacity": 72.94273941839597, "error": null}
+{"language": "tr", "source": "fineweb-type", "cap": 16, "words": 3, "max_tokens": 5, "log2_capacity": null, "error": "insufficient: W=402856 log2(W^3)=55.860 < 64"}
+{"language": "tr", "source": "fineweb-type", "cap": 32, "words": 3, "max_tokens": 5, "log2_capacity": 66.55836539370301, "error": null}
+{"language": "tr", "source": "fineweb-type", "cap": 64, "words": 3, "max_tokens": 5, "log2_capacity": 72.54867754156692, "error": null}
+{"language": "tr", "source": "fineweb-type", "cap": 128, "words": 3, "max_tokens": 5, "log2_capacity": 73.86221733533519, "error": null}
+{"language": "tr", "source": "fineweb-type", "cap": 256, "words": 3, "max_tokens": 5, "log2_capacity": 73.86221733533519, "error": null}
+{"language": "en", "source": "unique", "cap": 16, "words": 4, "max_tokens": 4, "log2_capacity": null, "error": "insufficient: W=32852 log2(W^4)=60.015 < 64"}
+{"language": "en", "source": "unique", "cap": 32, "words": 4, "max_tokens": 4, "log2_capacity": 72.38780751474886, "error": null}
+{"language": "en", "source": "unique", "cap": 64, "words": 4, "max_tokens": 4, "log2_capacity": 81.0931472393311, "error": null}
+{"language": "en", "source": "unique", "cap": 128, "words": 4, "max_tokens": 4, "log2_capacity": 83.89093214161484, "error": null}
+{"language": "en", "source": "unique", "cap": 256, "words": 4, "max_tokens": 4, "log2_capacity": 83.89093214161484, "error": null}
+{"en-unique": ["en-unique-cap32-t5-w3", 141840], "en-fineweb": ["en-fineweb-occ-cap64-t5-w3", 128928], "tr-fineweb": ["tr-fineweb-occ-cap32-t5-w3", 122406]}

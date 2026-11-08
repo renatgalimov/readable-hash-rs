@@ -1,0 +1,342 @@
+{
+  "corpus_unique_words": 94080,
+  "examples": [
+    {
+      "input": "0",
+      "u64": "0",
+      "v3": "abandaia abandaal abandaal",
+      "v4": "abandaia abandaal abandaia"
+    },
+    {
+      "input": "1",
+      "u64": "1",
+      "v3": "adaiaca abandaal abandaal",
+      "v4": "adaiaca abandaal abandaia"
+    },
+    {
+      "input": "2",
+      "u64": "2",
+      "v3": "alarbable abandaal abandaal",
+      "v4": "alarbable abandaal abandaia"
+    },
+    {
+      "input": "42",
+      "u64": "42",
+      "v3": "exactaca abandaal abandaal",
+      "v4": "exactaca abandaal abandaia"
+    },
+    {
+      "input": "1000",
+      "u64": "1000",
+      "v3": "shaemada abandaal abandaal",
+      "v4": "shaemada abandaal abandaia"
+    },
+    {
+      "input": "123456789",
+      "u64": "123456789",
+      "v3": "certiwking couchaberal abandaal",
+      "v4": "certiwking couchaberal abandaia"
+    },
+    {
+      "input": "9223372036854775807",
+      "u64": "9223372036854775807",
+      "v3": "woundzz woundruz woundruing",
+      "v4": "woundzz woundruz woundzine"
+    },
+    {
+      "input": "9223372036854775808",
+      "u64": "9223372036854775808",
+      "v3": "abandaia abandaal abandaion",
+      "v4": "abandaia abandaal abandaims"
+    },
+    {
+      "input": "18446744073709551614",
+      "u64": "18446744073709551614",
+      "v3": "wizzz woundruz woundruz",
+      "v4": "wizzz woundruz woundzy"
+    },
+    {
+      "input": "18446744073709551615",
+      "u64": "18446744073709551615",
+      "v3": "woundzz woundruz woundruz",
+      "v4": "woundzz woundruz woundzy"
+    },
+    {
+      "input": "2611923443488327891",
+      "u64": "2611923443488327891",
+      "v3": "orierling chairasseth steinomat",
+      "v4": "orierling chairasseth steinctare"
+    },
+    {
+      "input": "16045690984503098046",
+      "u64": "16045690984503098046",
+      "v3": "jerredy favoureth hereivate",
+      "v4": "jerredy favoureth hereivation"
+    },
+    {
+      "input": "hello",
+      "u64": "16350172494705860510",
+      "v3": "crazader filianm subtencities",
+      "v4": "crazader filianm subtencium"
+    }
+  ],
+  "method": "uniform u64; exact reachable-path-weighted observed adjacency and fallback from unique-word corpus, not running-text frequencies",
+  "v3": {
+    "coverage_per_transition_position": [
+      {
+        "fallback_fraction": "0",
+        "fallback_probability": 0.0,
+        "local_fraction": "1",
+        "local_probability": 1.0,
+        "position": "first_middle"
+      },
+      {
+        "fallback_fraction": "7891/393216",
+        "fallback_probability": 0.020067850748697918,
+        "local_fraction": "385325/393216",
+        "local_probability": 0.9799321492513021,
+        "position": "second_middle"
+      },
+      {
+        "fallback_fraction": "1195799/6291456",
+        "fallback_probability": 0.19006713231404623,
+        "local_fraction": "5095657/6291456",
+        "local_probability": 0.8099328676859537,
+        "position": "end"
+      }
+    ],
+    "phrase_max_letters": 48,
+    "phrase_mean_letters": "28292829/1048576",
+    "phrase_mean_letters_decimal": 26.982144355773926,
+    "phrase_min_letters": 15,
+    "spaces": 2,
+    "word1": {
+      "coverage": [
+        {
+          "fallback_fraction": "0",
+          "fallback_paths": 0,
+          "local_fraction": "1",
+          "local_paths": 4096,
+          "table": "middle32",
+          "total_paths": 4096
+        },
+        {
+          "fallback_fraction": "5863/131072",
+          "fallback_paths": 5863,
+          "local_fraction": "125209/131072",
+          "local_paths": 125209,
+          "table": "middle32",
+          "total_paths": 131072
+        },
+        {
+          "fallback_fraction": "397183/2097152",
+          "fallback_paths": 794366,
+          "local_fraction": "1699969/2097152",
+          "local_paths": 3399938,
+          "table": "end32",
+          "total_paths": 4194304
+        }
+      ],
+      "max_letters": 16,
+      "mean_letters": "2355901/262144",
+      "mean_letters_decimal": 8.987049102783203,
+      "min_letters": 5,
+      "paths": 4194304
+    },
+    "word2": {
+      "coverage": [
+        {
+          "fallback_fraction": "0",
+          "fallback_paths": 0,
+          "local_fraction": "1",
+          "local_paths": 4096,
+          "table": "middle32",
+          "total_paths": 4096
+        },
+        {
+          "fallback_fraction": "507/65536",
+          "fallback_paths": 507,
+          "local_fraction": "65029/65536",
+          "local_paths": 65029,
+          "table": "middle16",
+          "total_paths": 65536
+        },
+        {
+          "fallback_fraction": "99827/524288",
+          "fallback_paths": 399308,
+          "local_fraction": "424461/524288",
+          "local_paths": 1697844,
+          "table": "end32",
+          "total_paths": 2097152
+        }
+      ],
+      "max_letters": 16,
+      "mean_letters": "18869225/2097152",
+      "mean_letters_decimal": 8.997547626495361,
+      "min_letters": 5,
+      "paths": 2097152
+    },
+    "word3": {
+      "coverage": [
+        {
+          "fallback_fraction": "0",
+          "fallback_paths": 0,
+          "local_fraction": "1",
+          "local_paths": 4096,
+          "table": "middle32",
+          "total_paths": 4096
+        },
+        {
+          "fallback_fraction": "507/65536",
+          "fallback_paths": 507,
+          "local_fraction": "65029/65536",
+          "local_paths": 65029,
+          "table": "middle16",
+          "total_paths": 65536
+        },
+        {
+          "fallback_fraction": "99827/524288",
+          "fallback_paths": 399308,
+          "local_fraction": "424461/524288",
+          "local_paths": 1697844,
+          "table": "end32",
+          "total_paths": 2097152
+        }
+      ],
+      "max_letters": 16,
+      "mean_letters": "18869225/2097152",
+      "mean_letters_decimal": 8.997547626495361,
+      "min_letters": 5,
+      "paths": 2097152
+    }
+  },
+  "v4": {
+    "coverage_per_transition_position": [
+      {
+        "fallback_fraction": "0",
+        "fallback_probability": 0.0,
+        "local_fraction": "1",
+        "local_probability": 1.0,
+        "position": "first_middle"
+      },
+      {
+        "fallback_fraction": "3185/98304",
+        "fallback_probability": 0.032399495442708336,
+        "local_fraction": "95119/98304",
+        "local_probability": 0.9676005045572916,
+        "position": "second_middle"
+      },
+      {
+        "fallback_fraction": "142829/1048576",
+        "fallback_probability": 0.13621234893798828,
+        "local_fraction": "905747/1048576",
+        "local_probability": 0.8637876510620117,
+        "position": "end"
+      }
+    ],
+    "phrase_max_letters": 48,
+    "phrase_mean_letters": "56342403/2097152",
+    "phrase_mean_letters_decimal": 26.866151332855225,
+    "phrase_min_letters": 15,
+    "spaces": 2,
+    "word1": {
+      "coverage": [
+        {
+          "fallback_fraction": "0",
+          "fallback_paths": 0,
+          "local_fraction": "1",
+          "local_paths": 4096,
+          "table": "middle32",
+          "total_paths": 4096
+        },
+        {
+          "fallback_fraction": "5863/131072",
+          "fallback_paths": 5863,
+          "local_fraction": "125209/131072",
+          "local_paths": 125209,
+          "table": "middle32",
+          "total_paths": 131072
+        },
+        {
+          "fallback_fraction": "397183/2097152",
+          "fallback_paths": 794366,
+          "local_fraction": "1699969/2097152",
+          "local_paths": 3399938,
+          "table": "end32",
+          "total_paths": 4194304
+        }
+      ],
+      "max_letters": 16,
+      "mean_letters": "2355901/262144",
+      "mean_letters_decimal": 8.987049102783203,
+      "min_letters": 5,
+      "paths": 4194304
+    },
+    "word2": {
+      "coverage": [
+        {
+          "fallback_fraction": "0",
+          "fallback_paths": 0,
+          "local_fraction": "1",
+          "local_paths": 4096,
+          "table": "middle32",
+          "total_paths": 4096
+        },
+        {
+          "fallback_fraction": "507/65536",
+          "fallback_paths": 507,
+          "local_fraction": "65029/65536",
+          "local_paths": 65029,
+          "table": "middle16",
+          "total_paths": 65536
+        },
+        {
+          "fallback_fraction": "99827/524288",
+          "fallback_paths": 399308,
+          "local_fraction": "424461/524288",
+          "local_paths": 1697844,
+          "table": "end32",
+          "total_paths": 2097152
+        }
+      ],
+      "max_letters": 16,
+      "mean_letters": "18869225/2097152",
+      "mean_letters_decimal": 8.997547626495361,
+      "min_letters": 5,
+      "paths": 2097152
+    },
+    "word3": {
+      "coverage": [
+        {
+          "fallback_fraction": "0",
+          "fallback_paths": 0,
+          "local_fraction": "1",
+          "local_paths": 4096,
+          "table": "middle32",
+          "total_paths": 4096
+        },
+        {
+          "fallback_fraction": "5863/131072",
+          "fallback_paths": 5863,
+          "local_fraction": "125209/131072",
+          "local_paths": 125209,
+          "table": "middle32",
+          "total_paths": 131072
+        },
+        {
+          "fallback_fraction": "60483/2097152",
+          "fallback_paths": 60483,
+          "local_fraction": "2036669/2097152",
+          "local_paths": 2036669,
+          "table": "end16",
+          "total_paths": 2097152
+        }
+      ],
+      "max_letters": 16,
+      "mean_letters": "9312985/1048576",
+      "mean_letters_decimal": 8.88155460357666,
+      "min_letters": 5,
+      "paths": 2097152
+    }
+  }
+}

@@ -100,6 +100,20 @@ Dynamic programming over contexts and quotient bounds gives exact lengths of
 out-of-range paths, span 13–48 letters. No expected length or backoff rate is
 claimed. The decoder does not need a delimiter, suffix, or registry.
 
+## Experimental reversible three-word phrases
+
+`readable_hash::phrase_v2::{encode_u64, decode_u64}` is a separate experimental
+format; it does not alter v1. For example, `phrase_v2::decode_u64(
+&phrase_v2::encode_u64(42))` returns `Some(42)`. Exactly three lowercase words
+are separated by single spaces; invalid or noncanonical input is rejected.
+The twelve prefix-free tokens consume the value least-significant bits first:
+7/4/4/7 bits in word one and 7/4/3/7 in each remaining word, with context reset
+between words. Every token combination is valid and represents exactly one u64.
+
+This is an encoding, not encryption or a collision-free hash of arbitrary data.
+Its pronounceability is not guaranteed. See `models/PHRASE_MODEL.md` for the
+compiler, proof, reproducibility, and measured fallback/length statistics.
+
 ## Tokenizer
 
 The `models/` directory bundles a small sample corpus and Python utilities for

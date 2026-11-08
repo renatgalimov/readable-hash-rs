@@ -1,0 +1,3 @@
+timing dyn_en_unique (en-unique-cap32-t5-w3): 200000 encode+decode in 0.203s, mean 31.91 bytes, W=4208375
+timing dyn_en_fineweb (en-fineweb-occ-cap64-t5-w3): 200000 encode+decode in 0.223s, mean 32.99 bytes, W=3356972
+timing dyn_tr_fineweb (tr-fineweb-occ-cap32-t5-w3): 200000 encode+decode in 0.198s, mean 32.78 bytes, W=3055350

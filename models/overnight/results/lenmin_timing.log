@@ -1,0 +1,4 @@
+   Compiling readable-hash v0.1.1 (/home/agent/projects/readable-hash-rs-reversible)
+    Finished `release` profile [optimized] target(s) in 1.19s
+     Running `target/release/examples/phrase_lenmin_comparison`
+timing lenmin (lm-en-unique-b256-c64-t5-constrained-cur-w2-4): 200000 encode+decode in 0.339s, mean 23.60 chars, max 24

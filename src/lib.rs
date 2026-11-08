@@ -17,8 +17,19 @@ use sha3::Shake256;
 #[cfg(feature = "shake256")]
 use sha3::digest::{ExtendableOutput, Update as XofUpdate, XofReader};
 
+pub mod bounded_grammar;
 pub mod english_word;
 mod english_word_data;
+pub mod phrase_dyn;
+pub mod phrase_lenmin;
+pub mod phrase_v2;
+mod phrase_v2_data;
+pub mod phrase_v3;
+mod phrase_v3_data;
+pub mod phrase_v4;
+mod phrase_v4_data;
+pub mod phrase_v5;
+mod phrase_v5_data;
 mod reversible;
 mod reversible_v1_data;
 

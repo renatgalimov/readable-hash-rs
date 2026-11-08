@@ -1,0 +1,1205 @@
+dynphrase v1
+name tr-fineweb-occ-cap32-t5-w3
+words 3
+states 1201
+ha>1 il>2 ola>3 iç>4 ü>5 te>6 ka>7 da>8 so>9 be>10 sa>11 di>12 ye>13 ç>14 he>15 al>16 de>17 ma>18 gü>19 me>20 ta>21 se>22 si>23 ba>24 bir>25 gi>26 in>27 et>28 bu>29 ay>30 bil>31 ke>32
+st>33 ya>34 k>35 zı>36 f>37 l>38 va>39 be>40 n>41 tt>42 yı>43 tır>44 mi>45 ta>46 di>47 p>48 c>49 sa>50 mu>51 zi>52 tla>53 çl>54 tu>55 mam>56 şla>57 yl>58 ve>59 ti>60 sı>61 yd>62 md>63 yi>64
+gi>65 iş>66 çe>67 a>68 eti>69 ke>70 erle>71 ti>60 eri>72 â>73 ha>74 mi>45 im>75 le>76 ki>77 la>78 is>79 me>80 erde>81 ey>82 iğin>83 in>84 kler>85 ikler>86 lü>87 ş>88
+ca>89 yl>58 na>90 bile>91 bili>92 nları>93 yı>43 ğ>94 ma>95 sı>61 yd>62 nı>96 ra>97 mı>98 ndı>99 yi>64 rk>100 g>101 ns>102
+eri>72 inde>103 ere>104 ti>60 im>75 erd>105 lerind>106 ece>107 ilme>108 ki>77 mey>109 ini>110 ile>111 se>112 g>101 te>113 enl>114 mel>115 iyor>116 erle>71 ili>117 med>118 mekt>119 ebil>120 iril>121 mesin>122 mi>45 iş>66 tü>123 y>124
+ze>125 l>38 rü>126 st>33 ret>127 ç>128 c>49 ye>129 ni>130 nl>131 nc>132 mi>45 sl>133 ve>59 nü>134 f>37 tü>123 ş>88 rk>100 ro>135 ns>102 to>136 zd>137
+k>35 da>138 ş>88 le>76 mel>115 s>139 p>48 h>140 miz>141 b>142 c>49 or>143 mas>144 f>37 v>145 nc>132 â>73 t>146 z>147 li>148 lle>149 la>78 y>124 ni>130 ala>150 lg>151 ç>128 malar>152 dir>153 ne>154 may>155 ğ>94
+da>138 dı>156 b>142 ç>128 v>145 h>140 f>37 mu>51 şı>157 ğı>158 de>159 me>80 sl>133 sa>50 sı>61 di>47 ka>160 se>112 id>161 c>49 mi>45 ste>162 in>84 o>163 si>164 şla>57 şa>165 ma>95 u>166 mış>167 kt>168 gi>65
+ha>74 ya>34 va>39 ki>77 ğı>158 ire>169 ma>95 nı>96 ve>59 ğl>170 lg>151 r>171 mla>172 ns>102 lla>173 lı>174 nt>175 ld>176 mı>98 yı>43 la>78 il>177 lma>178 ta>46 g>101 ni>130 ne>154 nc>132 md>63 yd>62 kı>179 na>90
+n>41 sy>180 ğu>181 ka>160 lu>182 h>140 yu>183 f>37 yl>58 mu>51 km>184 ku>185 ya>34 ld>176 kt>168 d>186 su>187 pa>188 ba>189 lü>87 yd>62 ci>190 li>148 ut>191 sl>133 ur>192 lma>178 la>78 g>101 und>193 me>80 zle>194
+ni>130 be>40 kle>195 ya>34 ra>97 sl>133 de>159 yi>64 ğ>94 sin>196 nc>132 ce>197 yl>58 ste>162 şi>198 re>199 zle>194 zi>52 ze>125 da>138 to>136 nl>131 ndi>200 nt>175 ka>160 ti>60 nm>201 ac>202 kta>203 ne>154 rk>100 rt>204
+h>140 de>159 va>39 at>205 tı>206 ç>128 ba>189 ra>97 f>37 p>48 bi>207 kla>208 kı>179 g>101 ki>77 rıl>209 ka>160 rım>210 mi>45 rk>100 rs>211 tm>212 id>161 ta>46 dak>213 dı>156 rma>214 ad>215 c>49 tt>42 ks>216 man>217
+ğ>94 k>35 ye>129 nle>218 re>199 zi>52 le>76 yor>219 ya>34 lin>220 s>139 lle>149 şi>198 pl>221 ni>130 şle>222 liy>223 na>90 va>39 ge>224 ze>125 j>225 ld>176 za>226 bi>207 ns>102 zle>194 nda>227 ril>228 f>37 rs>211 yi>64
+ni>130 rler>229 şi>198 re>199 me>80 di>47 dek>230 mi>45 l>38 ne>154 ra>97 nme>231 rim>232 rde>233 rdi>234 ğ>94 rs>211 rini>235 rind>236 g>101 mler>237 si>164 v>145 ndi>200 rk>100 k>35 rme>238 rg>239 se>112 rü>126 md>63 yi>64
+ok>240 ö>241 ün>242 oğ>243 or>143 u>166 ür>244 ol>245
+r>171 me>80 sa>50 p>48 de>159 ye>129 di>47 ki>77 md>63 la>78 ve>59 lik>246 al>247 kta>203 nde>248 ce>197 ar>249 ad>215 ll>250 ma>95 h>140 ter>251 le>76 av>252 ze>125 ya>34 ge>224
+tı>206 anı>253 anlar>254 dı>156 aca>255 and>256 makt>257 g>101 abili>258 mış>167 k>35 ey>82 b>142 ter>251 la>78 may>155 man>217 etle>259 ama>260 ak>261 ç>128 ev>262 mad>263 mam>56 tt>42 ar>249 f>37 da>138 er>264 masın>265 eti>69 üm>266
+v>145 ste>162 f>37 di>47 p>48 mi>45 ta>46 mekt>119 yi>64 gi>65 li>148 k>35 se>112 la>78 de>159 ge>224 mey>109 ter>251 h>140 med>118 mle>267 si>164 le>76 za>226 b>142 lt>268 ze>125 j>225 mel>115 şi>198 lme>269 c>49
+d>186 h>140 l>38 ka>160 ki>77 rk>100 sa>50 ğ>94 nt>175 ç>128 vi>270 te>113 ks>216 na>90 ne>154 ru>271 aş>272 ce>197 il>177 g>101 yd>62 f>37 su>187 ri>273 ya>34 ku>185 ni>130 ra>97 z>147 mu>51 rg>239 ke>70
+ze>125 nü>134 ve>59 ne>154 çl>54 nler>274 c>49 nc>132 nde>248 na>90 m>275 lü>87 b>142 rü>126 len>276 ld>176 lme>269 re>199 lle>149 dü>277 ler>278 tme>279 zi>52 li>148 de>159 rle>280 lece>281 ru>271 f>37 p>48 tt>42
+rke>282 v>145 yd>62 sa>50 sl>133 c>49 ka>160 tr>283 se>112 z>147 mu>51 d>186 tin>284 ta>46 n>41 ş>88 kt>168 le>76 mle>267 ra>97 rdi>234 to>136 b>142 rt>204 su>187 mel>115 rme>238 te>113 g>101 li>148 lo>285 ğ>94
+şı>157 mam>56 h>140 bi>207 sa>50 v>145 le>76 ba>189 tl>286 ti>60 z>147 p>48 li>148 şla>57 sl>133 dı>156 yi>64 tm>212 mi>45 ah>287 ci>190 ar>249 şt>288 ç>128 şa>165 di>47 be>40 cı>289 mla>172 ta>46 la>78 si>164
+çi>290 be>40 çe>67 kt>168 f>37 sl>133 ne>154 z>147 m>275 y>124 ks>216 ki>77 lam>291 ndi>200 na>90 c>49 ns>102 nt>175 h>140 ni>130 len>276 sin>196 p>48 an>292 lle>149 km>184 ke>70 tler>293 kl>294 lü>87 tt>42 de>159
+ste>162 te>113 ya>34 g>101 zle>194 zi>52 la>78 ni>130 ne>154 ki>77 pa>188 zd>137 vi>270 lin>220 m>275 ndir>295 h>140 ci>190 rke>282 be>40 lme>269 ra>97 nü>134 lik>246 km>184 kt>168 yon>296 nc>132 ği>297 ke>70 f>37 d>186
+ba>189 h>140 n>41 ya>34 ze>125 rda>298 zı>36 ca>89 rı>299 tı>206 lı>174 yı>43 de>159 ra>97 lo>285 g>101 yi>64 ro>135 ta>46 m>275 tt>42 rs>211 ri>273 be>40 za>226 tm>212 ld>176 lg>151 la>78 zl>300 cı>289 v>145
+lik>246 ç>128 bi>207 in>84 leş>301 ka>160 ey>82 isi>302 liğ>303 ik>304 im>75 ş>88 iler>305 ta>46 iy>306 az>307 g>101 ebi>308 se>112 ara>309 ak>261 c>49 da>138 ke>70 ad>215 ye>129 ah>287 mi>45
+bi>207 de>159 di>47 tt>42 tme>279 zl>300 yi>64 yd>62 ye>129 ze>125 ta>46 ş>88 ve>59 n>41 f>37 da>138
+sa>50 ce>197 ter>251 dir>153 şa>165 an>292 ci>190 gi>65 ti>60 f>37 kı>179 ka>160 at>205 h>140 diğ>310 to>136 liy>223 va>39 dek>230 er>264 st>33 o>163 si>164 tr>283 mey>109 iş>66 leme>311 ekle>312 eği>313 miş>314 ki>77 isi>302
+ki>77 ti>60 me>80 miş>314 ra>97 ke>70 ik>304 sin>196 ekle>312 se>112 eği>313 ap>315 ü>316 n>41 im>75 ab>317 h>140 lerind>106 tı>206 iğin>83 iyo>318 li>148
+ra>97 g>101 nları>93 yu>183 nu>319 ru>271 rs>211 ha>74 to>136 du>320 ğ>94 zd>137 na>90 ç>128 zl>300 ti>60 da>138 il>177 j>225 ca>89 ka>160 rk>100 rda>298 rg>239 rma>214 ke>70 tt>42 za>226 b>142 nda>227 kle>195 mu>51
+rı>299 dı>156 ak>261 ır>321 arla>322 kı>179 ağı>323 ne>154 larınd>324 etle>259 nı>96 na>90 eti>69 g>101 lı>174 ri>273 ra>97 ıkla>325 çi>290 va>39 se>112 inl>326 ta>46 di>47 ş>88 ba>189 su>187 ılar>327 ni>130 az>307 ir>328 ıy>329
+gi>65 in>84 dir>153 im>75 iyor>116 diğ>310 mi>45 me>80 eş>330 ir>328 eti>69 eme>331 iş>66 etle>259 ge>224 emi>332 eği>313 ez>333 enl>114 se>112 an>292 ekle>312 sin>196 f>37 la>78 eli>334 â>73 ene>335 eceğ>336 ebil>120 ekt>337 esin>338
+ndi>200 li>148 nt>175 mi>45 na>90 ş>88 yi>64 me>80 re>199 di>47 çi>290 f>37 le>76 p>48 de>159 ki>77 rim>232 man>217 ba>189 ndı>99 mal>339 ra>97 çe>67 lam>291 kl>294 ne>154 h>140 rt>204 ke>70 to>136 e>340 lle>149
+alı>341 an>342 ün>343 alar>344 ik>$ or>345 ro>346 ri>347 lan>348 u>$ ra>$ ası>$ len>349 at>350 lu>351 ler>$ aya>$ iy>352 it>353 ir>$ rü>354 na>355 ak>356 üm>357 ayı>$ ada>358 te>$ ır>$ lar>$ in>359 ah>360 lü>361
+n>$ tı>362 da>$ tla>363 sa>364 r>$ z>$ cı>365 ca>366 h>367 si>$ ç>368 ya>$ sı>$ l>$ ta>$ f>369 tt>370 se>371 bili>372 yı>$ j>373 ğı>$ be>374 k>$ p>375 ti>$ bile>376 me>377 sy>378 sl>379 mı>380
+kı>381 ka>382 ü>$ ra>383 ç>368 ol>384 ni>385 â>386 ro>346 ö>387 or>345 op>388 ok>389 ya>390 on>391 ke>392 ku>393 ba>394 ret>395 ki>396 na>$ z>$ ne>397 om>398 f>369 ca>$ d>399 bi>400 ru>401 be>374 rim>402 ş>403
+rla>404 n>$ m>$ ları>$ rda>$ yla>$ lı>$ dır>$ sı>$ ld>405 rs>406 yı>407 k>$ p>$ yor>$ rm>408 ll>409 şma>410 ştı>411
+a>$ i>$ or>345 ta>$ es>412 endi>413 us>414 f>369 er>$ on>$ ek>415 ı>$ ter>416 et>$ leri>$ lama>417 re>418 li>$ ede>419 ra>383 sa>364 tl>420 ya>$ lar>$ ke>392 si>421 ka>382 lan>348 ür>422 edi>423 ha>424 ez>425
+ke>392 ze>426 â>386 yon>427 kı>381 c>428 nız>$ se>371 ya>390 ka>382 ki>396 ye>$ b>429 si>421 f>369 va>430 ç>368 pa>431 su>432 h>367 kl>433 sa>$ vi>434 sın>435 ör>436 ve>437 şa>438 yu>439 r>$ niz>440 j>373 kt>441
+m>$ ş>$ p>$ n>$ rla>404 b>429 sı>$ cı>365 sy>378 ye>442 da>$ rında>$ lt>443 le>444 ya>$ lı>$ ala>445 li>446 f>369 lar>$ yı>$ lan>348 ra>$ to>447 zi>448 ll>409 h>367 tu>449 yo>450 ti>451 k>$ ri>$
+r>$ t>$ k>$ bi>400 st>452 pl>453 ğin>454 si>$ lik>$ de>455 n>$ di>456 ve>437 liğ>457 ler>$ yi>$ ye>$ ci>458 zi>448 ş>$ ll>409 gi>459 ya>390 be>374 la>460 leş>461 yle>$ miz>462 lin>463 j>373 sl>379 ld>405
+ra>$ gi>459 ya>390 ç>368 ze>426 ol>384 ka>382 ne>397 kl>433 ge>464 ks>465 ye>442 f>369 yo>450 zi>448 va>430 ba>394 za>466 j>373 kte>467 ki>$ oğ>468 ni>$ op>388 na>355 â>386 ke>392 bi>400 be>374 ö>387 om>398 ku>393
+a>$ e>$ i>$ ı>$ ür>422 p>375 u>$ â>386 le>$ on>$ ük>469 üm>357
+n>$ f>369 şı>470 r>$ ld>405 p>$ m>$ lı>471 cı>365 z>$ lla>472 şla>473 k>$ sın>435 lm>474 la>$ şa>438 dır>$ şt>475 yla>$ st>452 t>$ lt>443
+ım>476 ma>$ ılma>477 la>460 ır>$ an>$ ıla>478 dı>$ arak>$ ılı>479 abili>480 ın>$ acak>$ ıyor>$ ıp>$ ken>$ mış>481 lı>471 alar>344 sa>364 da>$ sın>435 ası>$ ak>$ ız>$ tı>$ ama>482
+n>$ k>$ yor>483 r>$ ye>442 sy>378 le>444 yle>$ t>$ si>$ i>$ dir>$ st>452 mi>$ ği>$ de>$ sl>379 li>$ yi>$ ci>458 se>371 asın>484 ha>424 yd>485 yla>$ lle>486 me>$
+ya>$ b>429 k>$ p>$ l>$ r>$ nda>487 da>$ sı>$ yl>488 mı>380 ns>489 sy>378 md>490 nın>$ ç>368 ca>366 j>373 te>491 mla>492 h>367 na>355 ğın>493 yı>$ ö>387 ok>389 at>350 ne>$ dır>$ ma>$ nl>494 nma>495
+m>$ kleri>496 ler>$ n>$ a>$ kte>467 gi>459 ye>$ p>$ yor>483 şa>438 si>$ t>$ len>349 lme>497 lir>$ ka>382 ld>405 sl>379 f>369 se>371 ok>389 ve>437 lece>498 ci>458 la>460 dir>$ z>499 ki>$ ca>366 şi>500 liy>501
+er>502 h>367 or>$ it>353 ta>503 re>418 tir>$ si>$ ek>$ rü>354 ol>384 ül>504 ı>$ is>505 ki>396 u>506 iyo>507 eği>508 kı>381 p>375 ri>347 ik>$ on>391 ra>383 te>$ ya>390 imi>509 to>447 man>510 g>511 ç>368 ini>512
+uk>513 ret>395 ut>514 ü>$ uğ>515 li>446 ula>516 und>517 ulu>518 ro>346 unu>519 h>367 k>$ rü>354 us>414 ra>$ or>345 b>429 ti>451 uy>520 za>466 mi>521 da>522 ca>366 to>447 um>523 ri>347 uz>524 ce>525 ur>526 lu>351 s>$
+l>$ n>$ ya>390 j>373 f>369 rım>527 k>$ mı>380 pl>453 t>$ b>429 sı>$ rla>404 ca>$ da>$ yd>485 ret>395 v>528 ml>529 si>421 dü>530 ma>$ ğı>$ ad>531 ü>532 it>353 md>490 yı>$ h>367 dı>533 rının>$ ra>$
+şt>475 rt>534 z>$ n>$ şa>438 ru>401 ta>503 rla>404 şla>473 yor>$ s>$ o>535 m>$ k>$ tla>363 rg>536 laş>537 tu>449 du>538 ril>539 rdan>$ ra>$ yla>$ da>$ lle>486 rs>406 lü>361 f>369 lma>540 lu>351 ld>405 ğu>541
+n>$ m>$ k>$ sy>378 ği>$ si>$ ye>442 f>369 ti>451 z>$ p>$ de>$ rme>542 l>$ yor>$ yi>$ te>$ be>374 h>367 ci>458 dir>$ re>418 ra>383 ri>347 rla>404 yle>$ st>452 rdi>543 to>447 rler>544 va>430 yd>485
+rı>$ k>$ ra>$ şma>410 ma>$ rda>$ rla>$ ya>390 ndı>545 dı>$ nma>495 yı>407 na>355 tı>362 tm>546 mış>$ ri>$ ta>503 nı>547 ğın>493 tt>370 ştı>411 sın>435 rs>406 rken>$
+arı>$ ü>$ ı>$ endi>413 er>$ ara>$ ik>$ u>$ ama>482 arla>$ ardan>$ anma>548 andı>549 ana>550 enm>551 aya>552 anı>553 iğin>554 adı>555 eş>556 ene>557 eme>558 eni>559 amı>560 ayı>561
+r>$ lma>540 su>432 lu>351 n>$ m>$ ğu>541 p>$ ld>405 c>428 la>460 da>$ ar>$ f>369 va>430 k>$ lla>472 yu>439 ya>$ yla>$ be>374 al>$ ş>$ yor>$ at>350 ha>424 du>538
+ası>$ ak>$ ış>$ lan>348 lay>562 ız>$ alı>341 lama>417 ını>$ ına>$ aya>$ lar>$ aları>$ anı>553 lı>471 is>505 ından>$ ayı>$ dan>$ am>563
+r>$ nı>547 nma>495 ma>$ na>355 yı>407 ndı>545 ya>390 şma>410 ta>503 dı>$ tı>362
+edi>423 ece>564 er>$ eye>565 aş>566 eme>558 ar>$ emi>567 ü>532 ı>$ ene>557 eni>559 eli>568 i>$ u>$ enm>551 esine>$ anma>548 ana>550 endi>413 eş>556 ama>482 andı>549 as>569 adı>555 eki>$ anı>553 aya>552 amı>560 ede>419 ayı>561 et>570
+nl>494 rs>406 ri>347 t>$ ki>396 re>418 ni>385 sind>571 l>$ nc>572 y>573 rt>534 de>$ ne>397 ns>489 me>377 nme>574 ndi>575 sl>379 nt>576 sine>$ di>456 st>452 sini>$ rdi>543 ci>458 rl>577 ol>384 çl>578 da>$ ha>424 se>371
+m>$ k>$ ya>390 ba>394 f>369 ği>$ ha>424 ci>458 len>349 ler>$ lme>497 si>$ on>$ vi>434 ld>405 ce>525 p>$ va>430 gi>459 la>460 bi>400 li>$ yor>$ z>499 yle>$ t>$ ş>$ ye>$ ve>437 sa>364 sy>378 ok>389
+l>$ z>$ yla>$ dır>$ mla>492 ta>503 tm>546 md>490 tıl>579 tla>363 r>$ k>$ f>369 ya>390 tır>$ tt>370 ma>$ sın>435 mı>380 yor>$ p>$ da>$ yı>407 yd>485 yle>$
+i>$ a>$ ı>$ en>$ u>$ oğ>468 eki>$ ü>$ on>391
+a>$ e>$ i>$ ır>$ ur>$ ü>$ uğ>515 ul>580
+n>$ m>$ z>$ p>$ leş>461 f>369 ci>458 lik>$ r>581 şle>582 dir>$ si>$ şi>500 liğ>457 k>$ t>$ ye>$ ll>409 ler>$ den>$ lme>497 yi>583 ld>405 i>$ ve>437 yle>$ liy>501 yor>483 ği>584 sl>379 şt>475
+li>$ n>$ sa>364 si>$ ler>$ lend>585 ye>$ yi>$ m>$ r>$ yle>$ de>$ ld>405 leme>586 lle>486 ti>451 dir>$ ley>587 se>371 z>$ st>452 o>535 f>369 lm>474 ç>368 şi>500 c>428 bi>400 es>412 tt>370
+ki>396 im>$ en>$ lerd>588 leri>$ ir>$ ebil>589 me>$ miş>$ se>$ inde>$ ör>436 ile>590 ini>$ ar>591 li>$ eme>558 ken>$ lem>592 ip>$ ilm>593 sin>594 ik>$ iyor>595 ecek>$ erek>$ ne>397 lere>$ iğin>554 eceğ>596 ilir>$ iz>$
+kle>597 kte>467 ne>397 ve>437 si>$ ği>$ li>$ de>$ ye>$ r>$ nin>$ leri>$ te>491 miz>462 be>374 bili>372 niz>440 lerde>$ ki>396 yi>$ ceğ>598 nt>576 lerle>$ lere>$ yle>$ cek>$ ks>465 dir>$ bile>376 km>599 mey>600 gi>459
+çl>578 j>373 at>350 g>511 il>601 ul>580 ur>526 iye>602 ok>389 in>359 er>502 ut>514 ir>603 is>505
+m>$ şi>500 ci>458 n>$ k>$ yle>$ len>349 lme>497 r>$ dir>$ lir>$ ld>405 yor>$ si>421 liy>501 lece>498 p>$ ti>451
+k>$ r>$ ti>451 miz>462 nin>$ me>$ lle>486 de>$ si>$ ler>$ tler>604 nl>494 nt>576 ğin>454 nc>572 st>452 tme>605 tt>370 ye>$ li>$ ol>384 yi>$ nde>$ te>$ di>456 nme>574 ml>529 ndir>606 ne>$ len>349 lt>443 z>$
+ndir>606 r>$ ye>442 yi>583 me>$ di>456 miş>607 tme>605 tt>370
+sind>571 m>$ z>$ de>$ r>$ ğin>454 k>$ sine>$ leri>608 ye>$ yle>$ dir>$ lme>497 len>349 yor>$ lere>$ yi>$ liy>501 lerde>$ sini>$ ci>458 or>$ lerle>$ ld>405 gi>459 p>$ te>491
+ye>442 h>367 l>609 n>$ r>$ ki>396 f>369 t>$ m>$ de>455 ğı>610 şı>470 bi>400 zı>611 in>359 di>456 ci>458 ka>382 da>$ ve>437 ya>$ yı>407 sı>612 iz>$ kı>381 zi>448 za>466 va>430 be>374 p>$ ke>392 dı>533
+n>613 t>$ lle>486 r>$ f>369 le>$ ba>394 zl>614 sı>$ k>615 zı>611 ye>442 se>371 m>616 ld>405 lı>$ bi>400 pl>453 da>$ la>460 be>374 li>446 ya>$ de>455 dı>$ zd>617 za>$ yı>$ ci>458 ha>424 si>421 vi>434
+li>$ leri>$ e>$ se>371 de>$ a>$ ci>458 um>$ dir>$ lere>$ p>375 lerde>$ lerle>$ si>421 lend>585 sa>364 leme>586 ma>618 o>535 na>355 me>377 dan>$ ha>424 ül>504 lar>619
+t>$ f>369 bilir>$ diğ>620 k>$ vi>434 p>$ si>$ ler>$ de>$ be>374 bile>376 lik>$ er>$ ste>621 se>371 ği>584 liğ>457 j>373 ge>464 as>569 dir>$ z>$ ve>437 ç>368 ar>$ on>391 us>414 gi>459 an>342
+ld>405 n>$ li>$ ka>382 si>$ ler>$ lle>486 m>$ t>$ r>$ ye>$ ley>587 len>349 se>371 den>$ la>460 z>$ leş>461 leme>586 yi>$ ş>$ p>$ bi>400 ya>390 dir>$ f>369 ki>$ yor>$ yle>$ kler>622 lm>474 ci>458
+cak>$ h>367 k>$ bilir>$ dı>$ si>421 j>373 v>528 f>369 t>$ l>$ st>452 bile>376 sy>378 sı>$ z>499 di>$ se>371 ce>$ ge>464 da>$ gi>459 ba>394 p>$ de>$ cı>365 ğ>623 sl>379 ç>368 sa>$ ik>624
+t>$ ki>$ al>625 ma>618 ad>531 na>355 yon>427 se>371 kl>433 at>350 e>$ ha>424 leri>$ ke>392 lerde>$ ye>442 ve>437 on>$ ar>$ ka>382 ks>465 p>375 lere>$ mi>521 â>386 kte>467 an>342 liğ>457 lar>$ si>421
+n>$ t>$ z>$ m>$ r>$ ği>$ ce>$ g>511 ar>$ f>369 vi>434 ci>458 ç>368
+ki>$ dir>$
+tin>626 in>$ h>367 se>371 im>$ de>$ le>$ iz>$ di>$ ağı>627 ip>$ be>374 k>615 na>$ iş>628 yi>583 li>$ iyle>$ ci>458 idir>$ miş>$ ne>397 sa>$ lay>562
+i>$ de>$ e>$
+ci>458 en>$ ce>$ g>511 a>$ ç>368 se>371 ti>451 mekt>629 mey>600 yu>439 er>$ ede>419 o>535 mesi>$ mi>521 si>421 med>630 ek>415 ele>631 mel>632 te>491 ca>$ eti>633 ta>503 eme>558 ec>634 f>369 mas>635 ka>382 edir>$ es>412
+de>$ e>$ le>$ dir>$ ken>$ o>535 se>371
+i>$ e>$ le>$ de>$ dir>$
+m>616 ğ>623 r>$ k>$ yor>$ lü>361 nü>636 nme>574 ne>$ dü>530 p>$ t>$ sy>378 c>428 ş>403 nde>$ li>446 ler>$ lo>637 nc>572 yle>$ b>429 g>511 z>499 sin>594 yd>485
+ek>415 ul>580 ki>396 ka>382 ey>638 ve>437 ur>$ en>$ em>639 h>367 ya>390 um>523 uy>520 ku>393 f>369 un>640 vi>434 ç>368 kı>381 ün>343 g>511 ke>392 si>421 ru>401 er>$ eb>641 eli>568 et>$ ül>504 ri>347 esin>642 ede>419
+kt>441 de>455 ğı>$ ret>395 kl>433 n>$ sı>$ ks>465 m>$ t>$ v>528 at>350 l>$ ya>$ h>367 gi>459 yi>583 b>429 cı>365 dı>$ si>$ p>$ us>414 z>$ rla>404 f>369 yı>$ dan>$ km>599 ra>$ ci>458 i>$
+n>$ v>528 k>$ ğı>$ rak>$ cak>$ bilir>$ sın>435 h>367 t>$ yl>488 ya>390 me>$ l>$ f>369 mi>521 da>$ sy>378 bile>376 ye>442 rla>404 yı>$ rım>527 may>643 ze>426 st>452 mak>$ dığı>$ rken>$ se>371 yd>485 j>373
+ceğ>598 cek>$ n>$ r>$
+rs>406 ri>347 rler>$ yor>$ ye>442 ta>503 rdi>543 n>$ te>$ m>$ rm>408 rken>$ ti>451
+n>$ mı>380 yla>$ da>$ dır>$
+er>$ ü>$ a>$ me>377 mu>644 du>538 da>522 eni>559 ne>397 endi>413 s>645 enm>551 ene>557 ma>$ f>369 be>374 ge>464 dır>646 cı>365 dığı>$ nı>547 dir>$ mı>380
+z>$ ti>451 r>$ şı>470 te>491 cı>365 at>350 ğ>623 ca>$ şla>473 tla>363 çl>578 şa>438 tı>362 i>$ to>447 vi>434 tü>647 şt>475 ge>464 h>367 p>375 ta>$ tt>370 f>369 va>430 j>373
+r>$ f>369 m>$ şma>410 şla>473 yor>$ na>$ nı>$ şı>470 p>$ kl>433 nda>$ dır>$ şa>438 lma>540 lar>619 lan>348 yla>$ lı>471 nc>572 sı>$ şt>475 yd>485 yı>407 ba>394 ks>465 çl>578 ld>405 da>$
+r>$ f>369 da>$ sın>435 mı>380 n>$ be>374 mla>492 l>$ t>$ ya>$ ki>$ ca>366 h>367 man>510 kları>648 yı>$ j>373 sy>378 ba>394 ğı>$ si>$ g>511 z>$ mi>521 md>490 de>455 v>528 ç>368 kta>649 p>$ ke>392
+nda>$ na>$ nı>$ zd>617 za>$ zı>611 yla>$ yor>483 mı>380 zl>614 dır>$ k>$ s>$ yı>407 ma>$ da>$ yd>485
+ğı>$ r>$ ktan>$ m>$ lar>$ kları>$ nı>$ sı>$
+lı>$ çe>650 ı>$ a>$ iye>602 ül>504 in>$ lar>$ lere>$ o>535 ce>$ si>421 u>506 li>446 me>377 sı>612 ür>422 malar>651 ün>343 il>601 tan>$ sa>364 tır>$ üz>652 leş>461
+ula>516 un>$ ra>383 ün>$ or>345 am>563 an>342 ür>422 ı>$ us>414 ara>$ re>418 ör>436 ze>426 al>$ le>$ h>367 at>350 ül>504 man>510 az>653 ru>401 arl>654 â>386 me>377 li>446 um>$ ah>360 ne>397 lu>351 ulu>518 lar>$
+el>655 iye>602 u>506 f>369 ı>$ iyo>507 al>$ lı>$ at>350 iz>$ in>$ ör>436 man>510 it>353 ları>$ ara>656 ü>532 is>505 anlar>657 ek>415 ev>658 sı>612 ta>503 eni>559 ç>368 p>375 mi>521 er>502 k>615 lerine>$ tr>659 te>491
+ki>$ dir>$ yd>485 yi>583 ndir>606
+n>$ ye>$ st>452 de>$ sind>571 ler>$ bilir>$ yi>$ ceğ>598 sine>$ bile>376 rek>$ sinin>$
+i>$ n>$
+e>$ n>$
+kt>441 ks>465 de>$ kleri>496 li>$ gi>459 sind>571 lend>585 m>$ km>599 nl>494 lerind>660
+si>$ kte>467 li>446 z>$ ye>442 mesi>$ mel>632 den>$ diğ>620 miş>$ leri>$ mekt>629 yi>$ ks>465 nin>$
+e>$ i>$ le>$
+zi>$ zd>617 ze>$ r>$ yor>$ zle>661 s>645 nin>$ ne>$ t>$ p>$ nden>$ dir>$ za>$ yle>$ de>$ lme>497
+n>$ bilir>$ si>$ ler>$ me>377 bile>376 de>$ ye>$ şm>662 yi>$ p>375 miz>462 di>$ md>490 miş>$
+l>$ k>$ tt>370 r>$ nin>$ si>$ f>369 di>456 niz>$ ye>$ de>455 tme>605 be>374 su>432 m>$ p>375 yi>$ nler>663 se>371 nt>576 ve>437 tin>626 yd>485 tler>604 dü>530 nme>574 te>$ yle>$ ne>$ ns>489 as>569 ar>591
+si>$ mler>664 miz>462 lik>665 ki>$ ma>618 liğ>457 j>373 ş>403 ci>458 leri>$ ti>451 de>$ in>$ mel>632 ye>$ nin>$ st>452 g>511 zi>$ nt>576 md>490 yi>$ lerde>$ niz>440 cek>$ lend>585 dir>$ sl>379 ah>360 lere>$ va>430
+er>$ eme>558 i>$ ene>557 enm>551 eye>565 edi>423 eni>559 endi>413 emi>567
+eri>$ i>$ ere>$ erde>$ erle>$ li>$ dir>$ ler>$ enm>551
+um>$ uz>$ du>$ sa>364 su>432 lar>$ mu>644
+k>$ ği>$ yor>$ m>$ p>$ nde>$ rken>$ nc>572 g>511 rs>406 rdi>543 ye>$ ş>$ rler>$ ni>$ ne>$ dir>$ te>$ st>452
+en>$ i>$ eki>$ er>$ ye>442 eme>558
+edir>$ ir>$ en>$ ey>638 esin>642 eler>$
+ir>$ eceğ>596 ecek>$ mek>$ en>$ mesi>$ iyor>595 diğ>620 mel>632 miş>607 mey>600 sin>594
+en>$ ir>$ mesi>$ miş>$ ebil>589 di>$ ece>564 mekt>629 iyor>$ erek>$ eme>558 mel>632 ip>$
+e>$ i>$ de>$ ler>$
+n>$ r>$ lü>361 ğ>623 p>375 s>645 lme>497 len>349 ye>$ m>$ ler>$ c>428 k>$ el>655 yle>$ yor>$ dü>530 ld>405 leş>461 den>$ lece>498 ş>403 leme>586 z>499 ley>587
+ük>469 va>430 g>511 ra>383 ve>437 se>$ üm>357 üz>652 ret>395 k>615 ni>385 ün>343 mu>644 f>369 ru>401 me>377 üş>666 nu>667 si>421 ta>503 mak>$ rim>402 ül>504 sa>$ ür>422 rek>$ p>375 yi>583 ste>621 nler>663 h>367 â>386
+l>$ rine>$ n>$ te>491 mel>632 y>$ rind>668 rs>406 si>$ ge>464 ti>451 rler>544 tl>420 mesi>$ rim>402 rini>$ tme>605 rg>536 med>630 rek>$ mey>600 de>$ ret>395 rken>$ mi>521 vi>434 bili>372 mekt>629 h>367 dir>$ diğ>620 tt>370
+nler>663 nü>636 rl>577 be>374 tü>647 tme>605 y>573 lme>497 dü>530 k>$ ld>405 lü>361 st>452 lt>443 ne>$ c>428 len>349 nde>$ z>$ m>616 p>$ tt>370 rken>$ ler>669 te>491 lece>498 nt>576 nm>670 rü>354 rs>406 nc>572 rd>671
+si>421 imi>509 iyle>$ ile>590 li>$ leri>$ ti>451 in>$ en>$ ilme>672 te>$ mek>$ ilir>$ mey>600 er>$ ebil>589 lend>585 miş>$ ke>392 c>428 mesi>$ iyor>595 lere>$ ar>591 ir>603 eme>558 lerle>$ mel>632 lerde>$ to>447 eceğ>596 med>630
+a>$ ük>469 ok>389 bi>400 ı>$ ün>343 ta>$ ül>504 me>377 üm>357 ti>451 u>$ ki>396 ma>$ te>$ oğ>468 ge>464 ra>383 tır>$ h>367 s>645 tu>449 miş>607 tü>647 ka>382 kı>381 gi>459 mış>481
+n>$ t>$ si>$ rek>$ leri>$ ca>366 cek>$ ceğ>598 bili>372 ri>$ lik>$ liğ>457 rler>544 ye>$ yi>$ de>$ bile>376 lere>$ me>377 lerde>$ miz>$ ra>383 vi>434 f>369 lerle>$ dir>$ rde>$ ci>458 ste>621 ro>346 miş>$ lin>463
+m>$ k>$ yle>$ den>$ r>$ ş>$ ve>437 ye>442 len>349 ni>$ te>491 yor>$ lir>$ lik>665 s>$ ld>405 ne>$ ği>$ nde>$ p>$ lme>497 nle>673 leme>586 f>369 lg>674 ta>503 çe>650 nc>572 dir>$ b>429 ler>$ ley>587
+ik>$ ı>$ ük>469 iği>$ u>$ ün>343 ül>504 üm>357 iyor>595 idir>$ iler>675 inin>$
+i>$ e>$ a>$ ı>$ u>$ ü>$ h>367 y>$
+üm>357 enm>551 eri>$ im>$ ar>$ eme>558 eği>508 ik>$ ak>$ endi>413 eni>559 ah>360 u>506 ene>557 iği>$ ere>$ ekle>676 an>$ ekt>677 eye>565 ı>$ erde>$ erle>$ at>350 ağı>627 ama>482 edi>423 emi>567 ini>$ iyor>595 aya>552 aş>566
+m>616 n>$ z>$ yor>483 r>$ l>$ s>645 ş>403 dü>530 p>$ yle>$ ç>368
+ni>385 s>645 m>$ j>373 k>615 id>678 l>$ u>506 f>369 pl>453 nun>$ ya>$ bi>400 or>345 ş>403 di>456 z>$ da>$ t>679 r>$ nları>680 g>511 ad>531 nt>576 en>681 it>353 va>430 iş>628 yu>439 ba>394 ve>437 nme>574
+ğr>682 r>$ n>$ k>615 lo>637 si>421 d>399 p>375 su>432 mla>492 tla>363 se>371 g>511 ları>$ ya>$ ti>451 ma>618 f>369 z>$ j>373 me>377 ğl>683 yu>439 c>428 tt>370 mi>$ ter>416 larda>$
+e>$ a>$ ır>$ ir>$ ol>384 im>$ iği>$ ur>$ ım>$ ü>$ ik>$ uğ>515 ığı>$ iler>$ in>$
+r>$ vi>434 şla>473 şı>470 sı>$ ha>424 dır>$ m>$ l>609 y>$ sl>379 va>430 nı>$ f>369 da>$ ns>489 st>452 ğ>623 t>$ nları>680 si>421 g>511 cı>365 na>$ ştı>411 şma>410 ndı>545 ni>$ nma>495 şa>438 sy>378 i>$
+mı>380 p>375 ü>$ se>371 mi>$ o>535 h>367 sa>364 k>$ f>369 ra>383 me>377 ci>458 si>421 ne>397 ör>436 ma>$ bi>400 di>456 vi>434 ret>395 ç>368 ve>437 be>374 sı>612 nü>636 mu>644 na>$ ni>385 â>386 ge>464 ca>366
+e>$ i>684 ti>451 ke>392 ur>526 be>374 çe>650 ra>383 se>371 te>491 lik>665 ve>437 la>460 sa>364 ta>503 si>421 mi>521 ri>347 um>523 ne>397 me>377 di>456 ut>514 o>535 şa>438 va>430 liy>501 ı>$ leri>$ ba>394 da>522 lı>$
+de>$ in>$ e>$ leme>586 len>349 liğ>457 ley>587 lik>665 dir>$ ce>$ as>569 ler>669 liy>501 da>$
+ul>580 ı>$ ol>384 lem>592 lo>637 uk>513 ri>347 bi>400 ü>532 on>391 be>374 rek>$ liğ>457 ur>526 or>345 ze>$ j>373 uğ>515 un>$ ra>383 la>460 de>455 ni>$ ru>401 ret>395 y>$ â>386 us>414 c>428 ut>514 ba>394 s>$
+mal>685 ta>503 lu>351 man>510 a>$ ba>394 e>$ i>$ lar>$ du>538 di>456 lan>348 lama>417 mu>644 c>428 o>535 tu>449 mla>492 da>$ laş>537 lay>562 ti>451 y>$ sa>$ g>511 su>432 mas>635 tla>363 md>490 me>$ p>375 f>369
+a>$ i>$ yon>427 tan>$ ları>$ sı>612
+le>444 ra>383 re>418 uru>686 si>421 ve>437 c>428 ı>$ uk>513 un>640 ru>401 uş>687 rim>402 z>499 ril>539 g>511 uz>524 lu>351 h>367 de>455 ki>396 üz>652 ş>403 be>374 ul>580 se>371 me>$ or>345 mi>521 üş>666 ül>504 da>$
+f>369 ki>396 sı>612 çi>688 h>367 ör>436 ve>437 sa>364 çe>650 y>$ su>432 ne>397 si>421 b>429 na>355 se>371 ge>464 ka>382 kı>381 ni>385 va>430 c>428 â>386 ku>393 p>375
+me>377 ün>343 üm>357 u>$ yı>407 gi>459 yon>427 ce>$ mi>521 ül>504 ge>464 ük>469 on>$ ret>395 za>466 sa>$ h>367 ma>$ ya>390 yu>439 sın>435 se>$ be>374 siniz>$ ca>$ k>615 om>398 ba>394 ön>689 yi>583 ne>397 mı>380
+dir>$ m>$ si>$ ti>451 z>499 f>369 p>$ lik>$ se>371 liğ>457 ler>$ lle>486 ş>403 sl>379 st>452 çe>650 gi>459 h>367 ba>394 bi>400 am>563 c>428 sa>364 tle>690 de>$ to>447 ta>503 va>430 ld>405 te>$ ah>360 o>535
+ri>$ t>679 rde>$ f>369 re>$ si>$ ye>442 nme>574 ndir>606 mek>$ rle>$ şm>662 ştir>691 ne>397 rdi>543 ni>385 yi>583 mey>600 bi>400 d>$ kt>441 mel>632 lerind>660 mesi>$ miz>462 rs>406 şi>500 ks>465 med>630
+nma>495 na>355 nı>547 ndı>545 ya>390 mak>$ yı>407 dı>$ t>679 maya>$ mış>$ şma>410 man>510 nları>680 ca>366 k>$ ns>489 mad>692
+e>$ a>$ ın>$ ra>383 i>$ ü>532
+ı>$ da>$ a>$ la>$ i>$ dır>$
+de>$ im>693 en>$ di>$ mek>$ ilme>672 ler>$ ebil>589 ir>$ ile>590 ge>464 ilir>$ in>$ ip>$ gi>459 mey>600 erek>$ miş>607 iyor>$ med>630 isi>694 ekt>677 mel>632 id>678 mesi>$ ecek>$ eceğ>596 eli>568 sin>594 eme>558 an>$
+l>$ n>$ t>$ k>$ ğin>454 si>$ ş>$ y>$ ra>383 vi>434 rek>$ m>$ cek>$ de>$ bili>372 z>499 di>456 da>522 bile>376 ceğ>598 ri>$ gi>459 f>369 an>342 rler>544 ci>458 rde>$ rs>406 rken>$ rdi>543 e>$ p>375
+an>$ ı>$ aca>695 e>$ abili>480 la>$ arak>$ i>$ alı>341 ayı>561 ül>504 dı>$ asın>484
+m>$ n>$ k>$ lar>$ şı>470 yla>$ ya>390 ç>368 g>511 lı>471 sı>$ dır>$
+k>$ ğı>$ n>$ ya>390 r>$ lma>540 lı>471 ma>$ la>460 yor>$ yı>407 mı>380 ld>405 yla>$ p>$ dığı>696 tla>363 dır>$ sı>$ lt>443 md>490 da>$ tı>362 g>511 yd>485 tt>370
+m>$ z>$ t>$ lı>471 dı>$ şı>470 r>$ lma>540 da>$ ld>405 şl>697 yla>$ lan>348 yor>$ lar>619 p>$ yd>485
+ce>$ ni>385 lle>486 r>$ nle>673 f>369 si>$ li>$ t>$ m>$ le>$ şi>500 di>456 y>573 şle>582 ne>397 de>$ nme>574 ns>489 ol>384 st>452 v>528 al>625 bili>372 ğ>623 ld>405 nc>572 h>367 nden>$ ci>458 nt>576 p>375
+t>$ da>522 nı>$ nl>494 ye>442 ç>368 b>429 sı>$ rı>698 ns>489 lar>$ k>$ le>444 m>$ niz>440 ya>$ cı>365 ra>383 ret>395 lı>$ h>367 nma>495 yı>407 na>$ z>$ o>535 rda>$ pl>453 rlar>$ nda>$ ri>347 ve>437
+e>699 ra>383 a>$ o>535 ler>$ ör>436
+mi>521 ri>347 re>418 rme>542 k>$ mler>664 rdi>543 n>$ lik>$ ro>346 md>490 rg>536 si>$ ci>458 me>$ len>349 ğin>454 leri>$ ma>618 şa>438 ye>$ op>388 di>456 rs>406 ha>424 lem>592 yi>$ in>$ ley>587 rler>544 tt>370 de>455
+c>428 j>373 g>511 t>$ f>369 z>$ b>429 ş>$ ok>389 su>432 id>678 yu>439 v>528 st>452 d>$ si>421 sy>378 us>414 ya>$ un>640 ut>514 ad>531 ul>580 om>398 yo>450 ur>526 h>367 it>353 sl>379 se>371 ol>384 in>359
+z>$ yon>427 m>$ yle>$ l>$ ye>$ k>$ dir>$ s>$ pl>453 t>$ j>373 yu>439 r>$ f>369 de>$ bi>400 be>374 on>$ dan>$ yi>$ c>428 ya>390 h>367 g>511 yor>483 ği>$ yd>485 ve>437 yla>$
+n>$ m>$ at>350 k>$ h>367 lla>472 lt>443 rak>$ lma>540 cak>$ vi>434 bilir>$ ğı>$ st>452 bile>376 tm>546 f>369 lı>471 ld>405 sı>$ lan>348 al>625 tı>362 ya>390 rı>$ tan>$ yı>407 d>$ rken>$ tt>370 rl>577 p>375
+du>538 h>367 c>428 p>$ be>374 dan>$ an>$ ç>368 va>430 at>350 di>456 g>511 f>369 ar>$ ba>394 e>$ ve>437 j>373 ur>526 id>678 bi>400 az>$ de>$ daki>$ und>517 is>505
+tır>$ lard>700 sa>$ sın>435 ım>$ ken>$ ız>$ lığ>701
+ır>$ ir>$ ör>436 ur>$ or>345 id>678 is>505 ür>422 uğ>515 um>$ im>$ ik>$ ım>$ in>$ ri>347 ığı>$ uk>513 ık>$ om>398 on>391 ula>516 ılar>702 üm>357 ın>$ ük>469 iği>$ ül>504 un>$
+n>$ si>$ t>$ cek>$ rek>$ bilir>$ lerind>660 miz>462 lik>$ bile>376
+en>681 u>$ ı>$ ar>$ an>$ ak>$ ayı>561 adı>555 alar>344 aya>552 er>$
+ne>397 ha>424 f>369 p>375 c>428 be>374 ş>403 çe>650 ba>394 çl>578 va>430 ra>383 y>$ j>373 ru>401 na>355 ve>437 nu>667 z>$ bi>400 ni>385 re>418 ri>347 â>386 vi>434 nme>574 nle>673 rı>698 nı>547 rü>354 ro>346 ns>489
+r>$ nı>547 na>355 ma>$ ya>390 nma>495 şma>410 ndı>545 mış>481 yı>407 dığı>$ cı>365 tıl>579 ta>503 tm>546
+rı>$ rda>$ h>367 ra>$ rla>$ şma>410 t>$ dı>$ nma>495 ya>390 ri>$ mak>$ nı>547 ge>464 ndı>545 na>355 yı>407 maya>$ mış>481
+nda>$ r>$ dır>$ kl>433 ş>$ yor>$ m>$ na>$ lık>$ nın>$ p>$ lığ>701 ç>368 kta>649 tı>362 ks>465 ca>$ nız>703 sı>$ lar>$ cı>365 f>369 nc>572 yı>407 laş>537 z>$ ya>$ nma>495 yd>485 da>$ ndı>545 yla>$
+ül>504 a>704 i>$ ı>$ ez>425 ol>384 ra>383 eti>633 el>655 er>$ te>$ leri>$ ur>526 s>$ ri>347 re>$ lerde>$ h>367 ün>343 ları>$ li>$ leş>461 lere>$ eş>556 tir>$ ür>422 ul>580 em>639 um>523 üm>357 tan>$ larda>$
+e>$ ir>$ a>$ ı>$ iği>$ u>$ ü>532 ik>624 in>$ im>$ ön>689 iler>$ iy>352
+di>$ an>$ ler>$ la>460 ay>705 as>569 de>$ li>$ at>350 ar>591 o>535 y>$ abili>480 â>386 acak>$ lo>637 se>$ dan>$ sin>594 ki>396 ah>360 ce>$ av>706 ak>356 gi>459 tr>659 za>466 ama>482 ti>451
+sı>$ z>$ kta>649 lı>471 ya>$ dan>$ mal>685 ması>$ mış>$ dığı>$ nın>$ yı>$ lar>$ kla>707 si>$ mak>$
+nda>$ nt>576 nı>$ da>$ m>$ na>$ nma>495 f>369 sı>$ nc>572 ştı>411 cı>365 lma>540 nl>494 p>$ ld>405 ya>$ la>460 lı>471 rda>708 rı>698 yla>$ şı>470 şma>410 şla>473 yor>$ rt>534 z>$ t>$ dır>$ ra>383 şa>438
+al>$ on>$ um>$ en>$ ol>384 asın>484 ada>358 anı>553 et>570 amı>560 ay>705 ö>387 c>428
+nu>$ m>$ na>$ ndan>$ k>$ nl>494 rt>534 lla>472 tm>546 su>432 şt>475 du>538 ra>383 ru>401 nc>572 rma>709 tu>449 lu>351 da>$ rd>671 yla>$ p>$ şma>410 rg>536 z>499 lma>540 rla>404 yor>$ ya>390 yu>439 rs>406 ld>405
+ğu>541 k>$ lu>351 mu>644 r>$ şla>473 yla>$ nda>$ nu>667 na>$ md>490 mla>492 du>538 yor>$ ma>$ su>432 p>$ nc>572 b>429 e>$ şa>438 ca>366 şt>475 g>511 lar>$ yu>439 ya>$ ti>451 da>$ de>455 si>421 sl>379
+nc>572 m>$ tla>363 c>428 p>$ nu>$ tu>449 ru>401 na>$ k>$ nda>$ rdu>$ rm>408 lu>351 tt>370 yor>$ va>430 nları>680 nma>495 ld>405 z>$ yla>$ lm>474 laş>537 ta>$ ra>383 su>432 ya>$ lan>348 du>538 rs>406 da>$
+e>$ ak>$ uş>687 aya>$ ış>$ az>$ ası>$ adan>$ iş>$ üş>666 ayı>561 is>505 adı>555 an>$ uy>520 us>414 am>563 aları>710 alı>341 ağı>627 ıyor>$
+su>432 l>$ r>$ nma>495 m>$ nu>667 z>$ ya>$ yor>483 dan>$ yu>439 na>355 yla>$ p>$ t>$ ş>$ nd>711 nları>680 du>538 nc>572 ne>397 c>428 ns>489 ku>393 daki>$
+de>455 di>456 ro>346 ra>383 yo>450 ya>390 bi>400 re>418 o>535 yu>439 s>$ f>369 ları>$ da>522 ör>436 ye>442 ri>$ vi>434 â>386 du>538 m>$ lama>417 c>428 lu>351 n>$ ge>464 h>367 k>$ ler>$ ru>401 larla>$ lay>562
+n>$ z>$ f>369 l>$ r>$ du>538 s>$ arla>712 yla>$ ba>394 m>$ p>$ yu>439 yor>$ e>$ yd>485 va>430
+ra>383 n>613 ri>347 rt>534 ti>451 sı>$ g>511 h>367 ze>426 d>$ tla>363 l>$ rma>709 ce>$ ç>368 ya>$ k>$ yı>$ rı>698 m>$ tı>$ rd>671 cak>$ re>$ ğ>623 ro>346 zl>614 tu>449 sy>378 za>466 zı>611 rk>713
+re>418 nc>572 h>367 sı>$ ka>382 de>455 ş>403 ri>347 nın>$ lar>$ t>$ rt>534 nl>494 y>$ m>$ rı>698 ra>383 ğ>623 dan>$ na>$ lık>$ b>429 p>$ ni>$ z>$ si>$ a>$ sy>378 rd>671 nız>703 cı>365 rl>577
+h>367 n>$ ğ>623 l>$ si>$ km>599 r>$ z>$ ye>$ m>$ dir>$ kt>441 t>$ ve>437 p>$ yi>$ en>681 al>$ kla>707 yle>$ b>429 den>$ yor>$ kleri>496 ki>396 yd>485 ge>464 ci>458 at>350 ke>392 asın>484 o>535
+b>429 tu>449 u>506 ta>$ f>369 h>367 p>375 o>535 i>684 a>$ ları>$ e>$ lu>351 ku>393 tin>626 ter>416 maya>$
+iye>602 du>538 an>$ g>511 ma>$ ba>394 mu>644 lar>$ o>535 ken>$ arak>$ lu>351 su>432 abili>480 e>$ acak>$ be>374 sa>$ t>$ it>353 c>428 ada>358 da>$ ka>382 af>714 re>418 alı>341 y>$ idir>$ se>$ p>375 ama>482
+a>$ ur>$ e>$ uğ>515 uk>513 um>$
+r>$ şm>662 mle>715 ne>397 nm>670 ni>385 ndi>575 ye>442 me>$ di>456 yi>583 mi>521 s>645 şi>500
+ştir>691 ye>442 şm>662 ne>397 nme>574 nt>576 yi>583 ni>385 diğ>620 şi>500 me>$ t>$ ndir>606 mler>664 mi>521 se>371 st>452 md>490 de>455 sin>594
+ler>$ a>$ ce>$ g>511 om>398 mel>632 ekle>676 ti>$ mesin>716
+lik>665 ki>$ leme>586 si>$ den>$ kt>441 len>349 b>429 ley>587 kler>622 leri>$ ks>465 ril>539 ye>$ ra>383 n>$ m>$ liğ>457 lt>443 yi>$ ll>409 v>528 f>369 dir>$ re>418 gi>459 lme>497 liy>501 p>375 lerde>$ lec>717 t>$
+tl>420 m>$ nin>$ l>$ se>371 ye>$ r>$ k>$ yi>$ ne>$ den>$ nc>572 nde>$ f>369 yle>$ tt>370 di>$ niz>440 v>528 yor>$ st>452 ğin>454 p>$ z>499 ş>$ si>$ yd>485 na>355 ti>451 te>$
+n>$ si>$ di>$ ye>$ de>$ se>371 l>$ m>$ rek>$ kt>441 f>369 ka>382 sl>379 sy>378 ke>392 cek>$ yi>$ ceğ>598 bili>372 as>569 ğin>454 e>$ ks>465 at>350 şi>500 ci>458 kleri>496 vi>434 ste>621 p>$ be>374 ç>368
+ni>$ ne>$ si>$ ka>382 mi>$ ği>$ liğ>457 nde>$ kleri>496 lerind>660 kte>467 md>490 nc>572 gi>459 st>452 lle>486 lin>463 yi>$ den>$
+ış>$ iş>$ uş>687 üş>666 ıyor>$ is>505 uy>520 us>414 iyor>$
+ı>$ h>367 e>$ i>$ ti>451 lar>$ k>$ y>$
+dır>$ rı>$ rla>404 ki>$ yı>407 t>679 ş>$ yd>485 l>$ rda>708 ra>$ dir>$ z>$ sy>378
+a>$ ları>$ dı>533 i>684 ü>532 ı>$ man>510 tır>$ larda>$ lü>361 na>355 ta>503 lara>$ eb>641 o>535 lama>417 f>369 mak>$ er>$ en>$ malar>651 leri>$ re>418 se>371 u>$ ması>$ lere>$ mek>$ lu>351 tü>647 lay>562 maya>$
+ik>$ ç>368 ro>346 ör>436 a>$ u>506 e>$ ür>422 ma>$ te>$ tı>362 is>505 iz>718 ta>$ sa>364 in>$ om>398 ka>382 mış>$ tir>$ h>367 or>$ ül>504 ra>$ it>353 iği>$ ir>603 imi>509 me>377 si>421 iyle>$ sı>612
+k>$ ğı>$ n>$ m>$ şma>410 cı>365 şı>470 yor>$ sı>$ ya>$ şa>438 da>$ şla>473 p>$ yı>$ yla>$ ştı>411 dır>$ g>511 sl>379 h>367 ba>394
+r>$ i>$ t>$ ye>$ n>$ dir>$ yle>$ se>371 yo>450 m>$ k>$ at>350 be>374 h>367 yd>485 si>$ yi>583 an>$ pl>453 bi>400 st>452 z>$ ya>390 de>$ sy>378 sl>379
+na>355 ma>$ nma>495 nı>547 ndı>545 ya>390 dı>$ yı>407 mla>492 mı>380 şa>438 md>490 şma>410 sın>435 gi>459 şı>470
+ır>$ an>$ ması>$ mış>$ dı>$ arak>$ ık>$ arı>$ ıp>$ abili>480 acak>$ mak>$ mal>685 ıyor>$ ama>482 maya>$ mad>692 ığı>$ mam>719 g>511 ın>720 sı>612 arda>$ ış>721 arla>$ man>510 sa>$ alı>341
+ı>$ sa>364 cı>365 ları>$ a>$ da>$ lı>$ larla>$ lara>$ larda>$ tır>722
+iniz>$ a>$ on>391 it>353 e>$ iz>$ ız>$ uz>$ unu>519 ınız>$ ün>343 p>375 iyo>507 lu>351 ılma>477 ılı>479 ikle>723 iye>602 ta>503 ıla>478 is>505
+a>$ l>$ işti>724 ış>$ uş>687 iyor>$ is>505 üş>666 in>359 ıyor>$ uy>520
+iler>675 lı>$ at>350 ları>725 lan>348 arl>654 â>386 ine>$ ini>$ lama>417 ı>$ ta>$
+k>$ ya>$ sı>$ lar>$ nın>$ cı>365 mız>$ yı>$ da>$ lin>463 tı>362 sy>378 z>$ nız>703 ğı>$ lı>471 mış>$ tla>363 şı>470 mak>$ dı>$ tt>370 yla>$ nt>576 mal>685 ması>$ nları>680 ri>347
+e>$ i>$ yu>439 ol>384 ok>389 s>$ di>456
+iyo>507 el>655 a>$ ınız>$ iniz>$ ız>$ iz>$ im>693 ür>422 ul>580 ti>451 un>$ iye>602 inl>726 üz>652 en>$ it>353 ev>658 o>535 ılar>702 isi>694 uz>$ tü>647 le>$ inin>$ te>$ iler>675 ıy>727 ili>728
+da>$ ın>$ ız>$ lar>$ a>$ s>$ lık>$ dır>$ ca>$ lığ>701 ımı>729 ki>$ laş>537 i>$ ye>442 lama>417 ıdır>$ lay>562 ya>390 cı>365 di>456 e>$ lik>$ ta>503 lan>348 ır>730 yo>450 ıyla>$
+nme>574 yi>583 ştir>691 ye>442 şm>662 me>$ ndir>606 ne>397 şi>500 di>456 ni>385 mi>521 sin>594 te>491 ns>489 ti>451
+um>$ uz>$ lar>$ su>432 sa>$ du>538 mu>644 ki>$ da>$
+de>$ e>$ i>$ dir>731 gi>459 a>$ da>$ ce>$ mesi>$ miş>$ mey>600 le>$ diğ>620 mel>632 mekt>629
+arı>$ eri>$ ama>482 om>398 in>$ ara>$ ak>$ ı>$ ik>624 ek>415 iği>$ ana>550 anma>548 arda>$ anı>553 erden>$ ere>$ erle>$ andı>549 arla>$ as>569 aya>552 aş>566 ayı>561 adı>555 et>570 az>653 u>$ enm>551 y>$ ük>469 at>350
+r>$ ti>451 tme>605 me>$ ye>442 ştir>691 şm>662 nme>574 tt>370 te>491 yi>583 diğ>620 miş>607
+or>$ e>$ le>$ di>$ iz>$ im>$ se>$ ken>$ ce>525
+lle>486 r>$ si>$ me>377 n>$ ç>368 ler>$ li>$ se>371 ld>405 yi>$ len>349 de>$ ci>458 ley>587 ste>621 ye>$ leme>586 t>$ mi>521 lm>474 dir>$ be>374 yle>$ ce>$
+i>$ e>$ ı>$ ap>732 lar>$ and>733 de>455 u>506 av>706 lı>$ ye>442 anlar>657 o>535 ür>422 anı>553 da>$ p>375 ör>436 man>510 ak>356 li>$ ama>482 dır>$ laş>537 g>511 yon>427 ac>734 s>645 ar>591 ana>550 as>569 lan>348
+lt>443 r>$ n>$ lma>540 sı>$ lan>348 t>$ lı>471 ev>658 m>$ de>$ y>573 ld>405 h>367 b>429 ke>392 cı>365 i>$ lar>$ va>430 j>373 p>$ lay>562 lama>417 ğı>$ klar>735 da>$ cak>$ le>444 sy>378 f>369 li>446
+ki>$ dır>$ şla>473 şı>470 r>$ yı>407 l>$ sın>435 j>373 yd>485 ndı>545 şt>475 kla>707 da>$
+en>$ ir>$ mesi>$ di>$ miş>$ eri>$ erek>$ ebil>589 ik>$ mekt>629 mel>632 ecek>$ iyor>$ yon>427 ip>$ mey>600 med>630 iğin>554 eceğ>596 eme>558 tme>605 eş>556 erde>$ iş>628 erle>$ in>359
+i>$ de>$ e>$ le>$ se>$ di>$ miş>$
+si>$ t>679 leme>586 li>$ leri>$ sl>379 iler>675 ley>587
+si>$ k>$ ye>$ z>$ den>$ li>446 yi>$ di>456 nin>$ miş>$ nt>576 mesi>$ leri>$ niz>$ mekt>629 miz>$ mel>632 lere>$ yle>$ se>$
+i>$ e>$ ci>458 de>$ se>371 le>$ si>$ ü>532 sa>364 dir>$
+ki>$ y>573 r>$ ler>$ dir>$ siniz>$ şi>500 len>349 leme>586 ndir>606 v>528 de>$ ley>587 ği>$ sind>571
+ği>$ r>$ ve>437 m>$ k>$ ler>$ n>$ gi>459 ya>390
+zi>$ ze>$ zd>617 zle>661
+eki>$ edir>$ a>$ ey>638 endi>413
+i>$ e>$ de>$ le>$ dir>$
+k>$ ye>$ si>$ yi>$ r>$ z>$ den>$ n>$ leri>$ li>446 diğ>620 miz>$ la>460 mesi>$ mek>$ miş>$ mel>632 se>$
+ü>532 un>640 ah>360 an>$ e>$ ar>591 ılar>702 o>535 ın>720 ası>736 â>386 ılı>479 alı>341 alar>344 ada>358 ıs>737 la>460
+ta>503 ra>383 ul>580 si>421 lu>351 al>$ an>342 i>684 tu>449 sa>364 as>569 e>$ ad>531 rin>$ ları>$ k>$ om>398 se>371 ard>738 ok>389 ro>346 um>523 at>350 sl>379 mu>644 malar>651
+lü>361 lg>674 yle>$ z>499 ğr>682 b>429 p>375 k>615 lme>497 h>367 len>349 f>369 tr>659 v>528 m>616 lle>486 ce>525 se>371 ld>405 te>491 ti>451 lan>348 g>511 ta>503 de>455
+de>$ e>$ k>615 ü>$ c>428 dü>530 tü>647 lü>361 is>505 iz>718 se>$ lerde>$ ik>624 leri>$ ge>464 m>616 lere>$ ol>384 ç>368 al>$ lend>585
+u>$ ra>383 lu>351 al>625
+lü>361 ler>$ el>655 ü>$ ri>347 ge>464 me>377 dü>530 ken>$ t>$ i>$ de>$ en>$ ba>394 ek>$ s>645 et>570 at>350 ede>419 len>349 as>569 ecek>$ leş>461 erek>$
+o>535 ü>$ u>$ at>350 ar>$ iz>718 lü>361 c>428 ama>482 e>$ ab>739 it>353 ik>$ leri>$ su>432 den>$ ka>382 as>569 ta>503 is>505 an>$ du>$ mu>644 id>678 ör>436 lere>$ lec>717 da>$ la>$ in>$ te>$ masın>740
+te>$ le>$ li>$ eli>568 anl>741 o>535 çi>688 tir>$ i>$ ede>419 eler>742 çe>650 si>421 ül>504 esi>743 se>371 lar>$
+iye>602 et>$ iz>718 el>655 is>505 ları>$ tı>$ lara>$ o>535 g>511 it>353 dır>$ da>$ j>373 im>$ dir>$ leri>$ ine>$ ikl>744 ması>$ li>446 tm>546 inden>$ leş>461 ey>638 ci>458 lı>$ lardan>$ ini>$ s>$ cı>365 larla>$
+ril>539 ki>$ rdi>543 re>418 v>528 rme>542 mi>521 dir>$ md>490 len>349 rim>402 ley>587 rg>536 ci>458 yi>583 rs>406 rini>745 ndir>606 siniz>$ mler>664 kler>622
+et>$ ken>$ t>$ i>$ sa>364 ma>$ su>432 sın>435 ru>401 y>$ mış>481 şi>500 c>428 en>681 eli>568 esi>$ kt>441 ka>382 ed>746 kı>381 n>$ b>429 klar>735 sin>594 mla>492
+i>$ ık>$ ü>$ uk>513 ığı>$ uğ>515 s>$ â>386 y>$ uy>520 o>535 ılar>702 ıy>727
+ne>397 na>355 ek>$ i>$ ya>390 ap>732 j>373 leri>$ at>350 us>414 es>412 em>639 lere>$ p>375 den>$ mi>521 da>522 al>$ ye>442 ci>458 o>535 lerle>$ f>369 st>452 dir>$ ken>$ lerden>$ an>$ ed>746
+e>$ at>350 as>569 ri>347 i>684 uru>686 uş>687 â>386
+nda>$ r>$ z>$ na>$ nın>$ lma>540 yor>483 lı>471 p>$ kl>433 lan>348 m>$ yla>$ dır>$ ş>$ nız>703 ld>405 nc>572 lar>619
+ı>$ a>$ da>$ la>$ dır>$ i>$ ca>$
+kt>441 ğı>610 ks>465 klar>735 gi>459 ka>382 m>$ km>599 n>$ z>$
+a>$ um>523 i>$
+adır>$ an>$ ır>$ ayı>561 asın>484 ir>$
+rs>406 rler>$ ri>347 yor>$ rm>408 rdi>543 t>679
+ri>$ me>$ rle>$ rde>$ re>$ ne>397 ye>442 nme>574 yi>583 ni>385 rdi>543 ndi>575 miş>$ di>456
+sı>$ z>$ k>$ ya>390 dan>$ dı>533 ları>$ yı>407 lı>$ mış>481 larda>$ nın>$ ması>$ ğın>493 nız>$ r>$ mak>$ lara>$ mız>$ di>456 yla>$ si>$ nda>$ nları>680 larla>$
+ka>382 si>421 alı>341 ın>$ ılma>477 mak>$ ç>368 ılı>479 may>643 arak>$ ıla>478 mış>481 il>601 ası>$ mad>692 ıyor>747 ır>730 ip>$ mam>719 at>350 aca>695 abili>480 man>510 sa>364 d>399 masın>740 uz>524 â>386 iye>602 mal>685 anın>$ arl>654
+i>$ li>446 lend>585 leri>$ e>$ ha>424 ki>396 den>$ kl>433 kte>467 ri>347 lere>$ at>350 al>$ ce>525 o>535 ks>465
+an>$ ığı>$ ım>$ ıklar>748 ır>$ i>684 de>455 ılar>702 ın>$ aki>$ ıy>727
+j>373 ken>$ si>421 as>569 an>342 at>350 se>$ ge>464 mekt>629 on>$ be>374 ta>503 ya>390 ce>$ ti>451 mi>521 re>418 mey>600 ap>732 ki>$ kl>433 al>$ mler>664 çe>650 mesi>$ n>$ va>430 ve>437 akt>749 ba>394 mel>632 vi>434
+a>$ ı>$ da>$ lar>$
+ü>$ e>$ an>$ lü>361 leri>$ da>522 de>$ in>359 len>349 lere>$ ley>587 s>645 leme>586 dü>530 rü>354 lerde>$ re>418 lerle>$ ay>705 ra>383 â>386 b>429 ul>580
+ke>392 ndir>606 nme>574 me>$ yi>583 ne>397 ye>442 ni>385 diğ>620 kler>622 ğin>454 t>$ miş>$
+ür>422 ı>$ uk>513 re>418 mak>$ uğ>515 anı>553 i>684 me>$ tı>362 arak>$ em>639 en>$ ec>634 anlar>657 ül>504 maya>$ abili>480 er>$ malar>651 ay>705 ması>$ acak>$ ti>451 ün>343 o>535 ra>383 ebil>589 ası>$ mad>692 man>510 mış>$
+si>$ kte>467 li>446 z>$ ye>$ miş>$ diğ>620 den>$ mesi>$ mel>632 mekt>629 leri>$ yi>$ kle>597 ks>465 nin>$ se>$ niz>$
+si>$ z>499 k>$ l>$ r>$ te>491 ye>$ m>$ sl>379 nin>$ de>$ ce>$ se>$ ş>$ yi>$ ta>503 v>528 ste>621 ne>$ g>511 dir>$ ya>390 nde>$ yle>$ ti>451 niz>440 ha>424 du>538 a>$
+mla>492 b>429 n>$ p>$ z>$ mu>644 c>428 f>369 lma>540 lu>351 su>432 k>$ r>$ ğu>541 md>490 yor>$ ld>405 lar>$ ma>$ h>367 lan>348 ti>451 is>505 yu>439 va>430 dan>$ ya>$ du>538 yla>$ iye>602 lama>417 g>511
+mak>$ abili>480 tı>362 an>$ mış>481 ması>$ aca>695 maya>$ arak>$ ama>482 man>510 mad>692 ları>$ mam>719 malar>651 ü>532 alı>341 amı>560 sın>435 e>$ ağı>627 lara>$ lardan>$ lık>$ tan>$ lığ>701
+k>$ z>$ r>$ yle>$ ş>$ p>$ st>452 ye>442 f>369 yor>$ ci>458 si>$ t>$ dir>$ ba>394 o>535 ya>390 ca>$ bi>400 at>350 sl>379 de>$ ve>437 be>374 ha>424 end>750 g>511 yi>$ um>$ da>$ sa>364 yla>$
+i>$ de>$ e>$ ce>$ le>$ dir>$
+cı>365 se>371 k>615 ün>343 üş>666 si>421 üz>652 p>375 sa>364 su>432 o>535 ba>394 mel>632 ür>422 ya>390 be>374 rü>354 ş>403 ci>458 ül>504 bi>400 ge>464 nu>667 yi>583 ör>436 sı>612 yon>427 ru>401 mad>692 â>386 re>$ ca>$
+en>$ mesi>$ ir>$ miş>$ in>$ ebil>589 erek>$ mey>600 ecek>$ mek>$ iyor>$ mel>632 ler>$ a>$ ip>$ ti>451 med>630 im>693 yu>439 eceğ>596 eme>558 ci>458 ile>590 ce>525 o>535 ilme>672 sin>594 izi>$
+r>$ ğ>623 m>$ st>452 lü>361 lle>486 kleri>496 kte>467 f>369 ler>$ n>$ ks>465 g>511 yor>483 la>460 se>371 tler>604 ş>403 ld>405 leme>586
+ek>$ ken>$ se>371 ce>$ j>373 an>342 ler>$ y>573 ara>656 ı>$ miş>$ siniz>$
+k>$ nler>663 ye>$ nin>$ si>$ den>$ yi>$ z>$ leri>$ ci>458 di>$ niz>$ liy>501 m>$ ne>397 se>$ lerden>$ lerle>$ yle>$
+ştir>691 şi>500 şm>662 nme>574 me>$ ni>385 ti>451 kler>622 ndi>575 ne>397 yi>583 tme>605 si>421 di>$ ye>442 tt>370 st>452
+k>$ ği>$
+zi>$ tler>604 zle>661 tin>626 si>$ tt>370 zd>617 ze>$ y>$ te>$ ste>621 sl>379 tme>605 de>455 di>456
+ol>384 e>$ as>569 on>391 al>625 ik>$ op>388 an>342 at>350 it>353 y>$ av>706 is>505 ah>360 ak>$ ac>734 pl>453 iği>$ ü>532 in>359 ab>739
+i>$ e>$ de>$ ya>390 g>511 ler>$ a>$ ce>$ da>$ u>506 dir>$ ci>458 op>388
+j>373 g>511 su>432 n>$ me>377 k>$ lu>351 ba>394 t>$ z>499 lar>$ ya>$ yu>439 da>$ ğu>541 bi>400 c>428 di>456 p>375 r>$ du>538 o>535 u>506 lan>348 ma>$ mu>644 se>371 it>353 yd>485 st>452 si>421 yla>$
+i>$ ı>$ u>$ ü>$ y>$
+ta>503 h>367 i>$ at>350 ı>$ e>$ an>342 ları>$ za>466
+ur>526 eri>751 an>$ uğ>515 uk>513 um>$ en>$ ü>532 ula>516 eki>$ aki>$ emi>567
+sı>$ lığ>701 lar>$ lık>$ nın>$ k>$ ya>$ nız>$ dır>$ na>$ m>$ nda>$ yı>$ yla>$ dan>$ r>$ ba>394 ğı>610 yor>$ yd>485 g>511 tı>362
+m>$ lme>497 n>$ ler>$ si>$ lik>$ len>349 ld>405 liğ>457 lir>$ p>$ ye>$ ci>458 lece>498 çe>650 yor>483 yi>$ leme>586 k>$ dir>$ den>$ rme>542 lin>463
+ışt>752 en>681 da>$ i>$ ın>$ ıyor>747 lı>471 cı>365 laş>537 ut>514 us>414 etle>753 ları>725 un>640 ü>$ lay>562
+g>511 ç>368 iz>718 cı>365 s>$ ik>$ e>$ ti>451 ü>532 o>535 b>429 tıl>579 ta>503 tu>449 ca>$ iye>602 in>$ ce>$ ne>397 tla>363 ki>$ te>491 is>505 y>$ ir>$ iyor>595 us>414 ci>458 ip>$
+i>$ e>$ de>$ le>$ ara>656 dir>$ ce>$
+ı>$ i>$ u>$ ü>$ op>388 or>345 on>391
+me>$ ilme>672 ilir>$ ir>$ en>$ ile>590 ebil>589 in>$ erek>$ di>$ imi>509 iyor>595 ecek>$ ip>$ miş>607 eceğ>596 eme>558 eli>568 ler>$
+u>$ el>655 lar>$ a>$ da>$ is>505 lu>351 er>$ ik>$ ez>425 du>538 laş>537 iz>718 et>570 c>428
+ti>451 miz>$ li>446 yle>$ dir>$ tme>605 md>490 me>$ lme>497 lle>486 ld>405 mle>715 tt>370 yd>485
+ğı>$ k>$ r>$ ş>$ l>609 gi>459 yı>407 h>367 mı>380 dır>$
+ca>$ yla>$ sı>$ da>$ r>$ ş>$ cı>365 p>$ k>$ z>$ yor>$ dır>$ ya>$ ç>368 sa>364 yı>$ ğı>$ f>369 dığı>696 ta>503 yd>485
+a>$ ık>$ i>$ ü>$ uk>513 ığı>$ uğ>515 um>523 ılar>702 ulu>518 on>391
+tir>754 me>$ miş>$ imi>509 erek>$ ir>$ en>$ in>359 ip>$ iyor>$ ebil>589 sin>594
+nin>$ ne>$ nde>$ niz>$ dir>$ yle>$ yi>583 kl>433 ya>390 t>$ yd>485 na>$ r>$ miz>462 ndan>$ z>$ yor>$
+i>$ e>$ na>355
+a>$ ten>$ çe>650 i>$ ra>383 re>418 tir>$ en>$ eti>633 etle>753 çi>688 ba>394 se>371 er>$ mesin>716 â>386 ri>$ tan>$ za>466 ül>504 si>421 mekt>629
+i>$ ek>$ den>$ le>$ dir>$
+ar>591 at>350 i>$ ad>531 di>$ an>$ af>714 se>$ ö>387 ne>397 â>386 ken>$ ye>442 ak>356
+a>$ ı>$ i>$ da>$ lar>$ za>466 on>$ ma>$ ede>419 mı>380 lı>$ mla>492 ol>384 et>570
+ya>390 ni>$
+sı>$ lı>$ yı>$ n>$ ya>$ ları>$ da>$ f>369 kt>441 yl>488 rak>$ mı>380 si>$ bili>372 ca>366 mad>692 bile>376 lara>$ lardan>$ dır>$ lan>348 may>643 mam>719
+i>$ n>$
+k>$ ye>$ z>$ si>$ ler>$ yi>$ nin>$ de>$ niz>440 li>$ diğ>620 mesi>$ nt>576 miş>607 dir>$ mekt>629 yle>$ miz>462 se>$
+r>$ nme>574 ye>442 mey>600
+n>$ dir>$ m>$ yle>$
+tir>$ lerd>588 te>$ i>$ se>$ e>$ ken>$ siniz>$ tin>626 leri>$
+i>$ lar>$ ta>$ on>391 ö>387 lı>$ ar>591 an>$ si>421 sı>612
+c>428 ğ>623 s>645 ya>390 f>369 t>679 yor>$ p>375 dü>530 yle>$ de>$ b>429 ye>442 ve>437 el>655 vi>434 h>367 g>511 da>$ ç>368 j>373 yd>485 an>342
+alı>341 ı>$ et>$ ey>638 anı>553 ri>347 le>$ esin>642 ol>384 uğ>515 en>$ or>345 ede>419 eler>$
+n>$ lo>637 g>511 m>$ du>538 su>432 lar>$
+c>428 z>$ çl>578 nda>$ nla>755 tm>546 na>$ m>$ r>$ yor>$ tu>449 lma>540 lan>348 nu>$ ni>385 lu>351 tt>370 s>$ nc>572 ld>405 va>430 p>$ da>$ ta>503 ş>403 nde>$ yla>$ ne>$ du>538 tl>420 yu>439 f>369
+ğu>541 r>$ m>$ k>615 g>511 n>$ su>432 lar>$ c>428 yu>439 ya>$ yla>$ at>350 da>$ t>$ du>$ st>452
+ak>356 sa>364 lar>$ ken>$ an>$ lığ>701 ka>382 na>355 lık>$ sı>612 ç>368 ma>$ tı>362 dı>$ arak>$ h>367 tla>363 abili>480 dan>$ acak>$ mış>$ lan>348 lama>417 aş>566 laş>537 cı>365 lay>562 alı>341 sl>379 ap>732 as>569 ba>394
+r>$ na>355 ya>390 nma>495 yı>407 ma>$ nı>547 ndı>545 dı>533
+n>$ dak>756 mı>380 yla>$ ma>$ lay>562 lama>417 sın>435 md>490 z>$ lanma>757 dır>$
+a>$ n>$
+yı>407 ya>390 tı>362 dığı>696 ma>$ nı>547 na>355 nma>495 ta>503 ndı>545
+ikle>723 er>$ eş>556 iği>$ eme>558 ene>557 eni>559 ar>591 enm>551 ad>531
+ı>$ ak>$ da>$ la>$ dır>$
+ti>451 siniz>$ ü>532 o>535 tt>370 a>$ ken>$ se>$ gi>459 tme>605 di>$ dek>758 ve>437 ki>396 ge>464 us>414 den>$ te>491 ba>394 p>375 ci>458 ya>390 ha>424 ul>580 to>447 na>355 sa>$
+a>$ ı>$ dı>$ e>$ sa>364 be>374 le>$ mış>$
+tir>754 i>$ e>$ te>$ ke>392 leme>586 miş>$ mesin>716 mey>600 len>349 leri>$ ley>587
+k>$ z>$ ye>442 nt>576 si>$ ler>$ di>456 yi>583 m>$ nin>$ den>$ yle>$ li>446 niz>440 se>$
+nde>$ ni>$ ne>$ k>$ yor>483 ş>$ z>$ sy>378 nler>663 yle>$ dir>$ sind>571 ye>$ la>460 st>452 sine>$
+ze>426 i>$ yon>427 bi>400 er>502 zi>448 on>391 len>349 ler>$ se>371 li>$ ley>587 an>342
+k>$ ya>390 m>$ n>$ dir>$ ğin>454 r>$ ler>$ p>$ yor>$ yd>485 şi>500 yi>583 si>$
+n>$ ks>465 kleri>496 ği>$ rek>$ cek>$ bilir>$ ra>383 me>377 ceğ>598 kte>467 ha>424 bile>376 sind>571 d>$ lerind>660 gi>459
+i>$ e>$
+ri>347 iğin>554 ro>346 ire>759 e>$ iri>760 irm>761 ör>436 aş>566 leri>$ ru>401 ü>532
+de>$ in>$ iz>$ ler>$
+ıdır>$ ıs>737 ıy>727 i>$ e>$ den>$ dir>$ ık>$ lik>665 ılar>702 leri>$ tt>370 liğ>457 leş>461
+h>367 o>535 g>511 f>369 p>$ an>$ e>$ is>505 in>$ ar>591 am>563 ad>531 iz>718 av>706 j>373 at>350 as>569 ap>732 ik>$ al>$ um>$ us>414 ur>$ ak>356 il>601
+k>$ m>$ ğı>$ dır>$ n>$ r>$ yla>$ yor>$ yı>762 sın>763 p>$ yd>764 lar>$ g>765
+g>765 ç>766 iz>767 cı>768 s>$ ik>$ e>$ ti>769 ü>770 o>771 b>772 tıl>773 ta>774 tu>775 ca>$ iye>776 in>$ ce>$ ne>777 tla>778 ki>$ te>779 is>780 y>$ ir>$ iyor>781 us>782 ci>783 ip>$
+de>$ e>$ k>784 ü>$ c>785 dü>786 tü>787 lü>788 is>780 iz>767 se>$ lerde>$ ik>789 leri>$ ge>790 m>791 lere>$ ol>792 ç>766 al>$ lend>793
+da>$ a>$ la>$ ca>$ i>$ dır>$ ken>$ sın>763
+mal>794 ta>774 lu>795 man>796 a>$ ba>797 e>$ i>$ lar>$ du>798 di>799 lan>800 lama>801 mu>802 c>785 o>771 tu>775 mla>803 da>$ laş>804 lay>805 ti>769 y>$ sa>$ g>765 su>806 mas>807 tla>778 md>808 me>$ p>809 f>810
+ni>811 s>812 m>$ j>813 k>784 id>814 l>$ u>815 f>810 pl>816 nun>$ ya>$ bi>817 or>818 ş>819 di>799 z>$ da>$ t>820 r>$ nları>821 g>765 ad>822 nt>823 en>824 it>825 va>826 iş>827 yu>828 ba>797 ve>829 nme>830
+k>$ z>$ r>$ yle>$ ş>$ p>$ st>831 ye>832 f>810 yor>$ ci>783 si>$ t>$ dir>$ ba>797 o>771 ya>833 ca>$ bi>817 at>834 sl>835 de>$ ve>829 be>836 ha>837 end>838 g>765 yi>$ um>$ da>$ sa>839 yla>$
+an>$ dır>840 ır>$ tı>841 arak>$ lama>801 dığı>$ abili>842 acak>$ ıyor>$ da>$ lar>$ lan>800 ın>$ ıp>$ ama>843 cı>768 lı>$ lay>805 ıla>844 ti>769 in>$ om>845 et>$ k>$ ca>$ s>$ gi>846 ılma>847 di>799 ım>$ amı>848
+en>$ mesi>$ ir>$ miş>$ in>$ ebil>849 erek>$ mey>850 ecek>$ mek>$ iyor>$ mel>851 ler>$ a>$ ip>$ ti>769 med>852 im>853 yu>828 eceğ>854 eme>855 ci>783 ile>856 ce>857 o>771 ilme>858 sin>859 izi>$
+ik>$ ç>766 ro>860 ör>861 a>$ u>815 e>$ ür>862 ma>$ te>$ tı>841 is>780 iz>767 ta>$ sa>839 in>$ om>845 ka>863 mış>$ tir>$ h>864 or>$ ül>865 ra>$ it>825 iği>$ ir>866 imi>867 me>868 si>869 iyle>$ sı>870
+ğu>871 k>$ lu>795 mu>802 r>$ şla>872 yla>$ nda>$ nu>873 na>$ md>808 mla>803 du>798 yor>$ ma>$ su>806 p>$ nc>874 b>772 e>$ şa>875 ca>876 şt>877 g>765 lar>$ yu>828 ya>$ ti>769 da>$ de>878 si>869 sl>835
+ar>879 at>834 i>$ ad>822 di>$ an>$ af>880 se>$ ö>881 ne>777 â>882 ken>$ ye>832 ak>883
+e>$ am>884 tir>$ re>885 al>$ i>$ ler>$ me>$ y>$ lik>$ mi>886 ül>865 ab>887 ro>860 anın>$ ada>888 asın>889 se>890 liğ>891 ri>892 h>864 te>$ ma>$ leş>893 ut>894 ac>895 at>834
+nler>896 nü>897 rl>898 be>836 tü>787 tme>899 y>900 lme>901 dü>786 k>$ ld>902 lü>788 st>831 lt>903 ne>$ c>785 len>904 nde>$ z>$ m>791 p>$ tt>905 rken>$ ler>906 te>779 lece>907 nt>823 nm>908 rü>909 rs>910 nc>874 rd>911
+n>$ v>912 k>$ ğı>$ rak>$ cak>$ bilir>$ sın>763 h>864 t>$ yl>913 ya>833 me>$ l>$ f>810 mi>886 da>$ sy>914 bile>915 ye>832 rla>916 yı>$ rım>917 may>918 ze>919 st>831 mak>$ dığı>$ rken>$ se>890 yd>764 j>813
+ka>863 si>869 alı>920 ın>$ ılma>847 mak>$ ç>766 ılı>921 may>918 arak>$ ıla>844 mış>922 il>923 ası>$ mad>924 ıyor>925 ır>926 ip>$ mam>927 at>834 aca>928 abili>842 man>796 sa>839 d>929 masın>930 uz>931 â>882 iye>776 mal>794 anın>$ arl>932
+ü>$ e>$ an>$ lü>788 leri>$ da>933 de>$ in>934 len>904 lere>$ ley>935 s>812 leme>936 dü>786 rü>909 lerde>$ re>885 lerle>$ ay>937 ra>938 â>882 b>772 ul>939
+ki>$ r>$ mı>940 mla>803 sın>763 dır>$ yd>764 yı>762
+ci>783 en>$ ce>$ g>765 a>$ ç>766 se>890 ti>769 mekt>941 mey>850 yu>828 er>$ ede>942 o>771 mesi>$ mi>886 si>869 med>852 ek>943 ele>944 mel>851 te>779 ca>$ eti>945 ta>774 eme>855 ec>946 f>810 mas>807 ka>863 edir>$ es>947
+ta>774 h>864 i>$ at>834 ı>$ e>$ an>948 ları>$ za>949
+m>791 ğ>950 r>$ k>$ yor>$ lü>788 nü>897 nme>830 ne>$ dü>786 p>$ t>$ sy>914 c>785 ş>819 nde>$ li>951 ler>$ lo>952 nc>874 yle>$ b>772 g>765 z>953 sin>859 yd>764
+k>$ ğı>$ n>$ m>$ şma>954 cı>768 şı>955 yor>$ sı>$ ya>$ şa>875 da>$ şla>872 p>$ yı>$ yla>$ ştı>956 dır>$ g>765 sl>835 h>864 ba>797
+rı>$ k>$ ra>$ şma>954 ma>$ rda>$ rla>$ ya>833 ndı>957 dı>$ nma>958 yı>762 na>959 tı>841 tm>960 mış>$ ri>$ ta>774 nı>961 ğın>962 tt>905 ştı>956 sın>763 rs>910 rken>$
+l>$ n>$ ya>833 j>813 f>810 rım>917 k>$ mı>940 pl>816 t>$ b>772 sı>$ rla>916 ca>$ da>$ yd>764 ret>963 v>912 ml>964 si>869 dü>786 ma>$ ğı>$ ad>822 ü>770 it>825 md>808 yı>$ h>864 dı>965 rının>$ ra>$
+sı>$ lığ>966 lar>$ lık>$ nın>$ k>$ ya>$ nız>$ dır>$ na>$ m>$ nda>$ yı>$ yla>$ dan>$ r>$ ba>797 ğı>967 yor>$ yd>764 g>765 tı>841
+kt>968 de>878 ğı>$ ret>963 kl>969 n>$ sı>$ ks>970 m>$ t>$ v>912 at>834 l>$ ya>$ h>864 gi>846 yi>971 b>772 cı>768 dı>$ si>$ p>$ us>782 z>$ rla>916 f>810 yı>$ dan>$ km>972 ra>$ ci>783 i>$
+e>$ i>973 ti>769 ke>974 ur>975 be>836 çe>976 ra>938 se>890 te>779 lik>977 ve>829 la>978 sa>839 ta>774 si>869 mi>886 ri>892 um>979 ne>777 me>868 di>799 ut>894 o>771 şa>875 va>826 liy>980 ı>$ leri>$ ba>797 da>933 lı>$
+a>$ ük>981 ok>982 bi>817 ı>$ ün>983 ta>$ ül>865 me>868 üm>984 ti>769 u>$ ki>985 ma>$ te>$ oğ>986 ge>790 ra>938 tır>$ h>864 s>812 tu>775 miş>987 tü>787 ka>863 kı>988 gi>846 mış>922
+a>$ i>$ or>818 ta>$ es>947 endi>989 us>782 f>810 er>$ on>$ ek>943 ı>$ ter>990 et>$ leri>$ lama>801 re>885 li>$ ede>942 ra>938 sa>839 tl>991 ya>$ lar>$ ke>974 si>869 ka>863 lan>800 ür>862 edi>992 ha>837 ez>993
+a>$ e>$ i>$ ı>$ ür>862 p>809 u>$ â>882 le>$ on>$ ük>981 üm>984
+l>$ k>$ tt>905 r>$ nin>$ si>$ f>810 di>799 niz>$ ye>$ de>878 tme>899 be>836 su>806 m>$ p>809 yi>$ nler>896 se>890 nt>823 ve>829 tin>994 yd>764 tler>995 dü>786 nme>830 te>$ yle>$ ne>$ ns>996 as>997 ar>879
+rs>910 ri>892 rler>$ yor>$ ye>832 ta>774 rdi>998 n>$ te>$ m>$ rm>999 rken>$ ti>769
+i>$ e>$ ı>$ ap>1000 lar>$ and>1001 de>878 u>815 av>1002 lı>$ ye>832 anlar>1003 o>771 ür>862 anı>1004 da>$ p>809 ör>861 man>796 ak>883 li>$ ama>843 dır>$ laş>804 g>765 yon>1005 ac>895 s>812 ar>879 ana>1006 as>997 lan>800
+r>$ t>$ k>$ bi>817 st>831 pl>816 ğin>1007 si>$ lik>$ de>878 n>$ di>799 ve>829 liğ>891 ler>$ yi>$ ye>$ ci>783 zi>1008 ş>$ ll>1009 gi>846 ya>833 be>836 la>978 leş>893 yle>$ miz>1010 lin>1011 j>813 sl>835 ld>902
+er>1012 h>864 or>$ it>825 ta>774 re>885 tir>$ si>$ ek>$ rü>909 ol>792 ül>865 ı>$ is>780 ki>985 u>815 iyo>1013 eği>1014 kı>988 p>809 ri>892 ik>$ on>1015 ra>938 te>$ ya>833 imi>867 to>1016 man>796 g>765 ç>766 ini>1017
+ceğ>1018 cek>$ n>$ r>$
+n>$ t>$ z>$ m>$ r>$ ği>$ ce>$ g>765 ar>$ f>810 vi>1019 ci>783 ç>766
+al>$ on>$ um>$ en>$ ol>792 asın>889 ada>888 anı>1004 et>1020 amı>848 ay>937 ö>881 c>785
+üm>984 enm>1021 eri>$ im>$ ar>$ eme>855 eği>1014 ik>$ ak>$ endi>989 eni>1022 ah>1023 u>815 ene>1024 iği>$ ere>$ ekle>1025 an>$ ekt>1026 eye>1027 ı>$ erde>$ erle>$ at>834 ağı>1028 ama>843 edi>992 emi>1029 ini>$ iyor>781 aya>1030 aş>1031
+nda>$ na>$ nı>$ zd>1032 za>$ zı>1033 yla>$ yor>1034 mı>940 zl>1035 dır>$ k>$ s>$ yı>762 ma>$ da>$ yd>764
+nda>$ nt>823 nı>$ da>$ m>$ na>$ nma>958 f>810 sı>$ nc>874 ştı>956 cı>768 lma>1036 nl>1037 p>$ ld>902 ya>$ la>978 lı>1038 rda>1039 rı>1040 yla>$ şı>955 şma>954 şla>872 yor>$ rt>1041 z>$ t>$ dır>$ ra>938 şa>875
+t>$ da>933 nı>$ nl>1037 ye>832 ç>766 b>772 sı>$ rı>1040 ns>996 lar>$ k>$ le>1042 m>$ niz>1043 ya>$ cı>768 ra>938 ret>963 lı>$ h>864 nma>958 yı>762 na>$ z>$ o>771 rda>$ pl>816 rlar>$ nda>$ ri>892 ve>829
+r>$ f>810 da>$ sın>763 mı>940 n>$ be>836 mla>803 l>$ t>$ ya>$ ki>$ ca>876 h>864 man>796 kları>1044 yı>$ j>813 sy>914 ba>797 ğı>$ si>$ g>765 z>$ mi>886 md>808 de>878 v>912 ç>766 kta>1045 p>$ ke>974
+o>771 ü>$ u>$ at>834 ar>$ iz>767 lü>788 c>785 ama>843 e>$ ab>887 it>825 ik>$ leri>$ su>806 den>$ ka>863 as>997 ta>774 is>780 an>$ du>$ mu>802 id>814 ör>861 lere>$ lec>1046 da>$ la>$ in>$ te>$ masın>930
+m>$ k>$ yle>$ den>$ r>$ ş>$ ve>829 ye>832 len>904 ni>$ te>779 yor>$ lir>$ lik>977 s>$ ld>902 ne>$ ği>$ nde>$ p>$ lme>901 nle>1047 leme>936 f>810 lg>1048 ta>774 çe>976 nc>874 dir>$ b>772 ler>$ ley>935
+ye>832 h>864 l>1049 n>$ r>$ ki>985 f>810 t>$ m>$ de>878 ğı>967 şı>955 bi>817 zı>1033 in>934 di>799 ci>783 ka>863 da>$ ve>829 ya>$ yı>762 sı>870 iz>$ kı>988 zi>1008 za>949 va>826 be>836 p>$ ke>974 dı>965
+lü>788 lg>1048 yle>$ z>953 ğr>1050 b>772 p>809 k>784 lme>901 h>864 len>904 f>810 tr>1051 v>912 m>791 lle>1052 ce>857 se>890 ld>902 te>779 ti>769 lan>800 g>765 ta>774 de>878
+er>1012 o>771 ar>879 i>$ edi>992 ter>990 at>834 si>$ p>809 la>978 y>$ re>885 ro>860 eni>1022
+ta>774 ra>938 ul>939 si>869 lu>795 al>$ an>948 i>973 tu>775 sa>839 as>997 e>$ ad>822 rin>$ ları>$ k>$ om>845 se>890 ard>1053 ok>982 ro>860 um>979 at>834 sl>835 mu>802 malar>1054
+n>$ tı>841 da>$ tla>778 sa>839 r>$ z>$ cı>768 ca>876 h>864 si>$ ç>766 ya>$ sı>$ l>$ ta>$ f>810 tt>905 se>890 bili>1055 yı>$ j>813 ğı>$ be>836 k>$ p>809 ti>$ bile>915 me>868 sy>914 sl>835 mı>940
+om>845 el>1056 da>$ lar>$ a>$ s>$ er>$ h>864 i>$ di>799 lu>795 ve>829 g>765 ta>774 de>878 tr>1051 tin>994 te>779 du>798 f>810 ya>833 ca>$ yu>828 ne>777 to>1016 tu>775 en>824 m>791 ce>857 ks>970 kt>968 kla>1057
+k>$ r>$ ti>769 miz>1010 nin>$ me>$ lle>1052 de>$ si>$ ler>$ tler>995 nl>1037 nt>823 ğin>1007 nc>874 st>831 tme>899 tt>905 ye>$ li>$ ol>792 yi>$ nde>$ te>$ di>799 nme>830 ml>964 ndir>1058 ne>$ len>904 lt>903 z>$
+su>806 l>$ r>$ nma>958 m>$ nu>873 z>$ ya>$ yor>1034 dan>$ yu>828 na>959 yla>$ p>$ t>$ ş>$ nd>1059 nları>821 du>798 nc>874 ne>777 c>785 ns>996 ku>1060 daki>$
+re>885 nc>874 h>864 sı>$ ka>863 de>878 ş>819 ri>892 nın>$ lar>$ t>$ rt>1041 nl>1037 y>$ m>$ rı>1040 ra>938 ğ>950 dan>$ na>$ lık>$ b>772 p>$ ni>$ z>$ si>$ a>$ sy>914 rd>911 nız>1061 cı>768 rl>898
+si>869 imi>867 iyle>$ ile>856 li>$ leri>$ ti>769 in>$ en>$ ilme>858 te>$ mek>$ ilir>$ mey>850 er>$ ebil>849 lend>793 miş>$ ke>974 c>785 mesi>$ iyor>781 lere>$ ar>879 ir>866 eme>855 lerle>$ mel>851 lerde>$ to>1016 eceğ>854 med>852
+ld>902 n>$ li>$ ka>863 si>$ ler>$ lle>1052 m>$ t>$ r>$ ye>$ ley>935 len>904 se>890 den>$ la>978 z>$ leş>893 leme>936 yi>$ ş>$ p>$ bi>817 ya>833 dir>$ f>810 ki>$ yor>$ yle>$ kler>1062 lm>1063 ci>783
+l>$ n>$ t>$ k>$ ğin>1007 si>$ ş>$ y>$ ra>938 vi>1019 rek>$ m>$ cek>$ de>$ bili>1055 z>953 di>799 da>933 bile>915 ceğ>1018 ri>$ gi>846 f>810 an>948 rler>1064 ci>783 rde>$ rs>910 rken>$ rdi>998 e>$ p>809
+ik>$ at>834 o>771 an>$ et>1020 isi>1065 as>997 inin>$ pa>1066 me>868 id>814 bi>817 lar>$ u>$ en>$ al>1067 iye>776 iler>1068 pl>816 s>$ mu>802 f>810 es>947 man>796 imi>867 da>$ iyle>$ aya>$
+de>878 di>799 ro>860 ra>938 yo>1069 ya>833 bi>817 re>885 o>771 yu>828 s>$ f>810 ları>$ da>933 ör>861 ye>832 ri>$ vi>1019 â>882 du>798 m>$ lama>801 c>785 lu>795 n>$ ge>790 h>864 k>$ ler>$ ru>1070 larla>$ lay>805
+r>$ i>$ t>$ ye>$ n>$ dir>$ yle>$ se>890 yo>1069 m>$ k>$ at>834 be>836 h>864 yd>764 si>$ yi>971 an>$ pl>816 bi>817 st>831 z>$ ya>833 de>$ sy>914 sl>835
+mla>803 b>772 n>$ p>$ z>$ mu>802 c>785 f>810 lma>1036 lu>795 su>806 k>$ r>$ ğu>871 md>808 yor>$ ld>902 lar>$ ma>$ h>864 lan>800 ti>769 is>780 yu>828 va>826 dan>$ ya>$ du>798 yla>$ iye>776 lama>801 g>765
+i>$ e>$ ci>783 de>$ se>890 le>$ si>$ ü>770 sa>839 dir>$
+ek>943 ul>939 ki>985 ka>863 ey>1071 ve>829 ur>$ en>$ em>1072 h>864 ya>833 um>979 uy>1073 ku>1060 f>810 un>1074 vi>1019 ç>766 kı>988 ün>983 g>765 ke>974 si>869 ru>1070 er>$ eb>1075 eli>1076 et>$ ül>865 ri>892 esin>1077 ede>942
+rı>$ na>959 nı>961 nma>958 ma>$ ya>833 ra>$ ndı>957 rda>$ k>$ yı>762 dığı>$ ştı>956 mış>$ rla>$ rken>$ rs>910 şma>954 ri>$ tıl>773 tt>905 şa>875 tm>960 ns>996 rm>999
+e>$ ir>$ a>$ ı>$ iği>$ u>$ ü>770 ik>789 in>$ im>$ ön>1078 iler>$ iy>1079
+iniz>$ a>$ on>1015 it>825 e>$ iz>$ ız>$ uz>$ unu>1080 ınız>$ ün>983 p>809 iyo>1013 lu>795 ılma>847 ılı>921 ikle>1081 iye>776 ta>774 ıla>844 is>780
+n>$ f>810 şı>955 r>$ ld>902 p>$ m>$ lı>1038 cı>768 z>$ lla>1082 şla>872 k>$ sın>763 lm>1063 la>$ şa>875 dır>$ şt>877 yla>$ st>831 t>$ lt>903
+ızı>$ ış>$ işti>1083 ül>865 u>$ üş>1084 izi>$ ıs>1085 is>780 iy>1079 ik>$ larınd>1086 iler>1068 it>825 in>934 ıyor>$
+i>$ ık>$ ü>$ uk>1087 ığı>$ uğ>1088 s>$ â>882 y>$ uy>1073 o>771 ılar>1089 ıy>1090
+sı>$ ya>$ nl>1037 k>$ lar>$ nın>$ yı>$ cı>768 lı>$ da>$ zl>1035 nız>1061 mız>$ yla>$ ması>$ dır>$ mak>$ mış>$ dığı>1091 mal>794
+rma>1092 rıl>1093 rd>911 ra>938 m>$ ğı>$ rın>$ k>$ lar>$
+yon>1005 el>1056 te>779 ör>861 se>890 si>869 ti>769 an>$ li>$ ler>$ en>824 er>$ em>1072 len>904 to>1016 k>784 tler>995 ı>$ c>785
+sl>835 m>$ rme>1094 si>$ ri>892 ği>$ re>885 rdi>998 nin>$ ler>$ kleri>1095 ye>$ ka>863 ke>974 kte>1096
+u>$ al>$ lar>1097 e>$ ta>$ tin>994 i>$ to>1016 tu>775 lu>795 ül>865 h>864 si>869 ç>766 an>$
+k>784 si>869 etle>1098 mekt>941 eti>945 çe>976 ir>866 se>$ iyor>781 ar>879 enl>1099 â>882 ebil>849 at>834 ece>1100 eleri>1101 ül>865 ol>792 mi>886 çi>1102 ür>862 imi>867 iler>1068 med>852 iz>$ end>838 alı>920 enin>$ mey>850 sl>835 ö>881 ba>797
+ne>777 na>959 ek>$ i>$ ya>833 ap>1000 j>813 leri>$ at>834 us>782 es>947 em>1072 lere>$ p>809 den>$ mi>886 da>933 al>$ ye>832 ci>783 o>771 lerle>$ f>810 st>831 dir>$ ken>$ lerden>$ an>$ ed>1103
+k>$ ya>$ sı>$ z>$ yı>$ nın>$ da>$ ları>$ lı>1038 tu>775 nız>$ dığı>$ sy>914 m>$ si>$ larda>$ lara>$ yla>$ cı>768
+n>$ si>$ di>$ ye>$ de>$ se>890 l>$ m>$ rek>$ kt>968 f>810 ka>863 sl>835 sy>914 ke>974 cek>$ yi>$ ceğ>1018 bili>1055 as>997 ğin>1007 e>$ ks>970 at>834 şi>1104 ci>783 kleri>1095 vi>1019 ste>1105 p>$ be>836 ç>766
+n>$ ki>$ ra>938 len>904 dir>$ rek>$ ley>935 bilir>$ rs>910 rim>1106 cek>$ leme>936 bile>915
+i>$ ı>$ u>$ ü>$ y>$
+z>$ yon>1005 m>$ yle>$ l>$ ye>$ k>$ dir>$ s>$ pl>816 t>$ j>813 yu>828 r>$ f>810 de>$ bi>817 be>836 on>$ dan>$ yi>$ c>785 ya>833 h>864 g>765 yor>1034 ği>$ yd>764 ve>829 yla>$
+lü>788 ler>$ el>1056 ü>$ ri>892 ge>790 me>868 dü>786 ken>$ t>$ i>$ de>$ en>$ ba>797 ek>$ s>812 et>1020 at>834 ede>942 len>904 as>997 ecek>$ leş>893 erek>$
+ye>$ ği>$ rler>$ m>$ kleri>1095 ler>$ n>$ len>904 lme>901 si>$ ld>902 ci>783 yor>$ kte>1096 a>$ p>$ gi>846 lir>$ de>$
+n>1107 t>$ lle>1052 r>$ f>810 le>$ ba>797 zl>1035 sı>$ k>784 zı>1033 ye>832 se>890 m>791 ld>902 lı>$ bi>817 pl>816 da>$ la>978 be>836 li>951 ya>$ de>878 dı>$ zd>1032 za>$ yı>$ ci>783 ha>837 si>869 vi>1019
+ze>919 i>$ yon>1005 bi>817 er>1012 zi>1008 on>1015 len>904 ler>$ se>890 li>$ ley>935 an>948
+l>$ rine>$ n>$ te>779 mel>851 y>$ rind>1108 rs>910 si>$ ge>790 ti>769 rler>1064 tl>991 mesi>$ rim>1106 rini>$ tme>899 rg>1109 med>852 rek>$ mey>850 de>$ ret>963 rken>$ mi>886 vi>1019 bili>1055 mekt>941 h>864 dir>$ diğ>1110 tt>905
+u>$ el>1056 lar>$ a>$ da>$ is>780 lu>795 er>$ ik>$ ez>993 du>798 laş>804 iz>767 et>1020 c>785
+uk>1087 ret>963 ut>894 ü>$ uğ>1088 li>951 ula>1111 und>1112 ulu>1113 ro>860 unu>1080 h>864 k>$ rü>909 us>782 ra>$ or>818 b>772 ti>769 uy>1073 za>949 mi>886 da>933 ca>876 to>1016 um>979 ri>892 uz>931 ce>857 ur>975 lu>795 s>$
+ul>939 ı>$ ol>792 lem>1114 lo>952 uk>1087 ri>892 bi>817 ü>770 on>1015 be>836 rek>$ liğ>891 ur>975 or>818 ze>$ j>813 uğ>1088 un>$ ra>938 la>978 de>878 ni>$ ru>1070 ret>963 y>$ â>882 us>782 c>785 ut>894 ba>797 s>$
+m>$ ş>$ p>$ n>$ rla>916 b>772 sı>$ cı>768 sy>914 ye>832 da>$ rında>$ lt>903 le>1042 ya>$ lı>$ ala>1115 li>951 f>810 lar>$ yı>$ lan>800 ra>$ to>1016 zi>1008 ll>1009 h>864 tu>775 yo>1069 ti>769 k>$ ri>$
+ra>938 n>1107 ri>892 rt>1041 ti>769 sı>$ g>765 h>864 ze>919 d>$ tla>778 l>$ rma>1092 ce>$ ç>766 ya>$ k>$ yı>$ rı>1040 m>$ tı>$ rd>911 cak>$ re>$ ğ>950 ro>860 zl>1035 tu>775 sy>914 za>949 zı>1033 rk>1116
+n>$ z>$ f>810 l>$ r>$ du>798 s>$ arla>1117 yla>$ ba>797 m>$ p>$ yu>828 yor>$ e>$ yd>764 va>826
+ı>$ i>$ u>$ ü>$ op>1118 or>818 on>1015
+si>$ z>953 k>$ l>$ r>$ te>779 ye>$ m>$ sl>835 nin>$ de>$ ce>$ se>$ ş>$ yi>$ ta>774 v>912 ste>1105 ne>$ g>765 dir>$ ya>833 nde>$ yle>$ ti>769 niz>1043 ha>837 du>798 a>$
+da>$ ın>$ ız>$ lar>$ masın>930 may>918 ca>$ ama>843 adır>$ dı>965 mad>924
+ü>$ ler>$ e>$ lü>788 de>$ is>780 tü>787 ol>792 dü>786 iz>767 al>$ mekt>941 on>1015 op>1118 p>809 tler>995 ce>$
+nl>1037 rs>910 ri>892 t>$ ki>985 re>885 ni>811 sind>1119 l>$ nc>874 y>900 rt>1041 de>$ ne>777 ns>996 me>868 nme>830 ndi>1120 sl>835 nt>823 sine>$ di>799 st>831 sini>$ rdi>998 ci>783 rl>898 ol>792 çl>1121 da>$ ha>837 se>890
+n>$ m>$ at>834 k>$ h>864 lla>1082 lt>903 rak>$ lma>1036 cak>$ vi>1019 bilir>$ ğı>$ st>831 bile>915 tm>960 f>810 lı>1038 ld>902 sı>$ lan>800 al>1067 tı>841 ya>833 rı>$ tan>$ yı>762 d>$ rken>$ tt>905 rl>898 p>809
+nc>874 m>$ tla>778 c>785 p>$ nu>$ tu>775 ru>1070 na>$ k>$ nda>$ rdu>$ rm>999 lu>795 tt>905 yor>$ va>826 nları>821 nma>958 ld>902 z>$ yla>$ lm>1063 laş>804 ta>$ ra>938 su>806 ya>$ lan>800 du>798 rs>910 da>$
+i>$ e>$ de>$ le>$ malar>1054 masın>930 as>997 li>$ mi>886 may>918 mad>924 da>$ dir>$ ce>$
+ır>$ ir>$ ör>861 ur>$ or>818 id>814 is>780 ür>862 uğ>1088 um>$ im>$ ik>$ ım>$ in>$ ri>892 ığı>$ uk>1087 ık>$ om>845 on>1015 ula>1111 ılar>1089 üm>984 ın>$ ük>981 iği>$ ül>865 un>$
+n>$ t>$ si>$ rek>$ leri>$ ca>876 cek>$ ceğ>1018 bili>1055 ri>$ lik>$ liğ>891 rler>1064 ye>$ yi>$ de>$ bile>915 lere>$ me>868 lerde>$ miz>$ ra>938 vi>1019 f>810 lerle>$ dir>$ rde>$ ci>783 ste>1105 ro>860 miş>$ lin>1011
+ür>862 ı>$ uk>1087 re>885 mak>$ uğ>1088 anı>1004 i>973 me>$ tı>841 arak>$ em>1072 en>$ ec>946 anlar>1003 ül>865 maya>$ abili>842 er>$ malar>1054 ay>937 ması>$ acak>$ ti>769 ün>983 o>771 ra>938 ebil>849 ası>$ mad>924 man>796 mış>$
+t>$ f>810 bilir>$ diğ>1110 k>$ vi>1019 p>$ si>$ ler>$ de>$ be>836 bile>915 lik>$ er>$ ste>1105 se>890 ği>1122 liğ>891 j>813 ge>790 as>997 dir>$ z>$ ve>829 ç>766 ar>$ on>1015 us>782 gi>846 an>948
+nma>958 na>959 nı>961 ndı>957 ya>833 mak>$ yı>762 dı>$ t>820 maya>$ mış>$ şma>954 man>796 nları>821 ca>876 k>$ ns>996 mad>924
+dir>$ m>$ si>$ ti>769 z>953 f>810 p>$ lik>$ se>890 liğ>891 ler>$ lle>1052 ş>819 sl>835 st>831 çe>976 gi>846 h>864 ba>797 bi>817 am>884 c>785 sa>839 tle>1123 de>$ to>1016 ta>774 va>826 ld>902 te>$ ah>1023 o>771
+ğr>1050 r>$ n>$ k>784 lo>952 si>869 d>929 p>809 su>806 mla>803 tla>778 se>890 g>765 ları>$ ya>$ ti>769 ma>1124 f>810 z>$ j>813 me>868 ğl>1125 yu>828 c>785 tt>905 mi>$ ter>990 larda>$
+n>$ m>$ k>$ sy>914 ği>$ si>$ ye>832 f>810 ti>769 z>$ p>$ de>$ rme>1094 l>$ yor>$ yi>$ te>$ be>836 h>864 ci>783 dir>$ re>885 ra>938 ri>892 rla>916 yle>$ st>831 rdi>998 to>1016 rler>1064 va>826 yd>764
+r>$ lma>1036 su>806 lu>795 n>$ m>$ ğu>871 p>$ ld>902 c>785 la>978 da>$ ar>$ f>810 va>826 k>$ lla>1082 yu>828 ya>$ yla>$ be>836 al>$ ş>$ yor>$ at>834 ha>837 du>798
+lo>952 lu>795 ti>769 g>765 su>806 lla>1082 ter>990 da>$ akt>1126 p>809 lar>$ ya>$ m>$ z>$ yu>828 tla>778 ki>985 du>798 f>810 ka>863 c>785 kl>969 ğl>1125
+m>$ k>$ ya>833 ba>797 f>810 ği>$ ha>837 ci>783 len>904 ler>$ lme>901 si>$ on>$ vi>1019 ld>902 ce>857 p>$ va>826 gi>846 la>978 bi>817 li>$ yor>$ z>953 yle>$ t>$ ş>$ ye>$ ve>829 sa>839 sy>914 ok>982
+alı>920 an>948 ün>983 alar>1127 ik>$ or>818 ro>860 ri>892 lan>800 u>$ ra>$ ası>$ len>904 at>834 lu>795 ler>$ aya>$ iy>1079 it>825 ir>$ rü>909 na>959 ak>883 üm>984 ayı>$ ada>888 te>$ ır>$ lar>$ in>934 ah>1023 lü>788
+arı>$ eri>$ ama>843 om>845 in>$ ara>$ ak>$ ı>$ ik>789 ek>943 iği>$ ana>1006 anma>1128 arda>$ anı>1004 erden>$ ere>$ erle>$ andı>1129 arla>$ as>997 aya>1030 aş>1031 ayı>1130 adı>1131 et>1020 az>1132 u>$ enm>1021 y>$ ük>981 at>834
+e>$ de>$ in>$ iz>$ ce>$
+ce>$ ni>811 lle>1052 r>$ nle>1047 f>810 si>$ li>$ t>$ m>$ le>$ şi>1104 di>799 y>900 şle>1133 ne>777 de>$ nme>830 ns>996 ol>792 st>831 v>912 al>1067 bili>1055 ğ>950 ld>902 nc>874 h>864 nden>$ ci>783 nt>823 p>809
+m>$ kleri>1095 ler>$ n>$ a>$ kte>1096 gi>846 ye>$ p>$ yor>1034 şa>875 si>$ t>$ len>904 lme>901 lir>$ ka>863 ld>902 sl>835 f>810 se>890 ok>982 ve>829 lece>907 ci>783 la>978 dir>$ z>953 ki>$ ca>876 şi>1104 liy>980
+i>$ e>$ na>959
+h>864 n>$ ğ>950 l>$ si>$ km>972 r>$ z>$ ye>$ m>$ dir>$ kt>968 t>$ ve>829 p>$ yi>$ en>824 al>$ kla>1057 yle>$ b>772 den>$ yor>$ kleri>1095 ki>985 yd>764 ge>790 ci>783 at>834 ke>974 asın>889 o>771
+li>$ n>$ sa>839 si>$ ler>$ lend>793 ye>$ yi>$ m>$ r>$ yle>$ de>$ ld>902 leme>936 lle>1052 ti>769 dir>$ ley>935 se>890 z>$ st>831 o>771 f>810 lm>1063 ç>766 şi>1104 c>785 bi>817 es>947 tt>905
+cak>$ h>864 k>$ bilir>$ dı>$ si>869 j>813 v>912 f>810 t>$ l>$ st>831 bile>915 sy>914 sı>$ z>953 di>$ se>890 ce>$ ge>790 da>$ gi>846 ba>797 p>$ de>$ cı>768 ğ>950 sl>835 ç>766 sa>$ ik>789
+tir>1134 me>$ miş>$ imi>867 erek>$ ir>$ en>$ in>934 ip>$ iyor>$ ebil>849 sin>859
+de>$ in>$ e>$ leme>936 len>904 liğ>891 ley>935 lik>977 dir>$ ce>$ as>997 ler>906 liy>980 da>$
+de>$ e>$ i>$ dir>1135 gi>846 a>$ da>$ ce>$ mesi>$ miş>$ mey>850 le>$ diğ>1110 mel>851 mekt>941
+lle>1052 r>$ si>$ me>868 n>$ ç>766 ler>$ li>$ se>890 ld>902 yi>$ len>904 de>$ ci>783 ley>935 ste>1105 ye>$ leme>936 t>$ mi>886 lm>1063 dir>$ be>836 yle>$ ce>$
+iyo>1013 el>1056 a>$ ınız>$ iniz>$ ız>$ iz>$ im>853 ür>862 ul>939 ti>769 un>$ iye>776 inl>1136 üz>1137 en>$ it>825 ev>1138 o>771 ılar>1089 isi>1065 uz>$ tü>787 le>$ inin>$ te>$ iler>1068 ıy>1090 ili>1139
+lt>903 r>$ n>$ lma>1036 sı>$ lan>800 t>$ lı>1038 ev>1138 m>$ de>$ y>900 ld>902 h>864 b>772 ke>974 cı>768 i>$ lar>$ va>826 j>813 p>$ lay>805 lama>801 ğı>$ klar>1140 da>$ cak>$ le>1042 sy>914 f>810 li>951
+n>$ dir>$ r>$ ki>$ bi>817 yl>913 yi>971 yd>764 siniz>$ pl>816
+u>$ ra>938 lu>795 al>1067
+üm>984 lü>788 m>791 ş>819 leri>$ tü>787 s>$ ten>$ ür>862 ley>935 çe>976 el>1056 ra>938 lere>$ ba>797 len>904 ken>$ lerle>$ re>885 lerden>$ leme>936 an>948 ey>1071 um>979 rü>909 o>771
+k>$ ğı>$ n>$ ya>833 r>$ lma>1036 lı>1038 ma>$ la>978 yor>$ yı>762 mı>940 ld>902 yla>$ p>$ dığı>1091 tla>778 dır>$ sı>$ lt>903 md>808 da>$ tı>841 g>765 yd>764 tt>905
+nda>$ r>$ dır>$ kl>969 ş>$ yor>$ m>$ na>$ lık>$ nın>$ p>$ lığ>966 ç>766 kta>1045 tı>841 ks>970 ca>$ nız>1061 sı>$ lar>$ cı>768 f>810 nc>874 yı>762 laş>804 z>$ ya>$ nma>958 yd>764 da>$ ndı>957 yla>$
+rı>$ rda>$ h>864 ra>$ rla>$ şma>954 t>$ dı>$ nma>958 ya>833 ri>$ mak>$ nı>961 ge>790 ndı>957 na>959 yı>762 maya>$ mış>922
+r>$ nı>961 nma>958 ma>$ na>959 yı>762 ndı>957 ya>833 şma>954 ta>774 dı>$ tı>841
+ış>$ iş>$ uş>1141 üş>1084 is>780 lerind>1142 ıyor>$ iyor>$ lerini>1143 us>782 um>979 idir>$ lerd>1144 imi>867
+ur>975 eri>1145 an>$ uğ>1088 uk>1087 um>$ en>$ ü>770 ula>1111 eki>$ aki>$ emi>1029
+sı>870 a>$ da>$ ları>$ lan>800 lı>1038 sa>839 cı>768 larla>$ lara>$ dır>$ pa>1066 lardan>$ k>784 ev>1138 ca>$ ba>797 lama>801 lay>805 yı>762 m>$
+sı>$ kta>1045 lı>1038 ya>$ z>$ mal>794 dan>$ mış>$ ması>$ ları>$ dığı>$ yı>$ makt>1146 kla>1057 nın>$ sa>$
+n>$ bilir>$ cak>$ ma>$ bile>915 ya>833 şma>954 dığı>$ yı>762 ştı>956 şı>955 şa>875 h>864 ge>790
+r>$ k>$ m>$ yor>$ p>$ ğı>$ n>$ dır>$ ş>$
+rs>910 rler>$ ri>892 yor>$ rm>999 rdi>998 t>820
+tır>$ lard>1147 sa>$ sın>763 ım>$ ken>$ ız>$ lığ>966
+sı>$ z>$ k>$ ya>833 dan>$ dı>965 ları>$ yı>762 lı>$ mış>922 larda>$ nın>$ ması>$ ğın>962 nız>$ r>$ mak>$ lara>$ mız>$ di>799 yla>$ si>$ nda>$ nları>821 larla>$
+um>$ uz>$ lar>$ su>806 sa>$ du>798 mu>802 ki>$ da>$
+da>$ ın>$ ız>$
+i>$ a>$ ı>$ en>$ u>$ oğ>986 eki>$ ü>$ on>1015
+ri>$ t>820 rde>$ f>810 re>$ si>$ ye>832 nme>830 ndir>1058 mek>$ rle>$ şm>1148 ştir>1149 ne>777 rdi>998 ni>811 yi>971 mey>850 bi>817 d>$ kt>968 mel>851 lerind>1142 mesi>$ miz>1010 rs>910 şi>1104 ks>970 med>852
+ki>$ dır>$ şla>872 şı>955 r>$ yı>762 l>$ sın>763 j>813 yd>764 ndı>957 şt>877 kla>1057 da>$
+edi>992 ece>1100 er>$ eye>1027 aş>1031 eme>855 ar>$ emi>1029 ü>770 ı>$ ene>1024 eni>1022 eli>1076 i>$ u>$ enm>1021 esine>$ anma>1128 ana>1006 endi>989 eş>1150 ama>843 andı>1129 as>997 adı>1131 eki>$ anı>1004 aya>1030 amı>848 ede>942 ayı>1130 et>1020
+el>1056 iye>776 u>815 f>810 ı>$ iyo>1013 al>$ lı>$ at>834 iz>$ in>$ ör>861 man>796 it>825 ları>$ ara>1151 ü>770 is>780 anlar>1003 ek>943 ev>1138 sı>870 ta>774 eni>1022 ç>766 p>809 mi>886 er>1012 k>784 lerine>$ tr>1051 te>779
+a>$ e>$ i>$ ır>$ ur>$ ü>$ uğ>1088 ul>939
+si>$ mler>1152 miz>1010 lik>977 ki>$ ma>1124 liğ>891 j>813 ş>819 ci>783 leri>$ ti>769 de>$ in>$ mel>851 ye>$ nin>$ st>831 g>765 zi>$ nt>823 md>808 yi>$ lerde>$ niz>1043 cek>$ lend>793 dir>$ sl>835 ah>1023 lere>$ va>826
+r>$ nı>961 na>959 ma>$ ya>833 nma>958 şma>954 ndı>957 mış>922 yı>762 dığı>$ cı>768 tıl>773 ta>774 tm>960
+a>$ da>$ ız>$ ın>$ ık>$ ırı>1153 dı>965 ıyor>925 mış>922 ma>1124
+ik>$ ı>$ ük>981 iği>$ u>$ ün>983 ül>865 üm>984 iyor>781 idir>$ iler>1068 inin>$
+sı>$ kta>1045 z>$ lı>1038 ya>$ dan>$ yı>$ nın>$ ları>$ ması>$ dığı>$ mış>$ ks>970 mal>794 makt>1146 nız>$ kla>1057 mız>$ si>$ yla>$
+ni>$ ne>$ nden>$ yle>$ miz>1010 z>$ dir>$ mle>1154 me>$ md>808
+si>$ kte>1096 li>951 z>$ ye>$ miş>$ diğ>1110 den>$ mesi>$ mel>851 mekt>941 leri>$ yi>$ kle>1155 ks>970 nin>$ se>$ niz>$
+k>$ ği>$
+me>868 ün>983 üm>984 u>$ yı>762 gi>846 yon>1005 ce>$ mi>886 ül>865 ge>790 ük>981 on>$ ret>963 za>949 sa>$ h>864 ma>$ ya>833 yu>828 sın>763 se>$ be>836 siniz>$ ca>$ k>784 om>845 ba>797 ön>1078 yi>971 ne>777 mı>940
+tl>991 m>$ nin>$ l>$ se>890 ye>$ r>$ k>$ yi>$ ne>$ den>$ nc>874 nde>$ f>810 yle>$ tt>905 di>$ niz>1043 v>912 yor>$ st>831 ğin>1007 p>$ z>953 ş>$ si>$ yd>764 na>959 ti>769 te>$
+or>$ e>$ le>$ di>$ iz>$ im>$ se>$ ken>$ ce>857
+j>813 ken>$ si>869 as>997 an>948 at>834 se>$ ge>790 mekt>941 on>$ be>836 ta>774 ya>833 ce>$ ti>769 mi>886 re>885 mey>850 ap>1000 ki>$ kl>969 al>$ mler>1152 çe>976 mesi>$ n>$ va>826 ve>829 akt>1126 ba>797 mel>851 vi>1019
+ya>$ b>772 k>$ p>$ l>$ r>$ nda>1156 da>$ sı>$ yl>913 mı>940 ns>996 sy>914 md>808 nın>$ ç>766 ca>876 j>813 te>779 mla>803 h>864 na>959 ğın>962 yı>$ ö>881 ok>982 at>834 ne>$ dır>$ ma>$ nl>1037 nma>958
+er>$ ü>$ en>$ dü>786 m>791 eme>855 te>779 as>997 in>$ ebil>849 ey>1071 at>834 leri>$ ecek>$ lü>788 il>923 o>771 tme>899 de>$ tü>787 edi>992 an>$ is>780 f>810 eceğ>854 ar>879 lere>$ s>812 ta>774 it>825 ye>832
+t>$ ki>$ al>1067 ma>1124 ad>822 na>959 yon>1005 se>890 kl>969 at>834 e>$ ha>837 leri>$ ke>974 lerde>$ ye>832 ve>829 on>$ ar>$ ka>863 ks>970 p>809 lere>$ mi>886 â>882 kte>1096 an>948 liğ>891 lar>$ si>869
+du>798 h>864 c>785 p>$ be>836 dan>$ an>$ ç>766 va>826 at>834 di>799 g>765 f>810 ar>$ ba>797 e>$ ve>829 j>813 ur>975 id>814 bi>817 az>$ de>$ daki>$ und>1112 is>780
+n>$ lo>952 g>765 m>$ du>798 su>806 lar>$
+n>$ dir>$ m>$ yle>$
+zd>1032 n>$ zi>1008 ze>$ yle>$ zle>1157 dir>$ ye>832 miz>$ la>978 za>$
+da>$ ın>$ ız>$ lar>$ a>$ s>$ lık>$ dır>$ ca>$ lığ>966 ımı>1158 ki>$ laş>804 i>$ ye>832 lama>801 ıdır>$ lay>805 ya>833 cı>768 di>799 e>$ lik>$ ta>774 lan>800 ır>926 yo>1069 ıyla>$
+ula>1111 un>$ ra>938 ün>$ or>818 am>884 an>948 ür>862 ı>$ us>782 ara>$ re>885 ör>861 ze>919 al>$ le>$ h>864 at>834 ül>865 man>796 az>1132 ru>1070 arl>932 â>882 me>868 li>951 um>$ ah>1023 ne>777 lu>795 ulu>1113 lar>$
+zi>$ zd>1032 ze>$ r>$ yor>$ zle>1157 s>812 nin>$ ne>$ t>$ p>$ nden>$ dir>$ za>$ yle>$ de>$ lme>901
+uk>1087 lu>795 lar>$ i>$ tan>$ atl>1159 lan>800 atı>1160 ç>766 ur>975 su>806 tu>775 lama>801 und>1112 ken>$ unu>1080 en>$ um>979 uy>1073 le>1042 mu>802 ara>1151 sa>$ ev>1138 lay>805
+b>772 tu>775 u>815 ta>$ f>810 h>864 p>809 o>771 i>973 a>$ ları>$ e>$ lu>795 ku>1060 tin>994 ter>990 maya>$
+u>$ a>$
+r>$ ma>$ na>959 nma>958 nı>961 ya>833 ndı>957 yı>762 dı>$ cak>$ ns>996 bilir>$ mış>922 sy>914 ti>769 nlar>$ sın>763 di>799 bile>915 ndi>1120
+a>$ ur>$ e>$ uğ>1088 uk>1087 um>$
+k>$ ğu>871 r>$ yor>$ n>$ p>$ c>785 g>765 m>$ du>798
+n>$ z>$ mu>802 r>$ du>798 c>785 yor>$ yla>$ p>$ lma>1036 la>978 da>$ lu>795
+or>$ a>$ u>815 la>$ lu>795 du>$ su>806 sa>$ ken>$
+n>$ k>$ yor>1034 r>$ ye>832 sy>914 le>1042 yle>$ t>$ si>$ i>$ dir>$ st>831 mi>$ ği>$ de>$ sl>835 li>$ yi>$ ci>783 se>890 asın>889 ha>837 yd>764 yla>$ lle>1052 me>$
+r>$ vi>1019 şla>872 şı>955 sı>$ ha>837 dır>$ m>$ l>1049 y>$ sl>835 va>826 nı>$ f>810 da>$ ns>996 st>831 ğ>950 t>$ nları>821 si>869 g>765 cı>768 na>$ ştı>956 şma>954 ndı>957 ni>$ nma>958 şa>875 sy>914 i>$
+lu>795 a>$ u>$ da>$ h>864 larda>$ ları>$ du>798 su>806 lara>$ e>$ be>836 i>$ larla>$ ba>797 n>$ m>$ c>785 ki>$ le>1042 de>$ laş>804
+el>1056 ur>975 a>$ un>$ lu>795 da>$ du>798 ları>$ i>$ ca>$
+lik>977 ki>$ leme>936 si>$ den>$ kt>968 len>904 b>772 ley>935 kler>1062 leri>$ ks>970 ril>1161 ye>$ ra>938 n>$ m>$ liğ>891 lt>903 yi>$ ll>1009 v>912 f>810 dir>$ re>885 gi>846 lme>901 liy>980 p>809 lerde>$ lec>1046 t>$
+iye>776 du>798 an>$ g>765 ma>$ ba>797 mu>802 lar>$ o>771 ken>$ arak>$ lu>795 su>806 abili>842 e>$ acak>$ be>836 sa>$ t>$ it>825 c>785 ada>888 da>$ ka>863 af>880 re>885 alı>920 y>$ idir>$ se>$ p>809 ama>843
+ı>$ sa>839 cı>768 ları>$ a>$ da>$ lı>$ larla>$ lara>$ larda>$ tır>1162
+le>1042 ra>938 re>885 uru>1163 si>869 ve>829 c>785 ı>$ uk>1087 un>1074 ru>1070 uş>1141 rim>1106 z>953 ril>1161 g>765 uz>931 lu>795 h>864 de>878 ki>985 üz>1137 ş>819 be>836 ul>939 se>890 me>$ or>818 mi>886 üş>1084 ül>865 da>$
+i>$ ı>$ u>$ ü>$
+r>$ ğ>950 m>$ st>831 lü>788 lle>1052 kleri>1095 kte>1096 f>810 ler>$ n>$ ks>970 g>765 yor>1034 la>978 se>890 tler>995 ş>819 ld>902 leme>936
+e>$ i>$ yu>828 ol>792 ok>982 s>$ di>799
+c>785 ğ>950 s>812 ya>833 f>810 t>820 yor>$ p>809 dü>786 yle>$ de>$ b>772 ye>832 ve>829 el>1056 vi>1019 h>864 g>765 da>$ ç>766 j>813 yd>764 an>948
+m>$ n>$ k>$ lar>$ şı>955 yla>$ ya>833 ç>766 g>765 lı>1038 sı>$ dır>$
+a>$ ları>$ dı>965 i>973 ü>770 ı>$ man>796 tır>$ larda>$ lü>788 na>959 ta>774 lara>$ eb>1075 o>771 lama>801 f>810 mak>$ er>$ en>$ malar>1054 leri>$ re>885 se>890 u>$ ması>$ lere>$ mek>$ lu>795 tü>787 lay>805 maya>$
+c>785 j>813 g>765 t>$ f>810 z>$ b>772 ş>$ ok>982 su>806 id>814 yu>828 v>912 st>831 d>$ si>869 sy>914 us>782 ya>$ un>1074 ut>894 ad>822 ul>939 om>845 yo>1069 ur>975 h>864 it>825 sl>835 se>890 ol>792 in>934
+ü>770 un>1074 ah>1023 an>$ e>$ ar>879 ılar>1089 o>771 ın>1164 ası>1165 â>882 ılı>921 alı>920 alar>1127 ada>888 ıs>1085 la>978
+tır>1162 ma>$ ım>1166 ır>$ an>$ ıla>844 mış>$ aca>928 ıyor>$ abili>842 ıp>$ ın>1164 arak>$ ılı>921 ılma>847 tıl>773 lı>$ la>$ ama>843
+ğu>871 r>$ m>$ k>784 g>765 n>$ su>806 lar>$ c>785 yu>828 ya>$ yla>$ at>834 da>$ t>$ du>$ st>831
+en>$ ir>$ mesi>$ di>$ miş>$ eri>$ erek>$ ebil>849 ik>$ mekt>941 mel>851 ecek>$ iyor>$ yon>1005 ip>$ mey>850 med>852 iğin>1167 eceğ>854 eme>855 tme>899 eş>1150 erde>$ iş>827 erle>$ in>934
+sı>$ z>$ kta>1045 lı>1038 ya>$ dan>$ mal>794 ması>$ mış>$ dığı>$ nın>$ yı>$ lar>$ kla>1057 si>$ mak>$
+nu>$ m>$ na>$ ndan>$ k>$ nl>1037 rt>1041 lla>1082 tm>960 su>806 şt>877 du>798 ra>938 ru>1070 nc>874 rma>1092 tu>775 lu>795 da>$ rd>911 yla>$ p>$ şma>954 rg>1109 z>953 lma>1036 rla>916 yor>$ ya>833 yu>828 rs>910 ld>902
+k>$ ye>$ si>$ yi>$ r>$ z>$ den>$ n>$ leri>$ li>951 diğ>1110 miz>$ la>978 mesi>$ mek>$ miş>$ mel>851 se>$
+ği>$ r>$ ve>829 m>$ k>$ ler>$ n>$ gi>846 ya>833
+i>$ de>$ e>$ le>$ se>$ di>$ miş>$
+ğı>$ r>$ ktan>$ m>$ lar>$ kları>$ nı>$ sı>$
+a>$ l>$ işti>1083 ış>$ uş>1141 iyor>$ is>780 üş>1084 in>934 ıyor>$ uy>1073
+r>$ f>810 m>$ şma>954 şla>872 yor>$ na>$ nı>$ şı>955 p>$ kl>969 nda>$ dır>$ şa>875 lma>1036 lar>1097 lan>800 yla>$ lı>1038 nc>874 sı>$ şt>877 yd>764 yı>762 ba>797 ks>970 çl>1121 ld>902 da>$
+sı>$ k>$ ya>$ z>$ ları>$ yı>$ lı>1038 dan>$ nın>$ dı>$ m>$ nız>1061 sa>839
+rı>1040 rma>1092 ğı>$ ra>938 rd>911 m>$ kları>$ ktan>$ lar>$ nız>$
+n>$ rak>$ ca>876 bilir>$ k>$ ğın>962 mad>924 bile>915 mı>940 may>918 mam>927 lı>1038 mey>850
+e>$ iş>$ anlar>1003 and>1001 iyor>781 anı>1004
+n>$ sa>839 rak>$ cak>$ lı>1038 bili>1055 bile>915 yı>762
+nda>$ r>$ z>$ na>$ nın>$ lma>1036 yor>1034 lı>1038 p>$ kl>969 lan>800 m>$ yla>$ dır>$ ş>$ nız>1061 ld>902 nc>874 lar>1097
+i>$ de>$ e>$
+m>$ ğı>$ rlar>$ lar>$ k>$ yla>$ n>$
+tir>1134 i>$ e>$ te>$ ke>974 leme>936 miş>$ mesin>1168 mey>850 len>904 leri>$ ley>935
+n>$ ks>970 kleri>1095 ği>$ rek>$ cek>$ bilir>$ ra>938 me>868 ceğ>1018 kte>1096 ha>837 bile>915 sind>1119 d>$ lerind>1142 gi>846
+k>$ z>$ ye>832 nt>823 si>$ ler>$ di>799 yi>971 m>$ nin>$ den>$ yle>$ li>951 niz>1043 se>$
+z>$ r>$ yor>$ ne>$ ni>$ nde>$ len>904 p>$ m>$ lme>901 k>$ ld>902 ta>774 yle>$ dir>$ nc>874 ş>$ ye>832
+ştı>956 n>$ yor>1034 zd>1032 şla>872 zı>$ za>$ dır>$ yla>$ şı>955
+sı>870 n>$ m>$ p>$ cı>768 z>$ dır>$ lı>1038 da>$
+an>$ acak>$ arak>$ laş>804 abili>842 ı>1169 lı>1038 ama>843 alı>920 eti>945 ip>$ tla>778 lik>977 in>934 amı>848 s>$
+be>836 in>$ ları>$ ele>944 ik>$ et>1020 da>$ dır>$ lık>$ sa>839 lara>$ lardan>$ ur>975 p>809 ir>866 en>824 lığ>966 ba>797 larla>$ o>771 id>814 iyor>781 cı>768 is>780 ül>865
+kt>968 ks>970 de>$ kleri>1095 li>$ gi>846 sind>1119 lend>793 m>$ km>972 nl>1037 lerind>1142
+n>$ bili>1055 rek>$ cek>$ ceğ>1018 yi>971 li>951 me>868 mi>886 bile>915
+mak>$ abili>842 tı>841 an>$ mış>922 ması>$ aca>928 maya>$ arak>$ ama>843 man>796 mad>924 ları>$ mam>927 malar>1054 ü>770 alı>920 amı>848 sın>763 e>$ ağı>1028 lara>$ lardan>$ lık>$ tan>$ lığ>966
+nde>$ ni>$ ne>$ k>$ yor>1034 ş>$ z>$ sy>914 nler>896 yle>$ dir>$ sind>1119 ye>$ la>978 st>831 sine>$
+k>$ ya>833 m>$ n>$ dir>$ ğin>1007 r>$ ler>$ p>$ yor>$ yd>764 şi>1104 yi>971 si>$
+yon>1005 it>825 t>$ ları>$ on>$ ö>881 lara>$ p>809 e>$ a>$ lı>$ man>796 ini>$ iye>776 mak>$ ur>975 ya>$ ind>1170 il>923 ke>974 im>$ mi>886 su>806 larda>$ mad>924
+mel>851 e>$ tir>$ çi>1102 a>$ te>$ ri>892 si>869 mek>$ ke>974 re>885 mey>850 y>$ miş>$ mesi>$ on>$ tin>994 med>852 ci>783
+e>$ a>$
+i>$ e>$ a>$ ı>$ u>$ ü>$ h>864 y>$
+ük>981 va>826 g>765 ra>938 ve>829 se>$ üm>984 üz>1137 ret>963 k>784 ni>811 ün>983 mu>802 f>810 ru>1070 me>868 üş>1084 nu>873 si>869 ta>774 mak>$ rim>1106 ül>865 sa>$ ür>862 rek>$ p>809 yi>971 ste>1105 nler>896 h>864 â>882
+si>$ k>$ ye>$ z>$ den>$ li>951 yi>$ di>799 nin>$ miş>$ nt>823 mesi>$ leri>$ niz>$ mekt>941 miz>$ mel>851 lere>$ yle>$ se>$
+ni>$ ne>$ si>$ ka>863 mi>$ ği>$ liğ>891 nde>$ kleri>1095 lerind>1142 kte>1096 md>808 nc>874 gi>846 st>831 lle>1052 lin>1011 yi>$ den>$
+ül>865 a>1171 i>$ ı>$ ez>993 ol>792 ra>938 eti>945 el>1056 er>$ te>$ leri>$ ur>975 s>$ ri>892 re>$ lerde>$ h>864 ün>983 ları>$ li>$ leş>893 lere>$ eş>1150 tir>$ ür>862 ul>939 em>1072 um>979 üm>984 tan>$ larda>$
+ı>$ ü>$ i>$ u>$ y>$
+arı>$ ü>$ ı>$ endi>989 er>$ ara>$ ik>$ u>$ ama>843 arla>$ ardan>$ anma>1128 andı>1129 ana>1006 enm>1021 aya>1030 anı>1004 iğin>1167 adı>1131 eş>1150 ene>1024 eme>855 eni>1022 amı>848 ayı>1130
+ı>$ ar>$ an>$ mış>$ ması>$ makt>1146 dığı>$ aş>1031 acak>$ abili>842 mal>794 maya>$ ama>843 mam>927 mad>924 dan>$
+tu>775 ması>$ l>$ mu>802 du>798 üm>984 e>$ da>$ mal>794 mad>924 mam>927 ün>983 makt>1146 o>771 maya>$ su>806 me>$ i>$ c>785 dü>786 ya>$ va>826 man>796 den>$
+ne>777 ha>837 f>810 p>809 c>785 be>836 ş>819 çe>976 ba>797 çl>1121 va>826 ra>938 y>$ j>813 ru>1070 na>959 ve>829 nu>873 z>$ bi>817 ni>811 re>885 ri>892 â>882 vi>1019 nme>830 nle>1047 rı>1040 nı>961 rü>909 ro>860 ns>996
+r>$ ti>769 tme>899 me>$ ye>832 ştir>1149 şm>1148 nme>830 tt>905 te>779 yi>971 diğ>1110 miş>987
+n>$ m>$ z>$ p>$ leş>893 f>810 ci>783 lik>$ r>1172 şle>1133 dir>$ si>$ şi>1104 liğ>891 k>$ t>$ ye>$ ll>1009 ler>$ den>$ lme>901 yi>971 ld>902 i>$ ve>829 yle>$ liy>980 yor>1034 ği>1122 sl>835 şt>877
+ti>769 miz>$ li>951 yle>$ dir>$ tme>899 md>808 me>$ lme>901 lle>1052 ld>902 mle>1154 tt>905 yd>764
+irm>1173 iril>1174 ire>1175 iği>$ ik>789 im>$ iler>$ en>$
+k>$ ye>$ z>$ si>$ ler>$ yi>$ nin>$ de>$ niz>1043 li>$ diğ>1110 mesi>$ nt>823 miş>987 dir>$ mekt>941 yle>$ miz>1010 se>$
+en>$ ebil>849 in>$ erek>$ ip>$ ecek>$ eceğ>854 eli>1076 le>$ man>796 im>$ eme>855 se>890
+ir>$ eki>$ endi>989
+ir>$ eceğ>854 ecek>$ mek>$ en>$ mesi>$ iyor>781 diğ>1110 mel>851 miş>987 mey>850 sin>859
+n>$ bilir>$ si>$ ler>$ me>868 bile>915 de>$ ye>$ şm>1148 yi>$ p>809 miz>1010 di>$ md>808 miş>$
+et>$ ken>$ t>$ i>$ sa>839 ma>$ su>806 sın>763 ru>1070 y>$ mış>922 şi>1104 c>785 en>824 eli>1076 esi>$ kt>968 ka>863 ed>1103 kı>988 n>$ b>772 klar>1140 sin>859 mla>803
+i>$ ler>$ de>$ ci>783 si>869 dir>$
+iş>$ is>780 as>997 iyor>$ az>$ akt>1126 iz>767 al>1067
+ler>$ a>$ ce>$ g>765 om>845 mel>851 ekle>1025 ti>$ mesin>1168
+um>$ uz>$ du>$ sa>839 su>806 lar>$ mu>802
+i>$ e>$
+ştir>1149 ye>832 şm>1148 ne>777 nme>830 nt>823 yi>971 ni>811 diğ>1110 şi>1104 me>$ t>$ ndir>1058 mler>1152 mi>886 se>890 st>831 md>808 de>878 sin>859
+i>$ e>$
+e>$ ak>$ uş>1141 aya>$ ış>$ az>$ ası>$ adan>$ iş>$ üş>1084 ayı>1130 is>780 adı>1131 an>$ uy>1073 us>782 am>884 aları>1176 alı>920 ağı>1028 ıyor>$
+e>$ i>$ le>$
+di>$ an>$ ler>$ la>978 ay>937 as>997 de>$ li>$ at>834 ar>879 o>771 y>$ abili>842 â>882 acak>$ lo>952 se>$ dan>$ sin>859 ki>985 ah>1023 ce>$ av>1002 ak>883 gi>846 tr>1051 za>949 ama>843 ti>769
+t>$ de>$ ce>857 si>$ l>$ r>$ n>$ ye>$ bili>1055 bile>915 yi>$ ci>783 me>868 dir>$
+ti>769 siniz>$ ü>770 o>771 tt>905 a>$ ken>$ se>$ gi>846 tme>899 di>$ dek>1177 ve>829 ki>985 ge>790 us>782 den>$ te>779 ba>797 p>809 ci>783 ya>833 ha>837 ul>939 to>1016 na>959 sa>$
+i>$ e>$ de>$ le>$ ara>1151 dir>$ ce>$
+k>$ nler>896 ye>$ nin>$ si>$ den>$ yi>$ z>$ leri>$ ci>783 di>$ niz>$ liy>980 m>$ ne>777 se>$ lerden>$ lerle>$ yle>$
+me>$ ilme>858 ilir>$ ir>$ en>$ ile>856 ebil>849 in>$ erek>$ di>$ imi>867 iyor>781 ecek>$ ip>$ miş>987 eceğ>854 eme>855 eli>1076 ler>$
+tir>$ lerd>1144 te>$ i>$ se>$ e>$ ken>$ siniz>$ tin>994 leri>$
+yle>$ miz>1010 z>$ dir>$ mle>1154 md>808 me>$ de>$ yd>764
+ke>974 ze>919 â>882 yon>1005 kı>988 c>785 nız>$ se>890 ya>833 ka>863 ki>985 ye>$ b>772 si>869 f>810 va>826 ç>766 pa>1066 su>806 h>864 kl>969 sa>$ vi>1019 sın>763 ör>861 ve>829 şa>875 yu>828 r>$ niz>1043 j>813 kt>968
+m>$ z>$ t>$ lı>1038 dı>$ şı>955 r>$ lma>1036 da>$ ld>902 şl>1178 yla>$ lan>800 yor>$ lar>1097 p>$ yd>764
+rla>916 n>$ m>$ ları>$ rda>$ yla>$ lı>$ dır>$ sı>$ ld>902 rs>910 yı>762 k>$ p>$ yor>$ rm>999 ll>1009 şma>954 ştı>956
+l>$ z>$ yla>$ dır>$ mla>803 ta>774 tm>960 md>808 tıl>773 tla>778 r>$ k>$ f>810 ya>833 tır>$ tt>905 ma>$ sın>763 mı>940 yor>$ p>$ da>$ yı>762 yd>764 yle>$
+ra>$ gi>846 ya>833 ç>766 ze>919 ol>792 ka>863 ne>777 kl>969 ge>790 ks>970 ye>832 f>810 yo>1069 zi>1008 va>826 ba>797 za>949 j>813 kte>1096 ki>$ oğ>986 ni>$ op>1118 na>959 â>882 ke>974 bi>817 be>836 ö>881 om>845 ku>1060
+a>$ ık>$ i>$ ü>$ uk>1087 ığı>$ uğ>1088 um>979 ılar>1089 ulu>1113 on>1015
+kı>988 ka>863 ü>$ ra>938 ç>766 ol>792 ni>811 â>882 ro>860 ö>881 or>818 op>1118 ok>982 ya>833 on>1015 ke>974 ku>1060 ba>797 ret>963 ki>985 na>$ z>$ ne>777 om>845 f>810 ca>$ d>929 bi>817 ru>1070 be>836 rim>1106 ş>819
+cı>768 se>890 k>784 ün>983 üş>1084 si>869 üz>1137 p>809 sa>839 su>806 o>771 ba>797 mel>851 ür>862 ya>833 be>836 rü>909 ş>819 ci>783 ül>865 bi>817 ge>790 nu>873 yi>971 ör>861 sı>870 yon>1005 ru>1070 mad>924 â>882 re>$ ca>$
+e>$ a>$ ır>$ ir>$ ol>792 im>$ iği>$ ur>$ ım>$ ü>$ ik>$ uğ>1088 ığı>$ iler>$ in>$
+z>$ ti>769 r>$ şı>955 te>779 cı>768 at>834 ğ>950 ca>$ şla>872 tla>778 çl>1121 şa>875 tı>841 i>$ to>1016 vi>1019 tü>787 şt>877 ge>790 h>864 p>809 ta>$ tt>905 f>810 va>826 j>813
+ara>1151 ak>$ ca>$ i>$ ken>$ lar>$ sa>$ sın>763 ne>777 m>791 eli>1076
+i>$ n>$
+mi>886 ri>892 re>885 rme>1094 k>$ mler>1152 rdi>998 n>$ lik>$ ro>860 md>808 rg>1109 si>$ ci>783 me>$ len>904 ğin>1007 leri>$ ma>1124 şa>875 ye>$ op>1118 di>799 rs>910 ha>837 lem>1114 yi>$ in>$ ley>935 rler>1064 tt>905 de>878
+de>$ e>$ le>$ dir>$ ken>$ o>771 se>890
+er>$ ü>$ a>$ me>868 mu>802 du>798 da>933 eni>1022 ne>777 endi>989 s>812 enm>1021 ene>1024 ma>$ f>810 be>836 ge>790 dır>840 cı>768 dığı>$ nı>961 dir>$ mı>940
+a>$ ten>$ çe>976 i>$ ra>938 re>885 tir>$ en>$ eti>945 etle>1098 çi>1102 ba>797 se>890 er>$ mesin>1168 â>882 ri>$ tan>$ za>949 ül>865 si>869 mekt>941
+iye>776 et>$ iz>767 el>1056 is>780 ları>$ tı>$ lara>$ o>771 g>765 it>825 dır>$ da>$ j>813 im>$ dir>$ leri>$ ine>$ ikl>1179 ması>$ li>951 tm>960 inden>$ leş>893 ey>1071 ci>783 lı>$ lardan>$ ini>$ s>$ cı>768 larla>$
+i>$ e>$ de>$ ya>833 g>765 ler>$ a>$ ce>$ da>$ u>815 dir>$ ci>783 op>1118
+n>$ dak>1180 mı>940 yla>$ ma>$ lay>805 lama>801 sın>763 md>808 z>$ lanma>1181 dır>$
+ki>985 im>$ en>$ lerd>1144 leri>$ ir>$ ebil>849 me>$ miş>$ se>$ inde>$ ör>861 ile>856 ini>$ ar>879 li>$ eme>855 ken>$ lem>1114 ip>$ ilm>1182 sin>859 ik>$ iyor>781 ecek>$ erek>$ ne>777 lere>$ iğin>1167 eceğ>854 ilir>$ iz>$
+edir>$ ir>$ en>$ ey>1071 esin>1077 eler>$
+en>$ i>$ eki>$ er>$ ye>832 eme>855
+n>$ kt>968 me>$ yi>$ ye>832 ler>$ cek>$ ceğ>1018 bilir>$
+eri>$ i>$ ere>$ erde>$ erle>$ li>$ dir>$ ler>$ enm>1021
+m>$ şi>1104 ci>783 n>$ k>$ yle>$ len>904 lme>901 r>$ dir>$ lir>$ ld>902 yor>$ si>869 liy>980 lece>907 p>$ ti>769
+i>$ t>$ h>864
+a>$ i>$ yon>1005 tan>$ ları>$ sı>870
+m>791 n>$ z>$ yor>1034 r>$ l>$ s>812 ş>819 dü>786 p>$ yle>$ ç>766
+j>813 g>765 su>806 n>$ me>868 k>$ lu>795 ba>797 t>$ z>953 lar>$ ya>$ yu>828 da>$ ğu>871 bi>817 c>785 di>799 p>809 r>$ du>798 o>771 u>815 lan>800 ma>$ mu>802 se>890 it>825 yd>764 st>831 si>869 yla>$
+tin>994 in>$ h>864 se>890 im>$ de>$ le>$ iz>$ di>$ ağı>1028 ip>$ be>836 k>784 na>$ iş>827 yi>971 li>$ iyle>$ ci>783 idir>$ miş>$ ne>777 sa>$ lay>805
+li>$ de>$ anlar>1003 lerde>$ lerind>1142 be>836 anı>1004 se>890 lere>$ dir>$ mi>886 si>869 lerini>1143 lerine>$ at>834 ci>783 â>882 lerle>$ y>$ on>$
+a>$ lu>795 c>785 ları>$ ma>$ lard>1147 i>$ lara>$ ku>1060 su>806 laş>804 mu>802 larla>$ e>$ g>765 tr>1051 kt>968 lerde>$ sa>$ ya>$ ta>774 lama>801 to>1016 leri>$ tin>994 na>959 tu>775
+b>772 e>$ ro>860 o>771 aşı>1183 an>948
+de>$ in>$ iz>$ ler>$
+an>$ ı>$ aca>928 e>$ abili>842 la>$ arak>$ i>$ alı>920 ayı>1130 ül>865 dı>$ asın>889
+şt>877 rt>1041 z>$ n>$ şa>875 ru>1070 ta>774 rla>916 şla>872 yor>$ s>$ o>771 m>$ k>$ tla>778 rg>1109 laş>804 tu>775 du>798 ril>1161 rdan>$ ra>$ yla>$ da>$ lle>1052 rs>910 lü>788 f>810 lma>1036 lu>795 ld>902 ğu>871
+mı>940 p>809 ü>$ se>890 mi>$ o>771 h>864 sa>839 k>$ f>810 ra>938 me>868 ci>783 si>869 ne>777 ör>861 ma>$ bi>817 di>799 vi>1019 ret>963 ç>766 ve>829 be>836 sı>870 nü>897 mu>802 na>$ ni>811 â>882 ge>790 ca>876
+ılma>847 ıla>844 ma>$ ılı>921 an>$ lar>$ ır>$ dı>$ g>765 ıs>1085 ıp>$ ıy>1090 arak>$ ın>$ ıd>1184 mış>922 abili>842 acak>$ cı>768 ım>1166 va>826 ış>$ ama>843 sın>763
+n>$ r>$ lü>788 ğ>950 p>809 s>812 lme>901 len>904 ye>$ m>$ ler>$ c>785 k>$ el>1056 yle>$ yor>$ dü>786 ld>902 leş>893 den>$ lece>907 ş>819 leme>936 z>953 ley>935
+nı>$ na>$ nda>$ mı>940 yla>$ dır>$ ma>$ md>808
+dır>$ rı>$ rla>916 ki>$ yı>762 t>820 ş>$ yd>764 l>$ rda>1039 ra>$ dir>$ z>$ sy>914
+kle>1155 kte>1096 ne>777 ve>829 si>$ ği>$ li>$ de>$ ye>$ r>$ nin>$ leri>$ te>779 miz>1010 be>836 bili>1055 niz>1043 lerde>$ ki>985 yi>$ ceğ>1018 nt>823 lerle>$ lere>$ yle>$ cek>$ ks>970 dir>$ bile>915 km>972 mey>850 gi>846
+ı>$ da>$ a>$ la>$ i>$ dır>$
+de>$ e>$ ün>983 g>765 lü>788 yon>1005 da>933 um>979 leri>$ s>812 nü>897 za>949 dü>786 ce>$ lere>$ ul>939 lerden>$ lerle>$
+a>$ ı>$ i>$ da>$ lar>$ za>949 on>$ ma>$ ede>942 mı>940 lı>$ mla>803 ol>792 et>1020
+ı>$ ör>861 y>$ ik>$
+lik>977 liğ>891 tme>899 leş>893 ti>769 leme>936 leri>$ de>$ len>904 çi>1102 di>$ me>$ lerde>$ tt>905 te>779 lere>$ la>$ miş>$ ce>$ an>948 lo>952 ze>919 y>$ ley>935 at>834 lerle>$ s>$ â>882
+sı>$ lı>$ yı>$ n>$ ya>$ ları>$ da>$ f>810 kt>968 yl>913 rak>$ mı>940 si>$ bili>1055 ca>876 mad>924 bile>915 lara>$ lardan>$ dır>$ lan>800 may>918 mam>927
+ı>$ a>$ da>$ la>$ dır>$ i>$ ca>$
+i>$ li>951 lend>793 leri>$ e>$ ha>837 ki>985 den>$ kl>969 kte>1096 ri>892 lere>$ at>834 al>$ ce>857 o>771 ks>970
+ol>792 e>$ as>997 on>1015 al>1067 ik>$ op>1118 an>948 at>834 it>825 y>$ av>1002 is>780 ah>1023 ak>$ ac>895 pl>816 iği>$ ü>770 in>934 ab>887
+e>$ n>$
+r>$ şm>1148 mle>1154 ne>777 nm>908 ni>811 ndi>1120 ye>832 me>$ di>799 yi>971 mi>886 s>812 şi>1104
+e>$ iş>$ uş>1141 ış>$ uy>1073 üş>1084 iyor>$
+i>$ de>$ e>$ ce>$ le>$ dir>$
+i>$ e>$ de>$ le>$ dir>$
+te>$ le>$ li>$ eli>1076 anl>1185 o>771 çi>1102 tir>$ i>$ ede>942 eler>1186 çe>976 si>869 ül>865 esi>1187 se>890 lar>$
+tü>787 üm>984 ür>862 ün>983 ler>$ m>791 e>$ ve>829 te>$ lü>788 se>$ ti>769
+c>785 z>$ çl>1121 nda>$ nla>1188 tm>960 na>$ m>$ r>$ yor>$ tu>775 lma>1036 lan>800 nu>$ ni>811 lu>795 tt>905 s>$ nc>874 ld>902 va>826 p>$ da>$ ta>774 ş>819 nde>$ yla>$ ne>$ du>798 tl>991 yu>828 f>810
+eki>$ edir>$ a>$ ey>1071 endi>989
+ek>$ ken>$ se>890 ce>$ j>813 an>948 ler>$ y>900 ara>1151 ı>$ miş>$ siniz>$
+ış>$ iş>$ uş>1141 üş>1084 ıyor>$ is>780 uy>1073 us>782 iyor>$
+ır>$ ü>$ ığı>$ ım>$ uğ>1088 um>979 ık>$ ılar>1089 un>$ uk>1087 o>771 ula>1111 ro>860 ın>$ ur>$ ö>881
+si>$ kte>1096 li>951 z>$ ye>832 mesi>$ mel>851 den>$ diğ>1110 miş>$ leri>$ mekt>941 yi>$ ks>970 nin>$
+nme>830 yi>971 ştir>1149 ye>832 şm>1148 me>$ ndir>1058 ne>777 şi>1104 di>799 ni>811 mi>886 sin>859 te>779 ns>996 ti>769
+e>$ a>$ ın>$ ra>938 i>$ ü>770
+i>$ ek>$ den>$ le>$ dir>$
+r>$ nme>830 ye>832 mey>850
+ri>892 iğin>1167 ro>860 ire>1175 e>$ iri>1189 irm>1173 ör>861 aş>1031 leri>$ ru>1070 ü>770
+e>1190 ra>938 a>$ o>771 ler>$ ör>861
+f>810 ki>985 sı>870 çi>1102 h>864 ör>861 ve>829 sa>839 çe>976 y>$ su>806 ne>777 si>869 b>772 na>959 se>890 ge>790 ka>863 kı>988 ni>811 va>826 c>785 â>882 ku>1060 p>809
+n>$ mı>940 yla>$ da>$ dır>$
+gi>846 ce>857 si>869 ne>777 f>810 to>1016 ku>1060 se>890 ti>769 ter>990 ci>783 ç>766 sl>835 om>845 ör>861 ta>774 a>$ ke>974 ol>792 za>$ ge>790 ks>970 ka>863 tler>995 tü>787
+u>$ af>880 eti>945 aş>1031 adı>1131 ama>843 ı>$ aya>1030 amı>848 ayı>1130 at>834 en>824 ar>$ anı>1004 isi>1065 ili>1139 ana>1006 ası>$
+en>824 u>$ ı>$ ar>$ an>$ ak>$ ayı>1130 adı>1131 alar>1127 aya>1030 er>$
+h>864 f>810 ci>783 bi>817 p>809 ca>876 va>826 gi>846 ce>$ ç>766 j>813 on>$ be>836 ba>797 a>$ ve>829 i>$ e>$ vi>1019 or>$ ol>792 um>$ ge>790
+ıdır>$ ıs>1085 ıy>1090 i>$ e>$ den>$ dir>$ ık>$ lik>977 ılar>1089 leri>$ tt>905 liğ>891 leş>893
+r>$ su>806 lma>1036 lan>800 p>$ n>$ yor>$ lu>795 m>$ ş>819 ları>$ da>$ ld>902 c>785 b>772 z>$ du>798 f>810 yu>828 ya>$ yla>$ ğu>871 lama>801
+tu>775 ma>1124 u>$ mu>802 an>$ lar>$ aca>928 sa>$ abili>842 ama>843 tan>$ su>806 lu>795
+m>$ lme>901 n>$ ler>$ si>$ lik>$ len>904 ld>902 liğ>891 lir>$ p>$ ye>$ ci>783 lece>907 çe>976 yor>1034 yi>$ leme>936 k>$ dir>$ den>$ rme>1094 lin>1011
+ün>983 eti>945 üm>984 t>820 ül>865 es>947 ük>981 dü>786
+şm>1148 nme>830 ndir>1058 si>$ me>$ leri>$ nin>$ ne>777 se>890 ye>$ şi>1104 yi>971 şti>1191 di>$ çe>976 miş>$ den>$
+me>$ ilme>858 ile>856 erek>$ diğ>1110 en>$ ilir>$ ebil>849 ir>$ miş>987 in>$ ecek>$ iyor>$ ip>$ eceğ>854 eme>855 eli>1076 sin>859
+an>$ ığı>$ ım>$ ıklar>1192 ır>$ i>973 de>878 ılar>1089 ın>$ aki>$ ıy>1090
+li>$ leri>$ e>$ se>890 de>$ a>$ ci>783 um>$ dir>$ lere>$ p>809 lerde>$ lerle>$ si>869 lend>793 sa>839 leme>936 ma>1124 o>771 na>959 me>868 dan>$ ha>837 ül>865 lar>1097
+nin>$ ne>$ nde>$ niz>$ dir>$ yle>$ yi>971 kl>969 ya>833 t>$ yd>764 na>$ r>$ miz>1010 ndan>$ z>$ yor>$
+kt>968 ğı>967 ks>970 klar>1140 gi>846 ka>863 m>$ km>972 n>$ z>$
+nı>$ mız>$ nda>$ na>$ md>808
+ik>$ ık>$ uk>1087 iğin>1167 uğ>1088 ü>$ ığı>$ idir>$ ıyor>925 isi>1065 ılı>921 ili>1139
+ca>$ yla>$ sı>$ da>$ r>$ ş>$ cı>768 p>$ k>$ z>$ yor>$ dır>$ ya>$ ç>766 sa>839 yı>$ ğı>$ f>810 dığı>1091 ta>774 yd>764
+h>864 o>771 g>765 f>810 p>$ an>$ e>$ is>780 in>$ ar>879 am>884 ad>822 iz>767 av>1002 j>813 at>834 as>997 ap>1000 ik>$ al>$ um>$ us>782 ur>$ ak>883 il>923
+ır>$ aki>$ ama>843 i>$ andı>1129
+ı>$ a>$
+ı>$ ak>$ da>$ la>$ dır>$
+ı>$ a>$ da>$ la>$ lığ>966 dır>$ sın>763
+çl>1121 j>813 at>834 g>765 il>923 ul>939 ur>975 iye>776 ok>982 in>934 er>1012 ut>894 ir>866 is>780
+i>$ ene>1024 dı>$ lar>$ lı>$ et>$ f>810 da>$ ken>$ cı>768 un>$ sa>$ sı>870 er>$ ur>975 di>$ ed>1103
+e>$ at>834 as>997 ri>892 i>973 uru>1163 uş>1141 â>882
+na>959 ma>$ nma>958 nı>961 ndı>957 ya>833 dı>$ yı>762 mla>803 mı>940 şa>875 md>808 şma>954 sın>763 gi>846 şı>955
+ğı>$ k>$ r>$ ş>$ l>1049 gi>846 yı>762 h>864 mı>940 dır>$
+k>$ ya>$ sı>$ lar>$ nın>$ cı>768 mız>$ yı>$ da>$ lin>1011 tı>841 sy>914 z>$ nız>1061 ğı>$ lı>1038 mış>$ tla>778 şı>955 mak>$ dı>$ tt>905 yla>$ nt>823 mal>794 ması>$ nları>821 ri>892
+n>$ mı>940 yla>$ dır>$ ma>$ md>808
+ür>862 üz>1137 uğ>1088 ro>860 ur>975 üm>984 ük>981 uk>1087 s>$ um>$ ö>881 y>$ ok>982 ula>1111 ül>865 lerind>1142 on>1015
+r>$ na>959 ya>833 nma>958 yı>762 ma>$ nı>961 ndı>957 dı>965
+lı>$ çe>976 ı>$ a>$ iye>776 ül>865 in>$ lar>$ lere>$ o>771 ce>$ si>869 u>815 li>951 me>868 sı>870 ür>862 malar>1054 ün>983 il>923 tan>$ sa>839 tır>$ üz>1137 leş>893
+ından>$ tan>$ a>$ lar>$ ind>1170 lı>$ ına>$ sı>870 ını>$ ç>766 ör>861 ımı>1158 et>$ iye>776 on>1015 tır>$ ra>938 eler>1186 il>923 ik>789 ıyla>$ lama>801
+ke>974 ndir>1058 nme>830 me>$ yi>971 ne>777 ye>832 ni>811 diğ>1110 kler>1062 ğin>1007 t>$ miş>$
+e>$ i>$ de>$ ler>$
+i>$ ti>769
+as>997 in>$ de>$ m>$ yon>1005 leri>$ ci>783 lik>$ al>1067 at>834 dir>$ ik>$ esi>$ lerde>$ lere>$ liğ>891 lerle>$ ce>$ iyle>$ em>1072 ör>861 on>$ eli>1076 da>$ idir>$
+ası>$ ak>$ ış>$ lan>800 lay>805 ız>$ alı>920 lama>801 ını>$ ına>$ aya>$ lar>$ aları>$ anı>1004 lı>1038 is>780 ından>$ ayı>$ dan>$ am>884
+lan>800 cı>768 ca>$ ları>$ lığ>966 laş>804 ç>766 tıl>773 lık>$ ar>$ ev>1138 ma>$ lay>805 ağı>1028 lama>801 an>$ mış>$ larda>$ lara>$ akla>1193 sa>839 p>809 va>826 g>765 zı>1033 ki>$ larla>$ bi>817 akt>1126 ba>797 ce>$ acak>$
+ında>$ arı>1194 ıkl>1195 ına>$ ımı>1158 kı>988 ma>$ lı>$ ını>$ lard>1147 ları>$ ır>$ an>$ ka>863 sa>$ lama>801 lay>805 ıyor>$ mış>$ lan>800 acak>$ ıyla>$ arak>$ ıdır>$ larla>$ ç>766 ıp>$ lara>$ av>1002 abili>842 ama>843 ken>$
+ım>1166 ma>$ ılma>847 la>978 ır>$ an>$ ıla>844 dı>$ arak>$ ılı>921 abili>842 ın>$ acak>$ ıyor>$ ıp>$ ken>$ mış>922 lı>1038 alar>1127 sa>839 da>$ sın>763 ası>$ ak>$ ız>$ tı>$ ama>843
+ştir>1149 n>$
+r>$ m>$ ği>$ k>$ ler>$
+yla>$ mı>940 dır>$ ma>$ md>808 z>$ mla>803 da>$ yd>764
+ikle>1081 er>$ eş>1150 iği>$ eme>855 ene>1024 eni>1022 ar>879 enm>1021 ad>822
+a>$ ı>$ dı>$ e>$ sa>839 be>836 le>$ mış>$
+k>$ ği>$ yor>$ m>$ p>$ nde>$ rken>$ nc>874 g>765 rs>910 rdi>998 ye>$ ş>$ rler>$ ni>$ ne>$ dir>$ te>$ st>831
+ndan>$ z>$ nı>$ na>$ yla>$ dır>$ mız>$
+ak>883 sa>839 lar>$ ken>$ an>$ lığ>966 ka>863 na>959 lık>$ sı>870 ç>766 ma>$ tı>841 dı>$ arak>$ h>864 tla>778 abili>842 dan>$ acak>$ mış>$ lan>800 lama>801 aş>1031 laş>804 cı>768 lay>805 alı>920 sl>835 ap>1000 as>997 ba>797
+de>$ im>853 en>$ di>$ mek>$ ilme>858 ler>$ ebil>849 ir>$ ile>856 ge>790 ilir>$ in>$ ip>$ gi>846 mey>850 erek>$ miş>987 iyor>$ med>852 isi>1065 ekt>1026 mel>851 id>814 mesi>$ ecek>$ eceğ>854 eli>1076 sin>859 eme>855 an>$
+i>$ lar>$ ta>$ on>1015 ö>881 lı>$ ar>879 an>$ si>869 sı>870
+a>$ um>979 i>$
+ı>$ h>864 e>$ i>$ ti>769 lar>$ k>$ y>$
+a>$ da>$ la>$ dır>$ i>$ ken>$ sa>839 mış>$
+yla>$ dır>$ z>$ yı>762 yd>764 r>$ da>$
+ı>$ al>$ tı>841 ra>938 ki>985 ağı>1028
+ı>$ i>$
+alı>920 ı>$ et>$ ey>1071 anı>1004 ri>892 le>$ esin>1077 ol>792 uğ>1088 en>$ or>818 ede>942 eler>$
+a>$ ı>$ da>$ lar>$
+ık>$ ığın>1196 ıy>1090 ılar>1089
+de>$ e>$ le>$ dir>$ ce>$
+z>$ yle>$ dir>$ f>810 ye>$ yd>764 de>$ mi>886
+ikler>1197 iği>$ â>882 ar>879 al>1067 ay>937
+zi>$ ze>$ zd>1032 zle>1157
+dü>786 ya>$ ra>938 s>$ ba>797 di>799 ul>939 a>$ ım>$ rin>$
+um>$ uz>$ du>$ lar>$ su>806 sa>839 mu>802
+ı>$ a>$ da>$ la>$ dır>$
+a>$ ır>$ i>973 ığı>1198 ılar>1089 ör>861 ıklar>1192
+e>$ n>$
+sind>1119 m>$ z>$ de>$ r>$ ğin>1007 k>$ sine>$ leri>1199 ye>$ yle>$ dir>$ lme>901 len>904 yor>$ lere>$ yi>$ liy>980 lerde>$ sini>$ ci>783 or>$ lerle>$ ld>902 gi>846 p>$ te>779
+ır>$ a>$ ım>$ ığı>$ ık>$ ılar>1089
+ri>$ me>$ rle>$ rde>$ re>$ ne>777 ye>832 nme>830 yi>971 ni>811 rdi>998 ndi>1120 miş>$ di>799
+ilme>858 me>$ en>$ di>$ ir>$ ile>856 ebil>849 erek>$ miş>987 az>1132 ilir>$ ip>$ iyor>$ ecek>$ in>$ eceğ>854 af>880 ler>$ eme>855 o>771 el>1056 isi>1065 ken>$ im>$ alar>1127 as>997 sin>859 la>978 ik>$ ey>1071 id>814 ti>769
+ndı>957 tm>960 nma>958 ştı>956 tıl>773 şma>954 nı>961 na>959 şa>875 şı>955 ma>$ tan>$ tt>905 tır>$ mla>803 yı>762 da>$
+iler>1068 lı>$ at>834 ları>1200 lan>800 arl>932 â>882 ine>$ ini>$ lama>801 ı>$ ta>$
+sı>$ kta>1045 lı>1038 ya>$ dan>$ mış>$ z>$ lar>$ nın>$ yı>$ dı>$ makt>1146 ması>$ mal>794 si>$ nız>$ yla>$
+si>$ t>820 leme>936 li>$ leri>$ sl>835 iler>1068 ley>935
+n>$ si>$ t>$ cek>$ rek>$ bilir>$ lerind>1142 miz>1010 lik>$ bile>915
+r>$ m>$ n>$ z>$ ci>783 yor>$ p>$ k>$ tü>787 dir>$
+e>$ i>$ a>$
+n>$ r>$ p>$ m>$ z>$ l>$ ş>$ k>$ sı>$ dır>$ yla>$ t>$
+da>$ ın>$ ız>$ lar>$ ca>$ adır>$
+i>$ a>$ ı>$ en>$ u>$ eki>$ ü>$
+un>$ ün>$ ı>$ a>$ le>$ re>$ um>$ lar>$ n>$ ur>$ s>$ lik>$ on>$ y>$ lık>$ de>$ ri>$ m>$ da>$ ra>$ ta>$
+a>$ ı>$ ta>$ me>$ ü>$ u>$ ma>$ te>$ tır>$ ti>$ miş>$ ki>$ se>$
+in>$ de>$ m>$ leri>$ lik>$ dir>$ ik>$ esi>$ lerde>$ lere>$ a>$ lerle>$ ce>$ iyle>$ on>$ da>$ idir>$
+sı>$ lar>$ lık>$ nın>$ k>$ ya>$ nız>$ dır>$ na>$ m>$ nda>$ yı>$ yla>$ dan>$ r>$ ğı>$ yor>$
+m>$ k>$ ği>$ ler>$ si>$ on>$ p>$ li>$ yor>$ yle>$ t>$ ş>$ ye>$ ce>$ dir>$ z>$ yi>$ de>$ ca>$ lar>$ e>$ da>$ ya>$
+s>$ yor>$ yle>$ p>$ de>$ t>$ ye>$ da>$
+t>$ z>$ ş>$ ca>$ s>$ d>$ ya>$ e>$ in>$ ur>$ on>$ or>$ ir>$ yla>$
+ı>$ u>$ rek>$ ze>$ ü>$ le>$ ni>$ on>$ y>$ la>$ ra>$ ri>$ s>$ lik>$ da>$ ne>$ t>$ za>$ dir>$ de>$
+ı>$ ar>$ an>$ mış>$ ması>$ dığı>$ acak>$ mak>$ maya>$ dan>$
+ya>$ k>$ p>$ l>$ r>$ da>$ sı>$ nın>$ m>$ cak>$ yı>$ ğı>$ bilir>$ ne>$ dır>$ nlar>$ ş>$ na>$ ni>$ si>$ yla>$ in>$ ndan>$ t>$ nız>$ dir>$ yi>$
+r>$ n>$ m>$ p>$ da>$ ar>$ lar>$ s>$ k>$ ya>$ yla>$ al>$ ş>$ yor>$
+t>$ de>$ cek>$ si>$ l>$ r>$ n>$ ye>$ bilir>$ yi>$ dir>$
+l>$ n>$ t>$ k>$ si>$ ş>$ y>$ ği>$ r>$ m>$ cek>$ de>$ bilir>$ dir>$ z>$ e>$
+rı>$ k>$ ra>$ ma>$ rda>$ rla>$ dı>$ mış>$ ri>$ tır>$ tan>$ ğı>$ n>$ rken>$
+si>$ ki>$ m>$ leri>$ de>$ in>$ ye>$ nin>$ zi>$ lik>$ yi>$ lerde>$ cek>$ dir>$ lere>$ p>$ ne>$ niz>$ bilir>$ lerle>$ yle>$ ği>$ t>$ se>$ ze>$ nden>$
+t>$ ki>$ e>$ leri>$ lerde>$ a>$ on>$ lere>$ mak>$ lar>$
+um>$ uz>$ du>$ lar>$ sa>$
+u>$ al>$ lar>$ e>$ ta>$ i>$ an>$
+n>$ l>$ si>$ r>$ k>$ z>$ ye>$ m>$ dir>$ t>$ p>$ yi>$ al>$ yle>$ den>$ yor>$ e>$
+ü>$ na>$ or>$ ken>$ z>$ on>$ ca>$ y>$ ki>$ ra>$ ce>$ re>$ den>$ da>$
+u>$ ü>$ k>$ re>$ ra>$ t>$ dan>$ s>$ de>$ le>$ ri>$ ma>$ y>$ zi>$ ce>$ on>$ lar>$ mek>$ ze>$
+r>$ m>$ l>$ k>$ n>$ yordu>$
+n>$ r>$ ye>$ m>$ ler>$ k>$ yle>$ yor>$ s>$ p>$ den>$
+m>$ r>$ k>$ yor>$ n>$ p>$ t>$ ler>$ yle>$
+a>$ ten>$ i>$ tir>$ en>$ er>$ s>$ ri>$ tan>$
+r>$ si>$ n>$ l>$ yi>$ de>$ ye>$ t>$ me>$ dir>$ mi>$ yle>$ ce>$
+ü>$ se>$ on>$ ya>$ p>$ ki>$ re>$ ca>$ si>$ t>$ ce>$ me>$ sı>$ ma>$ n>$ or>$ sa>$
+ü>$ u>$ ar>$ e>$ ik>$ leri>$ on>$ den>$ an>$ du>$ s>$ ize>$ t>$ lere>$ da>$ la>$ in>$ lerde>$ ma>$ lerle>$
+i>$ en>$
+ıdır>$ i>$ e>$ den>$ dir>$ ık>$ leri>$
+k>$ m>$ r>$ yla>$ ş>$ nda>$ nun>$ na>$ yor>$ p>$ s>$ e>$ lar>$ ya>$ da>$
+da>$ ın>$ ız>$ lar>$ a>$ s>$ lık>$ dır>$ ca>$ ki>$ i>$ ıdır>$ ım>$ e>$ lik>$ ıyla>$
+n>$ sı>$ lar>$ r>$ t>$ y>$ m>$ k>$ ş>$ dan>$ lık>$ p>$ z>$ si>$ a>$ ğı>$ dır>$ li>$ sa>$ daki>$
+r>$ m>$ kları>$ n>$ lar>$ ktan>$ ya>$ yla>$ da>$ t>$ du>$
+m>$ k>$ ler>$ n>$ a>$ ye>$ p>$ yor>$ si>$ t>$ lir>$ ş>$ se>$ dir>$ de>$ yle>$ yi>$ lar>$ e>$ i>$ um>$ zi>$ lik>$
+an>$ ır>$ tı>$ dı>$ arak>$ acak>$ ıyor>$ da>$ lar>$ ın>$ ıp>$ lı>$ in>$ et>$ ti>$ k>$ ca>$ s>$ di>$ ım>$ ir>$ ış>$ ıdır>$
+k>$ ya>$ sı>$ z>$ yı>$ nın>$ da>$ ları>$ lı>$ nız>$ dığı>$ m>$ si>$ larda>$ lara>$ yla>$
+ş>$ z>$ r>$ n>$ t>$ yor>$ s>$ m>$ k>$ yla>$ da>$ l>$ du>$
+r>$ ma>$ dığı>$ mış>$ n>$
+ma>$ ır>$ ım>$ an>$ tı>$ mış>$ ıyor>$ acak>$ ıp>$ arak>$ lı>$ ın>$ la>$
+an>$ acak>$ arak>$ ıp>$ ın>$ ip>$ s>$ ım>$ la>$
+n>$ z>$ l>$ r>$ s>$ yla>$ ar>$ m>$ p>$ yor>$ e>$
+a>$ i>$ tan>$ ları>$
+a>$ e>$ i>$ ır>$ ur>$ ü>$
+or>$ er>$ tir>$ si>$ ek>$ i>$ ta>$ ı>$ ki>$ u>$ te>$ se>$ ma>$ on>$ ya>$ en>$ et>$ esi>$ p>$ tır>$ ü>$ eye>$ ne>$ mek>$ ri>$ ken>$ eler>$ eyi>$ mış>$ nin>$ mesi>$
+a>$ i>$ ta>$ e>$ on>$ ı>$ leri>$ li>$ ya>$ lar>$ te>$ or>$ re>$ ra>$ u>$ lerle>$ lere>$ lı>$ tir>$ tır>$ ü>$ lerden>$ s>$ z>$ rin>$ n>$ ken>$
+m>$ k>$ yle>$ den>$ r>$ ş>$ ni>$ yor>$ lir>$ s>$ ne>$ ği>$ nde>$ p>$ te>$ lik>$ dir>$ ler>$ a>$ ca>$ ye>$ on>$ e>$ yi>$ um>$ nda>$
+ü>$ mi>$ s>$ k>$ ma>$ n>$ me>$ on>$ p>$ or>$ d>$ r>$
+i>$ e>$ ı>$ lar>$ an>$ lı>$ de>$ da>$ ur>$ li>$ dır>$
+e>$ a>$ ler>$ or>$
+p>$ dan>$ an>$ di>$ du>$ ar>$ e>$ cak>$ az>$ de>$ daki>$ u>$
+arı>$ eri>$ in>$ ara>$ ak>$ ı>$ iği>$ arda>$ ik>$ erden>$ ere>$ erle>$ arla>$ u>$ y>$ an>$
+r>$ i>$ t>$ ye>$ n>$ dir>$ yle>$ m>$ k>$ si>$ a>$ z>$ de>$ yi>$
+t>$ a>$ e>$ i>$ lar>$ m>$ da>$ y>$ sa>$ n>$
+e>$ u>$ ü>$ k>$ ra>$ sa>$ se>$
+s>$ y>$ ne>$ k>$ ce>$ ca>$
+n>$ yla>$ mız>$ da>$ dır>$
+e>$ i>$ y>$ s>$
+i>$ ı>$ ü>$ e>$ a>$ te>$ leri>$ s>$ re>$ lerde>$ ları>$ u>$ li>$ lere>$ tir>$ tan>$ larda>$
+ce>$ s>$ k>$ t>$ a>$ za>$
+e>$ tir>$ al>$ i>$ ler>$ me>$ y>$ lik>$ anın>$ mi>$ te>$ ma>$ se>$ re>$
+m>$ ş>$ p>$ n>$ r>$ sı>$ da>$ ya>$ l>$ yı>$ t>$ zi>$ k>$ sa>$ si>$ i>$ zı>$ yla>$ dır>$
+im>$ en>$ leri>$ ir>$ me>$ miş>$ se>$ inde>$ ini>$ li>$ ken>$ ip>$ ik>$ ecek>$ erek>$ lere>$ ilir>$ iz>$ lerle>$ siniz>$
+n>$ m>$ p>$ t>$ k>$ rdu>$ yor>$ z>$ yla>$ ya>$ da>$ s>$
+t>$ n>$ r>$ l>$ si>$ y>$ de>$ da>$ dir>$ m>$
+si>$ k>$ ye>$ z>$ den>$ yi>$ nin>$ li>$ miş>$ mesi>$ leri>$ niz>$ miz>$ mek>$ lere>$ yle>$ se>$
+a>$ ü>$ ik>$ u>$ ra>$ ler>$ ri>$ ir>$ te>$ ır>$ lar>$ ık>$ ine>$ iği>$ lik>$ im>$ s>$ on>$ inde>$ inin>$ tir>$ re>$ y>$ ım>$
+n>$ t>$ si>$ rek>$ leri>$ cek>$ ri>$ lik>$ bilir>$ ye>$ yi>$ de>$ lere>$ lerde>$ miz>$ rler>$ lerle>$ dir>$ rde>$ miş>$ yle>$
+n>$ da>$ t>$ r>$ z>$ si>$ ya>$ sı>$ l>$ cak>$ yı>$ bilir>$ ğı>$ k>$ sa>$ ma>$ dı>$ yla>$ mız>$ yi>$
+ik>$ a>$ e>$ ma>$ te>$ tı>$ ta>$ in>$ r>$ mış>$ tir>$ or>$ iği>$ iyle>$ im>$ s>$
+eri>$ im>$ ar>$ ik>$ ak>$ iği>$ ere>$ an>$ ı>$ ü>$ erde>$ u>$ erle>$ ini>$ ine>$ iyle>$
+r>$ t>$ k>$ si>$ lik>$ n>$ den>$ ği>$ ler>$ yi>$ ye>$ ş>$ di>$ yle>$ miz>$
+t>$ r>$ le>$ n>$ sı>$ z>$ lı>$ m>$ da>$ ya>$ p>$ ları>$ k>$ dı>$ li>$ larda>$ yı>$ lara>$ de>$ se>$ larla>$
+e>$ n>$
+l>$ n>$ k>$ t>$ m>$ sı>$ p>$ ya>$ r>$ ca>$ da>$ ğı>$ yı>$ i>$ dır>$ yla>$ dığı>$ de>$ si>$ sa>$ ce>$
+ma>$ ı>$ an>$ lar>$ dı>$ arak>$ acak>$ mış>$
+k>$ ğı>$ n>$ m>$ ş>$ yor>$ sı>$ ya>$ da>$ p>$ yı>$ yla>$ dır>$
+r>$ yor>$
+sı>$ z>$ k>$ dan>$ ları>$ ya>$ dı>$ lı>$ larda>$ yı>$ nın>$ ması>$ mış>$ nız>$ r>$ mak>$ lara>$ ğı>$ mız>$ yla>$ si>$ nda>$ larla>$
+n>$ bilir>$ cak>$ ma>$ dığı>$
+ik>$ an>$ e>$ inin>$ ası>$ lar>$ u>$ s>$ al>$ da>$ me>$ iyle>$ aya>$
+li>$ n>$ si>$ ler>$ ye>$ yi>$ m>$ r>$ yle>$ de>$ dir>$ z>$ on>$ t>$
+sı>$ k>$ ya>$ z>$ lı>$ dan>$ mış>$ ması>$ ları>$ dığı>$ yı>$ mak>$ nın>$ sa>$
+ş>$ n>$ z>$ yor>$ dır>$ yla>$
+ir>$ ecek>$ mek>$ en>$ mesi>$ iyor>$ di>$ miş>$
+e>$ i>$ le>$
+eri>$ i>$ ere>$ erde>$ erle>$ li>$ dir>$ ler>$
+en>$ i>$ eki>$ er>$
+li>$ leri>$ e>$ de>$ a>$ um>$ dir>$ lere>$ lerde>$ lerle>$ dan>$ s>$
+i>$ e>$
+k>$ z>$ si>$ ler>$ ye>$ m>$ di>$ nin>$ den>$ yi>$ yle>$ li>$ niz>$ se>$
+n>$ bilir>$ si>$ ler>$ de>$ ye>$ yi>$ me>$ di>$ miş>$
+ki>$ si>$ den>$ li>$ leri>$ ye>$ n>$ ri>$ m>$ yi>$ dir>$ lerde>$ t>$ lere>$ z>$ yle>$ rken>$ re>$
+si>$ z>$ k>$ ye>$ li>$ mesi>$ den>$ miş>$ leri>$ di>$ yi>$ nin>$
+ler>$ a>$ ce>$ ti>$
+n>$ m>$ l>$ k>$ p>$ ya>$ z>$ da>$ r>$ t>$ ş>$ s>$
+ü>$ ler>$ e>$ de>$ t>$ al>$ ize>$ ce>$
+ler>$ ü>$ e>$ ken>$ t>$ me>$ i>$ de>$ se>$
+t>$ nı>$ sı>$ r>$ lar>$ k>$ da>$ m>$ ya>$ le>$ nlar>$ lı>$ yı>$ na>$ z>$ nda>$ cak>$ dır>$ ni>$ li>$ p>$ bilir>$ si>$ yla>$
+e>$ i>$ li>$ te>$ ri>$ u>$ ı>$ leri>$ lı>$ ta>$ ne>$ ları>$ si>$ re>$ p>$ lerde>$ y>$ mi>$ ra>$ tı>$ ü>$ ni>$ lardan>$ lara>$ sı>$ larla>$ sa>$ tir>$ lere>$ d>$ or>$ z>$
+er>$ ü>$ en>$ mesi>$ in>$ leri>$ ecek>$ de>$ mek>$ an>$ lere>$
+siniz>$ a>$ ken>$ se>$ di>$ de>$ t>$ sa>$ ki>$
+n>$ zi>$ ze>$ yle>$ dir>$ miz>$ za>$
+n>$ t>$ z>$ m>$ r>$ ği>$ ce>$ ar>$
+z>$ m>$ yle>$ l>$ ye>$ k>$ dir>$ s>$ t>$ r>$ p>$ de>$ on>$ dan>$ yi>$ ği>$ yor>$ yla>$
+l>$ z>$ yla>$ dır>$ m>$ r>$ k>$ tan>$ ya>$ tır>$ yor>$ p>$ da>$ yle>$ sına>$
+nu>$ m>$ na>$ ndan>$ k>$ r>$ da>$ ş>$ yla>$ p>$ yor>$
+r>$ ma>$ dı>$
+z>$ nda>$ na>$ m>$ r>$ yor>$ nu>$ s>$ p>$ da>$ t>$ ş>$ nde>$ yla>$ ne>$ la>$
+i>$ e>$ a>$ ı>$ u>$ ü>$ y>$
+n>$ m>$ k>$ rak>$ cak>$ bilir>$ ğı>$ sı>$ rı>$ t>$ d>$ ya>$ rken>$ l>$ yı>$ rlar>$
+ğı>$ n>$ sı>$ m>$ t>$ kları>$ l>$ r>$ ya>$ ktan>$ d>$ si>$ p>$ z>$ yı>$ i>$
+ur>$ an>$ e>$ um>$ aki>$
+ce>$ r>$ ni>$ si>$ li>$ t>$ m>$ le>$ dir>$ de>$ ş>$ ye>$ yi>$ ne>$ ği>$ bilir>$ nden>$ yle>$ on>$
+et>$ ken>$ t>$ i>$ ma>$ sa>$ y>$ mış>$ esi>$ n>$ ca>$ edir>$
+ından>$ tan>$ a>$ lar>$ lı>$ ına>$ ını>$ et>$ i>$ tır>$ ım>$ ıyla>$
+yle>$ z>$ le>$ k>$
+n>$ r>$ l>$ t>$ m>$ ye>$ de>$ k>$ zı>$ da>$ ya>$ sı>$ iz>$ yı>$ p>$ dı>$ ir>$ zi>$ si>$
+ın>$ mak>$ al>$ arak>$ ası>$ ip>$ anın>$ si>$ sa>$ ken>$
+in>$ ları>$ ik>$ da>$ et>$ dır>$ lık>$ lara>$ lardan>$ larla>$
+n>$ si>$ di>$ ye>$ de>$ l>$ m>$ rek>$ cek>$ yi>$ se>$ bilir>$ e>$ p>$ ş>$ ği>$ ak>$ yle>$ ze>$ rken>$ al>$
+n>$ k>$ r>$ yor>$ s>$ yle>$ le>$ t>$ i>$ dir>$ mi>$ ye>$ ği>$ de>$ li>$ yi>$ a>$ yla>$ me>$
+ı>$ et>$ eyi>$ le>$ a>$ eye>$ en>$ eler>$
+ki>$ r>$ dır>$
+da>$ ın>$ ız>$
+l>$ k>$ r>$ nin>$ si>$ niz>$ ye>$ t>$ m>$ yi>$ den>$ di>$ yle>$ ne>$ se>$ nde>$ p>$ deki>$ bilir>$
+i>$ e>$
+k>$ z>$ r>$ yle>$ ş>$ p>$ yor>$ si>$ t>$ ye>$ dir>$ ca>$ de>$ yi>$ um>$ da>$ yla>$ se>$ al>$ ya>$ ce>$ ğini>$
+me>$ miş>$ im>$ erek>$ ir>$ en>$ ti>$ ip>$ iyor>$
+ta>$ a>$ u>$ ları>$ e>$ ine>$ maya>$
+ı>$ e>$ i>$ lar>$ k>$ y>$
+i>$ de>$ e>$ ce>$ le>$ dir>$
+n>$ z>$ r>$ yor>$ l>$ m>$ p>$ ş>$ yle>$ s>$
+ı>$ ü>$ i>$ u>$ y>$
+k>$ n>$ ye>$ si>$ den>$ yi>$ z>$ leri>$ di>$ li>$ m>$ se>$ lerden>$ lerle>$ yle>$
+se>$ ü>$ ken>$ n>$ mak>$ tan>$ sa>$ rek>$ ri>$ miş>$ si>$ rı>$ maya>$ ması>$ ye>$ za>$ p>$ me>$ te>$ zi>$ mış>$ yi>$
+si>$ z>$ k>$ ye>$ li>$ miş>$ den>$ mesi>$ leri>$ yi>$ di>$ nin>$ se>$ mek>$ niz>$
+e>$ ir>$ a>$ ı>$ iği>$ u>$ ü>$ in>$ im>$ iler>$ ik>$
+ı>$ mak>$ ü>$ me>$ i>$ a>$ en>$ maya>$ er>$ ması>$ tı>$ mış>$ ecek>$ leri>$ u>$ miş>$
+en>$ mesi>$ ir>$ miş>$ in>$ erek>$ ecek>$ mek>$ iyor>$ ler>$ a>$ ip>$ t>$ ce>$ izi>$
+a>$ e>$ i>$ ı>$ ü>$ u>$ le>$ on>$
+ek>$ ken>$ ce>$ se>$ ler>$ ı>$ miş>$ siniz>$
+k>$ ği>$
+ış>$ iş>$ ıyor>$ iyor>$
+n>$ r>$ k>$ yor>$ z>$ p>$ t>$ m>$ s>$ ye>$ yle>$ de>$
+iniz>$ a>$ e>$ iz>$ ız>$ uz>$ ınız>$ un>$ on>$ ün>$
+ır>$ ü>$ ığı>$ ım>$ ık>$ un>$ um>$ ın>$ ur>$
+ı>$ re>$ ri>$ uz>$ de>$ leri>$ me>$ un>$ da>$ ları>$ ki>$ ma>$ ra>$ ur>$ lara>$ s>$ larda>$ p>$ li>$ or>$ t>$ lerde>$ um>$ zi>$ lere>$ y>$ ün>$
+er>$ ar>$ ı>$ edir>$ i>$ u>$ esine>$ ü>$ eki>$ eye>$ eleri>$
+al>$ on>$ um>$ en>$
+cek>$ n>$ r>$
+rı>$ ma>$ ra>$ rda>$ k>$ dığı>$ mış>$ rla>$ rken>$ nın>$ ri>$ na>$
+ı>$ ları>$ a>$ da>$ lı>$ larla>$ lara>$ larda>$
+an>$ ı>$ acak>$ e>$ la>$ arak>$ i>$ dı>$
+l>$ rine>$ n>$ y>$ si>$ te>$ me>$ rini>$ rek>$ de>$ rken>$ ti>$ rler>$ dir>$ cek>$ bilir>$ miz>$
+k>$ m>$ ğı>$ dır>$ n>$ r>$ yla>$ yor>$ p>$ lar>$
+r>$ k>$ m>$ yor>$ p>$ ğı>$ n>$ dır>$ ş>$
+tır>$ lar>$ sa>$ ım>$ ken>$ ız>$
+di>$ an>$ ler>$ la>$ de>$ li>$ ar>$ y>$ acak>$ se>$ dan>$ ce>$
+an>$ ığı>$ ım>$ ık>$ ır>$ i>$ ın>$ aki>$
+um>$ uz>$ du>$ lar>$ sa>$
+lar>$ ken>$ an>$ lık>$ ma>$ dı>$ arak>$ t>$ sa>$ ak>$ dan>$ acak>$ mış>$ daki>$
+ası>$ ak>$ ış>$ ız>$ ını>$ ına>$ aya>$ lar>$ aları>$ ından>$ i>$ ayı>$ dan>$ anın>$
+ğı>$ kları>$ m>$ n>$ z>$
+de>$ di>$ ya>$ s>$ ları>$ ra>$ on>$ ri>$ ye>$ m>$ n>$ da>$ k>$ ler>$ re>$ larla>$ or>$ lara>$ larda>$
+a>$ ı>$ da>$ lar>$
+u>$ a>$ da>$ ları>$ i>$ ca>$
+ı>$ y>$ ik>$
+r>$ ş>$ sı>$ dır>$ m>$ y>$ nı>$ da>$ ları>$ lı>$ t>$ ğı>$ larda>$ nlar>$ na>$ si>$ lara>$ ni>$ i>$ nda>$ sa>$ di>$
+en>$ ce>$ a>$ er>$ t>$ mesi>$ se>$ mek>$ ca>$ edir>$ miş>$ eler>$ ecek>$ et>$ esi>$
+en>$ in>$ erek>$ ip>$ ecek>$ le>$ im>$
+k>$ ye>$ z>$ si>$ ler>$ yi>$ nin>$ de>$ niz>$ li>$ mesi>$ di>$ miş>$ yle>$ miz>$ se>$
+i>$ dı>$ lar>$ lı>$ et>$ da>$ ken>$ un>$ sa>$ er>$ di>$
+r>$ da>$ n>$ m>$ sı>$ l>$ t>$ ya>$ ki>$ yı>$ ğı>$ si>$ kları>$ z>$ cak>$ p>$ de>$ bilir>$ yla>$ ktan>$ ce>$ dı>$ ş>$ in>$ yi>$
+ması>$ l>$ t>$ du>$ ü>$ e>$ da>$ maya>$ me>$ i>$ ya>$ mak>$ den>$
+nda>$ na>$ nı>$ za>$ yla>$ zı>$ yor>$ dır>$ k>$ s>$ mız>$ ma>$ da>$
+edir>$ ir>$ en>$ eler>$
+n>$ ki>$ r>$ dir>$ bilir>$ cek>$
+se>$ e>$ si>$ iz>$ iler>$ ı>$
+n>$ me>$ yi>$ ler>$ cek>$ bilir>$
+m>$ n>$ k>$ yle>$ r>$ dir>$ lir>$ yor>$ p>$
+i>$ t>$
+e>$ s>$ t>$ an>$ li>$ ler>$ ı>$
+s>$ ik>$ e>$ t>$ ca>$ in>$ ce>$ ne>$ ki>$ y>$ ir>$ iyor>$ ip>$
+r>$ n>$ sı>$ t>$ m>$ de>$ i>$ lar>$ k>$ lı>$ yı>$ p>$ ya>$ ğı>$ da>$ cak>$
+er>$ ü>$ a>$ du>$ ne>$ da>$ ma>$ me>$ en>$ dır>$ dığı>$ dir>$ sa>$
+dir>$ m>$ si>$ p>$ lik>$ ler>$ t>$ se>$ z>$ de>$ ş>$ ce>$ i>$ ca>$ on>$
+n>$ k>$ t>$ lar>$ ya>$ da>$ z>$ r>$ m>$ p>$ du>$ yla>$
+u>$ ü>$ ce>$ m>$ on>$ sa>$ se>$ siniz>$ ca>$ ken>$ za>$ ne>$ or>$ y>$ ki>$
+sı>$ ya>$ k>$ lar>$ n>$ yı>$ lı>$ da>$ z>$ mız>$ yla>$ ması>$ dır>$ mak>$ mış>$
+k>$ ğı>$ n>$ r>$ ma>$ yor>$ yla>$ mız>$ p>$ l>$ dır>$ sı>$ ya>$ da>$
+r>$ m>$ ğı>$ k>$ lar>$
+ğı>$ r>$ ktan>$ m>$ lar>$ kları>$ nı>$ sı>$
+sı>$ k>$ z>$ ya>$ dan>$ lı>$ yı>$ nın>$ ları>$ ması>$ dığı>$ mış>$ nız>$ mak>$ mız>$ si>$ yla>$
+n>$ k>$ ğı>$ rak>$ cak>$ bilir>$ t>$ me>$ sı>$ l>$ da>$ yı>$ ma>$ dığı>$ ya>$ rken>$ rı>$ i>$ z>$ mış>$ rlar>$ dır>$ yla>$ si>$ rdan>$ di>$
+a>$ l>$ iş>$ ış>$ iyor>$ ıyor>$
+r>$ m>$ yor>$ na>$ nı>$ ş>$ p>$ nda>$ dır>$ yla>$ sı>$ da>$
+a>$ da>$ ız>$ ın>$ ık>$
+i>$ li>$ leri>$ en>$ te>$ mek>$ tir>$ er>$ miş>$ mesi>$ lere>$ lerle>$ lerde>$
+i>$ ı>$ u>$ ü>$
+m>$ n>$ k>$ lar>$ yla>$ sı>$ dır>$ lık>$ ya>$
+ı>$ a>$
+m>$ z>$ t>$ dı>$ r>$ da>$ yla>$ lı>$ yor>$ p>$
+ır>$ ir>$ ur>$ or>$ um>$ im>$ ik>$ ım>$ ü>$ in>$ ığı>$ ık>$ ın>$ iği>$ un>$
+ı>$ i>$ u>$ ü>$
+a>$ ınız>$ iniz>$ ız>$ iz>$ un>$ e>$ uz>$ le>$ inin>$ te>$
+n>$ m>$ z>$ p>$ lik>$ dir>$ si>$ r>$ k>$ t>$ ye>$ ş>$ ler>$ den>$ i>$ yle>$
+e>$ ak>$ aya>$ ış>$ az>$ ası>$ adan>$ iş>$ ayı>$ an>$ aları>$ ıyor>$
+ce>$ on>$ a>$ ca>$ i>$ e>$ or>$ um>$
+k>$ r>$ t>$ nin>$ me>$ de>$ si>$ ler>$ ye>$ li>$ miz>$ yi>$ nde>$ dir>$ ne>$ z>$ yle>$ cek>$ a>$ ş>$ bilir>$ niz>$
+an>$ ma>$ du>$ lar>$ ken>$ arak>$ e>$ acak>$ sa>$ t>$ i>$ da>$ ce>$ y>$ se>$ al>$ nu>$
+k>$ si>$ ği>$ li>$ de>$ ye>$ r>$ nin>$ leri>$ te>$ lerde>$ yi>$ lerle>$ mi>$ bilir>$ lere>$ yle>$ cek>$ niz>$ dir>$
+te>$ le>$ li>$ e>$ tir>$ on>$ i>$ a>$ lar>$
+cak>$ k>$ bilir>$ dı>$ t>$ l>$ s>$ di>$ ce>$ da>$ p>$ de>$ ğı>$ z>$
+a>$ u>$ da>$ larda>$ ları>$ lara>$ e>$ i>$ larla>$ n>$ m>$ ki>$ de>$
+or>$ e>$ le>$ di>$ iz>$ im>$ se>$ ken>$
+leri>$ s>$ ten>$ lere>$ ken>$ lerle>$ lerden>$ e>$
+ta>$ al>$ s>$ e>$ rin>$ u>$ ları>$ k>$
+de>$ e>$ ü>$ ce>$ se>$ lerde>$ ki>$ leri>$ me>$ lere>$ al>$
+ü>$ e>$ an>$ leri>$ de>$ lere>$ lerde>$ lerle>$
+n>$ li>$ si>$ ler>$ m>$ t>$ r>$ ye>$ den>$ z>$ yi>$ k>$ ş>$ p>$ dir>$ yor>$ yle>$ ya>$ ği>$ yla>$
+u>$ a>$
+tir>$ ler>$ te>$ i>$ se>$ e>$ ken>$ siniz>$
+nda>$ nı>$ da>$ m>$ na>$ sı>$ p>$ ş>$ ya>$ ları>$ yla>$ lı>$ yor>$ z>$ t>$ dır>$ r>$ yı>$ k>$ lara>$ larda>$ larla>$ nlar>$
+m>$ si>$ r>$ ği>$ nin>$ ler>$ k>$ ye>$
+ek>$ i>$ leri>$ lere>$ den>$ n>$ al>$ lerle>$ s>$ dir>$ mi>$ ken>$ lerden>$ an>$
+i>$ ı>$ u>$ ü>$ y>$
+ye>$ ği>$ rler>$ m>$ ler>$ k>$ n>$ si>$ yor>$ a>$ p>$ lir>$ de>$
+i>$ e>$ ler>$ li>$
+i>$ e>$ de>$ ler>$ a>$ ce>$ da>$ dir>$
+i>$ e>$ de>$ le>$ dir>$ ce>$
+ı>$ e>$ uz>$ al>$ lı>$ i>$ ur>$ ları>$ ün>$ ta>$ lerine>$ un>$ tır>$
+i>$ t>$ ları>$ on>$ lara>$ e>$ a>$ lı>$ y>$ mak>$ larda>$
+ği>$ r>$ m>$ k>$ ler>$ n>$
+ızı>$ ış>$ iş>$ u>$ izi>$ ik>$ ıyor>$
+i>$ lar>$ ta>$ lı>$ an>$
+a>$ i>$
+e>$ n>$
+ı>$ a>$ da>$ la>$ dır>$ i>$ ca>$
+nda>$ r>$ z>$ na>$ nın>$ yor>$ p>$ k>$ m>$ yla>$ dır>$ ş>$ nız>$
+u>$ lar>$ a>$ da>$ er>$ ik>$
+n>$ rak>$ cak>$ bilir>$ k>$
+e>$ de>$ in>$ iz>$ ce>$
+n>$ m>$ k>$ ği>$ si>$ z>$ p>$ de>$ r>$ l>$ yor>$ ye>$ yi>$ t>$ dir>$ yle>$ i>$
+i>$ ık>$ ü>$ ığı>$ u>$ s>$ y>$
+de>$ in>$ e>$ le>$ dir>$ ce>$ da>$ a>$
+de>$ e>$ i>$ a>$ da>$ ce>$ mesi>$ miş>$ di>$ le>$
+ken>$ se>$ a>$ m>$ on>$ siniz>$ ce>$ ki>$ y>$ re>$ n>$ ım>$
+n>$ m>$ lar>$
+n>$ dir>$ m>$ yle>$
+e>$ da>$ lar>$ a>$ s>$ i>$ ca>$ t>$ y>$
+r>$ n>$ ları>$ d>$ m>$ ya>$ z>$ s>$ larda>$
+zi>$ ze>$ r>$ yor>$ nin>$ ne>$ t>$ p>$ nden>$ dir>$ za>$ yle>$ de>$
+i>$ e>$
+si>$ k>$ l>$ z>$ r>$ ye>$ m>$ nin>$ te>$ de>$ ce>$ se>$ ş>$ yi>$ ne>$ dir>$ nde>$ yle>$ a>$ niz>$
+e>$ tir>$ a>$ te>$ mek>$ ri>$ re>$ y>$ miş>$ mesi>$ on>$ s>$
+e>$ iş>$
+z>$ r>$ yor>$ ne>$ ni>$ nde>$ p>$ m>$ k>$ yle>$ dir>$ ş>$
+i>$ ı>$ e>$ a>$ ları>$ ta>$
+n>$ k>$ ği>$ rek>$ cek>$ bilir>$ d>$
+r>$ n>$
+e>$ ir>$ leri>$
+n>$ rek>$ cek>$ bilir>$
+n>$ yla>$ m>$ z>$ dır>$
+nde>$ ni>$ ne>$ k>$ ş>$ z>$ yor>$ yle>$ dir>$ ye>$ sine>$
+n>$ rak>$ cak>$ bilir>$
+mak>$ an>$ tı>$ ması>$ mış>$ maya>$ arak>$ ları>$ acak>$ e>$ lara>$ lardan>$ lık>$ tan>$
+e>$ a>$ ır>$ ir>$ im>$ iği>$ ur>$ ım>$ ü>$ ik>$ ığı>$ iler>$ in>$
+n>$ m>$ r>$ ları>$ yla>$ lı>$ dır>$ sı>$ k>$ p>$ yor>$ yı>$
+um>$ uz>$ lar>$ sa>$ ki>$ da>$ m>$
+a>$ ık>$ i>$ ü>$ ığı>$ u>$
+sı>$ z>$ k>$ ya>$ lı>$ dan>$ ması>$ mış>$ dığı>$ nın>$ yı>$ lar>$ si>$ mak>$
+ik>$ ı>$ ü>$ iği>$ u>$ idir>$ inin>$
+nda>$ r>$ dır>$ ş>$ yor>$ m>$ na>$ lık>$ nın>$ kları>$ p>$ ca>$ sı>$ lar>$ ktan>$ z>$ ya>$ yı>$ da>$ yla>$ nız>$
+ğı>$ k>$ r>$ ş>$ dır>$
+ca>$ yla>$ sı>$ da>$ r>$ ş>$ p>$ k>$ z>$ yor>$ dır>$ ya>$ yı>$ ğı>$
+a>$ ları>$ ı>$ ma>$ tır>$ larda>$ ü>$ ta>$ lara>$ er>$ en>$ leri>$ u>$ lere>$ mek>$ lik>$ lı>$ y>$ larla>$ mış>$ i>$ mesi>$ tir>$ ten>$ s>$
+t>$ bilir>$ k>$ p>$ si>$ di>$ ler>$ de>$ lik>$ er>$ ği>$ z>$ ar>$ se>$
+i>$ e>$ de>$ le>$ m>$ li>$ da>$ dir>$ ce>$
+nı>$ na>$ nda>$ yla>$ mız>$ dır>$ ma>$
+dır>$ rı>$ ki>$ ş>$ l>$ ra>$ dir>$ rdan>$ z>$
+i>$ t>$
+me>$ n>$
+e>$ a>$ ın>$ i>$
+k>$ nız>$ ye>$ se>$ ce>$ ya>$ ca>$ sa>$ siniz>$ p>$ r>$ na>$
+u>$ ı>$ ar>$ ası>$
+e>$ ik>$ a>$ on>$ y>$ iği>$
+ri>$ rde>$ t>$ re>$ si>$ mek>$ rle>$ d>$ leri>$ mesi>$ yi>$ n>$
+ı>$ i>$
+ı>$ da>$ a>$ la>$ i>$ dır>$
+rler>$ yor>$ n>$ te>$ m>$ rken>$
+lik>$ leri>$ de>$ di>$ me>$ lerde>$ lere>$ la>$ miş>$ ce>$ tir>$ ten>$ y>$ lerle>$ s>$
+ma>$ dı>$ mış>$ n>$
+me>$ ilir>$ ir>$ en>$ in>$ erek>$ di>$ ecek>$ ip>$ iyor>$ miş>$ ler>$
+u>$ ü>$ s>$ y>$ le>$
+l>$ r>$ m>$ n>$ z>$ ya>$ dan>$ yla>$ p>$ t>$ yor>$ ş>$ s>$ daki>$
+ı>$ a>$ da>$ la>$ dır>$
+de>$ e>$ le>$ dir>$ ken>$
+ış>$ iş>$ ıyor>$ iyor>$ idir>$
+i>$ de>$ e>$ le>$ se>$ di>$ miş>$
+nin>$ ne>$ nde>$ niz>$ dir>$ yle>$ t>$ k>$ na>$ r>$ ndan>$ z>$ yor>$
+n>$ sı>$ t>$ d>$ r>$ l>$ ce>$ z>$ ya>$ k>$ yı>$ m>$ cak>$ ğı>$ yla>$ bilir>$
+et>$ ları>$ i>$ tı>$ lara>$ dır>$ da>$ dir>$ leri>$ ması>$ lı>$ lardan>$ s>$ larla>$ den>$ lik>$ lere>$ eleri>$ enin>$ mış>$ tan>$ lerde>$
+i>$ ek>$ den>$ le>$ dir>$
+t>$ da>$ l>$ ya>$ m>$ z>$ du>$
+n>$ p>$ z>$ k>$ r>$ yor>$ lar>$ ma>$ s>$ t>$ dan>$ ya>$ yla>$
+in>$ im>$ de>$ le>$ iz>$ se>$ di>$ ip>$ ken>$ na>$ li>$ iyle>$ idir>$ miş>$ sa>$
+li>$ de>$ lerde>$ an>$ leri>$ lere>$ dir>$ lerle>$ y>$ on>$ si>$
+or>$ a>$ u>$ la>$ du>$ sa>$ ken>$
+a>$ ları>$ ma>$ i>$ lara>$ ca>$ larla>$ e>$ larda>$ t>$ lerde>$ sa>$ ya>$ k>$ leri>$
+e>$ n>$
+k>$ m>$ n>$ dir>$ r>$ ği>$ ler>$ p>$ yor>$ si>$
+de>$ in>$ iz>$ ler>$
+ü>$ n>$
+i>$ di>$ an>$ se>$ ken>$ ye>$
+n>$ z>$ r>$ m>$ yor>$ yla>$ p>$ da>$
+n>$ r>$
+rı>$ rda>$ ra>$ rla>$ t>$ dı>$ ri>$ n>$ mak>$ maya>$
+r>$ m>$ ği>$ k>$ ler>$
+ü>$ ler>$ e>$ te>$ mesi>$ se>$ mek>$
+ı>$ al>$ tır>$
+a>$ n>$
+lar>$ i>$ tan>$ u>$ a>$ ken>$ en>$ sa>$
+u>$ a>$
+ı>$ ak>$ da>$ la>$ dır>$
+a>$ ı>$ dı>$ e>$ sa>$ le>$ mış>$
+nı>$ mız>$ nda>$ na>$
+k>$ ya>$ sı>$ lar>$ nın>$ mız>$ yı>$ da>$ z>$ nız>$ ğı>$ lı>$ mış>$ mak>$ dı>$ yla>$ ması>$
+ır>$ an>$ ması>$ mış>$ dı>$ arak>$ ık>$ arı>$ ıp>$ acak>$ mak>$ ıyor>$ maya>$ ığı>$ arda>$ ın>$ arla>$ sa>$
+k>$ ye>$ si>$ yi>$ r>$ z>$ den>$ n>$ leri>$ li>$ miz>$ di>$ mesi>$ mek>$ miş>$ se>$
+ni>$ ne>$ nden>$ yle>$ m>$ z>$ dir>$
+n>$ dir>$ r>$ ki>$ siniz>$
+ak>$ ca>$ i>$ ken>$ lar>$ sa>$ mış>$
+ri>$ me>$ rle>$ rde>$ re>$ miş>$
+er>$ i>$
+de>$ li>$ m>$
+n>$ yle>$ miz>$ dir>$
+m>$ n>$ ler>$ si>$ lik>$ lir>$ p>$ ye>$ yi>$ yor>$ k>$ dir>$ den>$
+ya>$ s>$ a>$ ım>$ rin>$
+m>$ nin>$ t>$ l>$ ye>$ r>$ k>$ yi>$ ne>$ den>$ nde>$ yle>$ di>$ yor>$ p>$ niz>$ ş>$ si>$ ği>$ z>$
+mi>$ k>$ n>$ lik>$ si>$ r>$ me>$ leri>$ ye>$ yi>$ in>$ d>$
+i>$ e>$ de>$ le>$ si>$ dir>$
+ra>$ ya>$ k>$ ni>$ ş>$ z>$ ye>$ na>$ or>$ ne>$
+eki>$ edir>$ a>$
+ün>$ un>$ an>$ e>$ ı>$ ası>$
+i>$ n>$
+r>$ ma>$ n>$ dı>$ cak>$ bilir>$ mış>$ ya>$
+a>$ ur>$ e>$ um>$
+k>$ r>$ yor>$ n>$ p>$ m>$
+i>$ ler>$ de>$ dir>$
+mak>$ dı>$ n>$ maya>$ mış>$ k>$
+lı>$ ı>$ a>$ in>$ lar>$ ü>$ lere>$ ce>$ s>$ u>$ tan>$ tır>$
+r>$ ma>$ dı>$
+i>$ si>$ a>$ e>$ y>$ la>$
+e>$ a>$
+ni>$ ne>$ si>$ mi>$ ği>$ nde>$ k>$ ler>$ yi>$ den>$
+arı>$ ü>$ ı>$ er>$ ara>$ ik>$ u>$ arla>$ ardan>$ iği>$ an>$
+miz>$ yle>$ dir>$ me>$ l>$ t>$
+si>$ me>$ leri>$ nin>$ ye>$ yi>$ di>$ miş>$ den>$
+z>$ r>$ t>$ ca>$ i>$ ğı>$
+u>$ ı>$ ar>$ an>$ ak>$ er>$
+a>$ ır>$ ik>$
+da>$ a>$ la>$ ca>$ i>$ dır>$ ken>$
+sı>$ k>$ ya>$ z>$ ları>$ yı>$ dan>$ nın>$ lı>$ dı>$ m>$
+ğı>$ r>$ m>$ kları>$ ktan>$ lar>$ nız>$
+n>$ m>$ p>$ z>$ dır>$ da>$
+m>$ ğı>$ rlar>$ lar>$ k>$ yla>$ n>$
+a>$ ı>$ i>$ da>$ lar>$ on>$ ma>$ lı>$ e>$
+r>$ me>$
+me>$ en>$ di>$ ir>$ erek>$ ilir>$ ip>$ iyor>$ ecek>$ miş>$ in>$ ler>$ a>$ ken>$ im>$ ik>$ mak>$ se>$
+de>$ im>$ en>$ di>$ mek>$ ler>$ ir>$ ilir>$ in>$ ip>$ erek>$ iyor>$ miş>$ mesi>$ ecek>$ an>$
+er>$ i>$
+de>$ e>$ ü>$ leri>$ ce>$ lere>$ lerden>$ lerle>$
+i>$ leri>$ li>$ e>$ den>$ lere>$ al>$
+k>$ ği>$ yor>$ m>$ p>$ nde>$ rken>$ ye>$ ş>$ rler>$ ni>$ ne>$ dir>$ te>$
+a>$ da>$ la>$ dır>$ i>$ ken>$ mış>$
+u>$ ma>$ an>$ lar>$ sa>$ tan>$
+e>$ n>$
+n>$ zi>$ ze>$
+ir>$ eki>$
+m>$ z>$ de>$ r>$ k>$ sine>$ ye>$ ler>$ yle>$ dir>$ yor>$ yi>$ sini>$ li>$ or>$ p>$
+adır>$ an>$ ır>$ ir>$
+ır>$ aki>$ i>$
+e>$ iş>$ ış>$ iyor>$
+me>$ erek>$ en>$ ilir>$ di>$ ir>$ in>$ miş>$ ecek>$ iyor>$ ip>$
+i>$ e>$ te>$ miş>$ me>$ tir>$ leri>$
+sı>$ lı>$ yı>$ n>$ ya>$ ları>$ da>$ rak>$ si>$ yla>$ lara>$ lardan>$ m>$ dır>$ cak>$
+i>$ e>$ de>$ le>$ dir>$
+m>$ n>$ r>$ p>$ yor>$ z>$ l>$
+k>$ me>$ t>$ miş>$
+me>$ t>$ di>$ n>$ miş>$
+ki>$ dır>$ r>$ l>$ sı>$ da>$
+r>$ m>$
+ndan>$ z>$ nı>$ na>$ yla>$ dır>$ mız>$
+ar>$ eri>$ ık>$ erde>$ i>$ ere>$
+n>$ p>$ r>$ yla>$ yor>$ dır>$ m>$
+en>$ ir>$ mesi>$ di>$ miş>$ eri>$ erek>$ ik>$ ecek>$ iyor>$ ip>$ mek>$ iği>$ erde>$ erle>$
+ım>$ ma>$ ır>$ an>$ dı>$ arak>$ ın>$ acak>$ ıyor>$ ıp>$ ken>$ lar>$ mış>$ da>$ aları>$ ası>$ ak>$ ız>$ tı>$
+r>$ p>$ n>$ yor>$ m>$ ları>$ da>$ ş>$ z>$ ya>$ yla>$
+ca>$ ları>$ lık>$ tı>$ ar>$ ma>$ an>$ mış>$ larda>$ lara>$ e>$ ki>$ sa>$ larla>$ ce>$ acak>$
+yla>$ dır>$ z>$ r>$ da>$
+a>$ da>$ ları>$ lı>$ larla>$ lara>$ dır>$ lardan>$ ca>$ sı>$ m>$
+i>$ de>$ e>$
+e>$ i>$ de>$ ler>$
+t>$ ca>$ e>$ ı>$ a>$
+a>$ ir>$ iği>$ im>$ ik>$ iler>$
+i>$ a>$ u>$ e>$
+n>$ y>$ ce>$ ca>$ z>$ p>$ ş>$ re>$ ri>$
+e>$ i>$ a>$
+en>$ ir>$ mesi>$ miş>$ di>$ iyor>$ erek>$ ip>$
+n>$ si>$ t>$ cek>$ rek>$ bilir>$ lik>$
+n>$ mız>$ yla>$ dır>$ ma>$
+si>$ li>$ leri>$ iler>$ te>$
+ik>$ ık>$ iği>$ ü>$ ığı>$ u>$ idir>$
+ik>$ iği>$ ar>$
+lı>$ ları>$ ine>$ ini>$ iler>$ ı>$ ta>$
+sı>$ ya>$ k>$ dan>$ mış>$ z>$ lar>$ nın>$ yı>$ lı>$ dı>$ ması>$ si>$ nız>$ yla>$
+iş>$ iyor>$ az>$
+m>$ r>$ n>$ yor>$ p>$
+a>$ e>$
+ık>$ ığı>$
+de>$ e>$ le>$ dir>$ ce>$
+z>$ yle>$ dir>$ ye>$ de>$
+ma>$ tan>$ tır>$ n>$ da>$
+r>$ m>$ n>$ z>$ yor>$ p>$ k>$ dir>$ t>$
+p>$ an>$ e>$ in>$ ik>$ al>$ um>$ ur>$
+ği>$ m>$ k>$ ler>$
+ı>$ a>$ da>$ la>$ dır>$
+rı>$ ma>$ rda>$ ra>$ rla>$ ri>$ dı>$
+lı>$ yla>$ m>$ ya>$ lar>$ dan>$ z>$ sı>$ yı>$ r>$ dır>$ yor>$ p>$
+ı>$ n>$
+a>$ da>$ ın>$ ız>$ ca>$
+i>$ e>$ le>$ de>$ dir>$
+m>$ yla>$ dır>$
+yle>$ miz>$ z>$ dir>$ me>$ de>$
+yla>$ mız>$ dır>$ ma>$ z>$ da>$

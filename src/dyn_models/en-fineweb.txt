@@ -1,0 +1,1441 @@
+dynphrase v1
+name en-fineweb-occ-cap64-t5-w3
+words 3
+states 1437
+o>1 an>2 i>3 th>4 y>5 wi>6 ha>7 re>8 se>9 e>10 wa>11 be>12 ar>13 wh>14 u>15 pro>16 li>17 ma>18 no>19 wo>20 fr>21 fi>22 so>23 ne>24 bu>25 ho>26 lo>27 hi>28 we>29 de>30 le>31 do>32 me>33 fa>34 sa>35 si>36 to>37 po>38 la>39 te>40 al>41 sta>42 mo>43 di>44 pa>45 su>46 ba>47 bo>48 ta>49 ab>50 go>51 da>52 ti>53 pla>54 cou>55 fo>56 ad>57 ge>58 comp>59 fe>60 sho>61 pre>62 con>63 per>64
+ff>65 the>66 n>67 w>68 pe>69 pt>70 pp>71 cc>72 ld>73 pin>74 dd>75 ce>76 k>77 x>78 li>79 ak>80 il>81 do>82 mi>83 me>84 at>85 ct>86 ys>87 ste>88 pa>89 o>90 tt>91 h>92 z>93 sc>94 ph>95 mb>96 pu>97 cul>98 str>99 eu>100 int>101 le>102 sm>103 ch>104 to>105 ig>106 gr>107 tro>108
+y>109 al>110 s>111 no>112 im>113 nu>114 gl>115 ci>116 dr>117 x>78 ge>118 ni>119 gr>107 ch>104 on>120 ce>76 k>77 est>121 ato>122 om>123 ec>124 gu>125 ne>126 ar>127 em>128 gi>129 ae>130 oi>131 na>132 eu>100 ore>133 od>134 ach>135 der>136
+ss>137 de>138 te>139 sl>140 ll>141 gn>142 ron>143 con>144 ph>95 rr>145 so>146 v>147 pa>89 di>148 do>82 tu>149 po>150 tch>151 ce>76 ci>116 dl>152 tin>153 bi>154 ris>155 f>156 oni>157 ke>158 sc>94 od>134 tal>159 ca>160 bu>161 rk>162 su>163 gu>125 li>79
+rou>164 in>165 ou>166 re>167 an>168 ir>169 ri>170 ick>171 or>172 ai>173 um>174 und>175 ru>176 ie>177 at>85 igh>178 ron>143 y>109 aw>179 wa>180 ug>181 ra>182 on>120 ud>183 ia>184
+ou>166 ear>185 est>121 ell>186 ard>187 og>188 ie>177 ach>135 ol>189 an>168 up>190 uc>191 un>192 aw>179 ak>80 ad>193 am>194 eti>195 p>196
+th>197 nd>198 fe>199 nn>200 nter>201 ld>73 lli>202 de>138 re>167 she>203 ki>204 cke>205 z>93 tch>151 dg>206 ner>207 do>82 se>208 nge>209 llo>210 el>211 nk>212 tt>91 pe>69 lt>213 gg>214 sp>215 st>216 mp>217
+ppe>218 nd>198 l>219 ir>169 ven>220 bi>154 ng>221 z>93 d>222 un>192 mm>223 cke>205 tch>151 w>68 ss>137 tre>224 ha>225 ul>226 mp>217 sh>227 il>81 ste>88 mb>96 gg>214 be>228 ik>229 ph>95 em>128
+lat>230 qui>231 ad>193 gi>129 vi>232 le>102 as>233 tur>234 ma>235 gu>125 mo>236 ali>237 du>238 fe>199 me>84 ach>135 ga>239 li>79 fu>240 ta>241 fl>242 ve>243 min>244 ti>245 act>246 vo>247 nta>248 wa>180 j>249 for>250 ne>126 fi>251 tri>252 no>112 in>165 de>138 gr>107 nder>253 ha>225 bo>254 tro>108 bu>161 tre>224 lo>255 be>228 di>148 na>132 un>192 ig>106 ten>256 ge>118 lu>257 im>113 us>258 he>259 ap>260 ef>261 op>262 ba>263 dd>75 va>264 ite>265 or>172 tra>266
+rv>267 con>144 as>233 ver>268 cu>269 em>128 le>102 ar>127 ns>270 tt>91 cti>271 cr>272 ri>170 ven>220 ni>119 pa>89 ssi>273 x>78 qu>274 nte>275 g>276 lle>277 nat>278 mi>83 tu>149 ed>279 at>85 nti>280 am>194 iz>281 me>84 ale>282 af>283 du>238 da>284 man>285 di>148 rp>286 ren>287 we>288 ru>176 rg>289 rm>290 nder>253 is>291 ep>292 lv>293 cl>294 aw>179 pt>70 ala>295 ro>296 per>297 ab>298 ce>76 rr>145 ntr>299 ag>300 llo>210 ba>263
+ven>220 ver>268 ff>65 ach>135 ar>127 as>233 du>238 con>144 di>148 ye>301 qui>231 vi>232 tc>302 pi>303 va>264 igh>178 dg>206 vo>247 th>197 gg>214 ag>300 ur>304 bo>254 ter>305 ch>104 ate>306 go>307 cl>294 po>150 cc>72 j>249 gr>107 ti>245 pu>97 up>190 eri>308 ut>309 we>288 ph>95 uc>191 bb>310 ave>311 ine>312 cu>269 ca>160 fi>251 ul>226 ga>239 un>192 bu>161
+tch>151 l>219 s>111 rm>290 rn>313 ter>305 rr>145 nder>253 re>167 rd>314 ite>265 tt>91 ive>315 nn>200 x>78 rp>286 go>307 ve>243 ke>158 ff>65 ge>118 ist>316 rl>317 ck>318 rb>319 y>109 rs>320 fe>199 il>81 gg>214 dd>75 nk>212
+ca>160 for>250 t>321 co>322 ne>126 gin>323 au>324 ha>225 ga>239 ach>135 dr>117 si>325 ari>326 nch>327 ef>261 gu>125 ver>268 ast>328 at>85 ad>193 ho>329 gg>214 am>194 st>216 sp>215 dd>75 ave>311 he>259 et>330 rt>331 are>332 qu>274 wi>333 nder>253 se>208 ak>80 nt>334 ep>292 fi>251 ze>335 ard>187 vel>336 mo>236 ck>318 rea>337 fa>338 mu>339 ret>340 rat>341 gr>107 rn>313 an>168 de>138
+ea>342 tic>343 ri>170 gu>125 chi>344 ran>345 m>346 res>347 ro>296 en>348 se>208 bi>154 om>123 cha>349 ter>305 che>350 th>197 ca>160 ise>351 ous>352 du>238 ist>316 bo>254 it>353 go>307 so>146
+ol>189 os>354 ee>355 ere>356 at>85 ale>282 oo>357 op>262 ack>358
+p>196 se>208 su>163 lt>213 ti>245 rg>289 rb>319 sa>359 rin>360 rl>317 tte>361 mb>96 k>77 ber>362 bi>154 ret>340 she>203 to>105 ter>305 la>363 ten>256 mp>217 ro>296 gl>115 c>364 ma>235 h>92
+du>238 vi>232 ce>76 gra>365 j>249 te>139 ble>366 fe>199 per>297 ba>263 fi>251 po>150 mo>236 mi>83 sp>215 ud>183 o>90 to>105 se>208 mp>217 hi>367 ven>220 ph>95 x>78 pr>368 vo>247 fo>369 pa>89 cl>294 no>112 sta>370 lo>255 be>228 sti>371 li>79 act>246 cu>269 bi>154 ver>268 ta>241 gn>142 nu>114 fa>338 di>148 cr>272 ct>86 mu>339 tr>372 ge>118 pu>97 fu>240 w>68 dd>75 sa>359 ff>65
+fe>199 tt>91 ght>373 nk>212 mi>83 ke>158 ste>88 vi>232 ce>76 br>374 ter>305 ber>362 ve>243 ne>126 qui>231 sti>371 ab>298 ti>245 mb>96 nge>209 eu>100 th>197 p>196 me>84 mo>236 ai>173 tur>234 z>93 tre>224 ga>239 ck>318 mp>217 bi>154 no>112 la>363 gn>142 eb>375 che>350 ba>263
+ke>158 j>249 ter>305 tte>361 y>109 tch>151 int>101 chi>344 x>78 ga>239 gi>129 gn>142 ste>88 ssi>273 tur>234 the>66 il>81 tri>252 mm>223 cr>272 pl>376 pp>71 ma>235 d>222 sc>94 sse>377 so>146 ide>378 ze>335 ca>160 she>203 cul>98 ven>220 est>121 mb>96 ta>241 kin>379 gg>214 che>350 tin>153 ul>226
+rt>331 th>197 rm>290 tic>343 vel>336 min>244 bo>254 ta>241 n>67 te>139 tch>151 tor>380 un>192 uri>381 dd>75 sta>370 od>134 vi>232 ise>351 ma>235 ok>382 ir>169 z>93 ble>366 str>99 se>208 ug>181 os>354
+rk>162 ul>226 rl>317 rd>314 nder>253 rt>331 rs>320 od>134 rr>145 und>175 l>219 ol>189 rm>290 mb>96 men>383 bb>310 man>285 ef>261 w>68
+om>123 ie>177 ont>384 ee>355 es>385 ui>386 ust>387 ea>342 id>388 igh>178 ost>389 ei>390 ing>391 og>188 ic>392 en>348 ug>181 ow>393 iv>394 ond>395 ill>396 is>291 iz>281 ot>397 ia>184 ec>124 oli>398 ett>399 oc>400 itt>401
+rs>320 na>132 lm>402 el>211 nis>403 ght>373 gu>125 rm>290 ndi>404 x>78 lle>277 nge>209 f>156 re>167 lt>213 t>321 cti>271 ber>362 lli>202 sc>94 she>203 nes>405 br>374 er>406 dd>75 nder>253 li>79 de>138 la>363 le>102 est>121 z>93 end>407 dg>206 nch>327 nn>200 ss>137 sti>371 ve>243
+me>84 ci>116 ut>309 f>156 und>175 ur>304 lu>257 li>79 lv>293 rr>145 la>363 ld>73 ph>95 lo>255 up>190 le>102 rt>331 ak>80 ul>226 ap>260 ck>318 ng>221 ot>397 ver>268 ni>119 ber>362 il>81 y>109 br>374 na>132 mb>96 rc>408 no>112 rb>319 bb>310 mm>223 ir>169 nne>409
+x>78 ed>279 w>68 ver>268 t>321 ce>76 ar>127 igh>178 ga>239 go>307 rv>267 ur>304 ut>309 gl>115 ck>318 gr>107 ph>95 ct>86 st>216 at>85 rd>314 cr>272 bu>161 op>262 ona>410 oc>400 pa>89 mat>411 cc>72
+sin>412 il>81 tt>91 dg>206 ye>301 l>219 ff>65 dd>75 nch>327 mp>217 nd>198 bb>310 z>93 cke>205 nn>200 tch>151 she>203 gg>214 nk>212 st>216 o>90 ng>221 mb>96 mm>223 nti>280 shi>413
+us>258 ur>304 me>84 te>139 ld>73 sp>215 no>112 li>79 pe>69 nes>405 rs>320 ok>382 sti>371 ste>88 rr>145 ri>170 mo>236 rm>290 bb>310 rn>313 llo>210 tte>361 od>134 ver>268 log>414 und>175 sta>370 op>262 tl>415 ppe>218 w>68 mi>83 ro>296 ma>235 rd>314 rti>416 ard>187 lle>277 nk>212 ist>316 ot>397 oli>398 nch>327
+ok>382 cat>417 we>288 nge>209 ve>243 ad>193 gi>129 go>307 vi>232 op>262 ck>318 ud>183 os>354 y>109 dg>206 bb>310 gg>214 un>192 ne>126 tte>361 f>156 om>123 se>208 rd>314 af>283 ath>418 ot>397 co>322 lli>202 be>228 an>168 cu>269 ngl>419 ze>335 ss>137 up>190 lo>255 oni>157 ite>265
+gh>420 sto>421 ll>141 la>363 tle>422 tte>361 era>423 ke>158 nge>209 nder>253 pp>71 j>249 de>138 tch>151 ber>362 the>66 cc>72 sse>377 ero>424
+e>425 b>426 igh>178 l>219 ath>418 dd>75 ste>88 ak>80 ap>260 ari>326 al>110 ren>287 ir>169 ave>311 dg>206 tl>415 ara>427 are>332 tte>361
+vel>336 ta>241 fe>199 fi>251 vi>232 pa>89 mo>236 ath>418 ter>305 ep>292 pe>69 gr>107 man>285 di>148 pr>368 po>150 b>426 pt>70 ad>193 pl>376 vo>247 fa>338 ni>119 ale>282 ali>237 ri>170 pu>97 nti>280 du>238 pi>303 nsi>428 va>264 no>112 to>105 af>283 rm>290 ment>429 mi>83 fl>242 h>92 tri>252 for>250 ge>118 ed>279 od>134 em>128 x>78 ra>182 ac>430 fu>240 ar>127 tra>266 ut>309 re>167 j>249 ng>221 nu>114 nte>275 gl>115 wa>180 nd>198 mu>339 nn>200 th>197
+ar>127 ad>193 vel>336 f>156 ave>311 ga>239 tte>361 gi>129 ag>300 ng>221 ss>137 ge>118 ak>80 as>233 ath>418 mo>236 ver>268 ct>86 af>283 nder>253 ap>260 is>291 ani>431 dg>206 op>262 u>432 th>197 sio>433 gg>214 vi>232 nti>280 ach>135 e>425 x>78 gu>125 w>68 ni>119 pr>368 per>297 mm>223
+w>68 es>385 ub>434 cu>269 ct>86 lla>435 nat>278 min>244 ma>235 me>84 ze>335 no>112 ug>181 dg>206 or>172 sa>359 ula>436 rm>290 om>123 nu>114 ck>318 gg>214 od>134 nk>212 nne>409 uc>191 sh>227 us>258 ve>243 ci>116 tt>91 x>78 rk>162
+di>148 mb>96 as>233 eti>195 th>197 mo>236 ss>137 nti>280 ani>431 tal>159 cha>349 nta>248 rc>408 tro>108 lt>213 da>284 rg>289 ga>239 rit>437 tri>252 lo>255 tre>224 at>85 te>139 ad>193 lan>438 na>132 rin>360 tic>343 nst>439 rm>290 llo>210 sm>103 no>112 and>440 dl>152 so>146 al>110 ment>429 ag>300 ow>393 ld>73 dd>75 rri>441 z>93 du>238 nte>275 she>203 tat>442
+mi>83 ct>86 vo>247 ci>116 ce>76 rm>290 ir>169 the>66 il>81 nta>248 it>353 shi>413 mo>236 br>374 l>219 cul>98 sc>94 ul>226 ste>88 nc>443 bu>161 tal>159 ti>245 rt>331 int>101 nf>444 nat>278 uc>191 nd>198 nn>200 ca>160 w>68 rc>408 x>78 ble>366 ro>296 tte>361 ze>335 vel>336 rs>320
+fe>199 ti>245 mp>217 vi>232 nd>198 cr>272 uc>191 int>101 nc>443 te>139 il>81 nit>445 va>264 vo>247 dd>75 tur>234 rc>408 fa>338 us>258 ck>318 ga>239 pp>71 un>192 ver>268 bo>254 w>68 bb>310 ut>309 x>78 y>109 ng>221 gg>214 mb>96 ff>65 di>148 pl>376 rd>314 ma>235 ge>118 che>350 cc>72
+gn>142 mp>217 ngl>419 ze>335 mi>83 tu>149 mu>339 tt>91 lv>293 len>446 ght>373 x>78 nge>209 de>138 lic>447 nk>212 ste>88 nce>448 bl>449 ck>318 mm>223 nne>409 ren>287 f>156 nf>444 tc>302 pp>71 te>139 lo>255 no>112 eve>450 ne>126 nu>114 lt>213 tio>451
+da>284 ge>118 tal>159 ol>189 wa>180 uc>191 pi>303 ur>304 ug>181 we>288 mo>236 ni>119 x>78 il>81 mat>411 le>102 ot>397 ba>263 ng>221 rt>331 ast>328 ke>158 dd>75 pp>71 mb>96 rn>313 ut>309 sse>377 po>150 rc>408 nne>409 rr>145 rm>290 gg>214 rp>286 ff>65 rs>320 do>82 co>322 pa>89 na>132 te>139 tte>361 en>348
+int>101 we>288 ssi>273 si>325 pu>97 ten>256 rt>331 ste>88 ol>189 und>175 sse>377 cke>205 sti>371 em>128 tat>442 d>222 is>291 sta>370 rc>408 ke>158 rk>162 n>67 or>172 pp>71 rn>313 uc>191 ul>226 tte>361 eti>195 ig>106 ach>135 op>262 ur>304 tl>415 th>197 ut>309 oc>400 pl>376 mp>217 od>134 sto>421 rp>286
+rg>289 w>68 te>139 ng>221 un>192 bo>254 nd>198 ye>301 ug>181 be>228 st>216 pt>70 d>222 se>208 tte>361 ck>318 mp>217 ke>158 z>93 mb>96 nter>201 ti>245 ure>452 min>244 go>307 va>264 ud>183 tch>151 ct>86 gg>214 vi>232 she>203 ce>76 ment>429 br>374 ir>169 ry>453 sa>359 rv>267 the>66 pe>69 rc>408 shi>413 pa>89 x>78 ssi>273 nta>248
+ch>104 rm>290 ach>135 mp>217 x>78 le>102 am>194 sti>371 rri>441 ll>141 ste>88 as>233 en>348 nsi>428 nn>200 nder>253 ar>127 na>132 nu>114 sta>370 ne>126 nta>248 dd>75 di>148 no>112 ndi>404 the>66 et>330 em>128 ri>170 ct>86 ali>237
+wa>180 on>120 mo>236 ter>305 bu>161 co>322 um>174 ert>454 ig>106 ph>95 ie>177 ar>127 go>307 be>228 ta>241 ti>245 k>77 ga>239 che>350 ib>455 ia>184 bi>154 ge>118 ba>263 pa>89 der>136 tr>372 f>156 oo>357 man>285 tc>302
+rte>456 nd>198 ff>65 te>139 ti>245 tu>149 bi>154 di>148 ke>158 mp>217 ir>169 pl>376 l>219 rv>267 rk>162 rr>145 bb>310 ck>318 gg>214 gn>142 rc>408 rs>320 un>192 rl>317 rg>289 mm>223
+vi>232 de>138 ve>243 un>192 bi>154 the>66 di>148 ut>309 tiv>457 tor>380 du>238 us>258 ist>316 le>102 ment>429 s>111 ld>73 od>134 da>284 ur>304 tt>91 mm>223 ul>226 z>93 te>139 on>120 cke>205 la>363 j>249 gu>125 dd>75 ha>225 ore>133 we>288 lt>213 tion>458 ori>459
+ff>65 re>167 d>222 vi>232 gi>129 ver>268 ag>300 nne>409 men>383 ab>298 al>110 am>194 vo>247 pl>376 ge>118 ct>86 ap>260 es>385 min>244 gn>142 gg>214 li>79 no>112 le>102 eti>195 arr>460 z>93 tch>151 lu>257 oc>400 mm>223 ppe>218 ce>76 ck>318 va>264 ner>207 lat>230 ld>73 gr>107 ch>104 as>233 ete>461 od>134 ure>452 tt>91 mp>217 ng>221 at>85 nk>212 rti>416
+tie>462 per>297 ck>318 int>101 y>109 sse>377 ssi>273 tte>361 ne>126 ir>169 th>197 ten>256 lm>402 tro>108 tch>151 sto>421 nde>463 la>363 ste>88 ni>119 dd>75 us>258 tio>451 tri>252 mp>217 sta>370 le>102 lle>277 vi>232 ve>243 pa>89 nc>443 ce>76 str>99 ga>239 ntr>299 no>112 ci>116 ge>118 w>68 ter>305 sti>371 ct>86 nti>280 lli>202 j>249 nn>200 lt>213 edi>464 gin>323 na>132 go>307 sh>227 pi>303
+cc>72 mm>223 rv>267 gg>214 ff>65 rp>286 sp>215 rg>289 rr>145 sta>370 ga>239 dd>75 ita>465 ns>270 re>167 ite>265 ici>466 nn>200 ck>318 l>219 sc>94 rc>408 nf>444 tur>234 nk>212 nd>198 rn>313 do>82 mp>217 tra>266 rm>290
+si>325 nk>212 ck>318 tt>91 b>426 se>208 th>197 nne>409 ct>86 che>350 nd>198 na>132 tch>151 dg>206 ke>158 gg>214 mb>96 pt>70 il>81 sta>370 ff>65 y>109 ssi>273 cc>72 nis>403 nge>209 z>93 sa>359 ge>118 gu>125 ns>270 nter>201 nc>443 sti>371 ngl>419 she>203 dd>75 w>68
+ok>382 d>222 tt>91 w>68 ug>181 rd>314 und>175 ost>389 mb>96 ot>397 x>78 ard>187 rr>145 y>109 ast>328 the>66 ut>309 om>123 at>85 il>81 lt>213 ul>226 rou>164 ur>304 ld>73 rn>313 ob>467 tan>468 he>259 re>167 log>414 gg>214 b>426 nd>198 nne>409 og>188 ne>126 nf>444 ol>189 so>146 ge>118 na>132 ss>137 ud>183
+l>219 ke>158 rg>289 x>78 s>111 ble>366 nk>212 ck>318 il>81 cti>271 tt>91 gg>214 ng>221 ri>170 co>322 per>297 ver>268 rt>331 mp>217 nde>463 gl>115 ntr>299 nn>200 mi>83 int>101 un>192 rp>286 bo>254 rn>313 ro>296 pa>89 nta>248 bb>310 bu>161 ma>235 pi>303 rr>145 ci>116 ch>104 ff>65 up>190 w>68 rd>314
+ou>166 ili>469 so>146 us>258 se>208 ro>296 and>440 und>175 str>99 ort>470 no>112 do>82 su>163 oli>398 ys>87 br>374 ru>176 ide>378 ra>182 du>238 err>471 hor>472 om>123 sta>370 ut>309 bo>254 ett>399 ori>459 sc>94 ri>170 lu>257
+ver>268 od>134 l>219 rg>289 ur>304 w>68 dd>75 ssi>273 al>110 th>197 os>354 ri>170 bl>449 gg>214 og>188 bb>310 dl>152 ph>95 ug>181
+il>81 ma>235 rk>162 ug>181 nge>209 ta>241 nce>448 ir>169 w>68 y>109 sh>227 mp>217 dd>75 is>291 nd>198 un>192 z>93 rl>317 ngl>419 em>128 bb>310 gg>214 rn>313 te>139 ff>65 lit>473
+me>84 tle>422 cke>205 ght>373 ss>137 min>244 mb>96 tan>468 lt>213 d>222 re>167 pp>71 nk>212 ngl>419 nge>209 ff>65 lle>277 nc>443 ra>182 tt>91 ara>427 the>66 ene>474
+ye>301 t>321 ce>76 nne>409 ne>126 sti>371 ci>116 int>101 sm>103 z>93 gu>125 nta>248 nti>280 qu>274 yl>475 nk>212 nter>201 us>258 gi>129 ste>88 ys>87 ca>160
+ntr>299 rs>320 pl>376 nc>443 ld>73 nter>201 ns>270 rt>331 nti>280 po>150 ra>182 sin>412 gh>420 ga>239 rie>476 tur>234 che>350
+llo>210 und>175 cu>269 ot>397 ur>304 od>134 ld>73 ol>189 ssi>273 ste>88 nd>198 li>79 ul>226 lli>202 x>78 b>426 gg>214 am>194 il>81 ment>429
+di>148 va>264 dr>117 vi>232 min>244 ver>268 ul>226 j>249 ven>220 op>262 ap>260 vo>247 e>425 her>477 ora>478 ol>189 ren>287 ore>133 am>194 do>82 mo>236 res>347 so>146 dl>152
+ner>207 tt>91 nt>334 nder>253 nu>114 og>188 ni>119 no>112 st>216 olo>479 e>425 ome>480 ar>127 ta>241 rm>290 ot>397 m>346 op>262 lat>230 ria>481 ys>87 ran>345 or>172
+le>102 an>168 ut>309 eti>195 are>332 os>354 one>482 la>363 li>79 re>167 ete>461 ari>326 ens>483 ati>484 ris>155 act>246 il>81 ro>296 ass>485 ara>427 oun>486 ell>186 ul>226 art>487 ot>397 ort>470
+at>85 der>136 eli>488 lt>213 sti>371 ma>235 llo>210 ed>279 we>288 ar>127 rti>416 min>244 ver>268 ast>328 rr>145 lo>255 rm>290 nce>448 tch>151 nder>253 ti>245 rv>267 ro>296 ud>183 lin>489 lla>435 mm>223 ig>106 lle>277 eb>375 rn>313 tte>361
+ul>226 w>68 rt>331 ot>397 ut>309 ck>318 ppe>218 vel>336 t>321 re>167 pa>89
+se>208 si>325 pa>89 vi>232 tt>91 ven>220 fe>199 mi>83 ss>137 di>148 ci>116 sc>94 gn>142 ce>76 va>264 su>163 ten>256 de>138 da>284 ach>135 sti>371 li>79 ca>160 j>249 do>82 em>128 mat>411 he>259 re>167 cu>269 cl>294 fi>251 con>144 hi>367 fa>338 po>150 am>194 oc>400 pp>71 ro>296 sa>359 or>172 lo>255 ter>305 bi>154 pr>368
+ce>76 ne>126 fi>251 di>148 ver>268 fe>199 ven>220 du>238 cl>294 vi>232 fl>242 fu>240 gr>107 cr>272 j>249 do>82 de>138 cu>269 qu>274 for>250 ge>118 ci>116 co>322 vo>247 no>112 gl>115 ca>160 va>264
+so>146 for>250 ce>76 fe>199 io>490 mi>83 sp>215 man>285 si>325 pe>69 su>163 fu>240 ip>491 se>208 ta>241 cu>269 en>348 im>113 va>264 ver>268 ish>492 us>258 me>84 che>350 il>81 pl>376 it>353 tur>234 go>307 mu>339 ine>312 co>322
+ere>493 ic>494 ect>495 ers>$ ort>496 ering>$ ee>$ ens>497 ai>498 ili>499 s>$ end>500 ed>$ ir>501 le>$ us>502 y>$ lin>503 ing>$ et>$ ei>504 lic>505 id>506 ins>$ ini>507 lu>508 ron>509 ol>510 oc>511 lo>512 ra>513 es>$ ig>514 eu>515 ine>516 od>517
+r>$ nti>518 less>$ mat>519 si>520 ning>$ dr>521 li>522 ned>$ tic>$ ns>$
+ly>$ lin>503 ment>$ lo>512 y>523 wa>524 pr>525 re>$ ze>526 j>527 bo>528 ho>529 po>530 ris>531 qu>532 ber>533 ba>534 ry>$ ro>535 less>$ bu>536 mo>537 pa>538 pl>539 wo>540 x>$
+n>$ s>$ le>541 her>542 ye>543 hi>544 rit>545 d>$ ca>546 ly>$ ful>$ bo>528 ling>$ ma>547 k>548 ls>$ co>549 ro>535 bi>550 ba>534 ry>$ land>$ re>551 ra>513 ho>529 th>552 pi>553 fa>554 be>555
+n>$ ct>556 s>$ ci>557 fu>558 t>$ di>559 l>$ ut>560 are>561 g>$ ara>562 op>563 es>$ ak>564 fa>554 vi>565 cke>566 w>567 ca>546 z>568
+ion>$ im>569 er>$ ure>$ s>$ op>563 ed>$ ain>570 ical>$ ing>$ ive>$ ua>571 oc>511 uri>572 or>$ ide>573 og>574 ome>575 ib>576 is>577 oe>578
+ort>496 y>$ ing>$ os>579 one>580 ine>516 res>581 il>582 ies>$ le>$ hi>544 ling>$ uc>583 a>$ s>$
+ess>584 as>585 ur>586 up>587 ee>588 o>$ ina>589 um>590 ul>591 ent>592 les>593 har>594
+ren>595 er>$ s>$ ing>$ en>$ li>522 ho>529 ed>$ est>$ ly>$ ca>546 fi>596 fl>597 ness>$ ove>598
+e>$ gs>$ s>$
+le>$ ing>$ en>$ y>$ ed>$ er>$ ha>599 ies>$ ling>$ ly>$ it>$ oc>511 am>600 est>$ res>581
+d>$ ss>$ pt>601 nt>$ rn>602 lle>603 bo>528 ment>$ ns>604 rs>$ ed>605 ive>606 nce>$ ly>$ ut>560 lla>607 rt>608 rp>609 le>541 sto>610 ale>611 nde>612 ful>$ str>613 ans>$ ndi>614 able>$ ls>$ t>$ y>$ mi>615 rati>616 li>522 ber>533 ph>617 ri>618 lli>619 nds>$ ps>$ ous>$ ho>529 mat>519 ry>620 se>621
+no>622 y>$ ly>$ to>623 le>$ a>$ wa>524 fu>558 ling>$ cha>624 ra>513 da>625 bu>536 lo>512 up>587 o>$ sh>626 th>552 bo>528 wo>540 ba>534 h>627 sa>628 ness>$ sc>629 ni>630 sm>631 we>632 tal>633 ker>$
+t>$ im>569 ed>$ es>$ ua>571 y>$ ib>576 ing>$ ur>586 pe>634 ie>635 pa>538 ic>$ id>506 ity>$ ation>$ is>$ ious>$ el>$ er>$ us>$ pl>539 ia>$ ili>499 able>$ x>$ ion>$ op>563 on>636 f>$ if>637 en>638 ala>639 ate>$ ill>640 wi>641 or>$ pr>525 vi>565 ag>642 ha>599 ant>643 ig>514 olo>644 ce>645 po>530
+ght>646 da>625 gi>647 fi>596 zed>$ ar>$ ke>$ ance>$ able>$ fe>648 ga>649 ame>650 ve>$ o>$ ment>651 min>652 ant>$ di>559 ge>653 ation>$ vi>565 al>$ ds>$ bu>536 de>$ qu>532 br>654 um>$ mat>519 ating>$ ac>655 ated>$ pt>601 va>656
+ing>$ s>$ e>$ fa>554 do>657 th>552 ou>658 age>$ up>587 aw>659 y>$ po>530
+able>$ y>$ s>$ ding>$ ed>$ t>$ os>579 er>$ ds>$ ro>535 es>$ wa>524 or>$ der>$ ation>$ bo>528 ant>643 ate>660 ou>658 ga>649 br>654 et>661 fi>596 ment>$ ay>662 bl>663 eg>664 ba>534
+m>$ w>567 or>$ rs>665 n>$ s>$ g>$ ing>$ len>666 the>667 ur>$ tal>633 lat>668 ug>669 ub>670 ph>617 rp>609 c>$ den>671 li>522
+ly>$ la>672 t>$ ssi>673 c>$ li>522 se>$ gra>674 um>$ str>613 zed>$ sing>$ sse>675 d>$ a>$ fi>596 sp>676 re>$ x>$ olo>644 ll>$ sts>$ es>$ sm>$ ra>513 sta>677 le>$ sti>678 sh>$ sa>628 go>679
+s>$ th>552 mb>680 ti>681 di>559 ly>$ w>567 bo>528 less>$ ow>682 pl>539 ter>683 ma>547 lin>503 pa>538 tre>684 to>623 ga>649 an>685 op>563 lo>512 ta>686 f>687 al>$ bu>536 as>585 tri>688 br>654 y>$ ke>689 pi>553 kin>690 ts>$
+ure>691 ment>$ s>$ re>$ ly>$ ric>692 y>$ a>$ ness>$ ris>531 ch>$ ry>$ ta>686 ria>693 ba>534 um>$ ra>$ ten>694 be>555 ua>571 ro>535 ter>683 lo>512 ting>$ ted>$ ni>630
+s>$ ed>$ or>$ ure>691 ly>$ uri>572 ua>571 ac>655 eri>695 able>$ rin>696 ato>697 ant>$ ful>$ ate>$ ro>535 ance>$ ari>698 ness>$ al>$ ric>692 ating>$ ation>$ oni>699 ag>642 om>700 oi>701
+is>$ el>702 ical>$ ter>683 ici>703 tal>633 io>704 fu>558 ts>$ ide>573 tic>705 q>706 se>621 itt>707 cr>708 ed>$ to>623 tan>709 tro>710 er>$ ca>546 m>$ ome>575
+d>$ rs>$ rn>$ n>$ red>$ st>$ ring>$ ron>509 mat>519 mi>615 rp>609 ry>$ p>$ l>$ rc>711 ad>$ ful>$ ria>693 rit>545 ric>692 tri>688 rm>712 op>563 mo>537 ob>713 rl>714
+rt>608 rat>715 ci>557 bi>550 ble>$ d>$ ye>543 ted>$ l>$ ge>$ tch>716 ga>649 ck>$ per>717 tion>$ tie>718 th>552 ss>$ ir>501 id>$ ren>595 ce>$ rit>545 rk>719 ting>$ us>502 se>$ tes>$ n>$ ro>535 tor>720 ho>529 ying>$
+ye>543 f>$ ying>$ ze>526 ys>$ x>721 j>527 qu>532 h>$
+ing>$ le>$ y>$ on>$ om>700 res>581 a>$ oo>722 ling>$ s>$ uc>583 ies>$ ic>494 os>$ il>582
+y>$ le>541 s>$ da>625 we>632 ly>$ ment>$ do>657 ful>$ wa>524 qu>532 ms>$ br>654 ness>$ nu>723 pa>538 lo>512 h>$ bo>528 ba>534 pi>553 g>$ c>$ mi>615 ni>630 po>530 wo>540
+ing>$ ation>$ z>568 y>$ ine>$ ard>$ le>$ on>$ able>$ arr>724 ling>$ as>$ are>561 u>$ va>656 ol>510 ies>$ mo>537 ip>725 ill>640 ani>726 wo>540 al>$ pa>538 ion>727 ica>728 ier>$
+ri>618 ap>729 ina>589 al>$ ho>529 ula>730 op>563 ent>$ ep>731 re>551 end>500 ui>732 ious>$ ill>640 ove>598 ara>562 ene>733 era>734 uri>572 ure>691 ore>735 os>579 ei>504 ence>$ ous>$ ie>635 ate>$ ot>736 ast>737 he>738 ation>$ eni>739 om>700 ori>740
+one>$ y>$ ic>$ as>585 s>$ er>$ ist>741 om>700 ol>510 ab>742 ed>$ ew>743 or>$ an>685 al>744 ec>745 ing>$ th>552 ies>$ ate>$ ob>713 it>746 ea>747 ot>736 es>748 ib>576 et>661 eme>749 ati>750 ra>513 ag>642 ili>499
+er>$ le>$ ling>$ ol>510 s>$ ran>751 re>551 ing>$ oo>722 ard>752 ur>586 io>704 ed>$ ly>$ ast>737 be>555 ria>693 all>753
+la>672 t>$ s>$ b>754 lt>755 lis>756 nk>757 lo>512 len>666
+ar>$ ated>$ ation>$ ous>$ ato>697 es>$ ia>758 tur>759 ating>$ us>$ ates>$
+uc>583 ation>$ y>$ ea>747 act>760 ate>$ op>563 al>$ ib>576 ies>$ ing>$ ic>$ ous>$ on>636 oe>578 ap>729 ok>761 el>$ ess>$ ip>725
+ten>694 ver>762 r>$ s>$ p>$
+s>$ ain>570 ed>$ ing>$ if>637 er>$ ment>$ ly>$ eg>664 enti>763 ess>584 y>$ h>$ ro>535 ell>764 br>654 ill>640
+cti>765 as>585 te>$ ge>$ dg>766 br>654 ment>651 x>$ va>656 vi>565 rs>$ ag>642 ph>617 ts>$ cul>767 co>549 ran>751 tte>768 ar>$ rat>715 tic>705 gra>674 ad>769 fi>596 mm>770 um>$ man>$ e>$ gi>647 ro>535 he>738 mat>519 ry>$ ga>649 ba>534 po>530 pl>539 bl>663 an>$ bo>528 be>555 pa>538 ir>501 ca>546 rin>696 wo>540 z>568 ton>$ pt>601 kin>690 di>559 pp>771 uc>583
+iss>772 itt>707 eti>773 an>$ s>$ ic>$ en>$ ai>498 eri>695 olo>644 art>774
+no>622 ni>630 olo>644 ment>$ y>$ ot>736 oe>578 bi>550 ond>775 ly>$ s>$ ov>776 di>559 os>579 bo>528 oa>777 ron>509 op>563 oli>778 wa>524 oo>722 lo>512
+mat>519 p>$ od>$ co>549 mo>537 on>$ t>779 ge>653 w>567 gra>674 bi>550 ver>762 us>$ und>780 ff>781 ch>782 uc>583 si>520 ld>$ x>721 ur>586 log>783 ok>761 kin>690 ut>560 cr>708 mi>615 me>784 la>672 ck>$
+n>$ ina>589 ib>576 ma>547 ent>$ ato>697 rat>715 ol>510 ran>751 est>785 gin>786 la>672 ate>$ ame>650
+ess>584 oun>787 ee>$ edi>788 eg>664 et>$ im>569 ow>682 oo>722 os>579 ove>598 ud>789 ue>790
+ye>543 l>$ po>530 no>622 ge>653 na>791 sp>676 om>700 gra>674 ph>617 fi>596 act>760 ni>630 che>792 pi>553 ver>762 us>$ vi>565
+th>552 one>$ pe>$ cl>793 ment>$ be>555 pi>553 bo>528 w>567 mo>537 al>$ ch>782 pt>601 da>625 ou>658 or>$ tic>705 ard>$ able>$ ze>526 dr>521 mp>794 f>687 ge>653 pa>538 co>549 mer>795 ho>529 gr>796 ba>534 tes>$ ta>686 man>$ ce>645 po>530 to>623 ot>736 pr>525 ms>$ go>679 ca>546 mi>615 bu>536 ph>617 he>738 mm>770 ons>$ ur>586 ist>$ ant>$ oc>511 ance>$ am>600 in>$ op>563 ci>557 ag>642 mat>519 gu>797 un>798 x>721 j>527 up>587 br>654
+ys>799 ty>$ og>574 th>$ ties>$ ous>$ ted>$ mo>537 ke>689 ten>694 ow>682 ga>649 gi>647 ded>$ ur>586 wo>540 ge>653 cul>767 ua>571 sc>629 po>530
+n>$ k>$ we>632 y>$ fe>648 ba>534 for>800 fa>554 fi>596 qu>532 bi>550 ge>653 wi>641 d>$ bo>528 gr>796 v>801 ro>535 wa>524 fu>558 re>551
+w>$ log>783 un>798 t>$ va>656 r>$ ce>645 si>520 n>$ sti>678 sed>$ ck>802 mi>615 ur>$ me>$ sa>628 b>754 ci>557 p>803 us>$ ut>560 ma>547 x>721 cul>767 y>523 id>506 ge>653 iss>772 gra>674 cr>708 de>804 le>541
+ina>589 ate>$ um>$ al>$ s>$ e>$ iz>805 ula>730 min>652 ing>$ b>754 ation>$ p>803 id>506 mer>795 ist>741 ac>655 ise>$ il>582 age>$ us>$ y>$ ating>$ ato>697 ita>806
+al>$ t>$ ses>$ ine>516 p>$ nc>807 la>672 ity>$ ck>802 mb>680 ous>$ end>500
+e>$ ing>$ ig>514 ass>808 y>523 ob>713 ome>575 ine>516 ari>698 ai>498 ow>682
+al>$ ng>$ fi>596 et>661 ty>$ lit>809 se>$ es>$ ne>$ ous>$ ted>$ ent>$ ans>$ pl>539 sm>$ pa>538 st>$ ated>$ de>$ ation>$ sio>810 enc>811 ary>$ ties>$ sing>$ olo>644 zed>$ no>622 pi>553 le>$ nc>807 lla>607 ve>$ op>563 ona>812 rc>711 tat>813 tor>720 ble>$ able>$ fe>648 tes>$ cl>793 da>625
+ess>$ oo>722 oi>701 aw>659 op>563 al>$ ation>$ og>574 au>814 ates>$ oc>511 ated>$ ant>$ ea>747 ive>$ ating>$ ang>815 up>587 am>600 on>$ olo>644 af>816 ot>736 od>517 y>$
+the>667 nce>$ ment>$ ta>686 rs>$ nt>$ st>$ rat>715 l>$ ner>817 ous>$ tt>818 tic>$ nder>819 ni>630 oi>701 ring>$ on>$ br>654 mo>537 di>559 ry>$ ns>$ able>$ ran>751 ts>$ no>622 red>$ si>520 co>549 nat>820 ant>643 vi>565 nes>821
+z>568 or>$ c>$ ght>646 qu>532 ver>762 al>$ es>$ fe>648 on>$ va>656 fi>596 ous>$ um>$ hi>544 ba>534 vo>822 er>$ pr>525 per>717 as>$ gra>674 k>$
+g>$ y>523 ven>823 ci>557 ment>$ ne>824 na>791 ous>$ om>700 li>522 ce>645 fi>596 ut>560 fl>597 vi>565 uc>583 os>579
+ions>$ s>$ ed>$ ing>$ er>825 he>738 ry>$ ation>$ ria>693 ro>535 o>$ y>$ ho>529 ly>$ all>753 im>569 ick>826 u>827 abl>828
+r>$ log>783 mi>615 sp>676
+men>829 ic>$ s>$ y>$ mo>537 a>$ bi>550 ing>$ for>800 ies>$ ous>$ ni>630 mat>519 iz>805 mi>615 ina>589 od>517 bo>528 im>569
+ut>560 e>$ h>$ ast>737 lo>512 ra>513 uri>572 y>$ do>657 ak>564 ca>546 olo>644 la>672 ies>$ iat>830 k>$ is>577
+la>672 re>$ e>$ rati>616 n>$ ish>831 ing>$ ard>$ ring>$ s>$ al>$ ous>$ ide>573 ise>832 rg>833 ment>651 able>$ an>685
+fi>596 t>$ y>$ ct>556 w>$ l>$ ma>547 e>$ ce>645 up>587 ar>$ ga>649 ba>534 ment>$ al>744 ous>$ ap>729 um>590 vo>822 x>721 ness>$ z>568 fa>554 qui>834 nsi>835 ad>769 ck>$ go>679
+ly>$ n>$ ch>$ s>$ lie>836 ma>547 k>548 min>652 med>$ oun>787 bo>528 ful>$ ls>$ ce>645 ms>$ he>738 oo>722 ph>617 les>593 gu>797
+s>$ ic>$ pl>539 po>530 bly>$ pt>601 ies>$ ble>837 ora>838 an>$ ia>$ ing>$ ati>750 ni>630 ak>564 ale>611 ba>534
+on>$ tal>633 c>$ str>613 sl>839 es>$ ous>$ ste>840 ti>681 sti>678 ven>823 ze>526 sts>$ ate>$ lan>841 vi>565 ari>698 ble>$ eni>739 se>$ rl>714 bi>550 ment>651 al>$ sing>$
+mi>615 st>842
+ce>$ d>$ nt>843 ng>$ r>$ l>$ s>$ ning>$ ns>$ nf>844 ned>$
+nc>807 lly>$ me>$ lis>756 ls>$ lity>$ ry>$ bi>550 nt>$ s>$ ble>$ iss>772 ut>560 ci>557 mi>615 ge>$ wa>524 de>$ ries>$ ppe>845 go>679 ld>846 e>$ che>792 vi>565 ly>847 bly>$ ce>645 cy>$ ck>802 rl>714 ria>693
+d>$ s>$ tic>705 r>$ og>574 ca>546 bo>528 x>721
+s>$ y>$ olo>644 ies>$ b>754 e>$ ive>606 le>$ wi>641 ing>$ wo>540 uc>583 ora>838 ont>848 ia>758 oo>722 if>637 pe>634 lu>508 ate>$ ori>740 den>671 ium>$
+ing>$ es>$ ed>$ er>$ t>$ able>$ ut>560 y>$ ron>509
+s>$ n>$ ed>$ ate>$ ly>$ ation>$ ing>$ y>$ ato>697 ma>547 ali>849
+ue>790 age>$ ary>$ ure>$ or>$ ro>535 y>$ wo>540 ari>698 ad>769 po>530 le>$ mat>519 ove>598 ac>655 ly>$ fi>596 ness>$ uri>572 fu>558 bo>528 lin>503 able>$ wa>524 tan>709 ho>529 wi>641
+o>$ l>$ al>$ st>$ ma>547 av>850 mi>615 wa>524 ce>645 si>520 mp>794 fi>596 em>851 ba>534 vel>852 sc>629 ter>683 me>784 sm>631 pe>634 ki>853 ts>$ sh>626 ari>698 x>$ vi>565 aw>659 bo>528 tra>854 pl>539 co>549
+ly>$ ct>556 st>$ ms>$ ment>$ mp>794 go>679 in>$ en>$ ls>$ lli>619 ful>$ wa>524 bo>528 dly>$ x>$ wi>641 br>654 lla>607 au>814 pa>538 lle>603 ch>782 or>855 es>$ le>541 as>585 ho>529 ke>689 ma>547 si>520 ering>$ ur>$ sm>631 ers>$ la>672 fa>554 mi>615 co>549 ad>769
+ation>$ ett>856 and>857 ated>$ ato>697 ates>$ ide>573 ating>$ ave>858
+s>$ ust>859 ness>$ ment>$ um>590 ula>730 bo>528 be>555 ying>$ pa>538 wa>524 ma>547 ba>534 ph>617 do>657 uc>583 to>623 fu>558 bi>550
+if>637 s>$ ed>$ at>860 ing>$ ant>$ anc>861 iti>862 ore>735 eti>773 ora>838 ers>$ es>748 up>587 ali>849 ost>863 ite>$ iz>805 all>753 on>$ ment>$ ett>856 om>700 po>530
+g>$ ment>651 ic>$ t>$ e>$ s>$ iz>805 olo>644 y>523 ous>$
+d>$ om>700 ut>560 ic>$ s>$ ne>824 tin>864 ce>645 tra>854 ten>694 a>865 og>574 ium>$
+ent>$ y>$ ow>682 ed>$ oun>787 or>$ ant>643 enc>811 ati>750 ass>808 es>748 al>$ ac>655 end>500 ain>570 ele>866 eg>664 ea>747 ated>$ ep>731 ato>697 ev>867 et>$ og>574 ha>599 er>$ ay>$ ho>529 eli>868
+nal>$ lu>508 me>$ ns>$ rb>869 lat>668 nne>870 ry>$ rs>$ ur>586 und>780 lv>871 rp>609 eve>872 ni>630 le>541 ms>$ ci>557 to>623 di>559 ma>547 pr>525 s>$ ng>$ chi>873 il>$
+y>$ v>801 s>$ g>$ t>$ ul>591 re>$ c>$ ra>513
+tion>$ a>$ cal>$ o>$ cat>874 ci>557 um>$ es>$ cti>765 da>625 tor>$ ble>$ fi>596 ted>$ bly>$ ting>$ ts>$ tat>813 ty>$ cul>767 ment>$ ed>$ re>551 sc>629 str>613 vi>565 ga>649 sh>$ zed>$ pi>553 sp>676 cr>708 sm>$ gi>647 dly>$ lat>668 llo>875 er>$
+ally>$ ation>$ nat>820 tion>$ de>$ te>$ be>555 ne>$ ated>$ lat>668 m>876 ary>$ tor>720 ali>849 enc>811 ari>698 ting>$ ating>$ ses>$ ity>$ ous>$ ates>$ di>559 ato>697
+rt>$ nsi>835 rat>715 sed>$ sa>628 int>877 si>520 nde>612 we>632 ndi>614 on>$ d>$ the>667 lit>809 nds>$ ne>824 ses>$ gra>674 log>783 st>$ cr>708 x>721 pu>878 en>638 ti>681 lis>756 ol>510 ten>694 us>502 ts>$ ver>762 ri>618 lat>668 uri>572 gl>879 le>$ su>880 il>582 ff>781 rea>881 ch>782 cke>566
+ing>$ es>$ ed>$ er>$ y>$ up>587 ma>547 a>$ wo>540 do>657 et>$ ph>617 for>800 hi>544 to>623
+ess>$ ine>516 igh>882 ey>$ ing>$ ed>$ oc>511 ini>507 eli>868 est>785 and>857
+ct>556 gu>797 gs>$ y>$ e>$ a>$ ue>$ s>$ iz>805 gly>$
+lity>$ le>$ nat>820 t>$ ng>$ es>$ ne>824 s>$ an>$ d>$ c>$ gu>797 lis>756 og>574 qui>834 ot>736 ns>$ rd>$ al>$ rt>608 no>622 ke>$ va>656 vo>822 be>555 lan>841 bi>550
+e>$ ing>$ t>$ di>559 hed>$ ma>547
+ter>$ ten>694 y>$ ts>$ s>$ ra>513 ron>509 rie>883 th>$ ted>$ ty>$ res>581 ting>$ to>623 tly>$ ru>884 rea>881 ness>$ m>$ ties>$ bo>528 c>$ x>$ g>885 han>886 tc>887
+ng>$ c>$ st>$ es>$ z>568 a>$ sm>$ ti>681 te>$
+s>$ t>$ n>$ ly>$ rs>$ ho>529 up>587 ep>731 y>$ ove>598 ry>$ ra>513 aw>659 wa>524 dly>$ do>657 le>541 bo>528 able>$ red>$ lie>836
+ly>$ lat>668 led>$ s>$ og>574 ity>$ ling>$ iz>805 lic>505 lm>888 ys>799 iat>830 ing>$ e>$ ou>658 is>577 ita>806 k>$ ian>889 lu>508 wo>540 co>549
+lly>$ me>$ re>$ ls>$ st>$ pe>$ se>$ ne>$ de>$ rd>890 lat>668 ut>560 ine>$ nt>$ nc>807 li>522 bu>536 va>656 do>657 no>622 ble>$ sing>$ ke>$ mp>794 le>$ rn>602 ri>618 pa>538 rri>891 bly>$ ron>509 ppe>845 nn>892 pi>553 rb>869 lt>755 da>625 ps>$ ge>$ rs>$
+tion>$ m>$ te>$ il>582 ting>$ lo>512 st>$ la>672 tor>720 rs>665 ta>686 gg>893 ds>$ tt>818 rn>$ nk>757 ck>802 she>894 ll>$ ff>781 rd>890 rg>833
+ing>$ s>$ ed>$ ers>$ ou>658 able>$ pl>539 for>800 fl>597 lo>512 y>$ et>$ bo>528 da>625 ro>535 ar>895 ly>$ en>$ we>632
+re>$ ally>$ s>$ it>$ ali>849 ad>769 as>585 na>791 lat>668 med>$ mp>794 rd>890 rp>609 pp>771 b>754
+gh>896 s>$ nd>$ ted>$
+k>$ ue>790 o>$ ment>$ ui>732 ly>$ for>800 str>613 less>$ ua>571 ful>$ sta>677 y>$ ning>$ su>880 ci>557 bo>528 ner>$ ny>$ ca>546 fa>554 sto>610 ven>823 fe>648 ned>$ wa>524 ch>$ qu>532 sa>628 vi>565 co>549 ce>645 ct>556 lin>503 sp>676
+t>$ gh>896 p>$ d>$ ble>837 ch>$
+e>$ ct>556 ly>$ for>800 ments>$ di>559 ci>557 he>738 ds>$ less>$ mo>537 ho>529 w>$ lat>668 r>$ pl>539 fi>596 lla>607 dd>897 ot>736 ga>649 ck>$ ma>547 qui>834 br>654 po>530 do>657 pr>525 lin>503 y>$ gu>797 gi>647 cr>708 pi>553 co>549 fl>597 du>898 gn>899 ba>534 pu>878
+y>$ ks>$ e>$ o>$ ut>560 a>$ ked>$ ny>$ king>$ ned>$ na>$ ni>630 ze>526 nu>723
+d>$ s>$ it>746 ed>$ po>530 t>$ ly>$ lin>503 y>$ man>$ es>$ cr>708 wa>524 ect>495 able>$ ing>$ ness>$ ation>$ pl>539 al>$ mat>519 cu>900 bo>528 ca>546 fa>554 lo>512 k>$ ies>$ wo>540 ba>534 men>$ mi>615 br>654 et>661 con>901 we>632
+ous>$ bu>536 pt>601 ve>902 be>555 ly>$ va>656 z>568 ge>653 lle>603 ght>646 f>687 vi>565 gu>797 os>579 mp>794 do>657 um>$ de>$ on>$ lli>619 le>$ bi>550 di>559 lla>607 min>652 bb>903 ot>736 mm>770 man>904 li>522 dg>766 gg>893 pe>$ y>523 mo>537
+ly>$ ing>$ s>$ er>$ et>$ ness>$ y>$ ed>$ en>$ est>$
+mat>519 y>$ ding>$ ds>$ da>625 po>530 ded>$ med>$ ou>658 der>$ mo>537 shi>905 re>551 n>$ ly>$ us>$ ms>$ ga>649 k>$ ste>840 wa>524 min>652 olo>644 bi>550 pi>553 ph>617 less>$ ci>557 um>$ man>904 mer>795 ru>884
+l>$ gn>899 ght>646 r>$ se>$ mer>795 med>$ d>$ sing>$ ms>$ min>652
+e>$ s>$ pt>601 ing>$ b>754 ula>730 a>$ ina>589 ph>617 nis>906 mer>795 pe>634 ps>$ ping>$ ven>823 oni>699 mat>519 min>652 pl>539 na>791 med>$
+s>$ ation>$ ed>$ er>$ ing>$ ry>$ ance>$ tra>854 ly>$ up>587 ab>742 ic>494 ness>$ bo>528
+pt>601 s>$ m>$ it>746 b>754 tin>864 ff>781 n>$ gg>893 al>$ len>666 ps>$ pu>878
+ve>$ nce>$ nt>$ nd>907 rs>$ f>$ ty>$ ld>$ st>$ vi>565 ns>$ ce>$ va>656 nat>820 tor>720 w>$ vo>822 le>$
+t>$ bo>528 s>$ ed>$
+n>$ ing>$ s>$ ay>$ ber>533 ba>534 or>855 ak>564
+y>$ rd>$ re>$ ter>$ l>908 ble>$ ke>689 tch>716 she>894 tt>818 rt>$ rm>712 shi>905 ve>$
+ht>$ gl>879 s>$ e>$ hing>$ hed>$ her>$ ged>$ al>$ gin>786 ly>$ ha>599 ation>$ ing>$ ated>$
+ph>617 ge>$ l>$ ble>$ ry>$ y>$ str>613 bly>$ pi>553 is>577 se>$ ppe>845 mi>615 bi>550 pe>634 so>909 di>559 f>687 ps>$ mb>680 it>746 ini>507 me>$ ms>$ w>567 vel>852 ven>823 de>$ ma>547 ssi>673 sio>810 gu>797 da>625 il>582 ine>516 ria>693 ud>789 h>$ gin>786 ig>514 mm>770 ind>910 pt>601 ins>$ mu>911 ut>560 bo>528 va>656 be>555
+y>$ ent>$ ed>$ ing>$ es>$ ly>$ ic>494 ul>591 er>$ ge>$ ence>$ s>$ iat>830 gin>786 der>912 a>$ on>636
+ls>$ sti>678 lly>$ r>$ c>$ lis>756 ble>$ lity>$ min>652
+s>$ ly>$ ed>$ che>792 ance>$ ing>$ ning>$ y>$ ned>$ th>552
+ow>682 ing>$ ed>$ s>$ ant>$ ula>730 ig>514
+s>$ ing>$ ed>$ ized>$ ro>535 y>$ er>$ ise>832 ga>649
+ra>513 ni>630 ue>$ s>$ gin>786 ge>653 y>$ ene>733 eni>739 ens>$ am>600 i>$ po>530 lo>512 li>522 ui>732
+e>$ s>$ ate>$ ut>560 ar>895 ation>$ ve>902 d>$ y>$ ki>853 ba>534 ad>769 ta>686 ast>737
+s>$ y>$ ted>$ id>506 un>798 hor>913 po>530 on>$ era>734 he>738
+tur>759 tion>$ k>$ h>$ e>$ ted>$ tive>$ tor>$ os>579 ting>$ ce>645 ts>$ if>637 rac>914 ina>589 ci>557 rat>715 iat>830 ib>576 id>506 ine>$
+ity>$ ica>728 ities>$ ce>645 ta>686 ch>$ ted>$ k>$ ning>$ ts>$ ting>$ ter>$ ge>$ cti>765 ci>557 ion>$ ist>$ a>$ ned>$ s>$ ett>856 ty>$ ism>$ ite>915 gin>786 tle>916 ner>$ cat>874 if>637 uc>583
+ing>$ y>$ s>$ er>$ em>851 es>$ ed>$ ca>546 lin>503 ly>$ il>582 or>$ va>656 ow>682 ba>534 able>$ ig>514 ica>728 ine>516 mi>615 wa>524 ma>547 en>$ ver>762 fa>554 ron>509 dl>917 iat>830 lo>512 bl>663 lie>836 ou>658 j>527 ven>823 ies>$ ied>$
+pl>539 s>$ ina>589 ati>750 ic>$ ond>775 ine>516 mat>519 y>$ ous>$ ing>$ or>855 our>918 as>$ med>$ bi>550 pu>878 min>652 id>506 bo>528 ps>$ ph>617 mer>795 an>$ ag>642 l>$
+ng>$ tion>$ c>$ tive>$ on>$ ze>526 ve>$ me>$
+da>625 y>$ ment>$ gra>674 ful>$ co>549 se>$ sta>677 si>520 su>880 wa>524 bo>528 ca>546 sti>678 no>622 sc>629 ke>689 ster>$ kin>690 br>654 so>909 sto>610 sh>626 mo>537 wi>641 ma>547 v>801 mu>911
+ing>$ ou>658 s>$ ori>740 od>517 ly>$ ro>535 us>502 y>$ dr>521 ni>630 ical>$ olo>644 wa>524 og>574 rit>545 an>685 al>$ op>563 ho>529 mi>615 os>$ tu>919 less>$ ot>736 om>700 ar>895 no>622 wi>641 am>600 ra>513 ier>$ il>582 rea>881 mat>519
+ow>682 ard>$ ly>$ le>$ sc>629 y>$ re>551 om>700 ame>650 ling>$ wi>641 ma>547 shi>905 ant>$ ro>535 ra>513 ary>$ mo>537 fa>554 chi>873 ness>$ pa>538 al>$ able>$ so>909 bo>528 lo>512 ou>658 ba>534 se>621 he>738 fi>596 gu>797 da>625 age>$ cr>708 sl>839 anc>861 wa>524 pi>553 cu>900 sto>610 mi>615 lie>836 ca>546 sta>677 ry>$ ho>529 pr>525 la>672 wo>540 rit>545 hi>544
+ren>595 ssi>673 ct>556 rr>920 ns>604 st>842 rs>$ ti>681 nd>907 ra>513 gu>797 sse>675 d>$ it>$ ter>683 ring>$ nce>921 sa>628 red>$ bo>528 as>585 rou>922 cat>874 ed>605
+ing>$ y>$ a>$ ial>$ ies>$ ist>741 ier>$
+s>$ ed>$ pa>538 to>623 pi>553 ing>$ fe>648 po>530 act>760 olo>644 me>784
+ng>$ on>$ ge>653 ed>$ es>$ tes>$ sh>$ cl>793 me>784 ter>683 gra>674 po>530 st>$ lit>809 se>621 ble>$ um>$ an>$
+d>$ s>$ r>$ et>$ ll>$
+pe>634 t>$ es>$ ll>$ ck>$ s>$ a>$ er>$
+d>$ t>$ r>$ n>$ y>$ st>$
+e>$ ment>$ ing>$ y>$ f>687
+s>$ al>$ ation>$ ated>$ able>$ y>$ ous>$ ato>697 ating>$ ed>$ ates>$ ing>$ ies>$ ba>534 g>885 ic>494
+l>908 r>$ nt>$ nce>$ t>$ um>$ cu>900 ba>534 qu>532 ment>$ as>585 cti>765 x>721 ssi>673 mb>680 sse>675 min>652 ei>504 ver>762 y>$ fu>558 ud>789 at>$ ho>529 con>901 ble>837 nsi>835 ed>$ wo>540 st>$ us>$ ness>$ bo>528
+r>$ s>$ d>$ lis>756 lic>505 able>$ nt>$ log>783
+wi>641 we>632 n>$ ut>560 r>$ p>$ ver>762 ff>781
+d>$ f>$ s>$ ves>$ ter>$ op>563 oa>777
+s>$ ed>$ ing>$ ru>884 y>$ er>$ et>$ ly>$ en>$ le>$ ro>535 ling>$ ee>588 fu>558
+h>$ ip>725 im>569 ur>586 er>$ iv>923 an>685 ed>$ ra>513 s>$ ing>$ it>746 y>$ ic>494 if>637 ina>589 ies>$ il>582 id>506 do>657 ry>$ ig>514 ist>741
+est>785 er>$ ed>$ ing>$ y>$ le>$ age>$ ies>$ ling>$ ets>$ pl>539 ard>$ ly>$
+ect>495 ita>806 ort>496 her>542 ap>729 are>561 ens>497 oo>722 end>500 ici>703 ac>655 ear>924 lan>841 ber>533 ot>$ ok>761 er>$ ring>$ an>$ ing>$ ir>501 ass>808 ed>$ os>579 ra>513 s>$ ee>588 ell>764 ond>775 y>$ ons>925
+ment>$ ly>$ yl>926 na>791 um>590 ure>$ le>$ se>621 po>530 ling>$ he>738 ca>546 nu>723 wa>524 co>549 mo>537 ba>534 do>657 sc>629 ma>547 ness>$ ula>730 pa>538 uri>572 ful>$ hu>927 lie>836
+le>$ ly>$ ai>498 era>734 t>$ ion>727 s>$ us>$ ing>$ ed>$ ora>838 lat>668 li>522 kin>690 ers>$ ath>928 ho>529 ass>808 ag>642 ire>$ ered>$ oo>722 ha>599 os>579 gr>796 ering>$ fi>596 oli>778 y>$ an>685 ba>534 ut>560 art>774
+d>$ r>$ t>$ nin>929
+f>$ p>$ k>$ co>549 se>$ ry>$ b>754 ness>$ cha>624 nu>723 gi>647 ho>529 gr>796 ca>546 ga>649 ster>$ ro>535 ce>645 cr>708 si>520 wa>524 chi>873 ge>$ ries>$ cul>767 sa>628 ru>884
+t>$ ue>$ ing>$ ie>635 ly>$ ess>$ ge>$ il>582 s>$ ir>501 ed>$ ous>$ gin>786
+ing>$ ua>571 do>657 th>552 ue>$ ry>$ w>567 o>$ ness>$ ui>732 ula>730 it>746 al>$ ste>840 ra>513 ton>930 us>$ sta>677 y>$ ha>599 bi>550 pin>931 iv>923 bo>528 ma>547 fi>596
+y>$ n>$ wi>641 wa>524 f>$ th>$ ca>546 qu>532 se>621 wo>540 st>$ ph>617 she>894 bo>528 co>549 shi>905 po>530 so>909 ba>534 vi>565 k>548 we>632 bi>550 si>520 han>886 pi>553 ter>683 ho>529 man>$ pl>539 mi>615 sc>629 hi>544 mo>537 bu>536 he>738 sl>839
+er>$ ing>$ it>$ ed>$ y>$ es>$ ation>$ ari>698 ies>$ un>798 ato>697 et>661 able>$ ick>826 oc>511 ons>$ one>580 age>$ og>574 eli>868
+me>784 pr>525 ss>$ at>$ mi>615 nch>932 e>$
+ps>$ se>$ vi>565 t>$ bi>550 ust>859 pp>771 ve>$ ble>$ led>$ d>$ ul>$ ha>599 gu>797 ki>853 w>567 ll>$ ir>501 mm>770 ge>$ bb>903
+d>$ t>$ y>$ e>$ ner>817 pt>601 s>$ ing>$ us>$ ous>$ ge>$ ga>649 mat>519 os>579 og>574 ness>$ um>$ king>$
+op>563 ro>535 ore>$ bo>528 y>$ oo>722 ot>$ ow>682 ta>686 ad>769 able>$ ness>$ ba>534 ment>$ ca>546 ly>$ ak>564 ma>547 are>$ li>522 up>587 ful>$ fi>596 af>816 oe>578 ap>729 aw>659 min>652 cl>793 mo>537 od>$
+d>$ l>$ s>$ at>$ cu>900 nt>$ ara>562 ans>$ e>$ ari>698 ha>599
+e>$ ing>$ a>$
+ion>$ ed>$ ive>606 es>$ ing>$ or>855 era>734 able>$ ter>683
+red>$ p>803 res>$ si>520 d>$ ty>$ va>656 ring>$ ry>$ ries>$ to>623 ta>686 rr>920 ties>$ no>622 vo>822 li>522 sh>$ fe>648 es>748 ns>$ rm>712
+ng>$ ew>743 de>$ ron>509 sio>810 ce>$ ous>$ l>$ ding>$ ty>$ so>909 or>$ es>$ sed>$ ga>649 nce>$ ted>$ ne>$ our>918 tat>813 ation>$ cti>765 ru>884 sing>$ ting>$ sa>628 ses>$ ties>$ va>656 tal>633 al>$ go>679 ol>510 nit>933 dly>$ ed>$ vi>565 able>$ ra>513 ato>697 ate>$ nis>906 eg>664 sts>$ i>$ ating>$
+on>$ y>$ e>$ ure>691 ion>727 is>$ h>$ ing>$ po>530 uri>572 iz>805 ib>576 cul>767 ia>$ m>$ per>717 ant>643 ol>510
+e>$ al>$ n>$ ing>$ bi>550 ated>$ ity>$ ba>534 be>555 ation>$ ist>$ gi>647 ates>$
+in>$ rk>719 ry>$ ge>$ le>$ ri>618 ke>689 cy>$ de>$ ce>645 ci>557 king>$ il>$ gin>786 lly>$ s>$ p>$ co>549 cul>767 llo>875 di>559 lin>503 rri>891 ment>$ la>672 lity>$ da>$ ble>$ go>679
+st>$ us>$ te>$ nst>934 ry>$ cr>708 ve>$ ny>$ da>625 rr>920 ni>630 sp>676 va>656 ria>693 re>$ tion>$ ra>513 the>667 tive>$ rs>$ gra>674 bi>550 de>804 ur>$ se>621 ir>501 log>783 nd>$ lit>809 rt>608 rp>609 lis>756 na>791 ph>617 so>909 ge>653 no>622 un>798 ne>824 ng>935 sa>628 ris>531 ut>560 ron>509
+ty>$ ze>526 ng>$ st>$ sm>$ ties>$ sed>$ ne>$ fi>596 es>$ sing>$ sa>628 gn>899 ses>$ a>$ ght>646 en>638
+ct>556 cat>874 ce>645 ci>557 ate>$ re>$ le>$ m>$ nd>907 la>672 ra>513 e>$ lity>$ lu>508 lla>607 lo>512
+ni>630 l>$ rd>890 tion>$ z>568 ge>$ tive>$ te>$ ret>936 ting>$ tor>720 ns>$ in>$ rs>$ rte>937 ry>$ nd>907 nt>$ de>$ pi>553 e>$ nce>$ rit>545 bi>550 rc>711 me>$ ble>$ wa>524 sm>631 mat>519 ci>557 bo>528 sta>677
+lly>$ sed>$ nc>807 nd>$ ge>653 sio>810 sing>$ ses>$ sa>628 rb>869 ls>$ el>$ sc>629 mer>795 cke>566 rl>714 rte>937
+il>582 ble>$ in>$ ur>586 ck>$ ba>534 che>792 ke>$ min>652 ry>$ bi>550 ria>693 bly>$ bo>528 ph>617 king>$ str>613 wa>524 sta>677 ries>$ go>679 se>621 chi>873 ge>$ rs>$ pu>878 rd>890 po>530 cl>793 cha>624 ce>645 rac>914 ste>840 mo>537 do>657 ro>535 rp>609
+ect>495 ic>494 ow>682 y>$ u>827 ies>$ es>$ ak>564 ation>$ ag>642 in>938 ated>$ oo>722
+d>$ sti>678 ment>$ sto>610 ste>840 aw>659 y>$ il>582 ted>$ sts>$ ting>$ for>800 able>$ e>$ j>527 cti>765 str>613 ta>686 se>621 si>520 th>$ to>623 sc>629
+g>$ ist>741 e>$ ation>$ ated>$ d>$ ant>$ ary>$ s>$ al>$ isc>939 ating>$ ish>831 ance>$ ous>$ ates>$ ato>697 ism>$ ut>560 ari>698
+l>$ tu>919 al>$ fi>596 ful>$ me>784 re>$ mat>519 ze>526 s>940 ty>$ tle>916 ga>649 ties>$ tion>$ gu>797 ble>$ ate>$ fa>554 an>$ ating>$ ring>$ pa>538 qu>532 go>679 ght>646 de>$ ato>697 ric>692 mi>615
+ic>494 ly>$ ion>$ ive>$ s>$ ed>$ ing>$ iti>862 eri>695 ment>$ ors>$ ise>832
+lv>871 rit>545 id>$ lu>508 cat>874 uri>572 rc>711 rs>$ ted>$ ra>513 ic>494 red>$ ry>$ ir>501 ke>$ king>$ lt>755 y>$ ure>691 ring>$ len>666 tion>941 us>$ ting>$ res>$ cal>$ s>$
+l>$ ge>$ tion>$ sti>678 ry>$ ri>618 si>520 ble>$ cl>793
+ect>495 o>942 ust>859 ur>586 un>798 ac>655 ud>789 est>785 an>$ ug>669 i>$ am>600 s>$ et>$ as>$
+e>$ man>904 ta>686 med>$ tu>919 ms>$ min>652 ce>645 mat>519 mer>795 wa>524 ci>557 ge>653 gi>647 d>$ mu>911
+ed>$ cat>874 t>$ nit>933 ci>557 den>671 rm>712 le>$ ned>$ gu>797 es>$ el>702 ng>$ ll>$ sh>$ ning>$ na>791 ght>646 er>$ nes>$ re>$ able>$ nis>906 ner>817 lm>888 sc>629 ling>$ lt>755 x>721 nder>819 ce>$ da>625 br>654
+ct>556 bu>536 eve>872 tion>$ es>$ dg>766 ot>736 ar>895 al>$ mo>537 ca>546 nat>820 ci>557 de>$ cul>767 nge>943
+s>$ ing>$ ed>$ ga>649 er>$
+ok>761 d>944 ard>$ r>$ n>$ ur>$ und>780 x>$ w>$ t>$ lis>756 ys>$ lic>505 h>627 at>$ s>$ lit>809 ot>736 lt>755 ld>846
+ad>$ re>$ t>$ ok>761 us>$ ring>$ rati>616 cat>874 me>784 sio>810 ng>$ ck>$ ci>557 su>880 we>632 di>559 ita>806 rd>$ ded>$ rs>$ sed>$ ns>$ om>700 qui>834 ur>$ ne>$ dr>521 wa>524 des>$ ni>630 dg>766 ut>560 va>656 cu>900 ric>692 vi>565 y>523 ro>535
+ti>681 ded>$ si>520 ding>$ ed>$ ing>$ da>625 ds>$ den>671 der>$ ess>$ ted>$ cy>$ tly>$ ua>571 er>$
+ding>$ de>$ e>$ tion>$ nte>945 me>$ ation>$ able>$ te>$ nta>946 sio>810 ct>556 tan>709 ck>802 rg>833 tte>768 ato>697 ing>$ min>652 ting>$ ses>$
+e>$ ing>$ ive>$ h>$ ion>$ ia>758 ua>571 cr>708 ad>769 al>$ able>$ ib>576 ness>$ ation>$ pe>634 y>$ ci>557 cul>767 qu>532
+ad>$ nsi>835 ast>737 lm>888 si>520 tic>$ mi>615 st>$ tor>720 ar>895 al>744 ld>$ at>$ nd>$ tt>818 um>590 ism>$ e>$ mo>537 ist>741 no>622 ses>$ ba>534 ned>$ vel>852 dr>521
+er>$ po>530 pe>634 s>$ on>$ t>$ pr>525 ing>$ es>$ pl>539 ping>$ y>$ ed>$ hr>947 ac>655 olo>644 f>687 pa>538 le>541 it>746
+ull>948 ly>$ s>$ fi>596 ini>507 fe>648 ing>$ ed>$ oo>722 ca>546 t>$ y>$
+le>$ ment>$ ed>$ s>$ ing>$ ped>$ era>734 h>627 ers>$ ath>928 ping>$ y>$ es>$ ria>693 ter>$ ic>$ oli>778 olo>644 ard>752 per>717 ort>496 en>$ ro>535 to>623 la>672 ies>$ ou>658 ied>$
+ll>$ ck>$ nd>$ te>$ se>$ ss>949 rr>920 bi>550 rk>719 tion>$ lan>841 ble>$ ting>$ g>$ nk>757 lis>756 tt>818 rs>$ tan>709 rg>833 ria>693 tive>$ ret>936 ce>645 ls>$ ric>692 ts>$ uc>583
+il>582 l>$ te>$ tion>$ nta>946 nce>921 tive>$ ble>$ sta>677 si>520 nge>943 ge>$ ta>686 tor>720 cu>900 po>530 ga>649 de>$ ting>$ mp>794 ria>693 nn>892 ding>$ bly>$ ci>557 sse>675 sc>629 ric>692 gin>786
+d>$ s>$ r>$
+ct>556 or>855 int>877 ck>$ tion>$ te>$ ine>516 s>$ va>656 tor>720 y>523 nce>921 ini>507 di>559 nge>943 ce>645 l>$ ne>824 po>530 ting>$
+ic>494 e>$ ing>$ iv>923 ation>$ ant>643 ie>635 le>541 ili>499
+y>$ n>950 age>$ ed>$ sa>628 ti>681 se>$ si>520 ing>$ ted>$ ter>$ ei>504 ts>$ ge>653 b>754 gr>796 ance>$ ten>694 gin>786 able>$ wa>524 mo>537
+rit>545 s>$ re>$ ment>651 e>$ tion>$ rs>665 tor>$ ring>$ rr>920 mb>680 ted>$ rat>715 ts>$ ous>$ ff>781 rac>914 tan>709 um>590 ting>$ ing>$ pi>553 pa>538
+e>$ hi>544 or>$ ation>$ cr>708 ua>571 om>700 able>$ ure>$ ho>529 he>738 pe>634 ack>951 ca>546
+on>$ ve>$ ng>$ vi>565 c>$ ble>$ mi>615 ous>$
+ib>576 ip>725 et>661 ati>750 af>816 o>$ im>569 if>637 ac>655 y>523 ee>588 edi>788 ep>731 ap>729 ame>650 eat>952 uc>583 ast>737 um>$
+on>$ ble>$ ng>$ ve>$ c>$ bi>550 fi>596 mi>615 tat>813 es>$ er>$
+e>$ al>$ ate>$ art>774 ak>564 ain>570 are>561 as>585 ari>698 ati>750 ad>769 ac>655 ato>697 and>857 ot>736 am>600 aw>659 ab>742
+d>$ e>$ nce>921 nn>892 na>791 ch>$
+y>$ th>$ ment>$ st>$ b>754 shi>905 ma>547 do>657 ti>681 wa>524 p>$ ta>686 wo>540 j>527 wi>641
+d>$ nge>943 r>$ y>$ t>$ ga>649 ct>556 nn>892 st>$ gi>647 bo>528
+ion>727 ely>$ ed>$ ive>606 or>$ ing>$ al>$ ur>586 es>$ ic>494
+s>$ ed>$ ul>591 ly>$ ba>534 y>$ ged>$ less>$ er>$ ding>$ gin>786 ness>$ o>$ es>$ ent>$ ling>$ uc>583
+ng>$ al>$ one>580 fi>596 sts>$ c>$ es>$ ons>$ ona>812 ment>$ lat>668 tat>813 ate>$ ation>$ ne>824 ous>$ ff>781 ato>697
+e>$ ation>$ ing>$ z>568 op>563 able>$
+d>$ r>$ s>$ ga>649 ct>556 id>506
+t>$ il>$ e>$ fi>596 fe>648 le>541 ing>$
+y>$ te>$ tion>$ ble>$ l>$ nce>$ ry>$ tor>720 ting>$ che>792 nge>943 nt>$ ta>$ go>679 ug>669 bly>$ m>$ ine>516 ci>557 s>$ dd>897 ver>762
+ce>$ d>$ s>$ ent>$ tic>$ ity>$ ita>806 tle>916 ag>642 oi>701 iz>805 ly>$ ac>655 ism>$ ely>$
+os>579 ris>531 rin>696 tion>$ ass>808 ie>635 lu>508 ort>496 ene>733 ed>605 hi>544 er>$ ing>$ lan>841 enti>763 s>$ oi>701
+ce>$ ess>$ ci>557 tic>705 du>898 ts>$ s>$ ali>849 di>559 che>792
+r>$ en>$ d>$ st>$ so>909 nt>843 igh>882 l>908 ar>$ et>$ ak>564 b>754 ed>$
+e>$ ing>$ ical>$ ini>507 ani>726 o>$ ita>806 am>600 ling>$
+s>$ al>$ ing>$ ed>$ ina>589 ers>$ ent>$ ly>$ wa>524 ato>697 an>$ ost>863 ai>498 ho>529 ati>750 y>$ int>877 ind>910 ome>575 up>587 wo>540 oun>787 od>517
+ion>$ ing>$ y>$ on>$ ure>$ ive>$ p>803 mi>615 ation>$ k>$ be>555 ms>$
+end>500 ing>$ t>$ s>$ er>$ ly>$ han>886 her>542 est>$ la>672 anc>861 ed>$ ara>562 res>581 ie>635 ness>$ hr>947 ort>496
+es>$ ed>$ er>$ ing>$ ani>726
+e>$ us>502 ud>789 os>579 ing>$ ai>498 ip>725 op>563 ists>$ ub>670 am>600 ou>658 ave>858 ot>736 oc>511 ass>808 ys>799 ic>$ iv>923
+nt>$ te>$ m>$
+l>$ ss>$ du>898 ach>953 ve>902 om>700 te>$ w>$ x>721 r>$ vi>565 ad>$ va>656 me>$ mi>615 ga>649 be>555 ci>557 sc>629 ts>$ si>520 mat>519 ba>534 mb>680 bi>550 ce>645 tt>818 mo>537 bo>528 sp>676 gra>674 de>$ cat>874 at>860 ot>$ che>792 st>$ op>563 gg>893
+s>$ ation>$ ating>$ ate>$ ato>697 ba>534 ten>694 for>800 ie>635 y>$ ed>$ lin>503 act>760 ing>$ bo>528 cl>793 one>580 ma>547
+ili>499 ora>838 eti>773 oli>778 ou>658 so>909 as>585 ir>501
+y>$ ies>$ al>$ e>$ ic>$ um>$ if>637
+es>$ eme>749 ing>$ er>$ ue>$ ed>$ no>622 ine>$ ra>513 ina>589 on>$ re>551 les>$ ge>653 ea>747 mat>519 gin>786 ini>507 s>$ ull>948 ew>743 ne>824 gl>879
+r>$ d>$ s>$ br>654 ba>534 ing>$ la>672 lin>503 wi>641 ar>$ th>552 gl>879
+oi>701 om>700
+tal>633 te>$ c>$ so>909 red>$ rati>616 es>$ d>$ ring>$ st>$ rac>914 ed>$ ec>745 res>$ tat>813 ric>692 lla>607 x>721 a>$ to>623 lo>512 oi>701 le>541 the>667 ran>751 er>$ pe>$ rit>545 fi>596
+s>$ y>$ ance>$ ce>$ na>791 al>$ ne>824 ag>642 red>$ ate>$ ren>595 o>$ ring>$ ge>653 ci>557 b>754 able>$ ho>529 t>$ ry>$ ning>$ fa>554 po>530 pr>525 ve>902 cha>624 ro>535 ns>$ man>904
+min>652 ial>$ nat>820 ta>686 ed>$ pr>525 nal>$ ing>$ no>622 y>$ ist>741 at>860 ally>$ wa>524 io>704 nit>933 ina>589 ized>$ ies>$ ac>655 fa>554 she>894 me>784 co>549 ge>653 ma>547 og>574 ren>595 ise>832 pi>553 os>579 oi>701 cr>708 wo>540 pa>538 ol>510
+ly>$ r>$ gi>647 n>$ ur>$ bo>528 e>$
+ti>681 rit>545 tte>768 rou>922 ing>$ n>$ s>$ es>$ gu>797 ris>531 rat>715 gi>647 ut>560 ric>692 us>$ ur>$ ts>$ w>567
+enc>811 or>$ al>$ ment>651 es>$ ff>781 c>$ zed>$ sm>$ sti>678 um>$ sed>$ mp>794
+h>$ es>$ er>$ ive>$ ion>$ ing>$ ation>$ ed>$ ine>$ s>$ ra>513 ical>$ ter>$ tle>916 able>$ ch>$ do>657 ting>$ ely>$ ou>658 ali>849 rie>883 ton>930 ty>$ am>600 ron>509
+ed>$ y>$ ing>$ le>$ er>$ it>$ ies>$ ling>$ ly>$ ini>507
+s>$ r>$ d>$
+d>$ s>$ r>$ ly>$ nt>$ es>$ nce>$ ering>$
+ed>$ s>$ ing>$ ish>831 ame>650 ove>598 et>$ ad>769 og>574 er>$ ess>$ ac>655 ar>895 ou>658 ai>498 ly>$ ta>686 ip>725 ey>$
+s>$ ing>$ en>$ er>$ ed>$ less>$ ro>535 ly>$ y>$ om>700 ia>$ ine>516 ness>$
+rs>665 ly>$ s>$ red>$ d>$ n>$ ring>$ wa>524 ra>513
+rati>616 ing>$ ance>$ er>$ ant>$ ed>$ ent>$ ence>$ ic>$ uri>572 ib>576 oc>511 ive>$ lin>503 ene>733
+d>$ y>$ s>$ f>687 ing>$ ed>$ ess>$ and>$ et>$ or>855 ou>658 oc>511 at>860 if>637
+s>$ ing>$ y>$ gr>796 age>$ up>587 le>$ ou>658 ta>686 pa>538 la>672 wa>524 do>657 il>582 ling>$ bo>528 po>530 lis>756 dr>521 ness>$ na>791 ber>533 pi>553 fi>596 or>855 log>783 ho>529 ro>535 co>549 lu>508 pe>634 ma>547 able>$ ly>$ ba>534 br>654 bi>550 ass>808 han>886 ie>635 tra>854 ato>697 wo>540 ish>$ ad>769 fl>597 ine>516
+an>$ ack>951 ed>$ y>$ oa>777 ing>$ ish>831 ul>591 s>$ oc>511 ona>812 all>753 la>672
+t>$ e>$ ity>$ hi>544 al>$ ui>732 ing>$ ua>571 ue>790 or>$ ion>$ ive>$ ib>576 pa>538 igh>882
+we>632 wo>540 wa>524 ner>817 for>800 ness>$ ba>534 m>876 ga>649 ful>$ y>523 pl>539 bo>528 sm>631 wi>641 gu>797 fi>596 sp>676 fa>554 z>568 su>880 ni>630 do>657 pr>525 be>555 sc>629 br>654 po>530 ke>689 j>527 sh>626
+me>$ ver>762 ur>586 min>652 un>798 ho>529 log>783 mm>770 s>940 mp>794 pe>$ re>$ a>$ tin>864 de>$ tt>818 rd>890 pi>553 mb>680 ph>617 mo>537 ma>547 di>559 cti>765 on>$ gn>899 kin>690 ok>761 in>$ che>792 lic>505 lat>668
+ee>588 g>$ s>$ es>$ al>$
+ti>681 lt>755 gu>797 ght>646 th>552 lic>505 di>559 x>$
+c>$ den>671 te>$ tion>$ s>$ ve>$ tive>$ ble>$ tor>720 ting>$ des>$ ty>$ ts>$ di>559 tat>813 al>$ ght>646 bi>550 l>$ zed>$ gn>899 es>$ fi>596 ded>$ bly>$ tan>709 pa>538 vi>565 mi>615 um>$ an>$ ties>$
+ng>$ es>$ ly>$ o>$ an>$ sm>$ ze>526 so>909 um>$ ty>$ ate>$ ne>$ ed>$ se>$ al>$
+es>$ ma>547 ed>$ ron>509 ing>$ eo>954 ise>832 er>$ o>$ ala>639 bo>528 lin>503 ment>$
+er>$ s>$ ic>$ ome>575 ed>$ ing>$ fe>648 y>$ rou>922 lin>503 ina>589 wa>524 ie>$
+od>$ us>502 ld>846 w>$ st>$ ol>510 le>$ ne>$ lic>505 t>$ p>$ ue>790 log>783 und>780 bi>550 g>$ e>$ do>657 no>622 ni>630 si>520 ot>$ me>$ ul>591 c>955
+y>$ ary>$ ch>$ ry>$ ation>$ rati>616 ric>692 ari>698 am>600 ak>564 hing>$ up>587 ro>535 o>$
+h>$ ain>570 s>$ ua>571 ra>513 ure>$ fo>956 y>$ ly>$ al>$ up>587 ation>$ br>654 le>$ cu>900 be>555 uri>572 ling>$ ro>535 co>549 fa>554 o>$ lis>756 ness>$ wa>524 wo>540
+d>$ nt>843 s>$ nc>807 r>$ lla>607
+ng>$ se>$ de>$ ste>840 che>792 nd>$ ll>$ re>$ th>552 fe>648 nk>757 tch>716 ned>$ ld>846 tt>818 rl>714 gs>$ ck>$ gg>893 nne>870
+y>$ ly>$ ur>586 o>$ ment>$ he>738 le>541
+s>$ n>$ r>$ l>$ ment>$ pin>931
+op>563 s>$ y>$ ing>$ ed>$ ling>$ ers>$ led>$ en>638 ess>$ ier>$
+d>944 se>$ sing>$ ten>694 ts>$ ch>$ rm>712 l>$ tion>941 m>$ so>909 ve>902 king>$ cti>765 n>$
+ct>556 ce>$ st>$ ul>591 re>$ ll>$ the>667 ir>501 ri>618 mi>615 ci>557 mat>519 nit>933 it>746 vo>822 ili>499
+lat>668 ne>$ lt>755 nit>933 no>622 ra>513 m>$ ta>686 s>$ nk>757
+te>$ y>$ hr>947 s>$
+e>$ or>$ che>792 s>$
+se>$ m>$ n>$ l>$ k>$ su>880 sa>628 ble>$ d>$ sing>$ uc>583 ch>$ va>656 bly>$ bi>550
+ula>730 le>$ ip>725 e>$ s>$ al>$ ing>$ ism>$ k>$ ost>863 ho>529 ian>$ able>$
+ng>$ te>957 at>860 ld>846 c>$ vi>565 st>$ sm>$ es>$
+ge>653 ce>$ t>$ ium>$ gl>879 sm>631 k>$ si>520
+se>621 y>$ l>$ n>$ str>613 sto>610 t>$ d>$ cha>624 co>549 v>801 ster>$ j>527 ro>535 sh>626 ho>529 ca>546
+ent>592 sio>810 sed>$ po>530 ted>$ sing>$ ho>529 ses>$ hing>$ tle>916 ts>$ so>909 tri>688 pe>634 er>825 ce>645
+g>885 ly>$ ari>698 ous>$ ome>575 ag>642 ho>529 af>816 z>568 ni>630 pl>539 na>791 u>827 w>567 as>$ ary>$ ot>736 y>$ op>563 f>687 able>$ ol>510 ai>498 bu>536
+nge>943 ni>630 rg>833 ir>501 eo>954 in>$ ble>$ t>$ nt>$ l>$ se>$
+d>$ s>$ rs>$ lo>512 t>$ mi>615 ck>$ olo>644
+d>$ s>$ r>$ n>$ mi>615
+and>857 ness>$ e>$ tic>$ al>$
+her>$ s>$ ua>571 ment>$ ure>$ ch>$ or>$ ud>789 ly>$ z>$ ca>546 res>581 ous>$ ol>510 ula>730
+e>$ ure>$ iti>862 ing>$ op>563 s>$ ite>$ ity>$ is>$ co>549 ph>617 ho>529 ci>557 yn>958 ke>689 a>$ ine>$ ce>645
+t>$ r>$ d>$ p>$ s>$ n>$ ze>526 lan>841 k>$ ing>$ wa>524 able>$ bi>550 ling>$ ma>547
+nce>$ nti>518 r>$ sti>678 ste>840
+l>$ d>$ se>$ r>$ m>$ ps>$ n>$ th>552 f>$ k>$ per>717 ting>$ ter>$ ping>$ ped>$ sh>$ ing>$ ts>$ ted>$ z>568
+s>$ ed>$ ing>$ er>$
+l>$ tion>$ y>$ cti>765 ge>$ ry>$ nt>$ ble>$ w>$ ur>586 ic>$ pp>771 s>$ ns>$ ries>$ ke>$ bi>550 tur>759 gn>899 ria>693 m>$ ber>533
+e>$ gs>$ t>$ k>548 ge>653 si>520 gin>786 o>$ al>$ ated>$
+r>$ d>$ n>$ st>$
+s>$ ry>$ ty>$ al>$ ries>$ ta>686 g>$ ne>824 nat>820 y>$ ated>$ ating>$ ing>$ ed>$ cr>708 ates>$ ato>697
+r>$ ce>645 bo>528 x>721 in>$ p>803 y>$ mm>770 im>569 ci>557 s>$ ge>$ ble>$ w>567 us>502 ud>789 mat>519 cti>765 bi>550 id>$ de>$ din>959 e>$ ca>546 va>656 be>555
+s>$ y>523 ni>630 p>$ qu>532 g>$ f>$ b>754
+m>$ tion>$ ted>$ ph>617 de>$ nts>$ du>898 tu>919 ting>$ ding>$ ss>$ va>656 da>625 ine>516 tor>720 ce>645 vi>565
+m>$ s>$ d>$ t>$ cl>793 r>$
+p>$ bi>550 eve>872 cl>793 le>$ er>$ cal>$ ll>$ es>$ re>$ la>672 sto>610 a>$ sta>677 ef>960 ve>$ de>$ sm>$ z>568 ls>$
+ess>584 ene>733 et>661 o>942 int>877 ec>745 ie>635 edi>788 is>577 ive>606 it>$ act>760 an>685 ic>494
+li>522 und>780 ld>846 cu>900 ot>$
+ina>589 nce>921 ndi>614 nti>518 te>$ cl>793 l>$ ge>$ ine>516 ting>$ rd>$ tic>$ tion>$ ini>507 si>520 rt>$ y>$ chi>873 k>548 min>652 nds>$ mp>794
+ng>$ c>$ ga>649 va>656 tu>919 mo>537 fi>596 on>$ ve>$ gi>647 ne>$ nal>$ vi>565 mat>519 ge>$ ble>$ bu>536 er>$ est>$
+uc>583 y>$ um>590 ust>859 ui>732 ud>789 ue>$ ut>560
+s>$ ing>$ er>$ ly>$ ed>$ we>632 ma>547 for>800 y>$ en>$ ful>$ eo>954 ness>$ est>$ cl>793 ho>529 li>522 he>738 bu>536
+ary>$ ic>$ ate>$ ac>655 ation>$ ea>747 ari>698 ating>$ ant>$ is>$ oi>701 us>502 ow>682 al>$ ev>867 y>523 id>506 ato>697 ie>635 ok>761 os>579 ium>$ ed>$ oa>777 ill>640 and>$ ob>713 as>$ um>$
+ack>951 ur>586 lo>512 ra>513 od>517 all>753 ly>$ err>961
+e>$ o>942 ay>$ ac>655 y>$ if>637 ine>$ ica>728 an>685 ing>$ ina>589 ate>$ ain>570 as>585 ug>669 it>746 ar>$ ici>703
+d>$ s>$ nge>943 ls>$ r>$ t>$ x>721 us>502
+d>$ r>$ nt>$ s>$ lin>503 nce>$ pr>525 bo>528
+d>$ s>$ gs>$ gly>$ eti>773
+s>$ y>$ ne>824 ial>$ c>955 e>$ ies>$ ing>$ tion>$ ted>$ m>$ wa>524 bi>550 ting>$ ts>$
+ng>$ es>$ sm>$ st>$ ous>$ al>$ ty>$ ze>526 ties>$ she>894 sed>$
+ing>$ s>$ ed>$ ies>$ es>748 en>$ er>$ ma>547 bo>528 le>541 up>587 ca>546 ou>658 y>$ ke>689
+d>$ sio>810 ess>$ eu>515
+al>$ ro>535 an>685 am>600 lin>503 ine>516 h>$ est>785
+h>$ e>$ man>$ ce>645 ale>611 per>717 y>$ po>530 ist>741 ome>575 qu>532 cr>708 an>$ co>549 ca>546 men>$ kin>690
+t>$ ng>$ se>$ d>$ sing>$ sti>678 sh>$ sm>$
+ria>693 ed>$ rat>715 ing>$ er>$ s>$ wo>540 ic>494 y>$ if>637 rop>962 ac>655
+ua>571 s>$ ing>$ ance>$ ge>$ ation>$ ity>$ av>850 ant>$ os>579 ated>$ al>$ isc>939 ized>$ ir>501 im>569 lo>512
+ing>$ er>$ ed>$ s>$ ati>750 ica>728 as>585 om>700 rop>962
+ve>$ ng>$ gn>899 vi>565 pt>601 ght>646 va>656 t>$ nat>820 sm>$
+ing>$ e>$ y>$ bi>550 ra>513
+e>$ s>$ ul>591 y>$ t>$ le>$ he>$ or>855 olo>644 ure>691 oa>777
+s>$ ing>$ th>$ ed>$ n>$ er>$ ly>$ ave>858 bo>528 y>$ fa>554 mo>537 ou>658 ba>534 do>657 fl>597 ling>$ est>$ j>527 led>$
+id>506 ing>$ al>$ ity>$ ating>$ ation>$ ate>$ ir>501 able>$ ism>$ ari>698 ato>697 ita>806 il>582 or>855 ist>$
+s>$ iti>862 ria>693 er>$ ro>535
+s>$ ed>$ ing>$ a>$ ion>$ us>502 y>$ er>$ igh>882 ove>598
+her>$ s>$ og>574 ba>534 ing>$ e>$ ion>727 hes>$ hing>$ ic>$ ted>$ li>522 pr>525 os>579 y>523 no>622 ting>$ ation>$ ch>$ hed>$ ov>776 om>700 on>636 oc>511 ran>751 ca>546 ap>729 ter>$ able>$ ty>$ pa>538 fa>554 rop>962 ag>642 lo>512 hor>913
+ng>$ c>$ da>625 sh>$ ne>$ ze>526 sm>$ tic>705 ga>649 es>$ sti>678
+er>$ ing>$ ed>$ o>$ es>$ able>$
+iat>830 k>$ ol>510 ur>586 es>748 ation>$ ated>$ al>744 y>523 he>738 ard>752 cu>900 ont>848 hi>544 rac>914 op>563 har>594 hr>947 ating>$ rati>616 ial>$ tri>688 la>672 ula>730 od>517 ry>620 li>522
+ee>$ ed>$ ing>$ er>$ y>$ le>$ al>$
+s>$ ing>$ ed>$ ma>547 ent>$ ina>589 er>$
+hed>$ m>$ hing>$ ation>$ ed>$ t>$ hes>$ ing>$ es>$
+ng>$ cat>874 ts>$ cul>767 cr>708 est>$ sc>629
+t>$ ses>$ sed>$ is>$ sing>$ e>$
+g>885 ci>557 va>656 da>625 ve>$ ce>$ vi>565 wa>524 b>754 we>632 ly>$ fe>648 vo>822 lin>503 fi>596 her>542 ful>$ cu>900 co>549 pin>931 pr>525 po>530 do>657 le>541 lie>836 un>798 cha>624 fo>956 pa>538 per>717 fl>597 ca>546 de>804 pl>539 lat>668 cl>793 han>886
+ent>$ ed>$ a>$ ence>$ er>$ ing>$ s>$ it>746 ous>$
+ha>599 ui>732 um>590 le>$ ula>730 e>$ oa>777 iss>772 ast>737 hi>544 ling>$ hes>$ ot>736 if>637 ad>769 il>582 hed>$ ation>$ la>672 up>587 or>855 ut>560
+r>$ l>$ d>$ ss>$ t>$
+l>$ ble>$ ry>$ te>$ bly>$ ire>$ nce>$ nt>$ tion>$ do>657 ries>$ ting>$
+ion>$ e>$ ic>$ ive>$ s>$ ure>$ ting>$ che>792 ing>$ og>574 ted>$ or>855 ism>$ uri>572 a>$ ized>$ od>517
+ess>$ gly>$ s>$ ger>$
+p>$ ng>$ on>$ rt>$ el>702 t>$ f>687
+y>$ ies>$ ical>$ ra>513 ist>$ ue>$ ous>$ s>$ gin>786
+ing>$ ine>$ and>857 igh>882 ist>$
+ng>$ fi>596 on>$ ve>$ li>522 sa>628 le>$ lla>607 cul>767 es>$ er>$
+ion>$ ed>$ es>$ ing>$ or>$ ive>$ che>792 eg>664
+er>$ s>$ y>$ ing>$ on>$ ta>686 eti>773 ic>$ ed>$ lo>512 es>$ iz>805 ies>$ les>593
+e>$ ing>$
+ly>$ li>522 wa>524 s>$ ed>$ ing>$ ol>510 fa>554 br>654 ness>$
+mer>795 ry>$ ric>692 rs>$ mi>615 ne>$ ck>$ ria>693 ma>547 rm>712 re>$ ries>$ ra>513 p>$ di>559 log>783
+d>$ s>$ r>$ y>$
+tur>759 tion>$ l>$ tive>$ te>$ ble>$ rc>711 nce>$ ting>$ nt>$ ge>$ rm>712
+l>$ us>$ bi>550 d>944 s>$ id>506 na>791 gl>879 pl>539
+k>$ qu>532 x>721 ho>529 ze>526 he>738 han>886 j>527
+si>520 y>$ t>$ d>$ ca>546 sp>676 ps>$ pa>538 ster>$ na>791 ma>547 j>527 se>621 co>549 we>632
+nte>945 ble>$ tive>$ te>$ nce>$ bly>$ bi>550 s>$
+ve>$ ble>$ bi>550 tive>$ ty>$ ng>$ on>$ bly>$ de>$ ties>$ f>687 s>$
+al>$ ation>$ ed>$ ary>$ ing>$ ari>698 o>$ able>$
+e>$ y>$ ula>730 ious>$ ing>$ le>$ cu>900 ce>645 on>$ oc>511 co>549 ies>$ ial>$ ity>$ ita>806 up>587 s>$
+es>$ ng>$ ed>$ ty>$ mo>537 st>$ c>$ sm>$ z>568 ne>$ mat>519 mi>615
+ff>781 fa>554 ous>$ x>$ ven>823 k>548 qu>532 fl>597 ore>735 vi>565 ori>740 z>568 va>656 os>579 h>$
+n>$ log>783
+le>$ t>$ lic>505 s>$ bo>528 ho>529 lis>756 ato>697 era>734 ation>$ be>555 bi>550
+ge>$ rs>$ tion>$ s>$ ry>$ ble>$ nt>$ bi>550 in>938 ting>$ te>$
+r>$ tion>$ te>$ ting>$ tor>$ tive>$
+y>$ e>$ ing>$ ten>694 ies>$ h>627 able>$ is>$ s>$ os>$ ic>$ oc>511
+ce>$ t>$ ds>$ che>792 ci>557
+rat>715 ru>884
+s>$ ed>$ ing>$ er>$ a>$
+ng>$ tor>720 ble>$ ed>$ cul>767 fi>596 es>$ ca>546 tat>813 bly>$ ga>649 er>$ age>$ d>$ so>909 tan>709
+ion>$ e>$ ive>$ ing>$
+ial>$ y>$ tion>$ il>$ ip>725 ing>$ ies>$ tu>919 iat>830 rea>881 ak>564 s>$ ib>576 ier>$ ast>737 us>502
+lo>512 ul>$ ic>494 or>855 ire>$ all>753 ie>635 igh>882
+ion>$ y>$ e>$ ive>$ iz>805 al>$ ies>$ ors>$ ise>832 ho>529 ari>698
+t>$ ce>$ di>559 do>657 ec>745 ish>831 ame>650
+ation>$ ated>$ able>$ it>746 op>563 ato>697 s>$ ted>$ al>$ e>$ ating>$ ates>$ ting>$ ts>$
+s>$ d>$ llo>875 r>$ ha>599
+ic>$ ish>831 ing>$ io>704 oc>511 ow>682 og>574 a>865 oi>701 y>523
+r>$ d>$ n>$ s>$
+us>$ s>$
+s>$ d>$ r>$ ate>$ ly>$
+ing>$ te>957 lin>503 lic>505 bo>528 pt>601 sa>628 ng>935
+s>$ ain>570 ak>564 ed>$ ion>$ ing>$ ly>$ if>637
+le>$ ed>$ ili>499 es>$ ing>$ era>734 io>704 od>517 ut>560 rati>616 ly>$ ble>$
+d>$ r>$ n>$
+ities>$ ity>$ ely>$ es>$ ated>$ ation>$ ist>$ ates>$ ating>$ eness>$ ato>697
+al>$ ing>$ ed>$ ary>$ er>$ ist>$ iz>805 ari>698 less>$ ism>$
+ty>$ ng>$ es>$ ties>$ zed>$ st>$ sm>$ ous>$ sed>$ al>$ ta>686 cal>$ fi>596 ent>592 gin>786 um>$
+ow>682 ang>815 ing>$
+d>$ s>$ r>$ nt>$ nce>$ ct>556 ly>$
+nts>$ d>$ th>$ r>$
+d>$ nt>$ mi>615 nc>807 lie>836 st>$ tt>818
+ng>$ ent>$ a>$ c>$ ence>$ ted>$ ly>$ ting>$
+l>$ ble>$ tion>$ ria>693 bly>$ ris>531 ted>$ bi>550 s>940 ting>$ ry>$ min>652 tive>$
+al>$ ent>$ ous>$ enc>811 pa>538 ng>$ an>$ de>$ ty>$ st>$ sm>$ zed>$ lli>619 ties>$ er>$
+e>$ io>704 s>$ ali>849 oo>722 ia>$ la>672 ic>$ tr>963 re>551 ber>533
+d>$ ce>$ t>$ cy>$ gl>879 eo>954 ic>$ y>$
+ty>$ ng>$ ties>$ es>$ zed>$
+s>$ un>798 ed>$ ing>$ ation>$ er>$ ion>$ able>$
+y>$ ill>640 up>587 ep>731
+t>$ e>$ a>$ se>$ n>$
+ies>$ ary>$ ate>$ ation>$ ating>$ ion>$ ari>698 ato>697 s>$ ia>758 es>$ era>734
+s>$ d>$ ur>586 ry>$ tic>$ rs>$ rati>616
+e>$ ind>910 igh>882 ist>$ on>$ ing>$ ine>$ oa>777 a>865 y>$ l>$ pa>538
+d>$ ty>$ r>$ nd>$ nts>$ tal>633 ga>649
+e>$ n>$ s>$ ic>$ ap>729 ita>806 ing>$ y>$ ly>$
+l>$ te>$ tion>$ ble>$ tive>$ ri>618 ting>$ nt>$ di>559
+gi>647 gu>797 ge>653 l>$
+d>$ no>622 tri>688 r>$ s>$ ter>$ cha>624 th>552
+l>$ te>$ ge>$ n>$ tions>$ tri>688
+d>$ s>$ nts>$ r>$ er>$ nti>518 t>$
+ive>$ e>$ ion>$ ho>529 ated>$ iti>862 ib>576 ave>858
+ve>$ c>$ ble>$ bi>550 es>$ fi>596 s>940 zed>$
+es>$ ed>$ ing>$ ment>$ ina>589 ion>727 em>851 uri>572 ure>691 ig>514 ive>$ ert>964 oc>511
+d>$ t>$ g>885
+h>$ ment>$ ph>617 er>$ wa>524 s>$ ed>$ ing>$ y>$ ia>758
+ng>$ gi>647 er>$ ne>$ ora>838 ver>762
+e>$ ary>$ gs>$ ing>$ gu>797 k>$ ation>$ qui>834 gly>$ ato>697 ter>683
+r>$ log>783 s>$ di>559 x>721 gra>674 tic>$ the>667 do>657 len>666
+le>$ ping>$ e>$ s>$ tion>$ ped>$ ation>$ ula>730 ie>635 per>717 ated>$ her>542 lin>503 pl>539 ro>535 lie>836 lic>505 ing>$ w>567 bo>528 y>523 art>774 pa>538 ali>849 lat>668 co>549
+ed>$ ing>$ ment>$ er>$ es>$ able>$ ion>727 ly>$
+nce>$ nti>965 r>$ sti>966 ste>967
+e>$ s>$ ul>968 y>$ t>$ le>$ he>$ or>969 olo>970 ure>971 oa>972
+s>$ ed>$ ive>$ ion>$ ric>973 ron>974 ing>$ il>975 ora>976 ation>$ ors>$ anc>977 able>$ us>$ ici>978 ua>979
+s>$ un>980 ed>$ ing>$ ation>$ er>$ ion>$ able>$
+ive>$ e>$ ion>$ ho>981 ated>$ iti>982 ib>983 ave>984
+l>$ gn>985 ght>986 r>$ se>$ mer>987 med>$ d>$ sing>$ ms>$ min>988
+ty>$ ng>$ ties>$ es>$ zed>$
+ent>$ ed>$ a>$ ence>$ er>$ ing>$ s>$ it>989 ous>$
+d>$ s>$ it>989 ed>$ po>990 t>$ ly>$ lin>991 y>$ man>$ es>$ cr>992 wa>993 ect>994 able>$ ing>$ ness>$ ation>$ pl>995 al>$ mat>996 cu>997 bo>998 ca>999 fa>1000 lo>1001 k>$ ies>$ wo>1002 ba>1003 men>$ mi>1004 br>1005 et>1006 con>1007 we>1008
+e>$ ing>$ ive>$ h>$ ion>$ ia>1009 ua>979 cr>992 ad>1010 al>$ able>$ ib>983 ness>$ ation>$ pe>1011 y>$ ci>1012 cul>1013 qu>1014
+e>$ ary>$ gs>$ ing>$ gu>1015 k>$ ation>$ qui>1016 gly>$ ato>1017 ter>1018
+ve>$ ng>$ gn>985 vi>1019 pt>1020 ght>986 va>1021 t>$ nat>1022 sm>$
+ation>$ ated>$ able>$ it>989 op>1023 ato>1017 s>$ ted>$ al>$ e>$ ating>$ ates>$ ting>$ ts>$
+ua>979 s>$ ing>$ ance>$ ge>$ ation>$ ity>$ av>1024 ant>$ os>1025 ated>$ al>$ isc>1026 ized>$ ir>1027 im>1028 lo>1001
+ng>$ cal>$ ty>$ te>$ ci>1012 ties>$
+ding>$ de>$ e>$ tion>$ nte>1029 me>$ ation>$ able>$ te>$ nta>1030 sio>1031 ct>1032 tan>1033 ck>1034 rg>1035 tte>1036 ato>1017 ing>$ min>988 ting>$ ses>$
+g>$ ment>1037 ic>$ t>$ e>$ s>$ iz>1038 olo>970 y>1039 ous>$
+e>$ s>$ ate>$ ut>1040 ar>1041 ation>$ ve>1042 d>$ y>$ ki>1043 ba>1003 ad>1010 ta>1044 ast>1045
+iat>1046 k>$ ol>1047 ur>1048 es>1049 ation>$ ated>$ al>1050 y>1039 he>1051 ard>1052 cu>997 ont>1053 hi>1054 rac>1055 op>1023 har>1056 hr>1057 ating>$ rati>1058 ial>$ tri>1059 la>1060 ula>1061 od>1062 ry>1063 li>1064
+ad>$ re>$ t>$ ok>1065 us>$ ring>$ rati>1058 cat>1066 me>1067 sio>1031 ng>$ ck>$ ci>1012 su>1068 we>1008 di>1069 ita>1070 rd>$ ded>$ rs>$ sed>$ ns>$ om>1071 qui>1016 ur>$ ne>$ dr>1072 wa>993 des>$ ni>1073 dg>1074 ut>1040 va>1021 cu>997 ric>973 vi>1019 y>1039 ro>1075
+ph>1076 ge>$ l>$ ble>$ ry>$ y>$ str>1077 bly>$ pi>1078 is>1079 se>$ ppe>1080 mi>1004 bi>1081 pe>1011 so>1082 di>1069 f>1083 ps>$ mb>1084 it>989 ini>1085 me>$ ms>$ w>1086 vel>1087 ven>1088 de>$ ma>1089 ssi>1090 sio>1031 gu>1015 da>1091 il>975 ine>1092 ria>1093 ud>1094 h>$ gin>1095 ig>1096 mm>1097 ind>1098 pt>1020 ins>$ mu>1099 ut>1040 bo>998 va>1021 be>1100
+n>$ ina>1101 ib>983 ma>1089 ent>$ ato>1017 rat>1102 ol>1047 ran>1103 est>1104 gin>1095 la>1060 ate>$ ame>1105
+ten>1106 ver>1107 r>$ s>$ p>$
+d>$ s>$ r>$ ly>$ nt>$ es>$ nce>$ ering>$
+s>$ y>$ olo>970 ies>$ b>1108 e>$ ive>1109 le>$ wi>1110 ing>$ wo>1002 uc>1111 ora>976 ont>1053 ia>1009 oo>1112 if>1113 pe>1011 lu>1114 ate>$ ori>1115 den>1116 ium>$
+ng>$ al>$ one>1117 fi>1118 sts>$ c>$ es>$ ons>$ ona>1119 ment>$ lat>1120 tat>1121 ate>$ ation>$ ne>1122 ous>$ ff>1123 ato>1017
+ion>$ e>$ ic>$ ive>$ s>$ ure>$ ting>$ che>1124 ing>$ og>1125 ted>$ or>969 ism>$ uri>1126 a>$ ized>$ od>1062
+c>$ den>1116 te>$ tion>$ s>$ ve>$ tive>$ ble>$ tor>1127 ting>$ des>$ ty>$ ts>$ di>1069 tat>1121 al>$ ght>986 bi>1081 l>$ zed>$ gn>985 es>$ fi>1118 ded>$ bly>$ tan>1033 pa>1128 vi>1019 mi>1004 um>$ an>$ ties>$
+ess>$ oo>1112 oi>1129 aw>1130 op>1023 al>$ ation>$ og>1125 au>1131 ates>$ oc>1132 ated>$ ant>$ ea>1133 ive>$ ating>$ ang>1134 up>1135 am>1136 on>$ olo>970 af>1137 ot>1138 od>1062 y>$
+ght>986 da>1091 gi>1139 fi>1118 zed>$ ar>$ ke>$ ance>$ able>$ fe>1140 ga>1141 ame>1105 ve>$ o>$ ment>1037 min>988 ant>$ di>1069 ge>1142 ation>$ vi>1019 al>$ ds>$ bu>1143 de>$ qu>1014 br>1005 um>$ mat>996 ating>$ ac>1144 ated>$ pt>1020 va>1021
+th>1145 one>$ pe>$ cl>1146 ment>$ be>1100 pi>1078 bo>998 w>1086 mo>1147 al>$ ch>1148 pt>1020 da>1091 ou>1149 or>$ tic>1150 ard>$ able>$ ze>1151 dr>1072 mp>1152 f>1083 ge>1142 pa>1128 co>1153 mer>987 ho>981 gr>1154 ba>1003 tes>$ ta>1044 man>$ ce>1155 po>990 to>1156 ot>1138 pr>1157 ms>$ go>1158 ca>999 mi>1004 bu>1143 ph>1076 he>1051 mm>1097 ons>$ ur>1048 ist>$ ant>$ oc>1132 ance>$ am>1136 in>$ op>1023 ci>1012 ag>1159 mat>996 gu>1015 un>980 x>1160 j>1161 up>1135 br>1005
+y>$ rd>$ re>$ ter>$ l>1162 ble>$ ke>1163 tch>1164 she>1165 tt>1166 rt>$ rm>1167 shi>1168 ve>$
+ess>1169 ene>1170 et>1006 o>1171 int>1172 ec>1173 ie>1174 edi>1175 is>1079 ive>1109 it>$ act>1176 an>1177 ic>1178
+s>$ n>$ r>$ l>$ ment>$ pin>1179
+ect>994 o>1171 ust>1180 ur>1048 un>980 ac>1144 ud>1094 est>1104 an>$ ug>1181 i>$ am>1136 s>$ et>$ as>$
+ok>1065 d>1182 ard>$ r>$ n>$ ur>$ und>1183 x>$ w>$ t>$ lis>1184 ys>$ lic>1185 h>1186 at>$ s>$ lit>1187 ot>1138 lt>1188 ld>1189
+od>$ us>1190 ld>1189 w>$ st>$ ol>1047 le>$ ne>$ lic>1185 t>$ p>$ ue>1191 log>1192 und>1183 bi>1081 g>$ e>$ do>1193 no>1194 ni>1073 si>1195 ot>$ me>$ ul>968 c>1196
+rt>$ nsi>1197 rat>1102 sed>$ sa>1198 int>1172 si>1195 nde>1199 we>1008 ndi>1200 on>$ d>$ the>1201 lit>1187 nds>$ ne>1122 ses>$ gra>1202 log>1192 st>$ cr>992 x>1160 pu>1203 en>1204 ti>1205 lis>1184 ol>1047 ten>1106 us>1190 ts>$ ver>1107 ri>1206 lat>1120 uri>1126 gl>1207 le>$ su>1068 il>975 ff>1123 rea>1208 ch>1148 cke>1209
+e>$ ing>$ t>$ di>1069 hed>$ ma>1089
+e>$ al>$ ate>$ art>1210 ak>1211 ain>1212 are>1213 as>1214 ari>1215 ati>1216 ad>1010 ac>1144 ato>1017 and>1217 ot>1138 am>1136 aw>1130 ab>1218
+s>$ ry>$ ty>$ al>$ ries>$ ta>1044 g>$ ne>1122 nat>1022 y>$ ated>$ ating>$ ing>$ ed>$ cr>992 ates>$ ato>1017
+ll>$ ck>$ nd>$ te>$ se>$ ss>1219 rr>1220 bi>1081 rk>1221 tion>$ lan>1222 ble>$ ting>$ g>$ nk>1223 lis>1184 tt>1166 rs>$ tan>1033 rg>1035 ria>1093 tive>$ ret>1224 ce>1155 ls>$ ric>973 ts>$ uc>1111
+l>$ ss>$ du>1225 ach>1226 ve>1042 om>1071 te>$ w>$ x>1160 r>$ vi>1019 ad>$ va>1021 me>$ mi>1004 ga>1141 be>1100 ci>1012 sc>1227 ts>$ si>1195 mat>996 ba>1003 mb>1084 bi>1081 ce>1155 tt>1166 mo>1147 bo>998 sp>1228 gra>1202 de>$ cat>1066 at>1229 ot>$ che>1124 st>$ op>1023 gg>1230
+tion>$ m>$ te>$ il>975 ting>$ lo>1001 st>$ la>1060 tor>1127 rs>1231 ta>1044 gg>1230 ds>$ tt>1166 rn>$ nk>1223 ck>1034 she>1165 ll>$ ff>1123 rd>1232 rg>1035
+st>$ us>$ te>$ nst>1233 ry>$ cr>992 ve>$ ny>$ da>1091 rr>1220 ni>1073 sp>1228 va>1021 ria>1093 re>$ tion>$ ra>1234 the>1201 tive>$ rs>$ gra>1202 bi>1081 de>1235 ur>$ se>1236 ir>1027 log>1192 nd>$ lit>1187 rt>1237 rp>1238 lis>1184 na>1239 ph>1076 so>1082 ge>1142 no>1194 un>980 ne>1122 ng>1240 sa>1198 ris>1241 ut>1040 ron>974
+rt>1237 rat>1102 ci>1012 bi>1081 ble>$ d>$ ye>1242 ted>$ l>$ ge>$ tch>1164 ga>1141 ck>$ per>1243 tion>$ tie>1244 th>1145 ss>$ ir>1027 id>$ ren>1245 ce>$ rit>1246 rk>1221 ting>$ us>1190 se>$ tes>$ n>$ ro>1075 tor>1127 ho>981 ying>$
+e>$ o>1171 ay>$ ac>1144 y>$ if>1113 ine>$ ica>1247 an>1177 ing>$ ina>1101 ate>$ ain>1212 as>1214 ug>1181 it>989 ar>$ ici>978
+rk>1221 rd>$ od>$ rt>1237 man>$ rl>1248 rm>1167 ven>1088
+cti>1249 as>1214 te>$ ge>$ dg>1074 br>1005 ment>1037 x>$ va>1021 vi>1019 rs>$ ag>1159 ph>1076 ts>$ cul>1013 co>1153 ran>1103 tte>1036 ar>$ rat>1102 tic>1150 gra>1202 ad>1010 fi>1118 mm>1097 um>$ man>$ e>$ gi>1139 ro>1075 he>1051 mat>996 ry>$ ga>1141 ba>1003 po>990 pl>995 bl>1250 an>$ bo>998 be>1100 pa>1128 ir>1027 ca>999 rin>1251 wo>1002 z>1252 ton>$ pt>1020 kin>1253 di>1069 pp>1254 uc>1111
+e>$ n>$ s>$ ic>$ ap>1255 ita>1070 ing>$ y>$ ly>$
+r>$ d>$ s>$ br>1005 ba>1003 ing>$ la>1060 lin>991 wi>1110 ar>$ th>1145 gl>1207
+p>$ bi>1081 eve>1256 cl>1146 le>$ er>$ cal>$ ll>$ es>$ re>$ la>1060 sto>1257 a>$ sta>1258 ef>1259 ve>$ de>$ sm>$ z>1252 ls>$
+y>$ e>$ ing>$ ten>1106 ies>$ h>1186 able>$ is>$ s>$ os>$ ic>$ oc>1132
+lly>$ me>$ re>$ ls>$ st>$ pe>$ se>$ ne>$ de>$ rd>1232 lat>1120 ut>1040 ine>$ nt>$ nc>1260 li>1064 bu>1143 va>1021 do>1193 no>1194 ble>$ sing>$ ke>$ mp>1152 le>$ rn>1261 ri>1206 pa>1128 rri>1262 bly>$ ron>974 ppe>1080 nn>1263 pi>1078 rb>1264 lt>1188 da>1091 ps>$ ge>$ rs>$
+in>$ rk>1221 ry>$ ge>$ le>$ ri>1206 ke>1163 cy>$ de>$ ce>1155 ci>1012 king>$ il>$ gin>1095 lly>$ s>$ p>$ co>1153 cul>1013 llo>1265 di>1069 lin>991 rri>1262 ment>$ la>1060 lity>$ da>$ ble>$ go>1158
+no>1194 y>$ ly>$ to>1156 le>$ a>$ wa>993 fu>1266 ling>$ cha>1267 ra>1234 da>1091 bu>1143 lo>1001 up>1135 o>$ sh>1268 th>1145 bo>998 wo>1002 ba>1003 h>1186 sa>1198 ness>$ sc>1227 ni>1073 sm>1269 we>1008 tal>1270 ker>$
+me>$ ver>1107 ur>1048 min>988 un>980 ho>981 log>1192 mm>1097 s>1271 mp>1152 pe>$ re>$ a>$ tin>1272 de>$ tt>1166 rd>1232 pi>1078 mb>1084 ph>1076 mo>1147 ma>1089 di>1069 cti>1249 on>$ gn>985 kin>1253 ok>1065 in>$ che>1124 lic>1185 lat>1120
+lity>$ le>$ nat>1022 t>$ ng>$ es>$ ne>1122 s>$ an>$ d>$ c>$ gu>1015 lis>1184 og>1125 qui>1016 ot>1138 ns>$ rd>$ al>$ rt>1237 no>1194 ke>$ va>1021 vo>1273 be>1100 lan>1222 bi>1081
+e>$ ct>1032 ly>$ for>1274 ments>$ di>1069 ci>1012 he>1051 ds>$ less>$ mo>1147 ho>981 w>$ lat>1120 r>$ pl>995 fi>1118 lla>1275 dd>1276 ot>1138 ga>1141 ck>$ ma>1089 qui>1016 br>1005 po>990 do>1193 pr>1157 lin>991 y>$ gu>1015 gi>1139 cr>992 pi>1078 co>1153 fl>1277 du>1225 gn>985 ba>1003 pu>1203
+ing>$ ou>1149 s>$ ori>1115 od>1062 ly>$ ro>1075 us>1190 y>$ dr>1072 ni>1073 ical>$ olo>970 wa>993 og>1125 rit>1246 an>1177 al>$ op>1023 ho>981 mi>1004 os>$ tu>1278 less>$ ot>1138 om>1071 ar>1041 no>1194 wi>1110 am>1136 ra>1234 ier>$ il>975 rea>1208 mat>996
+tal>1270 te>$ c>$ so>1082 red>$ rati>1058 es>$ d>$ ring>$ st>$ rac>1055 ed>$ ec>1173 res>$ tat>1121 ric>973 lla>1275 x>1160 a>$ to>1156 lo>1001 oi>1129 le>1279 the>1201 ran>1103 er>$ pe>$ rit>1246 fi>1118
+ct>1032 ce>$ st>$ ul>968 re>$ ll>$ the>1201 ir>1027 ri>1206 mi>1004 ci>1012 mat>996 nit>1280 it>989 vo>1273 ili>1281
+d>$ l>$ s>$ at>$ cu>997 nt>$ ara>1282 ans>$ e>$ ari>1215 ha>1283
+s>$ ed>$ or>$ ure>971 ly>$ uri>1126 ua>979 ac>1144 eri>1284 able>$ rin>1251 ato>1017 ant>$ ful>$ ate>$ ro>1075 ance>$ ari>1215 ness>$ al>$ ric>973 ating>$ ation>$ oni>1285 ag>1159 om>1071 oi>1129
+al>$ ng>$ fi>1118 et>1006 ty>$ lit>1187 se>$ es>$ ne>$ ous>$ ted>$ ent>$ ans>$ pl>995 sm>$ pa>1128 st>$ ated>$ de>$ ation>$ sio>1031 enc>1286 ary>$ ties>$ sing>$ olo>970 zed>$ no>1194 pi>1078 le>$ nc>1260 lla>1275 ve>$ op>1023 ona>1119 rc>1287 tat>1121 tor>1127 ble>$ able>$ fe>1140 tes>$ cl>1146 da>1091
+lly>$ sed>$ nc>1260 nd>$ ge>1142 sio>1031 sing>$ ses>$ sa>1198 rb>1264 ls>$ el>$ sc>1227 mer>987 cke>1209 rl>1248 rte>1288
+tion>$ a>$ cal>$ o>$ cat>1066 ci>1012 um>$ es>$ cti>1249 da>1091 tor>$ ble>$ fi>1118 ted>$ bly>$ ting>$ ts>$ tat>1121 ty>$ cul>1013 ment>$ ed>$ re>1289 sc>1227 str>1077 vi>1019 ga>1141 sh>$ zed>$ pi>1078 sp>1228 cr>992 sm>$ gi>1139 dly>$ lat>1120 llo>1265 er>$
+h>$ es>$ er>$ ive>$ ion>$ ing>$ ation>$ ed>$ ine>$ s>$ ra>1234 ical>$ ter>$ tle>1290 able>$ ch>$ do>1193 ting>$ ely>$ ou>1149 ali>1291 rie>1292 ton>1293 ty>$ am>1136 ron>974
+d>$ nt>1294 s>$ nc>1260 r>$ lla>1275
+nte>1029 ble>$ tive>$ te>$ nce>$ bly>$ bi>1081 s>$
+le>$ ment>$ ed>$ s>$ ing>$ ped>$ era>1295 h>1186 ers>$ ath>1296 ping>$ y>$ es>$ ria>1093 ter>$ ic>$ oli>1297 olo>970 ard>1052 per>1243 ort>1298 en>$ ro>1075 to>1156 la>1060 ies>$ ou>1149 ied>$
+ing>$ s>$ e>$ fa>1000 do>1193 th>1145 ou>1149 age>$ up>1135 aw>1130 y>$ po>990
+ng>$ ew>1299 de>$ ron>974 sio>1031 ce>$ ous>$ l>$ ding>$ ty>$ so>1082 or>$ es>$ sed>$ ga>1141 nce>$ ted>$ ne>$ our>1300 tat>1121 ation>$ cti>1249 ru>1301 sing>$ ting>$ sa>1198 ses>$ ties>$ va>1021 tal>1270 al>$ go>1158 ol>1047 nit>1280 dly>$ ed>$ vi>1019 able>$ ra>1234 ato>1017 ate>$ nis>1302 eg>1303 sts>$ i>$ ating>$
+d>$ t>$ r>$ n>$ y>$ st>$
+n>$ s>$ le>1279 her>1304 ye>1242 hi>1054 rit>1246 d>$ ca>999 ly>$ ful>$ bo>998 ling>$ ma>1089 k>1305 ls>$ co>1153 ro>1075 bi>1081 ba>1003 ry>$ land>$ re>1289 ra>1234 ho>981 th>1145 pi>1078 fa>1000 be>1100
+ing>$ ation>$ z>1252 y>$ ine>$ ard>$ le>$ on>$ able>$ arr>1306 ling>$ as>$ are>1213 u>$ va>1021 ol>1047 ies>$ mo>1147 ip>1307 ill>1308 ani>1309 wo>1002 al>$ pa>1128 ion>1310 ica>1247 ier>$
+ina>1101 ate>$ um>$ al>$ s>$ e>$ iz>1038 ula>1061 min>988 ing>$ b>1108 ation>$ p>1311 id>1312 mer>987 ist>1313 ac>1144 ise>$ il>975 age>$ us>$ y>$ ating>$ ato>1017 ita>1070
+ly>$ s>$ ed>$ ing>$ er>$ ty>$ tan>1033 ted>$ ties>$ ment>$ able>$
+l>$ ge>$ tion>$ nce>$ te>$ ting>$
+ng>$ es>$ sm>$ st>$ ous>$ al>$ ty>$ ze>1151 ties>$ she>1165 sed>$
+d>$ r>$ nt>$ s>$ lin>991 nce>$ pr>1157 bo>998
+ra>1234 ni>1073 ue>$ s>$ gin>1095 ge>1142 y>$ ene>1170 eni>1314 ens>$ am>1136 i>$ po>990 lo>1001 li>1064 ui>1315
+d>$ no>1194 tri>1059 r>$ s>$ ter>$ cha>1267 th>1145
+le>$ ed>$ ili>1281 es>$ ing>$ era>1295 io>1316 od>1062 ut>1040 rati>1058 ly>$ ble>$
+ion>$ ing>$ y>$ on>$ ure>$ ive>$ p>1311 mi>1004 ation>$ k>$ be>1100 ms>$
+s>$ ver>1107 d>$ con>1007 le>1279 ing>$ u>1317 nter>1318 y>$ rs>$
+e>$ ure>$ iti>982 ing>$ op>1023 s>$ ite>$ ity>$ is>$ co>1153 ph>1076 ho>981 ci>1012 yn>1319 ke>1163 a>$ ine>$ ce>1155
+d>$ s>$ nts>$ r>$ er>$ nti>965 t>$
+ent>1320 sio>1031 sed>$ po>990 ted>$ sing>$ ho>981 ses>$ hing>$ tle>1290 ts>$ so>1082 tri>1059 pe>1011 er>1321 ce>1155
+able>$ y>$ s>$ ding>$ ed>$ t>$ os>1025 er>$ ds>$ ro>1075 es>$ wa>993 or>$ der>$ ation>$ bo>998 ant>1322 ate>1323 ou>1149 ga>1141 br>1005 et>1006 fi>1118 ment>$ ay>1324 bl>1250 eg>1303 ba>1003
+tur>1325 tion>$ k>$ h>$ e>$ ted>$ tive>$ tor>$ os>1025 ting>$ ce>1155 ts>$ if>1113 rac>1055 ina>1101 ci>1012 rat>1102 iat>1046 ib>983 id>1312 ine>$
+es>$ ed>$ ful>$ ion>$ ing>$ ive>$ ib>983 ment>$ ori>1115 man>$ ly>$ ors>$ ant>$ er>$ enti>1326 wo>1002 ness>$ age>$
+on>$ y>$ e>$ ure>971 ion>1310 is>$ h>$ ing>$ po>990 uri>1126 iz>1038 ib>983 cul>1013 ia>$ m>$ per>1243 ant>1322 ol>1047
+s>$ y>$ ance>$ ce>$ na>1239 al>$ ne>1122 ag>1159 red>$ ate>$ ren>1245 o>$ ring>$ ge>1142 ci>1012 b>1108 able>$ ho>981 t>$ ry>$ ning>$ fa>1000 po>990 pr>1157 ve>1042 cha>1267 ro>1075 ns>$ man>1327
+s>$ y>$ ted>$ id>1312 un>980 hor>1328 po>990 on>$ era>1295 he>1051
+t>$ r>$ d>$ p>$ s>$ n>$ ze>1151 lan>1222 k>$ ing>$ wa>993 able>$ bi>1081 ling>$ ma>1089
+l>$ tion>$ ble>$ ted>$ ting>$ ry>$ tes>$ ria>1093 nt>$ tor>1127 tive>$ bly>$
+e>$ s>$ pt>1020 ing>$ b>1108 ula>1061 a>$ ina>1101 ph>1076 nis>1302 mer>987 pe>1011 ps>$ ping>$ ven>1088 oni>1285 mat>996 min>988 pl>995 na>1239 med>$
+d>$ t>$ y>$ e>$ ner>1329 pt>1020 s>$ ing>$ us>$ ous>$ ge>$ ga>1141 mat>996 os>1025 og>1125 ness>$ um>$ king>$
+ly>$ ed>$ ati>1216 al>$ h>$ ato>1017 ment>$ ra>1234 ric>973 er>$ ua>979 ari>1215 ang>1134
+sly>$ ton>1293 co>1153 ia>1009 ys>1330 ce>1155 na>1239
+ge>$ ma>1089 mo>1147 act>1176
+ce>$ ess>$ ci>1012 tic>1150 du>1225 ts>$ s>$ ali>1291 di>1069 che>1124
+ed>$ cat>1066 t>$ nit>1280 ci>1012 den>1116 rm>1167 le>$ ned>$ gu>1015 es>$ el>1331 ng>$ ll>$ sh>$ ning>$ na>1239 ght>986 er>$ nes>$ re>$ able>$ nis>1302 ner>1329 lm>1332 sc>1227 ling>$ lt>1188 x>1160 nder>1333 ce>$ da>1091 br>1005
+ect>994 ic>1178 ow>1334 y>$ u>1317 ies>$ es>$ ak>1211 ation>$ ag>1159 in>1335 ated>$ oo>1112
+r>$ s>$ d>$
+ps>$ se>$ vi>1019 t>$ bi>1081 ust>1180 pp>1254 ve>$ ble>$ led>$ d>$ ul>$ ha>1283 gu>1015 ki>1043 w>1086 ll>$ ir>1027 mm>1097 ge>$ bb>1336
+pl>995 s>$ ina>1101 ati>1216 ic>$ ond>1337 ine>1092 mat>996 y>$ ous>$ ing>$ or>969 our>1300 as>$ med>$ bi>1081 pu>1203 min>988 id>1312 bo>998 ps>$ ph>1076 mer>987 an>$ ag>1159 l>$
+ion>$ im>1028 er>$ ure>$ s>$ op>1023 ed>$ ain>1212 ical>$ ing>$ ive>$ ua>979 oc>1132 uri>1126 or>$ ide>1338 og>1125 ome>1339 ib>983 is>1079 oe>1340
+ed>$ s>$ ing>$ ish>1341 ame>1105 ove>1342 et>$ ad>1010 og>1125 er>$ ess>$ ac>1144 ar>1041 ou>1149 ai>1343 ly>$ ta>1044 ip>1307 ey>$
+d>$ nge>1344 r>$ y>$ t>$ ga>1141 ct>1032 nn>1263 st>$ gi>1139 bo>998
+e>$ hi>1054 or>$ ation>$ cr>992 ua>979 om>1071 able>$ ure>$ ho>981 he>1051 pe>1011 ack>1345 ca>999
+s>$ ed>$ ul>968 ly>$ ba>1003 y>$ ged>$ less>$ er>$ ding>$ gin>1095 ness>$ o>$ es>$ ent>$ ling>$ uc>1111
+rs>1231 ly>$ s>$ red>$ d>$ n>$ ring>$ wa>993 ra>1234
+ge>$ rs>$ tion>$ s>$ ry>$ ble>$ nt>$ bi>1081 in>1335 ting>$ te>$
+h>$ ain>1212 s>$ ua>979 ra>1234 ure>$ fo>1346 y>$ ly>$ al>$ up>1135 ation>$ br>1005 le>$ cu>997 be>1100 uri>1126 ling>$ ro>1075 co>1153 fa>1000 o>$ lis>1184 ness>$ wa>993 wo>1002
+os>1025 ris>1241 rin>1251 tion>$ ass>1347 ie>1174 lu>1114 ort>1298 ene>1170 ed>1348 hi>1054 er>$ ing>$ lan>1222 enti>1326 s>$ oi>1129
+mer>987 ry>$ ric>973 rs>$ mi>1004 ne>$ ck>$ ria>1093 ma>1089 rm>1167 re>$ ries>$ ra>1234 p>$ di>1069 log>1192
+d>$ r>$ s>$ ga>1141 ct>1032 id>1312
+d>$ nt>$ mi>1004 nc>1260 lie>1349 st>$ tt>1166
+uc>1111 ation>$ y>$ ea>1133 act>1176 ate>$ op>1023 al>$ ib>983 ies>$ ing>$ ic>$ ous>$ on>1350 oe>1340 ap>1255 ok>1065 el>$ ess>$ ip>1307
+ng>$ cat>1066 ts>$ cul>1013 cr>992 est>$ sc>1227
+ly>$ la>1060 t>$ ssi>1090 c>$ li>1064 se>$ gra>1202 um>$ str>1077 zed>$ sing>$ sse>1351 d>$ a>$ fi>1118 sp>1228 re>$ x>$ olo>970 ll>$ sts>$ es>$ sm>$ ra>1234 sta>1258 le>$ sti>966 sh>$ sa>1198 go>1158
+on>$ ng>$ ve>$ c>$ st>$
+one>$ y>$ ic>$ as>1214 s>$ er>$ ist>1313 om>1071 ol>1047 ab>1218 ed>$ ew>1299 or>$ an>1177 al>1050 ec>1173 ing>$ th>1145 ies>$ ate>$ ob>1352 it>989 ea>1133 ot>1138 es>1049 ib>983 et>1006 eme>1353 ati>1216 ra>1234 ag>1159 ili>1281
+ous>$ bu>1143 pt>1020 ve>1042 be>1100 ly>$ va>1021 z>1252 ge>1142 lle>1354 ght>986 f>1083 vi>1019 gu>1015 os>1025 mp>1152 do>1193 um>$ de>$ on>$ lli>1355 le>$ bi>1081 di>1069 lla>1275 min>988 bb>1336 ot>1138 mm>1097 man>1327 li>1064 dg>1074 gg>1230 pe>$ y>1039 mo>1147
+ng>$ on>$ ge>1142 ed>$ es>$ tes>$ sh>$ cl>1146 me>1067 ter>1018 gra>1202 po>990 st>$ lit>1187 se>1236 ble>$ um>$ an>$
+ing>$ te>1356 lin>991 lic>1185 bo>998 pt>1020 sa>1198 ng>1240
+l>1162 r>$ nt>$ nce>$ t>$ um>$ cu>997 ba>1003 qu>1014 ment>$ as>1214 cti>1249 x>1160 ssi>1090 mb>1084 sse>1351 min>988 ei>1357 ver>1107 y>$ fu>1266 ud>1094 at>$ ho>981 con>1007 ble>1358 nsi>1197 ed>$ wo>1002 st>$ us>$ ness>$ bo>998
+w>$ log>1192 un>980 t>$ va>1021 r>$ ce>1155 si>1195 n>$ sti>966 sed>$ ck>1034 mi>1004 ur>$ me>$ sa>1198 b>1108 ci>1012 p>1311 us>$ ut>1040 ma>1089 x>1160 cul>1013 y>1039 id>1312 ge>1142 iss>1359 gra>1202 cr>992 de>1235 le>1279
+mat>996 p>$ od>$ co>1153 mo>1147 on>$ t>1360 ge>1142 w>1086 gra>1202 bi>1081 ver>1107 us>$ und>1183 ff>1123 ch>1148 uc>1111 si>1195 ld>$ x>1160 ur>1048 log>1192 ok>1065 kin>1253 ut>1040 cr>992 mi>1004 me>1067 la>1060 ck>$
+nge>1344 ni>1073 rg>1035 ir>1027 eo>1361 in>$ ble>$ t>$ nt>$ l>$ se>$
+y>$ te>$ tion>$ ble>$ l>$ nce>$ ry>$ tor>1127 ting>$ che>1124 nge>1344 nt>$ ta>$ go>1158 ug>1181 bly>$ m>$ ine>1092 ci>1012 s>$ dd>1276 ver>1107
+op>1023 ro>1075 ore>$ bo>998 y>$ oo>1112 ot>$ ow>1334 ta>1044 ad>1010 able>$ ness>$ ba>1003 ment>$ ca>999 ly>$ ak>1211 ma>1089 are>$ li>1064 up>1135 ful>$ fi>1118 af>1137 oe>1340 ap>1255 aw>1130 min>988 cl>1146 mo>1147 od>$
+y>$ le>1279 s>$ da>1091 we>1008 ly>$ ment>$ do>1193 ful>$ wa>993 qu>1014 ms>$ br>1005 ness>$ nu>1362 pa>1128 lo>1001 h>$ bo>998 ba>1003 pi>1078 g>$ c>$ mi>1004 ni>1073 po>990 wo>1002
+l>$ tion>$ y>$ cti>1249 ge>$ ry>$ nt>$ ble>$ w>$ ur>1048 ic>$ pp>1254 s>$ ns>$ ries>$ ke>$ bi>1081 tur>1325 gn>985 ria>1093 m>$ ber>1363
+ri>1206 ap>1255 ina>1101 al>$ ho>981 ula>1061 op>1023 ent>$ ep>1364 re>1289 end>1365 ui>1315 ious>$ ill>1308 ove>1342 ara>1282 ene>1170 era>1295 uri>1126 ure>971 ore>1366 os>1025 ei>1357 ence>$ ous>$ ie>1174 ate>$ ot>1138 ast>1045 he>1051 ation>$ eni>1314 om>1071 ori>1115
+z>1252 or>$ c>$ ght>986 qu>1014 ver>1107 al>$ es>$ fe>1140 on>$ va>1021 fi>1118 ous>$ um>$ hi>1054 ba>1003 vo>1273 er>$ pr>1157 per>1243 as>$ gra>1202 k>$
+iss>1359 itt>1367 eti>1368 an>$ s>$ ic>$ en>$ ai>1343 eri>1284 olo>970 art>1210
+r>$ en>$ d>$ st>$ so>1082 nt>1294 igh>1369 l>1162 ar>$ et>$ ak>1211 b>1108 ed>$
+ly>$ lat>1120 led>$ s>$ og>1125 ity>$ ling>$ iz>1038 lic>1185 lm>1332 ys>1330 iat>1046 ing>$ e>$ ou>1149 is>1079 ita>1070 k>$ ian>1370 lu>1114 wo>1002 co>1153
+n>$ ct>1032 s>$ ci>1012 fu>1266 t>$ di>1069 l>$ ut>1040 are>1213 g>$ ara>1282 op>1023 es>$ ak>1211 fa>1000 vi>1019 cke>1209 w>1086 ca>999 z>1252
+ve>$ nce>$ nt>$ nd>1371 rs>$ f>$ ty>$ ld>$ st>$ vi>1019 ns>$ ce>$ va>1021 nat>1022 tor>1127 w>$ vo>1273 le>$
+g>$ y>1039 ven>1088 ci>1012 ment>$ ne>1122 na>1239 ous>$ om>1071 li>1064 ce>1155 fi>1118 ut>1040 fl>1277 vi>1019 uc>1111 os>1025
+ica>1247 t>$ f>$ ied>$ or>969 y>$ est>1104 ies>$ ier>$ ici>978 ol>1047 ul>$ un>980 ia>1009 ac>1144 ug>1181
+g>1372 ly>$ ari>1215 ous>$ ome>1339 ag>1159 ho>981 af>1137 z>1252 ni>1073 pl>995 na>1239 u>1317 w>1086 as>$ ary>$ ot>1138 y>$ op>1023 f>1083 able>$ ol>1047 ai>1343 bu>1143
+nt>$ te>$ m>$
+s>$ ed>$ ing>$ a>$ ion>$ us>1190 y>$ er>$ igh>1369 ove>1342
+ng>$ se>$ de>$ ste>967 che>1124 nd>$ ll>$ re>$ th>1145 fe>1140 nk>1223 tch>1164 ned>$ ld>1189 tt>1166 rl>1248 gs>$ ck>$ gg>1230 nne>1373
+es>$ eme>1353 ing>$ er>$ ue>$ ed>$ no>1194 ine>$ ra>1234 ina>1101 on>$ re>1289 les>$ ge>1142 ea>1133 mat>996 gin>1095 ini>1085 s>$ ull>1374 ew>1299 ne>1122 gl>1207
+s>$ ly>$ hr>1057 ed>$ ry>$ il>975 ing>$
+gi>1139 gu>1015 ge>1142 l>$
+d>$ ss>$ pt>1020 nt>$ rn>1261 lle>1354 bo>998 ment>$ ns>1375 rs>$ ed>1348 ive>1109 nce>$ ly>$ ut>1040 lla>1275 rt>1237 rp>1238 le>1279 sto>1257 ale>1376 nde>1199 ful>$ str>1077 ans>$ ndi>1200 able>$ ls>$ t>$ y>$ mi>1004 rati>1058 li>1064 ber>1363 ph>1076 ri>1206 lli>1355 nds>$ ps>$ ous>$ ho>981 mat>996 ry>1063 se>1236
+s>$ ing>$ er>$ ly>$ ed>$ we>1008 ma>1089 for>1274 y>$ en>$ ful>$ eo>1361 ness>$ est>$ cl>1146 ho>981 li>1064 he>1051 bu>1143
+on>$ tal>1270 c>$ str>1077 sl>1377 es>$ ous>$ ste>967 ti>1205 sti>966 ven>1088 ze>1151 sts>$ ate>$ lan>1222 vi>1019 ari>1215 ble>$ eni>1314 se>$ rl>1248 bi>1081 ment>1037 al>$ sing>$
+ren>1245 ssi>1090 ct>1032 rr>1220 ns>1375 st>1378 rs>$ ti>1205 nd>1371 ra>1234 gu>1015 sse>1351 d>$ it>$ ter>1018 ring>$ nce>1379 sa>1198 red>$ bo>998 as>1214 rou>1380 cat>1066 ed>1348
+ni>1073 l>$ rd>1232 tion>$ z>1252 ge>$ tive>$ te>$ ret>1224 ting>$ tor>1127 ns>$ in>$ rs>$ rte>1288 ry>$ nd>1371 nt>$ de>$ pi>1078 e>$ nce>$ rit>1246 bi>1081 rc>1287 me>$ ble>$ wa>993 sm>1269 mat>996 ci>1012 bo>998 sta>1258
+nta>1030 ter>$ d>$ l>$ r>$ s>$ tri>1059 nts>$
+al>$ ation>$ ed>$ ary>$ ing>$ ari>1215 o>$ able>$
+g>$ ist>1313 e>$ ation>$ ated>$ d>$ ant>$ ary>$ s>$ al>$ isc>1026 ating>$ ish>1341 ance>$ ous>$ ates>$ ato>1017 ism>$ ut>1040 ari>1215
+the>1201 nce>$ ment>$ ta>1044 rs>$ nt>$ st>$ rat>1102 l>$ ner>1329 ous>$ tt>1166 tic>$ nder>1333 ni>1073 oi>1129 ring>$ on>$ br>1005 mo>1147 di>1069 ry>$ ns>$ able>$ ran>1103 ts>$ no>1194 red>$ si>1195 co>1153 nat>1022 ant>1322 vi>1019 nes>1381
+ary>$ ic>$ ate>$ ac>1144 ation>$ ea>1133 ari>1215 ating>$ ant>$ is>$ oi>1129 us>1190 ow>1334 al>$ ev>1382 y>1039 id>1312 ato>1017 ie>1174 ok>1065 os>1025 ium>$ ed>$ oa>972 ill>1308 and>$ ob>1352 as>$ um>$
+e>$ y>$ ula>1061 ious>$ ing>$ le>$ cu>997 ce>1155 on>$ oc>1132 co>1153 ies>$ ial>$ ity>$ ita>1070 up>1135 s>$
+il>975 l>$ te>$ tion>$ nta>1030 nce>1379 tive>$ ble>$ sta>1258 si>1195 nge>1344 ge>$ ta>1044 tor>1127 cu>997 po>990 ga>1141 de>$ ting>$ mp>1152 ria>1093 nn>1263 ding>$ bly>$ ci>1012 sse>1351 sc>1227 ric>973 gin>1095
+m>$ w>1086 or>$ rs>1231 n>$ s>$ g>$ ing>$ len>1383 the>1201 ur>$ tal>1270 lat>1120 ug>1181 ub>1384 ph>1076 rp>1238 c>$ den>1116 li>1064
+t>$ gh>1385 p>$ d>$ ble>1358 ch>$
+n>$ ing>$ s>$ ay>$ ber>1363 ba>1003 or>969 ak>1211
+ly>$ r>$ gi>1139 n>$ ur>$ bo>998 e>$
+y>$ ary>$ ch>$ ry>$ ation>$ rati>1058 ric>973 ari>1215 am>1136 ak>1211 hing>$ up>1135 ro>1075 o>$
+ed>$ s>$ er>$ ing>$ ak>1211
+ic>$ ish>1341 ing>$ io>1316 oc>1132 ow>1334 og>1125 a>1386 oi>1129 y>1039
+ed>$ ation>$ ate>$ ive>1109 ula>1061 ant>1322 ian>1370 oi>1129 rati>1058 ating>$ ori>1115 ene>1170
+t>$ e>$ ity>$ hi>1054 al>$ ui>1315 ing>$ ua>979 ue>1191 or>$ ion>$ ive>$ ib>983 pa>1128 igh>1369
+t>$ ce>$ di>1069 do>1193 ec>1173 ish>1341 ame>1105
+r>$ nti>965 less>$ mat>996 si>1195 ning>$ dr>1072 li>1064 ned>$ tic>$ ns>$
+ion>$ ed>$ ive>1109 es>$ ing>$ or>969 era>1295 able>$ ter>1018
+ht>$ gl>1207 s>$ e>$ hing>$ hed>$ her>$ ged>$ al>$ gin>1095 ly>$ ha>1283 ation>$ ing>$ ated>$
+le>$ t>$ lic>1185 s>$ bo>998 ho>981 lis>1184 ato>1017 era>1295 ation>$ be>1100 bi>1081
+t>$ ce>$ ed>$ ing>$ s>$ dr>1072 ame>1105
+r>$ ce>1155 bo>998 x>1160 in>$ p>1311 y>$ mm>1097 im>1028 ci>1012 s>$ ge>$ ble>$ w>1086 us>1190 ud>1094 mat>996 cti>1249 bi>1081 id>$ de>$ din>1387 e>$ ca>999 va>1021 be>1100
+on>$ ble>$ ng>$ ve>$ c>$ bi>1081 fi>1118 mi>1004 tat>1121 es>$ er>$
+m>$ tion>$ ted>$ ph>1076 de>$ nts>$ du>1225 tu>1278 ting>$ ding>$ ss>$ va>1021 da>1091 ine>1092 tor>1127 ce>1155 vi>1019
+d>$ s>$ nge>1344 ls>$ r>$ t>$ x>1160 us>1190
+ect>994 ita>1070 ort>1298 her>1304 ap>1255 are>1213 ens>1388 oo>1112 end>1365 ici>978 ac>1144 ear>1389 lan>1222 ber>1363 ot>$ ok>1065 er>$ ring>$ an>$ ing>$ ir>1027 ass>1347 ed>$ os>1025 ra>1234 s>$ ee>1390 ell>1391 ond>1337 y>$ ons>1392
+ina>1101 nce>1379 ndi>1200 nti>965 te>$ cl>1146 l>$ ge>$ ine>1092 ting>$ rd>$ tic>$ tion>$ ini>1085 si>1195 rt>$ y>$ chi>1393 k>1305 min>988 nds>$ mp>1152
+ng>$ c>$ ga>1141 va>1021 tu>1278 mo>1147 fi>1118 on>$ ve>$ gi>1139 ne>$ nal>$ vi>1019 mat>996 ge>$ ble>$ bu>1143 er>$ est>$
+ti>1205 rit>1246 tte>1036 rou>1380 ing>$ n>$ s>$ es>$ gu>1015 ris>1241 rat>1102 gi>1139 ut>1040 ric>973 us>$ ur>$ ts>$ w>1086
+er>$ le>$ ling>$ ol>1047 s>$ ran>1103 re>1289 ing>$ oo>1112 ard>1052 ur>1048 io>1316 ed>$ ly>$ ast>1045 be>1100 ria>1093 all>1394
+l>$ tu>1278 al>$ fi>1118 ful>$ me>1067 re>$ mat>996 ze>1151 s>1271 ty>$ tle>1290 ga>1141 ties>$ tion>$ gu>1015 ble>$ ate>$ fa>1000 an>$ ating>$ ring>$ pa>1128 qu>1014 go>1158 ght>986 de>$ ato>1017 ric>973 mi>1004
+s>$ ing>$ th>$ ed>$ n>$ er>$ ly>$ ave>984 bo>998 y>$ fa>1000 mo>1147 ou>1149 ba>1003 do>1193 fl>1277 ling>$ est>$ j>1161 led>$
+min>988 ial>$ nat>1022 ta>1044 ed>$ pr>1157 nal>$ ing>$ no>1194 y>$ ist>1313 at>1229 ally>$ wa>993 io>1316 nit>1280 ina>1101 ized>$ ies>$ ac>1144 fa>1000 she>1165 me>1067 co>1153 ge>1142 ma>1089 og>1125 ren>1245 ise>1395 pi>1078 os>1025 oi>1129 cr>992 wo>1002 pa>1128 ol>1047
+me>1067 pr>1157 ss>$ at>$ mi>1004 nch>1396 e>$
+y>$ ks>$ e>$ o>$ ut>1040 a>$ ked>$ ny>$ king>$ ned>$ na>$ ni>1073 ze>1151 nu>1362
+il>975 ble>$ in>$ ur>1048 ck>$ ba>1003 che>1124 ke>$ min>988 ry>$ bi>1081 ria>1093 bly>$ bo>998 ph>1076 king>$ str>1077 wa>993 sta>1258 ries>$ go>1158 se>1236 chi>1393 ge>$ rs>$ pu>1203 rd>1232 po>990 cl>1146 cha>1267 ce>1155 rac>1055 ste>967 mo>1147 do>1193 ro>1075 rp>1238
+ter>$ ten>1106 y>$ ts>$ s>$ ra>1234 ron>974 rie>1292 th>$ ted>$ ty>$ res>1397 ting>$ to>1156 tly>$ ru>1301 rea>1208 ness>$ m>$ ties>$ bo>998 c>$ x>$ g>1372 han>1398 tc>1399
+ct>1032 bu>1143 eve>1256 tion>$ es>$ dg>1074 ot>1138 ar>1041 al>$ mo>1147 ca>999 nat>1022 ci>1012 de>$ cul>1013 nge>1344
+s>$ t>$ n>$ ly>$ rs>$ ho>981 up>1135 ep>1364 y>$ ove>1342 ry>$ ra>1234 aw>1130 wa>993 dly>$ do>1193 le>1279 bo>998 able>$ red>$ lie>1349
+d>$ s>$ gs>$ gly>$ eti>1368
+s>$ d>$ r>$ ate>$ ly>$
+al>$ ul>968 ian>$ s>$ e>$ ad>1010 ac>1144
+l>$ te>$ ge>$ n>$ tions>$ tri>1059
+ti>1205 ded>$ si>1195 ding>$ ed>$ ing>$ da>1091 ds>$ den>1116 der>$ ess>$ ted>$ cy>$ tly>$ ua>979 er>$
+enc>1286 or>$ al>$ ment>1037 es>$ ff>1123 c>$ zed>$ sm>$ sti>966 um>$ sed>$ mp>1152
+e>$ gs>$ t>$ k>1305 ge>1142 si>1195 gin>1095 o>$ al>$ ated>$
+r>$ log>1192 mi>1004 sp>1228
+ng>$ es>$ ly>$ o>$ an>$ sm>$ ze>1151 so>1082 um>$ ty>$ ate>$ ne>$ ed>$ se>$ al>$
+ng>$ c>$ st>$ es>$ z>1252 a>$ sm>$ ti>1205 te>$
+men>1400 ic>$ s>$ y>$ mo>1147 a>$ bi>1081 ing>$ for>1274 ies>$ ous>$ ni>1073 mat>996 iz>1038 mi>1004 ina>1101 od>1062 bo>998 im>1028
+ce>$ d>$ nt>1294 ng>$ r>$ l>$ s>$ ning>$ ns>$ nf>1401 ned>$
+d>$ f>$ s>$ ves>$ ter>$ op>1023 oa>972
+al>$ ent>$ ous>$ enc>1286 pa>1128 ng>$ an>$ de>$ ty>$ st>$ sm>$ zed>$ lli>1355 ties>$ er>$
+r>$ log>1192 s>$ di>1069 x>1160 gra>1202 tic>$ the>1201 do>1193 len>1383
+ula>1061 le>$ ip>1307 e>$ s>$ al>$ ing>$ ism>$ k>$ ost>1402 ho>981 ian>$ able>$
+s>$ d>$
+ee>$ ed>$ ing>$ er>$ y>$ le>$ al>$
+ib>983 ip>1307 et>1006 ati>1216 af>1137 o>$ im>1028 if>1113 ac>1144 y>1039 ee>1390 edi>1175 ep>1364 ap>1255 ame>1105 eat>1403 uc>1111 ast>1045 um>$
+d>$ ce>$ t>$ cy>$ gl>1207 eo>1361 ic>$ y>$
+ye>1242 l>$ po>990 no>1194 ge>1142 na>1239 sp>1228 om>1071 gra>1202 ph>1076 fi>1118 act>1176 ni>1073 che>1124 pi>1078 ver>1107 us>$ vi>1019
+ha>1283 ui>1315 um>1404 le>$ ula>1061 e>$ oa>972 iss>1359 ast>1045 hi>1054 ling>$ hes>$ ot>1138 if>1113 ad>1010 il>975 hed>$ ation>$ la>1060 up>1135 or>969 ut>1040
+s>$ al>$ ing>$ ed>$ ina>1101 ers>$ ent>$ ly>$ wa>993 ato>1017 an>$ ost>1402 ai>1343 ho>981 ati>1216 y>$ int>1172 ind>1098 ome>1339 up>1135 wo>1002 oun>1405 od>1062
+e>$ io>1316 s>$ ali>1291 oo>1112 ia>$ la>1060 ic>$ tr>1406 re>1289 ber>1363
+d>$ y>$ s>$ f>1083 ing>$ ed>$ ess>$ and>$ et>$ or>969 ou>1149 oc>1132 at>1229 if>1113
+e>$ or>$ che>1124 s>$
+ing>$ es>$ ed>$ er>$ y>$ up>1135 ma>1089 a>$ wo>1002 do>1193 et>$ ph>1076 for>1274 hi>1054 to>1156
+s>$ ation>$ ating>$ ate>$ ato>1017 ba>1003 ten>1106 for>1274 ie>1174 y>$ ed>$ lin>991 act>1176 ing>$ bo>998 cl>1146 one>1117 ma>1089
+nts>$ d>$ th>$ r>$
+ing>$ s>$ ed>$ ers>$ ou>1149 able>$ pl>995 for>1274 fl>1277 lo>1001 y>$ et>$ bo>998 da>1091 ro>1075 ar>1041 ly>$ en>$ we>1008
+s>$ y>$ ne>1122 ial>$ c>1196 e>$ ies>$ ing>$ tion>$ ted>$ m>$ wa>993 bi>1081 ting>$ ts>$
+t>$ im>1028 ed>$ es>$ ua>979 y>$ ib>983 ing>$ ur>1048 pe>1011 ie>1174 pa>1128 ic>$ id>1312 ity>$ ation>$ is>$ ious>$ el>$ er>$ us>$ pl>995 ia>$ ili>1281 able>$ x>$ ion>$ op>1023 on>1350 f>$ if>1113 en>1204 ala>1407 ate>$ ill>1308 wi>1110 or>$ pr>1157 vi>1019 ag>1159 ha>1283 ant>1322 ig>1096 olo>970 ce>1155 po>990
+l>$ d>$ se>$ r>$ m>$ ps>$ n>$ th>1145 f>$ k>$ per>1243 ting>$ ter>$ ping>$ ped>$ sh>$ ing>$ ts>$ ted>$ z>1252
+al>$ t>$ ses>$ ine>1092 p>$ nc>1260 la>1060 ity>$ ck>1034 mb>1084 ous>$ end>1365
+ow>1334 ang>1134 ing>$
+le>$ ping>$ e>$ s>$ tion>$ ped>$ ation>$ ula>1061 ie>1174 per>1243 ated>$ her>1304 lin>991 pl>995 ro>1075 lie>1349 lic>1185 ing>$ w>1086 bo>998 y>1039 art>1210 pa>1128 ali>1291 lat>1120 co>1153
+es>$ ng>$ ed>$ ty>$ mo>1147 st>$ c>$ sm>$ z>1252 ne>$ mat>996 mi>1004
+al>$ shi>1168 ed>$ er>$ ing>$ ate>$ able>$ na>1239 ary>$ ment>$ ist>$ iz>1038
+tion>$ lly>$ nt>$ te>$ ting>$ tor>$ cy>$ ls>$ tive>$ ble>$ tur>1325 lity>$ st>$ ci>1012 bly>$ na>$
+er>$ po>990 pe>1011 s>$ on>$ t>$ pr>1157 ing>$ es>$ pl>995 ping>$ y>$ ed>$ hr>1057 ac>1144 olo>970 f>1083 pa>1128 le>1279 it>989
+r>$ tion>$ te>$ ting>$ tor>$ tive>$
+end>1365 ing>$ t>$ s>$ er>$ ly>$ han>1398 her>1304 est>$ la>1060 anc>977 ed>$ ara>1282 res>1397 ie>1174 ness>$ hr>1057 ort>1298
+t>$ ng>$ se>$ d>$ sing>$ sti>966 sh>$ sm>$
+s>$ d>$ ur>1048 ry>$ tic>$ rs>$ rati>1058
+tur>1325 tion>$ l>$ tive>$ te>$ ble>$ rc>1287 nce>$ ting>$ nt>$ ge>$ rm>1167
+d>$ s>$ tic>1150 r>$ og>1125 ca>999 bo>998 x>1160
+her>$ s>$ og>1125 ba>1003 ing>$ e>$ ion>1310 hes>$ hing>$ ic>$ ted>$ li>1064 pr>1157 os>1025 y>1039 no>1194 ting>$ ation>$ ch>$ hed>$ ov>1408 om>1071 on>1350 oc>1132 ran>1103 ca>999 ap>1255 ter>$ able>$ ty>$ pa>1128 fa>1000 rop>1409 ag>1159 lo>1001 hor>1328
+er>$ s>$ ic>$ ome>1339 ed>$ ing>$ fe>1140 y>$ rou>1380 lin>991 ina>1101 wa>993 ie>$
+ad>$ nsi>1197 ast>1045 lm>1332 si>1195 tic>$ mi>1004 st>$ tor>1127 ar>1041 al>1050 ld>$ at>$ nd>$ tt>1166 um>1404 ism>$ e>$ mo>1147 ist>1313 no>1194 ses>$ ba>1003 ned>$ vel>1087 dr>1072
+ng>$ c>$ ties>$ a>$ ty>$
+ty>$ ng>$ es>$ ties>$ zed>$ st>$ sm>$ ous>$ sed>$ al>$ ta>1044 cal>$ fi>1118 ent>1320 gin>1095 um>$
+rati>1058 ing>$ ance>$ er>$ ant>$ ed>$ ent>$ ence>$ ic>$ uri>1126 ib>983 oc>1132 ive>$ lin>991 ene>1170
+ili>1281 ora>976 eti>1368 oli>1297 ou>1149 so>1082 as>1214 ir>1027
+s>$ ed>$ ing>$ ers>$ po>990 or>969 ay>$ able>$ ar>1041 oo>1112
+ys>1330 ty>$ og>1125 th>$ ties>$ ous>$ ted>$ mo>1147 ke>1163 ten>1106 ow>1334 ga>1141 gi>1139 ded>$ ur>1048 wo>1002 ge>1142 cul>1013 ua>979 sc>1227 po>990
+ut>1040 e>$ h>$ ast>1045 lo>1001 ra>1234 uri>1126 y>$ do>1193 ak>1211 ca>999 olo>970 la>1060 ies>$ iat>1046 k>$ is>1079
+her>$ s>$ ua>979 ment>$ ure>$ ch>$ or>$ ud>1094 ly>$ z>$ ca>999 res>1397 ous>$ ol>1047 ula>1061
+se>$ m>$ n>$ l>$ k>$ su>1068 sa>1198 ble>$ d>$ sing>$ uc>1111 ch>$ va>1021 bly>$ bi>1081
+h>$ e>$ man>$ ce>1155 ale>1376 per>1243 y>$ po>990 ist>1313 ome>1339 qu>1014 cr>992 an>$ co>1153 ca>999 men>$ kin>1253
+nt>$ d>$
+ve>$ c>$ ble>$ bi>1081 es>$ fi>1118 s>1271 zed>$
+ge>1142 ce>$ t>$ ium>$ gl>1207 sm>1269 k>$ si>1195
+s>$ ing>$ ed>$ ized>$ ro>1075 y>$ er>$ ise>1395 ga>1141
+ow>1334 ed>$ s>$ ing>$ a>1386
+si>1195 y>$ t>$ d>$ ca>999 sp>1228 ps>$ pa>1128 ster>$ na>1239 ma>1089 j>1161 se>1236 co>1153 we>1008
+h>$ ip>1307 im>1028 ur>1048 er>$ iv>1410 an>1177 ed>$ ra>1234 s>$ ing>$ it>989 y>$ ic>1178 if>1113 ina>1101 ies>$ il>975 id>1312 do>1193 ry>$ ig>1096 ist>1313
+t>$ m>$ hed>$ ed>$ ation>$ hing>$ ing>$ hes>$ er>$ es>$
+s>$ ed>$ ing>$ ru>1301 y>$ er>$ et>$ ly>$ en>$ le>$ ro>1075 ling>$ ee>1390 fu>1266
+ls>$ sti>966 lly>$ r>$ c>$ lis>1184 ble>$ lity>$ min>988
+e>$ al>$ n>$ ing>$ bi>1081 ated>$ ity>$ ba>1003 be>1100 ation>$ ist>$ gi>1139 ates>$
+ic>1178 ly>$ ion>$ ive>$ s>$ ed>$ ing>$ iti>982 eri>1284 ment>$ ors>$ ise>1395
+ing>$ s>$ ed>$ ies>$ es>1049 en>$ er>$ ma>1089 bo>998 le>1279 up>1135 ca>999 ou>1149 y>$ ke>1163
+y>$ n>1411 age>$ ed>$ sa>1198 ti>1205 se>$ si>1195 ing>$ ted>$ ter>$ ei>1357 ts>$ ge>1142 b>1108 gr>1154 ance>$ ten>1106 gin>1095 able>$ wa>993 mo>1147
+ng>$ al>$ ous>$ ona>1119 vi>1019 ne>$ st>$
+ow>1334 ing>$ ed>$ s>$ ant>$ ula>1061 ig>1096
+on>$ ve>$ ng>$ vi>1019 c>$ ble>$ mi>1004 ous>$
+e>$ ment>$ ing>$ y>$ f>1083
+ar>$ ated>$ ation>$ ous>$ ato>1017 es>$ ia>1009 tur>1325 ating>$ us>$ ates>$
+r>$ d>$ n>$ st>$
+ing>$ y>$ s>$ er>$ em>1412 es>$ ed>$ ca>999 lin>991 ly>$ il>975 or>$ va>1021 ow>1334 ba>1003 able>$ ig>1096 ica>1247 ine>1092 mi>1004 wa>993 ma>1089 en>$ ver>1107 fa>1000 ron>974 dl>1413 iat>1046 lo>1001 bl>1250 lie>1349 ou>1149 j>1161 ven>1088 ies>$ ied>$
+er>$ ing>$ it>$ ed>$ y>$ es>$ ation>$ ari>1215 ies>$ un>980 ato>1017 et>1006 able>$ ick>1414 oc>1132 ons>$ one>1117 age>$ og>1125 eli>1415
+ort>1298 y>$ ing>$ os>1025 one>1117 ine>1092 res>1397 il>975 ies>$ le>$ hi>1054 ling>$ uc>1111 a>$ s>$
+ion>$ ance>$ eu>1416 ue>1191 ary>$
+ng>$ tion>$ c>$ tive>$ on>$ ze>1151 ve>$ me>$
+h>$ ment>$ ph>1076 er>$ wa>993 s>$ ed>$ ing>$ y>$ ia>1009
+s>$ iti>982 ria>1093 er>$ ro>1075
+as>1214 ol>1047
+d>$ rd>$ ting>$ cti>1249 ted>$ ts>$ k>$ n>$ va>1021 gu>1015
+ng>$ c>$ da>1091 sh>$ ne>$ ze>1151 sm>$ tic>1150 ga>1141 es>$ sti>966
+we>1008 wo>1002 wa>993 ner>1329 for>1274 ness>$ ba>1003 m>1417 ga>1141 ful>$ y>1039 pl>995 bo>998 sm>1269 wi>1110 gu>1015 fi>1118 sp>1228 fa>1000 z>1252 su>1068 ni>1073 do>1193 pr>1157 be>1100 sc>1227 br>1005 po>990 ke>1163 j>1161 sh>1268
+s>$ ation>$ ed>$ er>$ ing>$ ry>$ ance>$ tra>1418 ly>$ up>1135 ab>1218 ic>1178 ness>$ bo>998
+ere>1419 ic>1178 ect>994 ers>$ ort>1298 ering>$ ee>$ ens>1388 ai>1343 ili>1281 s>$ end>1365 ed>$ ir>1027 le>$ us>1190 y>$ lin>991 ing>$ et>$ ei>1357 lic>1185 id>1312 ins>$ ini>1085 lu>1114 ron>974 ol>1047 oc>1132 lo>1001 ra>1234 es>$ ig>1096 eu>1416 ine>1092 od>1062
+no>1194 ni>1073 olo>970 ment>$ y>$ ot>1138 oe>1340 bi>1081 ond>1337 ly>$ s>$ ov>1408 di>1069 os>1025 bo>998 oa>972 ron>974 op>1023 oli>1297 wa>993 oo>1112 lo>1001
+y>$ ies>$ ical>$ ra>1234 ist>$ ue>$ ous>$ s>$ gin>1095
+s>$ th>1145 mb>1084 ti>1205 di>1069 ly>$ w>1086 bo>998 less>$ ow>1334 pl>995 ter>1018 ma>1089 lin>991 pa>1128 tre>1420 to>1156 ga>1141 an>1177 op>1023 lo>1001 ta>1044 f>1083 al>$ bu>1143 as>1214 tri>1059 br>1005 y>$ ke>1163 pi>1078 kin>1253 ts>$
+ions>$ s>$ ed>$ ing>$ er>1321 he>1051 ry>$ ation>$ ria>1093 ro>1075 o>$ y>$ ho>981 ly>$ all>1394 im>1028 ick>1414 u>1317 abl>1421
+ee>1390 g>$ s>$ es>$ al>$
+d>$ t>$ g>1372
+ng>$ ent>$ a>$ c>$ ence>$ ted>$ ly>$ ting>$
+y>$ ent>$ ed>$ ing>$ es>$ ly>$ ic>1178 ul>968 er>$ ge>$ ence>$ s>$ iat>1046 gin>1095 der>1422 a>$ on>1350
+s>$ d>$ r>$ ber>1363 tte>1036 lt>1188 pr>1157 nt>$ nce>$
+nc>1260 lly>$ me>$ lis>1184 ls>$ lity>$ ry>$ bi>1081 nt>$ s>$ ble>$ iss>1359 ut>1040 ci>1012 mi>1004 ge>$ wa>993 de>$ ries>$ ppe>1080 go>1158 ld>1189 e>$ che>1124 vi>1019 ly>1423 bly>$ ce>1155 cy>$ ck>1034 rl>1248 ria>1093
+d>$ s>$ rs>$ lo>1001 t>$ mi>1004 ck>$ olo>970
+e>$ us>1190 ud>1094 os>1025 ing>$ ai>1343 ip>1307 op>1023 ists>$ ub>1384 am>1136 ou>1149 ave>984 ot>1138 oc>1132 ass>1347 ys>1330 ic>$ iv>1410
+le>$ ly>$ ai>1343 era>1295 t>$ ion>1310 s>$ us>$ ing>$ ed>$ ora>976 lat>1120 li>1064 kin>1253 ers>$ ath>1296 ho>981 ass>1347 ag>1159 ire>$ ered>$ oo>1112 ha>1283 os>1025 gr>1154 ering>$ fi>1118 oli>1297 y>$ an>1177 ba>1003 ut>1040 art>1210
+s>$ a>$ ical>$ ing>$ y>$ ed>$ o>$
+ess>1169 oun>1405 ee>$ edi>1175 eg>1303 et>$ im>1028 ow>1334 oo>1112 os>1025 ove>1342 ud>1094 ue>1191
+la>1060 re>$ e>$ rati>1058 n>$ ish>1341 ing>$ ard>$ ring>$ s>$ al>$ ous>$ ide>1338 ise>1395 rg>1035 ment>1037 able>$ an>1177
+ity>$ ica>1247 ities>$ ce>1155 ta>1044 ch>$ ted>$ k>$ ning>$ ts>$ ting>$ ter>$ ge>$ cti>1249 ci>1012 ion>$ ist>$ a>$ ned>$ s>$ ett>1424 ty>$ ism>$ ite>1425 gin>1095 tle>1290 ner>$ cat>1066 if>1113 uc>1111
+is>$ el>1331 ical>$ ter>1018 ici>978 tal>1270 io>1316 fu>1266 ts>$ ide>1338 tic>1150 q>1426 se>1236 itt>1367 cr>992 ed>$ to>1156 tan>1033 tro>1427 er>$ ca>999 m>$ ome>1339
+e>$ man>1327 ta>1044 med>$ tu>1278 ms>$ min>988 ce>1155 mat>996 mer>987 wa>993 ci>1012 ge>1142 gi>1139 d>$ mu>1099
+y>$ v>1428 s>$ g>$ t>$ ul>968 re>$ c>$ ra>1234
+s>$ ing>$ y>$ gr>1154 age>$ up>1135 le>$ ou>1149 ta>1044 pa>1128 la>1060 wa>993 do>1193 il>975 ling>$ bo>998 po>990 lis>1184 dr>1072 ness>$ na>1239 ber>1363 pi>1078 fi>1118 or>969 log>1192 ho>981 ro>1075 co>1153 lu>1114 pe>1011 ma>1089 able>$ ly>$ ba>1003 br>1005 bi>1081 ass>1347 han>1398 ie>1174 tra>1418 ato>1017 wo>1002 ish>$ ad>1010 fl>1277 ine>1092
+da>1091 y>$ ment>$ gra>1202 ful>$ co>1153 se>$ sta>1258 si>1195 su>1068 wa>993 bo>998 ca>999 sti>966 no>1194 sc>1227 ke>1163 ster>$ kin>1253 br>1005 so>1082 sto>1257 sh>1268 mo>1147 wi>1110 ma>1089 v>1428 mu>1099
+o>$ l>$ al>$ st>$ ma>1089 av>1024 mi>1004 wa>993 ce>1155 si>1195 mp>1152 fi>1118 em>1412 ba>1003 vel>1087 sc>1227 ter>1018 me>1067 sm>1269 pe>1011 ki>1043 ts>$ sh>1268 ari>1215 x>$ vi>1019 aw>1130 bo>998 tra>1418 pl>995 co>1153
+e>$ ation>$ ing>$ z>1252 op>1023 able>$
+l>$ ble>$ tion>$ ria>1093 bly>$ ris>1241 ted>$ bi>1081 s>1271 ting>$ ry>$ min>988 tive>$
+ial>$ y>$ tion>$ il>$ ip>1307 ing>$ ies>$ tu>1278 iat>1046 rea>1208 ak>1211 s>$ ib>983 ier>$ ast>1045 us>1190
+es>$ ed>$ ing>$ ment>$ ina>1101 ion>1310 em>1412 uri>1126 ure>971 ig>1096 ive>$ ert>1429 oc>1132
+ies>$ ary>$ ate>$ ation>$ ating>$ ion>$ ari>1215 ato>1017 s>$ ia>1009 es>$ era>1295
+n>$ log>1192
+y>$ es>$ ed>$ ies>$ ing>$ hed>$ er>$ hing>$
+l>$ ble>$ ry>$ te>$ bly>$ ire>$ nce>$ nt>$ tion>$ do>1193 ries>$ ting>$
+ion>$ e>$ ive>$ ing>$
+ti>1205 lt>1188 gu>1015 ght>986 th>1145 lic>1185 di>1069 x>$
+e>$ le>$ ula>1061 ib>983 ar>1041 ut>1040 ling>$
+t>$ il>$ e>$ fi>1118 fe>1140 le>1279 ing>$
+s>$ al>$ ation>$ ated>$ able>$ y>$ ous>$ ato>1017 ating>$ ed>$ ates>$ ing>$ ies>$ ba>1003 g>1372 ic>1178
+ing>$ le>$ y>$ on>$ om>1071 res>1397 a>$ oo>1112 ling>$ s>$ uc>1111 ies>$ ic>1178 os>$ il>975
+s>$ ing>$ ed>$ ga>1141 er>$
+ion>1310 ely>$ ed>$ ive>1109 or>$ ing>$ al>$ ur>1048 es>$ ic>1178
+t>$ ses>$ sed>$ is>$ sing>$ e>$
+lv>1430 rit>1246 id>$ lu>1114 cat>1066 uri>1126 rc>1287 rs>$ ted>$ ra>1234 ic>1178 red>$ ry>$ ir>1027 ke>$ king>$ lt>1188 y>$ ure>971 ring>$ len>1383 tion>1431 us>$ ting>$ res>$ cal>$ s>$
+t>$ ue>$ ing>$ ie>1174 ly>$ ess>$ ge>$ il>975 s>$ ir>1027 ed>$ ous>$ gin>1095
+fi>1118 t>$ y>$ ct>1032 w>$ l>$ ma>1089 e>$ ce>1155 up>1135 ar>$ ga>1141 ba>1003 ment>$ al>1050 ous>$ ap>1255 um>1404 vo>1273 x>1160 ness>$ z>1252 fa>1000 qui>1016 nsi>1197 ad>1010 ck>$ go>1158
+g>1372 ci>1012 va>1021 da>1091 ve>$ ce>$ vi>1019 wa>993 b>1108 we>1008 ly>$ fe>1140 vo>1273 lin>991 fi>1118 her>1304 ful>$ cu>997 co>1153 pin>1179 pr>1157 po>990 do>1193 le>1279 lie>1349 un>980 cha>1267 fo>1346 pa>1128 per>1243 fl>1277 ca>999 de>1235 pl>995 lat>1120 cl>1146 han>1398
+ly>$ ing>$ s>$ er>$ et>$ ness>$ y>$ ed>$ en>$ est>$
+ff>1123 fa>1000 ous>$ x>$ ven>1088 k>1305 qu>1014 fl>1277 ore>1366 vi>1019 ori>1115 z>1252 va>1021 os>1025 h>$
+ed>$ y>$ es>$ ing>$
+d>$ sio>1031 ess>$ eu>1416
+ion>$ ed>$ es>$ ing>$ ica>1247 uri>1126
+ed>$ ing>$ ment>$ er>$ es>$ able>$ ion>1310 ly>$
+d>$ s>$ r>$ n>$ mi>1004
+e>$ ing>$ ical>$ ini>1085 ani>1309 o>$ ita>1070 am>1136 ling>$
+red>$ p>1311 res>$ si>1195 d>$ ty>$ va>1021 ring>$ ry>$ ries>$ to>1156 ta>1044 rr>1220 ties>$ no>1194 vo>1273 li>1064 sh>$ fe>1140 es>1049 ns>$ rm>1167
+ve>$ ble>$ bi>1081 tive>$ ty>$ ng>$ on>$ bly>$ de>$ ties>$ f>1083 s>$
+s>$ r>$ d>$ f>$ va>1021 ve>$
+m>$ s>$ d>$ t>$ cl>1146 r>$
+l>$ te>$ tion>$ ble>$ tive>$ ri>1206 ting>$ nt>$ di>1069
+ation>$ ett>1424 and>1217 ated>$ ato>1017 ates>$ ide>1338 ating>$ ave>984
+d>$ rs>$ rn>$ n>$ red>$ st>$ ring>$ ron>974 mat>996 mi>1004 rp>1238 ry>$ p>$ l>$ rc>1287 ad>$ ful>$ ria>1093 rit>1246 ric>973 tri>1059 rm>1167 op>1023 mo>1147 ob>1352 rl>1248
+ce>$ t>$ ds>$ che>1124 ci>1012
+ment>$ ly>$ yl>1432 na>1239 um>1404 ure>$ le>$ se>1236 po>990 ling>$ he>1051 ca>999 nu>1362 wa>993 co>1153 mo>1147 ba>1003 do>1193 sc>1227 ma>1089 ness>$ ula>1061 pa>1128 uri>1126 ful>$ hu>1433 lie>1349
+y>$ ly>$ ur>1048 o>$ ment>$ he>1051 le>1279
+lo>1001 ul>$ ic>1178 or>969 ire>$ all>1394 ie>1174 igh>1369
+d>$ r>$ t>$ nin>1434
+ren>1245 er>$ s>$ ing>$ en>$ li>1064 ho>981 ed>$ est>$ ly>$ ca>999 fi>1118 fl>1277 ness>$ ove>1342
+ing>$ we>1008 si>1195
+al>$ ro>1075 an>1177 am>1136 lin>991 ine>1092 h>$ est>1104
+ty>$ ze>1151 ng>$ st>$ sm>$ ties>$ sed>$ ne>$ fi>1118 es>$ sing>$ sa>1198 gn>985 ses>$ a>$ ght>986 en>1204
+ing>$ ai>1343 our>1300 an>$ oi>1129 ir>1027 ow>1334
+s>$ ic>$ pl>995 po>990 bly>$ pt>1020 ies>$ ble>1358 ora>976 an>$ ia>$ ing>$ ati>1216 ni>1073 ak>1211 ale>1376 ba>1003
+op>1023 s>$ y>$ ing>$ ed>$ ling>$ ers>$ led>$ en>1204 ess>$ ier>$
+pe>1011 t>$ es>$ ll>$ ck>$ s>$ a>$ er>$
+ct>1032 or>969 int>1172 ck>$ tion>$ te>$ ine>1092 s>$ va>1021 tor>1127 y>1039 nce>1379 ini>1085 di>1069 nge>1344 ce>1155 l>$ ne>1122 po>990 ting>$
+mat>996 y>$ ding>$ ds>$ da>1091 po>990 ded>$ med>$ ou>1149 der>$ mo>1147 shi>1168 re>1289 n>$ ly>$ us>$ ms>$ ga>1141 k>$ ste>967 wa>993 min>988 olo>970 bi>1081 pi>1078 ph>1076 less>$ ci>1012 um>$ man>1327 mer>987 ru>1301
+er>$ ing>$ ed>$ o>$ es>$ able>$
+s>$ ed>$ ing>$ er>$ a>$
+s>$ r>$ d>$
+ria>1093 ed>$ rat>1102 ing>$ er>$ s>$ wo>1002 ic>1178 y>$ if>1113 rop>1409 ac>1144
+ure>971 ment>$ s>$ re>$ ly>$ ric>973 y>$ a>$ ness>$ ris>1241 ch>$ ry>$ ta>1044 ria>1093 ba>1003 um>$ ra>$ ten>1106 be>1100 ua>979 ro>1075 ter>1018 lo>1001 ting>$ ted>$ ni>1073
+es>$ y>$ ed>$ ing>$ ies>$ ip>1307 er>$
+cal>$ ng>$ on>$ ci>1012 ati>1216 ve>$ qu>1014 s>$ co>1153 ali>1291
+ing>$ er>$ ed>$ s>$ ati>1216 ica>1247 as>1214 om>1071 rop>1409
+ct>1032 gu>1015 gs>$ y>$ e>$ a>$ ue>$ s>$ iz>1038 gly>$
+z>1252 ho>981 x>$ hu>1433 he>1051
+rat>1102 d>$ va>1021 ss>$ ct>1032
+ita>1070 ing>$ iat>1046 al>$ ato>1017 oc>1132 ol>1047
+ng>$ gi>1139 er>$ ne>$ ora>976 ver>1107
+an>$ ack>1345 ed>$ y>$ oa>972 ing>$ ish>1341 ul>968 s>$ oc>1132 ona>1119 all>1394 la>1060
+r>$ l>$ d>$ ss>$ t>$
+es>$ ed>$ er>$ ing>$ ani>1309
+r>$ d>$ n>$ s>$
+ng>$ te>1356 at>1229 ld>1189 c>$ vi>1019 st>$ sm>$ es>$
+ion>$ ed>$ es>$ ing>$ or>$ ive>$ che>1124 eg>1303
+wi>1110 we>1008 n>$ ut>1040 r>$ p>$ ver>1107 ff>1123
+se>1236 y>$ l>$ n>$ str>1077 sto>1257 t>$ d>$ cha>1267 co>1153 v>1428 ster>$ j>1161 ro>1075 sh>1268 ho>981 ca>999
+s>$ ain>1212 ed>$ ing>$ if>1113 er>$ ment>$ ly>$ eg>1303 enti>1326 ess>1169 y>$ h>$ ro>1075 ell>1391 br>1005 ill>1308
+la>1060 t>$ s>$ b>1108 lt>1188 lis>1184 nk>1223 lo>1001 len>1383
+e>$ ing>$ ig>1096 ass>1347 y>1039 ob>1352 ome>1339 ine>1092 ari>1215 ai>1343 ow>1334
+re>$ ally>$ s>$ it>$ ali>1291 ad>1010 as>1214 na>1239 lat>1120 med>$ mp>1152 rd>1232 rp>1238 pp>1254 b>1108
+d>1182 se>$ sing>$ ten>1106 ts>$ ch>$ rm>1167 l>$ tion>1431 m>$ so>1082 ve>1042 king>$ cti>1249 n>$
+t>$ bo>998 s>$ ed>$
+d>$ ty>$ r>$ nd>$ nts>$ tal>1270 ga>1141
+pt>1020 s>$ m>$ it>989 b>1108 tin>1272 ff>1123 n>$ gg>1230 al>$ len>1383 ps>$ pu>1203
+y>$ th>$ ment>$ st>$ b>1108 shi>1168 ma>1089 do>1193 ti>1205 wa>993 p>$ ta>1044 wo>1002 j>1161 wi>1110
+ce>$ t>$ di>1069 dl>1413 gin>1095 ded>$ ge>1142
+oi>1129 om>1071
+s>$ ing>$ ed>$ ma>1089 ent>$ ina>1101 er>$
+ce>$ a>$
+s>$ ing>$ en>$ er>$ ed>$ less>$ ro>1075 ly>$ y>$ om>1071 ia>$ ine>1092 ness>$
+ng>$ tor>1127 ble>$ ed>$ cul>1013 fi>1118 es>$ ca>999 tat>1121 bly>$ ga>1141 er>$ age>$ d>$ so>1082 tan>1033
+ing>$ y>$ a>$ ial>$ ies>$ ist>1313 ier>$
+est>1104 er>$ ed>$ ing>$ y>$ le>$ age>$ ies>$ ling>$ ets>$ pl>995 ard>$ ly>$
+d>$ s>$ r>$ et>$ ll>$
+ly>$ n>$ ch>$ s>$ lie>1349 ma>1089 k>1305 min>988 med>$ oun>1405 bo>998 ful>$ ls>$ ce>1155 ms>$ he>1051 oo>1112 ph>1076 les>1435 gu>1015
+ly>$ li>1064 wa>993 s>$ ed>$ ing>$ ol>1047 fa>1000 br>1005 ness>$
+le>$ ing>$ en>$ y>$ ed>$ er>$ ha>1283 ies>$ ling>$ ly>$ it>$ oc>1132 am>1136 est>$ res>1397
+ct>1032 cat>1066 ce>1155 ci>1012 ate>$ re>$ le>$ m>$ nd>1371 la>1060 ra>1234 e>$ lity>$ lu>1114 lla>1275 lo>1001
+if>1113 s>$ ed>$ at>1229 ing>$ ant>$ anc>977 iti>982 ore>1366 eti>1368 ora>976 ers>$ es>1049 up>1135 ali>1291 ost>1402 ite>$ iz>1038 all>1394 on>$ ment>$ ett>1424 om>1071 po>990
+rit>1246 s>$ re>$ ment>1037 e>$ tion>$ rs>1231 tor>$ ring>$ rr>1220 mb>1084 ted>$ rat>1102 ts>$ ous>$ ff>1123 rac>1055 tan>1033 um>1404 ting>$ ing>$ pi>1078 pa>1128
+d>$ om>1071 ut>1040 ic>$ s>$ ne>1122 tin>1272 ce>1155 tra>1418 ten>1106 a>1386 og>1125 ium>$
+d>$ sti>966 ment>$ sto>1257 ste>967 aw>1130 y>$ il>975 ted>$ sts>$ ting>$ for>1274 able>$ e>$ j>1161 cti>1249 str>1077 ta>1044 se>1236 si>1195 th>$ to>1156 sc>1227
+ed>$ y>$ ing>$ le>$ er>$ it>$ ies>$ ling>$ ly>$ ini>1085
+ce>$ d>$ s>$ ent>$ tic>$ ity>$ ita>1070 tle>1290 ag>1159 oi>1129 iz>1038 ly>$ ac>1144 ism>$ ely>$
+p>$ ng>$ on>$ rt>$ el>1331 t>$ f>1083
+hed>$ m>$ hing>$ ation>$ ed>$ t>$ hes>$ ing>$ es>$
+ow>1334 ard>$ ly>$ le>$ sc>1227 y>$ re>1289 om>1071 ame>1105 ling>$ wi>1110 ma>1089 shi>1168 ant>$ ro>1075 ra>1234 ary>$ mo>1147 fa>1000 chi>1393 ness>$ pa>1128 al>$ able>$ so>1082 bo>998 lo>1001 ou>1149 ba>1003 se>1236 he>1051 fi>1118 gu>1015 da>1091 age>$ cr>992 sl>1377 anc>977 wa>993 pi>1078 cu>997 sto>1257 mi>1004 lie>1349 ca>999 sta>1258 ry>$ ho>981 pr>1157 la>1060 wo>1002 rit>1246 hi>1054
+f>$ p>$ k>$ co>1153 se>$ ry>$ b>1108 ness>$ cha>1267 nu>1362 gi>1139 ho>981 gr>1154 ca>999 ga>1141 ster>$ ro>1075 ce>1155 cr>992 si>1195 wa>993 chi>1393 ge>$ ries>$ cul>1013 sa>1198 ru>1301
+nal>$ lu>1114 me>$ ns>$ rb>1264 lat>1120 nne>1373 ry>$ rs>$ ur>1048 und>1183 lv>1430 rp>1238 eve>1256 ni>1073 le>1279 ms>$ ci>1012 to>1156 di>1069 ma>1089 pr>1157 s>$ ng>$ chi>1393 il>$
+er>$ s>$ ing>$ ed>$ le>$ fo>1346 ica>1247 ul>968
+lat>1120 ne>$ lt>1188 nit>1280 no>1194 ra>1234 m>$ ta>1044 s>$ nk>1223
+s>$ n>$ ed>$ ate>$ ly>$ ation>$ ing>$ y>$ ato>1017 ma>1089 ali>1291
+t>$ e>$ a>$ se>$ n>$
+t>$ y>$ ep>1364 ul>968 ies>$ k>$
+d>$ s>$ r>$
+d>$ s>$ r>$ y>$
+ess>$ ine>1092 igh>1369 ey>$ ing>$ ed>$ oc>1132 ini>1085 eli>1415 est>1104 and>1217
+se>1236 ed>$ ish>1341 ing>$ ce>1155 n>$
+ally>$ ation>$ nat>1022 tion>$ de>$ te>$ be>1100 ne>$ ated>$ lat>1120 m>1417 ary>$ tor>1127 ali>1291 enc>1286 ari>1215 ting>$ ating>$ ses>$ ity>$ ous>$ ates>$ di>1069 ato>1017
+ent>$ y>$ ow>1334 ed>$ oun>1405 or>$ ant>1322 enc>1286 ati>1216 ass>1347 es>1049 al>$ ac>1144 end>1365 ain>1212 ele>1436 eg>1303 ea>1133 ated>$ ep>1364 ato>1017 ev>1382 et>$ og>1125 ha>1283 er>$ ay>$ ho>981 eli>1415
+s>$ d>$ llo>1265 r>$ ha>1283
+gh>1385 s>$ nd>$ ted>$
+id>1312 ing>$ al>$ ity>$ ating>$ ation>$ ate>$ ir>1027 able>$ ism>$ ari>1215 ato>1017 ita>1070 il>975 or>969 ist>$
+s>$ ly>$ ed>$ che>1124 ance>$ ing>$ ning>$ y>$ ned>$ th>1145
+ore>1366 tr>1406 ors>$ ci>1012 ist>1313 ide>1338 ti>1205 tan>1033
+e>$ ind>1098 igh>1369 ist>$ on>$ ing>$ ine>$ oa>972 a>1386 y>$ l>$ pa>1128
+man>$ rt>$ mo>1147
+er>$ s>$ y>$ ing>$ on>$ ta>1044 eti>1368 ic>$ ed>$ lo>1001 es>$ iz>1038 ies>$ les>1435
+gs>$ gly>$
+e>$ om>1071 ish>1341 s>$ po>990 ic>$
+e>$ gs>$ s>$
+es>$ ma>1089 ed>$ ron>974 ing>$ eo>1361 ise>1395 er>$ o>$ ala>1407 bo>998 lin>991 ment>$
+ion>$ y>$ e>$ ive>$ iz>1038 al>$ ies>$ ors>$ ise>1395 ho>981 ari>1215
+rat>1102 ru>1301
+ing>$ ua>979 do>1193 th>1145 ue>$ ry>$ w>1086 o>$ ness>$ ui>1315 ula>1061 it>989 al>$ ste>967 ra>1234 ton>1293 us>$ sta>1258 y>$ ha>1283 bi>1081 pin>1179 iv>1410 bo>998 ma>1089 fi>1118
+te>$ y>$ hr>1057 s>$
+d>$ r>$ n>$
+k>$ ue>1191 o>$ ment>$ ui>1315 ly>$ for>1274 str>1077 less>$ ua>979 ful>$ sta>1258 y>$ ning>$ su>1068 ci>1012 bo>998 ner>$ ny>$ ca>999 fa>1000 sto>1257 ven>1088 fe>1140 ned>$ wa>993 ch>$ qu>1014 sa>1198 vi>1019 co>1153 ce>1155 ct>1032 lin>991 sp>1228
+ri>1206 d>$
+n>$ k>$ we>1008 y>$ fe>1140 ba>1003 for>1274 fa>1000 fi>1118 qu>1014 bi>1081 ge>1142 wi>1110 d>$ bo>998 gr>1154 v>1428 ro>1075 wa>993 fu>1266 re>1289
+al>$ ing>$ ed>$ ary>$ er>$ ist>$ iz>1038 ari>1215 less>$ ism>$
+ye>1242 f>$ ying>$ ze>1151 ys>$ x>1160 j>1161 qu>1014 h>$
+r>$ s>$ d>$ lis>1184 lic>1185 able>$ nt>$ log>1192
+y>$ n>$ wi>1110 wa>993 f>$ th>$ ca>999 qu>1014 se>1236 wo>1002 st>$ ph>1076 she>1165 bo>998 co>1153 shi>1168 po>990 so>1082 ba>1003 vi>1019 k>1305 we>1008 bi>1081 si>1195 han>1398 pi>1078 ter>1018 ho>981 man>$ pl>995 mi>1004 sc>1227 hi>1054 mo>1147 bu>1143 he>1051 sl>1377
+d>$ e>$ nce>1379 nn>1263 na>1239 ch>$
+l>$ ge>$ tion>$ sti>966 ry>$ ri>1206 si>1195 ble>$ cl>1146
+op>1023 as>1214 eni>1314 ine>$
+y>$ s>$
+ue>1191 age>$ ary>$ ure>$ or>$ ro>1075 y>$ wo>1002 ari>1215 ad>1010 po>990 le>$ mat>996 ove>1342 ac>1144 ly>$ fi>1118 ness>$ uri>1126 fu>1266 bo>998 lin>991 able>$ wa>993 tan>1033 ho>981 wi>1110
+ly>$ lin>991 ment>$ lo>1001 y>1039 wa>993 pr>1157 re>$ ze>1151 j>1161 bo>998 ho>981 po>990 ris>1241 qu>1014 ber>1363 ba>1003 ry>$ ro>1075 less>$ bu>1143 mo>1147 pa>1128 pl>995 wo>1002 x>$
+s>$ ed>$ ing>$ er>$
+ed>$ h>$ ing>$ er>$ s>$
+ing>$ es>$ ed>$ er>$ t>$ able>$ ut>1040 y>$ ron>974
+us>$ ver>1107 n>$ log>1192 ut>1040 ti>1205
+s>$ y>1039 ni>1073 p>$ qu>1014 g>$ f>$ b>1108
+li>1064 und>1183 ld>1189 cu>997 ot>$
+ly>$ ct>1032 st>$ ms>$ ment>$ mp>1152 go>1158 in>$ en>$ ls>$ lli>1355 ful>$ wa>993 bo>998 dly>$ x>$ wi>1110 br>1005 lla>1275 au>1131 pa>1128 lle>1354 ch>1148 or>969 es>$ le>1279 as>1214 ho>981 ke>1163 ma>1089 si>1195 ering>$ ur>$ sm>1269 ers>$ la>1060 fa>1000 mi>1004 co>1153 ad>1010
+am>1136 ot>1138 ast>1045 ec>1173 ess>$ the>1201 ch>1148 cr>992
+gs>$ ary>$ ato>1017 ate>$ ation>$ ating>$ ari>1215 al>$ ess>$
+ull>1374 ly>$ s>$ fi>1118 ini>1085 fe>1140 ing>$ ed>$ oo>1112 ca>999 t>$ y>$
+y>$ ill>1308 up>1135 ep>1364
+ria>1093 rac>1055 h>1186 s>$ ath>1296
+uc>1111 y>$ um>1404 ust>1180 ui>1315 ud>1094 ue>$ ut>1040
+s>$ ain>1212 ak>1211 ed>$ ion>$ ing>$ ly>$ if>1113
+ng>$ al>$ on>$ sts>$ c>$ es>$ ment>$ ate>$ ation>$ ous>$
+ng>$ c>$ on>$ ve>$ ne>$ nal>$ ge>$ ble>$ er>$ est>$
+d>$ rs>$ rn>$ n>$ red>$ st>$ ring>$ ry>$ p>$ l>$ ad>$ ful>$
+d>$ t>$ y>$ e>$ s>$ ing>$ us>$ ous>$ ge>$ ness>$ um>$ king>$
+y>$ ding>$ ds>$ ded>$ med>$ der>$ n>$ ly>$ us>$ ms>$ k>$ ous>$ less>$ um>$
+l>$ d>$
+s>$ d>$ r>$ ate>$ ly>$
+d>$ rd>$ ting>$ ted>$ ts>$ k>$ n>$
+al>$ ian>$ s>$ e>$
+g>$ ic>$ t>$ e>$ s>$ ous>$
+able>$ y>$ s>$ ding>$ ed>$ t>$ er>$ ds>$ es>$ or>$ der>$ ation>$ ment>$
+l>$ te>$ tion>$ ble>$ tive>$ ting>$ nt>$
+es>$ y>$ ed>$ ing>$ ies>$ er>$
+al>$ ent>$ ous>$ ng>$ an>$ de>$ ty>$ st>$ sm>$ zed>$ ties>$ er>$
+l>$ ge>$ tion>$ nce>$ te>$ ting>$
+ity>$ ities>$ t>$ ch>$ k>$ ce>$ ning>$ ge>$ ion>$ ist>$ a>$ ned>$ s>$ e>$ ism>$ ner>$
+od>$ ld>$ w>$ st>$ le>$ ne>$ t>$ p>$ g>$ e>$ ot>$ me>$
+cal>$ ng>$ on>$ ve>$ s>$
+le>$ ed>$ es>$ ing>$ ly>$ ble>$
+s>$ r>$ d>$
+s>$ ed>$ ing>$ ant>$ ers>$ et>$ ite>$ on>$ ment>$ ated>$ ation>$
+s>$ ing>$ er>$ ly>$ ed>$ y>$ en>$ ful>$ ness>$ est>$
+s>$ a>$ ical>$ ing>$ y>$ ed>$ o>$
+g>$ e>$ ation>$ ated>$ d>$ ant>$ ary>$ s>$ al>$ ating>$ ance>$ ous>$ ates>$ ism>$
+her>$ s>$ ment>$ ure>$ ch>$ or>$ ly>$ z>$ ous>$
+rt>$ n>$ sed>$ on>$ d>$ t>$ sing>$ ses>$ st>$ ra>$ ur>$ le>$ x>$
+e>$ ary>$ gs>$ ing>$ k>$ ation>$ gly>$
+o>$ y>$ um>$ at>$
+y>$ rd>$ re>$ ter>$ ble>$ ll>$ sh>$ rt>$ ve>$
+s>$ ed>$ ive>$ ion>$ ing>$ ation>$ or>$ able>$ us>$
+e>$ ay>$ y>$ ine>$ ing>$ ate>$ ant>$ and>$ ar>$
+ion>$ e>$ ic>$ ive>$ s>$ ure>$ ting>$ ing>$ ch>$ ted>$ ism>$ a>$ ized>$
+s>$ re>$ e>$ tion>$ tor>$ ring>$ ted>$ ts>$ ous>$ ting>$ ing>$ m>$
+ard>$ r>$ n>$ ur>$ x>$ w>$ t>$ ys>$ at>$ s>$ o>$
+lly>$ me>$ re>$ ls>$ st>$ pe>$ se>$ ne>$ de>$ rd>$ ine>$ nt>$ ble>$ sing>$ ke>$ le>$ lity>$ bly>$ ps>$ ge>$ rs>$ ling>$
+ce>$ st>$ re>$ ll>$
+ad>$ re>$ t>$ us>$ ring>$ ng>$ ck>$ s>$ rd>$ ded>$ rs>$ w>$ ns>$ ding>$ ur>$ ne>$ des>$
+rd>$ od>$ man>$
+ll>$ ck>$ nd>$ te>$ se>$ r>$ tion>$ ble>$ ting>$ g>$ tive>$ ls>$ ts>$
+ly>$ t>$ c>$ se>$ um>$ zed>$ sing>$ d>$ a>$ st>$ re>$ x>$ ss>$ ll>$ es>$ sm>$ le>$ sh>$
+ary>$ ic>$ ate>$ ation>$ ating>$ ant>$ is>$ e>$ al>$ ium>$ and>$ o>$ as>$ um>$
+y>$ ary>$ ch>$ ry>$ ation>$ hing>$ o>$
+d>$ ic>$ s>$ ium>$
+r>$ en>$ d>$ st>$ l>$ ar>$ et>$ ed>$
+ls>$ lly>$ s>$ r>$ c>$ ble>$ lity>$
+ing>$ y>$ s>$ er>$ es>$ ed>$ ly>$ or>$ able>$ en>$ ies>$ ied>$
+n>$ s>$ t>$ l>$ ar>$ g>$ es>$
+al>$ ng>$ ty>$ se>$ es>$ ne>$ ous>$ ted>$ ent>$ lity>$ ans>$ sm>$ st>$ ated>$ de>$ ation>$ ence>$ ary>$ ties>$ sing>$ zed>$ le>$ ve>$ ble>$ able>$ tes>$
+ar>$ ated>$ ation>$ ous>$ es>$ ating>$ us>$ ates>$
+e>$ al>$ ate>$ o>$
+re>$ e>$ n>$ ing>$ ish>$ ard>$ ring>$ s>$ al>$ ous>$ able>$
+red>$ res>$ d>$ ty>$ ring>$ ry>$ ries>$ ties>$ n>$ sh>$
+r>$ d>$
+ial>$ ed>$ nal>$ ing>$ y>$ ally>$ ized>$ ies>$ ation>$ ate>$ m>$ o>$
+ng>$ de>$ ce>$ ous>$ l>$ ding>$ ty>$ or>$ es>$ sed>$ nce>$ ted>$ ne>$ ation>$ sing>$ ting>$ ses>$ ties>$ al>$ dly>$ ed>$ r>$ able>$ ate>$ sts>$ i>$ ating>$
+ion>$ er>$ ure>$ s>$ ed>$ ical>$ ing>$ ive>$ o>$
+l>$ te>$ tion>$ tive>$ nt>$ nce>$ ble>$ s>$ ge>$ il>$ de>$ ting>$ tor>$ ding>$ bly>$ r>$
+ion>$ ely>$ ed>$ or>$ ing>$ al>$ es>$ ic>$
+le>$ ment>$ ed>$ s>$ ing>$ ped>$ ers>$ ping>$ y>$ es>$ ter>$ ic>$ en>$ ies>$ ied>$
+ing>$ an>$
+e>$ ure>$ ing>$ s>$ ite>$ ity>$ is>$ a>$ ine>$
+d>$ s>$
+d>$ s>$ ed>$ t>$ ly>$ y>$ man>$ es>$ able>$ ing>$ ness>$ ation>$ al>$ k>$ ies>$ men>$
+ate>$ um>$ al>$ s>$ e>$ ing>$ ation>$ ized>$ ise>$ age>$ us>$ y>$ p>$ ating>$
+d>$ e>$ ch>$
+l>$ ge>$ tion>$ ry>$ ble>$
+n>$ d>$
+s>$ ed>$ or>$ ly>$ ure>$ able>$ ant>$ ful>$ ate>$ ance>$ ness>$ al>$ er>$ ating>$ ation>$
+d>$ ce>$ t>$ cy>$ ic>$ y>$
+s>$ ing>$ y>$ age>$ le>$ ling>$ ness>$ o>$ able>$ ly>$ man>$ ier>$ ish>$
+e>$ ing>$ ical>$ o>$ ling>$
+r>$ d>$ n>$ st>$
+al>$ ation>$ ed>$ ary>$ ing>$ o>$ able>$
+e>$ ation>$ ing>$ z>$ able>$
+one>$ pe>$ ment>$ al>$ or>$ ard>$ able>$ zed>$ tes>$ ping>$ man>$ ful>$ ms>$ tic>$ ons>$ ist>$ ous>$ ant>$ ance>$ in>$ ch>$ u>$ ish>$
+h>$ es>$ er>$ ive>$ ion>$ ing>$ ation>$ ed>$ ine>$ s>$ ical>$ ter>$ able>$ ch>$ ting>$ ely>$ ty>$
+ly>$ n>$ ch>$ s>$ m>$ k>$ ful>$ ls>$
+d>$ ment>$ st>$ y>$ ted>$ ting>$ able>$ e>$ th>$
+t>$ es>$ ll>$ ck>$ s>$ a>$ er>$
+ble>$ in>$ il>$ ck>$ ke>$ ry>$ bly>$ ch>$ king>$ ries>$ ge>$ rs>$ s>$
+er>$ s>$ ic>$ ed>$ ing>$ y>$ ie>$
+ion>$ ed>$ es>$ ing>$
+e>$ s>$ ate>$ ation>$ ar>$ d>$ y>$
+s>$ y>$ ance>$ ce>$ al>$ nal>$ age>$ red>$ ate>$ o>$ ring>$ able>$ t>$ ry>$ ning>$ ger>$ ned>$ ns>$
+h>$ e>$ man>$ y>$ an>$ is>$ o>$ men>$
+ty>$ th>$ ties>$ ous>$ y>$ ted>$ ded>$
+ad>$ tic>$ m>$ st>$ ld>$ at>$ nd>$ ard>$ ism>$ e>$ ses>$ ned>$
+s>$ ing>$ ed>$ ized>$ y>$ er>$
+al>$ h>$
+p>$ le>$ er>$ cal>$ ll>$ es>$ re>$ a>$ ve>$ de>$ sm>$ ls>$
+t>$ y>$ ies>$ k>$
+ge>$ d>$
+ine>$ d>$
+on>$ ng>$ ve>$ c>$ st>$
+tion>$ c>$ es>$ al>$ de>$
+r>$ ce>$ in>$ y>$ s>$ ge>$ ble>$ p>$ w>$ id>$ de>$ e>$ m>$
+r>$ tion>$ te>$ ting>$ tor>$ tive>$
+s>$ y>$ ies>$ e>$ le>$ ing>$ o>$ ate>$ ium>$
+ing>$ l>$
+d>$ zed>$ ar>$ ke>$ ance>$ able>$ ve>$ o>$ ant>$ ation>$ al>$ um>$ ating>$ ated>$
+ing>$ s>$ ed>$ ies>$ en>$ er>$ es>$ y>$
+ion>$ ed>$ es>$ ing>$ or>$ ive>$
+s>$ ly>$ less>$ t>$ o>$ al>$ y>$
+re>$ ally>$ s>$ it>$ med>$
+tion>$ a>$ cal>$ o>$ um>$ es>$ tor>$ ble>$ ted>$ bly>$ ting>$ ts>$ ty>$ ment>$ ed>$ d>$ sh>$ zed>$ st>$ sm>$ r>$ er>$
+l>$ ble>$ tion>$ bly>$ ted>$ ting>$ ry>$ tive>$
+ic>$ s>$ y>$ a>$ ing>$ ies>$ ous>$
+ess>$ al>$ ation>$ ates>$ ated>$ ant>$ ive>$ ating>$ on>$ y>$
+or>$ c>$ zed>$ al>$ es>$ on>$ ous>$ um>$ er>$ as>$ k>$
+e>$ ment>$ ing>$ y>$
+l>$ ss>$ ve>$ te>$ w>$ r>$ ad>$ me>$ x>$ ts>$ de>$ ot>$ st>$ g>$
+one>$ y>$ ic>$ s>$ er>$ ed>$ or>$ ing>$ ies>$ ate>$ ant>$ al>$
+ation>$ y>$ ate>$ al>$ ies>$ ing>$ ic>$ ous>$ e>$
+te>$ c>$ red>$ es>$ d>$ ring>$ st>$ ed>$ res>$ a>$ er>$ pe>$
+ion>$ ing>$ y>$ on>$ ure>$ ive>$ ation>$ k>$ ms>$
+d>$ r>$ t>$
+lity>$ le>$ t>$ ng>$ es>$ ne>$ s>$ an>$ d>$ c>$ ns>$ rd>$ al>$ ke>$
+nal>$ me>$ ns>$ r>$ ms>$ l>$ s>$ ng>$ il>$
+ter>$ y>$ ts>$ s>$ th>$ ted>$ ty>$ ting>$ tly>$ ness>$ m>$ ties>$ c>$ x>$ g>$
+er>$ le>$ ling>$ s>$ ing>$ o>$ ar>$ ed>$ ly>$ re>$ ra>$
+ng>$ cal>$ ty>$ te>$ ties>$
+n>$ s>$ l>$ d>$ ful>$ y>$ k>$ ry>$
+s>$ y>$ ing>$ ed>$ ling>$ ers>$ led>$ ess>$ ier>$
+t>$ ue>$ ing>$ ly>$ ess>$ ge>$ s>$ ed>$ ous>$
+in>$ ry>$ ge>$ le>$ cy>$ de>$ ker>$ king>$ il>$ lly>$ s>$ p>$ ment>$ lity>$ da>$ ble>$
+on>$ ble>$ ng>$ ve>$ c>$ es>$ er>$
+y>$ te>$ tion>$ ble>$ l>$ nce>$ ry>$ ting>$ nt>$ ta>$ bly>$ m>$ in>$ s>$
+d>$ s>$ r>$ ly>$ nt>$ es>$ nce>$ ering>$
+l>$ te>$ ge>$ n>$ tions>$
+y>$ ent>$ ed>$ ing>$ es>$ ly>$ er>$ ge>$ ence>$ s>$ a>$
+g>$ e>$ s>$ al>$
+n>$ ent>$ ate>$
+er>$ ing>$ it>$ ed>$ y>$ es>$ ation>$ ies>$ able>$ ons>$ age>$
+er>$ s>$ ing>$ ed>$ le>$
+ne>$ m>$ s>$
+d>$ l>$ s>$ at>$ nt>$ ans>$ e>$
+l>$ tion>$ ble>$ ted>$ ting>$ ry>$ tes>$ nt>$ tive>$ tor>$ bly>$
+e>$ or>$ s>$
+ce>$ ged>$ t>$ ium>$ k>$
+ions>$ s>$ ed>$ ing>$ ry>$ ation>$ o>$ y>$ er>$ ly>$
+nt>$ ter>$ d>$ l>$ r>$ s>$
+tion>$ ded>$ ding>$ ed>$ ing>$ ds>$ der>$ ess>$ s>$ ted>$ cy>$ tly>$ tive>$ er>$
+y>$ age>$ ed>$ s>$ ing>$ t>$ n>$ ance>$ ge>$ able>$
+s>$ y>$ t>$ d>$ ps>$ c>$
+ly>$ r>$ s>$ d>$ n>$
+ng>$ se>$ de>$ nd>$ ll>$ re>$ ned>$ th>$ gs>$ ck>$
+tion>$ k>$ h>$ e>$ ted>$ tive>$ tor>$ ting>$ ts>$ ine>$
+l>$ d>$ se>$ r>$ m>$ ps>$ n>$ f>$ k>$ t>$ ping>$ ped>$ sh>$ ing>$
+t>$ f>$ ied>$ y>$ ies>$ e>$ ier>$ ul>$
+ding>$ de>$ e>$ tion>$ me>$ ation>$ able>$ te>$ s>$ ing>$ ting>$
+ty>$ ng>$ es>$ ties>$ zed>$ st>$ sm>$ ous>$ sed>$ al>$ cal>$ um>$
+t>$ ce>$ ed>$ ing>$ s>$
+d>$ s>$ nts>$ r>$ er>$ t>$
+ed>$ c>$ t>$ le>$ ned>$ es>$ ng>$ ll>$ sh>$ ning>$ er>$ nes>$ re>$ able>$ nal>$ ling>$ de>$
+l>$ ble>$ ry>$ te>$ bly>$ ire>$ nce>$ nt>$ tion>$ ries>$ ting>$
+ion>$ ed>$ es>$ ive>$ ing>$ or>$ able>$
+ion>$ e>$ ive>$ ing>$
+t>$ y>$ w>$ l>$ e>$ ar>$ ment>$ ous>$ ness>$ al>$ ck>$
+er>$ ee>$ s>$ ed>$ le>$ y>$ ing>$ et>$ ins>$ ling>$ es>$
+d>$ s>$ rs>$ t>$ ck>$
+ue>$ s>$ y>$ en>$ ged>$ i>$
+ng>$ es>$ sm>$ st>$ ous>$ al>$ ty>$ ties>$ sh>$ zed>$ sed>$
+s>$ y>$ ial>$ e>$ ies>$ ing>$ tion>$ ted>$ m>$ ting>$ ts>$
+ble>$ d>$ ted>$ l>$ ge>$ ck>$ tion>$ ss>$ rt>$ id>$ ce>$ ting>$ se>$ tes>$ n>$ y>$ th>$
+ce>$ d>$ ng>$ r>$ l>$ s>$ nt>$ ning>$ ns>$ ned>$
+n>$ ing>$ s>$ ay>$
+x>$ d>$
+k>$ ation>$ ated>$ h>$ ating>$ ial>$
+se>$ m>$ n>$ l>$ k>$ ble>$ d>$ sing>$ ch>$ bly>$
+e>$ le>$ ling>$
+s>$ y>$ ted>$ on>$ e>$
+s>$ ic>$ a>$ ine>$ y>$ ous>$ ing>$ p>$ med>$ l>$
+t>$ il>$ e>$ ing>$
+her>$ s>$ o>$ ing>$ e>$ hes>$ hing>$ ic>$ ted>$ ion>$ ting>$ ation>$ ch>$ y>$ hed>$ ter>$ able>$ ty>$
+on>$ c>$ es>$ ous>$ ster>$ t>$ sts>$ zed>$ ate>$ ble>$ se>$ l>$ al>$ sing>$
+r>$ ss>$ d>$ it>$ n>$
+n>$ l>$ tion>$ r>$ ge>$ tive>$ te>$ ting>$ in>$ tor>$ de>$ e>$ me>$ ble>$
+nce>$ t>$ ment>$ rs>$ nt>$ st>$ l>$ ous>$ ring>$ on>$ ry>$ ns>$ able>$ red>$
+tion>$ m>$ te>$ ting>$ st>$ tor>$ g>$ ds>$ rn>$ ll>$
+e>$ y>$ ious>$ ing>$ le>$ on>$ ies>$ ial>$ ity>$ s>$
+ing>$ s>$ or>$ ly>$ y>$ ical>$ al>$ os>$ less>$ ier>$
+e>$ ing>$ ists>$ ic>$
+st>$ us>$ te>$ ry>$ ve>$ n>$ re>$ tion>$ tive>$ rs>$ ur>$
+ment>$ o>$ y>$ ly>$ s>$
+t>$ p>$ d>$ ch>$
+le>$ e>$ s>$ al>$ ing>$ ism>$ k>$ ian>$ able>$
+s>$ n>$ r>$ l>$ ment>$
+le>$ ly>$ t>$ s>$ us>$ ing>$ ed>$ er>$ ling>$ ire>$ h>$ o>$ y>$
+me>$ l>$ pe>$ re>$ a>$ s>$ de>$ on>$ t>$ in>$
+ee>$ ess>$ et>$ o>$
+d>$ ss>$ nt>$ r>$ ment>$ l>$ ed>$ nce>$ ive>$ ful>$ ans>$ nd>$ able>$ t>$ y>$ st>$ ps>$ ous>$
+p>$ od>$ on>$ us>$ ld>$ s>$ tic>$ ck>$
+ess>$ et>$ it>$
+t>$ ing>$ n>$ s>$ es>$ r>$ us>$ ur>$
+es>$ ing>$ er>$ ue>$ ed>$ ine>$ on>$ les>$ ra>$ ged>$ s>$
+t>$ ed>$ es>$ y>$ ing>$ ic>$ ity>$ ation>$ is>$ ious>$ el>$ er>$ us>$ ia>$ able>$ x>$ ion>$ ies>$ o>$ f>$ ate>$ en>$
+or>$ a>$ i>$ ure>$ s>$ et>$
+f>$ p>$ k>$ se>$ ry>$ ness>$ ster>$ c>$ ge>$ ries>$
+s>$ t>$ n>$ ly>$ rs>$ y>$ ry>$ dly>$ able>$ red>$
+ing>$ es>$ ed>$ er>$ y>$ a>$ et>$
+d>$ s>$ r>$ et>$ ll>$
+ing>$ le>$ y>$ on>$ a>$ ling>$ s>$ ies>$ os>$
+s>$ al>$ ing>$ ed>$ ers>$ ent>$ ly>$ an>$ y>$
+p>$ ng>$ on>$ rt>$ t>$
+es>$ ed>$ ful>$ ion>$ ing>$ ive>$ ment>$ or>$ man>$ ly>$ ant>$ er>$ ness>$ age>$
+s>$ d>$ ry>$ tic>$ rs>$
+y>$ f>$ x>$ h>$
+s>$ ed>$ ing>$ er>$ ment>$ ly>$ y>$ h>$
+e>$ h>$ y>$ ies>$ k>$
+ve>$ nce>$ nt>$ rs>$ f>$ ty>$ ld>$ st>$ ns>$ ce>$ w>$ le>$
+ng>$ ent>$ a>$ c>$ ence>$ ted>$ ly>$ ting>$
+ly>$ ion>$ ive>$ s>$ ed>$ ing>$ ment>$ ors>$ ic>$
+y>$ ks>$ e>$ o>$ a>$ ked>$ ny>$ king>$ ned>$ na>$
+e>$ s>$ y>$ t>$ le>$ he>$ o>$
+e>$ gs>$ s>$
+ed>$ ing>$ er>$ s>$ y>$
+ht>$ s>$ e>$ hing>$ hed>$ her>$ ged>$ al>$ ly>$ ation>$ ing>$ ated>$
+y>$ n>$ f>$ th>$ st>$ man>$ k>$ p>$
+s>$ ation>$ ed>$ er>$ ing>$ ry>$ ance>$ ly>$ ness>$
+t>$ m>$ hed>$ ed>$ ation>$ hing>$ ing>$ hes>$ er>$ es>$
+ation>$ ated>$ able>$ it>$ s>$ ted>$ al>$ e>$ ating>$ ates>$ ting>$ ts>$
+y>$ s>$ ly>$ ment>$ ful>$ ms>$ less>$ ness>$ h>$ g>$ c>$
+ies>$ ary>$ ate>$ ation>$ ating>$ ion>$ s>$ es>$
+h>$ er>$ ed>$ s>$ ing>$ y>$ ies>$ ry>$ a>$
+er>$ s>$ ing>$ en>$ ed>$ est>$ ly>$ ness>$
+e>$ ing>$ ive>$ h>$ ion>$ al>$ able>$ ness>$ ation>$ y>$
+s>$ d>$ r>$ nt>$ nce>$
+y>$ ies>$ ical>$ ist>$ ue>$ ous>$ s>$
+m>$ or>$ w>$ r>$ n>$ s>$ g>$ ing>$ ur>$ c>$
+w>$ t>$ r>$ n>$ sed>$ ur>$ me>$ us>$ l>$
+c>$ te>$ de>$ tion>$ s>$ ve>$ tive>$ ble>$ ting>$ ty>$ ts>$ al>$ tor>$ l>$ zed>$ es>$ bly>$ um>$ an>$ ties>$
+s>$ p>$ g>$ f>$
+ve>$ ble>$ tive>$ ty>$ ng>$ on>$ bly>$ de>$ ties>$ s>$
+l>$ tion>$ y>$ ge>$ ry>$ nt>$ ble>$ w>$ ic>$ s>$ ns>$ ries>$ ke>$ m>$
+d>$ nt>$ nce>$ st>$
+ng>$ ts>$ est>$
+r>$ less>$ n>$ tic>$ d>$ s>$
+m>$ tion>$ ted>$ de>$ nts>$ ting>$ ding>$ ss>$
+t>$ s>$
+ly>$ a>$ ous>$ g>$ y>$ um>$
+l>$ al>$ ful>$ re>$ me>$ st>$ ty>$ sing>$ ties>$ sm>$ tion>$ ble>$ ate>$ se>$ an>$ ating>$ ring>$ zed>$ sh>$ de>$
+ous>$ ly>$ ve>$ um>$ de>$ ll>$ on>$ zed>$ le>$ ot>$ pe>$
+e>$ ing>$
+se>$ d>$ sing>$ ts>$ ch>$ l>$ m>$ king>$ n>$
+d>$ t>$ r>$ n>$ y>$ st>$
+h>$ ment>$ er>$ s>$ ed>$ ing>$ y>$
+ing>$ s>$ e>$ age>$ y>$
+ly>$ s>$ ed>$ ing>$ er>$ ty>$ ted>$ ties>$ ment>$ able>$
+d>$ nt>$ s>$ r>$
+on>$ y>$ e>$ ure>$ ion>$ is>$ h>$ ing>$ ized>$ ia>$ m>$ a>$
+ng>$ es>$ ly>$ o>$ an>$ sm>$ um>$ ty>$ zed>$ ate>$ ne>$ ed>$ se>$ al>$
+ve>$ c>$ ble>$ es>$ zed>$
+s>$ ed>$ ing>$ er>$ a>$
+s>$ e>$
+ue>$ age>$ ary>$ ure>$ or>$ y>$ le>$ ly>$ ness>$ able>$
+ent>$ y>$ ed>$ or>$ al>$ ant>$ el>$ ated>$ et>$ er>$ ay>$
+ing>$ s>$ ed>$ ers>$ able>$ y>$ et>$ ly>$ en>$
+ce>$ t>$ ds>$
+s>$ ed>$ ing>$ y>$ er>$ et>$ ly>$ en>$ le>$ ling>$
+te>$ y>$ s>$
+ce>$ ate>$ re>$ le>$ m>$ e>$ lity>$
+ing>$ es>$ ed>$ er>$ t>$ able>$ y>$
+al>$ ent>$ ious>$ h>$ ence>$ ous>$ ate>$ ation>$ ore>$
+ot>$ er>$ ring>$ an>$ ing>$ ed>$ s>$ y>$
+ure>$ ment>$ s>$ re>$ ly>$ y>$ a>$ ness>$ ch>$ ry>$ um>$ ra>$ ting>$ ter>$ ted>$
+est>$ er>$ ed>$ ing>$ y>$ le>$ age>$ ies>$ ling>$ ets>$ ard>$ ly>$
+t>$ e>$ ity>$ al>$ ing>$ or>$ ion>$ ive>$
+s>$ ing>$ en>$ er>$ ed>$ less>$ ly>$ y>$ ia>$ ness>$
+d>$ s>$
+ge>$ l>$ ble>$ ry>$ y>$ bly>$ p>$ se>$ m>$ in>$ de>$ il>$ h>$ ise>$
+o>$ l>$ al>$ st>$ m>$ ts>$ x>$
+r>$ nt>$ nce>$ t>$ um>$ ly>$ ment>$ less>$ y>$ at>$ ed>$ st>$ us>$ ness>$ c>$
+h>$ s>$ ure>$ y>$ ly>$ al>$ ation>$ le>$ ling>$ o>$ ness>$
+tion>$ ed>$ er>$ ing>$ s>$
+lly>$ me>$ nce>$ ls>$ lity>$ ry>$ nt>$ s>$ ble>$ ge>$ de>$ ries>$ e>$ bly>$ cy>$ i>$
+ing>$ ue>$ ry>$ o>$ ness>$ al>$ us>$ y>$ man>$
+e>$ ing>$ t>$ hed>$ m>$
+r>$ d>$ s>$ ing>$ ar>$
+s>$ ation>$ ating>$ ate>$ y>$ ed>$ ing>$
+nts>$ d>$ th>$ r>$
+ce>$ ess>$ t>$ s>$
+y>$ e>$ ing>$ ies>$ able>$ is>$ s>$ os>$ ic>$
+tion>$ lly>$ nt>$ te>$ ting>$ tor>$ cy>$ ls>$ tive>$ ble>$ lity>$ st>$ bly>$ na>$
+d>$ y>$ s>$ ing>$ ed>$ ess>$ and>$ et>$
+on>$ ve>$ ng>$ c>$ ble>$ ous>$
+ic>$ ish>$ ing>$
+e>$ gs>$ t>$ ge>$ o>$ al>$ ated>$
+ing>$ ation>$ y>$ ine>$ z>$ ard>$ le>$ on>$ able>$ ling>$ as>$ u>$ ies>$ al>$ ier>$
+d>$ s>$ gs>$ gly>$
+y>$ ing>$ ies>$ le>$ ling>$ a>$ s>$
+er>$ s>$ on>$ t>$ ped>$ ing>$ es>$ ping>$ y>$ ed>$
+r>$ d>$ n>$ s>$
+ry>$ rs>$ ne>$ ck>$ re>$ ries>$ p>$
+te>$ nce>$ l>$ ge>$ in>$ ting>$ rd>$ nd>$ tic>$ tion>$ rt>$ y>$ s>$
+ul>$ ly>$ s>$ ing>$ ed>$ t>$ y>$
+ial>$ y>$ tion>$ il>$ ing>$ ies>$ s>$ ier>$ a>$
+ed>$ s>$ ing>$ et>$ ish>$ er>$ ess>$ a>$ ly>$ ey>$
+ng>$ ble>$ ed>$ es>$ bly>$ er>$ age>$ d>$
+ing>$ y>$ a>$ ial>$ ies>$ ier>$
+an>$ ed>$ y>$ ing>$ s>$
+w>$ n>$ r>$ p>$
+lly>$ sed>$ nd>$ sing>$ ge>$ ses>$ ls>$ el>$
+in>$ ble>$ t>$ nt>$ l>$ se>$
+ore>$ y>$ ot>$ able>$ ness>$ ment>$ ly>$ are>$ ful>$ od>$
+an>$ s>$ ic>$ en>$
+ly>$ led>$ s>$ ity>$ ling>$ ing>$ e>$ ized>$ k>$ ise>$
+n>$ k>$ y>$ g>$ d>$ f>$
+gs>$ y>$ e>$ a>$ ue>$ s>$ gly>$
+id>$ r>$ ur>$ ted>$ ke>$ king>$ y>$ us>$ ting>$ cal>$ s>$
+e>$ m>$ t>$ ce>$ d>$
+ge>$ rs>$ tion>$ s>$ ry>$ ble>$ nt>$ ting>$ te>$
+le>$ ing>$ en>$ y>$ ed>$ er>$ ies>$ ling>$ ly>$ it>$ est>$
+y>$ e>$ ies>$ ation>$ ated>$
+ally>$ ation>$ tion>$ de>$ te>$ ne>$ ated>$ ary>$ m>$ ting>$ ating>$ ses>$ ity>$ ous>$ ates>$
+te>$ ge>$ x>$ ment>$ rs>$ ts>$ ar>$ um>$ man>$ e>$ ry>$ ad>$ an>$ ton>$
+ion>$ y>$ e>$ ive>$ al>$ ies>$ ors>$
+ty>$ ng>$ ties>$ es>$ zed>$
+ble>$ tive>$ te>$ nce>$ bly>$ s>$
+ps>$ se>$ t>$ ve>$ ble>$ led>$ d>$ ul>$ ll>$ ge>$ m>$
+or>$ al>$ es>$ c>$ zed>$ sm>$ um>$ sed>$
+ng>$ c>$ st>$ es>$ a>$ zed>$ sm>$ te>$
+y>$ es>$ ed>$ ies>$ ing>$ hed>$ er>$ hing>$
+le>$ e>$ h>$ ling>$ ation>$
+d>$ r>$ n>$
+e>$ ly>$ ments>$ ds>$ less>$ w>$ r>$ o>$ ck>$ y>$
+d>$ s>$ r>$ y>$
+ty>$ zed>$ ng>$ st>$ sm>$ ties>$ sed>$ ne>$ es>$ sing>$ ses>$ a>$
+d>$ ty>$ r>$ nd>$ nts>$
+e>$ s>$ ic>$
+y>$ ly>$ o>$ ment>$ h>$ ure>$
+tion>$ l>$ tive>$ te>$ ble>$ nce>$ ting>$ nt>$ ge>$
+er>$ s>$ y>$ ing>$ on>$ ic>$ ed>$ es>$ ies>$
+ng>$ c>$ sh>$ ne>$ sm>$ es>$
+s>$ ed>$ ing>$ ation>$ er>$ ion>$ able>$
+s>$ ed>$ ing>$ ers>$ ay>$ able>$
+s>$ ed>$ ing>$ n>$
+s>$ m>$ it>$ n>$ al>$ g>$ ps>$
+hed>$ m>$ hing>$ ation>$ ed>$ t>$ hes>$ ing>$ es>$
+ed>$ ation>$ ate>$ ating>$ o>$
+e>$ n>$ s>$ ic>$ ing>$ y>$ ly>$
+y>$ ly>$ le>$ a>$ ling>$ o>$ ra>$ u>$ ness>$ ker>$
+ing>$ d>$
+le>$ ping>$ e>$ s>$ tion>$ ped>$ ation>$ ated>$ ing>$
+s>$ ed>$ ing>$ a>$ ion>$ y>$ er>$
+es>$ ng>$ ed>$ ty>$ st>$ c>$ sm>$ ne>$ zed>$
+al>$ ed>$ er>$ ing>$ ate>$ able>$ ary>$ ment>$ ist>$
+y>$ ment>$ ful>$ se>$ g>$ ster>$ sing>$ d>$ c>$
+s>$ ing>$ ance>$ ge>$ ation>$ ity>$ ant>$ ated>$ al>$ ized>$
+ing>$ ance>$ er>$ ant>$ ed>$ ent>$ ence>$ ic>$ ive>$
+ng>$ c>$ ties>$ a>$ ty>$
+t>$ ng>$ se>$ d>$ sing>$ sh>$ sm>$
+r>$ s>$ tic>$
+ous>$ x>$ ve>$ h>$
+s>$ ed>$ ing>$
+ess>$ o>$
+ly>$ ed>$ ation>$ al>$ h>$ ment>$ er>$
+ve>$ ce>$ ge>$ ly>$ ful>$ less>$
+s>$ ly>$ ed>$ ry>$ ing>$
+ly>$ r>$ n>$ ur>$ e>$
+ed>$ s>$ er>$ ing>$ a>$
+e>$ al>$ n>$ ing>$ ated>$ ity>$ ation>$ ist>$ ates>$
+ng>$ al>$ ous>$ ne>$ st>$
+ce>$ d>$ s>$ ent>$ tic>$ ity>$ ly>$ ism>$ ely>$ a>$
+t>$ e>$ a>$ se>$ n>$
+s>$ al>$ ation>$ ated>$ able>$ y>$ ous>$ ating>$ ed>$ ates>$ ing>$ ies>$
+is>$ ical>$ t>$ ed>$ er>$ m>$
+d>$ f>$ s>$ ves>$ ter>$
+s>$ ing>$ ed>$ ent>$ er>$
+s>$ ing>$ ed>$ er>$
+s>$ ing>$ th>$ ed>$ n>$ er>$ ly>$ y>$ ling>$ est>$ led>$
+k>$ o>$ ment>$ ly>$ less>$ ful>$ y>$ ning>$ ner>$ ny>$ ned>$ ch>$
+ed>$ y>$ ing>$ le>$ er>$ it>$ ies>$ ling>$ ly>$
+s>$ er>$
+d>$ r>$ nt>$ s>$ nce>$
+d>$ r>$ s>$ ter>$
+s>$ d>$ ing>$ y>$ rs>$
+ed>$ ing>$ ment>$ er>$ es>$ able>$ ly>$
+r>$ s>$ d>$
+l>$ r>$ se>$ med>$ d>$ sing>$ ms>$
+r>$ s>$ d>$ able>$ nt>$
+s>$ ed>$ ing>$ er>$
+ld>$ ot>$
+es>$ ed>$ ing>$ ment>$ ive>$
+s>$ ed>$ ly>$ y>$ ged>$ less>$ er>$ ding>$ ness>$ o>$ es>$ ent>$ ling>$
+s>$ r>$ d>$ f>$ ve>$
+g>$ y>$ ment>$ ous>$
+d>$ s>$ ls>$ r>$ n>$ t>$
+e>$ s>$ ia>$ ic>$ o>$
+nt>$ d>$
+d>$ r>$ y>$ t>$ n>$ st>$
+ng>$ on>$ ed>$ es>$ tes>$ sh>$ st>$ ble>$ um>$ an>$
+ly>$ st>$ ms>$ ment>$ in>$ en>$ ls>$ ful>$ dly>$ x>$ es>$ ch>$ ering>$ ur>$ ers>$ less>$
+ve>$ ng>$ t>$ sm>$
+m>$ s>$ d>$ t>$ r>$
+ion>$ ance>$ ary>$
+ness>$ ful>$ m>$ p>$ w>$ d>$
+us>$ n>$
+al>$ t>$ ses>$ p>$ ity>$ ous>$
+s>$ ry>$ ty>$ al>$ ries>$ g>$ y>$ ated>$ ating>$ ing>$ ed>$ ates>$
+ing>$ t>$ s>$ er>$ ly>$ est>$ ed>$ ness>$
+ent>$ ed>$ a>$ ence>$ er>$ ing>$ s>$ ous>$
+d>$ s>$ r>$
+ee>$ ed>$ ing>$ er>$ y>$ le>$ al>$
+ng>$ tion>$ c>$ tive>$ on>$ ve>$ zed>$ me>$
+t>$ s>$ ed>$
+ce>$ a>$
+ard>$ ly>$ le>$ y>$ red>$ ling>$ ant>$ ary>$ ness>$ al>$ able>$ o>$ age>$ ry>$
+y>$ th>$ ment>$ st>$ p>$
+r>$ l>$ d>$ ss>$ t>$
+y>$ s>$
+e>$ or>$ ation>$ able>$ ure>$
+d>$ r>$ s>$
+ation>$ ated>$ ates>$ ating>$
+ment>$ ly>$ y>$ ure>$ le>$ ling>$ ness>$ ful>$
+s>$ d>$ r>$ l>$
+s>$ nd>$ ted>$
+t>$ ses>$ sed>$ is>$ sing>$ e>$
+ing>$ al>$
+t>$ ce>$
+le>$ t>$ s>$ ation>$
+ly>$ s>$ ed>$ ing>$ ness>$
+h>$ zed>$ x>$
+gs>$ ary>$ ate>$ ation>$ ating>$ al>$ ess>$
+ive>$ e>$ ion>$ ated>$
+s>$ ly>$ ed>$ ance>$ ing>$ ning>$ y>$ ned>$
+t>$ r>$ d>$ p>$ s>$ n>$ k>$ ing>$ zed>$ able>$ ling>$
+ing>$ ed>$ s>$ ant>$ o>$
+ors>$ d>$
+ng>$ c>$ ld>$ st>$ sm>$ es>$
+ed>$ s>$ ing>$
+d>$ s>$ r>$ n>$
+es>$ ed>$ ing>$ er>$ o>$ ment>$
+s>$ ted>$ hing>$ ts>$
+ce>$ t>$ d>$
+d>$ s>$
+d>$ s>$ ess>$
+ul>$ ire>$
+ing>$ er>$ ed>$ s>$
+ed>$ h>$ ing>$ er>$ s>$
+e>$ s>$ ing>$ a>$ p>$ ble>$ med>$
+d>$ t>$
+y>$ ue>$
+nt>$ te>$ m>$
+d>$ s>$
+s>$ d>$
+ing>$ al>$ ity>$ ating>$ ation>$ ate>$ able>$ ism>$ ist>$
+ly>$ ment>$ re>$ ry>$ less>$ x>$
+s>$ ic>$ bly>$ ies>$ ble>$ an>$ ia>$ ing>$
+ess>$ ine>$ ey>$ ing>$ ed>$
+ly>$ ing>$ s>$ er>$ et>$ ness>$ y>$ ed>$ en>$ est>$
+ng>$ er>$ ne>$
+r>$ s>$ p>$
+y>$ l>$ n>$ t>$ d>$ c>$ ster>$
+ck>$ tion>$ te>$ s>$ tor>$ in>$ y>$ l>$ ting>$
+nce>$ r>$ s>$
+ss>$ me>$ at>$ e>$
+ed>$ y>$ es>$ ing>$
+s>$ n>$ ed>$ ate>$ ly>$ ation>$ ing>$ y>$
+ing>$ d>$
+er>$ ing>$ ed>$ o>$ es>$ able>$
+d>$ s>$ r>$
+s>$ d>$
+l>$ n>$ us>$ s>$
+y>$ s>$ g>$ t>$ re>$ c>$
+s>$ ed>$ ion>$ ing>$ ly>$
+es>$ ed>$ er>$ ing>$
+al>$ ing>$ ed>$ ary>$ er>$ ist>$ less>$ ism>$
+e>$ ist>$ on>$ ing>$ ine>$ ation>$ y>$ l>$ ated>$
+man>$ rt>$
+gs>$ gly>$
+sly>$ t>$
+d>$ ss>$

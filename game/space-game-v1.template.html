@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fill 64 bits: the spaces game</title>
+<style>
+  :root {
+    --paper: #f5f5f5; --box: #ffffff; --ink: #2d3142; --muted: #4f5d75;
+    --accent: #eb6c36; --cont: #b3bac8; --end: #6c7893; --word: #2f7f73; --line: #c9ccd4;
+    --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--sans); background: var(--paper); color: var(--ink); padding: 24px 20px 28px; }
+  .frame { max-width: 720px; margin: 0 auto; }
+  .eyebrow { font: 500 10px var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+  .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin: 6px 0 12px; }
+  .count { font: 600 22px var(--mono); font-variant-numeric: tabular-nums; }
+  .count small { font-size: 13px; font-weight: 400; color: var(--muted); }
+  .mode { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; font-size: 13px; }
+  .mode span { padding: 6px 10px; color: var(--muted); }
+  .mode button { font: inherit; border: 0; border-left: 1px solid var(--line); background: var(--box); color: var(--ink); padding: 6px 12px; cursor: pointer; }
+  .mode button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+  .meter { display: flex; align-items: center; gap: 10px; }
+  .gauge { flex: 1; display: grid; grid-template-columns: repeat(64, 1fr); gap: 2px; }
+  .bit { aspect-ratio: 1; border: 1px solid var(--line); border-radius: 2px; background: var(--box); transition: background .25s; }
+  .bit.on { border-color: transparent; }
+  .bit.missing { border: 1.5px dashed var(--accent); }
+  .spare { display: none; align-items: center; gap: 2px; font: 11px var(--mono); color: var(--accent); white-space: nowrap; }
+  .spare.show { display: flex; }
+  .spare .bit { width: 10px; border-style: dashed; border-color: var(--accent); }
+  .spare b { margin-left: 6px; font-weight: 600; }
+  .legend { display: flex; gap: 4px 16px; flex-wrap: wrap; margin-top: 8px; font: 11px var(--mono); color: var(--muted); }
+  .legend i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+  .formula { margin-top: 6px; min-height: 1.5em; font: 12px var(--mono); color: var(--muted); overflow-wrap: anywhere; }
+  .phrase { display: flex; flex-wrap: wrap; align-items: center; row-gap: 8px; margin: 22px 0 4px; min-height: 40px; }
+  .word { display: flex; gap: 3px; }
+  .loose { display: flex; gap: 3px; }
+  .slot { min-width: 36px; height: 36px; padding: 0 6px; display: grid; place-items: center; border: 1.2px dashed var(--line); border-radius: 4px; font: 500 15px var(--mono); color: var(--ink); background: transparent; }
+  .slot.w.filled { background: var(--word); border: 1.2px solid var(--word); color: #fff; }
+  .slot.w:not(.filled) { border-color: var(--word); }
+  .slot.b.filled { background: var(--ink); border: 1.2px solid var(--ink); color: #fff; }
+  .slot.c.filled { background: var(--box); border: 1.2px solid var(--cont); }
+  .slot.e.filled { background: var(--end); border: 1.2px solid var(--end); color: #fff; }
+  .slot.e:not(.filled) { border-color: var(--end); }
+  .slot.b:not(.filled) { border-color: var(--ink); }
+  .slot.current { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .space { width: 26px; height: 36px; display: grid; place-items: center; color: var(--accent); font: 600 18px var(--mono); }
+  .plain { min-height: 1.4em; font: 13px var(--mono); color: var(--muted); }
+  .msg { margin: 14px 0 12px; min-height: 2.8em; font-size: 14.5px; line-height: 1.45; text-wrap: pretty; }
+  .msg b { font-weight: 600; }
+  .layouts { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+  .layouts button { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--box); cursor: pointer; font: 12px var(--mono); color: var(--muted); }
+  .layouts button:hover, .layouts button:focus-visible { border-color: var(--accent); outline: none; color: var(--ink); }
+  .mini { display: flex; align-items: center; }
+  .mini i { width: 9px; height: 9px; border-radius: 2px; margin-right: 2px; border: 1px solid var(--cont); }
+  .mini i.w { background: var(--word); border-color: var(--word); }
+  .mini i.b { background: var(--ink); border-color: var(--ink); }
+  .mini i.e { background: var(--end); border-color: var(--end); }
+  .mini em { width: 10px; height: 2px; margin: 0 3px 0 1px; background: var(--accent); align-self: flex-end; }
+  .picker { display: grid; grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); gap: 4px; }
+  .picker button { height: 32px; border: 1px solid var(--line); border-radius: 4px; background: var(--box); font: 13px var(--mono); color: var(--ink); cursor: pointer; }
+  .picker button:hover, .picker button:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+  .actions { display: flex; gap: 8px; margin-top: 14px; }
+  .actions button { font: 13px var(--sans); padding: 7px 14px; border-radius: 6px; border: 1px solid var(--line); background: var(--box); color: var(--ink); cursor: pointer; }
+  .actions button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .actions button:disabled { opacity: .4; cursor: default; }
+  .actions button:focus-visible, .mode button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  @media (max-width: 560px) { .gauge { grid-template-columns: repeat(32, 1fr); } }
+  @media (prefers-reduced-motion: reduce) { .bit { transition: none; } }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="eyebrow">Fill 64 bits with ten tokens</div>
+  <div class="top">
+    <div class="count"><span id="count">0</span> <small>/ 64 bits</small></div>
+    <div class="mode" role="group" aria-label="Spaces">
+      <span>Spaces</span>
+      <button type="button" data-mode="free" aria-pressed="true">free</button>
+      <button type="button" data-mode="fixed" aria-pressed="false">fixed</button>
+    </div>
+  </div>
+  <div class="meter">
+    <div class="gauge" id="gauge" role="meter" aria-label="Bits stored" aria-valuemin="0" aria-valuemax="64" aria-valuenow="0"></div>
+    <div class="spare" id="spare"></div>
+  </div>
+  <div class="legend">
+    <span><i style="background:var(--accent)"></i><span id="spaces-legend">spaces: 1 of 16 layouts</span></span>
+    <span><i style="background:var(--word)"></i>short word: 1 of 16</span>
+    <span><i style="background:var(--ink)"></i>beginning: 1 of 128</span>
+    <span><i style="background:var(--cont)"></i>middle: 1 of 64</span>
+    <span><i style="background:var(--end)"></i>ending: 1 of 64</span>
+  </div>
+  <div class="formula" id="formula"></div>
+
+  <div class="phrase" id="phrase" aria-live="polite"></div>
+  <div class="plain" id="plain"></div>
+  <p class="msg" id="msg"></p>
+  <div id="panel"></div>
+  <div class="actions">
+    <button type="button" class="primary" id="random">Fill randomly</button>
+    <button type="button" id="undo">Undo</button>
+    <button type="button" id="reset">Start over</button>
+  </div>
+</div>
+<script>
+"use strict";
+const BEGIN = __BEGIN__;
+const CONT = __CONT__;
+const END = __END__;
+const WORDS = __WORDS__;
+const POOL = { w: WORDS, b: BEGIN, c: CONT, e: END };
+const kindAt = (n, j) => (n === 1 ? "w" : j === 0 ? "b" : j === n - 1 ? "e" : "c");
+const TOTAL_TOKENS = 10;
+const MIN_TOKENS = 2;
+const MAX_TOKENS = 5;
+const LAYOUTS = [];
+for (let a = MIN_TOKENS; a <= MAX_TOKENS; a++) {
+  for (let b = MIN_TOKENS; b <= MAX_TOKENS; b++) {
+    const c = TOTAL_TOKENS - a - b;
+    if (c >= MIN_TOKENS && c <= MAX_TOKENS) LAYOUTS.push([a, b, c]);
+  }
+}
+// One-token words only lead into the next word; they never end the phrase.
+const ONE_TOKEN = [[1, 4, 5], [1, 5, 4], [4, 1, 5], [5, 1, 4]];
+LAYOUTS.push(...ONE_TOKEN);
+LAYOUTS.sort((x, y) => x[0] - y[0] || x[1] - y[1]);
+const FIXED = [4, 3, 3];
+const LOGL = Math.log2(LAYOUTS.length);
+const LAYOUT_LEGEND = `spaces: 1 of ${LAYOUTS.length} layouts`;
+const COLOR = { space: "var(--accent)", w: "var(--word)", b: "var(--ink)", c: "var(--cont)", e: "var(--end)" };
+
+const state = { mode: "free", layout: null, picks: [], preview: null, timer: null };
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+
+const bits = [];
+for (let i = 0; i < 64; i++) { const b = el("div", "bit"); b.title = "bit " + (i + 1); $("gauge").append(b); bits.push(b); }
+
+function slotsFor(layout) {
+  const out = [];
+  layout.forEach((n, word) => { for (let j = 0; j < n; j++) out.push({ word, kind: kindAt(n, j) }); });
+  return out;
+}
+const slots = () => (state.layout ? slotsFor(state.layout) : []);
+const fmt = (x) => (Number.isInteger(x) ? String(x) : x.toFixed(2));
+
+function segments() {
+  const segs = [];
+  if (state.layout) segs.push({ kind: "space", bits: state.mode === "free" ? LOGL : 0 });
+  slots().forEach((s, i) => { if (i < state.picks.length) segs.push({ kind: s.kind, bits: s.kind === "b" ? 7 : s.kind === "w" ? Math.log2(WORDS.length) : 6 }); });
+  return segs;
+}
+
+function paint(box, i, ranges, total) {
+  const parts = [];
+  for (const r of ranges) {
+    const a = Math.max(r.a, i), b = Math.min(r.b, i + 1);
+    if (b > a) parts.push(`${r.c} ${((a - i) * 100).toFixed(1)}% ${((b - i) * 100).toFixed(1)}%`);
+  }
+  const fill = Math.min(1, Math.max(0, total - i));
+  if (!parts.length) { box.style.background = ""; box.classList.remove("on"); return; }
+  if (fill < 1) parts.push(`transparent ${(fill * 100).toFixed(1)}% 100%`);
+  box.style.background = `linear-gradient(to right, ${parts.join(", ")}), var(--box)`;
+  box.classList.toggle("on", fill >= 1);
+}
+
+function renderGauge() {
+  let pos = 0;
+  const segs = segments();
+  const ranges = segs.filter((s) => s.bits > 0).map((s) => { const r = { c: COLOR[s.kind], a: pos, b: pos + s.bits }; pos += s.bits; return r; });
+  bits.forEach((box, i) => paint(box, i, ranges, pos));
+  const finished = state.layout && state.picks.length === TOTAL_TOKENS;
+  bits.forEach((box, i) => box.classList.toggle("missing", !!finished && i >= pos));
+  $("spaces-legend").textContent = state.mode === "free" ? LAYOUT_LEGEND : "spaces: fixed, 1 of 1";
+  const spare = $("spare");
+  spare.replaceChildren();
+  if (pos > 64) {
+    for (let i = 64; i < Math.ceil(pos); i++) { const b = el("div", "bit"); paint(b, i, ranges, pos); spare.append(b); }
+    spare.append(el("b", null, "+" + fmt(pos - 64) + " spare"));
+  }
+  spare.classList.toggle("show", pos > 64);
+  $("count").textContent = fmt(pos);
+  $("gauge").setAttribute("aria-valuenow", Math.min(64, pos).toFixed(2));
+  const terms = segs.map((s) => (s.kind === "space" ? (state.mode === "free" ? "log₂" + LAYOUTS.length : "0") : String(s.bits)));
+  $("formula").textContent = terms.length ? terms.join(" + ") + " = " + fmt(pos) + " bits" : "";
+  return pos;
+}
+
+function renderPhrase() {
+  const box = $("phrase");
+  box.replaceChildren();
+  const layout = state.layout || state.preview;
+  if (!layout) {
+    const loose = el("div", "loose");
+    for (let i = 0; i < TOTAL_TOKENS; i++) loose.append(el("div", "slot"));
+    box.append(loose);
+    $("plain").textContent = "";
+    return;
+  }
+  const all = slotsFor(layout);
+  let index = 0;
+  layout.forEach((n, w) => {
+    if (w > 0) box.append(el("div", "space", "␣"));
+    const word = el("div", "word");
+    for (let j = 0; j < n; j++, index++) {
+      const s = all[index];
+      const slot = el("div", "slot " + s.kind);
+      if (state.layout && index < state.picks.length) {
+        slot.classList.add("filled");
+        slot.textContent = POOL[s.kind][state.picks[index]];
+      } else if (state.layout && index === state.picks.length) {
+        slot.classList.add("current");
+      }
+      word.append(slot);
+    }
+    box.append(word);
+  });
+  if (state.layout && state.picks.length === TOTAL_TOKENS) {
+    const words = []; let k = 0;
+    const all = slots();
+    state.layout.forEach((n) => { let w = ""; for (let j = 0; j < n; j++, k++) w += POOL[all[k].kind][state.picks[k]]; words.push(w); });
+    $("plain").textContent = words.join(" ");
+  } else {
+    $("plain").textContent = "";
+  }
+}
+
+function prompt() {
+  const s = slots()[state.picks.length];
+  if (s.kind === "w") return `Word ${s.word + 1} is a single token: a two-letter word. Every built word has at least three letters, so the decoder knows this one is a single token. Pick a <b>short word</b>: 1 of ${WORDS.length} is ${fmt(Math.log2(WORDS.length))} bits.`;
+  if (s.kind === "b") return `Word ${s.word + 1} starts here. Pick a <b>beginning</b>: 1 of 128 is 7 bits.`;
+  if (s.kind === "e") return `Word ${s.word + 1} ends here. Pick an <b>ending</b>: 1 of 64 is 6 bits. Endings make the word spell like English.`;
+  return `Word ${s.word + 1} goes on. Pick a <b>middle</b>: 1 of 64 is 6 bits.`;
+}
+
+function renderPanel(total) {
+  const panel = $("panel");
+  panel.replaceChildren();
+  const msg = $("msg");
+  if (!state.layout) {
+    msg.innerHTML = `Ten tokens, three words. A word is ${MIN_TOKENS} to ${MAX_TOKENS} tokens long, or a single two-letter word that leads into the next one. Every longer word starts with a beginning and ends with an ending. First decide <b>where the two spaces go</b>. There are ${LAYOUTS.length} ways to do it, so this choice alone is worth log₂ ${LAYOUTS.length} = ${fmt(LOGL)} bits.`;
+    const grid = el("div", "layouts");
+    LAYOUTS.forEach((layout) => {
+      const btn = el("button");
+      btn.type = "button";
+      const mini = el("span", "mini");
+      layout.forEach((n, w) => { if (w > 0) mini.append(el("em")); for (let j = 0; j < n; j++) mini.append(el("i", kindAt(n, j))); });
+      btn.append(mini, el("span", null, layout.join(" + ")));
+      btn.addEventListener("click", () => chooseLayout(layout));
+      btn.addEventListener("mouseenter", () => { state.preview = layout; renderPhrase(); });
+      btn.addEventListener("focus", () => { state.preview = layout; renderPhrase(); });
+      btn.addEventListener("mouseleave", () => { state.preview = null; renderPhrase(); });
+      grid.append(btn);
+    });
+    panel.append(grid);
+    return;
+  }
+  const done = state.picks.length === TOTAL_TOKENS;
+  const free = state.mode === "free";
+  if (done) {
+    msg.innerHTML = free
+      ? `<b>${fmt(total)} bits from ten tokens.</b> All 64 boxes are full, ${total > 64 ? `with ${fmt(total - 64)} bits to spare` : "with nothing to spare"}. The spaces put the last bit in. Switch the spaces to fixed and try again.`
+      : `<b>${fmt(total)} bits from ten tokens. One box stays empty.</b> With fixed spaces, ten tokens can’t hold a 64-bit number; you’d need an eleventh. Make the spaces free, and the same ten tokens are enough.`;
+    return;
+  }
+  const lead = state.picks.length === 0
+    ? (free
+        ? `Layout ${state.layout.join(" + ")}: ${fmt(LOGL)} bits, the first boxes of the gauge. `
+        : `The spaces are fixed at ${FIXED.join(" + ")}. The decoder already knows where they are, so they carry 0 bits. `)
+    : "";
+  msg.innerHTML = lead + prompt();
+  const kind = slots()[state.picks.length].kind;
+  const list = POOL[kind];
+  const grid = el("div", "picker");
+  grid.setAttribute("aria-label", kind === "w" ? WORDS.length + " short words" : kind === "b" ? "128 beginnings" : kind === "e" ? "64 endings" : "64 middles");
+  list.forEach((token, i) => {
+    const btn = el("button", null, token);
+    btn.type = "button";
+    btn.addEventListener("click", () => pick(i));
+    grid.append(btn);
+  });
+  panel.append(grid);
+}
+
+function render() {
+  const total = renderGauge();
+  renderPhrase();
+  renderPanel(total);
+  const done = state.layout && state.picks.length === TOTAL_TOKENS;
+  $("random").disabled = !!done || state.timer !== null;
+  $("undo").disabled = state.timer !== null || (state.mode === "free" ? !state.layout : state.picks.length === 0);
+  document.querySelectorAll(".mode button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.mode === state.mode)));
+}
+
+function chooseLayout(layout) { state.layout = layout; state.preview = null; render(); }
+function pick(i) { if (state.picks.length < TOTAL_TOKENS) { state.picks.push(i); render(); } }
+function stop() { if (state.timer !== null) { clearInterval(state.timer); state.timer = null; } }
+function reset() {
+  stop();
+  state.picks = [];
+  state.preview = null;
+  state.layout = state.mode === "fixed" ? FIXED : null;
+  render();
+}
+function undo() {
+  if (state.picks.length) state.picks.pop();
+  else if (state.mode === "free") state.layout = null;
+  render();
+}
+function step() {
+  if (!state.layout) { chooseLayout(LAYOUTS[Math.floor(Math.random() * LAYOUTS.length)]); return true; }
+  if (state.picks.length >= TOTAL_TOKENS) return false;
+  const list = POOL[slots()[state.picks.length].kind];
+  pick(Math.floor(Math.random() * list.length));
+  return state.picks.length < TOTAL_TOKENS;
+}
+function fillRandomly() {
+  stop();
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) { while (step()); render(); return; }
+  state.timer = setInterval(() => { if (!step()) { stop(); render(); } }, 260);
+  render();
+}
+
+document.querySelectorAll(".mode button").forEach((b) => b.addEventListener("click", () => { state.mode = b.dataset.mode; reset(); }));
+$("random").addEventListener("click", fillRandomly);
+$("undo").addEventListener("click", undo);
+$("reset").addEventListener("click", reset);
+reset();
+</script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+{
+  "beginning_ids_only_v2": [
+    38,
+    41,
+    58,
+    63,
+    76,
+    94,
+    100,
+    106,
+    115,
+    119,
+    148,
+    160,
+    161,
+    163,
+    164,
+    171,
+    173,
+    186,
+    204,
+    211,
+    213,
+    215,
+    222,
+    224,
+    225,
+    239,
+    244,
+    248,
+    251,
+    252
+  ],
+  "beginning_ids_only_v3": [
+    22,
+    33,
+    34,
+    37,
+    40,
+    45,
+    46,
+    69,
+    74,
+    78,
+    85,
+    91,
+    101,
+    103,
+    104,
+    107,
+    124,
+    129,
+    130,
+    138,
+    156,
+    157,
+    169,
+    177,
+    181,
+    188,
+    208,
+    210,
+    221,
+    228
+  ],
+  "corpus_unique_words": 94080,
+  "examples": [
+    {
+      "input": "string:\"hello\"",
+      "u64": "16350172494705860510",
+      "v2": "computeves fervantish tankerton",
+      "v3": "crazader filianm subtencities"
+    },
+    {
+      "input": "string:\"\"",
+      "u64": "15130871412783076140",
+      "v2": "faituacy penalculue travelopta",
+      "v3": "federameer outlookts towfuted"
+    },
+    {
+      "input": "string:\"example\"",
+      "u64": "14941409575653471717",
+      "v2": "servitrt ruddinely outgrounted",
+      "v3": "scalwash riccently notestating"
+    },
+    {
+      "input": "string:\"readable hash\"",
+      "u64": "3204946578914007264",
+      "v2": "ricarpates ruffushed lustraligly",
+      "v3": "rejurians riolubd maymoire"
+    },
+    {
+      "input": "string:\"The quick brown fox\"",
+      "u64": "10907226846199710515",
+      "v2": "gilliamis outlightcal luggestnd",
+      "v3": "gogueleion notianh matasteo"
+    },
+    {
+      "input": "u64:0x0",
+      "u64": "0",
+      "v2": "abbabiable abbalanable abbalanable",
+      "v3": "abandaia abandaal abandaal"
+    },
+    {
+      "input": "u64:0x1",
+      "u64": "1",
+      "v2": "accedaleable abbalanable abbalanable",
+      "v3": "adaiaca abandaal abandaal"
+    },
+    {
+      "input": "u64:0xffffffffffffffff",
+      "u64": "18446744073709551615",
+      "v2": "zywoz zythz zythz",
+      "v3": "woundzz woundruz woundruz"
+    },
+    {
+      "input": "u64:0x243f6a8885a308d3",
+      "u64": "2611923443488327891",
+      "v2": "packboity carburdher subverberble",
+      "v3": "orierling chairasseth steinomat"
+    },
+    {
+      "input": "u64:0xdeadbeefcafebabe",
+      "u64": "16045690984503098046",
+      "v2": "inclonix extravative heatechitive",
+      "v3": "jerredy favoureth hereivate"
+    }
+  ],
+  "method": "uniform u64, exact reachable-path counts; observed adjacency from checked-in unique-word corpus, not running-text frequency",
+  "v2": {
+    "phrase_max_letters": 48,
+    "phrase_mean_letters": "14875399/524288",
+    "phrase_mean_letters_decimal": 28.37257194519043,
+    "phrase_min_letters": 15,
+    "spaces": 2,
+    "word1": {
+      "coverage_first_middle_second_middle_end": [
+        {
+          "fallback_paths": 0,
+          "fallback_probability": "0",
+          "local_paths": 2048,
+          "local_probability": "1",
+          "total_paths": 2048
+        },
+        {
+          "fallback_paths": 231,
+          "fallback_probability": "231/32768",
+          "local_paths": 32537,
+          "local_probability": "32537/32768",
+          "total_paths": 32768
+        },
+        {
+          "fallback_paths": 3188703,
+          "fallback_probability": "3188703/4194304",
+          "local_paths": 1005601,
+          "local_probability": "1005601/4194304",
+          "total_paths": 4194304
+        }
+      ],
+      "max_letters": 16,
+      "mean_letters": "9908349/1048576",
+      "min_letters": 5,
+      "paths": 4194304
+    },
+    "word2_and_3": {
+      "coverage_first_middle_second_middle_end": [
+        {
+          "fallback_paths": 0,
+          "fallback_probability": "0",
+          "local_paths": 2048,
+          "local_probability": "1",
+          "total_paths": 2048
+        },
+        {
+          "fallback_paths": 4,
+          "fallback_probability": "1/4096",
+          "local_paths": 16380,
+          "local_probability": "4095/4096",
+          "total_paths": 16384
+        },
+        {
+          "fallback_paths": 1594427,
+          "fallback_probability": "1594427/2097152",
+          "local_paths": 502725,
+          "local_probability": "502725/2097152",
+          "total_paths": 2097152
+        }
+      ],
+      "max_letters": 16,
+      "mean_letters": "19842449/2097152",
+      "min_letters": 5,
+      "paths": 2097152
+    }
+  },
+  "v3": {
+    "phrase_max_letters": 48,
+    "phrase_mean_letters": "28292829/1048576",
+    "phrase_mean_letters_decimal": 26.982144355773926,
+    "phrase_min_letters": 15,
+    "spaces": 2,
+    "word1": {
+      "coverage_first_middle_second_middle_end": [
+        {
+          "fallback_paths": 0,
+          "fallback_probability": "0",
+          "local_paths": 4096,
+          "local_probability": "1",
+          "total_paths": 4096
+        },
+        {
+          "fallback_paths": 5863,
+          "fallback_probability": "5863/131072",
+          "local_paths": 125209,
+          "local_probability": "125209/131072",
+          "total_paths": 131072
+        },
+        {
+          "fallback_paths": 794366,
+          "fallback_probability": "397183/2097152",
+          "local_paths": 3399938,
+          "local_probability": "1699969/2097152",
+          "total_paths": 4194304
+        }
+      ],
+      "max_letters": 16,
+      "mean_letters": "2355901/262144",
+      "min_letters": 5,
+      "paths": 4194304
+    },
+    "word2_and_3": {
+      "coverage_first_middle_second_middle_end": [
+        {
+          "fallback_paths": 0,
+          "fallback_probability": "0",
+          "local_paths": 4096,
+          "local_probability": "1",
+          "total_paths": 4096
+        },
+        {
+          "fallback_paths": 507,
+          "fallback_probability": "507/65536",
+          "local_paths": 65029,
+          "local_probability": "65029/65536",
+          "total_paths": 65536
+        },
+        {
+          "fallback_paths": 399308,
+          "fallback_probability": "99827/524288",
+          "local_paths": 1697844,
+          "local_probability": "424461/524288",
+          "total_paths": 2097152
+        }
+      ],
+      "max_letters": 16,
+      "mean_letters": "18869225/2097152",
+      "min_letters": 5,
+      "paths": 2097152
+    }
+  }
+}
