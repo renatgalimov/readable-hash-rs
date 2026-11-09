@@ -12,11 +12,11 @@ categories = ["cryptography", "encoding"]
 
 [features]
 default = []
-shake256 = ["dep:sha3"]
+shake256 = ["dep:shake"]
 
 [dependencies]
 bitreader = "0.3"
-sha3 = { version = "0.12", optional = true }
+shake = { version = "0.1", optional = true }
 
 [dev-dependencies]
 cucumber = "0.23"
