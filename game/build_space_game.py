@@ -232,6 +232,17 @@ def ban_reasons(model, text):
             if machine.feed(state, text[following])[1]:
                 known[(token, following)] = term_in(spelled + text[following], len(text[following]))
                 wanted[token].discard(following)
+            elif following >= phrase.NUM_BEGIN + phrase.NUM_END:
+                # A ban at the join before a middle (bi+ch, when bi+ch+a... spells "bicha"): the term completes in
+                # a token of the middle's own row.
+                after = machine.feed(state, text[following])[0]
+                row = phrase.context(following)
+                for next_token in model["middle"][row] + model["end32"][row]:
+                    if machine.feed(after, text[next_token])[1]:
+                        known[(token, following)] = term_in(spelled + text[following] + text[next_token],
+                                                            len(text[following]) + len(text[next_token]))
+                        wanted[token].discard(following)
+                        break
         if middles < phrase.MAX_WORD - 2:
             for middle in model["middle"][phrase.context(token)]:
                 state_after, hit = machine.feed(state, text[middle])

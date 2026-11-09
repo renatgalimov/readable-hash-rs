@@ -189,6 +189,11 @@ def kaikki_file(path):
                         LANGS[code].add(part, dictionary=True, source="kaikki")
 
 
+# Eldamo entries that aren't words: grammar and sound articles ("pronouns"), text titles, roots and affixes.
+NOT_WORDS = {"grammar", "phonetics", "phonetic-rule", "phonetic-group", "phoneme", "text", "root", "suf", "pref",
+             "affix"}
+
+
 def eldamo():
     """Tolkien's languages from Eldamo's XML: every word and its inflected forms, as dictionary words."""
     import xml.etree.ElementTree as ElementTree
@@ -199,11 +204,15 @@ def eldamo():
         root = ElementTree.parse(data).getroot()
     for word in root.iter("word"):
         code = ELDAMO.get(word.get("l"))
-        if not code:
+        speech = set((word.get("speech") or "").split())
+        if not code or speech & NOT_WORDS:
             continue
-        forms = [word.get("v") or ""] + [inflect.get("v") or "" for inflect in word.iter("inflect")]
+        if speech & {"phrase"}:  # attested sentences ("ash nazg durbatulûk"): their words, inflected as used
+            forms = re.split(r"[\s\-]+", re.sub(r"[,.;:!?¹²³‘’“”\"]", "", word.get("v") or ""))
+        else:
+            forms = [word.get("v") or ""] + [inflect.get("v") or "" for inflect in word.iter("inflect")]
         for form in forms:
-            if form and not re.search(r"[\s\-\[\]()¹²³?*]", form):  # skip phrases, affixes and marked forms
+            if form and not re.search(r"[\s\-\[\]()¹²³?*]", form):  # skip affixes and marked forms
                 LANGS[code].add(form, dictionary=True, source="eldamo")
 
 

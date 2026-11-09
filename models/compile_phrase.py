@@ -11,9 +11,10 @@ Format (see src/phrase.rs):
 - Each middle/ending row depends on the previous token (its context).
 
 Table rules:
-- The corpus is a word list from 126 languages (training-data/phrase-words.txt.xz, made by
+- The corpus is a word list from 127 languages (training-data/phrase-words.txt.xz, made by
   phrase-corpus/build_corpus.py): each language that isn't consonant-heavy contributes its 2,500 most frequent
-  words, and so do hand-picked ones (English, Old English, Old Norse, Zulu, Xhosa, constructed languages).
+  words, and so do hand-picked ones (English, German, Old English, Old Norse, Zulu, Xhosa, constructed
+  languages).
 - No token is shorter than 2 letters. The corpus is re-tokenized with a vocabulary of 2+ letter pieces.
 - The 256 beginning candidates are prefix-free: the most common word starts, skipping any that starts another
   one already taken. (In many languages the most common starts chain, like co/con/cont.)
@@ -41,6 +42,13 @@ Table rules:
   complete a term after the previous token are left out of that context's row. Then an automaton of all the
   terms walks every word the tables can produce; each place a term completes bans that token after that
   context, and the rows are rebuilt until no word contains a term. validate() repeats that walk.
+  When the same earlier part of a term completes after two or more tokens of one row (lu+bi+ch+ann and
+  ro+bi+ch+ale both spell "bicha"), the cause is the join before: the previous token is banned after the tokens
+  that led to it on those paths (ch after bi). Banning the last join instead removes one token per round from a
+  hub row like ch (ann, ale, ane, ...: no "cha" left after 40+ rounds, and no convergence in 100).
+  Once no word contains a term, bans that no longer matter are lifted once (stale_bans: ch+ann after bi+ch is
+  banned; a third of the reachable bans were such leftovers) and the walk runs again until no word contains a
+  term.
 """
 import argparse
 import itertools
@@ -297,7 +305,8 @@ class Terms:
 
     def __init__(self, start_terms, anywhere_terms):
         patterns = ["^" + t for t in start_terms] + list(anywhere_terms)
-        self.goto, self.fail, self.out = [{}], [0], [False]
+        self.patterns = set(patterns)
+        self.goto, self.fail, self.out, self.label = [{}], [0], [False], [""]  # label: the letters a state stands for
         for pattern in patterns:
             node = 0
             for ch in pattern:
@@ -305,6 +314,7 @@ class Terms:
                     self.goto.append({})
                     self.fail.append(0)
                     self.out.append(False)
+                    self.label.append(self.label[node] + ch)
                     self.goto[node][ch] = len(self.goto) - 1
                 node = self.goto[node][ch]
             self.out[node] = True
@@ -329,6 +339,17 @@ class Terms:
             self.memo[key] = self.goto[state].get(ch, 0)
         return self.memo[key]
 
+    def parts_before(self, node, previous_text, text):
+        """For each term that completes while reading text in state node (reached after previous_text): the part
+        of the term before previous_text ("bi" for bi+ch+ann spelling "bicha"); "" if it starts inside it."""
+        path, parts = self.label[node], set()
+        for end in range(1, len(text) + 1):
+            letters = path + text[:end]
+            for length in range(end + 1, len(letters) + 1):
+                if letters[-length:] in self.patterns:
+                    parts.add(letters[-length:][:max(0, length - end - len(previous_text))])
+        return parts
+
     def feed(self, node, text):
         """The state after reading text, and whether a term completed on the way."""
         hit = False
@@ -338,8 +359,12 @@ class Terms:
         return node, hit
 
 
-def violations(model, terms):
+def violations(model, terms, causes=None):
     """Every (context, token) pair where some word the tables can produce completes a banned term.
+
+    causes, if given, collects for each pair (part of the term before the context, token before the context):
+    the part is Terms.parts_before; the token is one that led to the context on a path spelling that part (None
+    if the term starts inside the context, or the context is a beginning).
 
     Walks all words: a beginning, up to 3 middles, an ending (END16 is a prefix of END32), carrying the
     automaton's state, so it sees terms that span any number of tokens.
@@ -348,6 +373,7 @@ def violations(model, terms):
     start, _ = terms.feed(0, "^")
     found = set()
     stack, seen = [], set()
+    parents, hits = defaultdict(set), []  # item -> tokens that led to it; (item, token) where a term completes
     for token in model["begin"]:
         state, hit = terms.feed(start, text[token])
         assert not hit, f"beginning {text[token]!r} is offensive"
@@ -362,14 +388,54 @@ def violations(model, terms):
         for ending in model["end32"][row]:
             if terms.feed(state, text[ending])[1]:
                 found.add((token, ending))
+                hits.append((item, ending))
         if middles < MAX_WORD - 2:
             for middle in model["middle"][row]:
                 following, hit = terms.feed(state, text[middle])
                 if hit:
                     found.add((token, middle))
+                    hits.append((item, middle))
                 else:
+                    parents[(middle, following, middles + 1)].add(token)
                     stack.append((middle, following, middles + 1))
+    if causes is not None:
+        for item, following in hits:
+            token, state, _ = item
+            for part in terms.parts_before(state, text[token], text[following]):
+                for parent in (parents.get(item) or {None}) if part else {None}:
+                    causes[(token, following)].add((part, parent))
     return found
+
+
+def stale_bans(model, terms, banned):
+    """Bans in reachable rows that no longer matter: on no path to their context would the banned token complete
+    a term, either itself or (a middle) with a token of its own row. Bans of rows no phrase reaches are kept."""
+    text = [text_of(t) for t in model["tokens"]]
+    needed, reached = set(), set()
+    start = terms.feed(0, "^")[0]
+    stack, seen = [(b, terms.feed(start, text[b])[0], 0) for b in model["begin"]], set()
+    while stack:
+        item = stack.pop()
+        if item in seen:
+            continue
+        seen.add(item)
+        token, state, middles = item
+        reached.add(token)
+        for banned_token in banned[token]:
+            if (token, banned_token) in needed:
+                continue
+            after, hit = terms.feed(state, text[banned_token])
+            if not hit and banned_token >= NUM_BEGIN + NUM_END and middles < MAX_WORD - 2:
+                row = context(banned_token)
+                hit = any(terms.feed(after, text[t])[1] for t in model["middle"][row] + model["end32"][row])
+            if hit:
+                needed.add((token, banned_token))
+        if middles < MAX_WORD - 2:
+            for middle in model["middle"][context(token)]:
+                following, hit = terms.feed(state, text[middle])
+                if not hit:
+                    stack.append((middle, following, middles + 1))
+    return {(ctx, t) for ctx in reached for t in banned[ctx] if (ctx, t) not in needed}
 
 
 def compile_model(max_rounds=100):
@@ -399,6 +465,9 @@ def compile_model(max_rounds=100):
         return terms.feed(terms.feed(0, "^")[0] if ctx < NUM_BEGIN else 0, TEXT[ctx] + TEXT[token])[1]
 
     banned = {ctx: {t for t in range(NUM_BEGIN, 1024) if direct_ban(ctx, t)} for ctx in CONTEXTS}
+
+    families = defaultdict(set)  # context -> parts of terms before it that already got a token banned after it
+    lifted = None  # the stale bans lifted once the walk first finds nothing
     unreachable = set()  # middles whose own row needs a lower join minimum: never offered
     rounds = []
     for _ in range(max_rounds):
@@ -425,14 +494,31 @@ def compile_model(max_rounds=100):
             end16.append(e16)
         model = {"version": "phrase-v6", "tokens": tokens, "contexts": CONTEXTS, "begin": begin,
                  "middle": middle, "end32": end32, "end16": end16, "relaxed": relaxed}
-        found = violations(model, terms)
+        causes = defaultdict(set)
+        found = violations(model, terms, causes)
         rounds.append(len(found))
         newly = {int(ctx) for ctx in relaxed if int(ctx) >= NUM_BEGIN + NUM_END} - unreachable
         if not found and not newly:
-            break
+            if lifted is not None:
+                break
+            lifted = stale_bans(model, terms, banned)
+            if not lifted:
+                break
+            for ctx, token in lifted:
+                banned[ctx].discard(token)
+            continue
         unreachable |= newly
-        for ctx, token in found:
-            banned[ctx].add(token)
+        for ctx, token in sorted(found):
+            roots, parts = set(), set()
+            for part, parent in sorted(causes[(ctx, token)], key=lambda cause: (cause[0], cause[1] is None, cause[1] or 0)):
+                if parent is not None and part in families[ctx] and ctx not in banned[parent]:
+                    roots.add(parent)
+                parts.add(part)
+            families[ctx] |= parts
+            for parent in roots:
+                banned[parent].add(ctx)
+            if not roots:
+                banned[ctx].add(token)
     else:
         raise ValueError(f"offensive words still reachable after {max_rounds} rounds: {rounds}")
     assert not set(begin) & {int(ctx) for ctx in relaxed}, "a chosen beginning needs a lower join minimum"
@@ -444,6 +530,7 @@ def compile_model(max_rounds=100):
         "blocklist_terms_checked": len(start_terms) + len(anywhere_terms),
         "banned_pairs": sum(len(b) for b in banned.values()),
         "ban_rounds": rounds,
+        "stale_bans_lifted": len(lifted or ()),
         "relaxed_contexts": len(relaxed),
         "unreachable_middles": len(unreachable),
     })
