@@ -52,7 +52,7 @@ use readable_hash::{decode_u64, encode_u64};
 
 fn main() {
     let phrase = encode_u64(0x243f6a8885a308d3);
-    assert_eq!(phrase, "bongere siuninut nuraamus");
+    assert_eq!(phrase, "bongere siuninut nuunamus");
     assert_eq!(decode_u64(&phrase), Some(0x243f6a8885a308d3));
 }
 ```
@@ -62,8 +62,8 @@ More examples (`cargo run --example phrase`):
 ```text
 0x0000000000000000  maas maas maas manggunaki
 0x000000000000002a  kaan manggunaki maas maas
-0x00000000075bcd15  spingenga kaan maas mangwa
-0xdeadbeefcafebabe  aileivirda fraash keergi
+0x00000000075bcd15  spinquos kaan maas mangwa
+0xdeadbeefcafebabe  aileivirda fraash kesavo
 ```
 
 How it works: a phrase is always 11 tokens (pieces of 2 to 6 letters) in 3 or 4 words of 2 to 5
@@ -89,7 +89,10 @@ the spaces, from the letters alone.
   `python3 models/compile_phrase.py --check` verifies the tables are up to date. Changing them
   changes every phrase.
 - `game/` holds an interactive page that encodes one phrase choice by choice and explains each
-  step (`python3 game/build_space_game.py`, then open `game/space-game.html`;
+  step: every candidate token, why the unavailable ones are out (including tokens banned because a
+  word could then contain an offensive word, with the list it is on), and which languages' words
+  each token comes from (`python3 game/build_space_game.py`, then open `game/space-game.html`, which loads
+  `game/space-game-origins.js` from next to it;
   `node game/check_space_game.mjs` tests it in headless Chromium).
 
 ## Tokenizer

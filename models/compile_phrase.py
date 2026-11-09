@@ -22,8 +22,13 @@ Table rules:
 - Every token in a row joins plausibly to its context: each 3-letter sequence across the join occurs in
   some corpus word. This keeps fillers (tokens never seen after the context) from making words like
   bl+ness.
-  A row that can't be filled this way (some languages allow few letters after certain pairs) is filled
-  without the join rule; such contexts are listed in the model's "relaxed".
+  A row that can't be filled this way (few letters can follow some pairs, like "ss" or "oq") lowers the
+  minimum one word at a time (4, 3, 2, 1) until it fills; the model's "relaxed" lists those contexts with their
+  minimum. The rule is never dropped. Such rows are made unreachable: a middle whose own row needs a lower
+  minimum is never offered after any token (with "ss" reachable, 9 % of phrases had words like "tassde").
+  validate() checks that no chosen beginning and no offered middle has a relaxed row.
+- No letter appears three times in a row ("zanasssa"). Tokens have 2+ letters, so such a run always spans one
+  join, and checking each previous token + token is enough.
 - Every word has a vowel (a, e, i, o, u or y): after a beginning without one, every middle and ending
   has one. Words have at least 2 tokens, so that is enough.
 - No word the tables can produce contains an offensive word from any language's list
@@ -213,11 +218,21 @@ VOWELS = set("aeiouy")
 MIN_TRIGRAM_WORDS = 5  # a 3-letter sequence counts as English if at least this many corpus words contain it
 
 
-def letter_trigrams(words, minimum=None):
+def trigram_counts(words):
+    """How many distinct corpus words contain each 3-letter sequence."""
+    return Counter(trigram for word in set(words) for trigram in {word[i:i + 3] for i in range(len(word) - 2)})
+
+
+def letter_trigrams(words, minimum=None, counts=None):
     """3-letter sequences found in at least `minimum` distinct corpus words (one odd word like "bitblt" isn't enough)."""
     minimum = MIN_TRIGRAM_WORDS if minimum is None else minimum
-    seen = Counter(trigram for word in set(words) for trigram in {word[i:i + 3] for i in range(len(word) - 2)})
-    return {trigram for trigram, count in seen.items() if count >= minimum}
+    counts = trigram_counts(words) if counts is None else counts
+    return {trigram for trigram, count in counts.items() if count >= minimum}
+
+
+def triple_free(previous_text, token_text):
+    """No letter three times in a row across the join (or inside the token)."""
+    return not re.search(r"(.)\1\1", previous_text[-2:] + token_text)
 
 
 def joins_well(previous_text, token_text, trigrams):
@@ -226,8 +241,6 @@ def joins_well(previous_text, token_text, trigrams):
     Tokens are 2+ letters, so the last 2 letters before the join and the first 2 after it cover every
     sequence that crosses it. A token seen after this context in the corpus always passes.
     """
-    if trigrams is None:  # a relaxed row: no join rule
-        return True
     joined = previous_text[-2:] + token_text[:2]
     return all(joined[i:i + 3] in trigrams for i in range(len(joined) - 2))
 
@@ -247,7 +260,8 @@ def choose_row(previous_text, local_middle, local_end, global_middle, global_end
     until both rows fill.
     """
     def allowed(token):
-        return joins_well(previous_text, TEXT[token], trigrams) and (has_vowel(TEXT[token]) or not needs_vowel)
+        return (joins_well(previous_text, TEXT[token], trigrams) and triple_free(previous_text, TEXT[token])
+                and (has_vowel(TEXT[token]) or not needs_vowel))
 
     middles = [(local_middle.get(t, 0), global_middle[t], "m", t) for t in middle_pool if allowed(t)]
     endings = [(local_end.get(t, 0), global_end[t], "e", t) for t in end_pool if allowed(t)]
@@ -365,7 +379,8 @@ def compile_model(max_rounds=60):
     TEXT = [text_of(t) for t in tokens]
     assert all(len(t) >= MIN_TOKEN for t in TEXT)
     counts = count_transitions(words, tokens)
-    trigrams = letter_trigrams(words)
+    seen = trigram_counts(words)
+    trigrams = {minimum: letter_trigrams(words, minimum, seen) for minimum in range(1, MIN_TRIGRAM_WORDS + 1)}
     terms = Terms(start_terms, anywhere_terms)
     global_middle = Counter()
     global_end = Counter()
@@ -383,23 +398,27 @@ def compile_model(max_rounds=60):
         return terms.feed(terms.feed(0, "^")[0] if ctx < NUM_BEGIN else 0, TEXT[ctx] + TEXT[token])[1]
 
     banned = {ctx: {t for t in range(NUM_BEGIN, 1024) if direct_ban(ctx, t)} for ctx in CONTEXTS}
+    unreachable = set()  # middles whose own row needs a lower join minimum: never offered
     rounds = []
     for _ in range(max_rounds):
-        middle, end32, end16, relaxed = [], [], [], []
+        middle, end32, end16, relaxed = [], [], [], {}
         for ctx in CONTEXTS:
             local_middle = counts["middle"].get(ctx, Counter())
             local_end = counts["end"].get(ctx, Counter())
             # Every word needs a vowel: words have 2+ tokens, so a beginning without one must be followed by one.
             needs_vowel = ctx < NUM_BEGIN and not has_vowel(TEXT[ctx])
-            middle_pool = [t for t in range(512, 1024) if t not in banned[ctx]]
+            middle_pool = [t for t in range(512, 1024) if t not in banned[ctx] and t not in unreachable]
             end_pool = [t for t in range(256, 512) if t not in banned[ctx]]
-            try:
-                m, e, e16 = choose_row(TEXT[ctx], local_middle, local_end, global_middle, global_end,
-                                       middle_pool, end_pool, trigrams, needs_vowel)
-            except ValueError:
-                relaxed.append(ctx)
-                m, e, e16 = choose_row(TEXT[ctx], local_middle, local_end, global_middle, global_end,
-                                       middle_pool, end_pool, None, needs_vowel)
+            for minimum in range(MIN_TRIGRAM_WORDS, 0, -1):
+                try:
+                    m, e, e16 = choose_row(TEXT[ctx], local_middle, local_end, global_middle, global_end,
+                                           middle_pool, end_pool, trigrams[minimum], needs_vowel)
+                    break
+                except ValueError:
+                    if minimum == 1:
+                        raise
+            if minimum < MIN_TRIGRAM_WORDS:
+                relaxed[str(ctx)] = minimum
             middle.append(m)
             end32.append(e)
             end16.append(e16)
@@ -407,12 +426,15 @@ def compile_model(max_rounds=60):
                  "middle": middle, "end32": end32, "end16": end16, "relaxed": relaxed}
         found = violations(model, terms)
         rounds.append(len(found))
-        if not found:
+        newly = {int(ctx) for ctx in relaxed if int(ctx) >= NUM_BEGIN + NUM_END} - unreachable
+        if not found and not newly:
             break
+        unreachable |= newly
         for ctx, token in found:
             banned[ctx].add(token)
     else:
         raise ValueError(f"offensive words still reachable after {max_rounds} rounds: {rounds}")
+    assert not set(begin) & {int(ctx) for ctx in relaxed}, "a chosen beginning needs a lower join minimum"
     # The tokens left out after each context because they would spell a term (directly or across tokens).
     model["banned"] = {str(ctx): sorted(b) for ctx, b in banned.items() if b}
     validate(model)
@@ -422,14 +444,16 @@ def compile_model(max_rounds=60):
         "banned_pairs": sum(len(b) for b in banned.values()),
         "ban_rounds": rounds,
         "relaxed_contexts": len(relaxed),
+        "unreachable_middles": len(unreachable),
     })
     return model, statistics
 
 
 def validate(model):
     text = [text_of(t) for t in model["tokens"]]
-    trigrams = letter_trigrams(corpus_words())
-    relaxed = set(model["relaxed"])
+    seen = trigram_counts(corpus_words())
+    trigrams = {minimum: letter_trigrams(None, minimum, seen) for minimum in range(1, MIN_TRIGRAM_WORDS + 1)}
+    assert not any(re.search(r"(.)\1\1", piece) for piece in text), "a token has a letter three times in a row"
     assert all(len(t) >= MIN_TOKEN and t.isascii() and t.isalpha() and t.islower() for t in text)
     begin = [text[i] for i in model["begin"]]
     assert len(begin) == BEGIN_SIZE and all(i < 256 for i in model["begin"])
@@ -442,10 +466,13 @@ def validate(model):
         union = [text[i] for i in m + e]
         assert all(not conflicts(a, b) for a, b in itertools.combinations(union, 2)), f"context {index} not prefix-free"
         previous = text[CONTEXTS[index]]
-        if CONTEXTS[index] not in relaxed:
-            assert all(joins_well(previous, piece, trigrams) for piece in union), f"context {index} has an implausible join"
+        minimum = model["relaxed"].get(str(CONTEXTS[index]), MIN_TRIGRAM_WORDS)
+        assert all(joins_well(previous, piece, trigrams[minimum]) for piece in union), f"context {index} has an implausible join"
+        assert all(triple_free(previous, piece) for piece in union), f"context {index}: a letter three times in a row"
+        assert not {str(t) for t in model["middle"][index]} & model["relaxed"].keys(), f"context {index} offers a relaxed middle"
         if CONTEXTS[index] < NUM_BEGIN and not has_vowel(previous):
             assert all(has_vowel(piece) for piece in union), f"beginning {previous!r} allows a word with no vowel"
+    assert not {str(t) for t in model["begin"]} & model["relaxed"].keys(), "a chosen beginning has a relaxed row"
     found = violations(model, Terms(*blocklist()))
     assert not found, f"{len(found)} places still spell an offensive word, e.g. {sorted(found)[:3]}"
     for ctx, tokens in model.get("banned", {}).items():

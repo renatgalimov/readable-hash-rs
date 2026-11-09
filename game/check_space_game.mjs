@@ -55,6 +55,7 @@ await send("Page.enable");
 await send("Emulation.setDeviceMetricsOverride", { width: 760, height: 900, deviceScaleFactor: 1, mobile: false });
 await send("Page.navigate", { url: URL_ });
 await sleep(1500);
+expect(await evaluate(`!!window.SPACE_GAME_ORIGINS`), "the language data (space-game-origins.js) loads");
 
 const walk = await evaluate(`(() => {
   const out = [];
@@ -111,6 +112,26 @@ const before = await tokenPage();
 writeFileSync(path.join(OUT, "token-page.json"), JSON.stringify(before, null, 1));
 console.log("beginning page: pick", before.pick.length, "groups", before.groups.map(g => `${g.cls}:${g.chips}`).join(" "),
   "total", before.pick.length + before.groups.reduce((s, g) => s + g.chips, 0));
+const dropped = spawnSync("python3", ["-c", `
+import json, sys
+sys.path.insert(0, ${JSON.stringify(HERE)})
+import build_space_game as game
+model = json.load(open(${JSON.stringify(path.join(HERE, "..", "models", "phrase_model.json"))}))
+text = [game.phrase.text_of(t) for t in model["tokens"]]
+print(json.dumps([d[0] for d in game.ban_reasons(model, text)[3]]))
+`], { encoding: "utf8" });
+const droppedBegin = JSON.parse(dropped.stdout || "null");
+const bannedGroup = before.groups.find((g) => g.cls === "group banned");
+console.log("dropped beginnings (python):", JSON.stringify(droppedBegin), "| page:", JSON.stringify(bannedGroup?.first));
+expect(bannedGroup && droppedBegin && bannedGroup.chips === droppedBegin.length && droppedBegin.length > 0,
+  "the beginning page marks every word start dropped as offensive");
+expect(bannedGroup && bannedGroup.first.every((c) => / \| .*offensive-word list/.test(c)), "each dropped word start names its list");
+// Point at a token: the line under the grid says which languages' words it comes from.
+const hover = async (text) => evaluate(`(() => { const b = [...document.querySelectorAll('#panel .tokens button')].find(x => x.textContent === ${JSON.stringify(text)});
+  b.dispatchEvent(new MouseEvent('mouseenter')); return document.querySelector('#panel .origin').innerText; })()`);
+const hoverBegin = await hover("ma");
+console.log("hover ma:", hoverBegin);
+expect(/^Words start with ma in (all )?\d+ languages, like /.test(hoverBegin), "pointing at a beginning shows its languages");
 await evaluate(`document.querySelectorAll('#panel details.group').forEach(d => d.open = true)`);
 await shot("05-beginning-page-open.png");
 await evaluate(`document.querySelectorAll('#panel details.group').forEach(d => d.open = false)`);
@@ -123,6 +144,8 @@ const cases = [
   { name: "middle after re (3+3+5)", path: ["3 tokens", "3 tokens", "5 tokens"], first: "re", kind: "c", size: 32 },
   { name: "32-ending after re (2+4+5)", path: ["2 tokens", "4 tokens", "5 tokens"], first: "re", kind: "e", size: 32 },
   { name: "16-ending after st (2+3+3+3)", path: ["2 tokens", "3 tokens", "3 tokens"], first: "st", kind: "e", size: 16 },
+  // After za, tokens starting with aa would put a three times in a row (the reported word was za+na+ss+sa).
+  { name: "middle after za (3+3+5)", path: ["3 tokens", "3 tokens", "5 tokens"], first: "za", kind: "c", size: 32 },
 ];
 const mirror = spawnSync("python3", ["-c", `
 import json, sys
@@ -133,7 +156,8 @@ text = [game.phrase.text_of(t) for t in model["tokens"]]
 cases = json.loads(sys.argv[1])
 out = []
 for c in cases:
-    groups = game.follow_groups(model, text.index(c["first"]), c["kind"], c["size"])
+    previous = text.index(c["first"]) if "then" not in c else next(i for i in range(512, 1024) if text[i] == c["then"])
+    groups = game.follow_groups(model, previous, c["kind"], c["size"])
     out.append({"pick": len(groups.pop("pick")), "groups": {k: len(v) for k, v in groups.items() if v}})
 print(json.dumps(out))
 `, JSON.stringify(cases)], { encoding: "utf8" });
@@ -141,7 +165,7 @@ expect(mirror.status === 0, "python mirror of the page rules runs: " + mirror.st
 JSON.parse(mirror.stdout || "[]").forEach((e, i) => { cases[i].expect = e; });
 let n = 8;
 for (const c of cases) {
-  console.log(await clickPath(c.path), await pickToken(c.first));
+  console.log(await clickPath(c.path), await pickToken(c.first), c.then ? await pickToken(c.then) : "");
   const pg = await tokenPage();
   const got = summarize(pg);
   const ok = JSON.stringify(got) === JSON.stringify(c.expect) || (got.pick === c.expect.pick && Object.keys(c.expect.groups).every(k => got.groups[k] === c.expect.groups[k]) && Object.keys(got.groups).length === Object.keys(c.expect.groups).length);
@@ -154,15 +178,22 @@ for (const c of cases) {
   console.log("  chips:", JSON.stringify(pg.groups.map(g => g.first)));
   await shot(`${String(n).padStart(2, "0")}-${c.first}-${c.path.map(x => x[0]).join("")}.png`);
   const second = pg.pick[0];
+  const blocked = pg.groups.find((g) => g.cls === "group blocked");
+  if (blocked) expect(blocked.first.every((c) => /left out: .*(spells|finish)/.test(c)), `${c.name}: banned tokens say why`);
+  const hoverText = await hover(second);
+  console.log("  hover", second + ":", hoverText);
+  await shot(`${String(n).padStart(2, "0")}-${c.first}-hover-${second}.png`);
+  expect(/in words of (all )?\d+ languages?, like |No word in the list has /.test(hoverText), `${c.name}: pointing at a token shows its languages`);
   console.log("  pick", second, await pickToken(second));
   const done = await tokenPage();
+  expect(done.msg.includes(hoverText.slice(0, 40)), `${c.name}: the picked sentence says where the token comes from`);
   console.log("  after:", JSON.stringify({ msg: done.msg.slice(0, 260), slots: done.slots.slice(0, 3), pick: done.pick.length, random: done.random }));
   await evaluate(`document.getElementById('undo').click()`);
   console.log("  undo ->", (await tokenPage()).pick.length);
   n++;
 }
 await evaluate(`document.querySelectorAll('#panel details.group').forEach(d => d.open = true)`);
-await shot("11-st-open.png");
+await shot("11-last-case-open.png");
 // Whole phrases: drive step() to the end many times; Python checks each phrase against the reference encoder.
 const runs = await evaluate(`(() => { const out = [];
   for (let r = 0; r < 200; r++) { document.getElementById('reset').click(); while (step()); render();

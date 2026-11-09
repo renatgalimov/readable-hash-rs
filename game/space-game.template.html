@@ -61,6 +61,8 @@
   .actions button:disabled { opacity: .4; cursor: default; }
   .actions button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   /* Token pages: pickable tokens are buttons; unavailable ones are muted chips, one colour per reason. */
+  .origin { min-height: 2.6em; margin: 8px 0 4px; font-size: 14px; color: var(--muted, #555); }
+  .origin i b { color: var(--ink); }
   .tokens { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 12px; }
   .tokens button { min-width: 44px; padding: 5px 8px; border: 1.2px solid var(--ink); border-radius: 4px; background: var(--box); color: var(--ink); cursor: pointer; font: 500 14px var(--mono); }
   .tokens button:hover, .tokens button:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
@@ -97,19 +99,34 @@
     <button type="button" id="reset">Start over</button>
   </div>
 </div>
+<script src=__ORIGINS_FILE__ defer></script>
 <script>
 "use strict";
 // The real phrase tables: token texts (ids 0-255 beginnings, 256-511 endings, 512-1023 middles) and, for
 // each previous token, its 32 middles and 32 endings (the 16-ending list is the first 16 of the 32), the tokens
 // left out after it because a word could then contain an offensive word, and the few previous tokens whose
-// lists skip the join rule (too few letters can follow them).
+// lists use a lower join minimum (too few letters can follow them): { previous id: minimum }.
 const TABLE_TOKENS = __TABLE_TOKENS__;
 const TABLE_MIDDLE = __TABLE_MIDDLE__;
 const TABLE_END32 = __TABLE_END32__;
 const TABLE_BANNED = __TABLE_BANNED__;
 const TABLE_RELAXED = __TABLE_RELAXED__;
 const LANGUAGES = __LANGUAGES__;  // the word list is the common words of this many languages
+// Where tokens come from (see Origins in build_space_game.py) arrives in a separate deferred script, which sets
+// window.SPACE_GAME_ORIGINS = { LANG_NAMES, EXAMPLES, BEGIN (beginning id), FOLLOW (previous token id -> its 32
+// middles + 32 endings, space-separated), TOKEN (middle or ending id -> where it is common overall, for fillers) }.
+// Each entry is packed "n|word:lang,lang|:lang" in base 36: n languages have words with this token there; up to 3
+// are named, the first ones with an example word. The game works without it.
+let EXAMPLES = null;
+const origins = () => window.SPACE_GAME_ORIGINS || null;
+// Offensive words: TERMS[i] = [term, list languages (indices into LIST_NAMES)]. BAN_TERMS[previous id] lists, in the
+// order of TABLE_BANNED, 1 + the term each banned token would spell (0: found in an earlier draft of the tables).
+const TERMS = __TERMS__;
+const LIST_NAMES = __LIST_NAMES__;
+const BAN_TERMS = __BAN_TERMS__;
+const BANNED_BEGIN = __BANNED_BEGIN__;  // [text, words it starts, term index]: word starts dropped as offensive
 const TRIGRAMS = __TRIGRAMS__;  // 3-letter sequences found in at least MIN_TRIGRAM_WORDS words of the word list
+const RARE_TRIGRAMS = new Map(__RARE_TRIGRAMS__.split(" ").map((x) => [x.slice(0, 3), Number(x.slice(4))]));  // in fewer
 const BEGIN = __BEGIN__;  // the 128 beginnings, in table order
 // Every row has the same size, so any row gives the number of middle and ending choices.
 const MIDDLE = TABLE_MIDDLE[0];
@@ -138,11 +155,13 @@ const TOKENS = {
 const LENGTH_COLOR = "var(--accent)";
 // Why a token can't be picked. Each reason has its own muted colour; the token pages show a key.
 const REASONS = {
+  banned: { color: "#b06a4a", name: "offensive word start", key: "on an offensive-word list" },
   blocked: { color: "#b06a4a", name: "would spell an offensive word", key: "could spell an offensive word" },
   clash: { color: "#8f7fbf", name: "clashes", key: "clashes with a chosen token" },
   less: { color: "#bf9a5a", name: "less common here", key: "less common here" },
   join: { color: "#4f9a94", name: "letters don’t fit", key: "letters don’t fit together" },
   vowel: { color: "#c0708a", name: "no vowel", key: "no vowel" },
+  triple: { color: "#5b7fa6", name: "three in a row", key: "same letter three times in a row" },
   spare: { color: "#8c8c8c", name: "not needed", key: "not needed: 64 bits reached" },
 };
 const pale = (color) => `color-mix(in srgb, ${color} 55%, white)`;
@@ -287,13 +306,66 @@ const TRIGRAM_SET = new Set(TRIGRAMS.split(" "));
 const hasVowel = (text) => /[aeiouy]/.test(text);
 const conflicts = (a, b) => a.startsWith(b) || b.startsWith(a);
 const rowOf = (token) => (token < 256 ? token : token - 256);  // tables are indexed by the previous token
-// The first 3-letter sequence across the join that's in fewer than MIN_TRIGRAM_WORDS words of the list, if any.
-function badJoin(previous, token) {
+// The first 3-letter sequence across the join that's in fewer than `minimum` words of the list, if any.
+function badJoin(previous, token, minimum) {
   const joined = previous.slice(-2) + token.slice(0, 2);
-  for (let i = 0; i + 3 <= joined.length; i++) if (!TRIGRAM_SET.has(joined.slice(i, i + 3))) return joined.slice(i, i + 3);
+  for (let i = 0; i + 3 <= joined.length; i++) {
+    const t = joined.slice(i, i + 3);
+    if (!TRIGRAM_SET.has(t) && (RARE_TRIGRAMS.get(t) || 0) < minimum) return t;
+  }
   return null;
 }
+// The run of one letter three times across the join, if any ("sss" in ss + sa).
+const tripleRun = (previous, token) => ((previous.slice(-2) + token).match(/(.)\1\1/) || [null])[0];
 const binary = (index, width) => index.toString(2).padStart(width, "0");
+
+// ---- Where a token comes from, and why a banned one is out. ----
+function unpackOrigin(packed) {
+  if (!packed) return null;
+  EXAMPLES = EXAMPLES || origins().EXAMPLES.split(" ");
+  const [n, ...groups] = packed.split("|");
+  return { n: parseInt(n, 36), groups: groups.map((g) => {
+    const [w, rest] = g.split(":");
+    const [langs, more] = rest.split(";");
+    return { word: w ? EXAMPLES[parseInt(w, 36)] : null, more: more ? parseInt(more, 36) : 0,
+      langs: langs.split(",").map((l) => origins().LANG_NAMES[parseInt(l, 36)]) };
+  }) };
+}
+// An example word with the token in bold: after `before` (the previous token's letters) when given.
+function markWord(word, token, kind, before) {
+  let at = kind === "b" ? 0 : kind === "e" ? word.length - token.length : word.indexOf(before + token, 1);
+  if (at < 0) at = word.indexOf(token, 1);
+  else if (kind === "c") at += before.length;
+  if (at < 0) return `<i>${word}</i>`;
+  return `<i>${word.slice(0, at)}<b>${word.slice(at, at + token.length)}</b>${word.slice(at + token.length)}</i>`;
+}
+const andList = (items) => orList(items).replace(/ or ([^,]*)$/, " and $1");
+// "26 languages, like realizar (Spanish, Portuguese, Asturian and 2 more); also Occitan and Venetian"
+function originPhrase(o, token, kind, before) {
+  const [first, ...rest] = o.groups;
+  const also = rest.flatMap((g) => g.langs);
+  const names = first.more ? [...first.langs, `${first.more} more`] : first.langs;
+  return `${o.n === origins().LANG_NAMES.length ? `all ${o.n} languages` : plural(o.n, "language")}, `
+    + `like ${markWord(first.word, token, kind, before)} (${andList(names)})` + (also.length ? `; also ${andList(also)}` : "");
+}
+// One sentence on where the token picked (or pointed at) comes from.
+function originSentence(e, kind, previous) {
+  if (!origins()) return "";
+  if (kind === "b") {
+    const o = unpackOrigin(origins().BEGIN[e.id]);
+    return o ? `Words start with <b>${e.t}</b> in ${originPhrase(o, e.t, "b")}.` : "";
+  }
+  const row = rowOf(previous.id);
+  const slot = (kind === "c" ? TABLE_MIDDLE[row] : TABLE_END32[row]).indexOf(e.id) + (kind === "c" ? 0 : 32);
+  const o = unpackOrigin((origins().FOLLOW[String(previous.id)] || "").split(" ")[slot]);
+  if (o) return `<b>${previous.t}</b> is followed by <b>${e.t}</b> in words of ${originPhrase(o, e.t, kind, previous.t)}.`;
+  const g = unpackOrigin(origins().TOKEN[e.id]);
+  return `No word in the list has <b>${e.t}</b> right after <b>${previous.t}</b>; it fills the list because it is a common `
+    + `${kind === "c" ? "middle" : "ending"} overall${g ? `, in words of ${originPhrase(g, e.t, kind, "")}` : ""}.`;
+}
+const listsText = (langs) => `on the ${andList(langs.length > 3 ? [...langs.slice(0, 2), `${langs.length - 2} more`] : langs)} `
+  + `offensive-word list${langs.length > 1 ? "s" : ""}`;
+const termOf = (i) => (i >= 0 ? { term: TERMS[i][0], lists: TERMS[i][1].map((l) => LIST_NAMES[l]) } : null);
 
 // Every token slot of the layout: word, position in the word, kind and bits.
 function tokenSlots() {
@@ -317,10 +389,12 @@ function tokenStep() {
 function beginningPage(slot) {
   const pick = BEGIN_PAGE.filter((e) => e.i !== undefined).sort((a, b) => a.t.localeCompare(b.t));
   const less = BEGIN_PAGE.filter((e) => e.less).sort((a, b) => b.words - a.words || a.t.localeCompare(b.t));
+  const banned = BANNED_BEGIN.map(([t, words, term]) => ({ t, words, ...termOf(term) }));
   const [short, long] = BEGIN_EXAMPLE;
   return {
     slot, size: BEGIN.length, width: Math.log2(BEGIN.length), pick,
     pickTip: (e) => `number ${e.i} of ${BEGIN.length} · starts ${e.words} words`,
+    origin: (e) => originSentence(e, "b"),
     prompt: `${slot.w === 0 ? "Now the tokens. " : ""}The <b>${ORDINALS[slot.w]} word</b> starts with a <b>beginning</b>: one of ${BEGIN.length}, `
       + `so it stores log₂ ${BEGIN.length} = ${bitWord(Math.log2(BEGIN.length))}.`,
     note: slot.w > 0 ? `<b>The same ${BEGIN.length} as for the first word.</b> A beginning doesn’t depend on the word before it, `
@@ -328,9 +402,13 @@ function beginningPage(slot) {
       + `in a word list made of the common words of ${LANGUAGES} languages that are easy to say. `
       + `No beginning may start another one: with both <b>${short}</b> and <b>${long}</b>, a reader seeing “${long}…” couldn’t tell `
       + `where the beginning ends. So the ${BEGIN_PAGE.length} candidates are word starts that don’t start one another, `
-      + `the more common one kept each time, and none is an offensive word. `
+      + `the more common one kept each time. Word starts on an offensive-word list are never candidates, however common. `
       + `Once ${BEGIN.length} are chosen the list is full; the rest start ${BEGIN_LAST} words or fewer.`,
     groups: [
+      { reason: "banned", items: banned, title: `On an offensive-word list: ${plural(banned.length, "word start")}`,
+        why: "these are dropped before the candidates are chosen, however many words they start",
+        chip: (e) => e.lists[0], tip: (e) => `${e.t === e.term ? `${e.t} is` : `${e.t} starts with “${e.term}”,`} `
+          + `${listsText(e.lists)}; it starts ${e.words} words` },
       { reason: "less", items: less, title: `Less common here: ${plural(less.length, "token")}`,
         why: `the list already had its ${BEGIN.length}; each of these starts at most ${BEGIN_LAST} words`,
         chip: (e) => String(e.words), tip: (e) => `less common here: starts ${e.words} words; the list was full` },
@@ -345,22 +423,30 @@ function followPage(slot, previous) {
   const prev = previous.t;
   const row = rowOf(previous.id);
   const middles = TABLE_MIDDLE[row], endings = TABLE_END32[row];
-  const banned = new Set(TABLE_BANNED[String(previous.id)] || []);
-  const relaxed = TABLE_RELAXED.includes(previous.id);
+  const bannedList = TABLE_BANNED[String(previous.id)] || [];
+  const banned = new Set(bannedList);
+  const banTerms = (BAN_TERMS[String(previous.id)] || "").split(" ").map((x) => parseInt(x, 36) - 1);
+  const minimum = TABLE_RELAXED[String(previous.id)] || MIN_TRIGRAM_WORDS;
+  const relaxed = minimum < MIN_TRIGRAM_WORDS;
   const list = slot.k === "c" ? middles : endings;
   const size = 2 ** slot.bits;  // 32 middles; 32 or 16 endings
   const needsVowel = previous.id < 256 && !hasVowel(prev);
   const union = [...middles, ...endings];
   const ids = slot.k === "c" ? [...Array(512).keys()].map((x) => x + 512) : [...Array(256).keys()].map((x) => x + 256);
-  const pick = [], groups = { spare: [], blocked: [], vowel: [], join: [], clash: [], less: [] };
+  const pick = [], groups = { spare: [], blocked: [], vowel: [], triple: [], join: [], clash: [], less: [] };
   for (const id of ids) {
     const e = { id, t: TABLE_TOKENS[id] };
     const index = list.indexOf(id);
     if (index >= 0 && index < size) pick.push({ ...e, i: index });
     else if (index >= 0) groups.spare.push({ ...e, i: index });
-    else if (banned.has(id)) groups.blocked.push(e);
+    else if (banned.has(id)) {
+      const found = termOf(banTerms[bannedList.indexOf(id)]);
+      Object.assign(e, found || { term: null, lists: [] });
+      groups.blocked.push(e);
+    }
     else if (needsVowel && !hasVowel(e.t)) groups.vowel.push(e);
-    else if (!relaxed && (e.bad = badJoin(prev, e.t))) groups.join.push(e);
+    else if ((e.run = tripleRun(prev, e.t))) groups.triple.push(e);
+    else if ((e.bad = badJoin(prev, e.t, minimum))) groups.join.push(e);
     else if ((e.partner = union.find((u) => conflicts(TABLE_TOKENS[u], e.t))) !== undefined) {
       e.with = TABLE_TOKENS[e.partner];
       e.withKind = middles.includes(e.partner) ? "middle" : "ending";
@@ -369,7 +455,7 @@ function followPage(slot, previous) {
     else groups.less.push(e);
   }
   pick.sort((a, b) => a.t.localeCompare(b.t));
-  for (const k of ["blocked", "vowel", "join", "less"]) groups[k].sort((a, b) => a.t.localeCompare(b.t));
+  for (const k of ["blocked", "vowel", "triple", "join", "less"]) groups[k].sort((a, b) => a.t.localeCompare(b.t));
   groups.clash.sort((a, b) => a.with.localeCompare(b.with) || a.t.localeCompare(b.t));
   groups.spare.sort((a, b) => a.i - b.i);
   const role = slot.k === "c" ? "middle" : "ending";
@@ -378,14 +464,16 @@ function followPage(slot, previous) {
   return {
     slot, size, width: slot.bits, pick,
     pickTip: (e) => `number ${e.i} of ${size} after ${prev}`,
+    origin: (e) => originSentence(e, slot.k, previous),
     prompt: `The ${slotName(slot)} is ${slot.k === "c" ? "a" : "an"} <b>${role}</b>. Its list depends on the token before it, `
       + `<b>${prev}</b>: one of ${size}, so it stores log₂ ${size} = ${bitWord(slot.bits)}.`,
     note: `<b>Where these ${size} come from.</b> First come the ${roles} that follow <b>${prev}</b> in the word list, most common first. `
       + `If there aren’t enough, the list is topped up with the most common ${roles} overall. `
       + `A ${role} is out if a word could then contain an offensive word, `
       + `${needsVowel ? `if it has no vowel (${prev} has none, and every word needs one), ` : ""}`
-      + `${relaxed ? "" : `if its letters don’t fit after ${prev}, `}or if it clashes with a middle or ending already on ${prev}’s lists. `
-      + `${relaxed ? `Few letters can follow ${prev}, so here the letters-fit rule is skipped. ` : ""}`
+      + `${groups.triple.length ? "if the same letter would appear three times in a row, " : ""}`
+      + `if its letters don’t fit after ${prev}, or if it clashes with a middle or ending already on ${prev}’s lists. `
+      + `${relaxed ? `Few letters can follow ${prev}, so here letters fit if they are in at least ${plural(minimum, "word")} of the list, not ${MIN_TRIGRAM_WORDS}. ` : ""}`
       + `${groups.spare.length ? `This layout already has its 64 bits, so this ending uses only the first ${size} of the ${list.length}. ` : ""}`
       + `The rest didn’t make the list.`,
     groups: [
@@ -393,14 +481,20 @@ function followPage(slot, previous) {
         why: `this layout already has its 64 bits, so this ending uses only the first ${size} of ${list.length}`,
         chip: (e) => `#${e.i}`, tip: (e) => `number ${e.i} of ${list.length}: not needed, this layout already has its 64 bits` },
       { reason: "blocked", items: groups.blocked, title: `Could spell an offensive word: ${plural(groups.blocked.length, "token")}`,
-        why: `after ${prev}, some word would then contain a word from the offensive-word lists of about 60 languages`,
-        chip: () => "", tip: () => `left out: after ${prev}, a word could contain a word from an offensive-word list` },
+        why: `after ${prev}, some word would then contain a word from the offensive-word lists of ${LIST_NAMES.length} languages`,
+        chip: (e) => e.lists[0] || "", tip: (e) => !e.term
+          ? `left out: with the tokens before ${prev}, ${e.t} could finish an offensive word (found in an earlier draft of the lists)`
+          : (prev + e.t).includes(e.term) ? `left out: ${prev} + ${e.t} spells “${e.term}”, ${listsText(e.lists)}`
+          : `left out: ${e.t} would finish “${e.term}”, which starts in the tokens before ${prev}; ${listsText(e.lists)}` },
       { reason: "vowel", items: groups.vowel, title: `No vowel: ${plural(groups.vowel.length, "token")}`,
         why: `${prev} has no vowel, so the next token must have one, or the word would have none`,
         chip: () => "", tip: (e) => `no vowel: ${prev}${e.t} would have none` },
+      { reason: "triple", items: groups.triple, title: `Same letter three times: ${plural(groups.triple.length, "token")}`,
+        why: `after ${prev}, the same letter would appear three times in a row`,
+        chip: (e) => e.run, tip: (e) => `same letter three times: ${prev}${e.t} has “${e.run}”` },
       { reason: "join", items: groups.join, title: `Letters don’t fit together: ${plural(groups.join.length, "token")}`,
-        why: joinExample ? `some 3 letters across the join, like “${joinExample.bad}” in ${prev}${joinExample.t}, are in fewer than ${MIN_TRIGRAM_WORDS} words of the list` : "",
-        chip: (e) => e.bad, tip: (e) => `letters don’t fit together: “${e.bad}” is in fewer than ${MIN_TRIGRAM_WORDS} words of the list` },
+        why: joinExample ? `some 3 letters across the join, like “${joinExample.bad}” in ${prev}${joinExample.t}, are in fewer than ${plural(minimum, "word")} of the list` : "",
+        chip: (e) => e.bad, tip: (e) => `letters don’t fit together: “${e.bad}” is in fewer than ${plural(minimum, "word")} of the list` },
       { reason: "clash", items: groups.clash, title: `Clashes with a token on ${prev}’s lists: ${plural(groups.clash.length, "token")}`,
         why: "one starts the other, so the reader couldn’t tell where this token ends",
         chip: (e) => e.with, tip: (e) => `clashes with the ${e.withKind} ${e.with}: `
@@ -421,7 +515,7 @@ function pickedSentence() {
   const done = slot.j === slot.n - 1
     ? ` The ${ORDINALS[slot.w]} word is done: <b>${wordText(slot.w)}</b>.` : "";
   return `${the} <b>${e.t}</b>. It is number ${e.index} on the list of ${e.size} (0 to ${e.size - 1}), `
-    + `so it stores the ${bitWord(e.width)} <b>${binary(e.index, e.width)}</b>.${done}`;
+    + `so it stores the ${bitWord(e.width)} <b>${binary(e.index, e.width)}</b>. ${e.origin || ""}${done}`;
 }
 
 // The picked tokens of word w, joined.
@@ -608,6 +702,10 @@ function layoutSummary(total) {
   }
 }
 
+const originHint = () => (origins() ? "Point at a token to see which languages’ words it comes from."
+  : "Loading which languages each token comes from…");
+// When the language data arrives after a token page is shown, update its hint line.
+window.onSpaceGameOrigins = () => { for (const p of document.querySelectorAll(".origin")) p.innerHTML = originHint(); };
 function renderTokenPanel(total) {
   const panel = $("panel");
   const page = tokenStep();
@@ -635,12 +733,15 @@ function renderTokenPanel(total) {
     btn.type = "button";
     btn.title = page.pickTip(e);
     btn.addEventListener("click", () => chooseToken(page, e));
-    btn.addEventListener("mouseenter", () => { state.tokenPreview = e.t; renderPhrase(); });
-    btn.addEventListener("focus", () => { state.tokenPreview = e.t; renderPhrase(); });
-    btn.addEventListener("mouseleave", () => { state.tokenPreview = null; renderPhrase(); });
+    const show = () => { state.tokenPreview = e.t; renderPhrase(); origin.innerHTML = page.origin(e); };
+    btn.addEventListener("mouseenter", show);
+    btn.addEventListener("focus", show);
+    btn.addEventListener("mouseleave", () => { state.tokenPreview = null; renderPhrase(); origin.innerHTML = originHint(); });
     grid.append(btn);
   }
-  panel.append(grid);
+  const origin = el("p", "origin");
+  origin.innerHTML = originHint();
+  panel.append(grid, origin);
   for (const g of page.groups) {
     const box = el("details", "group " + g.reason);
     box.style.setProperty("--c", REASONS[g.reason].color);
@@ -697,7 +798,7 @@ function choose(step, option) {
   render();
 }
 function chooseToken(page, e) {
-  state.tokens.push({ id: e.id, t: e.t, index: e.i, size: page.size, width: page.width });
+  state.tokens.push({ id: e.id, t: e.t, index: e.i, size: page.size, width: page.width, origin: page.origin(e) });
   state.tokenPreview = null;
   render();
 }

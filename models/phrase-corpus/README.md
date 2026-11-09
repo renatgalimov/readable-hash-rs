@@ -7,6 +7,8 @@ The phrase tables (`models/compile_phrase.py`) are built from two files in `mode
   row (English has 13.7 %, so English is out), or if it has fewer than 2,500 such words. Zulu and Xhosa, the
   languages of *ubuntu*, are always in. `phrase-words.json` lists the languages, their measurements and
   sources, and every language that was left out and why.
+- **`phrase-languages.txt.xz`**: the same words by language, most common first. Only the explainer game
+  (`game/`) uses it, to show which languages a token comes from.
 - **`blocklist.txt.xz`**: 5,789 offensive words from about 60 languages' lists, folded to a–z, with the
   lists each came from. The compiler bans terms of 5+ letters anywhere in a word and 4-letter terms at the
   start of a word. Strong English terms (severity 2–4 or racial slurs on the dsojevic list) are banned

@@ -12,12 +12,16 @@ and writes, under models/training-data/:
 - blocklist.txt.xz: offensive words from every downloaded list, in every language, folded to a-z (`term<TAB>lists`).
   Entries from the English list with severities (dsojevic) are named `dsojevic-en-<severity 1-4>`, plus
   `dsojevic-en-racial` for racial slurs.
-- phrase-words.json: what went in: languages, their measurements, sources and counts.
+- phrase-languages.txt.xz: each language's words, most common first (`code<TAB>word word ...`). Only the
+  explainer game uses it, to show which languages a token comes from.
+- phrase-words.json: what went in: languages, their measurements, sources and counts, plus the names of the
+  languages the offensive-word lists cover (`list_languages`).
 
     python3 models/phrase-corpus/build_corpus.py [--data ~/data/phrase-langs]
 """
 import argparse
 import hashlib
+import langcodes
 import json
 import lzma
 import re
@@ -95,7 +99,7 @@ def main():
     groups = {}
     for code in languages:
         groups.setdefault(SAME_LANGUAGE.get(code, code), []).append(code)
-    chosen, skipped, words = {}, {}, set()
+    chosen, skipped, words, by_language = {}, {}, set(), {}
     for code, members in sorted(groups.items()):
         total = sum(languages[m]["words"] for m in members)
         ranked = ranked_words([args.data / "words" / f"{m}.tsv.xz" for m in members])
@@ -109,16 +113,22 @@ def main():
             skipped[code] = {**info, "reason": "consonant-heavy"}
         else:
             taken = ranked[:WORDS_PER_LANGUAGE]
+            by_language[code] = taken
             chosen[code] = {**info, "taken": len(taken), **({"included_because": ALWAYS[code]} if code in ALWAYS else {})}
             words.update(taken)
     terms = blocklist(args.data / "raw")
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "phrase-words.txt.xz").write_bytes(lzma.compress(("\n".join(sorted(words)) + "\n").encode(), preset=9))
+    (OUT / "phrase-languages.txt.xz").write_bytes(lzma.compress(
+        "".join(f"{code}\t{' '.join(taken)}\n" for code, taken in sorted(by_language.items())).encode(), preset=9))
+    list_codes = sorted({source.split("-")[1] for sources in terms.values() for source in sources})
+    list_languages = {code: langcodes.Language.get(code).display_name() for code in list_codes}
     (OUT / "blocklist.txt.xz").write_bytes(lzma.compress(
         "".join(f"{term}\t{','.join(sources)}\n" for term, sources in terms.items()).encode(), preset=9))
     manifest = {"words_per_language": WORDS_PER_LANGUAGE, "always_included": ALWAYS,
                 "max_consonant_runs_pct": MAX_CONSONANT_RUNS, "distinct_words": len(words),
-                "blocklist_terms": len(terms), "languages": chosen, "skipped": skipped}
+                "blocklist_terms": len(terms), "list_languages": list_languages, "languages": chosen,
+                "skipped": skipped}
     (OUT / "phrase-words.json").write_text(json.dumps(manifest, indent=1, ensure_ascii=False) + "\n")
     print(f"{len(chosen)} languages, {len(words)} distinct words; {len(terms)} blocklist terms; "
           f"skipped {sum(s['reason'] == 'consonant-heavy' for s in skipped.values())} consonant-heavy and "
