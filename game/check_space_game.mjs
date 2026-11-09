@@ -247,6 +247,50 @@ await evaluate(`document.getElementById('reset').click(); document.getElementByI
 await sleep(3000);
 console.log("random:", await evaluate(`document.getElementById('formula').textContent`),
   JSON.stringify((await tokenPage()).slots), (await tokenPage()).random);
+// Example words are shown as their languages write them (onların, not onlarin). In every example on the page, the
+// bold letters must fold back to the token's letters. A token can start or end inside one original letter (mæt:
+// æ is "ae", the ending is "et"); then that whole letter is bold, so extra folded letters may come only from it.
+const marks = await evaluate(`(() => {
+  const o = origins();
+  if (!o) return { error: "origins not loaded" };
+  let checked = 0, original = 0;
+  const bad = [], samples = [];
+  const check = (packed, token, kind, before) => {
+    const u = unpackOrigin(packed);
+    for (const g of (u ? u.groups : []).filter((g) => g.word)) {
+      const html = markWord(g.word, token, kind, before);
+      const bold = (html.match(/<b>(.*)<\\/b>/) || [])[1];
+      const boldLetters = [...(bold ?? "")].map((ch) => o.FOLD[ch] ?? ch);
+      const folded = boldLetters.join("");
+      const at = folded.indexOf(token);
+      const ok = at >= 0 && at < Math.max(1, (boldLetters[0] || "").length)
+        && folded.length - at - token.length < Math.max(1, (boldLetters.filter((l) => l).at(-1) || "").length);
+      checked += 1;
+      if (!/^[a-z]+$/.test(g.word)) { original += 1; if (samples.length < 4 && kind === "c") samples.push(html); }
+      if (!ok && bad.length < 5) bad.push([g.word, token, kind, bold]);
+    }
+  };
+  for (const [id, packed] of Object.entries(o.BEGIN)) check(packed, TABLE_TOKENS[id], "b");
+  let turkishSentence = null;  // what the page says for an example written onların
+  for (const [previous, row] of Object.entries(o.FOLLOW)) {
+    const r = rowOf(Number(previous));
+    row.split(" ").forEach((packed, slot) => {
+      const id = slot < 32 ? TABLE_MIDDLE[r][slot] : TABLE_END32[r][slot - 32];
+      const kind = slot < 32 ? "c" : "e";
+      check(packed, TABLE_TOKENS[id], kind, TABLE_TOKENS[previous]);
+      const u = unpackOrigin(packed);
+      if (!turkishSentence && u && u.groups.some((g) => g.word === "onların")) {
+        turkishSentence = originSentence({ id, t: TABLE_TOKENS[id] }, kind, { id: Number(previous), t: TABLE_TOKENS[previous] })
+          .replace(/<a [^>]*>|<\\/a>/g, "");
+      }
+    });
+  }
+  return { checked, original, bad, samples, turkishSentence, onlarin: o.EXAMPLES.split(" ").filter((w) => /^onlar/.test(w)) };
+})()`);
+console.log("original spellings:", JSON.stringify(marks));
+expect(!marks.error && marks.checked > 10000 && marks.bad.length === 0, "every example's bold letters fold to its token");
+expect(marks.original > 1000, "examples keep their original spelling (diacritics, other scripts)");
+expect(!(marks.onlarin || []).includes("onlarin"), "Turkish words keep their letters (onların, not onlarin)");
 console.log("errors", JSON.stringify(errors));
 expect(errors.length === 0, "no JS errors");
 ws.close();

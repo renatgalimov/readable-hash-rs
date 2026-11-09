@@ -32,6 +32,9 @@ from anyascii import anyascii
 DATA = Path.home() / "data" / "phrase-langs"
 RAW, WORDS = DATA / "raw", DATA / "words"
 WORD = re.compile(r"\w+", re.UNICODE)
+# A word after one of these starts a sentence or quoted speech (Er sagte: „Nein!"), so its first letter may be
+# capitalized for that reason alone.
+SENTENCE_BREAK = set(".!?:;\"“”„«»‹›‘’'¡¿—–-([…")
 ASCII_WORD = re.compile(r"[a-z]{2,}")
 NO_SPACES = {"zh", "ja", "th", "lo", "km", "my", "bo", "yue", "wuu"}  # scripts without spaces between words
 # Constructed languages: kept however few words they have. Codes the language library doesn't know yet (tok) or that
@@ -51,6 +54,7 @@ ELDAMO = {"q": "qya", "mq": "qya", "eq": "qya", "aq": "qya", "maq": "qya", "van"
           "khx": "x-khuzdul", "bs": "x-blackspeech", "wes": "x-westron", "roh": "x-rohirric", "nan": "x-nandorin",
           "dan": "x-nandorin", "val": "x-valarin"}
 csv.field_size_limit(sys.maxsize)
+WANTED = None  # set of codes to read (originals.py); None reads every language
 
 
 def code_of(raw):
@@ -80,7 +84,7 @@ class Language:
         self.sources = set()
         self.latin = self.total = 0
 
-    def add(self, word, count=1, dictionary=False, source=""):
+    def add(self, word, count=1, dictionary=False, source="", sentence_start=False):
         folded = fold(word)
         if not folded:
             return
@@ -102,7 +106,7 @@ def subtitles():
         if lang == "ze":
             continue  # mixed English-Chinese subtitles
         code = code_of(lang)
-        if not code:
+        if not code or (WANTED is not None and code not in WANTED):
             continue
         with lzma.open(path, "rt", encoding="utf-8", errors="replace") as lines:
             for line in lines:
@@ -114,7 +118,7 @@ def subtitles():
 def leipzig():
     for path in sorted((RAW / "leipzig").glob("*.tar.gz")):
         code = code_of(path.name.split("_")[0].split("-")[0])
-        if not code:
+        if not code or (WANTED is not None and code not in WANTED):
             continue
         try:
             with tarfile.open(path) as archive:
@@ -145,14 +149,17 @@ def tatoeba():
             code = cache[row[1]]
             if not code or code in NO_SPACES:
                 continue
-            for word in WORD.findall(row[2]):
-                LANGS[code].add(word, source="tatoeba")
+            last = 0
+            for match in WORD.finditer(row[2]):  # originals.py takes case from inside sentences
+                start = last == 0 or bool(SENTENCE_BREAK & set(row[2][last:match.start()]))
+                LANGS[code].add(match.group(), source="tatoeba", sentence_start=start)
+                last = match.end()
 
 
 def unimorph():
     for path in sorted((RAW / "unimorph").glob("*.tsv.xz")):
         code = code_of(path.name.split(".")[0])
-        if not code:
+        if not code or (WANTED is not None and code not in WANTED):
             continue
         try:
             with lzma.open(path, "rt", encoding="utf-8", errors="replace") as lines:
@@ -167,6 +174,8 @@ def unimorph():
 
 def kaikki():
     for path in sorted((RAW / "kaikki").glob("*.jsonl.xz")):
+        if WANTED is not None and code_of(path.name.split(".")[0].replace("_", " ")) not in WANTED:
+            continue  # one language per file, named in English ("Old_Norse.jsonl.xz")
         try:
             kaikki_file(path)
         except (EOFError, lzma.LZMAError, OSError) as error:
