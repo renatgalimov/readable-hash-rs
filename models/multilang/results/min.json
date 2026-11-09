@@ -1,0 +1,236 @@
+{
+ "name": "min",
+ "corpus_words": 30851,
+ "relaxed_rows": 37,
+ "relaxed_examples": [
+  "ex",
+  "py",
+  "gy",
+  "ox",
+  "wo",
+  "vu",
+  "sw",
+  "xy",
+  "dj",
+  "ax",
+  "wu",
+  "sj"
+ ],
+ "segmented_words": 20660,
+ "skipped_words": 10191,
+ "middle_attested_fraction": 0.4263102213541667,
+ "end32_attested_fraction": 0.2697347005208333,
+ "end16_attested_fraction": 0.4443359375,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.25,
+ "max_chars": 36,
+ "consonant_runs_pct": 5.597,
+ "vowel_runs_pct": 6.238,
+ "english_words_pct": 1.861,
+ "own_words_pct": 12.403,
+ "offensive_whole_pct": 1.95,
+ "offensive_whole_english_list_pct": 0.05,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.255,
+ "offensive_severe_en_pct": 0.1,
+ "offensive_inside5_pct": 3.675,
+ "offensive_inside4_pct": 21.385,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "culata",
+   85,
+   [
+    "ca",
+    "gl"
+   ],
+   [
+    "quelinong sicamenus bioculata",
+    "meroboalis optegroculata irik"
+   ]
+  ],
+  [
+   "ruang",
+   46,
+   [
+    "id"
+   ],
+   [
+    "ruang orectromerus dius psepensis",
+    "juruang remotocera rori fosi"
+   ]
+  ],
+  [
+   "culus",
+   38,
+   [
+    "la"
+   ],
+   [
+    "aedigilus irlansculus lumaik",
+    "lisan tertscatus isnyo ciculus"
+   ]
+  ],
+  [
+   "cena",
+   23,
+   [
+    "zh"
+   ],
+   [
+    "plagai cena nikan clemanes",
+    "cena pristrae maricollis apik"
+   ]
+  ],
+  [
+   "neng",
+   23,
+   [
+    "zh"
+   ],
+   [
+    "amir nokan amicarodia neng",
+    "kasutacara neng eudisimus"
+   ]
+  ],
+  [
+   "nian",
+   22,
+   [
+    "zh"
+   ],
+   [
+    "pirupogotus nian amphemum",
+    "paphora nian finawakan shipata"
+   ]
+  ],
+  [
+   "furi",
+   21,
+   [
+    "ja"
+   ],
+   [
+    "furi penudicollis hukan myderi",
+    "thremplanin insoclai furi"
+   ]
+  ],
+  [
+   "muda",
+   20,
+   [
+    "ru"
+   ],
+   [
+    "fundok moorus kukusi muda",
+    "brea muda isolea territia"
+   ]
+  ],
+  [
+   "bola",
+   19,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "imis fancinan akactia bola",
+    "kunctilla bola guni gotopus"
+   ]
+  ],
+  [
+   "flens",
+   17,
+   [
+    "id",
+    "nl"
+   ],
+   [
+    "clica didiata flensis magnemii",
+    "vascalis flensis rimata hyderes"
+   ]
+  ],
+  [
+   "fela",
+   17,
+   [
+    "cs"
+   ],
+   [
+    "gabretia fela negacellii",
+    "hydrogik quinosi fela asri"
+   ]
+  ],
+  [
+   "culos",
+   16,
+   [
+    "es"
+   ],
+   [
+    "duik suah inviculosus lintah",
+    "ardocema ensestia loculosus"
+   ]
+  ],
+  [
+   "fena",
+   16,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "apel mycara homampang fena",
+    "leurina potesi fena pimeia"
+   ]
+  ],
+  [
+   "vana",
+   15,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "grensis lidi vana chelbagaster",
+    "sclus konslosus vana moneta"
+   ]
+  ],
+  [
+   "caca",
+   15,
+   [
+    "ca",
+    "es",
+    "fr",
+    "gl",
+    "ro"
+   ],
+   [
+    "caca gresan hyum subiasan",
+    "muek caca eudeopon eudian"
+   ]
+  ]
+ ],
+ "samples": [
+  "hidral erum agas kissenes",
+  "kaur cyphlus minduak hiekah",
+  "aestoni clipis limian heae",
+  "ruang orectromerus dius psepensis",
+  "lungettes noemicinata neens",
+  "guaduncusi citus tikumeia",
+  "crastruncon nemanomus abum",
+  "aglotrum fotus stomma reza",
+  "lasa orarcerus herbomperi",
+  "sysa keluaan tangek nusaua",
+  "negrei tonnuromyia eunyo paus",
+  "cyadjaes lacera baribumbak"
+ ],
+ "seconds": 9.7,
+ "languages": [
+  "min"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

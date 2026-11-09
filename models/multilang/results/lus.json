@@ -1,0 +1,257 @@
+{
+ "name": "lus",
+ "corpus_words": 13952,
+ "relaxed_rows": 100,
+ "relaxed_examples": [
+  "zi",
+  "so",
+  "ink",
+  "zo",
+  "jo",
+  "fo",
+  "sc",
+  "ko",
+  "zu",
+  "ju",
+  "ac",
+  "inc"
+ ],
+ "segmented_words": 8394,
+ "skipped_words": 5558,
+ "middle_attested_fraction": 0.1597900390625,
+ "end32_attested_fraction": 0.18977864583333334,
+ "end16_attested_fraction": 0.35986328125,
+ "begin_attested": 128,
+ "chars": 26.1,
+ "max_chars": 35,
+ "consonant_runs_pct": 14.815,
+ "vowel_runs_pct": 3.626,
+ "english_words_pct": 1.863,
+ "own_words_pct": 18.718,
+ "offensive_whole_pct": 2.585,
+ "offensive_whole_english_list_pct": 0.33,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.355,
+ "offensive_severe_en_pct": 0.27,
+ "offensive_inside5_pct": 2.58,
+ "offensive_inside4_pct": 15.975,
+ "offensive_across_words_pct": 0.095,
+ "top_hits": [
+  [
+   "hlang",
+   39,
+   [
+    "th"
+   ],
+   [
+    "zete zuvena nelshlang weiin",
+    "zusastation hihlang bentettu"
+   ]
+  ],
+  [
+   "panna",
+   33,
+   [
+    "fi"
+   ],
+   [
+    "cancial hupanna route auchiar",
+    "dran hipanna vahrah kinces"
+   ]
+  ],
+  [
+   "semen",
+   26,
+   [
+    "ca",
+    "cy",
+    "en",
+    "es",
+    "eu",
+    "gl",
+    "mt",
+    "pt",
+    "sr",
+    "uz"
+   ],
+   [
+    "zenftu zullsement pawp fuer",
+    "laner dithasement kota bike"
+   ]
+  ],
+  [
+   "topa",
+   19,
+   [
+    "it"
+   ],
+   [
+    "zichen amunston topa lier",
+    "hina kertivte aschinin topa"
+   ]
+  ],
+  [
+   "bite",
+   19,
+   [
+    "fr"
+   ],
+   [
+    "zawn plea achlouttia bite",
+    "nunna kenstsdiah bite luih"
+   ]
+  ],
+  [
+   "fela",
+   19,
+   [
+    "cs"
+   ],
+   [
+    "godirias fela lomphaleta",
+    "atishihrim unpui fela pelh"
+   ]
+  ],
+  [
+   "asal",
+   19,
+   [
+    "gd"
+   ],
+   [
+    "creker hnaa dradidawn asal",
+    "asal atai inhridah crivah"
+   ]
+  ],
+  [
+   "pele",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "posak saitizdian botu pele",
+    "hawtak piatal ziuaiin pele"
+   ]
+  ],
+  [
+   "poon",
+   18,
+   [
+    "en"
+   ],
+   [
+    "suntihlak poon zirimna zamte",
+    "poon duhna trent specstsets"
+   ]
+  ],
+  [
+   "coon",
+   17,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "gd",
+    "gl",
+    "id",
+    "is",
+    "la",
+    "lv",
+    "mn",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pt",
+    "sl",
+    "sv",
+    "vi"
+   ],
+   [
+    "pary hena cridotipum coon",
+    "forthracer coon lekin hitu"
+   ]
+  ],
+  [
+   "tissi",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "thai fopui lalpui tissivairil",
+    "hekhadah tissial geon mela"
+   ]
+  ],
+  [
+   "dran",
+   16,
+   [
+    "pl"
+   ],
+   [
+    "dran hipanna vahrah kinces",
+    "hlah guruttentir dran july"
+   ]
+  ],
+  [
+   "giat",
+   16,
+   [
+    "vi"
+   ],
+   [
+    "zelna nier ziunnehena giat",
+    "bothat giat asemngtar phat"
+   ]
+  ],
+  [
+   "ruang",
+   16,
+   [
+    "id"
+   ],
+   [
+    "sina tuihzahtir ruang gral",
+    "cesity solo ruang duravani"
+   ]
+  ],
+  [
+   "tate",
+   15,
+   [
+    "ro"
+   ],
+   [
+    "tate hisisiakho nipui ward",
+    "censor elna tate farratla"
+   ]
+  ]
+ ],
+ "samples": [
+  "lortation gata vute cercsaih",
+  "sapa zusawn pulliam loncng",
+  "genole sohlai cambir meia",
+  "bona alimuaiah malin duhsna",
+  "brearrina atsestruma dean",
+  "awthecsima wila schallima",
+  "tenaritikah denstsman adat",
+  "vusilian gole hlutak liah",
+  "miat alilement menturawhai",
+  "kirin zahtah lalchak giltai",
+  "denvtu unausham faiin pain",
+  "zuuantak mino thilapapton"
+ ],
+ "seconds": 8.0,
+ "languages": [
+  "lus"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

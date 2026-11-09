@@ -1,0 +1,298 @@
+{
+ "name": "hif",
+ "corpus_words": 6371,
+ "relaxed_rows": 423,
+ "relaxed_examples": [
+  "mi",
+  "kh",
+  "mo",
+  "ro",
+  "be",
+  "st",
+  "bh",
+  "bo",
+  "ho",
+  "me",
+  "pe",
+  "se"
+ ],
+ "segmented_words": 3838,
+ "skipped_words": 2533,
+ "middle_attested_fraction": 0.0823974609375,
+ "end32_attested_fraction": 0.11543782552083333,
+ "end16_attested_fraction": 0.22713216145833334,
+ "begin_attested": 128,
+ "chars": 25.3,
+ "max_chars": 31,
+ "consonant_runs_pct": 22.806,
+ "vowel_runs_pct": 2.841,
+ "english_words_pct": 2.369,
+ "own_words_pct": 13.5,
+ "offensive_whole_pct": 3.43,
+ "offensive_whole_english_list_pct": 0.635,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.46,
+ "offensive_severe_en_pct": 0.235,
+ "offensive_inside5_pct": 2.145,
+ "offensive_inside4_pct": 14.74,
+ "offensive_across_words_pct": 0.045,
+ "top_hits": [
+  [
+   "flis",
+   24,
+   [
+    "da"
+   ],
+   [
+    "acnsan siolanand mone flis",
+    "flis toin acis apchomvita"
+   ]
+  ],
+  [
+   "mona",
+   24,
+   [
+    "it"
+   ],
+   [
+    "folleane ciat mona damoon",
+    "aser jeshawra mona clarmers"
+   ]
+  ],
+  [
+   "anal",
+   22,
+   [
+    "ca",
+    "cy",
+    "da",
+    "de",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fr",
+    "gd",
+    "gl",
+    "hy",
+    "id",
+    "pt",
+    "ro",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "tr",
+    "uz",
+    "zu"
+   ],
+   [
+    "isan anal agrrefctin akal",
+    "orin anal trotthmbon bele"
+   ]
+  ],
+  [
+   "muna",
+   20,
+   [
+    "fi"
+   ],
+   [
+    "matluroler muna howe astin",
+    "huttchaar relora muna along"
+   ]
+  ],
+  [
+   "inat",
+   19,
+   [
+    "sq"
+   ],
+   [
+    "inat indrouthun bahe bari",
+    "sara hammis rubasama inat"
+   ]
+  ],
+  [
+   "pitt",
+   19,
+   [
+    "sv"
+   ],
+   [
+    "deed pitt ancichis unguel",
+    "geshopes dale dondir pitt"
+   ]
+  ],
+  [
+   "tate",
+   18,
+   [
+    "ro"
+   ],
+   [
+    "tate hescvirmon nina ples",
+    "doilrreame tate mikhuran"
+   ]
+  ],
+  [
+   "hane",
+   18,
+   [
+    "da"
+   ],
+   [
+    "frlostches oropvees hane",
+    "saty frre hane lactunouat"
+   ]
+  ],
+  [
+   "dick",
+   18,
+   [
+    "cs",
+    "cy",
+    "da",
+    "en",
+    "eu",
+    "gd",
+    "is",
+    "la",
+    "mt",
+    "nl",
+    "zu"
+   ],
+   [
+    "ashrliames plaa dick aron",
+    "riches asrtman dick alabin"
+   ]
+  ],
+  [
+   "ases",
+   17,
+   [
+    "cy"
+   ],
+   [
+    "limpat ases pora unetagher",
+    "yanjndan gangmaciri ases"
+   ]
+  ],
+  [
+   "wang",
+   17,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "gd",
+    "gl",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "ko",
+    "la",
+    "lt",
+    "lv",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "zu"
+   ],
+   [
+    "amrtramale ines proat wang",
+    "wang storon foetnaga pati"
+   ]
+  ],
+  [
+   "giat",
+   17,
+   [
+    "vi"
+   ],
+   [
+    "howale giat auving yaahar",
+    "wena ruan giat sansmbited"
+   ]
+  ],
+  [
+   "scat",
+   17,
+   [
+    "en"
+   ],
+   [
+    "scat keshinais jana histrate",
+    "aser scat mucton frildris"
+   ]
+  ],
+  [
+   "fena",
+   17,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "foat fena ganevita kikhte",
+    "buntival orat fena duvict"
+   ]
+  ],
+  [
+   "phan",
+   17,
+   [
+    "vi"
+   ],
+   [
+    "millaninior swat aser phan",
+    "phan sist jaatmbly guarale"
+   ]
+  ]
+ ],
+ "samples": [
+  "noilian avte phes elowlison",
+  "deon tukron behire nottal",
+  "atchill gekata pevita jois",
+  "sole suvinner paas certha",
+  "githvill nevickbott shan",
+  "weshinivien tole crivthun",
+  "hungabssil shiimbar vere",
+  "phrohais unon andhry arts",
+  "gali surmtting jondhymbay",
+  "cuis brisea handir swahiaa",
+  "shease tinnasid praes baan",
+  "turtlike gara sambshimer"
+ ],
+ "seconds": 8.0,
+ "languages": [
+  "hif"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

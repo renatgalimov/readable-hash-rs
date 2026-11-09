@@ -1,0 +1,254 @@
+{
+ "name": "tr",
+ "corpus_words": 80000,
+ "relaxed_rows": 39,
+ "relaxed_examples": [
+  "wi",
+  "of",
+  "aj",
+  "wh",
+  "qu",
+  "hy",
+  "my",
+  "sn",
+  "sw",
+  "iv",
+  "kn",
+  "ty"
+ ],
+ "segmented_words": 53271,
+ "skipped_words": 26729,
+ "middle_attested_fraction": 0.3021240234375,
+ "end32_attested_fraction": 0.2868245442708333,
+ "end16_attested_fraction": 0.498046875,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.22,
+ "max_chars": 38,
+ "consonant_runs_pct": 5.206,
+ "vowel_runs_pct": 11.625,
+ "english_words_pct": 1.015,
+ "own_words_pct": 18.84,
+ "offensive_whole_pct": 2.31,
+ "offensive_whole_english_list_pct": 0.15,
+ "offensive_whole_own_list_pct": 0.385,
+ "offensive_whole_major_lists_pct": 1.325,
+ "offensive_severe_en_pct": 0.08,
+ "offensive_inside5_pct": 3.04,
+ "offensive_inside4_pct": 16.685,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "asini",
+   108,
+   [
+    "it"
+   ],
+   [
+    "gunmasini ordenlun arlar eriz",
+    "faallusmasini normidon didi"
+   ]
+  ],
+  [
+   "debil",
+   54,
+   [
+    "cs",
+    "pl"
+   ],
+   [
+    "veti promette edebilvamliler",
+    "midebiller gurlisin uyrim enik"
+   ]
+  ],
+  [
+   "manda",
+   35,
+   [
+    "ru"
+   ],
+   [
+    "afar uglar ugoraymandan edigi",
+    "comandan iyistetimaz tenceye"
+   ]
+  ],
+  [
+   "amlar",
+   30,
+   [
+    "tr"
+   ],
+   [
+    "zoleyimsirlar opamlarca zomis",
+    "kuyune dominyecek amlar kite"
+   ]
+  ],
+  [
+   "linda",
+   24,
+   [
+    "zu"
+   ],
+   [
+    "hapliyor linda unuz yenitmesi",
+    "sorgali cikmim ediz alindaki"
+   ]
+  ],
+  [
+   "here",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "zoni here ackeksuz ciksem",
+    "here tuzsuyken inceki ayma"
+   ]
+  ],
+  [
+   "sung",
+   17,
+   [
+    "vi"
+   ],
+   [
+    "ulde sung tuer varebillenda",
+    "lafile imumcekiler sung arinin"
+   ]
+  ],
+  [
+   "nian",
+   16,
+   [
+    "zh"
+   ],
+   [
+    "ulkmedyorsun vellulkiye nian",
+    "etluyor nian dahiti yoksak"
+   ]
+  ],
+  [
+   "yoni",
+   16,
+   [
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "te"
+   ],
+   [
+    "yoni lideriscilik fosa gote",
+    "fain yoni ulkidir tokalais"
+   ]
+  ],
+  [
+   "sidik",
+   16,
+   [
+    "tr"
+   ],
+   [
+    "armanin sidik aftlim aikinden",
+    "alcani sidik ralar iyalseyle"
+   ]
+  ],
+  [
+   "mose",
+   16,
+   [
+    "de"
+   ],
+   [
+    "rehabini dirilan doni mose",
+    "benielmis tosun sekene mose"
+   ]
+  ],
+  [
+   "dain",
+   16,
+   [
+    "ml"
+   ],
+   [
+    "bolmonze aktine iziyle dain",
+    "asagien dain evma gustladiz"
+   ]
+  ],
+  [
+   "maca",
+   15,
+   [
+    "hr"
+   ],
+   [
+    "veci maca fein kedermonan",
+    "sosa kimikiyla maca linlinin"
+   ]
+  ],
+  [
+   "coon",
+   15,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "gd",
+    "gl",
+    "id",
+    "is",
+    "la",
+    "lv",
+    "mn",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pt",
+    "sl",
+    "sv",
+    "vi"
+   ],
+   [
+    "coon uyuruz galinde egabilin",
+    "makasi alevuler been coon"
+   ]
+  ],
+  [
+   "nikla",
+   15,
+   [
+    "mr"
+   ],
+   [
+    "hola niklanmiyor ugar foncayi",
+    "firiyorum botlenraci niklarinin"
+   ]
+  ]
+ ],
+ "samples": [
+  "fiseyle kruk rodin prazziyor",
+  "baan receyle buzdecek fiesar",
+  "usttalar agulacak parilacak uyme",
+  "uzen hoopagon sadik odedip",
+  "heleziki ucilkalasi cenin",
+  "avustelayis peak egetebiller",
+  "ogremerlya cecikesi plem",
+  "romalpaya ping dogacak veya",
+  "oligi hookeksiniz uyustaspalik",
+  "ozer dansek bilmayi husuel",
+  "cercir iyiydigian hidi yalar",
+  "rektulik oler geritaldan"
+ ],
+ "seconds": 10.4,
+ "languages": [
+  "tr"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

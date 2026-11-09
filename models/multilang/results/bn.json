@@ -1,0 +1,261 @@
+{
+ "name": "bn",
+ "corpus_words": 80000,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "py"
+ ],
+ "segmented_words": 47981,
+ "skipped_words": 32019,
+ "middle_attested_fraction": 0.5138346354166666,
+ "end32_attested_fraction": 0.5192057291666666,
+ "end16_attested_fraction": 0.75830078125,
+ "begin_attested": 128,
+ "chars": 25.99,
+ "max_chars": 34,
+ "consonant_runs_pct": 29.337,
+ "vowel_runs_pct": 6.012,
+ "english_words_pct": 1.149,
+ "own_words_pct": 36.436,
+ "offensive_whole_pct": 2.82,
+ "offensive_whole_english_list_pct": 0.515,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.38,
+ "offensive_severe_en_pct": 0.25,
+ "offensive_inside5_pct": 2.11,
+ "offensive_inside4_pct": 17.325,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "haner",
+   37,
+   [
+    "da"
+   ],
+   [
+    "bhrke ptbhuilike ramdti dhaner",
+    "skrutmer dhaner oyao mombhe"
+   ]
+  ],
+  [
+   "stake",
+   29,
+   [
+    "sv"
+   ],
+   [
+    "bsmarder abhyntrsaid cestake",
+    "curakhstake peruthan yaite"
+   ]
+  ],
+  [
+   "sule",
+   21,
+   [
+    "kn"
+   ],
+   [
+    "pojakrma sule korsad brake",
+    "maphajei snetrpnkake sule"
+   ]
+  ],
+  [
+   "puta",
+   20,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "bhekdipika puta sesn jina",
+    "alimstra bejnes puta agre"
+   ]
+  ],
+  [
+   "tate",
+   20,
+   [
+    "ro"
+   ],
+   [
+    "tate esio dete agrokrbami",
+    "pimphitar harmaitnis tate"
+   ]
+  ],
+  [
+   "bite",
+   20,
+   [
+    "fr"
+   ],
+   [
+    "bite tiphel skuttore rider",
+    "bite gurgntagri clapinir"
+   ]
+  ],
+  [
+   "rini",
+   19,
+   [
+    "zh"
+   ],
+   [
+    "uprtti rini hota telarmta",
+    "rini myansobimder tite jnni"
+   ]
+  ],
+  [
+   "sisn",
+   18,
+   [
+    "kn",
+    "te"
+   ],
+   [
+    "shytrsbani cluthotta sisn",
+    "saner shni sisn birapadhra"
+   ]
+  ],
+  [
+   "holo",
+   18,
+   [
+    "ko"
+   ],
+   [
+    "yaking holo tech turketen",
+    "garlyanas aindti sbay holo"
+   ]
+  ],
+  [
+   "guro",
+   18,
+   [
+    "en",
+    "ja"
+   ],
+   [
+    "mekaskeo prti nibhel guro",
+    "kyantlmar mirano mnar guro"
+   ]
+  ],
+  [
+   "luder",
+   17,
+   [
+    "da"
+   ],
+   [
+    "keta kseper sastamta luder",
+    "gaoyake mitrei luder jarsti"
+   ]
+  ],
+  [
+   "sike",
+   17,
+   [
+    "tr"
+   ],
+   [
+    "sneistipsn sike piter jner",
+    "buttite phim bilikrner sike"
+   ]
+  ],
+  [
+   "kaka",
+   16,
+   [
+    "eu"
+   ],
+   [
+    "bsakar yumarer sbinei kaka",
+    "drkaamulte grauntao kaka"
+   ]
+  ],
+  [
+   "clit",
+   16,
+   [
+    "en"
+   ],
+   [
+    "clit suse ksmelngray dart",
+    "clit utptre penagulo enkand"
+   ]
+  ],
+  [
+   "pube",
+   16,
+   [
+    "be",
+    "bg",
+    "ca",
+    "cs",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "gl",
+    "hi",
+    "hr",
+    "hu",
+    "id",
+    "is",
+    "it",
+    "la",
+    "lt",
+    "lv",
+    "mk",
+    "mn",
+    "ms",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "vi"
+   ],
+   [
+    "mhabdiolle sumabdman pube",
+    "pube inchi streter uddehana"
+   ]
+  ]
+ ],
+ "samples": [
+  "bledin roke cure mhodhake",
+  "maser jhinik dakand blumji",
+  "pomtke boritir ghagor griye",
+  "gata utkichei pray kisotke",
+  "mothmbiya jedimyabar rata",
+  "kmikrmsagulo buma lemudrgulor",
+  "alokharsmi ragahara myain",
+  "cukitbke mneo sunyal srke",
+  "smle utyapdake grimdhnara",
+  "heto aparekt sisutar lunten",
+  "rasutar mryanyed ekre bader",
+  "jhutntder smrner sahatksala"
+ ],
+ "seconds": 8.5,
+ "languages": [
+  "bn"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

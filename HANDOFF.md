@@ -1,3 +1,24 @@
+**Archived (Nov 10).** The user chose the 10-token format (phrase-v7) as the only one: it is `readable_hash::encode_u64`/`decode_u64` on `feature/phrase-u64` (PR #33). Everything else is archived:
+- this branch: the early experiments (v2–v5, dyn, lenmin, the toy spaces game) and the multilingual research in `models/multilang/` (scripts, reports, per-language result summaries; the per-language `*.model.json.xz` tables are left out, `run_all.sh` rebuilds them from `~/data/phrase-langs/`). Tag `archive/phrase-experiments`.
+- tag `archive/phrase-11-tokens`: the 11-token format (phrase-v6) with its Rust codec, as PR #33 had it before the switch.
+- tag `archive/phrase-9-tokens`: the 9-token prototype (256/64/64 lists, a 2–4-bit layout code) and its game.
+
+**Nov 8–9 overnight:** the offensive-phrase research is in `models/multilang/` (`REPORT.md` is the summary, `PLAN.md` the log; data in `~/data/phrase-langs/`, 5.3 GB).
+- Finding: a compile-time blocklist fixes it in any language.
+- The language choice (English, Basque+Finnish, Bantu mix, Zulu, Turkish+Zulu) is the user's call.
+- PR #33 is untouched.
+
+# HANDOFF (superseded: v5 shipped on its own branch)
+
+**Nov 8, user: "this is what I wanted… commit, push to a branch, make it a proper feature, the default implementation".**
+- `feature/phrase-u64` (worktree `~/projects/readable-hash-rs-phrase`, commit `50b7200`, based on `main` `ed08744`) is the clean feature. It is pushed, and a PR against `main` was requested (needs approval at the IAP gateway).
+  - v5 is `readable_hash::encode_u64`/`decode_u64` (module `phrase`).
+  - Files: `src/phrase{,_data}.rs`, `models/compile_phrase.py`, `phrase_model.json`, `phrase_report.json`, `test_phrase.py`, `examples/phrase.rs`, `tests/features/phrase.feature`, `game/` (build writes `game/space-game.html`, gitignored; the check runs from `file://` and exits non-zero on failure).
+- This branch (`feature/reversible-u64`, commit `a89a4fc`) is the pushed snapshot of all experiments, including this file.
+- Blog: `post/bits-in-the-spaces` in `~/projects/renatgalimov`, commit `1a3abed`, pushed. Two draft posts plus the game pages.
+  - `readable-hash-0-11.md` still describes an older design: a scramble, ≤24 characters, `42` = `drumlot forfelizo dakwey`. The user was told.
+- Pre-existing on `main`: `--all-features` fails to build since `sha3` 0.12 (#23). CI Lint uses `--all-features`.
+
 # Handoff: the spaces game
 
 **Intent: finish the spaces game.** It is an interactive explainer for the blog post "The bits are in the spaces". The player builds one phrase choice by choice, while a gauge of 64 small squares fills with the bits each choice stores. The game uses a toy token model. The real Rust encoder is not part of this work and stays untouched.

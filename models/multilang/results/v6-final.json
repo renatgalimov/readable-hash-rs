@@ -1,0 +1,37 @@
+{
+ "name": "v6-final",
+ "languages": [
+  "mix100"
+ ],
+ "corpus_words": 187020,
+ "relaxed_rows": 5,
+ "chars": 25.03,
+ "max_chars": 30,
+ "consonant_runs_pct": 6.031,
+ "vowel_runs_pct": 6.777,
+ "english_words_pct": 0.444,
+ "own_words_pct": 39.833,
+ "offensive_whole_pct": 0.0,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 0.0,
+ "offensive_inside4_pct": 8.775,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [],
+ "samples": [
+  "stagun huse shum scimilen",
+  "coke fotova perasi strira",
+  "nustou adonas hazima enza",
+  "isna qutuliye pawa yaabus",
+  "impunnje femeericum laan",
+  "olvisseitna duro aiuthuku",
+  "libenziime lakituko elso",
+  "shemadka lote depete alas",
+  "rese qurutiko endirgeada",
+  "ekio chriri konons objevo",
+  "lamain voizboni tion kaan",
+  "fogurrim reda bahancejai"
+ ]
+}

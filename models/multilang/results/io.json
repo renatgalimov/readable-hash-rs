@@ -1,0 +1,216 @@
+{
+ "name": "io",
+ "corpus_words": 79442,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "exk"
+ ],
+ "segmented_words": 61186,
+ "skipped_words": 18256,
+ "middle_attested_fraction": 0.3167317708333333,
+ "end32_attested_fraction": 0.4855143229166667,
+ "end16_attested_fraction": 0.5768229166666666,
+ "begin_attested": 128,
+ "chars": 28.54,
+ "max_chars": 38,
+ "consonant_runs_pct": 3.22,
+ "vowel_runs_pct": 0.499,
+ "english_words_pct": 1.412,
+ "own_words_pct": 19.986,
+ "offensive_whole_pct": 2.235,
+ "offensive_whole_english_list_pct": 0.14,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.825,
+ "offensive_severe_en_pct": 0.09,
+ "offensive_inside5_pct": 5.17,
+ "offensive_inside4_pct": 25.105,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "tonto",
+   225,
+   [
+    "es"
+   ],
+   [
+    "avuneso ruita klunstonto adas",
+    "asortonto melvez feko avocas"
+   ]
+  ],
+  [
+   "kanto",
+   126,
+   [
+    "ja"
+   ],
+   [
+    "bazas sofita ledeskanto beleskas",
+    "juskanto bicileno baktocar"
+   ]
+  ],
+  [
+   "monta",
+   90,
+   [
+    "it"
+   ],
+   [
+    "emonta rapitanino rika hidigus",
+    "obonto nesangez dranta decamonta"
+   ]
+  ],
+  [
+   "pinto",
+   43,
+   [
+    "pt"
+   ],
+   [
+    "irus eculcipinto doonta elez",
+    "aceanti pomi kastebas aspinto"
+   ]
+  ],
+  [
+   "skita",
+   38,
+   [
+    "sv"
+   ],
+   [
+    "rano taneskita diar emersir",
+    "uniginte penskita spilejir aunta"
+   ]
+  ],
+  [
+   "rima",
+   26,
+   [
+    "la"
+   ],
+   [
+    "quedus cespato rima lumizis",
+    "shamamizanta rima debeskir depir"
+   ]
+  ],
+  [
+   "anita",
+   25,
+   [
+    "nl"
+   ],
+   [
+    "depizurinte gusilvilesi anita",
+    "kranita lacente samocimana"
+   ]
+  ],
+  [
+   "molo",
+   24,
+   [
+    "fi"
+   ],
+   [
+    "menandanto molo exanta efaktanti",
+    "cias bielumis molo apumata"
+   ]
+  ],
+  [
+   "mama",
+   22,
+   [
+    "pt"
+   ],
+   [
+    "elito mama ciortumizis shaanto",
+    "geos mama avizikteto spote"
+   ]
+  ],
+  [
+   "chati",
+   20,
+   [
+    "te"
+   ],
+   [
+    "kongema demetregis chati akante",
+    "elevensita chati lavito aceir"
+   ]
+  ],
+  [
+   "muna",
+   19,
+   [
+    "fi"
+   ],
+   [
+    "palicaji merite muna decante",
+    "krala makranta duarkiti muna"
+   ]
+  ],
+  [
+   "nigar",
+   19,
+   [
+    "mr"
+   ],
+   [
+    "stelikor spis agiveskunigar",
+    "taite dartunigar kapivimena"
+   ]
+  ],
+  [
+   "debil",
+   18,
+   [
+    "cs",
+    "pl"
+   ],
+   [
+    "debilez aktuzigas saanti blite",
+    "atlinta debilateus nuribeita"
+   ]
+  ],
+  [
+   "mear",
+   17,
+   [
+    "es"
+   ],
+   [
+    "vonto bersos decilogez mear",
+    "skita mear pagifiguli pagus"
+   ]
+  ],
+  [
+   "kakas",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "guiduncigota nomieras kakas",
+    "pulo kakas bideterigas hunger"
+   ]
+  ]
+ ],
+ "samples": [
+  "sortigor toonte debanta ecocebeti",
+  "konor ortola spozanti soulonta",
+  "helenta bumesas assoto glio",
+  "rano taneskita diar emersir",
+  "depizurinte gusilvilesi anita",
+  "ludeerminonti nianta agnesizas",
+  "galopinaginto angoturo quigas",
+  "debloreti decanta makrus boto",
+  "sizati tacelante glikoorpote",
+  "uniginta celiganta laxite tutegar",
+  "antrigis nubiesonta nero ento",
+  "orlanaciti sizante profesoncus"
+ ],
+ "seconds": 9.5,
+ "languages": [
+  "io"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

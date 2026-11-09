@@ -1,0 +1,235 @@
+{
+ "name": "ky",
+ "corpus_words": 80000,
+ "relaxed_rows": 46,
+ "relaxed_examples": [
+  "uc",
+  "ac",
+  "ic",
+  "kv",
+  "oc",
+  "ae",
+  "co",
+  "ec",
+  "gv",
+  "dz",
+  "sv",
+  "sf"
+ ],
+ "segmented_words": 54568,
+ "skipped_words": 25432,
+ "middle_attested_fraction": 0.4436848958333333,
+ "end32_attested_fraction": 0.2724609375,
+ "end16_attested_fraction": 0.4798990885416667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.75,
+ "max_chars": 35,
+ "consonant_runs_pct": 11.209,
+ "vowel_runs_pct": 4.422,
+ "english_words_pct": 0.868,
+ "own_words_pct": 14.308,
+ "offensive_whole_pct": 1.51,
+ "offensive_whole_english_list_pct": 0.045,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.875,
+ "offensive_severe_en_pct": 0.08,
+ "offensive_inside5_pct": 2.32,
+ "offensive_inside4_pct": 14.79,
+ "offensive_across_words_pct": 0.05,
+ "top_hits": [
+  [
+   "chunu",
+   27,
+   [
+    "zh"
+   ],
+   [
+    "avgiet khemurchunun byrogu",
+    "emamada azchunun degende prasy"
+   ]
+  ],
+  [
+   "inat",
+   21,
+   [
+    "sq"
+   ],
+   [
+    "imstrduk inat tashtap nuyn",
+    "leyp aspattylynda inat aganyn"
+   ]
+  ],
+  [
+   "urin",
+   20,
+   [
+    "sl"
+   ],
+   [
+    "urin gego spurmashta parda",
+    "molar esktoriyana epin urin"
+   ]
+  ],
+  [
+   "mesa",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "uraluuluralyk frugu mesa setar",
+    "ekonuno uratynda mesa synorun"
+   ]
+  ],
+  [
+   "suka",
+   17,
+   [
+    "be",
+    "pl",
+    "ru",
+    "sk",
+    "uk"
+   ],
+   [
+    "narorun suka spasy avashabuuga",
+    "onimdin suka kesimada dion"
+   ]
+  ],
+  [
+   "dain",
+   16,
+   [
+    "ml"
+   ],
+   [
+    "impoka dain imdan detondogu",
+    "kenttik iyboor iygido dain"
+   ]
+  ],
+  [
+   "bunda",
+   16,
+   [
+    "pt"
+   ],
+   [
+    "bunda varialynyn isttagy ozoo",
+    "obozologin bunda gedagy soya"
+   ]
+  ],
+  [
+   "dike",
+   16,
+   [
+    "eu",
+    "sr"
+   ],
+   [
+    "dike prat vanda biropondun",
+    "dike acdan uysun derattatuuchu"
+   ]
+  ],
+  [
+   "biga",
+   16,
+   [
+    "it"
+   ],
+   [
+    "okuyalduu tyyn yrchylyk biga",
+    "suttazmaryn ylyp monda biga"
+   ]
+  ],
+  [
+   "diga",
+   16,
+   [
+    "bg",
+    "it",
+    "mt"
+   ],
+   [
+    "diga urtanyn tsat avirgesh",
+    "astanyn diga tondo urstygyp"
+   ]
+  ],
+  [
+   "fena",
+   15,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "yrdyn atar byygaruuchan fena",
+    "nitrge open fena tiptidun"
+   ]
+  ],
+  [
+   "mater",
+   14,
+   [
+    "sl"
+   ],
+   [
+    "materian torogu kumdun frasy",
+    "okup materiametinin ylstruno"
+   ]
+  ],
+  [
+   "sait",
+   14,
+   [
+    "kn"
+   ],
+   [
+    "naymekay azytengiler sait",
+    "amdagy muuk sait atygitruuga"
+   ]
+  ],
+  [
+   "dian",
+   14,
+   [
+    "zh"
+   ],
+   [
+    "dian abdo azhooluu dioktu",
+    "okuuda beyn dian khalyalder"
+   ]
+  ],
+  [
+   "sega",
+   13,
+   [
+    "it"
+   ],
+   [
+    "iralizhoen krolushun sega",
+    "faseter oburanyn uyrodon sega"
+   ]
+  ]
+ ],
+ "samples": [
+  "oldonun acka brdan imolyasyna",
+  "baruu oskosh alsyuu olurlar",
+  "gottap oorola prorluu stasy",
+  "isun oblemdar kogon sibiden",
+  "empiyldun fattotkuga akan",
+  "encheychke agdagy etimikuu",
+  "azhyronuyk aktuarlar finun",
+  "braytylyp avka buyruuga sedan",
+  "teya oblyalardyn stabakulot",
+  "ilga anatuuga kubary vintasy",
+  "akvayn iyilgidan otot kaga",
+  "osmanbeet tedan chongbayboy"
+ ],
+ "seconds": 10.5,
+ "languages": [
+  "ky"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

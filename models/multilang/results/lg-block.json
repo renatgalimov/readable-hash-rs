@@ -1,0 +1,234 @@
+{
+ "name": "lg-block",
+ "corpus_words": 80000,
+ "relaxed_rows": 24,
+ "relaxed_examples": [
+  "fo",
+  "ua",
+  "ex",
+  "zo",
+  "hu",
+  "kh",
+  "sc",
+  "kl",
+  "kc",
+  "qu",
+  "vo",
+  "oe"
+ ],
+ "banned_pairs": 2610,
+ "segmented_words": 65356,
+ "skipped_words": 14644,
+ "middle_attested_fraction": 0.4233805338541667,
+ "end32_attested_fraction": 0.3946533203125,
+ "end16_attested_fraction": 0.610595703125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "three_token_rounds": [
+  583,
+  378,
+  228,
+  146
+ ],
+ "chars": 29.01,
+ "max_chars": 39,
+ "consonant_runs_pct": 4.28,
+ "vowel_runs_pct": 11.309,
+ "english_words_pct": 0.869,
+ "own_words_pct": 21.522,
+ "offensive_whole_pct": 0.41,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 1.11,
+ "offensive_inside4_pct": 13.765,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "linda",
+   33,
+   [
+    "zu"
+   ],
+   [
+    "azuba linda eviimye goyingira",
+    "kalinda omaze soobulawo ekanya"
+   ]
+  ],
+  [
+   "tanga",
+   31,
+   [
+    "fil"
+   ],
+   [
+    "zisimaguddwa ggita tanga ozadde",
+    "tanga kuuka misiwenyeka erse"
+   ]
+  ],
+  [
+   "bamba",
+   24,
+   [
+    "zu"
+   ],
+   [
+    "mibaamu otiddwa bamba adiiasiddwa",
+    "bulaga bamba ageete tayango"
+   ]
+  ],
+  [
+   "mutta",
+   19,
+   [
+    "sv"
+   ],
+   [
+    "bokemutta alayera gaayo ndula",
+    "okumutta olubuulutidde tmafuuka"
+   ]
+  ],
+  [
+   "hane",
+   17,
+   [
+    "da"
+   ],
+   [
+    "hane nfaba disezza njunvulwa",
+    "evaawo hane ntikozesa meematidde"
+   ]
+  ],
+  [
+   "hani",
+   12,
+   [
+    "is"
+   ],
+   [
+    "hani amidde mpaanjekaana nonda",
+    "hani ejaako niinuubuse wakwata"
+   ]
+  ],
+  [
+   "kaka",
+   12,
+   [
+    "eu"
+   ],
+   [
+    "ogiwa nnwaalimba kaka esigirwa",
+    "tugemye tolayaka kaka yiwa"
+   ]
+  ],
+  [
+   "igazi",
+   10,
+   [
+    "zu"
+   ],
+   [
+    "kiwekesa gugira nsigazizani",
+    "ezala ngigazitwala awayo nimugwa"
+   ]
+  ],
+  [
+   "matir",
+   8,
+   [
+    "uk"
+   ],
+   [
+    "zezibwe ssumatira lyemu efika",
+    "azayo hakubye ndola mbumatiro"
+   ]
+  ],
+  [
+   "tusan",
+   7,
+   [
+    "sv"
+   ],
+   [
+    "ntyasalu ewuttusanga lyadiba",
+    "akeko njatusanyizza salinnyibwa"
+   ]
+  ],
+  [
+   "subba",
+   7,
+   [
+    "sv"
+   ],
+   [
+    "maya waya akamizza mesubbala",
+    "busubbagala ddiddwa adako mugumu"
+   ]
+  ],
+  [
+   "anita",
+   7,
+   [
+    "nl"
+   ],
+   [
+    "futeegulira detuwa anita ewewo",
+    "anita ensero ataati kirenga"
+   ]
+  ],
+  [
+   "dambi",
+   6,
+   [
+    "uk"
+   ],
+   [
+    "deera haunsonnule azidambisa",
+    "mbibwa jatuuka efudambidde kosa"
+   ]
+  ],
+  [
+   "ititi",
+   6,
+   [
+    "uz"
+   ],
+   [
+    "ntyange osititibwa nfutubirira",
+    "tiasititidde kosimu kweseewo"
+   ]
+  ],
+  [
+   "aasit",
+   6,
+   [
+    "fi"
+   ],
+   [
+    "kkiitufumu lwaako twavaasita",
+    "tuleikamu nasaasitta luyamba"
+   ]
+  ]
+ ],
+ "samples": [
+  "gyongamu oyaba tito ffetuumira",
+  "kumbe kolega amakulu gyafola",
+  "fatuba mputtu gubedde kwise",
+  "awera ttukutuuka abbibwa nsabeera",
+  "nzibayedde kkobuvugala yeka",
+  "onsingikiro ggibwa ddobango",
+  "ettalittiga yesalinamu avirira",
+  "tiyiyamu efana biriddeko ssaamu",
+  "muye ttawukeddwa kwaterolanga",
+  "keze byanawo ebisira ejooya",
+  "yebayamba geeyawuwa sinze okanya",
+  "kogeenala mune yagutuseeko"
+ ],
+ "seconds": 315.9,
+ "languages": [
+  "lg"
+ ],
+ "no_english": false,
+ "blocklist": true
+}

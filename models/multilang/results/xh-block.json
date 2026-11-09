@@ -1,0 +1,234 @@
+{
+ "name": "xh-block",
+ "corpus_words": 26034,
+ "relaxed_rows": 60,
+ "relaxed_examples": [
+  "uj",
+  "ex",
+  "fo",
+  "ux",
+  "oq",
+  "fu",
+  "ij",
+  "sc",
+  "va",
+  "do",
+  "fa",
+  "fi"
+ ],
+ "banned_pairs": 2078,
+ "segmented_words": 20371,
+ "skipped_words": 5663,
+ "middle_attested_fraction": 0.2969156901041667,
+ "end32_attested_fraction": 0.20174153645833334,
+ "end16_attested_fraction": 0.3672688802083333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "three_token_rounds": [
+  463,
+  249,
+  128,
+  86
+ ],
+ "chars": 28.93,
+ "max_chars": 37,
+ "consonant_runs_pct": 7.204,
+ "vowel_runs_pct": 12.713,
+ "english_words_pct": 0.313,
+ "own_words_pct": 12.745,
+ "offensive_whole_pct": 0.44,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 1.815,
+ "offensive_inside4_pct": 19.385,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "pheni",
+   62,
+   [
+    "mr"
+   ],
+   [
+    "mapheni zikane acalo yeziko",
+    "eyelwa nyusayipheni ugqilenelwa"
+   ]
+  ],
+  [
+   "ezeli",
+   49,
+   [
+    "lv"
+   ],
+   [
+    "iciso osusezeli noomntu uquka",
+    "acukhosi nezelisa zophubiwa"
+   ]
+  ],
+  [
+   "phani",
+   34,
+   [
+    "ml"
+   ],
+   [
+    "belilo ilizinga iyothaphani",
+    "igaphani ikelwa oluvela ukuvele"
+   ]
+  ],
+  [
+   "linda",
+   25,
+   [
+    "zu"
+   ],
+   [
+    "okakhabokuzo lako linda onele",
+    "azeni ulindaba uquzifiso akelo"
+   ]
+  ],
+  [
+   "semel",
+   20,
+   [
+    "kn"
+   ],
+   [
+    "yobe owalo amagusemelo olele",
+    "osesemele atisa uholo ugokuko"
+   ]
+  ],
+  [
+   "koli",
+   19,
+   [
+    "kn"
+   ],
+   [
+    "koli eqaka ambuqhuma inkube",
+    "kweeba koli onokwawo ilemelo"
+   ]
+  ],
+  [
+   "bamba",
+   19,
+   [
+    "zu"
+   ],
+   [
+    "etane ezixibamba zezingenkubi",
+    "zephiwo thaphondo uxlo uxibamba"
+   ]
+  ],
+  [
+   "alla",
+   19,
+   [
+    "mt"
+   ],
+   [
+    "eyiyo alla eqhucenone bayo",
+    "idizele itesolelo alla uzwe"
+   ]
+  ],
+  [
+   "elle",
+   17,
+   [
+    "lv"
+   ],
+   [
+    "oteko elle ntsebenzana evishokwisa",
+    "atomyina elle bekulwa umntu"
+   ]
+  ],
+  [
+   "tanga",
+   14,
+   [
+    "fil"
+   ],
+   [
+    "entanga usile bema thathiyazi",
+    "ngolweni ikomitanga nkalo leyo"
+   ]
+  ],
+  [
+   "khuni",
+   13,
+   [
+    "mr"
+   ],
+   [
+    "onkulo zikhuni emlo onengazo",
+    "ngiswa bango ugxakhuni sebhaka"
+   ]
+  ],
+  [
+   "hlang",
+   13,
+   [
+    "th"
+   ],
+   [
+    "wamkayo eholuhlanga udise liso",
+    "iluhlanga okeka ningati yamanzi"
+   ]
+  ],
+  [
+   "simel",
+   12,
+   [
+    "te"
+   ],
+   [
+    "ukeka osasimela weendisa ezwa",
+    "epeyasimeleyo aswe ecise ukiso"
+   ]
+  ],
+  [
+   "balen",
+   10,
+   [
+    "nl"
+   ],
+   [
+    "yiyabaleni iputhusolweni alula",
+    "layili lwaya uhala esakhubaleni"
+   ]
+  ],
+  [
+   "khokh",
+   9,
+   [
+    "mn"
+   ],
+   [
+    "aheni zakhokhasi izeke equka",
+    "iikhokhuhla mbala lowa uzelo"
+   ]
+  ]
+ ],
+ "samples": [
+  "nibonga ecelwe oyala ucaphumelekile",
+  "baze ephulela linasi nicanga",
+  "thathuba bobuntu lwingani emko",
+  "solo efihlumba kwazo ibekeke",
+  "aliyawaba iquphincede zelo",
+  "uhasusibalisa eqaka owuseleele",
+  "ebononitathi zehlimela edise",
+  "oyaphazwa uqula yezathu lube",
+  "nonda efishiphondo emasepanyele",
+  "ehlwa okukala sizifundo otyunga",
+  "zeenkele phumdlisa lathi ngayo",
+  "epawumpule noli ukwandawuthi"
+ ],
+ "seconds": 295.3,
+ "languages": [
+  "xh"
+ ],
+ "no_english": false,
+ "blocklist": true
+}

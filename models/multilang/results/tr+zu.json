@@ -1,0 +1,223 @@
+{
+ "name": "tr+zu",
+ "corpus_words": 79101,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "nh"
+ ],
+ "segmented_words": 53740,
+ "skipped_words": 25361,
+ "middle_attested_fraction": 0.4967041015625,
+ "end32_attested_fraction": 0.3256022135416667,
+ "end16_attested_fraction": 0.5489908854166666,
+ "begin_attested": 128,
+ "chars": 27.38,
+ "max_chars": 37,
+ "consonant_runs_pct": 4.695,
+ "vowel_runs_pct": 11.158,
+ "english_words_pct": 0.8,
+ "own_words_pct": 22.227,
+ "offensive_whole_pct": 1.84,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.075,
+ "offensive_whole_major_lists_pct": 1.02,
+ "offensive_severe_en_pct": 0.03,
+ "offensive_inside5_pct": 3.085,
+ "offensive_inside4_pct": 20.45,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "kunda",
+   52,
+   [
+    "cs"
+   ],
+   [
+    "lokunda njengile utka doseqoshiswa",
+    "ikunda giydaki fishani laso"
+   ]
+  ],
+  [
+   "sheni",
+   37,
+   [
+    "zh"
+   ],
+   [
+    "isyahabisa koke kolosheni",
+    "ugelo yokufalunu nokubobhisheni"
+   ]
+  ],
+  [
+   "bamba",
+   32,
+   [
+    "zu"
+   ],
+   [
+    "azondo faydilobamba nokulunda",
+    "mideele esebheduzile ebambana"
+   ]
+  ],
+  [
+   "linda",
+   31,
+   [
+    "zu"
+   ],
+   [
+    "edler unlu termolinda hinaka",
+    "uzakli eyalindaba gabe hiele"
+   ]
+  ],
+  [
+   "asini",
+   25,
+   [
+    "it"
+   ],
+   [
+    "seye verkule umasini gotual",
+    "eyasheyasini kuletha hardun"
+   ]
+  ],
+  [
+   "bobo",
+   21,
+   [
+    "fil"
+   ],
+   [
+    "onerim ettidaba bobo zokuwa",
+    "rekhomeya bobo veraman gasi"
+   ]
+  ],
+  [
+   "hlang",
+   21,
+   [
+    "th"
+   ],
+   [
+    "versa hihlangane yenklanundu",
+    "mulo ekiz penda resehlangiso"
+   ]
+  ],
+  [
+   "cona",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "eliwe modukwibla sami cona",
+    "ngakulwa geala cona gerayi"
+   ]
+  ],
+  [
+   "mama",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "ugumnywe mama orumama been",
+    "inde mizabulo mama akafle"
+   ]
+  ],
+  [
+   "randi",
+   18,
+   [
+    "hi"
+   ],
+   [
+    "peasacaleni yurandi lere ibini",
+    "gowa cikhale ulayiz firandi"
+   ]
+  ],
+  [
+   "suki",
+   18,
+   [
+    "be",
+    "pl",
+    "ru",
+    "uk"
+   ],
+   [
+    "suki wenu tumuzlar sualwe",
+    "angceni kime suki hilekeka"
+   ]
+  ],
+  [
+   "tanga",
+   17,
+   [
+    "fil"
+   ],
+   [
+    "ottarietanga ekisa ungakhona",
+    "ucala name anemile ucrotanga"
+   ]
+  ],
+  [
+   "galo",
+   16,
+   [
+    "gl",
+    "pt"
+   ],
+   [
+    "utesula ustameya yiwa galo",
+    "izikhinle ugambuguqali galo"
+   ]
+  ],
+  [
+   "pene",
+   15,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "edye pene ikamnetiya ungu",
+    "pene askiso ulaka ezingalugu"
+   ]
+  ],
+  [
+   "tate",
+   15,
+   [
+    "ro"
+   ],
+   [
+    "dolasak tate akabayela pegim",
+    "angazaya tate ezide ayithane"
+   ]
+  ]
+ ],
+ "samples": [
+  "caktuk suisa wole cottulala",
+  "bende lwakhe esibumba cathane",
+  "othena ilizulu gotlim weeni",
+  "edip ogukholwa kumi izintweni",
+  "bobamezi icakusazulu lila",
+  "yurerlidiz tezi payindweni",
+  "duyakubune libirdun luzi",
+  "wombiqela eyele umuteni enza",
+  "hame ogezsasa wenyadukiswa",
+  "njengwe kwangami kafaya regime",
+  "limana tutamiti unayo sina",
+  "lwahkunye hama batirmibeke"
+ ],
+ "seconds": 8.7,
+ "languages": [
+  "tr",
+  "zu"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

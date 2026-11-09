@@ -1,0 +1,229 @@
+{
+ "name": "dsb",
+ "corpus_words": 20921,
+ "relaxed_rows": 42,
+ "relaxed_examples": [
+  "nj",
+  "wj",
+  "mj",
+  "pj",
+  "my",
+  "gu",
+  "ml",
+  "cr",
+  "by",
+  "ry",
+  "kw",
+  "zu"
+ ],
+ "segmented_words": 14808,
+ "skipped_words": 6113,
+ "middle_attested_fraction": 0.1563720703125,
+ "end32_attested_fraction": 0.22859700520833334,
+ "end16_attested_fraction": 0.4034830729166667,
+ "begin_attested": 128,
+ "chars": 27.07,
+ "max_chars": 36,
+ "consonant_runs_pct": 13.56,
+ "vowel_runs_pct": 0.211,
+ "english_words_pct": 0.204,
+ "own_words_pct": 15.97,
+ "offensive_whole_pct": 1.26,
+ "offensive_whole_english_list_pct": 0.005,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.345,
+ "offensive_severe_en_pct": 0.05,
+ "offensive_inside5_pct": 1.4,
+ "offensive_inside4_pct": 14.7,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "bile",
+   23,
+   [
+    "ro"
+   ],
+   [
+    "dosena laje saliccina bile",
+    "bile kwraju luznach zwelony"
+   ]
+  ],
+  [
+   "pene",
+   17,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "beretsem pene jaje kwroju",
+    "cynospona pene plicany zlych"
+   ]
+  ],
+  [
+   "scal",
+   16,
+   [
+    "sl"
+   ],
+   [
+    "scal pensadnu ksyska ryju",
+    "wotmetsny scal gajzidella"
+   ]
+  ],
+  [
+   "jaja",
+   16,
+   [
+    "hr"
+   ],
+   [
+    "rjapogne elince kona jaja",
+    "kliwym brotremu kunu jaja"
+   ]
+  ],
+  [
+   "cena",
+   15,
+   [
+    "zh"
+   ],
+   [
+    "wioliketso cena formetopina",
+    "gramna nabotsej cena saju"
+   ]
+  ],
+  [
+   "fiku",
+   15,
+   [
+    "eo"
+   ],
+   [
+    "plozoju pyikej fiku fistrim",
+    "fiku znaki terjebina zimjesa"
+   ]
+  ],
+  [
+   "jama",
+   15,
+   [
+    "et"
+   ],
+   [
+    "jama chosoju wolaso londisce",
+    "cyny jama torentku topowu"
+   ]
+  ],
+  [
+   "cham",
+   14,
+   [
+    "vi"
+   ],
+   [
+    "formentarze swego cham tsupuju",
+    "cham wotma naka rugodladkow"
+   ]
+  ],
+  [
+   "pico",
+   13,
+   [
+    "eo"
+   ],
+   [
+    "nolilenje teke pico njezymej",
+    "duridlych wokso pico mjazow"
+   ]
+  ],
+  [
+   "klam",
+   12,
+   [
+    "is"
+   ],
+   [
+    "canoski golemu klam zuzesco",
+    "mlgorscu telnjach klam wusu"
+   ]
+  ],
+  [
+   "fiki",
+   12,
+   [
+    "eo"
+   ],
+   [
+    "fiki mysarne dijo ininzone",
+    "reki fiki bibrerujo zerkim"
+   ]
+  ],
+  [
+   "sule",
+   11,
+   [
+    "kn"
+   ],
+   [
+    "nalozedom sule inicilogiski",
+    "wobwopany cabroju pyach sule"
+   ]
+  ],
+  [
+   "jaji",
+   10,
+   [
+    "ko"
+   ],
+   [
+    "swochu gumnal jaji milcych",
+    "klimska werstska klal jaji"
+   ]
+  ],
+  [
+   "kwny",
+   10,
+   [
+    "fa"
+   ],
+   [
+    "rolarina elastwje nona kwny",
+    "cujso kwny mrma nozymowocu"
+   ]
+  ],
+  [
+   "mesa",
+   8,
+   [
+    "pt"
+   ],
+   [
+    "mesa guam moskadrenje knego",
+    "samnjeki mesa posontriju"
+   ]
+  ]
+ ],
+ "samples": [
+  "degoty mrma zweje bydluponoma",
+  "poje nimatem barwjo dersich",
+  "pyniny misyso susina nony",
+  "cela mysujanska kozu insela",
+  "pjicakasco mjrisnosom plus",
+  "smodzonotej kwso wasomanow",
+  "buboznawja pludolam wokty",
+  "zwedlawna ryjtej bobowych zenje",
+  "ksar mysezbaso nogolicentku",
+  "rjasco jedlem selewje elaril",
+  "pladaju troporny tonow wula",
+  "nimecajsa ksem wobstrigowych"
+ ],
+ "seconds": 8.2,
+ "languages": [
+  "dsb"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

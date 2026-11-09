@@ -1,0 +1,260 @@
+{
+ "name": "as",
+ "corpus_words": 80000,
+ "relaxed_rows": 5,
+ "relaxed_examples": [
+  "jh",
+  "cm",
+  "ov",
+  "uv",
+  "tov"
+ ],
+ "segmented_words": 46305,
+ "skipped_words": 33695,
+ "middle_attested_fraction": 0.3603108723958333,
+ "end32_attested_fraction": 0.3600260416666667,
+ "end16_attested_fraction": 0.560302734375,
+ "begin_attested": 128,
+ "chars": 27.11,
+ "max_chars": 40,
+ "consonant_runs_pct": 34.694,
+ "vowel_runs_pct": 0.466,
+ "english_words_pct": 0.419,
+ "own_words_pct": 28.363,
+ "offensive_whole_pct": 2.06,
+ "offensive_whole_english_list_pct": 0.145,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.89,
+ "offensive_severe_en_pct": 0.08,
+ "offensive_inside5_pct": 2.065,
+ "offensive_inside4_pct": 14.725,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "abort",
+   79,
+   [
+    "be",
+    "bg",
+    "da",
+    "et",
+    "hy",
+    "mt",
+    "ru",
+    "sq",
+    "sv",
+    "uk"
+   ],
+   [
+    "atlabort harbak dhurgamini",
+    "akasevichor jebera dhkabort"
+   ]
+  ],
+  [
+   "bile",
+   20,
+   [
+    "ro"
+   ],
+   [
+    "bile tahari erichmkrn sbat",
+    "bile mnuvachkeikhre elanaguri"
+   ]
+  ],
+  [
+   "sirr",
+   19,
+   [
+    "ml"
+   ],
+   [
+    "bine sirr ilikair pakhiurat",
+    "bybhur julaijibor sirr bnat"
+   ]
+  ],
+  [
+   "suar",
+   18,
+   [
+    "hi"
+   ],
+   [
+    "pranit seor avsibhiai suar",
+    "hior piar bamlahkeitali suar"
+   ]
+  ],
+  [
+   "muna",
+   18,
+   [
+    "fi"
+   ],
+   [
+    "krile muna borkhn enajbadi",
+    "gmila enajir aurmbilakere muna"
+   ]
+  ],
+  [
+   "hore",
+   17,
+   [
+    "be",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "hr",
+    "hu",
+    "id",
+    "is",
+    "it",
+    "la",
+    "lv",
+    "mr",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk"
+   ],
+   [
+    "apechmik jbra hore ledhant",
+    "hitaskle stipto isphlai hore"
+   ]
+  ],
+  [
+   "dust",
+   17,
+   [
+    "hi"
+   ],
+   [
+    "dust agthik badure baomere",
+    "herijnisar dust jumtaismuhr"
+   ]
+  ],
+  [
+   "jiche",
+   16,
+   [
+    "ko"
+   ],
+   [
+    "eripujiche cerela jhvaduve",
+    "gjiche hinari pttali drkare"
+   ]
+  ],
+  [
+   "geil",
+   16,
+   [
+    "de"
+   ],
+   [
+    "bhaiptursmuh geil ghmatrto",
+    "geil gilk agrprudarr benk"
+   ]
+  ],
+  [
+   "sike",
+   15,
+   [
+    "tr"
+   ],
+   [
+    "sike arere hostibhre cipkta",
+    "sike epulim dalr cuteikeikhn"
+   ]
+  ],
+  [
+   "dike",
+   15,
+   [
+    "eu",
+    "sr"
+   ],
+   [
+    "gjinar dike elicere gusmuhrr",
+    "anclkihare dike iumcuvali"
+   ]
+  ],
+  [
+   "trni",
+   15,
+   [
+    "bg"
+   ],
+   [
+    "trni baduchdibi gorr sune",
+    "mhir dlkuphlai eribik trni"
+   ]
+  ],
+  [
+   "cait",
+   14,
+   [
+    "gd"
+   ],
+   [
+    "nijni cait jeik snibrsulai",
+    "parr cait tamrmahmnk juto"
+   ]
+  ],
+  [
+   "puto",
+   14,
+   [
+    "pt"
+   ],
+   [
+    "dinthr puto dinkisklr apir",
+    "drasklr puto chabhavsmuh krnar"
+   ]
+  ],
+  [
+   "tate",
+   14,
+   [
+    "ro"
+   ],
+   [
+    "hohikar tate anican tethat",
+    "tate durdurur chti sirskle"
+   ]
+  ]
+ ],
+ "samples": [
+  "munibnr teti pdsmuh trapkhinere",
+  "cach melare guvaichom mulusmuh",
+  "kokrire byabak satokai jent",
+  "krar gjkeikhharr chka nisato",
+  "ahovpanlai cnajrancit bore",
+  "gmkagrakuriche mibilak avrtnsnr",
+  "jlahibilakmatir bomchinik seor",
+  "pdisuclai piblai japare coni",
+  "dath gjapakeitai jenedrdeur",
+  "hibor arunth khanit isteke",
+  "bostkai gelakart ator kalai",
+  "mehrkailai dalk batrasyato"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "as"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

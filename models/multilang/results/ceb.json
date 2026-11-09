@@ -1,0 +1,264 @@
+{
+ "name": "ceb",
+ "corpus_words": 59893,
+ "relaxed_rows": 3,
+ "relaxed_examples": [
+  "fj",
+  "uw",
+  "rv"
+ ],
+ "segmented_words": 34317,
+ "skipped_words": 25576,
+ "middle_attested_fraction": 0.5585123697916666,
+ "end32_attested_fraction": 0.4943033854166667,
+ "end16_attested_fraction": 0.73193359375,
+ "begin_attested": 128,
+ "chars": 25.43,
+ "max_chars": 37,
+ "consonant_runs_pct": 10.304,
+ "vowel_runs_pct": 4.409,
+ "english_words_pct": 2.169,
+ "own_words_pct": 32.09,
+ "offensive_whole_pct": 3.57,
+ "offensive_whole_english_list_pct": 0.49,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.885,
+ "offensive_severe_en_pct": 0.22,
+ "offensive_inside5_pct": 2.57,
+ "offensive_inside4_pct": 17.74,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "site",
+   24,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "delewala site piso aubler",
+    "khok gebaudas site helvos"
+   ]
+  ],
+  [
+   "sisa",
+   23,
+   [
+    "hr"
+   ],
+   [
+    "frientaon sisa tiya noruck",
+    "elum furklugdale sisa toad"
+   ]
+  ],
+  [
+   "furi",
+   20,
+   [
+    "ja"
+   ],
+   [
+    "furi klebakon abat cebush",
+    "lunholatok furi sura meia"
+   ]
+  ],
+  [
+   "hane",
+   20,
+   [
+    "da"
+   ],
+   [
+    "dabbeilihaugen thai than hane",
+    "kuries krimitou hane klaw"
+   ]
+  ],
+  [
+   "suck",
+   19,
+   [
+    "en"
+   ],
+   [
+    "dual abboyerked suck liin",
+    "repuyo deckauen fera suck"
+   ]
+  ],
+  [
+   "crap",
+   18,
+   [
+    "cy",
+    "en",
+    "eu",
+    "gd",
+    "la",
+    "lv"
+   ],
+   [
+    "nagdog khom crap kulinhos",
+    "krakdano jeekeh shed crap"
+   ]
+  ],
+  [
+   "asno",
+   18,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "aranraja harbirgret asno",
+    "fusseborden maay skno asno"
+   ]
+  ],
+  [
+   "coon",
+   17,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "gd",
+    "gl",
+    "id",
+    "is",
+    "la",
+    "lv",
+    "mn",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pt",
+    "sl",
+    "sv",
+    "vi"
+   ],
+   [
+    "fera coon asberi rinnollen",
+    "coon svornuntal apyo abat"
+   ]
+  ],
+  [
+   "fela",
+   16,
+   [
+    "cs"
+   ],
+   [
+    "propet fela akis jeserrell",
+    "colock fela jesuholi frey"
+   ]
+  ],
+  [
+   "tate",
+   16,
+   [
+    "ro"
+   ],
+   [
+    "infare tate fukuko bradia",
+    "dolokiton anor tate holean"
+   ]
+  ],
+  [
+   "pano",
+   16,
+   [
+    "fi"
+   ],
+   [
+    "gapaminov amag pano distie",
+    "puna curtfoos pano asanon"
+   ]
+  ],
+  [
+   "pico",
+   16,
+   [
+    "eo"
+   ],
+   [
+    "pico canempit oslia svedge",
+    "pico brang hambabal direto"
+   ]
+  ],
+  [
+   "shag",
+   16,
+   [
+    "ca",
+    "cs",
+    "de",
+    "en",
+    "et",
+    "fi",
+    "gl",
+    "is",
+    "lv",
+    "mn",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "sl",
+    "sv",
+    "uk",
+    "uz",
+    "zu"
+   ],
+   [
+    "jeter pagsuppara bera shag",
+    "huasag foto klaksohi shag"
+   ]
+  ],
+  [
+   "dada",
+   16,
+   [
+    "id"
+   ],
+   [
+    "rasa dada arat petesheyri",
+    "curtkasen bini korsey dada"
+   ]
+  ],
+  [
+   "rima",
+   16,
+   [
+    "la"
+   ],
+   [
+    "jeromorios connkogo rima",
+    "rima skon simote eleporst"
+   ]
+  ]
+ ],
+ "samples": [
+  "propet fela akis jeserrell",
+  "caro rumble gamadi procito",
+  "pleads javoli turahe reds",
+  "stal forbakay kalo lemmit",
+  "kembapik asgagakung sean",
+  "agnekevies orco freichow",
+  "ningdaskee seleagen zasa",
+  "akrotika spay consya mera",
+  "most folmembo recobichet",
+  "july potail hampit wollberget",
+  "sengal jonabris brot baer",
+  "rumpkier moca paghabucka"
+ ],
+ "seconds": 8.2,
+ "languages": [
+  "ceb"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

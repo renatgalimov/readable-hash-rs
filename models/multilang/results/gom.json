@@ -1,0 +1,294 @@
+{
+ "name": "gom",
+ "corpus_words": 23921,
+ "relaxed_rows": 135,
+ "relaxed_examples": [
+  "ek",
+  "ju",
+  "fe",
+  "zh",
+  "ug",
+  "uz",
+  "ub",
+  "xo",
+  "jo",
+  "ix",
+  "ax",
+  "af"
+ ],
+ "segmented_words": 15884,
+ "skipped_words": 8037,
+ "middle_attested_fraction": 0.1878662109375,
+ "end32_attested_fraction": 0.211669921875,
+ "end16_attested_fraction": 0.360107421875,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.64,
+ "max_chars": 38,
+ "consonant_runs_pct": 18.502,
+ "vowel_runs_pct": 2.19,
+ "english_words_pct": 0.856,
+ "own_words_pct": 8.85,
+ "offensive_whole_pct": 2.11,
+ "offensive_whole_english_list_pct": 0.24,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.935,
+ "offensive_severe_en_pct": 0.2,
+ "offensive_inside5_pct": 3.695,
+ "offensive_inside4_pct": 17.46,
+ "offensive_across_words_pct": 0.095,
+ "top_hits": [
+  [
+   "nachi",
+   91,
+   [
+    "ja",
+    "ko"
+   ],
+   [
+    "suskoinam vanttonnetat unachi",
+    "fempounk ponnachi viar orpichim"
+   ]
+  ],
+  [
+   "tanche",
+   66,
+   [
+    "fr"
+   ],
+   [
+    "ixim potinchea aimanam festancher",
+    "khopidya axitanchea gela roita"
+   ]
+  ],
+  [
+   "unchi",
+   63,
+   [
+    "ja"
+   ],
+   [
+    "vhoddponnkama asurvadi bunchi",
+    "rugopunchi ekeo favlolletoch"
+   ]
+  ],
+  [
+   "jiche",
+   48,
+   [
+    "ko"
+   ],
+   [
+    "hetokailolea year opun jicher",
+    "jicher vecho ringun harykhla"
+   ]
+  ],
+  [
+   "duche",
+   39,
+   [
+    "be",
+    "bg",
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "gl",
+    "hi",
+    "hr",
+    "hu",
+    "id",
+    "is",
+    "it",
+    "ko",
+    "la",
+    "lt",
+    "lv",
+    "mk",
+    "mn",
+    "mr",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "uz",
+    "vi",
+    "zu"
+   ],
+   [
+    "duchem vecho jaruskirik belea",
+    "igopachi duchea kannoilea year"
+   ]
+  ],
+  [
+   "ische",
+   37,
+   [
+    "de"
+   ],
+   [
+    "ischea vink bukintlea ghupirak",
+    "aichi nottichem ischea kitenddo"
+   ]
+  ],
+  [
+   "cham",
+   26,
+   [
+    "vi"
+   ],
+   [
+    "bukreank gongent cham cananchea",
+    "onsatoum cham ixorle ulacho"
+   ]
+  ],
+  [
+   "daik",
+   25,
+   [
+    "kn",
+    "mr"
+   ],
+   [
+    "akacho chetoiponnta nhik daik",
+    "daik hantachea ubkachea viront"
+   ]
+  ],
+  [
+   "hani",
+   19,
+   [
+    "is"
+   ],
+   [
+    "goir rebereamni hani igovpachem",
+    "vechea asot axrtotundi hani"
+   ]
+  ],
+  [
+   "coon",
+   19,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "gd",
+    "gl",
+    "id",
+    "is",
+    "la",
+    "lv",
+    "mn",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pt",
+    "sl",
+    "sv",
+    "vi"
+   ],
+   [
+    "coon indoli lian advomban",
+    "pranchi lakhabachi coon itneam"
+   ]
+  ],
+  [
+   "molo",
+   19,
+   [
+    "fi"
+   ],
+   [
+    "broddvorkechea ugchi bull molo",
+    "molo muttbhit orar tirantlo"
+   ]
+  ],
+  [
+   "muna",
+   19,
+   [
+    "fi"
+   ],
+   [
+    "itrtoli sanvkoll mhui muna",
+    "muna zonnstancho casa avavacher"
+   ]
+  ],
+  [
+   "koli",
+   18,
+   [
+    "kn"
+   ],
+   [
+    "mukoum koli amchi xavimbole",
+    "koli ulavidar utim gosancher"
+   ]
+  ],
+  [
+   "furi",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "opim zota lipovosana furi",
+    "aint kazarennank furi fola"
+   ]
+  ],
+  [
+   "cona",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "cona krasinim nagellavak",
+    "heun cona kullmedicher xachea"
+   ]
+  ]
+ ],
+ "samples": [
+  "bendcho junk ixcho zholaitolo",
+  "kalo coachun baddcho beadeamni",
+  "neveachem gurvay tatude thacher",
+  "fund atvoitolo ponk udeolem",
+  "ulkaronchea lirensorit asam",
+  "candisilacho kron ugndonin",
+  "vhoddponnkama asurvadi bunchi",
+  "ixvaikek aracho distalem roita",
+  "khechea atyerkeo thottalmanam",
+  "tuim goddpi vattin frasad",
+  "asttin bigovoilem kedo bham",
+  "coslesit khachem kosloirpachem"
+ ],
+ "seconds": 9.5,
+ "languages": [
+  "gom"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

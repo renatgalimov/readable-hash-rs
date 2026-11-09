@@ -1,0 +1,232 @@
+{
+ "name": "mr",
+ "corpus_words": 80000,
+ "relaxed_rows": 6,
+ "relaxed_examples": [
+  "bm",
+  "cy",
+  "acy",
+  "amcy",
+  "icy",
+  "yacy"
+ ],
+ "segmented_words": 45654,
+ "skipped_words": 34346,
+ "middle_attested_fraction": 0.4814860026041667,
+ "end32_attested_fraction": 0.4930013020833333,
+ "end16_attested_fraction": 0.7078450520833334,
+ "begin_attested": 128,
+ "chars": 27.5,
+ "max_chars": 40,
+ "consonant_runs_pct": 36.467,
+ "vowel_runs_pct": 2.731,
+ "english_words_pct": 0.394,
+ "own_words_pct": 32.299,
+ "offensive_whole_pct": 2.385,
+ "offensive_whole_english_list_pct": 0.245,
+ "offensive_whole_own_list_pct": 0.115,
+ "offensive_whole_major_lists_pct": 1.13,
+ "offensive_severe_en_pct": 0.155,
+ "offensive_inside5_pct": 1.225,
+ "offensive_inside4_pct": 14.675,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "bamdh",
+   21,
+   [
+    "hi"
+   ],
+   [
+    "dogatlahi mitkulat bamdhicya",
+    "imrartramcya cmivik bamdhice"
+   ]
+  ],
+  [
+   "sule",
+   19,
+   [
+    "kn"
+   ],
+   [
+    "jijicya tuca deltksace sule",
+    "bnetmdhye sonyaramt sidh sule"
+   ]
+  ],
+  [
+   "snyac",
+   18,
+   [
+    "kn"
+   ],
+   [
+    "ksnyace hora nidrbhvlat jmtat",
+    "sbayce cmicya trniptat ksnyace"
+   ]
+  ],
+  [
+   "kuce",
+   17,
+   [
+    "lv"
+   ],
+   [
+    "busathi brijankhaji pere kuce",
+    "barknipticya avcya kuce bivi"
+   ]
+  ],
+  [
+   "pica",
+   17,
+   [
+    "cs",
+    "pt",
+    "sk"
+   ],
+   [
+    "cece pica limtesit klimcya",
+    "bnta tyakhta pica bretrnamci"
+   ]
+  ],
+  [
+   "haji",
+   16,
+   [
+    "en"
+   ],
+   [
+    "satadeat verutallace haji",
+    "haji ajunrahacya sultimca"
+   ]
+  ],
+  [
+   "ayam",
+   16,
+   [
+    "id"
+   ],
+   [
+    "ayam citravijyman thavr ptit",
+    "ayam govl sevnyaitamci vrun"
+   ]
+  ],
+  [
+   "muca",
+   16,
+   [
+    "lv",
+    "sl"
+   ],
+   [
+    "bamni hanavstrane muca vemule",
+    "jyaci muca pohnibaca golitil"
+   ]
+  ],
+  [
+   "reva",
+   16,
+   [
+    "fi"
+   ],
+   [
+    "satarylimt reva kasvkoci",
+    "reva nele moklnirmace para"
+   ]
+  ],
+  [
+   "hora",
+   16,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "ksnyace hora nidrbhvlat jmtat",
+    "sahivetr hora kuparviram"
+   ]
+  ],
+  [
+   "tate",
+   16,
+   [
+    "ro"
+   ],
+   [
+    "nedhavaramule vine reya tate",
+    "hrvun tate ekulle ghanesik"
+   ]
+  ],
+  [
+   "pene",
+   15,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "cavi vedhila pene shmasmrn",
+    "pene klane adhleli dogalmel"
+   ]
+  ],
+  [
+   "sere",
+   15,
+   [
+    "hr",
+    "sk"
+   ],
+   [
+    "yuhasnat guglai hima sere",
+    "vsit sere dadrbhvlil ajhi"
+   ]
+  ],
+  [
+   "suka",
+   15,
+   [
+    "be",
+    "pl",
+    "ru",
+    "sk",
+    "uk"
+   ],
+   [
+    "petrat suka sksetun amcyavr",
+    "khilraical suka sbivtammdhye"
+   ]
+  ],
+  [
+   "muda",
+   15,
+   [
+    "ru"
+   ],
+   [
+    "jivstyacya bune muda palica",
+    "vstramci vykrla muda mosekr"
+   ]
+  ]
+ ],
+ "samples": [
+  "boises vsacya abhiat jogakhla",
+  "vaice kmrela amirice botupasun",
+  "bslyamca titesathi aradla brgi",
+  "mihi petekhil prve duskamci",
+  "ptkradavli trutgabamci thla",
+  "tokijampamdhye shaca pohntavr",
+  "killimitiy thunramce jmvle",
+  "abhiniratil liki krjace diya",
+  "ghtun pelnstraci bromkhmivr",
+  "bnto avsemdhye bailahi cerikr",
+  "thomacya rekhkamca gucya smya",
+  "kmkandica ghla bhivesyusn"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "mr"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

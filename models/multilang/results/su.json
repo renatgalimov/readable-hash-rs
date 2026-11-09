@@ -1,0 +1,225 @@
+{
+ "name": "su",
+ "corpus_words": 63054,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "iv"
+ ],
+ "segmented_words": 38568,
+ "skipped_words": 24486,
+ "middle_attested_fraction": 0.5294596354166666,
+ "end32_attested_fraction": 0.4275309244791667,
+ "end16_attested_fraction": 0.6534016927083334,
+ "begin_attested": 128,
+ "chars": 26.76,
+ "max_chars": 35,
+ "consonant_runs_pct": 6.89,
+ "vowel_runs_pct": 3.106,
+ "english_words_pct": 1.349,
+ "own_words_pct": 29.042,
+ "offensive_whole_pct": 2.665,
+ "offensive_whole_english_list_pct": 0.075,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.9,
+ "offensive_severe_en_pct": 0.06,
+ "offensive_inside5_pct": 3.1,
+ "offensive_inside4_pct": 21.36,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "tusan",
+   58,
+   [
+    "sv"
+   ],
+   [
+    "guncing case religang tusan",
+    "salantusan haul nibassen"
+   ]
+  ],
+  [
+   "apara",
+   44,
+   [
+    "fi"
+   ],
+   [
+    "neruak kitumennya aparatusnya",
+    "toilunia adwanan pelengkaparan"
+   ]
+  ],
+  [
+   "prik",
+   24,
+   [
+    "nl"
+   ],
+   [
+    "aswadi prik sonardar stah",
+    "keok prik feasultrus saia"
+   ]
+  ],
+  [
+   "sisa",
+   22,
+   [
+    "hr"
+   ],
+   [
+    "jeme sisa imobstuluh elih",
+    "aukan sisa eksempuaker lagi"
+   ]
+  ],
+  [
+   "pupa",
+   20,
+   [
+    "uz"
+   ],
+   [
+    "suheni pipa pupa lunciput",
+    "gulung fibrelah pupa bres"
+   ]
+  ],
+  [
+   "fena",
+   19,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "cupihan imbamanen pain fena",
+    "bongan emorkan hihijari fena"
+   ]
+  ],
+  [
+   "lund",
+   18,
+   [
+    "hi"
+   ],
+   [
+    "klimiling lund signer gati",
+    "auksono ruhatnya kratra lund"
+   ]
+  ],
+  [
+   "amda",
+   18,
+   [
+    "hi"
+   ],
+   [
+    "amda erlian suyabatan dulang",
+    "miltedijis amda ameh magi"
+   ]
+  ],
+  [
+   "nian",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "acan roku nian cerinsmakan",
+    "firmilla sotogenusna nian"
+   ]
+  ],
+  [
+   "paal",
+   17,
+   [
+    "nl"
+   ],
+   [
+    "hutegomari paal pelkan apan",
+    "spencakan seka mampternya paal"
+   ]
+  ],
+  [
+   "piru",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "errangkar piru ginya abreal",
+    "wedi piru ranjak enjapuri"
+   ]
+  ],
+  [
+   "semen",
+   17,
+   [
+    "ca",
+    "cy",
+    "en",
+    "es",
+    "eu",
+    "gl",
+    "mt",
+    "pt",
+    "sr",
+    "uz"
+   ],
+   [
+    "ransil risemen jelitan stau",
+    "sapada enabsemen joasi thlah"
+   ]
+  ],
+  [
+   "cena",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "joki cena lucuciut cosmin",
+    "plus tresat cena canggesat"
+   ]
+  ],
+  [
+   "reika",
+   16,
+   [
+    "fi"
+   ],
+   [
+    "halnya huru reika pamabadana",
+    "isuk elok admingalung reika"
+   ]
+  ],
+  [
+   "anali",
+   16,
+   [
+    "mt"
+   ],
+   [
+    "nemen analiri kikan pustsenan",
+    "analiasamlah chna chulemia"
+   ]
+  ]
+ ],
+ "samples": [
+  "nyetkan agik kladi optempel",
+  "berngi doroti lantuk nyemuan",
+  "nintuk rubilah bindra caah",
+  "asah atmengin pergi amalin",
+  "fikionet chotrektan muat",
+  "gracablaan splah notontikan",
+  "postimedaan mukecekan duat",
+  "klimiling lund signer gati",
+  "baat ategomah caciregama",
+  "plah bumian papasan jordung",
+  "musitas bronconya melok keng",
+  "docewasnya bail tertulabetan"
+ ],
+ "seconds": 8.7,
+ "languages": [
+  "su"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,227 @@
+{
+ "name": "ht",
+ "corpus_words": 7724,
+ "relaxed_rows": 300,
+ "relaxed_examples": [
+  "ch",
+  "pw",
+  "bo",
+  "co",
+  "ca",
+  "jo",
+  "bi",
+  "go",
+  "ja",
+  "eg",
+  "ge",
+  "ji"
+ ],
+ "segmented_words": 4661,
+ "skipped_words": 3063,
+ "middle_attested_fraction": 0.09375,
+ "end32_attested_fraction": 0.116455078125,
+ "end16_attested_fraction": 0.228271484375,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.82,
+ "max_chars": 39,
+ "consonant_runs_pct": 12.651,
+ "vowel_runs_pct": 5.309,
+ "english_words_pct": 1.521,
+ "own_words_pct": 12.951,
+ "offensive_whole_pct": 2.475,
+ "offensive_whole_english_list_pct": 0.13,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.235,
+ "offensive_severe_en_pct": 0.36,
+ "offensive_inside5_pct": 2.355,
+ "offensive_inside4_pct": 15.75,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "pansy",
+   44,
+   [
+    "en"
+   ],
+   [
+    "elojchspansyon amate tore pale",
+    "itye janive detwa ogfispansyon"
+   ]
+  ],
+  [
+   "gote",
+   26,
+   [
+    "tr"
+   ],
+   [
+    "cavision gote emou gisetwol",
+    "goye fimonbdikasyon pwte gote"
+   ]
+  ],
+  [
+   "randi",
+   21,
+   [
+    "hi"
+   ],
+   [
+    "ogsporandif geziman okomin",
+    "klerandivse edikotan dize"
+   ]
+  ],
+  [
+   "prik",
+   20,
+   [
+    "nl"
+   ],
+   [
+    "prik campen genpawasyon joan",
+    "prik ronjsitros hapibere"
+   ]
+  ],
+  [
+   "krik",
+   20,
+   [
+    "cs"
+   ],
+   [
+    "nonn askingilik sisyon krik",
+    "reyableman span krik vantare"
+   ]
+  ],
+  [
+   "asal",
+   19,
+   [
+    "gd"
+   ],
+   [
+    "asal asorifspik rere rena",
+    "anne lapeni ossitani asal"
+   ]
+  ],
+  [
+   "elle",
+   19,
+   [
+    "lv"
+   ],
+   [
+    "pynalis dijiperasyon rase elle",
+    "elle tomongon edisyon amossyon"
+   ]
+  ],
+  [
+   "pele",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "suttchye powolokote pele",
+    "rikanik adigtros pele lasi"
+   ]
+  ],
+  [
+   "mama",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "alye chemitisans reyel mama",
+    "isedatrefik mama afik liye"
+   ]
+  ],
+  [
+   "tate",
+   18,
+   [
+    "ro"
+   ],
+   [
+    "itwonfis fikillibte tate",
+    "aftaje idanble tate ajfizyon"
+   ]
+  ],
+  [
+   "esel",
+   17,
+   [
+    "de"
+   ],
+   [
+    "byasyon rasponoulet liet esel",
+    "ofilozet esel boristozman"
+   ]
+  ],
+  [
+   "pano",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "bespagik pano kwadet koni",
+    "maksmile arte pano setige"
+   ]
+  ],
+  [
+   "pede",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "lounik pede dyre cllaspesyon",
+    "veskal pede pozitiren elis"
+   ]
+  ],
+  [
+   "sike",
+   17,
+   [
+    "tr"
+   ],
+   [
+    "toulegne sike tifi wozite",
+    "aksepotan brik sike grigasyon"
+   ]
+  ],
+  [
+   "hani",
+   16,
+   [
+    "is"
+   ],
+   [
+    "obomancsitif hani oden blese",
+    "haplin hani juvisket avyon"
+   ]
+  ]
+ ],
+ "samples": [
+  "datwen obis vyon swounden",
+  "enik okspek estons dancet",
+  "fwziman nonjen plafte fray",
+  "piye jiplitye detwa femize",
+  "imicpozasyon glojvinice kran",
+  "edavfillil kwet gindoletik",
+  "corilaplez kratobete avik",
+  "vyilivan clle trigasyon aksyon",
+  "pason jierigasyon fragminyite",
+  "otasyon testim lamitan ofndet",
+  "kricon afwototik abre rete",
+  "okonstwwa panje ansyramonn"
+ ],
+ "seconds": 8.5,
+ "languages": [
+  "ht"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

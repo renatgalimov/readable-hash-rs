@@ -1,0 +1,229 @@
+{
+ "name": "ku",
+ "corpus_words": 33515,
+ "relaxed_rows": 84,
+ "relaxed_examples": [
+  "ph",
+  "qw",
+  "jw",
+  "fh",
+  "po",
+  "qh",
+  "zo",
+  "jo",
+  "nz",
+  "dm",
+  "so",
+  "ms"
+ ],
+ "segmented_words": 22518,
+ "skipped_words": 10997,
+ "middle_attested_fraction": 0.18379720052083334,
+ "end32_attested_fraction": 0.3016764322916667,
+ "end16_attested_fraction": 0.5011393229166666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.61,
+ "max_chars": 35,
+ "consonant_runs_pct": 55.59,
+ "vowel_runs_pct": 3.951,
+ "english_words_pct": 0.098,
+ "own_words_pct": 22.333,
+ "offensive_whole_pct": 0.615,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.28,
+ "offensive_severe_en_pct": 0.03,
+ "offensive_inside5_pct": 0.82,
+ "offensive_inside4_pct": 5.335,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "shhwh",
+   30,
+   [
+    "ar"
+   ],
+   [
+    "rzeky byrdnd bhenyn hyshhwh",
+    "bkwlesedn geyshhwh nzyrnmekny"
+   ]
+  ],
+  [
+   "kwny",
+   22,
+   [
+    "fa"
+   ],
+   [
+    "stheye hhyrne kwny kesekn",
+    "fhroky rochry kwny phyhta"
+   ]
+  ],
+  [
+   "lwty",
+   19,
+   [
+    "ar"
+   ],
+   [
+    "lwtryn bgye hwnyngwnetewe lwty",
+    "lwty byty bzelperet debert"
+   ]
+  ],
+  [
+   "khren",
+   18,
+   [
+    "ru"
+   ],
+   [
+    "brhesrdwry fekkekhren thwry",
+    "rzystbetewe fryw brekhren jyna"
+   ]
+  ],
+  [
+   "konn",
+   16,
+   [
+    "mr"
+   ],
+   [
+    "rwwey nrde konn bhrobekhowe",
+    "rgye gyewe mydyrhntry konn"
+   ]
+  ],
+  [
+   "mona",
+   14,
+   [
+    "it"
+   ],
+   [
+    "wtezyn mona mokhwnh mlndyny",
+    "mnywna brlelyky mona nsty"
+   ]
+  ],
+  [
+   "fena",
+   14,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "fena bkemey dzky selhdrny",
+    "myha fena hkytrkrbwwn hoyy"
+   ]
+  ],
+  [
+   "khokh",
+   13,
+   [
+    "mn"
+   ],
+   [
+    "ddesendbhhy mhkhokhekny gyty",
+    "fhne bdewe lhkhokhshy pochey"
+   ]
+  ],
+  [
+   "bydn",
+   12,
+   [
+    "ar"
+   ],
+   [
+    "bydn zeleyn hykhbely kyeky",
+    "bydn mrky gydebnchwy pysy"
+   ]
+  ],
+  [
+   "feny",
+   11,
+   [
+    "cs"
+   ],
+   [
+    "feny lwyyewe wltewezy lysteky",
+    "bgyd gorshkhwh feny wydhyn"
+   ]
+  ],
+  [
+   "gote",
+   11,
+   [
+    "tr"
+   ],
+   [
+    "dbyy gote bbhwenghemy dwkrdny",
+    "gote tylhrdyn powlyy debww"
+   ]
+  ],
+  [
+   "negry",
+   7,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "dozyre dnegry teky romedy",
+    "nywzhe bnegry thyn brsekn"
+   ]
+  ],
+  [
+   "negre",
+   6,
+   [
+    "fr"
+   ],
+   [
+    "peyh rwkemy toyh wenegreky",
+    "nwyshnh bhkeny dnyznegred"
+   ]
+  ],
+  [
+   "zhene",
+   6,
+   [
+    "ja"
+   ],
+   [
+    "zety drdonmnh dzhene nzyn",
+    "zhenewe bdotey mrwry fyrtrn"
+   ]
+  ],
+  [
+   "kolos",
+   5,
+   [
+    "el"
+   ],
+   [
+    "nyky rgewtkhyn dokoloskhey",
+    "mrkolost htgyret morkmekn"
+   ]
+  ]
+ ],
+ "samples": [
+  "zewtne fhty jhne monmezrenn",
+  "pely bghrery hwelka zedreke",
+  "lwsenn rstody bwedye zheky",
+  "gomn nsybwrey shmy frsyewe",
+  "mhbercmn slependhwry nhwe",
+  "rydhdedebww hkye ddhedeng",
+  "blwyndotyeky nhkorgekny srkny",
+  "jhstewrmn mnkey lhleyeky grey",
+  "rete nsysthnhwh zhedewlenetewe",
+  "rzeky byrdnd bhenyn hyshhwh",
+  "nheqeky snmeydrekn jerh beny",
+  "bgotoshhkny reny derchersyny"
+ ],
+ "seconds": 9.3,
+ "languages": [
+  "ku"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

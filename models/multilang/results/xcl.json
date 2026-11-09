@@ -1,0 +1,258 @@
+{
+ "name": "xcl",
+ "corpus_words": 17711,
+ "relaxed_rows": 195,
+ "relaxed_examples": [
+  "lo",
+  "zb",
+  "zg",
+  "ap",
+  "sr",
+  "mg",
+  "br",
+  "vi",
+  "ns",
+  "gl",
+  "yg",
+  "gn"
+ ],
+ "segmented_words": 13956,
+ "skipped_words": 3755,
+ "middle_attested_fraction": 0.08610026041666667,
+ "end32_attested_fraction": 0.20963541666666666,
+ "end16_attested_fraction": 0.364990234375,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.8,
+ "max_chars": 36,
+ "consonant_runs_pct": 30.269,
+ "vowel_runs_pct": 3.495,
+ "english_words_pct": 0.365,
+ "own_words_pct": 15.481,
+ "offensive_whole_pct": 1.72,
+ "offensive_whole_english_list_pct": 0.15,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.575,
+ "offensive_severe_en_pct": 0.065,
+ "offensive_inside5_pct": 2.735,
+ "offensive_inside4_pct": 16.315,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "hanar",
+   49,
+   [
+    "is"
+   ],
+   [
+    "hpan isin hanar pandochaten",
+    "salowr zgmeal kets klghanar"
+   ]
+  ],
+  [
+   "kanen",
+   39,
+   [
+    "nl"
+   ],
+   [
+    "zbkanen lrterbei beki khiw",
+    "isrrapkaw hnanay hrdodzkanen"
+   ]
+  ],
+  [
+   "natsi",
+   34,
+   [
+    "fi",
+    "mk"
+   ],
+   [
+    "oteal nkne pise hirowknatsiwr",
+    "osel hnatsiwr dranosnlov zans"
+   ]
+  ],
+  [
+   "apara",
+   30,
+   [
+    "fi"
+   ],
+   [
+    "aparaks sekhts ltkaner zbis",
+    "ynazboloy yonaw aparawi tran"
+   ]
+  ],
+  [
+   "asheal",
+   22,
+   [
+    "ml"
+   ],
+   [
+    "lsjasheal eghtsghoy klkanim",
+    "mgtapasheal hndotays bate"
+   ]
+  ],
+  [
+   "hori",
+   22,
+   [
+    "ms"
+   ],
+   [
+    "dngelazogh zknaysanil hori",
+    "msosel hori jenlzate sirov"
+   ]
+  ],
+  [
+   "pisi",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "zhdzawtsiwr zhaman pisi ztaw",
+    "nsatsamte gomenayin pisi metse"
+   ]
+  ],
+  [
+   "skan",
+   18,
+   [
+    "ml",
+    "uk"
+   ],
+   [
+    "skan mordaghs sktarin lawe",
+    "imanan skan pets ygowowndre"
+   ]
+  ],
+  [
+   "nazi",
+   18,
+   [
+    "ca",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "eu",
+    "fr",
+    "gd",
+    "gl",
+    "hy",
+    "id",
+    "is",
+    "la",
+    "mn",
+    "ms",
+    "mt",
+    "nl",
+    "pl",
+    "sr",
+    "tr",
+    "uz",
+    "vi",
+    "zu"
+   ],
+   [
+    "koweal zetoneke nazi ygen",
+    "bortntsatsnaw nazi anjaghen"
+   ]
+  ],
+  [
+   "chim",
+   17,
+   [
+    "th"
+   ],
+   [
+    "chim kosi ltir stewrjtars",
+    "ktrayri hini okraspiw chim"
+   ]
+  ],
+  [
+   "yoni",
+   17,
+   [
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "te"
+   ],
+   [
+    "yoni mrranosnlov anis epzanaw",
+    "yoni dzre hirowrhrakei skov"
+   ]
+  ],
+  [
+   "karts",
+   17,
+   [
+    "lv"
+   ],
+   [
+    "asir kartsel mraw zaknikaw",
+    "krkingne dzkartsogh nogh"
+   ]
+  ],
+  [
+   "hani",
+   17,
+   [
+    "is"
+   ],
+   [
+    "hani andins nseghandov hianal",
+    "zotnapgeli sben okhoy hani"
+   ]
+  ],
+  [
+   "kaks",
+   16,
+   [
+    "kn",
+    "te"
+   ],
+   [
+    "mstsanin dnjars sprrenaloy kaks",
+    "kiwarowndir gimozene kaks"
+   ]
+  ],
+  [
+   "osel",
+   15,
+   [
+    "cs"
+   ],
+   [
+    "osel hnatsiwr dranosnlov zans",
+    "eprtnlov ztsanhaks osel kleal"
+   ]
+  ]
+ ],
+ "samples": [
+  "hnkore gten acan vcgeshoy",
+  "tsghe vikhel awzhes hnowzni",
+  "pepanaw landaw sawtsis giri",
+  "driw lemowkan bats miandzem",
+  "jerbagahi serbarastan zbiw",
+  "vtgakorhne toss sisanganayin",
+  "dizarrosts zbaseghen trem",
+  "acaghtaki zote vardarer chiw",
+  "dzowns leweranay gistoghosnlov",
+  "nkov gawaki angahi jrparoy",
+  "zbkanen lrterbei beki khiw",
+  "viamsanamb dzil harorritsis"
+ ],
+ "seconds": 9.1,
+ "languages": [
+  "xcl"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

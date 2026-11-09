@@ -1,0 +1,241 @@
+{
+ "name": "new",
+ "corpus_words": 14197,
+ "relaxed_rows": 172,
+ "relaxed_examples": [
+  "jh",
+  "cv",
+  "vy",
+  "ky",
+  "jy",
+  "mo",
+  "dy",
+  "km",
+  "be",
+  "ny",
+  "kv",
+  "lo"
+ ],
+ "segmented_words": 7847,
+ "skipped_words": 6350,
+ "middle_attested_fraction": 0.1580810546875,
+ "end32_attested_fraction": 0.17940266927083334,
+ "end16_attested_fraction": 0.3374837239583333,
+ "begin_attested": 128,
+ "chars": 25.74,
+ "max_chars": 34,
+ "consonant_runs_pct": 31.071,
+ "vowel_runs_pct": 8.904,
+ "english_words_pct": 0.098,
+ "own_words_pct": 17.378,
+ "offensive_whole_pct": 2.425,
+ "offensive_whole_english_list_pct": 0.085,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.81,
+ "offensive_severe_en_pct": 0.01,
+ "offensive_inside5_pct": 1.355,
+ "offensive_inside4_pct": 13.845,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "thim",
+   26,
+   [
+    "th"
+   ],
+   [
+    "isesna kudeta thim mmlury",
+    "lyunidigu thim lumdriy knit"
+   ]
+  ],
+  [
+   "koli",
+   20,
+   [
+    "kn"
+   ],
+   [
+    "koli lhur jila gopoipeneri",
+    "dururtit mhidusaday koli"
+   ]
+  ],
+  [
+   "alla",
+   19,
+   [
+    "mt"
+   ],
+   [
+    "akkursnik akhhgu alla lona",
+    "ksasilli mhalpur alla nity"
+   ]
+  ],
+  [
+   "srat",
+   19,
+   [
+    "cs",
+    "ru"
+   ],
+   [
+    "bilakhim netarya srat jugu",
+    "puktalal mnum rajulal srat"
+   ]
+  ],
+  [
+   "inat",
+   18,
+   [
+    "sq"
+   ],
+   [
+    "skaurohy mndya mhavya inat",
+    "snisapht inat ngsipyndpur"
+   ]
+  ],
+  [
+   "asna",
+   18,
+   [
+    "is"
+   ],
+   [
+    "indirthm prakrn seri asna",
+    "yukristh kmutii reni asna"
+   ]
+  ],
+  [
+   "seni",
+   18,
+   [
+    "it"
+   ],
+   [
+    "khim inphipadhy mrar seni",
+    "seni spit hikimg svaksigu"
+   ]
+  ],
+  [
+   "siki",
+   17,
+   [
+    "ja",
+    "pl",
+    "tr"
+   ],
+   [
+    "jnaderam siki kyadun bhat",
+    "smpurkar mdit siki mailej"
+   ]
+  ],
+  [
+   "daik",
+   17,
+   [
+    "kn",
+    "mr"
+   ],
+   [
+    "suyat styaksit daik amkriya",
+    "paksipan kvannd daik mmay"
+   ]
+  ],
+  [
+   "shit",
+   17,
+   [
+    "da",
+    "en",
+    "gd",
+    "hy",
+    "mt",
+    "my",
+    "nl",
+    "no",
+    "sk",
+    "uz",
+    "zu"
+   ],
+   [
+    "lura ardrapidad tegu shit",
+    "abum shthaisry trkarm shit"
+   ]
+  ],
+  [
+   "mona",
+   17,
+   [
+    "it"
+   ],
+   [
+    "sundrngvata mmit nhra mona",
+    "jnat mona garpukthaya lhat"
+   ]
+  ],
+  [
+   "sait",
+   17,
+   [
+    "kn"
+   ],
+   [
+    "ksukliyuvra sait duniya nyna",
+    "kyapur smiya thkaipay sait"
+   ]
+  ],
+  [
+   "skit",
+   17,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "skit honnap sivrhmhm lise",
+    "skit niskotai suda hipamy"
+   ]
+  ],
+  [
+   "teta",
+   16,
+   [
+    "es"
+   ],
+   [
+    "teta alumik amrikit skespur",
+    "bali ttiponapur teta adhri"
+   ]
+  ],
+  [
+   "muna",
+   16,
+   [
+    "fi"
+   ],
+   [
+    "prem naleti muna drvidadit",
+    "koratttegu muna nittit klit"
+   ]
+  ]
+ ],
+ "samples": [
+  "moglay ptigu luim pehavnam",
+  "kalm spipii chumda moindr",
+  "mladun avneth densrm aran",
+  "rajpur shicatiti vimg mniymy",
+  "knipidrm bvkupatarya yagu",
+  "mmesvruthan kypur jyabistv",
+  "metrbhmesa yarteket ispur",
+  "lunkksnya nrti bammkigu anty",
+  "sisi shyspagu ararvaktta",
+  "skay kurdri sagred hosakh",
+  "yahanya hrisnthya jham prti",
+  "sposilet siriya khicdhrtti"
+ ],
+ "seconds": 7.9,
+ "languages": [
+  "new"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

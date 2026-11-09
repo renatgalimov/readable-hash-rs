@@ -1,0 +1,225 @@
+{
+ "name": "is",
+ "corpus_words": 80000,
+ "relaxed_rows": 9,
+ "relaxed_examples": [
+  "fj",
+  "hj",
+  "kj",
+  "bj",
+  "thj",
+  "gj",
+  "kj",
+  "ngj",
+  "hj"
+ ],
+ "segmented_words": 51661,
+ "skipped_words": 28339,
+ "middle_attested_fraction": 0.5621744791666666,
+ "end32_attested_fraction": 0.4208984375,
+ "end16_attested_fraction": 0.6629231770833334,
+ "begin_attested": 128,
+ "chars": 27.04,
+ "max_chars": 37,
+ "consonant_runs_pct": 19.563,
+ "vowel_runs_pct": 1.232,
+ "english_words_pct": 1.207,
+ "own_words_pct": 26.945,
+ "offensive_whole_pct": 2.36,
+ "offensive_whole_english_list_pct": 0.01,
+ "offensive_whole_own_list_pct": 0.18,
+ "offensive_whole_major_lists_pct": 1.105,
+ "offensive_severe_en_pct": 0.045,
+ "offensive_inside5_pct": 2.225,
+ "offensive_inside4_pct": 15.22,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "randi",
+   67,
+   [
+    "hi"
+   ],
+   [
+    "myrrandi uppakonndsins vottum",
+    "hugreypuma fjarmali sigrandi"
+   ]
+  ],
+  [
+   "nian",
+   23,
+   [
+    "zh"
+   ],
+   [
+    "uppahja hlast rifidrinu nian",
+    "nian kjaedum rurnes lyflunum"
+   ]
+  ],
+  [
+   "sitt",
+   23,
+   [
+    "et"
+   ],
+   [
+    "guggst byttur salaegja sitt",
+    "nujuggur kjdi morfinn sitt"
+   ]
+  ],
+  [
+   "pitt",
+   23,
+   [
+    "sv"
+   ],
+   [
+    "brodthoney pitt sean smir",
+    "hlana pitt foreidhansun atast"
+   ]
+  ],
+  [
+   "nima",
+   22,
+   [
+    "zh"
+   ],
+   [
+    "urundrar nima refur trulku",
+    "hrosettud ujandi mellud nima"
+   ]
+  ],
+  [
+   "pesi",
+   20,
+   [
+    "mr"
+   ],
+   [
+    "fuafst pesi huenna keppuna",
+    "bindslaus pesi grur efstar"
+   ]
+  ],
+  [
+   "pele",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "pele glimtir hvunum arambedi",
+    "seki adskenska pele fylendar"
+   ]
+  ],
+  [
+   "dada",
+   18,
+   [
+    "id"
+   ],
+   [
+    "dada linskennast kuinn faum",
+    "tokkonflar ruid dada mean"
+   ]
+  ],
+  [
+   "kaka",
+   18,
+   [
+    "eu"
+   ],
+   [
+    "tonigan kaka sjod neitoldin",
+    "kaka trolturinn inndi ledrinn"
+   ]
+  ],
+  [
+   "pina",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "vinnorni ellu noveidi pina",
+    "bankti pina barkadi aftadi"
+   ]
+  ],
+  [
+   "rima",
+   16,
+   [
+    "la"
+   ],
+   [
+    "kvuna steyra rima skrugdinu",
+    "pangurinn rima noturinn asattinn"
+   ]
+  ],
+  [
+   "suar",
+   16,
+   [
+    "hi"
+   ],
+   [
+    "suar ofti alllad bidrodda",
+    "advalska dobesloker suar"
+   ]
+  ],
+  [
+   "tama",
+   16,
+   [
+    "pl",
+    "zh"
+   ],
+   [
+    "beast tama toon fletaleypa",
+    "hjmantist kofi gallar tama"
+   ]
+  ],
+  [
+   "mona",
+   15,
+   [
+    "it"
+   ],
+   [
+    "erja upplesarum mona donnuna",
+    "songsama mona venda kolkinn"
+   ]
+  ],
+  [
+   "fena",
+   15,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "fena kerfsest hinna andofunni",
+    "thateguennum romoitud fena"
+   ]
+  ]
+ ],
+ "samples": [
+  "tiundid mylegt lykur bjingkokur",
+  "thum peyssa hryggar tilunnar",
+  "fuskunum kvatinn rafraegi lord",
+  "sunum atkmstir stir einskunni",
+  "travigndi hveftrikla hear",
+  "ljoldrefer kjinu vondssuna",
+  "forsesssksins hekteyta pradur",
+  "lyfikill uminn liggins soar",
+  "meast athleddur losuspikan",
+  "sydum leynst salfid deselur",
+  "hettud ofbeline hori haum",
+  "pendyrann megid kalikktodin"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "is"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

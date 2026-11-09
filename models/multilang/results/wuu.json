@@ -1,0 +1,234 @@
+{
+ "name": "wuu",
+ "corpus_words": 49883,
+ "relaxed_rows": 184,
+ "relaxed_examples": [
+  "yo",
+  "ko",
+  "zo",
+  "wo",
+  "ae",
+  "ph",
+  "ja",
+  "jo",
+  "pl",
+  "wi",
+  "kh",
+  "fo"
+ ],
+ "segmented_words": 37303,
+ "skipped_words": 12580,
+ "middle_attested_fraction": 0.3141682942708333,
+ "end32_attested_fraction": 0.3365478515625,
+ "end16_attested_fraction": 0.5005696614583334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.97,
+ "max_chars": 36,
+ "consonant_runs_pct": 8.398,
+ "vowel_runs_pct": 15.422,
+ "english_words_pct": 0.968,
+ "own_words_pct": 28.333,
+ "offensive_whole_pct": 2.195,
+ "offensive_whole_english_list_pct": 0.21,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.465,
+ "offensive_severe_en_pct": 0.075,
+ "offensive_inside5_pct": 2.05,
+ "offensive_inside4_pct": 21.245,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "chishi",
+   42,
+   [
+    "zh"
+   ],
+   [
+    "pine anchishi xinzhe xinxihua",
+    "johan eroulu neiqchishi thong"
+   ]
+  ],
+  [
+   "feixi",
+   28,
+   [
+    "zh"
+   ],
+   [
+    "auilun feixing lifu teilaliao",
+    "erie sichun elesaruo feixing"
+   ]
+  ],
+  [
+   "muda",
+   23,
+   [
+    "ru"
+   ],
+   [
+    "tuntuyiyi gelishi muda ruzhi",
+    "reshui heisiziwian xihu muda"
+   ]
+  ],
+  [
+   "vang",
+   21,
+   [
+    "mk",
+    "sr",
+    "uz"
+   ],
+   [
+    "vang thiao pintuosheng wuyanyi",
+    "transigang wiichi orun vang"
+   ]
+  ],
+  [
+   "pede",
+   20,
+   [
+    "fr"
+   ],
+   [
+    "shezicolan pede mike zusheng",
+    "houjidie biemue pede wada"
+   ]
+  ],
+  [
+   "pisa",
+   17,
+   [
+    "ro"
+   ],
+   [
+    "ropidaizuyi pisa roushili",
+    "arushu pisa teshu fuluoyagang"
+   ]
+  ],
+  [
+   "kedi",
+   17,
+   [
+    "tr"
+   ],
+   [
+    "suoshi kedi youdui roushan",
+    "akun kedi xuda caicixingjai"
+   ]
+  ],
+  [
+   "kusi",
+   17,
+   [
+    "et",
+    "fi"
+   ],
+   [
+    "kusi pidan cetouwqiyu nona",
+    "edolisi akndai edipiao kusi"
+   ]
+  ],
+  [
+   "homo",
+   17,
+   [
+    "fi",
+    "id",
+    "ja",
+    "ko"
+   ],
+   [
+    "homo zencheng saerna exlayu",
+    "raju homo plicigalai tung"
+   ]
+  ],
+  [
+   "mama",
+   16,
+   [
+    "pt"
+   ],
+   [
+    "hindebing gouran bahu mama",
+    "douliqei mama douhuciershi"
+   ]
+  ],
+  [
+   "sifu",
+   16,
+   [
+    "zh"
+   ],
+   [
+    "binhou aroshou sifu rangxi",
+    "sifu zeiluan rufu danzidao"
+   ]
+  ],
+  [
+   "mesa",
+   16,
+   [
+    "pt"
+   ],
+   [
+    "mesa zunzhou sese woizexuan",
+    "heihou mesa biren zuojnjue"
+   ]
+  ],
+  [
+   "pesi",
+   16,
+   [
+    "mr"
+   ],
+   [
+    "aklabaitiu diluowage pesi",
+    "pesi muge handuan procitiao"
+   ]
+  ],
+  [
+   "jiji",
+   15,
+   [
+    "zh"
+   ],
+   [
+    "doue doraosizifu jiji jiqu",
+    "agotuan zenjijuyi jiji noue"
+   ]
+  ],
+  [
+   "vana",
+   15,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "hansidejui vana duokndai",
+    "kennelin vana hangqu moming"
+   ]
+  ]
+ ],
+ "samples": [
+  "zaizui arsi fire akijikang",
+  "chiyu zeiluo fudayi zaogren",
+  "stilue yezouan kailiang juxue",
+  "cali randeshu zhiya panjuan",
+  "kountuing rontasidai wuhe",
+  "bremasihsheng aler riguohhe",
+  "hongkuquaer wuweiguan ambao",
+  "fiehidai wotu diedai quyu",
+  "baquan raicanchao juezifilang",
+  "elou sanqong yisishan fostou",
+  "wugeshi enjiulue desheng jien",
+  "zeihistong bazhou xiacizujun"
+ ],
+ "seconds": 10.2,
+ "languages": [
+  "wuu"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

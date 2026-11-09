@@ -1,0 +1,233 @@
+{
+ "name": "mwl",
+ "corpus_words": 24214,
+ "relaxed_rows": 80,
+ "relaxed_examples": [
+  "wi",
+  "vi",
+  "aj",
+  "ki",
+  "xe",
+  "ya",
+  "aq",
+  "ke",
+  "sq",
+  "ko",
+  "ku",
+  "ji"
+ ],
+ "segmented_words": 17885,
+ "skipped_words": 6329,
+ "middle_attested_fraction": 0.23819986979166666,
+ "end32_attested_fraction": 0.23478190104166666,
+ "end16_attested_fraction": 0.4047037760416667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.23,
+ "max_chars": 38,
+ "consonant_runs_pct": 3.705,
+ "vowel_runs_pct": 3.91,
+ "english_words_pct": 1.687,
+ "own_words_pct": 13.334,
+ "offensive_whole_pct": 2.41,
+ "offensive_whole_english_list_pct": 0.02,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.425,
+ "offensive_severe_en_pct": 0.035,
+ "offensive_inside5_pct": 2.605,
+ "offensive_inside4_pct": 24.165,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "samen",
+   52,
+   [
+    "de"
+   ],
+   [
+    "ruer tartansamente famiramules",
+    "cairo prie massan embersamente"
+   ]
+  ],
+  [
+   "saco",
+   21,
+   [
+    "pt"
+   ],
+   [
+    "hunspisoras inia saco anes",
+    "lhia saco fles vimaigotos"
+   ]
+  ],
+  [
+   "teta",
+   20,
+   [
+    "es"
+   ],
+   [
+    "teta kando citou abacomisia",
+    "necatuicon mentocodica teta"
+   ]
+  ],
+  [
+   "nian",
+   19,
+   [
+    "zh"
+   ],
+   [
+    "afatibon latretos nian crorun",
+    "unas talientista loside nian"
+   ]
+  ],
+  [
+   "puta",
+   19,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "eias puta triperado lunido",
+    "horastaba arco dornos puta"
+   ]
+  ],
+  [
+   "asas",
+   18,
+   [
+    "gl"
+   ],
+   [
+    "palhigas asas ctetiu pese",
+    "asas diairo sqgumpresas meos"
+   ]
+  ],
+  [
+   "fena",
+   18,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "fena docermes limisa lhida",
+    "spedimada fena ajou fenson"
+   ]
+  ],
+  [
+   "site",
+   18,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "deado eian site drobolleta",
+    "duatologan asolica huas site"
+   ]
+  ],
+  [
+   "peos",
+   17,
+   [
+    "el"
+   ],
+   [
+    "heinlaio peos ctanie cuca",
+    "caripode laco peos amenca"
+   ]
+  ],
+  [
+   "mesa",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "zapansibos fermar onan mesa",
+    "sqta rise cicipacido mesa"
+   ]
+  ],
+  [
+   "pios",
+   17,
+   [
+    "gd"
+   ],
+   [
+    "ullapacon pios unto emotorun",
+    "sqado pios spigado dalloista"
+   ]
+  ],
+  [
+   "boles",
+   16,
+   [
+    "ca"
+   ],
+   [
+    "agora sustro leou rilaboles",
+    "fosta garanhos bertilboles"
+   ]
+  ],
+  [
+   "name",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "palana jorgica name goberencia",
+    "name timblo roada marentar"
+   ]
+  ],
+  [
+   "mear",
+   15,
+   [
+    "es"
+   ],
+   [
+    "molubiou aqmanumplo mear",
+    "manendo mear autria retines"
+   ]
+  ],
+  [
+   "dran",
+   14,
+   [
+    "pl"
+   ],
+   [
+    "dran benilembria fler enas",
+    "dran jurcan gaido hamitios"
+   ]
+  ]
+ ],
+ "samples": [
+  "cciplo josa usorun ajssites",
+  "eion timbou baixara ccopaba",
+  "drogan holisos samores sora",
+  "cher goguinada rego notairo",
+  "riacluacon zacelamacon dias",
+  "tutesofosa ctie guimeriu",
+  "multidatles didiogos eral",
+  "uspenhan luada tropado cras",
+  "peamente golhessos solencimbes",
+  "auca fazine ourgou eficaico",
+  "diocos ocaseliou geas ando",
+  "tinideda peado pribututar"
+ ],
+ "seconds": 9.4,
+ "languages": [
+  "mwl"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

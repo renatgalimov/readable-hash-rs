@@ -1,0 +1,260 @@
+{
+ "name": "bg",
+ "corpus_words": 80000,
+ "relaxed_rows": 24,
+ "relaxed_examples": [
+  "poc",
+  "shc",
+  "ly",
+  "uc",
+  "izc",
+  "hc",
+  "shc",
+  "ic",
+  "ly",
+  "ashc",
+  "ac",
+  "ry"
+ ],
+ "segmented_words": 55833,
+ "skipped_words": 24167,
+ "middle_attested_fraction": 0.4281819661458333,
+ "end32_attested_fraction": 0.3846842447916667,
+ "end16_attested_fraction": 0.6197916666666666,
+ "begin_attested": 128,
+ "chars": 26.97,
+ "max_chars": 35,
+ "consonant_runs_pct": 15.208,
+ "vowel_runs_pct": 5.886,
+ "english_words_pct": 1.062,
+ "own_words_pct": 24.933,
+ "offensive_whole_pct": 3.155,
+ "offensive_whole_english_list_pct": 0.215,
+ "offensive_whole_own_list_pct": 0.195,
+ "offensive_whole_major_lists_pct": 1.54,
+ "offensive_severe_en_pct": 0.065,
+ "offensive_inside5_pct": 3.6,
+ "offensive_inside4_pct": 19.445,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "chich",
+   50,
+   [
+    "vi"
+   ],
+   [
+    "popechicholko fiko usmirila",
+    "posish otlichichava pokrarazpori"
+   ]
+  ],
+  [
+   "skata",
+   25,
+   [
+    "el"
+   ],
+   [
+    "pomeshcholekta glesh razmanskata",
+    "naim potoriya oblata motelskata"
+   ]
+  ],
+  [
+   "natsi",
+   25,
+   [
+    "fi",
+    "mk"
+   ],
+   [
+    "natsinashka deri pogozerska",
+    "prechignatsiya nini tsiya gayki"
+   ]
+  ],
+  [
+   "pravi",
+   24,
+   [
+    "ml"
+   ],
+   [
+    "tron pravivash faite bustopikh",
+    "dayazvalo pravinnachki skem"
+   ]
+  ],
+  [
+   "diga",
+   21,
+   [
+    "bg",
+    "it",
+    "mt"
+   ],
+   [
+    "tatkursko monticholite diga",
+    "prali elizay spestuvat diga"
+   ]
+  ],
+  [
+   "yayki",
+   19,
+   [
+    "be"
+   ],
+   [
+    "lovitsa porzhem pudrolnyayki",
+    "smirkhesh yune premeervyayki"
+   ]
+  ],
+  [
+   "chlen",
+   18,
+   [
+    "uk"
+   ],
+   [
+    "chlensiya otreta veda udryus",
+    "steger posno vagine chlenka"
+   ]
+  ],
+  [
+   "vang",
+   17,
+   [
+    "mk",
+    "sr",
+    "uz"
+   ],
+   [
+    "leya buna vang diaryadena",
+    "kani blatazhe vang glopiya"
+   ]
+  ],
+  [
+   "shite",
+   17,
+   [
+    "cs",
+    "da",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "gl",
+    "hi",
+    "hu",
+    "id",
+    "it",
+    "ja",
+    "lt",
+    "lv",
+    "mn",
+    "mr",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pt",
+    "sq",
+    "sv",
+    "th",
+    "uk",
+    "uz",
+    "vi",
+    "zu"
+   ],
+   [
+    "akushitelodka otal dvivelish",
+    "proyavim deyshite leng khoriya"
+   ]
+  ],
+  [
+   "kiska",
+   17,
+   [
+    "ru"
+   ],
+   [
+    "kiska getvekha fosesiyata vona",
+    "kiska opetirayki imashe zhirakh"
+   ]
+  ],
+  [
+   "nima",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "oben rishkuin yunosya nima",
+    "nima ogradeni spiya uvonkola"
+   ]
+  ],
+  [
+   "mama",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "pushokruish dantsovo mama",
+    "some mama pochveevite lyagam"
+   ]
+  ],
+  [
+   "porna",
+   17,
+   [
+    "be"
+   ],
+   [
+    "polichish pogologish porna dvikh",
+    "domoleviran porna khitazno"
+   ]
+  ],
+  [
+   "muna",
+   16,
+   [
+    "fi"
+   ],
+   [
+    "pedota muna suis bizneziya",
+    "luerite gaviti konsiya muna"
+   ]
+  ],
+  [
+   "pokol",
+   16,
+   [
+    "hu"
+   ],
+   [
+    "pogva inga pokolekta obucheno",
+    "reni inka butnira bezpokoli"
+   ]
+  ]
+ ],
+ "samples": [
+  "yarker alni frost okularata",
+  "izsh lobiesh kozhdi yakong",
+  "pogalets vlobove chiytsite leng",
+  "rona fazicheska neto kuklava",
+  "gardusii punsarodno mino",
+  "orizitsedish buki ekravyno",
+  "bratbegnii midiozen suli",
+  "fradekli fiite partsite peya",
+  "khne faluvedi leviatsuki",
+  "potka inspli prostata amnene",
+  "milete udovatena usman razni",
+  "lososteto khya oblepomana"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "bg"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

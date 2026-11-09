@@ -1,0 +1,274 @@
+{
+ "name": "id",
+ "corpus_words": 80000,
+ "relaxed_rows": 5,
+ "relaxed_examples": [
+  "nm",
+  "anm",
+  "av",
+  "iv",
+  "ov"
+ ],
+ "segmented_words": 48675,
+ "skipped_words": 31325,
+ "middle_attested_fraction": 0.5478922526041666,
+ "end32_attested_fraction": 0.5006917317708334,
+ "end16_attested_fraction": 0.7142740885416666,
+ "begin_attested": 128,
+ "chars": 26.72,
+ "max_chars": 37,
+ "consonant_runs_pct": 7.863,
+ "vowel_runs_pct": 2.994,
+ "english_words_pct": 2.547,
+ "own_words_pct": 32.561,
+ "offensive_whole_pct": 2.68,
+ "offensive_whole_english_list_pct": 0.515,
+ "offensive_whole_own_list_pct": 0.155,
+ "offensive_whole_major_lists_pct": 1.6,
+ "offensive_severe_en_pct": 0.42,
+ "offensive_inside5_pct": 3.4,
+ "offensive_inside4_pct": 21.04,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "kutka",
+   23,
+   [
+    "ja"
+   ],
+   [
+    "inul enakutkan liliklotik",
+    "busi kies vaannya yamilakutkan"
+   ]
+  ],
+  [
+   "dian",
+   22,
+   [
+    "zh"
+   ],
+   [
+    "galion nightorku stet dian",
+    "klut yaadiknya crisan dian"
+   ]
+  ],
+  [
+   "bile",
+   21,
+   [
+    "ro"
+   ],
+   [
+    "flusasheim wignya bile diia",
+    "penanmu bile gino drucamprat"
+   ]
+  ],
+  [
+   "paska",
+   20,
+   [
+    "fi"
+   ],
+   [
+    "punite pipaskan ortoloning",
+    "serias galedapaskan forgos"
+   ]
+  ],
+  [
+   "tate",
+   18,
+   [
+    "ro"
+   ],
+   [
+    "tate barban gaia boropiku",
+    "dorean rusuke tate gumina"
+   ]
+  ],
+  [
+   "gook",
+   17,
+   [
+    "en"
+   ],
+   [
+    "nohapuannya pitannya clum gook",
+    "chai gook mada pelununasanya"
+   ]
+  ],
+  [
+   "linda",
+   17,
+   [
+    "zu"
+   ],
+   [
+    "blut fallard lindar pastus",
+    "arcarito cuchiplinda mati"
+   ]
+  ],
+  [
+   "suki",
+   17,
+   [
+    "be",
+    "pl",
+    "ru",
+    "uk"
+   ],
+   [
+    "thruthian buah suki belanted",
+    "suki berne kotokirkan hidual"
+   ]
+  ],
+  [
+   "cunt",
+   17,
+   [
+    "cs",
+    "cy",
+    "en",
+    "eu",
+    "gd",
+    "is",
+    "la",
+    "lv",
+    "mn",
+    "mt",
+    "my",
+    "pl",
+    "zu"
+   ],
+   [
+    "tana sepetnya cunt pelempumit",
+    "naal cunt kamakasan mooning"
+   ]
+  ],
+  [
+   "coon",
+   16,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "gd",
+    "gl",
+    "id",
+    "is",
+    "la",
+    "lv",
+    "mn",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pt",
+    "sl",
+    "sv",
+    "vi"
+   ],
+   [
+    "duar coon iselamorong belok",
+    "thranya scion coon muranois"
+   ]
+  ],
+  [
+   "trio",
+   16,
+   [
+    "es"
+   ],
+   [
+    "trio shun memlah masshagamu",
+    "gomu paan dunsumroni trio"
+   ]
+  ],
+  [
+   "puto",
+   16,
+   [
+    "pt"
+   ],
+   [
+    "puto gidewawanya kaam july",
+    "detemecoan puto gail imer"
+   ]
+  ],
+  [
+   "turd",
+   15,
+   [
+    "ca",
+    "cy",
+    "de",
+    "en",
+    "et",
+    "eu",
+    "gd",
+    "gl",
+    "hi",
+    "is",
+    "kn",
+    "lt",
+    "lv",
+    "ms",
+    "my",
+    "sl",
+    "sr",
+    "te",
+    "uz"
+   ],
+   [
+    "terpanmu perbagi polatan turd",
+    "tuildrum turd kumiya coma"
+   ]
+  ],
+  [
+   "fiku",
+   15,
+   [
+    "eo"
+   ],
+   [
+    "fiku hitusnya romakaskan busnya",
+    "unbarnya imammisi fiku vane"
+   ]
+  ],
+  [
+   "flis",
+   15,
+   [
+    "da"
+   ],
+   [
+    "gadamu orestmu flis fleiss",
+    "flis abmu kiragunya adhiro"
+   ]
+  ]
+ ],
+ "samples": [
+  "himani bluk weir ensiuninya",
+  "kuno hungka lancikan hickamu",
+  "orchet gugara biansi lete",
+  "roan noodatif perum putilah",
+  "faisingikan krabetekam ganya",
+  "visuklabri ruke thompeknya",
+  "artifickat gajawakan cuah",
+  "wenjelahan ngannya habius inang",
+  "sack noatranmu lebahusaan",
+  "clikan pemutut sentasi skitian",
+  "galion nightorku stet dian",
+  "hulubart sani berikmakasan"
+ ],
+ "seconds": 8.7,
+ "languages": [
+  "id"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

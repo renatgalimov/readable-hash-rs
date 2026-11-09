@@ -1,0 +1,223 @@
+{
+ "name": "zu+xh+lg+sn",
+ "corpus_words": 73004,
+ "relaxed_rows": 4,
+ "relaxed_examples": [
+  "ex",
+  "mt",
+  "ua",
+  "ix"
+ ],
+ "segmented_words": 56936,
+ "skipped_words": 16068,
+ "middle_attested_fraction": 0.5472005208333334,
+ "end32_attested_fraction": 0.4215901692708333,
+ "end16_attested_fraction": 0.6400553385416666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.37,
+ "max_chars": 34,
+ "consonant_runs_pct": 4.122,
+ "vowel_runs_pct": 9.839,
+ "english_words_pct": 0.703,
+ "own_words_pct": 25.85,
+ "offensive_whole_pct": 1.315,
+ "offensive_whole_english_list_pct": 0.05,
+ "offensive_whole_own_list_pct": 0.155,
+ "offensive_whole_major_lists_pct": 0.26,
+ "offensive_severe_en_pct": 0.065,
+ "offensive_inside5_pct": 3.16,
+ "offensive_inside4_pct": 20.05,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "tanga",
+   133,
+   [
+    "fil"
+   ],
+   [
+    "bitanga pena uteni ssegiridza",
+    "acelwa utatanga ngiyeke obutto"
+   ]
+  ],
+  [
+   "bamba",
+   36,
+   [
+    "zu"
+   ],
+   [
+    "zamu ebamba nsergadzawo huza",
+    "ebamba asipoomu etomeka afera"
+   ]
+  ],
+  [
+   "asini",
+   35,
+   [
+    "it"
+   ],
+   [
+    "dzasini atidde migare kiyika",
+    "afre lubuzi dzavane icasini"
+   ]
+  ],
+  [
+   "kunda",
+   33,
+   [
+    "cs"
+   ],
+   [
+    "icoolikunda mwela nsako ehwa",
+    "teana takakunda kwazi nsendo"
+   ]
+  ],
+  [
+   "sheni",
+   24,
+   [
+    "zh"
+   ],
+   [
+    "eyile bwataawe inamba misheni",
+    "mwatwa atsheni iinoke nkela"
+   ]
+  ],
+  [
+   "pheni",
+   21,
+   [
+    "mr"
+   ],
+   [
+    "mipheni tmeshi olulira belu",
+    "nogowola wawa okupheni bumba"
+   ]
+  ],
+  [
+   "manda",
+   18,
+   [
+    "ru"
+   ],
+   [
+    "tmanda ataunkelwa lamaludazwe",
+    "tenzi uzela tmanda zaleekaatiri"
+   ]
+  ],
+  [
+   "gafa",
+   17,
+   [
+    "pl"
+   ],
+   [
+    "hwetele raaikwanga badde gafa",
+    "unotiza afinotswa zine gafa"
+   ]
+  ],
+  [
+   "nasi",
+   17,
+   [
+    "ml",
+    "th"
+   ],
+   [
+    "elti lofaka nasi ntobhemba",
+    "tmele nasi bona natakengele"
+   ]
+  ],
+  [
+   "ubera",
+   17,
+   [
+    "la"
+   ],
+   [
+    "zaali ubera makophulo usiyele",
+    "zontsula mwisa ubera bukhalo"
+   ]
+  ],
+  [
+   "hani",
+   16,
+   [
+    "is"
+   ],
+   [
+    "katswa temukolo hani kwazi",
+    "sheencika baana hani nokuona"
+   ]
+  ],
+  [
+   "rima",
+   16,
+   [
+    "la"
+   ],
+   [
+    "luyayo itrofiro rima eheni",
+    "ezicumelwona rima mazatamu"
+   ]
+  ],
+  [
+   "sike",
+   16,
+   [
+    "tr"
+   ],
+   [
+    "izere sike eyera umanjenoenda",
+    "vemwongola esanda ekirisa sike"
+   ]
+  ],
+  [
+   "olla",
+   15,
+   [
+    "sv"
+   ],
+   [
+    "nsula olla ibangwa nyaandwa",
+    "olla awela esihagidde mumina"
+   ]
+  ],
+  [
+   "randi",
+   14,
+   [
+    "hi"
+   ],
+   [
+    "nganda randidi wandwa leekisi",
+    "randikhodwa erabira wenzezileyo"
+   ]
+  ]
+ ],
+ "samples": [
+  "lenywe icanga apere edweyako",
+  "nganda randidi wandwa leekisi",
+  "itsizo athwala bekweni sera",
+  "taisa ibomsebwe okele tekyadde",
+  "mishatudde solwimishini pana",
+  "bobubeyaira kyura ikwiinora",
+  "tmomutendlala pabasula guisa",
+  "apfiikela nkela yeetho isma",
+  "mazwe ibetumana sebantyamu",
+  "onira dzicera munopa iliselwe",
+  "panhele egisiiba asula bawe",
+  "rashakeyo mare nerusahwayo"
+ ],
+ "seconds": 10.2,
+ "languages": [
+  "zu",
+  "xh",
+  "lg",
+  "sn"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

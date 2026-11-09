@@ -1,0 +1,267 @@
+{
+ "name": "mk",
+ "corpus_words": 80000,
+ "relaxed_rows": 12,
+ "relaxed_examples": [
+  "poc",
+  "ac",
+  "ic",
+  "aa",
+  "ec",
+  "oc",
+  "vaa",
+  "vm",
+  "uc",
+  "vac",
+  "tic",
+  "nic"
+ ],
+ "segmented_words": 56256,
+ "skipped_words": 23744,
+ "middle_attested_fraction": 0.450439453125,
+ "end32_attested_fraction": 0.40380859375,
+ "end16_attested_fraction": 0.625244140625,
+ "begin_attested": 128,
+ "chars": 26.72,
+ "max_chars": 35,
+ "consonant_runs_pct": 16.779,
+ "vowel_runs_pct": 0.066,
+ "english_words_pct": 0.996,
+ "own_words_pct": 25.528,
+ "offensive_whole_pct": 3.175,
+ "offensive_whole_english_list_pct": 0.125,
+ "offensive_whole_own_list_pct": 0.17,
+ "offensive_whole_major_lists_pct": 1.465,
+ "offensive_severe_en_pct": 0.03,
+ "offensive_inside5_pct": 3.545,
+ "offensive_inside4_pct": 20.585,
+ "offensive_across_words_pct": 0.035,
+ "top_hits": [
+  [
+   "skata",
+   59,
+   [
+    "el"
+   ],
+   [
+    "dekakhta moga dramskata dral",
+    "atsektomskata prano izna odin"
+   ]
+  ],
+  [
+   "natsi",
+   45,
+   [
+    "fi",
+    "mk"
+   ],
+   [
+    "teshite nozhija fasarnatsita",
+    "asno modernatsiti faval bral"
+   ]
+  ],
+  [
+   "shite",
+   37,
+   [
+    "cs",
+    "da",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "gl",
+    "hi",
+    "hu",
+    "id",
+    "it",
+    "ja",
+    "lt",
+    "lv",
+    "mn",
+    "mr",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pt",
+    "sq",
+    "sv",
+    "th",
+    "uk",
+    "uz",
+    "vi",
+    "zu"
+   ],
+   [
+    "teshite nozhija fasarnatsita",
+    "rezesela fani roshite klel"
+   ]
+  ],
+  [
+   "chich",
+   25,
+   [
+    "vi"
+   ],
+   [
+    "lulichichina stno ispotrovno",
+    "edta chichranite vligli lino"
+   ]
+  ],
+  [
+   "lusta",
+   22,
+   [
+    "sv"
+   ],
+   [
+    "nervodesh rakodiri gulusta",
+    "lustachajski simoni noveni"
+   ]
+  ],
+  [
+   "klam",
+   20,
+   [
+    "is"
+   ],
+   [
+    "smra novezertni divo klam",
+    "klam bong edrekojdev unata"
+   ]
+  ],
+  [
+   "suka",
+   20,
+   [
+    "be",
+    "pl",
+    "ru",
+    "sk",
+    "uk"
+   ],
+   [
+    "domosharno suka seda into",
+    "piledneme restoni suka bavi"
+   ]
+  ],
+  [
+   "siki",
+   20,
+   [
+    "ja",
+    "pl",
+    "tr"
+   ],
+   [
+    "prile zent lokomandata siki",
+    "zena melevava nereli siki"
+   ]
+  ],
+  [
+   "roba",
+   20,
+   [
+    "ja"
+   ],
+   [
+    "roba dobibutriot ekste asata",
+    "roba petorluchkiot stal dviv"
+   ]
+  ],
+  [
+   "faen",
+   19,
+   [
+    "no"
+   ],
+   [
+    "nots rikhta faen sekojdon",
+    "faen nabirlarime biman vono"
+   ]
+  ],
+  [
+   "puta",
+   19,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "palo eleron puta zbakazija",
+    "simozhish puta foruetizhat"
+   ]
+  ],
+  [
+   "noki",
+   19,
+   [
+    "fi"
+   ],
+   [
+    "lariski noki tini istochovno",
+    "noki kirnedaduvaat buka fota"
+   ]
+  ],
+  [
+   "nachi",
+   18,
+   [
+    "ja",
+    "ko"
+   ],
+   [
+    "unachil moriite orkeni puva",
+    "libalna kuvaruvale viknachime"
+   ]
+  ],
+  [
+   "pano",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "judotetichar krski unam pano",
+    "pano bolnekvenets reziodija"
+   ]
+  ],
+  [
+   "rini",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "kena jara rini gadotislena",
+    "kladieski skiptsrnel rini"
+   ]
+  ]
+ ],
+ "samples": [
+  "vlarat gevme mrot gurgichar",
+  "zaite imunaj trpeete vlomte",
+  "rivavme daroti izutka viks",
+  "goat pudeleno soon andrati",
+  "klovstii totestvarna dini",
+  "tuparliktot alno armatenje",
+  "pishalitsta dizhozno kien",
+  "mrdebeno fita shvereno open",
+  "kaot pubieduva vizigontni",
+  "ushe mising prostata ferisa",
+  "dirivte akadigija vrvi odam",
+  "imarizete kaeme neizhuvrtam"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "mk"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

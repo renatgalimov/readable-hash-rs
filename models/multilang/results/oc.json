@@ -1,0 +1,241 @@
+{
+ "name": "oc",
+ "corpus_words": 58378,
+ "relaxed_rows": 62,
+ "relaxed_examples": [
+  "aq",
+  "aj",
+  "eq",
+  "ko",
+  "vu",
+  "wo",
+  "zo",
+  "ji",
+  "az",
+  "kh",
+  "sy",
+  "wh"
+ ],
+ "segmented_words": 40349,
+ "skipped_words": 18029,
+ "middle_attested_fraction": 0.3642171223958333,
+ "end32_attested_fraction": 0.3653564453125,
+ "end16_attested_fraction": 0.5763346354166666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.63,
+ "max_chars": 36,
+ "consonant_runs_pct": 5.118,
+ "vowel_runs_pct": 3.365,
+ "english_words_pct": 2.15,
+ "own_words_pct": 24.22,
+ "offensive_whole_pct": 3.855,
+ "offensive_whole_english_list_pct": 0.215,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.755,
+ "offensive_severe_en_pct": 0.145,
+ "offensive_inside5_pct": 3.655,
+ "offensive_inside4_pct": 26.275,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "samen",
+   96,
+   [
+    "de"
+   ],
+   [
+    "osbartsament apava hens sotz",
+    "osament hada auia crudulores"
+   ]
+  ],
+  [
+   "digue",
+   47,
+   [
+    "fr"
+   ],
+   [
+    "chimniatina ajrtier prediguet",
+    "foia iglograment diguestocen"
+   ]
+  ],
+  [
+   "semen",
+   33,
+   [
+    "ca",
+    "cy",
+    "en",
+    "es",
+    "eu",
+    "gl",
+    "mt",
+    "pt",
+    "sr",
+    "uz"
+   ],
+   [
+    "semenirures chut alors tals",
+    "unsement onra fletet penata"
+   ]
+  ],
+  [
+   "chier",
+   29,
+   [
+    "fr"
+   ],
+   [
+    "enaues rucole tiament buchier",
+    "sudor soudimica aqas fichier"
+   ]
+  ],
+  [
+   "asses",
+   27,
+   [
+    "en",
+    "mr",
+    "pt",
+    "sr",
+    "te"
+   ],
+   [
+    "ilbavetz nistector assespiana",
+    "valigaires nises massessocant"
+   ]
+  ],
+  [
+   "orau",
+   23,
+   [
+    "cy"
+   ],
+   [
+    "acompat orau vius nervilos",
+    "orau ascombet congos joan"
+   ]
+  ],
+  [
+   "pios",
+   21,
+   [
+    "gd"
+   ],
+   [
+    "pios inondedida etire nulhier",
+    "nantuallius trippeses pios"
+   ]
+  ],
+  [
+   "lund",
+   19,
+   [
+    "hi"
+   ],
+   [
+    "lund botingat parsica emit",
+    "fouet grizen houthita lund"
+   ]
+  ],
+  [
+   "asas",
+   19,
+   [
+    "gl"
+   ],
+   [
+    "asas varcelguat ridepetz",
+    "tues guidinacion jaspets asas"
+   ]
+  ],
+  [
+   "pisi",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "pisi clemia untrepra anen",
+    "rage enduson pisi brinceres"
+   ]
+  ],
+  [
+   "muts",
+   18,
+   [
+    "nl"
+   ],
+   [
+    "isada muts anierrucet uses",
+    "enebomada muts oracte adacion"
+   ]
+  ],
+  [
+   "culs",
+   18,
+   [
+    "fr"
+   ],
+   [
+    "sagueron culs grants uttristol",
+    "astedria culs gases vaissat"
+   ]
+  ],
+  [
+   "muda",
+   18,
+   [
+    "ru"
+   ],
+   [
+    "auge runas muda posiduneta",
+    "isis ceas polebrusada muda"
+   ]
+  ],
+  [
+   "chut",
+   18,
+   [
+    "hi"
+   ],
+   [
+    "semenirures chut alors tals",
+    "chut usulum usam obbaissia"
+   ]
+  ],
+  [
+   "guda",
+   18,
+   [
+    "hi",
+    "mr"
+   ],
+   [
+    "etroferi afroida fair guda",
+    "jaia unicotisme cosmos guda"
+   ]
+  ]
+ ],
+ "samples": [
+  "groude ison igat aqnejara",
+  "esra aventet arpeses grejavetz",
+  "usiteron neismes emicadas mirat",
+  "toat tilheita caos gestet",
+  "adicrait lobedonesa tets",
+  "turiptulent bial burrovament",
+  "tapaciprel temadoira gier",
+  "igidicitat dria pescatz auia",
+  "sees tiquaresme mitoromatge",
+  "unar forcals abajda horrar",
+  "tentura fugillius roian rets",
+  "avenempal setz deterprencada"
+ ],
+ "seconds": 10.1,
+ "languages": [
+  "oc"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

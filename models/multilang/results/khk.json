@@ -1,0 +1,227 @@
+{
+ "name": "khk",
+ "corpus_words": 29830,
+ "relaxed_rows": 166,
+ "relaxed_examples": [
+  "uk",
+  "ak",
+  "mu",
+  "lu",
+  "ny",
+  "pr",
+  "ue",
+  "by",
+  "oc",
+  "tv",
+  "vy",
+  "yu"
+ ],
+ "segmented_words": 23452,
+ "skipped_words": 6378,
+ "middle_attested_fraction": 0.20414225260416666,
+ "end32_attested_fraction": 0.23958333333333334,
+ "end16_attested_fraction": 0.4071451822916667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.12,
+ "max_chars": 36,
+ "consonant_runs_pct": 25.723,
+ "vowel_runs_pct": 3.765,
+ "english_words_pct": 0.124,
+ "own_words_pct": 13.242,
+ "offensive_whole_pct": 0.515,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.26,
+ "offensive_severe_en_pct": 0.005,
+ "offensive_inside5_pct": 1.5,
+ "offensive_inside4_pct": 14.59,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "raand",
+   57,
+   [
+    "hi"
+   ],
+   [
+    "nelgotoy diraand atiyg suriyg",
+    "zodugiyn ditoy ulzh interaand"
+   ]
+  ],
+  [
+   "gaand",
+   20,
+   [
+    "hi"
+   ],
+   [
+    "amtsyn gaandyn orlorakhtey",
+    "tsillegaand deezh minguulna"
+   ]
+  ],
+  [
+   "khokh",
+   20,
+   [
+    "mn"
+   ],
+   [
+    "akaa ovrkhokhtstey ekhriaguy",
+    "iegchdyn pryn bvkhokhyg nyagten"
+   ]
+  ],
+  [
+   "gichiy",
+   17,
+   [
+    "mn"
+   ],
+   [
+    "daraazh gichiysgokh bvleogyg",
+    "gichiylagaagaa ezoogyn esniy anguy"
+   ]
+  ],
+  [
+   "urin",
+   15,
+   [
+    "sl"
+   ],
+   [
+    "atevsan toroog urin luolol",
+    "diogurgiyn ordoognugiyn urin"
+   ]
+  ],
+  [
+   "luan",
+   15,
+   [
+    "zh"
+   ],
+   [
+    "ugtgevriyg ordagsiriyn luan",
+    "aktyg ulsunkhod luan asatraas"
+   ]
+  ],
+  [
+   "sund",
+   14,
+   [
+    "et"
+   ],
+   [
+    "tvgengakh sund otevriyn ettey",
+    "iriltoy sund odarlaa giamed"
+   ]
+  ],
+  [
+   "utree",
+   13,
+   [
+    "mn"
+   ],
+   [
+    "laamvany etamtsgoo utreeen",
+    "utreeleltey narmoos avniy engiyn"
+   ]
+  ],
+  [
+   "lund",
+   12,
+   [
+    "hi"
+   ],
+   [
+    "tugiyn iltsasaar lund ustsoo",
+    "lund tand iegvridag tuuneer"
+   ]
+  ],
+  [
+   "nian",
+   12,
+   [
+    "zh"
+   ],
+   [
+    "albaytoy aziyg nian omuurlyn",
+    "ogyaraa zhirogoos nian zaryn"
+   ]
+  ],
+  [
+   "tsoon",
+   11,
+   [
+    "sr"
+   ],
+   [
+    "alsyg utsoony ooguy vntsoluulsan",
+    "vnirleerekh biotsoony orny"
+   ]
+  ],
+  [
+   "chich",
+   11,
+   [
+    "vi"
+   ],
+   [
+    "uynd vian inaa chichillegchiyn",
+    "neen chichosuryn shid daad"
+   ]
+  ],
+  [
+   "durtay",
+   11,
+   [
+    "mn"
+   ],
+   [
+    "agirlyn durtay tikh uulcholguy",
+    "bayrkhen oenkhee durtay oyny"
+   ]
+  ],
+  [
+   "chlen",
+   9,
+   [
+    "uk"
+   ],
+   [
+    "land zhilees gemerchlen nuguy",
+    "egravchlen itaa lany dvlogoo"
+   ]
+  ],
+  [
+   "dian",
+   9,
+   [
+    "zh"
+   ],
+   [
+    "yuen dian temtaslaltyg ziyn",
+    "oosen urchamguy addold dian"
+   ]
+  ]
+ ],
+ "samples": [
+  "tiylliyg kalyg gyiyg pramtalzh",
+  "tstey oststay testnaas tivsaas",
+  "aclalaar ekuuntay seshlyg avgiyn",
+  "asan elslelsen tosyg eslegiyg",
+  "bvrgerkhniy omildsildeg uutey",
+  "vyardoloog akiyg eglermaagaa",
+  "angizherguy uutnugee sion",
+  "gyrgamaas nyiyn durgyg uyakh",
+  "sugt elielgan avsaagdatstay",
+  "odloo noogod buurgiyn puuultay",
+  "uudaltay divaleltey amiyg shoo",
+  "ostgiron suguy bakhiurmiend"
+ ],
+ "seconds": 9.8,
+ "languages": [
+  "khk"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,229 @@
+{
+ "name": "li",
+ "corpus_words": 80000,
+ "relaxed_rows": 3,
+ "relaxed_examples": [
+  "ix",
+  "euv",
+  "uv"
+ ],
+ "segmented_words": 51909,
+ "skipped_words": 28091,
+ "middle_attested_fraction": 0.6392415364583334,
+ "end32_attested_fraction": 0.4645589192708333,
+ "end16_attested_fraction": 0.7176106770833334,
+ "begin_attested": 128,
+ "chars": 26.13,
+ "max_chars": 34,
+ "consonant_runs_pct": 15.894,
+ "vowel_runs_pct": 3.905,
+ "english_words_pct": 1.939,
+ "own_words_pct": 31.749,
+ "offensive_whole_pct": 3.805,
+ "offensive_whole_english_list_pct": 0.66,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.255,
+ "offensive_severe_en_pct": 0.4,
+ "offensive_inside5_pct": 2.54,
+ "offensive_inside4_pct": 15.24,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "ische",
+   60,
+   [
+    "de"
+   ],
+   [
+    "advatische middoces engave",
+    "minigarde gitsoenre temische"
+   ]
+  ],
+  [
+   "hoer",
+   23,
+   [
+    "nl"
+   ],
+   [
+    "wijnshes jasje feijnen hoer",
+    "hoer plum mieest gouverokke"
+   ]
+  ],
+  [
+   "verga",
+   22,
+   [
+    "es"
+   ],
+   [
+    "savenhikke vergank ledeel",
+    "euvergaings rick zire faunke"
+   ]
+  ],
+  [
+   "kike",
+   21,
+   [
+    "en"
+   ],
+   [
+    "bant finalette jaegom kike",
+    "grete woldina glacaole kike"
+   ]
+  ],
+  [
+   "veres",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "viie veres tolette eelturen",
+    "lina euveres kwictie troatoan"
+   ]
+  ],
+  [
+   "zile",
+   19,
+   [
+    "lv"
+   ],
+   [
+    "pissjpus pierman zile achtje",
+    "talelens doodie zile wech"
+   ]
+  ],
+  [
+   "vang",
+   18,
+   [
+    "mk",
+    "sr",
+    "uz"
+   ],
+   [
+    "tolete iese vang prezunsje",
+    "vlet joagleie vang betroon"
+   ]
+  ],
+  [
+   "dian",
+   18,
+   [
+    "zh"
+   ],
+   [
+    "dian batspoldol knis hoen",
+    "gritvorege luke dian leel"
+   ]
+  ],
+  [
+   "anaal",
+   18,
+   [
+    "nl"
+   ],
+   [
+    "bink fienhuis anaal mungeden",
+    "direbeet hars anaal notief"
+   ]
+  ],
+  [
+   "dick",
+   17,
+   [
+    "cs",
+    "cy",
+    "da",
+    "en",
+    "eu",
+    "gd",
+    "is",
+    "la",
+    "mt",
+    "nl",
+    "zu"
+   ],
+   [
+    "thag foel dick buislaepte",
+    "bilt greiboum sjuten dick"
+   ]
+  ],
+  [
+   "seit",
+   17,
+   [
+    "te"
+   ],
+   [
+    "wallaien seit zekkeg onse",
+    "seit flend recerapper sean"
+   ]
+  ],
+  [
+   "pits",
+   17,
+   [
+    "ca"
+   ],
+   [
+    "neetchutke pits birdaasj",
+    "pits spuitreeje neurus naze"
+   ]
+  ],
+  [
+   "krik",
+   17,
+   [
+    "cs"
+   ],
+   [
+    "einadiopum krik eikezens",
+    "chisch krik nonk recerige"
+   ]
+  ],
+  [
+   "watje",
+   17,
+   [
+    "nl"
+   ],
+   [
+    "harmeiracht watje selitors",
+    "tholman reer watje kletpark"
+   ]
+  ],
+  [
+   "teef",
+   17,
+   [
+    "nl"
+   ],
+   [
+    "reie carliting teef naoteerd",
+    "kornes damengks huet teef"
+   ]
+  ]
+ ],
+ "samples": [
+  "camete chle ergs kwoadshuis",
+  "sjaar fliktj rensstraat cadier",
+  "secover peppon listere tekke",
+  "jaer oollanders veraar natieve",
+  "aafdraeld eivenkbank wire",
+  "tiemkaemus raam frountina",
+  "joekrecaet wiepmaak veurel",
+  "erelpand sama balter opan",
+  "lels ooliskop tekellioos",
+  "juse goonke kammela turkas",
+  "wiekker elekwaad huet been",
+  "flethial leig boschreudde"
+ ],
+ "seconds": 8.7,
+ "languages": [
+  "li"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

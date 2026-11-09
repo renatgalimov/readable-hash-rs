@@ -1,0 +1,247 @@
+{
+ "name": "br",
+ "corpus_words": 41637,
+ "relaxed_rows": 7,
+ "relaxed_examples": [
+  "gw",
+  "diw",
+  "iu",
+  "nj",
+  "aj",
+  "qu",
+  "rf"
+ ],
+ "segmented_words": 25762,
+ "skipped_words": 15875,
+ "middle_attested_fraction": 0.3788655598958333,
+ "end32_attested_fraction": 0.3647054036458333,
+ "end16_attested_fraction": 0.5862630208333334,
+ "begin_attested": 128,
+ "chars": 26.12,
+ "max_chars": 35,
+ "consonant_runs_pct": 6.822,
+ "vowel_runs_pct": 7.948,
+ "english_words_pct": 1.578,
+ "own_words_pct": 26.267,
+ "offensive_whole_pct": 1.965,
+ "offensive_whole_english_list_pct": 0.25,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.01,
+ "offensive_severe_en_pct": 0.105,
+ "offensive_inside5_pct": 2.41,
+ "offensive_inside4_pct": 15.805,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "loden",
+   42,
+   [
+    "ro"
+   ],
+   [
+    "forzhont aklodennou elankouchou",
+    "atlodennou dresor pegerez birou"
+   ]
+  ],
+  [
+   "esek",
+   24,
+   [
+    "tr"
+   ],
+   [
+    "jamp washagilhet diriou esek",
+    "hoad esek etland gatakaet"
+   ]
+  ],
+  [
+   "mona",
+   21,
+   [
+    "it"
+   ],
+   [
+    "romumens teen mona jubier",
+    "guntventas mona orus nick"
+   ]
+  ],
+  [
+   "name",
+   21,
+   [
+    "ja"
+   ],
+   [
+    "gwevaou cola kopigana name",
+    "janvfeiz orrivan gwaig name"
+   ]
+  ],
+  [
+   "anus",
+   20,
+   [
+    "be",
+    "bg",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "eu",
+    "fa",
+    "fr",
+    "gd",
+    "is",
+    "mk",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sl",
+    "sq",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "anus jemp grit brabudrous",
+    "plaslonia verkaouvard anus"
+   ]
+  ],
+  [
+   "luder",
+   19,
+   [
+    "da"
+   ],
+   [
+    "luder dumbotin beus gwarzhiou",
+    "fach luder kisked unnevadad"
+   ]
+  ],
+  [
+   "muna",
+   18,
+   [
+    "fi"
+   ],
+   [
+    "ruchou atus zorzhvemp muna",
+    "vespie etzenou drinen muna"
+   ]
+  ],
+  [
+   "mesa",
+   16,
+   [
+    "pt"
+   ],
+   [
+    "teliou ouro mesa langilurez",
+    "flal aodennou kredazzont mesa"
+   ]
+  ],
+  [
+   "dain",
+   16,
+   [
+    "ml"
+   ],
+   [
+    "aotour thekus nevariou dain",
+    "corveuarez skilabal dain"
+   ]
+  ],
+  [
+   "cock",
+   15,
+   [
+    "da",
+    "en",
+    "mn"
+   ],
+   [
+    "kudizomou ennezed cock hamp",
+    "cock gwaien daer boemlenset"
+   ]
+  ],
+  [
+   "esel",
+   15,
+   [
+    "de"
+   ],
+   [
+    "esel westrous plos antoned",
+    "kreuet esel aouzamen caet"
+   ]
+  ],
+  [
+   "hani",
+   14,
+   [
+    "is"
+   ],
+   [
+    "laikolikaet hani neck kika",
+    "ouezogolia pliz hani imam"
+   ]
+  ],
+  [
+   "hane",
+   14,
+   [
+    "da"
+   ],
+   [
+    "sken nazivanjan hane huez",
+    "brasorstaet hane lugertaus"
+   ]
+  ],
+  [
+   "skit",
+   13,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "euvron inizenn heidien skit",
+    "laurat tennar skit tachas"
+   ]
+  ],
+  [
+   "meni",
+   13,
+   [
+    "tr"
+   ],
+   [
+    "mick flapidobel pasa meni",
+    "meni aeminvijadur murrogad"
+   ]
+  ]
+ ],
+ "samples": [
+  "drinek orad iman avjerissa",
+  "reier butune sturius drajot",
+  "euvron inizenn heidien skit",
+  "amin zansaskou dech federer",
+  "zesassiou himmileinan sean",
+  "eroteurdia vros isureveg",
+  "tresburaed seremera giad",
+  "imbrudenn suilh gardan vimp",
+  "taez zakendad skandulmead",
+  "huou hardiz lavaen atizig",
+  "seulier nijemerien tina maer",
+  "bubarral tard kanjiagezhiou"
+ ],
+ "seconds": 8.1,
+ "languages": [
+  "br"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

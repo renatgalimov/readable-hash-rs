@@ -1,0 +1,228 @@
+{
+ "name": "uz",
+ "corpus_words": 51697,
+ "relaxed_rows": 10,
+ "relaxed_examples": [
+  "uc",
+  "vc",
+  "hg",
+  "shg",
+  "hd",
+  "ac",
+  "ic",
+  "shd",
+  "ly",
+  "nc"
+ ],
+ "segmented_words": 31462,
+ "skipped_words": 20235,
+ "middle_attested_fraction": 0.3719889322916667,
+ "end32_attested_fraction": 0.2526448567708333,
+ "end16_attested_fraction": 0.4462890625,
+ "begin_attested": 128,
+ "chars": 28.79,
+ "max_chars": 40,
+ "consonant_runs_pct": 11.425,
+ "vowel_runs_pct": 7.122,
+ "english_words_pct": 0.703,
+ "own_words_pct": 12.764,
+ "offensive_whole_pct": 2.42,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.07,
+ "offensive_whole_major_lists_pct": 1.065,
+ "offensive_severe_en_pct": 0.025,
+ "offensive_inside5_pct": 3.1,
+ "offensive_inside4_pct": 23.885,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "asini",
+   72,
+   [
+    "it"
+   ],
+   [
+    "moyanchga senga krasining kror",
+    "burahada tuklda vasining kaish"
+   ]
+  ],
+  [
+   "amlar",
+   60,
+   [
+    "tr"
+   ],
+   [
+    "amlar yuksning xotga hallator",
+    "urilamlar macha uzlotiyasiga"
+   ]
+  ],
+  [
+   "bollar",
+   25,
+   [
+    "sv"
+   ],
+   [
+    "xuldayimcha bollar alining feka",
+    "arga geodiga qozoratlarini bollar"
+   ]
+  ],
+  [
+   "mama",
+   24,
+   [
+    "pt"
+   ],
+   [
+    "mama shaqolidan shuliga fanning",
+    "mama gematmavirga lopavirni"
+   ]
+  ],
+  [
+   "long",
+   23,
+   [
+    "vi"
+   ],
+   [
+    "vesi sirlemsi long esolalar",
+    "mish long qizerskovda hoti"
+   ]
+  ],
+  [
+   "daik",
+   23,
+   [
+    "kn",
+    "mr"
+   ],
+   [
+    "falifobirda voning daik alalar",
+    "dahanning patoydida daik tadi"
+   ]
+  ],
+  [
+   "nikla",
+   21,
+   [
+    "mr"
+   ],
+   [
+    "ketdamdoni hisnoniklar teining",
+    "chanib spiniklarni qisdi yati"
+   ]
+  ],
+  [
+   "fanni",
+   20,
+   [
+    "mk",
+    "ru",
+    "sr"
+   ],
+   [
+    "qiyamaxiga xish kadrik fanning",
+    "haliqlat fanning biologemizatsiya"
+   ]
+  ],
+  [
+   "mesa",
+   20,
+   [
+    "pt"
+   ],
+   [
+    "gazmarning fobatda uchayin mesa",
+    "raining mesa esmeon tuzitrdagi"
+   ]
+  ],
+  [
+   "nuli",
+   19,
+   [
+    "ja"
+   ],
+   [
+    "kollarning nuli grarga xonagenga",
+    "bong oroglanchilgan aylar nuli"
+   ]
+  ],
+  [
+   "linda",
+   19,
+   [
+    "zu"
+   ],
+   [
+    "pertishmont qilimtosi linda",
+    "guldlologov linda molegalardan"
+   ]
+  ],
+  [
+   "naida",
+   18,
+   [
+    "fi"
+   ],
+   [
+    "nozing naida sonerlik oqomasi",
+    "naida uyumiga sparlar guvilgan"
+   ]
+  ],
+  [
+   "chim",
+   17,
+   [
+    "th"
+   ],
+   [
+    "matniquvchi imsi chim hangida",
+    "etamlodlarning qililovsiz chim"
+   ]
+  ],
+  [
+   "krik",
+   16,
+   [
+    "cs"
+   ],
+   [
+    "tragiobaarga krik poseroqda",
+    "krik kaning uzmliy oyligablar"
+   ]
+  ],
+  [
+   "fena",
+   15,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "devomi zada nusllanuvchi fena",
+    "xanslanta hoti pravalar fena"
+   ]
+  ]
+ ],
+ "samples": [
+  "stevali kradi qiyga illoqladi",
+  "shiq uyurdan yaralash stlaniladi",
+  "xujarda usamli kitlik ayib",
+  "isib jozlamdan salik infoining",
+  "habarguvchi uzrodamlalar vang",
+  "gistyuktsh iman nikistdagi",
+  "akulyadoish vanditar trya",
+  "qiyamaxiga xish kadrik fanning",
+  "moydi joviroli aytgobayadi",
+  "span milisi soatning goyasiya",
+  "vatsasi hissiyirning rega mudir",
+  "uyllimadi morining martrenoga"
+ ],
+ "seconds": 9.4,
+ "languages": [
+  "uz"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,232 @@
+{
+ "name": "ilo",
+ "corpus_words": 16162,
+ "relaxed_rows": 159,
+ "relaxed_examples": [
+  "ch",
+  "ho",
+  "fr",
+  "jo",
+  "ay",
+  "ja",
+  "ve",
+  "fa",
+  "sh",
+  "ce",
+  "eu",
+  "fi"
+ ],
+ "segmented_words": 10764,
+ "skipped_words": 5398,
+ "middle_attested_fraction": 0.22981770833333334,
+ "end32_attested_fraction": 0.17862955729166666,
+ "end16_attested_fraction": 0.3240559895833333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.0,
+ "max_chars": 34,
+ "consonant_runs_pct": 5.52,
+ "vowel_runs_pct": 5.224,
+ "english_words_pct": 1.164,
+ "own_words_pct": 11.032,
+ "offensive_whole_pct": 3.335,
+ "offensive_whole_english_list_pct": 0.13,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 2.09,
+ "offensive_severe_en_pct": 0.035,
+ "offensive_inside5_pct": 3.11,
+ "offensive_inside4_pct": 19.44,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "tusan",
+   47,
+   [
+    "sv"
+   ],
+   [
+    "fasitiko kuia fang betutusan",
+    "juadaw sekona frtusan sotiko"
+   ]
+  ],
+  [
+   "panna",
+   27,
+   [
+    "fi"
+   ],
+   [
+    "criento pannakailit ceon halo",
+    "suresa kuta enerkami pannakang"
+   ]
+  ],
+  [
+   "kanto",
+   22,
+   [
+    "ja"
+   ],
+   [
+    "adusoda kanto grat robinpina",
+    "kanto hallegna ikna imemis"
+   ]
+  ],
+  [
+   "muna",
+   22,
+   [
+    "fi"
+   ],
+   [
+    "impakto joadro muna ituliano",
+    "mombingo muna rung pririano"
+   ]
+  ],
+  [
+   "manda",
+   22,
+   [
+    "ru"
+   ],
+   [
+    "rida inbiromanda brel meor",
+    "ikedduma vabibamanda meli"
+   ]
+  ],
+  [
+   "cono",
+   22,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "protersa itbarepral cono",
+    "chsibo cono sterado craesa"
+   ]
+  ],
+  [
+   "galo",
+   20,
+   [
+    "gl",
+    "pt"
+   ],
+   [
+    "ngsibo miduak aubuno galo",
+    "amit galo curber dakkipanagan"
+   ]
+  ],
+  [
+   "hani",
+   20,
+   [
+    "is"
+   ],
+   [
+    "orro aterigidiay eson hani",
+    "hani gako aabastreta joto"
+   ]
+  ],
+  [
+   "amda",
+   19,
+   [
+    "hi"
+   ],
+   [
+    "inga amda emernes allamero",
+    "charup akadreno amda solawag"
+   ]
+  ],
+  [
+   "fing",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "fing ippartes ilbiganagia",
+    "star fing obbuno entikuana"
+   ]
+  ],
+  [
+   "sega",
+   18,
+   [
+    "it"
+   ],
+   [
+    "sega luntatkatta bias leno",
+    "piettaken siay sega bolonan"
+   ]
+  ],
+  [
+   "long",
+   17,
+   [
+    "vi"
+   ],
+   [
+    "brupopugit long aksukibo",
+    "long asbamaton braiay elng"
+   ]
+  ],
+  [
+   "mesa",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "cromika seta mesa fipaster",
+    "idapilakia elultenna mesa"
+   ]
+  ],
+  [
+   "homo",
+   16,
+   [
+    "fi",
+    "id",
+    "ja",
+    "ko"
+   ],
+   [
+    "homo buya cunisdigiit aaal",
+    "eusisapugan orgistris homo"
+   ]
+  ],
+  [
+   "nomo",
+   16,
+   [
+    "ko"
+   ],
+   [
+    "nomo loan imbuksacco gial",
+    "nostus imiko shlosekto nomo"
+   ]
+  ]
+ ],
+ "samples": [
+  "ukabor gela ubat fabunisia",
+  "agto leides aragtan ukibra",
+  "etilya chgius sustada mola",
+  "ekna tomungda masna eleter",
+  "hailataar higbiladanan esan",
+  "edtukikial itiko ibuktunda",
+  "radinarkag esulusan nemo",
+  "ubigbael waay tandon puon",
+  "kigo tomerdiko mosararkos",
+  "gono impiro sitana quelita",
+  "esabot humangiak heta pada",
+  "letegiam kiar kankariodat"
+ ],
+ "seconds": 8.9,
+ "languages": [
+  "ilo"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

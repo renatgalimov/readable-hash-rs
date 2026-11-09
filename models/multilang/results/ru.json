@@ -1,0 +1,233 @@
+{
+ "name": "ru",
+ "corpus_words": 80000,
+ "relaxed_rows": 12,
+ "relaxed_examples": [
+  "uc",
+  "hc",
+  "shc",
+  "ic",
+  "oc",
+  "uc",
+  "ac",
+  "ec",
+  "ushc",
+  "ashc",
+  "yushc",
+  "ayushc"
+ ],
+ "segmented_words": 53416,
+ "skipped_words": 26584,
+ "middle_attested_fraction": 0.4562174479166667,
+ "end32_attested_fraction": 0.4434407552083333,
+ "end16_attested_fraction": 0.64599609375,
+ "begin_attested": 128,
+ "chars": 26.74,
+ "max_chars": 36,
+ "consonant_runs_pct": 15.68,
+ "vowel_runs_pct": 9.183,
+ "english_words_pct": 0.337,
+ "own_words_pct": 24.861,
+ "offensive_whole_pct": 2.155,
+ "offensive_whole_english_list_pct": 0.07,
+ "offensive_whole_own_list_pct": 0.23,
+ "offensive_whole_major_lists_pct": 0.87,
+ "offensive_severe_en_pct": 0.08,
+ "offensive_inside5_pct": 2.805,
+ "offensive_inside4_pct": 19.06,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "sheni",
+   36,
+   [
+    "zh"
+   ],
+   [
+    "doki vagonoshenie arku tsleny",
+    "bespashenie snaziyayut tanney"
+   ]
+  ],
+  [
+   "natsi",
+   30,
+   [
+    "fi",
+    "mk"
+   ],
+   [
+    "lenu iznatsii kuroka maykli",
+    "zanatsiya fonyy stet rizhimoe"
+   ]
+  ],
+  [
+   "chlen",
+   24,
+   [
+    "uk"
+   ],
+   [
+    "chlenoy raspedevogo zhullonu",
+    "drit roka killov chlenchnaya"
+   ]
+  ],
+  [
+   "stiche",
+   22,
+   [
+    "de"
+   ],
+   [
+    "dvaet lodyuzku pasticheskarey",
+    "upli vendtora baktsticheskikh"
+   ]
+  ],
+  [
+   "osly",
+   20,
+   [
+    "cs",
+    "pl",
+    "ru"
+   ],
+   [
+    "ogivovykh ruda sproem osly",
+    "pidzemnogo osly serdolovala"
+   ]
+  ],
+  [
+   "rota",
+   20,
+   [
+    "ja"
+   ],
+   [
+    "topler isoy srazueyu rota",
+    "rota imal gadisone drochnuyu"
+   ]
+  ],
+  [
+   "kisa",
+   19,
+   [
+    "is"
+   ],
+   [
+    "kisa bennysom shamov trie",
+    "paek rassatka forotniki kisa"
+   ]
+  ],
+  [
+   "fiki",
+   19,
+   [
+    "eo"
+   ],
+   [
+    "drim fiki vzdyachroki klyy",
+    "fiki fotika osly vstanorka"
+   ]
+  ],
+  [
+   "baka",
+   18,
+   [
+    "ja"
+   ],
+   [
+    "baka vzolozhnyy vyet kusovyy",
+    "zhularya gontalogiyu baka"
+   ]
+  ],
+  [
+   "myach",
+   17,
+   [
+    "uk"
+   ],
+   [
+    "myachdaedyat runa supersakh",
+    "upey propalo leva myachedut"
+   ]
+  ],
+  [
+   "osli",
+   17,
+   [
+    "sl",
+    "uk"
+   ],
+   [
+    "brayzhdennye rigo perets osli",
+    "blit geliyu osli prozhamstvo"
+   ]
+  ],
+  [
+   "pano",
+   16,
+   [
+    "fi"
+   ],
+   [
+    "bendimuyu okrena usakh pano",
+    "bratnyy pano lida intoapsa"
+   ]
+  ],
+  [
+   "siki",
+   15,
+   [
+    "ja",
+    "pl",
+    "tr"
+   ],
+   [
+    "siki fayte malavano silaya",
+    "snuyna siki robili zamery"
+   ]
+  ],
+  [
+   "vana",
+   15,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "kuru tuedshem oprosov vana",
+    "krislivaet vagika vana izal"
+   ]
+  ],
+  [
+   "srom",
+   15,
+   [
+    "pl"
+   ],
+   [
+    "srom klitetil nora printskikh",
+    "srom perezhey lida beglivye"
+   ]
+  ]
+ ],
+ "samples": [
+  "rassprana geku ogli frolnikom",
+  "nami ording krimut rassinsa",
+  "yupimsya ananet trevuyu tary",
+  "baka vzolozhnyy vyet kusovyy",
+  "pikakosa dzhokopasen moem",
+  "uchuysenset upnyy glorazok",
+  "klasschelye moduelya elet",
+  "ogivovykh ruda sproem osly",
+  "razaet vzavrami taskvaedim",
+  "vroy panikh proslaya fontoy",
+  "modiyu ekonirami suet prival",
+  "orakotte razla zavergazhe"
+ ],
+ "seconds": 8.5,
+ "languages": [
+  "ru"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

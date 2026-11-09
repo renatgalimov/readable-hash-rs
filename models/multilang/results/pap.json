@@ -1,0 +1,276 @@
+{
+ "name": "pap",
+ "corpus_words": 18248,
+ "relaxed_rows": 14,
+ "relaxed_examples": [
+  "ex",
+  "wi",
+  "ju",
+  "prof",
+  "ij",
+  "iz",
+  "ay",
+  "ov",
+  "of",
+  "ek",
+  "rv",
+  "ln"
+ ],
+ "segmented_words": 11759,
+ "skipped_words": 6489,
+ "middle_attested_fraction": 0.24357096354166666,
+ "end32_attested_fraction": 0.2115478515625,
+ "end16_attested_fraction": 0.3724772135416667,
+ "begin_attested": 128,
+ "chars": 28.38,
+ "max_chars": 41,
+ "consonant_runs_pct": 5.36,
+ "vowel_runs_pct": 1.0,
+ "english_words_pct": 1.805,
+ "own_words_pct": 14.352,
+ "offensive_whole_pct": 2.035,
+ "offensive_whole_english_list_pct": 0.2,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.925,
+ "offensive_severe_en_pct": 0.1,
+ "offensive_inside5_pct": 3.645,
+ "offensive_inside4_pct": 34.855,
+ "offensive_across_words_pct": 0.025,
+ "top_hits": [
+  [
+   "samen",
+   118,
+   [
+    "de"
+   ],
+   [
+    "apelusamente luceta homilece",
+    "scurgansamente ales resa esonan"
+   ]
+  ],
+  [
+   "raand",
+   31,
+   [
+    "hi"
+   ],
+   [
+    "hobedad engraando neacion naitstraat",
+    "traando wacusa placeso kededor"
+   ]
+  ],
+  [
+   "lucio",
+   23,
+   [
+    "ca"
+   ],
+   [
+    "banning nolucion aral wikinan",
+    "watate obstictando difelucion"
+   ]
+  ],
+  [
+   "wang",
+   23,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "gd",
+    "gl",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "ko",
+    "la",
+    "lt",
+    "lv",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "zu"
+   ],
+   [
+    "klado wang warcifuntnan leto",
+    "wang ancunitivo roal giabacion"
+   ]
+  ],
+  [
+   "hora",
+   22,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "asituletia hora biahensten",
+    "call hora afileciendo klansabel"
+   ]
+  ],
+  [
+   "scal",
+   20,
+   [
+    "sl"
+   ],
+   [
+    "biblaping scal ocripieding",
+    "esmerreacion scal teenonan reto"
+   ]
+  ],
+  [
+   "moona",
+   20,
+   [
+    "sv"
+   ],
+   [
+    "moonan poduce rachamente deduado",
+    "kamoonan surinam ruso nidida"
+   ]
+  ],
+  [
+   "apara",
+   20,
+   [
+    "fi"
+   ],
+   [
+    "shon suco varcable bucapara",
+    "retrasees gogettapara wacion"
+   ]
+  ],
+  [
+   "flis",
+   18,
+   [
+    "da"
+   ],
+   [
+    "inaction renolita meti flis",
+    "anoniorlica poer unamente flis"
+   ]
+  ],
+  [
+   "hoer",
+   17,
+   [
+    "nl"
+   ],
+   [
+    "jeno werd hoer piolunemio",
+    "mision raislito dipleo hoer"
+   ]
+  ],
+  [
+   "anita",
+   17,
+   [
+    "nl"
+   ],
+   [
+    "delanita plame tela impecion",
+    "kehanita geldigua pustamente"
+   ]
+  ],
+  [
+   "mesa",
+   16,
+   [
+    "pt"
+   ],
+   [
+    "case senata mesa forturdura",
+    "harinsanan mesa socusa geonan"
+   ]
+  ],
+  [
+   "alla",
+   16,
+   [
+    "mt"
+   ],
+   [
+    "alla oria cushuner graciero",
+    "unanan soulomas alla pituta"
+   ]
+  ],
+  [
+   "topa",
+   15,
+   [
+    "it"
+   ],
+   [
+    "hamiollual remarcel topa",
+    "ades hinibel topa tiraeral"
+   ]
+  ],
+  [
+   "semen",
+   15,
+   [
+    "ca",
+    "cy",
+    "en",
+    "es",
+    "eu",
+    "gl",
+    "mt",
+    "pt",
+    "sr",
+    "uz"
+   ],
+   [
+    "basemento koopando frumidencicion",
+    "muhece gual gietonan disemento"
+   ]
+  ]
+ ],
+ "samples": [
+  "kabolo shado wind evenschamento",
+  "diez kingador encoanan kampina",
+  "auroti cebishon favent peer",
+  "amen dachiconan proal atachi",
+  "impasbees vakeortuna sara",
+  "prikimpilto plaando feedulamente",
+  "ganamilerio samurvacion abro",
+  "wimaeranan obionnan supeonan anna",
+  "mosta dadebete permagrenacion",
+  "uner hustamento coopsia oneise",
+  "sampus volucher china cara",
+  "kiatitre moca debarcudencia"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "pap"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

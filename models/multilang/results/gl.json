@@ -1,0 +1,231 @@
+{
+ "name": "gl",
+ "corpus_words": 80000,
+ "relaxed_rows": 43,
+ "relaxed_examples": [
+  "eq",
+  "az",
+  "mc",
+  "kh",
+  "sk",
+  "aq",
+  "vu",
+  "sy",
+  "sw",
+  "ly",
+  "cy",
+  "ay"
+ ],
+ "segmented_words": 57601,
+ "skipped_words": 22399,
+ "middle_attested_fraction": 0.4238688151041667,
+ "end32_attested_fraction": 0.4488525390625,
+ "end16_attested_fraction": 0.6656087239583334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.88,
+ "max_chars": 36,
+ "consonant_runs_pct": 4.35,
+ "vowel_runs_pct": 3.234,
+ "english_words_pct": 2.03,
+ "own_words_pct": 26.987,
+ "offensive_whole_pct": 2.96,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.26,
+ "offensive_whole_major_lists_pct": 2.005,
+ "offensive_severe_en_pct": 0.07,
+ "offensive_inside5_pct": 2.945,
+ "offensive_inside4_pct": 24.265,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "tiron",
+   44,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "leptan bestiron eladra alan",
+    "xacompas axagurgo hotiron"
+   ]
+  ],
+  [
+   "samen",
+   29,
+   [
+    "de"
+   ],
+   [
+    "veume lapolito rosamente ruas",
+    "somesa consamente sicirlamentia"
+   ]
+  ],
+  [
+   "zamen",
+   27,
+   [
+    "ja"
+   ],
+   [
+    "gozamento soar teorfoos xeada",
+    "beer hara hemiro encanzamento"
+   ]
+  ],
+  [
+   "guda",
+   24,
+   [
+    "hi",
+    "mr"
+   ],
+   [
+    "arles lubriego guda vompton",
+    "bieitados guda silido ocitos"
+   ]
+  ],
+  [
+   "alla",
+   22,
+   [
+    "mt"
+   ],
+   [
+    "musa alla horovitelo idia",
+    "eces alla gotimurmer mosa"
+   ]
+  ],
+  [
+   "anita",
+   22,
+   [
+    "nl"
+   ],
+   [
+    "rudo anita erorada esmorces",
+    "grospercuas eqna aron anita"
+   ]
+  ],
+  [
+   "asno",
+   21,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "xisidition haro asno rega",
+    "trei asno xuan stecniscas"
+   ]
+  ],
+  [
+   "bile",
+   20,
+   [
+    "ro"
+   ],
+   [
+    "grais hemizagado soou bile",
+    "bile mios tuberraframos ecou"
+   ]
+  ],
+  [
+   "nian",
+   20,
+   [
+    "zh"
+   ],
+   [
+    "hoda nian oirse chilociano",
+    "suavocencia erlifestan nian"
+   ]
+  ],
+  [
+   "brida",
+   19,
+   [
+    "ca",
+    "es"
+   ],
+   [
+    "strastruiron clente ches bridas",
+    "munsuramos abione pace bridas"
+   ]
+  ],
+  [
+   "gamo",
+   19,
+   [
+    "el"
+   ],
+   [
+    "brei atao gamo bellorruna",
+    "reunstarei imar precian gamo"
+   ]
+  ],
+  [
+   "reto",
+   19,
+   [
+    "pt"
+   ],
+   [
+    "hambegurar axaba reto ocen",
+    "obviarvos neoiontrus reto"
+   ]
+  ],
+  [
+   "apara",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "eqas nombechara aparan true",
+    "varapara ecada grica lenoicos"
+   ]
+  ],
+  [
+   "trio",
+   17,
+   [
+    "es"
+   ],
+   [
+    "trio evedellase nola hicorar",
+    "agme ratintia culmica trio"
+   ]
+  ],
+  [
+   "nima",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "louraba rematica nima ocuiase",
+    "nima deberon valaba rivarme"
+   ]
+  ]
+ ],
+ "samples": [
+  "frenear irar niza ilsitoume",
+  "pramos clinaba mortei frondei",
+  "edelino fulios asunados quido",
+  "fodo bucantado deal neutacion",
+  "bienilino lontircudo soas",
+  "uninelvimos dans guipciencia",
+  "botallitiu somorcas erado",
+  "niacouna axacion alcoume ceos",
+  "pelle buitteiro quiegadusa",
+  "flal ameamente envindo ostrume",
+  "solero optipuia crido relo",
+  "clunfeia peidos insposcido"
+ ],
+ "seconds": 10.4,
+ "languages": [
+  "gl"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

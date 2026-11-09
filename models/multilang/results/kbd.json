@@ -1,0 +1,229 @@
+{
+ "name": "kbd",
+ "corpus_words": 6017,
+ "relaxed_rows": 387,
+ "relaxed_examples": [
+  "me",
+  "by",
+  "ba",
+  "ku",
+  "da",
+  "ko",
+  "zy",
+  "ad",
+  "za",
+  "iu",
+  "ka",
+  "tk"
+ ],
+ "segmented_words": 4357,
+ "skipped_words": 1660,
+ "middle_attested_fraction": 0.0623779296875,
+ "end32_attested_fraction": 0.09297688802083333,
+ "end16_attested_fraction": 0.1845703125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 31.18,
+ "max_chars": 48,
+ "consonant_runs_pct": 39.293,
+ "vowel_runs_pct": 8.672,
+ "english_words_pct": 0.163,
+ "own_words_pct": 7.228,
+ "offensive_whole_pct": 0.645,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.33,
+ "offensive_severe_en_pct": 0.02,
+ "offensive_inside5_pct": 1.29,
+ "offensive_inside4_pct": 40.445,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "zhene",
+   27,
+   [
+    "ja"
+   ],
+   [
+    "beher etidthkhem afladzhenemkhe",
+    "naur unemkhe pudzheneshch impskhyu"
+   ]
+  ],
+  [
+   "chie",
+   21,
+   [
+    "fr"
+   ],
+   [
+    "pyypzheu chie iheshch idriem",
+    "phkhyu chie lyrkhankher itynekher"
+   ]
+  ],
+  [
+   "sere",
+   19,
+   [
+    "hr",
+    "sk"
+   ],
+   [
+    "zaekhyu upeu setiekhemketynu sere",
+    "ukekher sere akrtkhem nansyple"
+   ]
+  ],
+  [
+   "khokh",
+   17,
+   [
+    "mn"
+   ],
+   [
+    "nashchekheme khokheu iphykheme itekheme",
+    "vayppskhemkmi ezekheme khokheguer"
+   ]
+  ],
+  [
+   "here",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "pthyrktsheshch lanizekheme here",
+    "suekheme here pryshedyekher galiem"
+   ]
+  ],
+  [
+   "pede",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "pede upguabeu etekhyu khinske",
+    "sermkhekhe aptsiyhemkhe pede ztekher"
+   ]
+  ],
+  [
+   "kiem",
+   16,
+   [
+    "vi"
+   ],
+   [
+    "dudiyseklhekher kiem fhekletkhu",
+    "kiem bynym ptiyhemkhe biyglykher"
+   ]
+  ],
+  [
+   "teta",
+   15,
+   [
+    "es"
+   ],
+   [
+    "teta akmkhe frekhyu akzefhethkher",
+    "demybdzyber poue teta kakhekhe"
+   ]
+  ],
+  [
+   "natsi",
+   12,
+   [
+    "fi",
+    "mk"
+   ],
+   [
+    "natsipskhemkre klralym saguemkhe",
+    "doetsh aprtym iuher natsier"
+   ]
+  ],
+  [
+   "made",
+   12,
+   [
+    "zh"
+   ],
+   [
+    "esher pyrypyylykher made usyr",
+    "ekshch kothlynkkhekhe made takher"
+   ]
+  ],
+  [
+   "sheni",
+   11,
+   [
+    "zh"
+   ],
+   [
+    "thlekheshenie tekhekhe zartmeemkhe",
+    "turiyr lytshenikhekhe behemkhe pihemkhe"
+   ]
+  ],
+  [
+   "kher",
+   11,
+   [
+    "be"
+   ],
+   [
+    "melustguemre mykuyser kher",
+    "ishygenyu kher mymankhem fyekher"
+   ]
+  ],
+  [
+   "khore",
+   11,
+   [
+    "sr"
+   ],
+   [
+    "lemyshchemre irpsekhekhoreu ezkher",
+    "erustekhekhe khorekheme ubyr irue"
+   ]
+  ],
+  [
+   "peter",
+   10,
+   [
+    "fr"
+   ],
+   [
+    "vagurther emue alanapeter",
+    "gupetere tsydzym bzhey apekhyu"
+   ]
+  ],
+  [
+   "hanek",
+   9,
+   [
+    "mt"
+   ],
+   [
+    "puekher zier byygeshanekheme erym",
+    "shanekher lytheu tkylybzydzem"
+   ]
+  ]
+ ],
+ "samples": [
+  "femyde kikhyu iiashch ushygygekher",
+  "zemi brenekher teuvekhyu ferieu",
+  "tuhyri arekhuer zyguey koshch",
+  "uane uplandym khuer thhygu",
+  "bdyprtre ptatekhutser chykhe",
+  "frmeeyrtshch afue ihlyuakhem",
+  "sanemyshchezde chedzhenkheme dukhyu",
+  "iiybpser ziekher byykhur urkhekhe",
+  "tsemi upylhynkher koenitkhaue",
+  "puekher nyhakhekhe gudemi tyeneu",
+  "chabze akdzhenaue unekheme yaue",
+  "bretammi tsekhyu dzadryzhykhem"
+ ],
+ "seconds": 9.5,
+ "languages": [
+  "kbd"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,218 @@
+{
+ "name": "zu+eu",
+ "corpus_words": 79053,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "nh"
+ ],
+ "segmented_words": 56360,
+ "skipped_words": 22693,
+ "middle_attested_fraction": 0.5555419921875,
+ "end32_attested_fraction": 0.3782958984375,
+ "end16_attested_fraction": 0.6048177083333334,
+ "begin_attested": 128,
+ "chars": 27.9,
+ "max_chars": 39,
+ "consonant_runs_pct": 4.995,
+ "vowel_runs_pct": 8.17,
+ "english_words_pct": 0.719,
+ "own_words_pct": 21.467,
+ "offensive_whole_pct": 1.895,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.105,
+ "offensive_whole_major_lists_pct": 0.97,
+ "offensive_severe_en_pct": 0.28,
+ "offensive_inside5_pct": 3.09,
+ "offensive_inside4_pct": 19.39,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "errea",
+   70,
+   [
+    "eu"
+   ],
+   [
+    "perira errean gurura zaleki",
+    "uyedela umazi errean txosista"
+   ]
+  ],
+  [
+   "gokun",
+   54,
+   [
+    "en"
+   ],
+   [
+    "ngokungahoda irririk inak zena",
+    "imiswe ehuko teele ngokungaborik"
+   ]
+  ],
+  [
+   "asini",
+   37,
+   [
+    "it"
+   ],
+   [
+    "gaizaindi ikasini ospetxera",
+    "gomainatule gema izelasini"
+   ]
+  ],
+  [
+   "bamba",
+   33,
+   [
+    "zu"
+   ],
+   [
+    "sike ilobekana meliwa abamba",
+    "ukuen aundergearekin sian abamba"
+   ]
+  ],
+  [
+   "hlang",
+   24,
+   [
+    "th"
+   ],
+   [
+    "eyakhane amahlangagula bunkek",
+    "idizionalen kwesihlangu dearen"
+   ]
+  ],
+  [
+   "mose",
+   21,
+   [
+    "de"
+   ],
+   [
+    "onenez merkomile mose apen",
+    "tapagatzen mose yokusuarekin imnga"
+   ]
+  ],
+  [
+   "dike",
+   21,
+   [
+    "eu",
+    "sr"
+   ],
+   [
+    "ayikatzen ahotungu gila dike",
+    "ahile giltzurremek dike ukuze"
+   ]
+  ],
+  [
+   "gotu",
+   20,
+   [
+    "tr"
+   ],
+   [
+    "kondritik laphethuli gotu",
+    "yokulwa iklutho ngabhemari gotu"
+   ]
+  ],
+  [
+   "semel",
+   20,
+   [
+    "kn"
+   ],
+   [
+    "samuisardo irsemelani ngaze",
+    "kwasemelkeria hoia ezina tanga"
+   ]
+  ],
+  [
+   "sheni",
+   20,
+   [
+    "zh"
+   ],
+   [
+    "azoken jarioesheni datatik",
+    "umetan kweak sengsteko yokusheni"
+   ]
+  ],
+  [
+   "pina",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "borraren pina edma ikareduka",
+    "aroa enperepoala kwazo pina"
+   ]
+  ],
+  [
+   "site",
+   19,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "imboan kwalile tapoka site",
+    "zitzabusa site gelatzen bani"
+   ]
+  ],
+  [
+   "sike",
+   18,
+   [
+    "tr"
+   ],
+   [
+    "sike ilobekana meliwa abamba",
+    "sike gezidaba ulandwa dowa"
+   ]
+  ],
+  [
+   "baka",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "baka trasazi zena untxioia",
+    "baka obusatu eligagarra dotu"
+   ]
+  ],
+  [
+   "mama",
+   16,
+   [
+    "pt"
+   ],
+   [
+    "hiresa mama idlumo usindi",
+    "soldekoa ngokuen mama gastaz"
+   ]
+  ]
+ ],
+ "samples": [
+  "egilayo ibean pero epitatha",
+  "kuke porrez umlidi egqane",
+  "agoaza ubizula asaldeak kwaisa",
+  "dala etiordoa beke analwe",
+  "morabaian patilebiko alak",
+  "gisaditzagu heza lodiguan",
+  "elkarteerna algoizwe adma",
+  "pepikuba ahek selithi kweza",
+  "latu etestothola kwalatibuso",
+  "obia nokubango wasekho taxide",
+  "alkatzea urruduen usean ukuna",
+  "pomadaele late silazigina"
+ ],
+ "seconds": 8.9,
+ "languages": [
+  "zu",
+  "eu"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

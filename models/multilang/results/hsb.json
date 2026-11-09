@@ -1,0 +1,229 @@
+{
+ "name": "hsb",
+ "corpus_words": 80000,
+ "relaxed_rows": 28,
+ "relaxed_examples": [
+  "pj",
+  "py",
+  "wy",
+  "mr",
+  "fu",
+  "km",
+  "wz",
+  "kc",
+  "gy",
+  "eu",
+  "vo",
+  "hy"
+ ],
+ "segmented_words": 53313,
+ "skipped_words": 26687,
+ "middle_attested_fraction": 0.372802734375,
+ "end32_attested_fraction": 0.433837890625,
+ "end16_attested_fraction": 0.6402994791666666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.3,
+ "max_chars": 34,
+ "consonant_runs_pct": 16.12,
+ "vowel_runs_pct": 0.0,
+ "english_words_pct": 0.19,
+ "own_words_pct": 23.321,
+ "offensive_whole_pct": 1.87,
+ "offensive_whole_english_list_pct": 0.005,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.67,
+ "offensive_severe_en_pct": 0.07,
+ "offensive_inside5_pct": 1.985,
+ "offensive_inside4_pct": 12.85,
+ "offensive_across_words_pct": 0.035,
+ "top_hits": [
+  [
+   "chich",
+   22,
+   [
+    "vi"
+   ],
+   [
+    "sameschich henje macerski kleny",
+    "senje trne rjebna zmochich"
+   ]
+  ],
+  [
+   "trni",
+   20,
+   [
+    "bg"
+   ],
+   [
+    "lejnscach hirana scom trni",
+    "borcijnu trni dowescanskej"
+   ]
+  ],
+  [
+   "zlom",
+   17,
+   [
+    "sl"
+   ],
+   [
+    "twazesmiji zlom sarkotajo",
+    "zlom zejiweci twusach jacy"
+   ]
+  ],
+  [
+   "muca",
+   17,
+   [
+    "lv",
+    "sl"
+   ],
+   [
+    "muca zwadzi lotej rjadadki",
+    "simordoho muca scazach koka"
+   ]
+  ],
+  [
+   "muna",
+   16,
+   [
+    "fi"
+   ],
+   [
+    "muna zlach wjolporcam lisi",
+    "muceli wjoho nizkojki muna"
+   ]
+  ],
+  [
+   "mose",
+   16,
+   [
+    "de"
+   ],
+   [
+    "wemy mose nory plotstrasow",
+    "lastudle tram rozenja mose"
+   ]
+  ],
+  [
+   "kuce",
+   16,
+   [
+    "lv"
+   ],
+   [
+    "wojerom kuce wasnemu zmorojo",
+    "cyrseplase luca kuce trja"
+   ]
+  ],
+  [
+   "fiki",
+   15,
+   [
+    "eo"
+   ],
+   [
+    "dril fiki wsojindzeli cisku",
+    "fiki werisce juha koncniso"
+   ]
+  ],
+  [
+   "kuje",
+   15,
+   [
+    "hr"
+   ],
+   [
+    "psocedzi dwuletlije kuje",
+    "hiej dwuriwosc kuje krjepej"
+   ]
+  ],
+  [
+   "baka",
+   15,
+   [
+    "ja"
+   ],
+   [
+    "nada chutadioce cesi baka",
+    "kwirne baka byrupoli siju"
+   ]
+  ],
+  [
+   "kalu",
+   14,
+   [
+    "fi"
+   ],
+   [
+    "fospenka swjo borisce kalu",
+    "damy kalu partacetka kene"
+   ]
+  ],
+  [
+   "loda",
+   14,
+   [
+    "hi"
+   ],
+   [
+    "priworicije fije lijese loda",
+    "wury loda fosproberu neny"
+   ]
+  ],
+  [
+   "krik",
+   14,
+   [
+    "cs"
+   ],
+   [
+    "fanaarodnje krik brse zbna",
+    "nuje krik wrjece wsikerka"
+   ]
+  ],
+  [
+   "nasi",
+   14,
+   [
+    "ml",
+    "th"
+   ],
+   [
+    "klorzbnu nasi wotsku bjow",
+    "czecestrje nukery nasi hlemu"
+   ]
+  ],
+  [
+   "rota",
+   14,
+   [
+    "ja"
+   ],
+   [
+    "rota roji zjepjedali meli",
+    "dwam forcorbiju rota prych"
+   ]
+  ]
+ ],
+ "samples": [
+  "pjorku ziej nuci awcistiku",
+  "wole knjacu dzeduje pjalil",
+  "fotany znelic hrorci hacz",
+  "drec zmarobny njena jabluje",
+  "lozecinja zrezdarjec zwac",
+  "dwajezdzik tosc zdworelka",
+  "mjezwonasa zwalakej tane",
+  "nuaranskej bjoho swicach khata",
+  "hoce zmadiwny halsestowase",
+  "kela wjazami stawny kwaksa",
+  "zwjedka hubjitny cila poje",
+  "knadiolu holu wuspjetepal"
+ ],
+ "seconds": 10.0,
+ "languages": [
+  "hsb"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

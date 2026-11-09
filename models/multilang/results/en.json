@@ -1,0 +1,276 @@
+{
+ "name": "en",
+ "corpus_words": 80000,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "uf"
+ ],
+ "segmented_words": 48953,
+ "skipped_words": 31047,
+ "middle_attested_fraction": 0.5436604817708334,
+ "end32_attested_fraction": 0.4942626953125,
+ "end16_attested_fraction": 0.727783203125,
+ "begin_attested": 128,
+ "chars": 26.19,
+ "max_chars": 35,
+ "consonant_runs_pct": 14.008,
+ "vowel_runs_pct": 1.694,
+ "english_words_pct": 5.947,
+ "own_words_pct": 33.414,
+ "offensive_whole_pct": 3.79,
+ "offensive_whole_english_list_pct": 0.885,
+ "offensive_whole_own_list_pct": 0.885,
+ "offensive_whole_major_lists_pct": 1.745,
+ "offensive_severe_en_pct": 0.545,
+ "offensive_inside5_pct": 3.04,
+ "offensive_inside4_pct": 18.455,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "asses",
+   22,
+   [
+    "en",
+    "mr",
+    "pt",
+    "sr",
+    "te"
+   ],
+   [
+    "snet lumpasses ciarcetrade",
+    "sediscasses abuerino reds"
+   ]
+  ],
+  [
+   "hora",
+   22,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "aces hora hussemunes phor",
+    "cider hora emmethmata chou"
+   ]
+  ],
+  [
+   "hore",
+   21,
+   [
+    "be",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "hr",
+    "hu",
+    "id",
+    "is",
+    "it",
+    "la",
+    "lv",
+    "mr",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk"
+   ],
+   [
+    "overboggling hore exprey roel",
+    "unqueaves amidebtrue hore"
+   ]
+  ],
+  [
+   "sung",
+   20,
+   [
+    "vi"
+   ],
+   [
+    "snan weavaphild sung gare",
+    "sung beacchal whay gerting"
+   ]
+  ],
+  [
+   "dran",
+   20,
+   [
+    "pl"
+   ],
+   [
+    "overlavascal nerd dran adil",
+    "dran eles whitous vectadis"
+   ]
+  ],
+  [
+   "rini",
+   20,
+   [
+    "zh"
+   ],
+   [
+    "rini regrimwone jeation eson",
+    "rini todductuation sale glet"
+   ]
+  ],
+  [
+   "sits",
+   19,
+   [
+    "kn",
+    "te"
+   ],
+   [
+    "violumping hipplosser sits",
+    "shah kido mistacemps sits"
+   ]
+  ],
+  [
+   "elle",
+   19,
+   [
+    "lv"
+   ],
+   [
+    "louincio tennatfoot elle",
+    "weer boogross doments elle"
+   ]
+  ],
+  [
+   "fecal",
+   19,
+   [
+    "en",
+    "pt"
+   ],
+   [
+    "safecals oriaki amulrise",
+    "mats goodsimise judy fecal"
+   ]
+  ],
+  [
+   "anus",
+   19,
+   [
+    "be",
+    "bg",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "eu",
+    "fa",
+    "fr",
+    "gd",
+    "is",
+    "mk",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sl",
+    "sq",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "boneous anus activism surrie",
+    "anus smon liet seveiltible"
+   ]
+  ],
+  [
+   "cham",
+   19,
+   [
+    "vi"
+   ],
+   [
+    "rated cham bricliaber alors",
+    "loanutardo neos cham male"
+   ]
+  ],
+  [
+   "asas",
+   18,
+   [
+    "gl"
+   ],
+   [
+    "cean asas spoitraunt overto",
+    "stradial asas riskey puce"
+   ]
+  ],
+  [
+   "poon",
+   18,
+   [
+    "en"
+   ],
+   [
+    "gained boogamus poon vance",
+    "douclaimable poon moontating"
+   ]
+  ],
+  [
+   "flis",
+   18,
+   [
+    "da"
+   ],
+   [
+    "flis empage roustright alls",
+    "flis nero hayalator forant"
+   ]
+  ],
+  [
+   "puto",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "phoncets cars attile puto",
+    "esal puto sondringer been"
+   ]
+  ]
+ ],
+ "samples": [
+  "kageous cers atty gilmutation",
+  "unless slitting chaton kardis",
+  "overrico hispian surment brod",
+  "nain cutegrate cons pierts",
+  "puffunties venuringly fats",
+  "jamienfung gems kirkwons",
+  "trearcetre fativation wona",
+  "athassion dude holded prey",
+  "hake cubaerly brutarmeen",
+  "turing wastand mothie sketan",
+  "fabins abduacks alll deed",
+  "slimbuen hast margetfuted"
+ ],
+ "seconds": 8.4,
+ "languages": [
+  "en"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

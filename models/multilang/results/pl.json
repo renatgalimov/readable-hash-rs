@@ -1,0 +1,225 @@
+{
+ "name": "pl",
+ "corpus_words": 80000,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "ny"
+ ],
+ "segmented_words": 52942,
+ "skipped_words": 27058,
+ "middle_attested_fraction": 0.4297281901041667,
+ "end32_attested_fraction": 0.428955078125,
+ "end16_attested_fraction": 0.6513671875,
+ "begin_attested": 128,
+ "chars": 26.55,
+ "max_chars": 35,
+ "consonant_runs_pct": 14.706,
+ "vowel_runs_pct": 0.268,
+ "english_words_pct": 0.738,
+ "own_words_pct": 22.269,
+ "offensive_whole_pct": 2.145,
+ "offensive_whole_english_list_pct": 0.275,
+ "offensive_whole_own_list_pct": 0.305,
+ "offensive_whole_major_lists_pct": 1.115,
+ "offensive_severe_en_pct": 0.245,
+ "offensive_inside5_pct": 1.97,
+ "offensive_inside4_pct": 14.575,
+ "offensive_across_words_pct": 0.045,
+ "top_hits": [
+  [
+   "pina",
+   22,
+   [
+    "hu"
+   ],
+   [
+    "woskosc marsow pina wioslem",
+    "wzbowa lazilismy pina brzylem"
+   ]
+  ],
+  [
+   "bite",
+   22,
+   [
+    "fr"
+   ],
+   [
+    "ryny zoblyszeka zlej bite",
+    "bite blywny wzne orarchana"
+   ]
+  ],
+  [
+   "mesa",
+   22,
+   [
+    "pt"
+   ],
+   [
+    "ekropieger wletykam mesa",
+    "uwzniony mesa nosaluta peel"
+   ]
+  ],
+  [
+   "osly",
+   20,
+   [
+    "cs",
+    "pl",
+    "ru"
+   ],
+   [
+    "filley osly obala putnakcje",
+    "noni osly szwakodowego dokow"
+   ]
+  ],
+  [
+   "kran",
+   19,
+   [
+    "be"
+   ],
+   [
+    "kran razacje andiostacie wznia",
+    "wetkach moca kran uchirami"
+   ]
+  ],
+  [
+   "scal",
+   18,
+   [
+    "sl"
+   ],
+   [
+    "czny scal kozy niewodakanie",
+    "proki udla umosenonne scal"
+   ]
+  ],
+  [
+   "anali",
+   18,
+   [
+    "mt"
+   ],
+   [
+    "gric muncerac planaliosic",
+    "wspoty zeke analizy wegamy"
+   ]
+  ],
+  [
+   "suce",
+   18,
+   [
+    "fr"
+   ],
+   [
+    "przygnudego rozdarnywam suce",
+    "griltatnow wire ryja suce"
+   ]
+  ],
+  [
+   "sung",
+   17,
+   [
+    "vi"
+   ],
+   [
+    "oraluje antyki mechal sung",
+    "andetow wpremacie umor sung"
+   ]
+  ],
+  [
+   "dyke",
+   17,
+   [
+    "en",
+    "is",
+    "mk",
+    "ms",
+    "uz",
+    "zu"
+   ],
+   [
+    "udem samunijcie horzamy dyke",
+    "dyke lutrondeli okce peke"
+   ]
+  ],
+  [
+   "siki",
+   17,
+   [
+    "ja",
+    "pl",
+    "tr"
+   ],
+   [
+    "siki rzerzy zmywny alejek",
+    "tony siki rudowstelny proca"
+   ]
+  ],
+  [
+   "kozy",
+   16,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "czny scal kozy niewodakanie",
+    "oguje uwzy tanconetnie kozy"
+   ]
+  ],
+  [
+   "tate",
+   16,
+   [
+    "ro"
+   ],
+   [
+    "fiac stopia tate biezacha",
+    "lillusodla urnie zyne tate"
+   ]
+  ],
+  [
+   "kaka",
+   15,
+   [
+    "eu"
+   ],
+   [
+    "kaka anego talyka zachlona",
+    "usolnowi kaka pokaja bita"
+   ]
+  ],
+  [
+   "baka",
+   14,
+   [
+    "ja"
+   ],
+   [
+    "notolate udrzyjskach baka",
+    "peny szybislene baka garze"
+   ]
+  ]
+ ],
+ "samples": [
+  "lesnic wzony frow muespeda",
+  "doby rzesji kartne legnego",
+  "lukranie gloluje molowe wang",
+  "zgiac todzierac poca cieknie",
+  "notolate udrzyjskach baka",
+  "kijotrawek dasa perkazana",
+  "siedzkiczasz barcetna blaja",
+  "frobionym lita krewam grow",
+  "obku toolimowy wachnocham",
+  "puke zmecki nienacie dusily",
+  "barksa artynerow klem odie",
+  "rzosiali obki zazdzcznil"
+ ],
+ "seconds": 8.4,
+ "languages": [
+  "pl"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

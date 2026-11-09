@@ -1,0 +1,239 @@
+{
+ "name": "csb",
+ "corpus_words": 10442,
+ "relaxed_rows": 169,
+ "relaxed_examples": [
+  "ku",
+  "sw",
+  "ws",
+  "pu",
+  "sy",
+  "fr",
+  "lu",
+  "ru",
+  "og",
+  "vj",
+  "zr",
+  "ks"
+ ],
+ "segmented_words": 7011,
+ "skipped_words": 3431,
+ "middle_attested_fraction": 0.1363525390625,
+ "end32_attested_fraction": 0.14957682291666666,
+ "end16_attested_fraction": 0.2742513020833333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.99,
+ "max_chars": 38,
+ "consonant_runs_pct": 23.737,
+ "vowel_runs_pct": 0.49,
+ "english_words_pct": 0.448,
+ "own_words_pct": 9.3,
+ "offensive_whole_pct": 2.22,
+ "offensive_whole_english_list_pct": 0.085,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.13,
+ "offensive_severe_en_pct": 0.02,
+ "offensive_inside5_pct": 1.68,
+ "offensive_inside4_pct": 13.49,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "kuce",
+   23,
+   [
+    "lv"
+   ],
+   [
+    "barnem kuce masa ognistne",
+    "kuce nawedota pojawe armie"
+   ]
+  ],
+  [
+   "pico",
+   21,
+   [
+    "eo"
+   ],
+   [
+    "blodzeczama pico plodzka obnik",
+    "wiartaceae urasalczenio pico"
+   ]
+  ],
+  [
+   "okama",
+   20,
+   [
+    "ja"
+   ],
+   [
+    "torswiadlo okama rzinorczi",
+    "calegila okama blim zdekte"
+   ]
+  ],
+  [
+   "bile",
+   19,
+   [
+    "ro"
+   ],
+   [
+    "bile tiwo golsdowe naleza",
+    "strzedow bile buczoczi carodna"
+   ]
+  ],
+  [
+   "orina",
+   19,
+   [
+    "es"
+   ],
+   [
+    "uczewosmota frce czorinaja",
+    "penteji sacolo gborinance"
+   ]
+  ],
+  [
+   "ukol",
+   18,
+   [
+    "uk"
+   ],
+   [
+    "ukol camonsen pertkama zbor",
+    "ruwiodo ukol rozechono skaja"
+   ]
+  ],
+  [
+   "naji",
+   18,
+   [
+    "hi",
+    "kn",
+    "my",
+    "te"
+   ],
+   [
+    "mundzurejo psma naji lakach",
+    "zrzesczi muluzi naji slawnie"
+   ]
+  ],
+  [
+   "cono",
+   18,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "chewinska zagrekaczama cono",
+    "laridolicje dzje pska cono"
+   ]
+  ],
+  [
+   "fiku",
+   17,
+   [
+    "eo"
+   ],
+   [
+    "fiku lina mach celnozejsczi",
+    "gasona fiku odniwino scenie"
+   ]
+  ],
+  [
+   "chalo",
+   17,
+   [
+    "th"
+   ],
+   [
+    "ortu zbezewne vjedanchalo",
+    "zechalo zasony waji hiorkow"
+   ]
+  ],
+  [
+   "osel",
+   17,
+   [
+    "cs"
+   ],
+   [
+    "arekowekli swce frze osel",
+    "osel jastrie glacjeste stku"
+   ]
+  ],
+  [
+   "cona",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "cona soch obezczi dwremowech",
+    "ruenston brzyma cona jesce"
+   ]
+  ],
+  [
+   "lodu",
+   16,
+   [
+    "hi"
+   ],
+   [
+    "jala slakocszlo dzkow lodu",
+    "archrze lodu drono apniczczna"
+   ]
+  ],
+  [
+   "suka",
+   16,
+   [
+    "be",
+    "pl",
+    "ru",
+    "sk",
+    "uk"
+   ],
+   [
+    "arow zmeska uznadowe suka",
+    "palasczi slemine suka jeskli"
+   ]
+  ],
+  [
+   "caca",
+   15,
+   [
+    "ca",
+    "es",
+    "fr",
+    "gl",
+    "ro"
+   ],
+   [
+    "caca zlanio ukale swadoceste",
+    "apone merkmirola moce caca"
+   ]
+  ]
+ ],
+ "samples": [
+  "sowsza luja gdach umadzona",
+  "wiczi sybica sposto solsch",
+  "blaszol ogadny zersze teku",
+  "drego apuletin stech rabotow",
+  "zostenja anobisowno grow",
+  "elarobezie tiwo tarzalie",
+  "opiscodnile grakutka smona",
+  "gdrotnym loze piecka laza",
+  "czwe aputrzode teniszotego",
+  "zlele seszich robione alszosc",
+  "gratnech hierodczi mece pranio",
+  "symiszok czno wepolnapla"
+ ],
+ "seconds": 9.0,
+ "languages": [
+  "csb"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

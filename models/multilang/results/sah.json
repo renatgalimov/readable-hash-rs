@@ -1,0 +1,232 @@
+{
+ "name": "sah",
+ "corpus_words": 80000,
+ "relaxed_rows": 59,
+ "relaxed_examples": [
+  "ac",
+  "ae",
+  "uh",
+  "eb",
+  "uc",
+  "af",
+  "dz",
+  "oc",
+  "sv",
+  "fu",
+  "ic",
+  "kv"
+ ],
+ "segmented_words": 56978,
+ "skipped_words": 23022,
+ "middle_attested_fraction": 0.3402099609375,
+ "end32_attested_fraction": 0.23433430989583334,
+ "end16_attested_fraction": 0.4180501302083333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 31.26,
+ "max_chars": 44,
+ "consonant_runs_pct": 9.788,
+ "vowel_runs_pct": 7.375,
+ "english_words_pct": 0.465,
+ "own_words_pct": 8.71,
+ "offensive_whole_pct": 0.38,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.225,
+ "offensive_severe_en_pct": 0.025,
+ "offensive_inside5_pct": 3.65,
+ "offensive_inside4_pct": 18.185,
+ "offensive_across_words_pct": 0.095,
+ "top_hits": [
+  [
+   "titten",
+   121,
+   [
+    "de"
+   ],
+   [
+    "unabittar yktamititten muytynan",
+    "anakh arbarabyn biitaletitten"
+   ]
+  ],
+  [
+   "tetta",
+   44,
+   [
+    "it"
+   ],
+   [
+    "trastettar ketyttan syny graahyny",
+    "kistubugar ogynan anytygar iitettan"
+   ]
+  ],
+  [
+   "bitte",
+   37,
+   [
+    "fr"
+   ],
+   [
+    "seta afruubitten aryllatyybynyyn",
+    "ubitten poka komalyydan gytyttan"
+   ]
+  ],
+  [
+   "tette",
+   37,
+   [
+    "it"
+   ],
+   [
+    "uoraay patetten uohehaastagyn",
+    "kaspontuyta optitetten paym"
+   ]
+  ],
+  [
+   "kutta",
+   28,
+   [
+    "hi"
+   ],
+   [
+    "ohym puyttan uokuttan ishertnay",
+    "kuttaytynan gyynyyn ergeynyyn vareen"
+   ]
+  ],
+  [
+   "skata",
+   24,
+   [
+    "el"
+   ],
+   [
+    "isotarov open dotyttan naskata",
+    "omaltymaytynan temaary teskata"
+   ]
+  ],
+  [
+   "niger",
+   24,
+   [
+    "hy"
+   ],
+   [
+    "shyttan grachchyyttan enterbit ininiger",
+    "ukhkhabirynyyn saga uuydeniger"
+   ]
+  ],
+  [
+   "natsi",
+   20,
+   [
+    "fi",
+    "mk"
+   ],
+   [
+    "natsitullargyn etynyyn taakh tuyttan",
+    "uske natsitiin umabbar uyar"
+   ]
+  ],
+  [
+   "layna",
+   17,
+   [
+    "bg"
+   ],
+   [
+    "ilytynan laynan fiygar kommireetygar",
+    "abydan laynan tattarchnay ilaaghar"
+   ]
+  ],
+  [
+   "fitta",
+   17,
+   [
+    "sv"
+   ],
+   [
+    "emekh fittan monarga prammaan",
+    "fittan bibyt tataaratygar togunen"
+   ]
+  ],
+  [
+   "potta",
+   16,
+   [
+    "it"
+   ],
+   [
+    "syllyyn pottan syyhabaryttan yaer",
+    "ingnakhpyt pottan anyyaasyng mutygar"
+   ]
+  ],
+  [
+   "suka",
+   15,
+   [
+    "be",
+    "pl",
+    "ru",
+    "sk",
+    "uk"
+   ],
+   [
+    "suka keyttan deneen olutiler",
+    "omskydaaghar yrstskay suka usun"
+   ]
+  ],
+  [
+   "saala",
+   15,
+   [
+    "hi"
+   ],
+   [
+    "ykotugar saalaakhkha deyttan prehiger",
+    "ubun opuurge saalayr fisaary"
+   ]
+  ],
+  [
+   "filla",
+   15,
+   [
+    "gl"
+   ],
+   [
+    "idyrppit paynan uyettar fillar",
+    "surdarbyulten teynyyn ista fillar"
+   ]
+  ],
+  [
+   "sung",
+   14,
+   [
+    "vi"
+   ],
+   [
+    "uruohuyta sung osteghileekh",
+    "sung araaghar ykynan vasikabyyta"
+   ]
+  ]
+ ],
+ "samples": [
+  "praargytyna ubon omtyttan idaydyttan",
+  "aker ucnnaaghar suuyaaghar prebynyyn",
+  "gyhaya miebtyttan totuon erytynan",
+  "muller shruyany anym itilen",
+  "okhkhleyng afkhaghastaakh ulta",
+  "lageytamin renan osadatynyyn",
+  "diriemchnan ullymatyn getygar",
+  "ometiyata ynytygar apting setyttan",
+  "banen shnilynan eriyebpparygar",
+  "gritten sohutin abaasyny avnitygar",
+  "ulghabar unushtarda yyllar alarygar",
+  "uckhpyter baagha arkhsymmar"
+ ],
+ "seconds": 12.2,
+ "languages": [
+  "sah"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,228 @@
+{
+ "name": "swh",
+ "corpus_words": 20509,
+ "relaxed_rows": 59,
+ "relaxed_examples": [
+  "mc",
+  "fo",
+  "jo",
+  "uc",
+  "fe",
+  "sc",
+  "ve",
+  "wo",
+  "mn",
+  "mg",
+  "fl",
+  "mj"
+ ],
+ "segmented_words": 14017,
+ "skipped_words": 6492,
+ "middle_attested_fraction": 0.23722330729166666,
+ "end32_attested_fraction": 0.20796712239583334,
+ "end16_attested_fraction": 0.367431640625,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.55,
+ "max_chars": 36,
+ "consonant_runs_pct": 6.755,
+ "vowel_runs_pct": 3.66,
+ "english_words_pct": 0.894,
+ "own_words_pct": 15.746,
+ "offensive_whole_pct": 2.395,
+ "offensive_whole_english_list_pct": 0.17,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.165,
+ "offensive_severe_en_pct": 0.135,
+ "offensive_inside5_pct": 2.96,
+ "offensive_inside4_pct": 22.125,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "manda",
+   47,
+   [
+    "ru"
+   ],
+   [
+    "yaliturabisha amanda ujundiviri",
+    "manda raleni wazainua faua"
+   ]
+  ],
+  [
+   "fuani",
+   33,
+   [
+    "ja"
+   ],
+   [
+    "mchastika fuani doachisha dhini",
+    "uahi elapozishwa stiwa mfuania"
+   ]
+  ],
+  [
+   "linda",
+   30,
+   [
+    "zu"
+   ],
+   [
+    "wakandoka panya brokana linda",
+    "bumeuza linda choguliwa engiani"
+   ]
+  ],
+  [
+   "bamba",
+   29,
+   [
+    "zu"
+   ],
+   [
+    "weamkia urbamba lienunshiri",
+    "mtuliwa nagabamba dini juingwa"
+   ]
+  ],
+  [
+   "tanga",
+   22,
+   [
+    "fil"
+   ],
+   [
+    "nowa enyo ugetangamia akabani",
+    "mcfuatigamo thetangaika mzishwa"
+   ]
+  ],
+  [
+   "jaji",
+   21,
+   [
+    "ko"
+   ],
+   [
+    "jaji nothipia dhia barani",
+    "zaatavyota jaji boas loua"
+   ]
+  ],
+  [
+   "niti",
+   19,
+   [
+    "te"
+   ],
+   [
+    "msisubua busana niti utani",
+    "ampatundi uhika sechana niti"
+   ]
+  ],
+  [
+   "chati",
+   19,
+   [
+    "te"
+   ],
+   [
+    "cosa ubiri chati sustakadhi",
+    "chati ilano rajaatosha jengo"
+   ]
+  ],
+  [
+   "bola",
+   19,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "bola akaemeanza ilihetapokea",
+    "keekiobata bola cosa houa"
+   ]
+  ],
+  [
+   "chani",
+   19,
+   [
+    "zh"
+   ],
+   [
+    "zaifachani hesi faarishwa kwesha",
+    "alichani wiader geana elabali"
+   ]
+  ],
+  [
+   "sheni",
+   18,
+   [
+    "zh"
+   ],
+   [
+    "towa arseishwa uata fausheni",
+    "mhanga duaser shunsheni nile"
+   ]
+  ],
+  [
+   "koli",
+   18,
+   [
+    "kn"
+   ],
+   [
+    "vikomepata koli ischana hasa",
+    "koli simba eladungadamu mwea"
+   ]
+  ],
+  [
+   "shipa",
+   18,
+   [
+    "ja"
+   ],
+   [
+    "msamshipa ufadishiamua uwili",
+    "capushipa gringemio sumeana"
+   ]
+  ],
+  [
+   "kike",
+   17,
+   [
+    "en"
+   ],
+   [
+    "kike dume uwadekayoisha muia",
+    "zaiwa rearapadala tema kike"
+   ]
+  ],
+  [
+   "buzi",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "makezi fumeonja kweza buzi",
+    "duni buzi ilijukuhuri mhiwa"
+   ]
+  ]
+ ],
+ "samples": [
+  "pojiua desi vyeza dipaliana",
+  "mawe toface katema popere",
+  "ujingu mpetia bailishwa upuliwa",
+  "seli roteranga kibo uhaluma",
+  "thaipodi uathitengea siwa",
+  "triliotecani isani mcjikika",
+  "pembatavidi sinosomo rinda",
+  "vyamilenga keisha mikuza murs",
+  "hako roasseni upitafachezwa",
+  "hoisha usiopo ilivishwa ugawishwa",
+  "sigaidi readandanda atia wati",
+  "toruames hard aliuteatifu"
+ ],
+ "seconds": 9.4,
+ "languages": [
+  "swh"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

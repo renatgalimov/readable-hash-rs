@@ -1,0 +1,233 @@
+{
+ "name": "lt",
+ "corpus_words": 80000,
+ "relaxed_rows": 30,
+ "relaxed_examples": [
+  "sc",
+  "eu",
+  "by",
+  "vl",
+  "wa",
+  "bj",
+  "cu",
+  "wi",
+  "wh",
+  "cl",
+  "ex",
+  "wo"
+ ],
+ "segmented_words": 59727,
+ "skipped_words": 20273,
+ "middle_attested_fraction": 0.4183756510416667,
+ "end32_attested_fraction": 0.4357503255208333,
+ "end16_attested_fraction": 0.6438802083333334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.4,
+ "max_chars": 33,
+ "consonant_runs_pct": 5.373,
+ "vowel_runs_pct": 4.829,
+ "english_words_pct": 0.632,
+ "own_words_pct": 24.499,
+ "offensive_whole_pct": 2.23,
+ "offensive_whole_english_list_pct": 0.01,
+ "offensive_whole_own_list_pct": 0.02,
+ "offensive_whole_major_lists_pct": 1.1,
+ "offensive_severe_en_pct": 0.055,
+ "offensive_inside5_pct": 2.045,
+ "offensive_inside4_pct": 17.51,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "nuli",
+   23,
+   [
+    "ja"
+   ],
+   [
+    "minikumu dzuose zibinsime nuli",
+    "nuli ikus krikslo ramunkus"
+   ]
+  ],
+  [
+   "here",
+   21,
+   [
+    "hu"
+   ],
+   [
+    "heai protum here smakondas",
+    "amau here stardo deraidija"
+   ]
+  ],
+  [
+   "tetas",
+   20,
+   [
+    "ca",
+    "es",
+    "gl",
+    "pt"
+   ],
+   [
+    "itaktetas fose frejais dios",
+    "guziui soja pitetas idatas"
+   ]
+  ],
+  [
+   "tate",
+   20,
+   [
+    "ro"
+   ],
+   [
+    "kramajegus tate plazdiju",
+    "fedelyciu chimo gunkis tate"
+   ]
+  ],
+  [
+   "ases",
+   19,
+   [
+    "cy"
+   ],
+   [
+    "tvazma reja gustorta ases",
+    "ases vyje pasembija tvides"
+   ]
+  ],
+  [
+   "pina",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "atiu priniu pina fenkerdink",
+    "bougosko lempei ryte pina"
+   ]
+  ],
+  [
+   "teta",
+   17,
+   [
+    "es"
+   ],
+   [
+    "gyna nuzuarija teta saletu",
+    "teta jubiline ardo pavais"
+   ]
+  ],
+  [
+   "tama",
+   17,
+   [
+    "pl",
+    "zh"
+   ],
+   [
+    "kviduolingo plimo filu tama",
+    "tama dekoms zaskirio suejo"
+   ]
+  ],
+  [
+   "pesi",
+   17,
+   [
+    "mr"
+   ],
+   [
+    "vyresatleikite kventgavo pesi",
+    "amta pesi akirovei heleri"
+   ]
+  ],
+  [
+   "fena",
+   17,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "ieko rutos fena riverblesi",
+    "albarkija tesembudis fena"
+   ]
+  ],
+  [
+   "galo",
+   17,
+   [
+    "gl",
+    "pt"
+   ],
+   [
+    "galo frimo atsiui puldutes",
+    "bolonimo turo kevinti galo"
+   ]
+  ],
+  [
+   "pute",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "latakas ingriuose pute kujo",
+    "pute distorai blio braisi"
+   ]
+  ],
+  [
+   "reto",
+   16,
+   [
+    "pt"
+   ],
+   [
+    "leja reto gelo pistondaros",
+    "novarkui datos penkai reto"
+   ]
+  ],
+  [
+   "jaja",
+   15,
+   [
+    "hr"
+   ],
+   [
+    "jaja dziumbai atmus tyventi",
+    "anete kongalvine jaja heigsi"
+   ]
+  ],
+  [
+   "nima",
+   15,
+   [
+    "zh"
+   ],
+   [
+    "asdikandiniai nima tvyruras",
+    "izio begersiete irsi nima"
+   ]
+  ]
+ ],
+ "samples": [
+  "slingu dvija hola fokyleti",
+  "prija imtusi sesiam slartos",
+  "fenoms gysuli limomis nagu",
+  "dzau muikurus suomis japojo",
+  "alestrimu vybastovos mita",
+  "ceismascete itma elikieju",
+  "internaviniai miridino ekio",
+  "horvojama lova metiko tris",
+  "saja muinzius narsciuvos",
+  "chau randoje karinti abityje",
+  "milame iliumblas auku nemo",
+  "imbesuciau sasta isivilpimas"
+ ],
+ "seconds": 10.2,
+ "languages": [
+  "lt"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

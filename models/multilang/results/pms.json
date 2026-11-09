@@ -1,0 +1,229 @@
+{
+ "name": "pms",
+ "corpus_words": 13757,
+ "relaxed_rows": 121,
+ "relaxed_examples": [
+  "qu",
+  "mu",
+  "bu",
+  "fu",
+  "jo",
+  "ka",
+  "pu",
+  "fl",
+  "ju",
+  "wi",
+  "th",
+  "gh"
+ ],
+ "segmented_words": 9424,
+ "skipped_words": 4333,
+ "middle_attested_fraction": 0.15824381510416666,
+ "end32_attested_fraction": 0.18477376302083334,
+ "end16_attested_fraction": 0.3297526041666667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.0,
+ "max_chars": 39,
+ "consonant_runs_pct": 7.113,
+ "vowel_runs_pct": 1.11,
+ "english_words_pct": 2.365,
+ "own_words_pct": 14.842,
+ "offensive_whole_pct": 2.575,
+ "offensive_whole_english_list_pct": 0.12,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.09,
+ "offensive_severe_en_pct": 0.205,
+ "offensive_inside5_pct": 3.385,
+ "offensive_inside4_pct": 23.8,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "tissi",
+   37,
+   [
+    "fi"
+   ],
+   [
+    "murtissinorie dificaj croasa",
+    "tission aultippi encela sfta"
+   ]
+  ],
+  [
+   "pinto",
+   28,
+   [
+    "pt"
+   ],
+   [
+    "mata piaspinto crecich fose",
+    "fonuta nenspinto nuna deon"
+   ]
+  ],
+  [
+   "samen",
+   23,
+   [
+    "de"
+   ],
+   [
+    "fisissiorgista wirtre passament",
+    "fansament genteira senteuva"
+   ]
+  ],
+  [
+   "asal",
+   21,
+   [
+    "gd"
+   ],
+   [
+    "asal patimbassion onta etabre",
+    "buliforurion giumecica asal"
+   ]
+  ],
+  [
+   "rima",
+   20,
+   [
+    "la"
+   ],
+   [
+    "rima vnna dala fambesirmie",
+    "asiemore esemauturo rima"
+   ]
+  ],
+  [
+   "chich",
+   19,
+   [
+    "vi"
+   ],
+   [
+    "guascrigel sgal varchich",
+    "teista unegiumette barchich"
+   ]
+  ],
+  [
+   "gasti",
+   18,
+   [
+    "hi"
+   ],
+   [
+    "vnfigastija fotich enia mela",
+    "gastion eniman smidipadura"
+   ]
+  ],
+  [
+   "chati",
+   18,
+   [
+    "te"
+   ],
+   [
+    "chatiri qugial terdeguission",
+    "evestosa gassa chative promaj"
+   ]
+  ],
+  [
+   "pisa",
+   18,
+   [
+    "ro"
+   ],
+   [
+    "leteturorda euri pisa grica",
+    "rudiment lermich pisa fatinta"
+   ]
+  ],
+  [
+   "chie",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "chie gamiche protta probij",
+    "ciclifidio chie fencabin"
+   ]
+  ],
+  [
+   "olla",
+   17,
+   [
+    "sv"
+   ],
+   [
+    "afie thesarassion olla otenne",
+    "sempole apel biligios olla"
+   ]
+  ],
+  [
+   "bola",
+   17,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "thsial fose bola hambagnava",
+    "smaillivro nascocos bola"
+   ]
+  ],
+  [
+   "fela",
+   16,
+   [
+    "cs"
+   ],
+   [
+    "cule andense fela corpapaj",
+    "aghion fela nurtie imache"
+   ]
+  ],
+  [
+   "sisa",
+   16,
+   [
+    "hr"
+   ],
+   [
+    "sisa cortavo varcaban full",
+    "elocomesse onal sisa ceccaj"
+   ]
+  ],
+  [
+   "site",
+   16,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "ford brogilteur site edent",
+    "bear site umearcocia nera"
+   ]
+  ]
+ ],
+ "samples": [
+  "gongela juich afal emodesca",
+  "mana edoare tragara gonfet",
+  "ghignita custive mirmava gesse",
+  "crava dreducio anassion natiss",
+  "cernigor tiololtuia fita",
+  "eccoscocent avis gurnadej",
+  "frangencista ficomita puse",
+  "afessiatris tual bandse gral",
+  "potr dregendse genidiroma",
+  "opla inseno distria sghiaj",
+  "fiesie platiaro nono cane",
+  "edivacor pone predolamon"
+ ],
+ "seconds": 9.0,
+ "languages": [
+  "pms"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

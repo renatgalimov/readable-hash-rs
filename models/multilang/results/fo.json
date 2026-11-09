@@ -1,0 +1,225 @@
+{
+ "name": "fo",
+ "corpus_words": 80000,
+ "relaxed_rows": 10,
+ "relaxed_examples": [
+  "fy",
+  "sj",
+  "fj",
+  "hj",
+  "gj",
+  "olj",
+  "gj",
+  "kj",
+  "ggj",
+  "lj"
+ ],
+ "segmented_words": 53726,
+ "skipped_words": 26274,
+ "middle_attested_fraction": 0.5913492838541666,
+ "end32_attested_fraction": 0.3415120442708333,
+ "end16_attested_fraction": 0.5789388020833334,
+ "begin_attested": 128,
+ "chars": 28.11,
+ "max_chars": 42,
+ "consonant_runs_pct": 15.428,
+ "vowel_runs_pct": 0.561,
+ "english_words_pct": 1.236,
+ "own_words_pct": 21.806,
+ "offensive_whole_pct": 1.655,
+ "offensive_whole_english_list_pct": 0.085,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.93,
+ "offensive_severe_en_pct": 0.04,
+ "offensive_inside5_pct": 3.075,
+ "offensive_inside4_pct": 19.995,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "randi",
+   129,
+   [
+    "hi"
+   ],
+   [
+    "guan jollerandi lytstu eftirsum",
+    "krandi aserad dota frelleikarnir"
+   ]
+  ],
+  [
+   "manda",
+   23,
+   [
+    "ru"
+   ],
+   [
+    "propar spast akis homandaligu",
+    "armandainum fyrigilsan svifan"
+   ]
+  ],
+  [
+   "sitt",
+   21,
+   [
+    "et"
+   ],
+   [
+    "sitt avokupir vold kuskini",
+    "bygsagnolti farvikini sitt"
+   ]
+  ],
+  [
+   "dian",
+   19,
+   [
+    "zh"
+   ],
+   [
+    "dian tunt vorrod pelanala",
+    "dian ruanvegunum cartis vetid"
+   ]
+  ],
+  [
+   "mona",
+   17,
+   [
+    "it"
+   ],
+   [
+    "matislan grugna mona begin",
+    "garddagar mona bakinsparingin"
+   ]
+  ],
+  [
+   "hani",
+   17,
+   [
+    "is"
+   ],
+   [
+    "slingur hani dorluni nyvarodi",
+    "hani dyritovninum tygum eindum"
+   ]
+  ],
+  [
+   "rong",
+   17,
+   [
+    "th"
+   ],
+   [
+    "rong fyrifael lokum hvaventi",
+    "rong uttoktoka teur stolurin"
+   ]
+  ],
+  [
+   "muda",
+   17,
+   [
+    "ru"
+   ],
+   [
+    "muda avredist itrottini veggad",
+    "dyndi muda aelonin nagribal"
+   ]
+  ],
+  [
+   "hora",
+   17,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "dottstovid moskur dult hora",
+    "codur fyriid janeftfelagid hora"
+   ]
+  ],
+  [
+   "anaru",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "godanarunum rullaeruna dravdi",
+    "janarum kota orsatova pauna"
+   ]
+  ],
+  [
+   "niga",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "beast niga einafyrisaliga nigi",
+    "oljufedsgrur niga prisvedur"
+   ]
+  ],
+  [
+   "prik",
+   15,
+   [
+    "nl"
+   ],
+   [
+    "prik einfolbotur soki itrottahini",
+    "prik fumaskum makkavegda"
+   ]
+  ],
+  [
+   "paska",
+   15,
+   [
+    "fi"
+   ],
+   [
+    "slad fyriskiparnir paskarin vissigur",
+    "paskati akstovuni spokutskirnar"
+   ]
+  ],
+  [
+   "nian",
+   15,
+   [
+    "zh"
+   ],
+   [
+    "nian frunum adrammeyda eynar",
+    "lust keta nian liktryretu"
+   ]
+  ],
+  [
+   "kaka",
+   14,
+   [
+    "eu"
+   ],
+   [
+    "avslimka sostalomenum kaka",
+    "diabeida kaka latid tonling"
+   ]
+  ]
+ ],
+ "samples": [
+  "elegni slingin endurinum folkabogast",
+  "forini nordadaum inngjara eluking",
+  "undirstrari eydalog spikad naan",
+  "funa kimiskar utni kveikum",
+  "fyritrognan dortanhatid gran",
+  "akalivaksen riid svinnsagt",
+  "sjuktasena gremordur mudum",
+  "endurtitradi niur havninum bunum",
+  "skvi kimmeddir nattosomdur",
+  "itrottunum krongu liknina adurnti",
+  "gramin hjunmolar prum kain",
+  "nordbungnan skast vaskravinid"
+ ],
+ "seconds": 9.5,
+ "languages": [
+  "fo"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,232 @@
+{
+ "name": "ca",
+ "corpus_words": 80000,
+ "relaxed_rows": 51,
+ "relaxed_examples": [
+  "eq",
+  "vu",
+  "aq",
+  "mc",
+  "sk",
+  "ny",
+  "zo",
+  "kh",
+  "ji",
+  "ox",
+  "az",
+  "ly"
+ ],
+ "segmented_words": 57091,
+ "skipped_words": 22909,
+ "middle_attested_fraction": 0.3873291015625,
+ "end32_attested_fraction": 0.4430338541666667,
+ "end16_attested_fraction": 0.632568359375,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.1,
+ "max_chars": 35,
+ "consonant_runs_pct": 5.802,
+ "vowel_runs_pct": 3.31,
+ "english_words_pct": 2.841,
+ "own_words_pct": 25.384,
+ "offensive_whole_pct": 2.535,
+ "offensive_whole_english_list_pct": 0.02,
+ "offensive_whole_own_list_pct": 0.195,
+ "offensive_whole_major_lists_pct": 1.265,
+ "offensive_severe_en_pct": 0.055,
+ "offensive_inside5_pct": 3.35,
+ "offensive_inside4_pct": 25.66,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "samen",
+   67,
+   [
+    "de"
+   ],
+   [
+    "auscia ajontisos loiossament",
+    "quardo pinsament elon facarem"
+   ]
+  ],
+  [
+   "trique",
+   32,
+   [
+    "fr"
+   ],
+   [
+    "chisco hedoctecten retriques",
+    "ortometriques equasson meat"
+   ]
+  ],
+  [
+   "figa",
+   24,
+   [
+    "it",
+    "ru"
+   ],
+   [
+    "eses aflat retrippesos figa",
+    "prudonstrat vaen ocre figa"
+   ]
+  ],
+  [
+   "dada",
+   23,
+   [
+    "id"
+   ],
+   [
+    "jats dada dannuasiten gaines",
+    "dada vehescament plir olicitat"
+   ]
+  ],
+  [
+   "puto",
+   23,
+   [
+    "pt"
+   ],
+   [
+    "sofiorades puto baco gomella",
+    "puto botena nigellet prar"
+   ]
+  ],
+  [
+   "lits",
+   21,
+   [
+    "et"
+   ],
+   [
+    "plurat fingegant lits fles",
+    "jollollat lits ortiment omacio"
+   ]
+  ],
+  [
+   "puta",
+   18,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "veim chien puta trentramant",
+    "aeis cees tricidrables puta"
+   ]
+  ],
+  [
+   "teta",
+   18,
+   [
+    "es"
+   ],
+   [
+    "afrovaluts teta soses beses",
+    "teta erguts erma lavalosa"
+   ]
+  ],
+  [
+   "apara",
+   18,
+   [
+    "fi"
+   ],
+   [
+    "bricurdes graparara aegement",
+    "lutriu unar rocapara bries"
+   ]
+  ],
+  [
+   "suar",
+   18,
+   [
+    "hi"
+   ],
+   [
+    "suar febronomistes trer heant",
+    "caustriu prava suar vacades"
+   ]
+  ],
+  [
+   "pina",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "pina igelldiant metreu nats",
+    "pina ocem beit fulmolcareu"
+   ]
+  ],
+  [
+   "fava",
+   17,
+   [
+    "it"
+   ],
+   [
+    "fuges nodran opegeren fava",
+    "lera fava bacamplets bans"
+   ]
+  ],
+  [
+   "pisa",
+   17,
+   [
+    "ro"
+   ],
+   [
+    "pisa erupament ofigmeta plica",
+    "pisa nagindra gisicio orri"
+   ]
+  ],
+  [
+   "olla",
+   17,
+   [
+    "sv"
+   ],
+   [
+    "olla obta poblament eqtrando",
+    "lejanars cribats olla airo"
+   ]
+  ],
+  [
+   "anali",
+   16,
+   [
+    "mt"
+   ],
+   [
+    "analitzmaven elitem clia quacio",
+    "coit olstuare analitzem alto"
+   ]
+  ]
+ ],
+ "samples": [
+  "obitada aela xals xitinges",
+  "esada heparen exclides oburin",
+  "erroto avomer apicava mien",
+  "nein bugitaran acades pixaria",
+  "ligetrir autripitant anes",
+  "losacasema elava hotegrem",
+  "beneixegides anormsora goar",
+  "xavisores opades patessis veia",
+  "afarien burnecti mitibadits",
+  "evia vicenia procacio joanica",
+  "anarare duplaira atll reis",
+  "hestegria afara demanovaiar"
+ ],
+ "seconds": 10.5,
+ "languages": [
+  "ca"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

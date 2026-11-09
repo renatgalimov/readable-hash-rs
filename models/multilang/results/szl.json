@@ -1,0 +1,286 @@
+{
+ "name": "szl",
+ "corpus_words": 16092,
+ "relaxed_rows": 17,
+ "relaxed_examples": [
+  "by",
+  "gy",
+  "ws",
+  "py",
+  "pj",
+  "uz",
+  "iu",
+  "zu",
+  "oi",
+  "diu",
+  "if",
+  "js"
+ ],
+ "segmented_words": 9625,
+ "skipped_words": 6467,
+ "middle_attested_fraction": 0.3064778645833333,
+ "end32_attested_fraction": 0.17545572916666666,
+ "end16_attested_fraction": 0.3128255208333333,
+ "begin_attested": 128,
+ "chars": 28.45,
+ "max_chars": 42,
+ "consonant_runs_pct": 7.546,
+ "vowel_runs_pct": 6.176,
+ "english_words_pct": 0.799,
+ "own_words_pct": 5.344,
+ "offensive_whole_pct": 1.65,
+ "offensive_whole_english_list_pct": 0.265,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.86,
+ "offensive_severe_en_pct": 0.13,
+ "offensive_inside5_pct": 2.6,
+ "offensive_inside4_pct": 16.475,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "orina",
+   32,
+   [
+    "es"
+   ],
+   [
+    "orina flajster beciana niaceae",
+    "coerdeol gracinosporina lusa"
+   ]
+  ],
+  [
+   "ciospo",
+   21,
+   [
+    "it"
+   ],
+   [
+    "wsii amus coryneciospora mycous",
+    "lupiciospora loella mjapynasta"
+   ]
+  ],
+  [
+   "picar",
+   19,
+   [
+    "ca",
+    "gl"
+   ],
+   [
+    "inia picarla muroina cantomyces",
+    "picarmiyrse pech pethadle"
+   ]
+  ],
+  [
+   "koli",
+   19,
+   [
+    "kn"
+   ],
+   [
+    "gaje reopsis koli fizophensata",
+    "diedlice subium sprago koli"
+   ]
+  ],
+  [
+   "coon",
+   18,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "gd",
+    "gl",
+    "id",
+    "is",
+    "la",
+    "lv",
+    "mn",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pt",
+    "sl",
+    "sv",
+    "vi"
+   ],
+   [
+    "rene salicidamensis diny coon",
+    "hiecolulella coon opra cius"
+   ]
+  ],
+  [
+   "fela",
+   18,
+   [
+    "cs"
+   ],
+   [
+    "atotubuw wonduw bospora fela",
+    "zosa enium americzecta fela"
+   ]
+  ],
+  [
+   "mesa",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "anus loratanella mesa szytano",
+    "chinata trogamala uoje mesa"
+   ]
+  ],
+  [
+   "waria",
+   15,
+   [
+    "id"
+   ],
+   [
+    "piopsis lula longensis wariarea",
+    "mealasym roku swaria lialospora"
+   ]
+  ],
+  [
+   "spac",
+   14,
+   [
+    "bg",
+    "ca",
+    "cy",
+    "da",
+    "en",
+    "et",
+    "eu",
+    "fi",
+    "gl",
+    "hi",
+    "hr",
+    "hu",
+    "hy",
+    "it",
+    "ja",
+    "kn",
+    "lv",
+    "mk",
+    "mn",
+    "mr",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sv",
+    "te",
+    "th",
+    "tr",
+    "uk",
+    "uz",
+    "vi"
+   ],
+   [
+    "szis spac meata dzelodliopsis",
+    "crym spac tumallapea scensis"
+   ]
+  ],
+  [
+   "flens",
+   14,
+   [
+    "id",
+    "nl"
+   ],
+   [
+    "scae flensis simbiella jerethis",
+    "reata flensis comatum trocenum"
+   ]
+  ],
+  [
+   "rota",
+   14,
+   [
+    "ja"
+   ],
+   [
+    "rota krillata ruzygo jaroina",
+    "rota zoncerow napintossa"
+   ]
+  ],
+  [
+   "rima",
+   13,
+   [
+    "la"
+   ],
+   [
+    "atotum didymaceae rima raina",
+    "pucyma nadano gorospora rima"
+   ]
+  ],
+  [
+   "muca",
+   13,
+   [
+    "lv",
+    "sl"
+   ],
+   [
+    "chioscoides muca mycoletogium",
+    "kropsis muca fiscenata oponomyces"
+   ]
+  ],
+  [
+   "hane",
+   13,
+   [
+    "da"
+   ],
+   [
+    "rara hane cach phecastrema",
+    "haus jeczaullula hane caella"
+   ]
+  ],
+  [
+   "cach",
+   13,
+   [
+    "cy"
+   ],
+   [
+    "rara hane cach phecastrema",
+    "cach wyctis znylla bunctum"
+   ]
+  ]
+ ],
+ "samples": [
+  "loloki jerum wjus verthracella",
+  "spje plutomyces ancyje losien",
+  "mycoporym ceocnym amecis meki",
+  "heomyces genctopsis stia szyrol",
+  "raceasum siodephalella auta",
+  "durademitus fraria climbosci",
+  "montracassum auogilbe sodia",
+  "wjywilus fach depadia puny",
+  "inaria gerpipan medinumbum",
+  "skii leving laurina znolki",
+  "aucois opoliowy uoje dium",
+  "ploganeae inne caricifynia"
+ ],
+ "seconds": 8.5,
+ "languages": [
+  "szl"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

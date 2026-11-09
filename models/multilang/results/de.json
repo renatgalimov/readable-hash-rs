@@ -1,0 +1,274 @@
+{
+ "name": "de",
+ "corpus_words": 80000,
+ "relaxed_rows": 41,
+ "relaxed_examples": [
+  "qu",
+  "ex",
+  "mc",
+  "hy",
+  "my",
+  "ji",
+  "ly",
+  "av",
+  "ty",
+  "yu",
+  "cy",
+  "tw"
+ ],
+ "segmented_words": 51373,
+ "skipped_words": 28627,
+ "middle_attested_fraction": 0.5546875,
+ "end32_attested_fraction": 0.3313802083333333,
+ "end16_attested_fraction": 0.557373046875,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.88,
+ "max_chars": 35,
+ "consonant_runs_pct": 22.75,
+ "vowel_runs_pct": 1.823,
+ "english_words_pct": 2.648,
+ "own_words_pct": 24.144,
+ "offensive_whole_pct": 2.94,
+ "offensive_whole_english_list_pct": 0.61,
+ "offensive_whole_own_list_pct": 0.585,
+ "offensive_whole_major_lists_pct": 1.49,
+ "offensive_severe_en_pct": 0.115,
+ "offensive_inside5_pct": 5.605,
+ "offensive_inside4_pct": 19.575,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "ische",
+   425,
+   [
+    "de"
+   ],
+   [
+    "chorungen goon puschen oracemische",
+    "dillor pflige garangebische"
+   ]
+  ],
+  [
+   "arsch",
+   48,
+   [
+    "de"
+   ],
+   [
+    "luzelich samaiketieren guarsch",
+    "zuvermian keimarsch gimacht"
+   ]
+  ],
+  [
+   "chich",
+   34,
+   [
+    "vi"
+   ],
+   [
+    "pernagschael vine sagenschicht",
+    "puma bridbaschicht ehen done"
+   ]
+  ],
+  [
+   "chert",
+   34,
+   [
+    "ru"
+   ],
+   [
+    "pateladen sichertes dankmara",
+    "ault gieslurbag glorchert"
+   ]
+  ],
+  [
+   "bits",
+   23,
+   [
+    "mr"
+   ],
+   [
+    "kanobusse bits lebt zistie",
+    "bits buschon shanspet aues"
+   ]
+  ],
+  [
+   "cait",
+   23,
+   [
+    "gd"
+   ],
+   [
+    "bigen thinarren rudels cait",
+    "mogewien cait jost emigiert"
+   ]
+  ],
+  [
+   "niger",
+   22,
+   [
+    "hy"
+   ],
+   [
+    "nieiheit jorirrer brieuniger",
+    "vietafig vibrel grapuniger"
+   ]
+  ],
+  [
+   "sung",
+   19,
+   [
+    "vi"
+   ],
+   [
+    "mothases basimintiert sung",
+    "riff ravelane seitat sung"
+   ]
+  ],
+  [
+   "wang",
+   19,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "gd",
+    "gl",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "ko",
+    "la",
+    "lt",
+    "lv",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "zu"
+   ],
+   [
+    "ehsausieren wang ubsen lumiert",
+    "wang soder wurn impunktiker"
+   ]
+  ],
+  [
+   "pits",
+   19,
+   [
+    "ca"
+   ],
+   [
+    "niagodfen pits chatschwatt",
+    "glimmiltene tiin pits teel"
+   ]
+  ],
+  [
+   "kamt",
+   19,
+   [
+    "mr"
+   ],
+   [
+    "kneiwild heultifire kamt",
+    "sugies teamousse kamt aues"
+   ]
+  ],
+  [
+   "bite",
+   18,
+   [
+    "fr"
+   ],
+   [
+    "gost bite lennlestie zach",
+    "zusautter bite solord alen"
+   ]
+  ],
+  [
+   "prick",
+   18,
+   [
+    "cy",
+    "en",
+    "eu",
+    "is",
+    "lt",
+    "mn",
+    "mt",
+    "sl"
+   ],
+   [
+    "giet knechtzung shrimprick",
+    "quung tigrourmung prickzuon"
+   ]
+  ],
+  [
+   "ases",
+   18,
+   [
+    "cy"
+   ],
+   [
+    "amieler rialkuin ases ubung",
+    "kugen potteikaut armer ases"
+   ]
+  ],
+  [
+   "fotzen",
+   18,
+   [
+    "de"
+   ],
+   [
+    "ehemung funfotzen flinmalen",
+    "jetikumaht wulle brei fotzen"
+   ]
+  ]
+ ],
+ "samples": [
+  "chorungen goon puschen oracemische",
+  "unel boshang werkon chloes",
+  "zaratet gainger fennig brisch",
+  "klon doinalter belt blacksen",
+  "algirsht gleadianer frum",
+  "zwabitkanen hues noblocin",
+  "ruckgatins frobitet zind",
+  "puttaglich nice hallig tron",
+  "reng doliallen bremasswegen",
+  "lumen hierem aufrung assoin",
+  "frachterin tierprum tand veer",
+  "boombechen reds sciegerttchen"
+ ],
+ "seconds": 10.6,
+ "languages": [
+  "de"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

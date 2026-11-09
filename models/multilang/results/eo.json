@@ -1,0 +1,217 @@
+{
+ "name": "eo",
+ "corpus_words": 80000,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "uj"
+ ],
+ "segmented_words": 60876,
+ "skipped_words": 19124,
+ "middle_attested_fraction": 0.5038655598958334,
+ "end32_attested_fraction": 0.43212890625,
+ "end16_attested_fraction": 0.6685384114583334,
+ "begin_attested": 128,
+ "chars": 26.86,
+ "max_chars": 35,
+ "consonant_runs_pct": 6.048,
+ "vowel_runs_pct": 0.561,
+ "english_words_pct": 1.396,
+ "own_words_pct": 26.185,
+ "offensive_whole_pct": 2.47,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.16,
+ "offensive_whole_major_lists_pct": 1.055,
+ "offensive_severe_en_pct": 0.02,
+ "offensive_inside5_pct": 2.43,
+ "offensive_inside4_pct": 19.13,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "kanto",
+   38,
+   [
+    "ja"
+   ],
+   [
+    "uralejo marlentkanto reginta",
+    "orminvespeas milo akanto adoj"
+   ]
+  ],
+  [
+   "skata",
+   25,
+   [
+    "el"
+   ],
+   [
+    "espigas acus peka ripelmskata",
+    "blubskata givilo mansigunkto"
+   ]
+  ],
+  [
+   "molo",
+   24,
+   [
+    "fi"
+   ],
+   [
+    "ingrupita molo stro obolis",
+    "fundo volvacis molo kupece"
+   ]
+  ],
+  [
+   "asno",
+   24,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "emlo grimakemojn maleo asno",
+    "amoj asno niagaj forjekuris"
+   ]
+  ],
+  [
+   "manko",
+   24,
+   [
+    "ja"
+   ],
+   [
+    "sota bolo manko emrizirata",
+    "areto hindos pregaredo manko"
+   ]
+  ],
+  [
+   "anita",
+   23,
+   [
+    "nl"
+   ],
+   [
+    "janita uralos muldulo progo",
+    "acan deliceligos sita anita"
+   ]
+  ],
+  [
+   "bobo",
+   23,
+   [
+    "fil"
+   ],
+   [
+    "akis bobo trigis ablipitumo",
+    "agvena seras bobo tondolema"
+   ]
+  ],
+  [
+   "pisa",
+   22,
+   [
+    "ro"
+   ],
+   [
+    "urolomesaso espelcero pisa",
+    "jaktado pisa lugalligas budi"
+   ]
+  ],
+  [
+   "kakas",
+   20,
+   [
+    "hu"
+   ],
+   [
+    "arakatakanta loas loto kakas",
+    "petoloj atkamenoj kakas jaus"
+   ]
+  ],
+  [
+   "pele",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "pele forestporten vogo senigis",
+    "lidistaboj duaj pele ekis"
+   ]
+  ],
+  [
+   "vana",
+   18,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "eneo elde vana afemkaniero",
+    "tojarces amrejo nino vana"
+   ]
+  ],
+  [
+   "mater",
+   17,
+   [
+    "sl"
+   ],
+   [
+    "rusuto urumatera goigis pasa",
+    "adro lumateras roras espurno"
+   ]
+  ],
+  [
+   "krado",
+   17,
+   [
+    "th"
+   ],
+   [
+    "preso flikradon deleciorejo",
+    "ankrado etmizo hepansegos"
+   ]
+  ],
+  [
+   "flis",
+   16,
+   [
+    "da"
+   ],
+   [
+    "marso bovanton flis adiaulita",
+    "fioj flis figuarjare cine"
+   ]
+  ],
+  [
+   "dian",
+   16,
+   [
+    "zh"
+   ],
+   [
+    "pistacoj dian emfaran misiloj",
+    "mangoritme raso dian soifro"
+   ]
+  ]
+ ],
+ "samples": [
+  "plidigas blia eteco acalbolo",
+  "elano marboradon aktuis ploligas",
+  "afgacio geamita lanteroj leis",
+  "noan kvimpago neado skurbo",
+  "lunakeca flolacikisto cias",
+  "hiruemegigas bieco buklerigu",
+  "gardafleza ciudmono gligu",
+  "etnekono tutu formume preto",
+  "ekte kvaustaj lekspindita",
+  "kiis origitas kauzaj edifita",
+  "cistra autotuas mita rean",
+  "mararpusto ekta degelilega"
+ ],
+ "seconds": 8.7,
+ "languages": [
+  "eo"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

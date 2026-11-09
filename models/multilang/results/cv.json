@@ -1,0 +1,233 @@
+{
+ "name": "cv",
+ "corpus_words": 35243,
+ "relaxed_rows": 58,
+ "relaxed_examples": [
+  "dz",
+  "af",
+  "ly",
+  "sv",
+  "fl",
+  "ue",
+  "ef",
+  "ja",
+  "fu",
+  "kv",
+  "of",
+  "by"
+ ],
+ "segmented_words": 24213,
+ "skipped_words": 11030,
+ "middle_attested_fraction": 0.2918294270833333,
+ "end32_attested_fraction": 0.2689615885416667,
+ "end16_attested_fraction": 0.45703125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.85,
+ "max_chars": 40,
+ "consonant_runs_pct": 20.753,
+ "vowel_runs_pct": 3.171,
+ "english_words_pct": 1.088,
+ "own_words_pct": 13.741,
+ "offensive_whole_pct": 2.23,
+ "offensive_whole_english_list_pct": 0.125,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.165,
+ "offensive_severe_en_pct": 0.11,
+ "offensive_inside5_pct": 3.065,
+ "offensive_inside4_pct": 22.93,
+ "offensive_across_words_pct": 0.025,
+ "top_hits": [
+  [
+   "seni",
+   25,
+   [
+    "it"
+   ],
+   [
+    "deta shulakhalakan fime seni",
+    "seni yulava spuksem astille"
+   ]
+  ],
+  [
+   "pupa",
+   23,
+   [
+    "uz"
+   ],
+   [
+    "polkomskiy atpe pynavne pupa",
+    "pupa utne elkich citanyasa"
+   ]
+  ],
+  [
+   "perse",
+   23,
+   [
+    "et",
+    "fi"
+   ],
+   [
+    "orra naurriren uksine tepersen",
+    "toni urine supersem darossinche"
+   ]
+  ],
+  [
+   "fiki",
+   20,
+   [
+    "eo"
+   ],
+   [
+    "stepteya kurodachisene fiki",
+    "issa getrsene aksenayenchi fiki"
+   ]
+  ],
+  [
+   "folle",
+   20,
+   [
+    "fr"
+   ],
+   [
+    "enstentliepe dostniksem folle",
+    "fralla folle adevle setkizna"
+   ]
+  ],
+  [
+   "pupe",
+   18,
+   [
+    "sq"
+   ],
+   [
+    "plipe oporiori pupe letnekh",
+    "varnik fani pupe kasaltipe"
+   ]
+  ],
+  [
+   "meni",
+   17,
+   [
+    "tr"
+   ],
+   [
+    "neseklolme meni tsimshki",
+    "gasem meni cylle uceltsharan"
+   ]
+  ],
+  [
+   "chie",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "chie santri frelekere lana",
+    "rontsenunsar plalla dora chie"
+   ]
+  ],
+  [
+   "asna",
+   17,
+   [
+    "is"
+   ],
+   [
+    "asna obsenche shutay racenrakh",
+    "etrleshelle klipe sertsen asna"
+   ]
+  ],
+  [
+   "elle",
+   15,
+   [
+    "lv"
+   ],
+   [
+    "suntuchura gepe elle reri",
+    "ekkere elle gazima vorlalla"
+   ]
+  ],
+  [
+   "chlen",
+   15,
+   [
+    "uk"
+   ],
+   [
+    "kier salichlenne ytle sussem",
+    "acesem chlenerenpa farstekali"
+   ]
+  ],
+  [
+   "sipa",
+   15,
+   [
+    "kn",
+    "ml",
+    "mr"
+   ],
+   [
+    "systivet molinikster sipa",
+    "atsien klacce neltteli sipa"
+   ]
+  ],
+  [
+   "kusse",
+   15,
+   [
+    "da"
+   ],
+   [
+    "adomatra garkan menche kussem",
+    "advinnet kussem kipa adeven"
+   ]
+  ],
+  [
+   "nian",
+   14,
+   [
+    "zh"
+   ],
+   [
+    "cinnasem nian vuntri stsenet",
+    "fere obaviype nian sentash"
+   ]
+  ],
+  [
+   "pene",
+   14,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "ytlashtepe nant surkhi pene",
+    "nakalernie kenche file pene"
+   ]
+  ]
+ ],
+ "samples": [
+  "urusar grakan adne zarmayan",
+  "tasem orinsen caltsem uremara",
+  "evravne nivarsem killasem tipa",
+  "atan upayonov paca illinche",
+  "vunumile ucilalkhar pole",
+  "tsirvelora ekle ligalelle",
+  "dialcituala porutecce beki",
+  "adskitre rora vaskran vysa",
+  "kutsem uproslisem tirelodare",
+  "eshne citiri saltta eplensem",
+  "povsepe apatkhenchen uyri kari",
+  "oramlema kusene chamentskie"
+ ],
+ "seconds": 10.0,
+ "languages": [
+  "cv"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

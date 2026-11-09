@@ -1,0 +1,231 @@
+{
+ "name": "myv",
+ "corpus_words": 6671,
+ "relaxed_rows": 320,
+ "relaxed_examples": [
+  "ku",
+  "su",
+  "sy",
+  "pi",
+  "ki",
+  "li",
+  "ez",
+  "pu",
+  "tu",
+  "yu",
+  "mi",
+  "si"
+ ],
+ "segmented_words": 4531,
+ "skipped_words": 2140,
+ "middle_attested_fraction": 0.0791015625,
+ "end32_attested_fraction": 0.1007080078125,
+ "end16_attested_fraction": 0.1943359375,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.69,
+ "max_chars": 37,
+ "consonant_runs_pct": 30.597,
+ "vowel_runs_pct": 4.609,
+ "english_words_pct": 0.554,
+ "own_words_pct": 7.877,
+ "offensive_whole_pct": 1.85,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.03,
+ "offensive_severe_en_pct": 0.03,
+ "offensive_inside5_pct": 1.76,
+ "offensive_inside4_pct": 14.43,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "kuso",
+   26,
+   [
+    "ja"
+   ],
+   [
+    "idalmo avanomo kuso voynge",
+    "svtalmms kuso ivchat nuya"
+   ]
+  ],
+  [
+   "pede",
+   24,
+   [
+    "fr"
+   ],
+   [
+    "tonatieraso pede meya aprana",
+    "rums khoditetne pede vishomo"
+   ]
+  ],
+  [
+   "jama",
+   23,
+   [
+    "et"
+   ],
+   [
+    "ulka doretrashka ozndems jama",
+    "yungriat jama emamo ekeriy"
+   ]
+  ],
+  [
+   "mama",
+   21,
+   [
+    "pt"
+   ],
+   [
+    "sost urkoshteshka mama coargo",
+    "akaleshuvnze mama ruhordashka"
+   ]
+  ],
+  [
+   "chich",
+   18,
+   [
+    "vi"
+   ],
+   [
+    "chichorichks tonatne nuhokova",
+    "zheshichichtne kotne buva trdo"
+   ]
+  ],
+  [
+   "vlva",
+   18,
+   [
+    "mr"
+   ],
+   [
+    "ishordat vlva onov yureste",
+    "oyat vlva vedendodase yushka"
+   ]
+  ],
+  [
+   "krma",
+   17,
+   [
+    "hr"
+   ],
+   [
+    "teritne dichaldo unsto krma",
+    "ekse krma marityargo fishka"
+   ]
+  ],
+  [
+   "mazo",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "evtoloems tina mazo kindon",
+    "mazo unnekoyansto anov tito"
+   ]
+  ],
+  [
+   "mona",
+   16,
+   [
+    "it"
+   ],
+   [
+    "svendo smalat sienel mona",
+    "isngrtsyashka sturkady mona"
+   ]
+  ],
+  [
+   "niga",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "niga znivpavtomo antize tiri",
+    "osodems niga ashnavkstne mado"
+   ]
+  ],
+  [
+   "kaks",
+   15,
+   [
+    "kn",
+    "te"
+   ],
+   [
+    "veems olelomat surtiso kaks",
+    "chado jongralmms vena kaks"
+   ]
+  ],
+  [
+   "pisi",
+   15,
+   [
+    "hu"
+   ],
+   [
+    "pisi saevi netsya alivhotkak",
+    "asonzo pisi luraso buavtsiso"
+   ]
+  ],
+  [
+   "gamo",
+   14,
+   [
+    "el"
+   ],
+   [
+    "gamo etat syalov orniloks",
+    "ivtosto gamo jatne pilavsya"
+   ]
+  ],
+  [
+   "teta",
+   13,
+   [
+    "es"
+   ],
+   [
+    "teta seksanamo bannms mema",
+    "nuso povo kistsyadyamo teta"
+   ]
+  ],
+  [
+   "pene",
+   13,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "nuks pene vema atophondoks",
+    "peke adynaledest pene vena"
+   ]
+  ]
+ ],
+ "samples": [
+  "eshuat adste ivms dazytaks",
+  "tenek elelyamo kevtaka esshevtomo",
+  "znolov oyenskoy usstnms stne",
+  "bara azrevoma vatne nilaka",
+  "nuertetneva trrilavtoshka prya",
+  "vovolodeeme bovi lupaltva",
+  "oznoleliams pramashteks idka",
+  "ivtsodeme udms ligank neyat",
+  "erna aznsreme stroliniyado",
+  "akaso avazoks marteks ejchay",
+  "pretsaso cudekodo noso chey",
+  "elyuvonoy ersto vetyrdeshtov"
+ ],
+ "seconds": 9.2,
+ "languages": [
+  "myv"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

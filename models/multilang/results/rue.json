@@ -1,0 +1,249 @@
+{
+ "name": "rue",
+ "corpus_words": 10975,
+ "relaxed_rows": 165,
+ "relaxed_examples": [
+  "fa",
+  "vs",
+  "fo",
+  "du",
+  "pu",
+  "gu",
+  "ki",
+  "uc",
+  "ze",
+  "ly",
+  "by",
+  "fr"
+ ],
+ "segmented_words": 7616,
+ "skipped_words": 3359,
+ "middle_attested_fraction": 0.13753255208333334,
+ "end32_attested_fraction": 0.15669759114583334,
+ "end16_attested_fraction": 0.288330078125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.7,
+ "max_chars": 37,
+ "consonant_runs_pct": 14.815,
+ "vowel_runs_pct": 3.772,
+ "english_words_pct": 0.193,
+ "own_words_pct": 7.995,
+ "offensive_whole_pct": 1.48,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.605,
+ "offensive_severe_en_pct": 0.045,
+ "offensive_inside5_pct": 3.15,
+ "offensive_inside4_pct": 18.975,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "nachi",
+   26,
+   [
+    "ja",
+    "ko"
+   ],
+   [
+    "modnachiti vlialakh umeritsyu",
+    "unachiti tyurkh glyy rybuskogo"
+   ]
+  ],
+  [
+   "chali",
+   26,
+   [
+    "el"
+   ],
+   [
+    "nana istyatochali oznamarykh",
+    "vyty litsne bochali supisti"
+   ]
+  ],
+  [
+   "natsi",
+   25,
+   [
+    "fi",
+    "mk"
+   ],
+   [
+    "otikykh svynatsinku frvini",
+    "etasnym ekstotsi demonatsiny"
+   ]
+  ],
+  [
+   "bola",
+   24,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "zano khovanyy povnobolka bola",
+    "chupoponami isne gusky bola"
+   ]
+  ],
+  [
+   "chlen",
+   23,
+   [
+    "uk"
+   ],
+   [
+    "kredorta chlenshelyami urno",
+    "bameska anchlenarokh znogrom"
+   ]
+  ],
+  [
+   "gotu",
+   19,
+   [
+    "tr"
+   ],
+   [
+    "yavy brisiselena gotu mame",
+    "daysky svikovnok kiny gotu"
+   ]
+  ],
+  [
+   "mater",
+   18,
+   [
+    "sl"
+   ],
+   [
+    "matergantana istorii isediya",
+    "matervodzhenya unazykky tryy"
+   ]
+  ],
+  [
+   "zhene",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "duky puledodzhene boky pila",
+    "zrna vykhodordzhene temu kuta"
+   ]
+  ],
+  [
+   "muna",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "apiv smugdarogy muna buky",
+    "dinu ukuberianka muna movy"
+   ]
+  ],
+  [
+   "fiku",
+   17,
+   [
+    "eo"
+   ],
+   [
+    "fuartoda fiku stym vliteti",
+    "siysesenyy fiku lisyny lyiv"
+   ]
+  ],
+  [
+   "vagy",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "vagy kloditi detvav byrodu",
+    "bakh vagy dnentonasom nory"
+   ]
+  ],
+  [
+   "shits",
+   17,
+   [
+    "cs",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "gd",
+    "lt",
+    "lv",
+    "ml",
+    "mr",
+    "mt",
+    "sq",
+    "sv",
+    "th",
+    "uk",
+    "uz",
+    "zu"
+   ],
+   [
+    "klali orshitsyami znya vnichno",
+    "tashitsidkom reta smatortykh"
+   ]
+  ],
+  [
+   "mocha",
+   16,
+   [
+    "mk",
+    "uk"
+   ],
+   [
+    "tsotsekh mochaku oradresi",
+    "dinu inkustyriv mochanu vlena"
+   ]
+  ],
+  [
+   "orina",
+   15,
+   [
+    "es"
+   ],
+   [
+    "zmentom tortimovati svikorina",
+    "zrka svena osne orinareksiya"
+   ]
+  ],
+  [
+   "osli",
+   15,
+   [
+    "sl",
+    "uk"
+   ],
+   [
+    "osli prokh foaradetse avne",
+    "otli dernosna podavav osli"
+   ]
+  ]
+ ],
+ "samples": [
+  "puarno kili zbky zrenalnu",
+  "zaku kleykh metate pudavali",
+  "etrilo bultom iniste daka",
+  "orel baklisku nanu okrodu",
+  "tyklologo riteranovnyy liti",
+  "edzhetizom vlala opregaky",
+  "variananie limoteriyu smili",
+  "zbinstom tvav relaya diti",
+  "khlo barmanina davtniskav",
+  "otya demovanyy chisnoy unizhyy",
+  "lislosti lagragakh viku poky",
+  "kloborka khno vykoneredanya"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "rue"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

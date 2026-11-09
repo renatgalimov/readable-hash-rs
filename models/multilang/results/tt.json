@@ -1,0 +1,233 @@
+{
+ "name": "tt",
+ "corpus_words": 80000,
+ "relaxed_rows": 39,
+ "relaxed_examples": [
+  "ec",
+  "uc",
+  "aw",
+  "aq",
+  "ij",
+  "of",
+  "jo",
+  "co",
+  "uq",
+  "dz",
+  "sv",
+  "wa"
+ ],
+ "segmented_words": 55650,
+ "skipped_words": 24350,
+ "middle_attested_fraction": 0.3997802734375,
+ "end32_attested_fraction": 0.3435465494791667,
+ "end16_attested_fraction": 0.5454915364583334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.55,
+ "max_chars": 37,
+ "consonant_runs_pct": 11.301,
+ "vowel_runs_pct": 4.125,
+ "english_words_pct": 0.454,
+ "own_words_pct": 18.276,
+ "offensive_whole_pct": 2.435,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.46,
+ "offensive_severe_en_pct": 0.005,
+ "offensive_inside5_pct": 2.425,
+ "offensive_inside4_pct": 18.375,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "nikla",
+   34,
+   [
+    "mr"
+   ],
+   [
+    "taniklar amlar gauga imishtym",
+    "eshnyp ruda dealar restniklar"
+   ]
+  ],
+  [
+   "tanga",
+   24,
+   [
+    "fil"
+   ],
+   [
+    "irktangach trakttynda filolar",
+    "unylar amniatynnyng gerga kitanga"
+   ]
+  ],
+  [
+   "mocha",
+   24,
+   [
+    "mk",
+    "uk"
+   ],
+   [
+    "elyshuga mocha akhteglar oyka",
+    "karlar mocha grozmetmyk saru"
+   ]
+  ],
+  [
+   "sule",
+   23,
+   [
+    "kn"
+   ],
+   [
+    "bauga erernorga darusiya sule",
+    "ulmiybym sule kryp firdem"
+   ]
+  ],
+  [
+   "linda",
+   23,
+   [
+    "zu"
+   ],
+   [
+    "iyeshebizle kelinda mishlar",
+    "soka onlinda qaluyaneng yaka"
+   ]
+  ],
+  [
+   "amlar",
+   22,
+   [
+    "tr"
+   ],
+   [
+    "taniklar amlar gauga imishtym",
+    "beramlar tatarmi ruep tubash"
+   ]
+  ],
+  [
+   "asna",
+   22,
+   [
+    "is"
+   ],
+   [
+    "mutkym shagyzny asna artyru",
+    "unitsa iseruche asna kemneng"
+   ]
+  ],
+  [
+   "mesa",
+   21,
+   [
+    "pt"
+   ],
+   [
+    "chin mesa ecnyng augyrdaelarneng",
+    "mesa zhnyng ruygregez kichep"
+   ]
+  ],
+  [
+   "faen",
+   19,
+   [
+    "no"
+   ],
+   [
+    "faen fanegallne kary kazny",
+    "yany kholna onulekaga faen"
+   ]
+  ],
+  [
+   "panna",
+   19,
+   [
+    "fi"
+   ],
+   [
+    "lapannar peskanachak ulyp innnan",
+    "siya bisen pannan akkaynygylarga"
+   ]
+  ],
+  [
+   "yoni",
+   19,
+   [
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "te"
+   ],
+   [
+    "roekelmi yoni teme amorlar",
+    "yoni osne ocak larikhanne"
+   ]
+  ],
+  [
+   "figa",
+   19,
+   [
+    "it",
+    "ru"
+   ],
+   [
+    "ukyp figa dollurstrga kuyk",
+    "lirineng siplulap figa osna"
+   ]
+  ],
+  [
+   "mama",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "ezitensker mama ayde nuta",
+    "tyyp oskach artterbez mama"
+   ]
+  ],
+  [
+   "sisa",
+   17,
+   [
+    "hr"
+   ],
+   [
+    "sisa oeldyshasyna larmigin",
+    "koymlanyrga dien jartle sisa"
+   ]
+  ],
+  [
+   "pede",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "tabirny dogaysak atyp pede",
+    "ameluga oligetar ecte pede"
+   ]
+  ]
+ ],
+ "samples": [
+  "agafen unyk gyda gekhnaga",
+  "kuma travnyng soenam agstylar",
+  "ezatlarne melata utuegez uzlarga",
+  "elnyng oetuatyp chnyng polylyk",
+  "firgulynda peresyngandem darga",
+  "ecasshasin dora ustingane",
+  "protalekna dakaebrak dera",
+  "gygyluny aene tuklana esegez",
+  "buer oeniasynnan uzagulegan",
+  "amyn urazennan khokha iyabaga",
+  "dardym ysulleva raga kany",
+  "trgyzyme buany yaklaradira"
+ ],
+ "seconds": 11.0,
+ "languages": [
+  "tt"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

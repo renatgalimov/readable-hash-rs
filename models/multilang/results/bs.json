@@ -1,0 +1,226 @@
+{
+ "name": "bs",
+ "corpus_words": 80000,
+ "relaxed_rows": 6,
+ "relaxed_examples": [
+  "sj",
+  "vj",
+  "vj",
+  "avl",
+  "mj",
+  "sj"
+ ],
+ "segmented_words": 54560,
+ "skipped_words": 25440,
+ "middle_attested_fraction": 0.4007975260416667,
+ "end32_attested_fraction": 0.5028483072916666,
+ "end16_attested_fraction": 0.724365234375,
+ "begin_attested": 128,
+ "chars": 26.14,
+ "max_chars": 33,
+ "consonant_runs_pct": 10.944,
+ "vowel_runs_pct": 0.072,
+ "english_words_pct": 1.011,
+ "own_words_pct": 33.248,
+ "offensive_whole_pct": 3.67,
+ "offensive_whole_english_list_pct": 0.155,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.665,
+ "offensive_severe_en_pct": 0.125,
+ "offensive_inside5_pct": 2.34,
+ "offensive_inside4_pct": 17.595,
+ "offensive_across_words_pct": 0.025,
+ "top_hits": [
+  [
+   "niti",
+   23,
+   [
+    "te"
+   ],
+   [
+    "oblirasane niti denu guci",
+    "viki niti puckskivom lote"
+   ]
+  ],
+  [
+   "kuce",
+   22,
+   [
+    "lv"
+   ],
+   [
+    "sita frajcate ukstva kuce",
+    "domotericu kuce pojavice peskom"
+   ]
+  ],
+  [
+   "muca",
+   21,
+   [
+    "lv",
+    "sl"
+   ],
+   [
+    "odgackog muca maje saobni",
+    "smite obujes muca mejsekrsni"
+   ]
+  ],
+  [
+   "kisa",
+   20,
+   [
+    "is"
+   ],
+   [
+    "nivoanzite kisa uzevazimo",
+    "gasopili nona kisa fazori"
+   ]
+  ],
+  [
+   "sike",
+   20,
+   [
+    "tr"
+   ],
+   [
+    "anja penthaletu prime sike",
+    "dodiskim vjera sike lancey"
+   ]
+  ],
+  [
+   "haji",
+   19,
+   [
+    "en"
+   ],
+   [
+    "tajsas ares haji kastacemo",
+    "skenravi haji zaim kablin"
+   ]
+  ],
+  [
+   "usne",
+   19,
+   [
+    "hr"
+   ],
+   [
+    "lagaoney analarmane usne",
+    "koji ubao upalonacemo usne"
+   ]
+  ],
+  [
+   "hane",
+   19,
+   [
+    "da"
+   ],
+   [
+    "vidoljka spalgeonici hane",
+    "srim trperzna svojim hane"
+   ]
+  ],
+  [
+   "muda",
+   19,
+   [
+    "ru"
+   ],
+   [
+    "voska fordis muda osumstaju",
+    "muda nevaticedam uknu miki"
+   ]
+  ],
+  [
+   "srom",
+   18,
+   [
+    "pl"
+   ],
+   [
+    "ulite srom spju pladetmiti",
+    "srom kockama publon kupeka"
+   ]
+  ],
+  [
+   "muna",
+   18,
+   [
+    "fi"
+   ],
+   [
+    "zviti muna slepucecom fora",
+    "kameanski muna celovu udana"
+   ]
+  ],
+  [
+   "bola",
+   17,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "tajanedecom geli trci bola",
+    "uzeli zvakova bola zacertan"
+   ]
+  ],
+  [
+   "teta",
+   17,
+   [
+    "es"
+   ],
+   [
+    "teta glite cezaustvu moskao",
+    "plica instiku teta snadnjama"
+   ]
+  ],
+  [
+   "suki",
+   17,
+   [
+    "be",
+    "pl",
+    "ru",
+    "uk"
+   ],
+   [
+    "fallskonis brne nica suki",
+    "laskusta razmoti vama suki"
+   ]
+  ],
+  [
+   "nasi",
+   16,
+   [
+    "ml",
+    "th"
+   ],
+   [
+    "fruplana hogaca nasi saka",
+    "reberite nasi pobena holi"
+   ]
+  ]
+ ],
+ "samples": [
+  "libice zvila snaci alumljini",
+  "pozu bunkim patuna lizbate",
+  "forsna antarca smelio bede",
+  "drao loriorna nade rodali",
+  "udjesnija ruzauzdala sine",
+  "kisnekosli iskila ublazricu",
+  "pustanbuce singusiti casu",
+  "snorizem rija razveze boni",
+  "malu lomiatka bernavcite",
+  "frao memoru zanimanju hodnje",
+  "siluku bloknutu grma doom",
+  "bubarobi mama pregovstetio"
+ ],
+ "seconds": 8.5,
+ "languages": [
+  "bs"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

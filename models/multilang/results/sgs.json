@@ -1,0 +1,267 @@
+{
+ "name": "sgs",
+ "corpus_words": 8025,
+ "relaxed_rows": 158,
+ "relaxed_examples": [
+  "mu",
+  "pu",
+  "bu",
+  "tu",
+  "no",
+  "ji",
+  "ju",
+  "zm",
+  "vu",
+  "du",
+  "zu",
+  "lo"
+ ],
+ "segmented_words": 5964,
+ "skipped_words": 2061,
+ "middle_attested_fraction": 0.1119384765625,
+ "end32_attested_fraction": 0.12740071614583334,
+ "end16_attested_fraction": 0.2392578125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.0,
+ "max_chars": 34,
+ "consonant_runs_pct": 6.721,
+ "vowel_runs_pct": 4.601,
+ "english_words_pct": 1.094,
+ "own_words_pct": 8.034,
+ "offensive_whole_pct": 2.22,
+ "offensive_whole_english_list_pct": 0.15,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.375,
+ "offensive_severe_en_pct": 0.045,
+ "offensive_inside5_pct": 1.855,
+ "offensive_inside4_pct": 15.22,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "mona",
+   23,
+   [
+    "it"
+   ],
+   [
+    "mona fugara omie mesebents",
+    "kalesima mona zienkene mute"
+   ]
+  ],
+  [
+   "ases",
+   22,
+   [
+    "cy"
+   ],
+   [
+    "runis pisa ases jodegivenas",
+    "ases smanku tridecta kias"
+   ]
+  ],
+  [
+   "penis",
+   20,
+   [
+    "be",
+    "bg",
+    "ca",
+    "cs",
+    "da",
+    "de",
+    "en",
+    "fi",
+    "fr",
+    "hr",
+    "hy",
+    "id",
+    "lt",
+    "lv",
+    "mk",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "meigenkema lapenis nieje bats",
+    "narenkeima impiuoje rompenis"
+   ]
+  ],
+  [
+   "sits",
+   20,
+   [
+    "kn",
+    "te"
+   ],
+   [
+    "omendes amokolies sits miuoje",
+    "iniu apeta rigiezenkuos sits"
+   ]
+  ],
+  [
+   "tits",
+   19,
+   [
+    "cy",
+    "en",
+    "gd",
+    "is",
+    "la",
+    "mn",
+    "ms",
+    "mt",
+    "my",
+    "sq",
+    "sr",
+    "te",
+    "zu"
+   ],
+   [
+    "tits zase plabuokta esratene",
+    "maskiotu tits preta diereta"
+   ]
+  ],
+  [
+   "reva",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "bune oncena reva dutibiau",
+    "rone reva ekas respazuortene"
+   ]
+  ],
+  [
+   "pute",
+   16,
+   [
+    "fr"
+   ],
+   [
+    "jorginiema unikieje klie pute",
+    "klalejuo svau doukaiku pute"
+   ]
+  ],
+  [
+   "pina",
+   16,
+   [
+    "hu"
+   ],
+   [
+    "tronceste esolikarda pina",
+    "pina enuos bargingiu kotrie"
+   ]
+  ],
+  [
+   "trio",
+   16,
+   [
+    "es"
+   ],
+   [
+    "avektes trio letrei adzejes",
+    "beltaroduom aluos trio maza"
+   ]
+  ],
+  [
+   "kisa",
+   16,
+   [
+    "is"
+   ],
+   [
+    "line bamiuoniejes kunis kisa",
+    "jiemie kisa grio glaturitene"
+   ]
+  ],
+  [
+   "gote",
+   16,
+   [
+    "tr"
+   ],
+   [
+    "enes kemparimius gote kveje",
+    "onksta krides gote noksnas"
+   ]
+  ],
+  [
+   "nima",
+   15,
+   [
+    "zh"
+   ],
+   [
+    "nima tongis tersokare irou",
+    "pralaimna ramus oualva nima"
+   ]
+  ],
+  [
+   "pisa",
+   15,
+   [
+    "ro"
+   ],
+   [
+    "kretrioutis pisa aurinedams",
+    "runingems pisa kraseniu polis"
+   ]
+  ],
+  [
+   "sike",
+   15,
+   [
+    "tr"
+   ],
+   [
+    "austriklonta anei sike liene",
+    "dvektus sike enarna omuolta"
+   ]
+  ],
+  [
+   "cena",
+   15,
+   [
+    "zh"
+   ],
+   [
+    "cena egivus kamete bendara",
+    "cena mongus muzida ropereje"
+   ]
+  ]
+ ],
+ "samples": [
+  "akalva ouna sreje eislanos",
+  "kats ininge marito akeida",
+  "irsima moznte gergoms truoje",
+  "gran glaterbams vema zandus",
+  "kledabuom juetatezes lena",
+  "ekriuoralbes dvava boltalejuo",
+  "rokoltezeniu lemibuse zona",
+  "srenkuoras kita apaugeska mias",
+  "kesta gluopecejuo truopaduomos",
+  "breniu takemu sestros uneklu",
+  "leings luotarks isos vats",
+  "inardida keti priklodiele"
+ ],
+ "seconds": 9.0,
+ "languages": [
+  "sgs"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

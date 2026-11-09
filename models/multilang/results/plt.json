@@ -1,0 +1,228 @@
+{
+ "name": "plt",
+ "corpus_words": 12664,
+ "relaxed_rows": 100,
+ "relaxed_examples": [
+  "du",
+  "gu",
+  "lu",
+  "hu",
+  "bu",
+  "wi",
+  "su",
+  "sc",
+  "wa",
+  "ju",
+  "mu",
+  "pu"
+ ],
+ "segmented_words": 8655,
+ "skipped_words": 4009,
+ "middle_attested_fraction": 0.18326822916666666,
+ "end32_attested_fraction": 0.16780598958333334,
+ "end16_attested_fraction": 0.3041178385416667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.87,
+ "max_chars": 36,
+ "consonant_runs_pct": 4.384,
+ "vowel_runs_pct": 1.768,
+ "english_words_pct": 1.505,
+ "own_words_pct": 12.955,
+ "offensive_whole_pct": 1.52,
+ "offensive_whole_english_list_pct": 0.09,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.65,
+ "offensive_severe_en_pct": 0.05,
+ "offensive_inside5_pct": 4.025,
+ "offensive_inside4_pct": 22.83,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "orina",
+   206,
+   [
+    "es"
+   ],
+   [
+    "ivamizatola afay irolsorina",
+    "zorina statavingre isana kory"
+   ]
+  ],
+  [
+   "sidik",
+   49,
+   [
+    "tr"
+   ],
+   [
+    "conan naitra hoamavahana atsidika",
+    "noany rindrombany dasidika atier"
+   ]
+  ],
+  [
+   "chier",
+   30,
+   [
+    "fr"
+   ],
+   [
+    "coronin chier crazatra wavaka",
+    "mozampitra clapandidy cochier"
+   ]
+  ],
+  [
+   "apara",
+   30,
+   [
+    "fi"
+   ],
+   [
+    "ricaparatany midina file cotra",
+    "lina drapara watetokana iminy"
+   ]
+  ],
+  [
+   "fitte",
+   28,
+   [
+    "no"
+   ],
+   [
+    "hosseatra akatra gestier zafitte",
+    "lefitte omana stiny ishinesana"
+   ]
+  ],
+  [
+   "anita",
+   26,
+   [
+    "nl"
+   ],
+   [
+    "grefanita piso doana onaser",
+    "jendekonina tanitaona nataratra"
+   ]
+  ],
+  [
+   "filla",
+   24,
+   [
+    "gl"
+   ],
+   [
+    "afrinina irafillany azier plara",
+    "troana jaona rimory efillandovana"
+   ]
+  ],
+  [
+   "manda",
+   21,
+   [
+    "ru"
+   ],
+   [
+    "onon toareiny bies imandasis",
+    "asemony imandaika imafantin"
+   ]
+  ],
+  [
+   "manana",
+   20,
+   [
+    "hy"
+   ],
+   [
+    "namanana riany quentivohitra koka",
+    "tiany efre zenisra adicmanana"
+   ]
+  ],
+  [
+   "tanga",
+   19,
+   [
+    "fil"
+   ],
+   [
+    "abozartangaly cranelana efohaka",
+    "cencet omaha itangankatra krina"
+   ]
+  ],
+  [
+   "bola",
+   18,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "resiana molevitry bola ises",
+    "sianstasty bola nisafitry"
+   ]
+  ],
+  [
+   "ases",
+   18,
+   [
+    "cy"
+   ],
+   [
+    "enirambe veny kalatte ases",
+    "epamamika ases abrahazankay"
+   ]
+  ],
+  [
+   "randi",
+   18,
+   [
+    "hi"
+   ],
+   [
+    "irapana prandintany fria faux",
+    "blorandidy pinana aore nehidy"
+   ]
+  ],
+  [
+   "feny",
+   17,
+   [
+    "cs"
+   ],
+   [
+    "ranomboana inany feny dranjia",
+    "feny adalan duta ivitsasia"
+   ]
+  ],
+  [
+   "pinat",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "pinatel iaka fitsiana akotro",
+    "pinatria esariva zaireau vita"
+   ]
+  ]
+ ],
+ "samples": [
+  "kinsatra aolo ioany ervezela",
+  "miasa plafoana vallac kiames",
+  "aporaly akirier roamiana lory",
+  "dany itevrieny naia veniry",
+  "genjancho dohentraina beny",
+  "ivamizatola afay irolsorina",
+  "prinatafidy bedrihita stay",
+  "iotimanga duka noland lefy",
+  "ranina itillipaka lovahihitsy",
+  "enika hososy nitaha ondiovana",
+  "bettana juillivany poana fary",
+  "plitsafine raly filibaherina"
+ ],
+ "seconds": 9.1,
+ "languages": [
+  "plt"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

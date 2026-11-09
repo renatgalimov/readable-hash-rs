@@ -1,0 +1,218 @@
+{
+ "name": "no",
+ "corpus_words": 80000,
+ "relaxed_rows": 3,
+ "relaxed_examples": [
+  "gj",
+  "hj",
+  "mc"
+ ],
+ "segmented_words": 50580,
+ "skipped_words": 29420,
+ "middle_attested_fraction": 0.6036376953125,
+ "end32_attested_fraction": 0.4028727213541667,
+ "end16_attested_fraction": 0.658203125,
+ "begin_attested": 128,
+ "chars": 26.65,
+ "max_chars": 36,
+ "consonant_runs_pct": 16.05,
+ "vowel_runs_pct": 1.24,
+ "english_words_pct": 2.514,
+ "own_words_pct": 29.189,
+ "offensive_whole_pct": 3.75,
+ "offensive_whole_english_list_pct": 0.58,
+ "offensive_whole_own_list_pct": 0.17,
+ "offensive_whole_major_lists_pct": 1.385,
+ "offensive_severe_en_pct": 0.415,
+ "offensive_inside5_pct": 3.26,
+ "offensive_inside4_pct": 17.67,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "sung",
+   22,
+   [
+    "vi"
+   ],
+   [
+    "tredge adyley sung ruklon",
+    "felgkopet sung ores vanakk"
+   ]
+  ],
+  [
+   "poon",
+   21,
+   [
+    "en"
+   ],
+   [
+    "fats generasjoing peston poon",
+    "avder diabal nickholet poon"
+   ]
+  ],
+  [
+   "bits",
+   21,
+   [
+    "mr"
+   ],
+   [
+    "buksjon roykakes bits chum",
+    "hynkiots bits drekteren apor"
+   ]
+  ],
+  [
+   "stake",
+   19,
+   [
+    "sv"
+   ],
+   [
+    "sutroftram busa luistakene",
+    "staket hyner raman atspordet"
+   ]
+  ],
+  [
+   "dike",
+   19,
+   [
+    "eu",
+    "sr"
+   ],
+   [
+    "halsmann dike piraler sokede",
+    "dike tyker boss latterrimentene"
+   ]
+  ],
+  [
+   "bitte",
+   18,
+   [
+    "fr"
+   ],
+   [
+    "smeaktle omtanius bittete",
+    "sjabon atville bittemanalt"
+   ]
+  ],
+  [
+   "bile",
+   18,
+   [
+    "ro"
+   ],
+   [
+    "eksle bile rodebuer leoniske",
+    "bile griphart dokuna brot"
+   ]
+  ],
+  [
+   "hane",
+   18,
+   [
+    "da"
+   ],
+   [
+    "burgelritet atge hane aring",
+    "enerene buntlig hane dollan"
+   ]
+  ],
+  [
+   "kale",
+   18,
+   [
+    "lt"
+   ],
+   [
+    "duren aspelare kale sjevne",
+    "fadeles vone kale bevisbad"
+   ]
+  ],
+  [
+   "sikte",
+   17,
+   [
+    "tr"
+   ],
+   [
+    "sikteker gles kimmal fres",
+    "gans feensikter riene monn"
+   ]
+  ],
+  [
+   "ases",
+   17,
+   [
+    "cy"
+   ],
+   [
+    "neglon ases juberen muelte",
+    "enhertemner sale smet ases"
+   ]
+  ],
+  [
+   "anale",
+   17,
+   [
+    "it"
+   ],
+   [
+    "eksplyser humanalen boulert",
+    "petrien oppdristigte canaler"
+   ]
+  ],
+  [
+   "name",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "sysen regnasjon name formekoet",
+    "gerble name nyderen elgeren"
+   ]
+  ],
+  [
+   "blit",
+   16,
+   [
+    "hy"
+   ],
+   [
+    "omter nekrie blit courskort",
+    "dara blit daglantive hets"
+   ]
+  ],
+  [
+   "alla",
+   16,
+   [
+    "mt"
+   ],
+   [
+    "nadd gerhig alla akgasjant",
+    "veistram ladd alla pisset"
+   ]
+  ]
+ ],
+ "samples": [
+  "preket lyker dyra knoplitt",
+  "uton omgjert salmie pricing",
+  "glemner syrete soloper fees",
+  "peer kjelippet resten klynes",
+  "biolmoes blyrommunden here",
+  "jervjerfid ruer luthilighet",
+  "filmrebues heimevet jaet",
+  "dydsagelse pues fasenet aret",
+  "koan kjetaueren ferrairdan",
+  "jorn triatet papilt hyllig",
+  "heianne fuglobser tott beer",
+  "omorginet koys stanjotiske"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "no"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

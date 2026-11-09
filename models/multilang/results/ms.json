@@ -1,0 +1,252 @@
+{
+ "name": "ms",
+ "corpus_words": 80000,
+ "relaxed_rows": 5,
+ "relaxed_examples": [
+  "mc",
+  "nm",
+  "anm",
+  "iv",
+  "ov"
+ ],
+ "segmented_words": 47866,
+ "skipped_words": 32134,
+ "middle_attested_fraction": 0.5477701822916666,
+ "end32_attested_fraction": 0.4945475260416667,
+ "end16_attested_fraction": 0.7084147135416666,
+ "begin_attested": 128,
+ "chars": 26.63,
+ "max_chars": 35,
+ "consonant_runs_pct": 7.113,
+ "vowel_runs_pct": 3.273,
+ "english_words_pct": 2.474,
+ "own_words_pct": 32.76,
+ "offensive_whole_pct": 3.345,
+ "offensive_whole_english_list_pct": 0.67,
+ "offensive_whole_own_list_pct": 0.22,
+ "offensive_whole_major_lists_pct": 1.95,
+ "offensive_severe_en_pct": 0.455,
+ "offensive_inside5_pct": 3.29,
+ "offensive_inside4_pct": 20.61,
+ "offensive_across_words_pct": 0.045,
+ "top_hits": [
+  [
+   "runka",
+   36,
+   [
+    "sv"
+   ],
+   [
+    "jualabon nanosaan nerunkan",
+    "bram akrunkan luce rekamper"
+   ]
+  ],
+  [
+   "tusan",
+   27,
+   [
+    "sv"
+   ],
+   [
+    "rosh kecutusan kara orlaku",
+    "auturan scai goal pencitusan"
+   ]
+  ],
+  [
+   "gook",
+   23,
+   [
+    "en"
+   ],
+   [
+    "fial atiktulah almasa gook",
+    "meliplotan gook bener sketas"
+   ]
+  ],
+  [
+   "quim",
+   22,
+   [
+    "en"
+   ],
+   [
+    "fassoung quim lali pelepon",
+    "ranjerai emon kupasnya quim"
+   ]
+  ],
+  [
+   "penis",
+   19,
+   [
+    "be",
+    "bg",
+    "ca",
+    "cs",
+    "da",
+    "de",
+    "en",
+    "fi",
+    "fr",
+    "hr",
+    "hy",
+    "id",
+    "lt",
+    "lv",
+    "mk",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "bercederamu trium penis pelamlah",
+    "staprigang goervair penis"
+   ]
+  ],
+  [
+   "kher",
+   19,
+   [
+    "be"
+   ],
+   [
+    "fudupan casa embengkus kher",
+    "kher krar dijustam fusang"
+   ]
+  ],
+  [
+   "sisa",
+   18,
+   [
+    "hr"
+   ],
+   [
+    "rasholak sisa poliknya elia",
+    "belok chucliriku sisa atau"
+   ]
+  ],
+  [
+   "crap",
+   18,
+   [
+    "cy",
+    "en",
+    "eu",
+    "gd",
+    "la",
+    "lv"
+   ],
+   [
+    "furldikan jisian pemen crap",
+    "joko done lemprassaan crap"
+   ]
+  ],
+  [
+   "linda",
+   17,
+   [
+    "zu"
+   ],
+   [
+    "bareaklah akasidnya belinda",
+    "dran lukarnya peres ablindar"
+   ]
+  ],
+  [
+   "skit",
+   17,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "skit grar jarick unicliku",
+    "norejahnya mereping skit ines"
+   ]
+  ],
+  [
+   "cena",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "kesing panamosa lina cena",
+    "topemu merle randikanmu cena"
+   ]
+  ],
+  [
+   "muna",
+   16,
+   [
+    "fi"
+   ],
+   [
+    "bolaubku ablumierap muna",
+    "fled pottam muna mangkian"
+   ]
+  ],
+  [
+   "giat",
+   16,
+   [
+    "vi"
+   ],
+   [
+    "giat adopon maam atrakstal",
+    "giat chuk destrunkan khukanya"
+   ]
+  ],
+  [
+   "bout",
+   16,
+   [
+    "fr"
+   ],
+   [
+    "gino bite bout kokacaroll",
+    "sakurleout bout pemta abunya"
+   ]
+  ],
+  [
+   "maal",
+   15,
+   [
+    "hi"
+   ],
+   [
+    "jeah tumplola maal quiest",
+    "maal melor crawian geloters"
+   ]
+  ]
+ ],
+ "samples": [
+  "graying ciat aukan viendilah",
+  "seen nerakos rambia groblah",
+  "wilkes asimes lewaan mitu",
+  "tuannya niultasi peres jeranya",
+  "pelapenta krorigranmu coat",
+  "endombendo trar adakluinya",
+  "alisausurnya costomer isat",
+  "augeloid cume recore muang",
+  "kuannya nicapron misiunitik",
+  "imot showley bawali yanggi",
+  "cockon freedarkan boing kean",
+  "newargit kune berhindsesi"
+ ],
+ "seconds": 8.7,
+ "languages": [
+  "ms"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

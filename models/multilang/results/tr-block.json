@@ -1,0 +1,236 @@
+{
+ "name": "tr-block",
+ "corpus_words": 80000,
+ "relaxed_rows": 42,
+ "relaxed_examples": [
+  "zo",
+  "wi",
+  "of",
+  "wo",
+  "aj",
+  "wh",
+  "qu",
+  "hy",
+  "my",
+  "sn",
+  "sw",
+  "iv"
+ ],
+ "banned_pairs": 4419,
+ "segmented_words": 53271,
+ "skipped_words": 26729,
+ "middle_attested_fraction": 0.2935384114583333,
+ "end32_attested_fraction": 0.2771809895833333,
+ "end16_attested_fraction": 0.4889322916666667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "three_token_rounds": [
+  711,
+  597,
+  404,
+  293
+ ],
+ "chars": 27.3,
+ "max_chars": 40,
+ "consonant_runs_pct": 5.942,
+ "vowel_runs_pct": 11.976,
+ "english_words_pct": 0.883,
+ "own_words_pct": 18.463,
+ "offensive_whole_pct": 0.89,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 1.67,
+ "offensive_inside4_pct": 13.64,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "debil",
+   55,
+   [
+    "cs",
+    "pl"
+   ],
+   [
+    "veti prometli edebilemurmayi",
+    "midebiller gurlon uyrim enik"
+   ]
+  ],
+  [
+   "linda",
+   37,
+   [
+    "zu"
+   ],
+   [
+    "cote uyuruz galinda egabilin",
+    "hapliyor linda unuz yenilada"
+   ]
+  ],
+  [
+   "here",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "zoim here ackeksuz ciksem",
+    "here tukacakin inceki ayma"
+   ]
+  ],
+  [
+   "tusan",
+   17,
+   [
+    "sv"
+   ],
+   [
+    "amis odedim otabiltusan uzmus",
+    "iclar demistusan illi veriyordu"
+   ]
+  ],
+  [
+   "nikla",
+   15,
+   [
+    "mr"
+   ],
+   [
+    "hola niklanmiyor ugar foncar",
+    "firiyorum bolduggean niklarinin"
+   ]
+  ],
+  [
+   "arsle",
+   14,
+   [
+    "sv"
+   ],
+   [
+    "aramirim zitarslenmis cayime",
+    "amdi eltalarslecek odir ucan"
+   ]
+  ],
+  [
+   "pisa",
+   14,
+   [
+    "ro"
+   ],
+   [
+    "bada vaiz dirdugazaki pisa",
+    "ozer pisa donayamiydi unde"
+   ]
+  ],
+  [
+   "kale",
+   14,
+   [
+    "lt"
+   ],
+   [
+    "taksinkiydi iylanriyordu kale",
+    "peruda kale ogutesmis ucuk"
+   ]
+  ],
+  [
+   "sudi",
+   13,
+   [
+    "lv"
+   ],
+   [
+    "husin sudi dominseyle fostlik",
+    "sudi hatunmak fakliyle hida"
+   ]
+  ],
+  [
+   "daik",
+   13,
+   [
+    "kn",
+    "mr"
+   ],
+   [
+    "daik erildi ucacak dilesmesi",
+    "yurduregi onen eskata daik"
+   ]
+  ],
+  [
+   "prik",
+   12,
+   [
+    "nl"
+   ],
+   [
+    "afsin vermatip pistti prik",
+    "prik odemerestuk arda usir"
+   ]
+  ],
+  [
+   "kran",
+   11,
+   [
+    "be"
+   ],
+   [
+    "olucasiyor meze kresinden kran",
+    "dedinda cuparslari hine kran"
+   ]
+  ],
+  [
+   "rong",
+   11,
+   [
+    "th"
+   ],
+   [
+    "rong derim cumlen erktiden",
+    "aktirdiyor rong anin imkarken"
+   ]
+  ],
+  [
+   "koli",
+   11,
+   [
+    "kn"
+   ],
+   [
+    "koli krimim yeda yilimlen",
+    "kolussen koli golume etten"
+   ]
+  ],
+  [
+   "dain",
+   11,
+   [
+    "ml"
+   ],
+   [
+    "zikamdadlar acan neer dain",
+    "umpaliymis yitana dain tudi"
+   ]
+  ]
+ ],
+ "samples": [
+  "fiserim kruk rodin prazaslari",
+  "baan receyle buzdecek fiesar",
+  "usttya agulacak parilacak uyme",
+  "uzen hoopagon sadik odedip",
+  "heleziki ucilsayasi cenin",
+  "avustelayis pegini egetebiller",
+  "ogremekmacagim cellsindiniz plem",
+  "rorattun ping dogacak veya",
+  "oligi hookyuri uyustaseminin",
+  "ozer dansek bilmayi husuel",
+  "ceksal iyiydigian hidi yalar",
+  "rektaninin oler gerihirmen"
+ ],
+ "seconds": 297.1,
+ "languages": [
+  "tr"
+ ],
+ "no_english": false,
+ "blocklist": true
+}

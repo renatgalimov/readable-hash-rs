@@ -1,0 +1,228 @@
+{
+ "name": "ay",
+ "corpus_words": 80000,
+ "relaxed_rows": 104,
+ "relaxed_examples": [
+  "ac",
+  "ic",
+  "ai",
+  "ca",
+  "co",
+  "mo",
+  "ba",
+  "vi",
+  "be",
+  "lo",
+  "bi",
+  "gu"
+ ],
+ "segmented_words": 72928,
+ "skipped_words": 7072,
+ "middle_attested_fraction": 0.12772623697916666,
+ "end32_attested_fraction": 0.2627766927083333,
+ "end16_attested_fraction": 0.3621419270833333,
+ "begin_attested": 98,
+ "beginning_fallback": true,
+ "chars": 37.84,
+ "max_chars": 52,
+ "consonant_runs_pct": 14.457,
+ "vowel_runs_pct": 9.934,
+ "english_words_pct": 0.263,
+ "own_words_pct": 7.314,
+ "offensive_whole_pct": 0.255,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.195,
+ "offensive_severe_en_pct": 0.065,
+ "offensive_inside5_pct": 5.655,
+ "offensive_inside4_pct": 60.0,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "nakun",
+   103,
+   [
+    "sq"
+   ],
+   [
+    "crpanakunayapataki ceinkatjama itaxampi",
+    "murphisakata rixanakuniqtama llana"
+   ]
+  ],
+  [
+   "irata",
+   101,
+   [
+    "la"
+   ],
+   [
+    "bajama buasitamana crnukta sirataysta",
+    "eckustu ritaysma soani uniriratana"
+   ]
+  ],
+  [
+   "chani",
+   98,
+   [
+    "zh"
+   ],
+   [
+    "tasitana lumitani tisitana busanakichani",
+    "uyayirirpichani turkax lluqsapana"
+   ]
+  ],
+  [
+   "pinak",
+   90,
+   [
+    "hu"
+   ],
+   [
+    "trqisusta exxanakimapanakakata pinakani",
+    "grakampi pinakaru mintitasma ukayarasma"
+   ]
+  ],
+  [
+   "charu",
+   67,
+   [
+    "ja"
+   ],
+   [
+    "elruwayiani biacharu usiripura",
+    "iwxakucharu sosanakxanakaxalayku yutamana"
+   ]
+  ],
+  [
+   "asini",
+   57,
+   [
+    "it"
+   ],
+   [
+    "exrataysta atipasmana ayakata ulisasinitpan",
+    "elxatutani tanakani unakampi guasinitpan"
+   ]
+  ],
+  [
+   "kusta",
+   56,
+   [
+    "fi"
+   ],
+   [
+    "aykusta blnakaru iwxanakani obnurilayku",
+    "mukusta khimataysma grataki laphirikta"
+   ]
+  ],
+  [
+   "anita",
+   53,
+   [
+    "nl"
+   ],
+   [
+    "lariksta supacha ansananitam matiru",
+    "thtaki tithapaxajakjama sukhanitayna"
+   ]
+  ],
+  [
+   "kutas",
+   34,
+   [
+    "pl"
+   ],
+   [
+    "kutaspha fipanakjama rinakaru inkunijani",
+    "khasmana alasmana kutaspha clqaqinaqani"
+   ]
+  ],
+  [
+   "nachi",
+   27,
+   [
+    "ja",
+    "ko"
+   ],
+   [
+    "huani khataki inachimanaktamana sellani",
+    "rikanachitu trinakampi qulikipitani"
+   ]
+  ],
+  [
+   "yusan",
+   24,
+   [
+    "ko"
+   ],
+   [
+    "ansna yusanakhixanaksmana basunasakama",
+    "thuyusanitpan irasiripataki exjama seakama"
+   ]
+  ],
+  [
+   "chipa",
+   24,
+   [
+    "uz"
+   ],
+   [
+    "pechipataki blnakaru auxathituru",
+    "blachipatamana pinakani thunakaru peataki"
+   ]
+  ],
+  [
+   "mama",
+   22,
+   [
+    "pt"
+   ],
+   [
+    "quliripanarapakama mama luraninakaru",
+    "iririkta mama edwiyitata frnukama"
+   ]
+  ],
+  [
+   "tusan",
+   22,
+   [
+    "sv"
+   ],
+   [
+    "yanutusanakkitana ipjama jamasismana",
+    "hutaysta clnakana abjama inkayiritusanaksmana"
+   ]
+  ],
+  [
+   "anaru",
+   21,
+   [
+    "ja"
+   ],
+   [
+    "asama chhuwaytana quytkanaru sonakaru",
+    "deratana uxani qhanarumama ucakampi"
+   ]
+  ]
+ ],
+ "samples": [
+  "mirkataki biana enakama dithapanakaru",
+  "alakampi nuntitani inktimpi minassitana",
+  "curamataki royamama aiawama kutan",
+  "pita niphimanakpacha ankjama khsutasma",
+  "rurunuxapura cexatsanakxanakataki inatamana",
+  "auwikhusasitani grtamana kinttina",
+  "uywakatutsitani inankuyasmana usama",
+  "enankayiripura penakana ikayataysta phakata",
+  "ichutayt nisirapanakata kuchisakhta",
+  "blnakata ukasataki jamitu fisanaksmana",
+  "inaqitata trqantista utpacha iralayku",
+  "numisirtayitu ichutaspha apatatathilayku"
+ ],
+ "seconds": 14.0,
+ "languages": [
+  "ay"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

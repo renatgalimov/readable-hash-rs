@@ -1,0 +1,231 @@
+{
+ "name": "mn",
+ "corpus_words": 52379,
+ "relaxed_rows": 86,
+ "relaxed_examples": [
+  "sp",
+  "ac",
+  "ny",
+  "pl",
+  "oc",
+  "fl",
+  "uc",
+  "by",
+  "ly",
+  "af",
+  "ex",
+  "of"
+ ],
+ "segmented_words": 36804,
+ "skipped_words": 15575,
+ "middle_attested_fraction": 0.35107421875,
+ "end32_attested_fraction": 0.3443196614583333,
+ "end16_attested_fraction": 0.5375162760416666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.65,
+ "max_chars": 37,
+ "consonant_runs_pct": 20.267,
+ "vowel_runs_pct": 2.506,
+ "english_words_pct": 0.535,
+ "own_words_pct": 20.484,
+ "offensive_whole_pct": 0.845,
+ "offensive_whole_english_list_pct": 0.055,
+ "offensive_whole_own_list_pct": 0.075,
+ "offensive_whole_major_lists_pct": 0.48,
+ "offensive_severe_en_pct": 0.11,
+ "offensive_inside5_pct": 1.72,
+ "offensive_inside4_pct": 15.76,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "khokh",
+   26,
+   [
+    "mn"
+   ],
+   [
+    "burkhokhagtyn uned spretsakh",
+    "olkhokh bolzarna tugseluud"
+   ]
+  ],
+  [
+   "nachi",
+   22,
+   [
+    "ja",
+    "ko"
+   ],
+   [
+    "puuraaguy nachin dino muraar",
+    "ovtay nachin ugogshsan kondakh"
+   ]
+  ],
+  [
+   "urin",
+   19,
+   [
+    "sl"
+   ],
+   [
+    "fuleginetsiyn urin putey ergiyg",
+    "osirav komaysguy urin rayg"
+   ]
+  ],
+  [
+   "luan",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "baas enelddaa farmiyg luan",
+    "luan ligtniy march irogdeltey"
+   ]
+  ],
+  [
+   "mona",
+   16,
+   [
+    "it"
+   ],
+   [
+    "odyg mona utstemmich viees",
+    "dialaas nytay mona niytinagiyn"
+   ]
+  ],
+  [
+   "fena",
+   15,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "fena kitey buudaar yukalddog",
+    "gets furuungaas fena ugaalyn"
+   ]
+  ],
+  [
+   "nian",
+   15,
+   [
+    "zh"
+   ],
+   [
+    "ushaalaradyn nian paniy avan",
+    "trinshil nian emzhiyn uleg"
+   ]
+  ],
+  [
+   "chich",
+   14,
+   [
+    "vi"
+   ],
+   [
+    "soyg chichikloliyn idzh tazh",
+    "chichnan uslaar diyn altiyg"
+   ]
+  ],
+  [
+   "sega",
+   13,
+   [
+    "it"
+   ],
+   [
+    "sega agraluud ventomyn acid",
+    "sega ekshchlakh ovsteltgay"
+   ]
+  ],
+  [
+   "echiy",
+   13,
+   [
+    "th"
+   ],
+   [
+    "buga tuylbechiyn zugiyn songel",
+    "eran ushilzh ilbechiyn geleliyg"
+   ]
+  ],
+  [
+   "dust",
+   12,
+   [
+    "hi"
+   ],
+   [
+    "dust evdrit sonsad taaliyn",
+    "golyg dust evamzh oschguurt"
+   ]
+  ],
+  [
+   "muna",
+   12,
+   [
+    "fi"
+   ],
+   [
+    "muna serdyn geltsazh erdsnaar",
+    "muna ishloo aklaminy zhun"
+   ]
+  ],
+  [
+   "poon",
+   11,
+   [
+    "en"
+   ],
+   [
+    "poon tranerne sokhiy ikan",
+    "zodeg khoolyg almalien poon"
+   ]
+  ],
+  [
+   "lokhi",
+   10,
+   [
+    "be",
+    "ru",
+    "uk"
+   ],
+   [
+    "suyg adatnaas biolokhiyn parian",
+    "vestnaas ulamzhoryn toglokhiyg"
+   ]
+  ],
+  [
+   "mail",
+   10,
+   [
+    "hi"
+   ],
+   [
+    "ukaa mail oddartee azassyn",
+    "tsaslagloor mail dueer folan"
+   ]
+  ]
+ ],
+ "samples": [
+  "aglogt aten kiyg ragdasyn",
+  "tsiyg mitoryg gangel agemoy",
+  "yumaatay indegt nomten ariyg",
+  "iliyn vasitsyg shia zelald",
+  "ekhdoysan evogaddaryn nayn",
+  "eguzbermazh gind divilono",
+  "ashigchirleed namysion edtay",
+  "kilgosyg adgaar chuulsen guan",
+  "bodeg vancgoson arsledagiyg",
+  "isyn sezhideg davsekh splaany",
+  "nayaatay brazgegch azguy toyn",
+  "misitigiyn bodzhee bagsokhuran"
+ ],
+ "seconds": 10.2,
+ "languages": [
+  "mn"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

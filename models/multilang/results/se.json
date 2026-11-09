@@ -1,0 +1,251 @@
+{
+ "name": "se",
+ "corpus_words": 58032,
+ "relaxed_rows": 101,
+ "relaxed_examples": [
+  "sn",
+  "au",
+  "fu",
+  "ap",
+  "ip",
+  "af",
+  "oz",
+  "oc",
+  "pl",
+  "gr",
+  "fo",
+  "fy"
+ ],
+ "segmented_words": 46358,
+ "skipped_words": 11674,
+ "middle_attested_fraction": 0.23238118489583334,
+ "end32_attested_fraction": 0.20926920572916666,
+ "end16_attested_fraction": 0.3531901041666667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 30.77,
+ "max_chars": 44,
+ "consonant_runs_pct": 15.297,
+ "vowel_runs_pct": 3.183,
+ "english_words_pct": 0.473,
+ "own_words_pct": 8.562,
+ "offensive_whole_pct": 1.195,
+ "offensive_whole_english_list_pct": 0.11,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.395,
+ "offensive_severe_en_pct": 0.005,
+ "offensive_inside5_pct": 2.12,
+ "offensive_inside4_pct": 13.735,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "vacca",
+   101,
+   [
+    "it"
+   ],
+   [
+    "osmmide oimmubavaccat oabbon",
+    "soddiiguin dinurgovaccat rigaseigga"
+   ]
+  ],
+  [
+   "made",
+   24,
+   [
+    "zh"
+   ],
+   [
+    "murammiiguin made gileigga prearii",
+    "atot isoivddiime made berggi"
+   ]
+  ],
+  [
+   "kimme",
+   24,
+   [
+    "de"
+   ],
+   [
+    "skimmet noseimme lozehpet jehpoandut",
+    "ohin saseimme ilttaherdi skimmet"
+   ]
+  ],
+  [
+   "sisa",
+   24,
+   [
+    "hr"
+   ],
+   [
+    "smiestin ejos sisa dugion",
+    "huseimme kodatnen sisa prodii"
+   ]
+  ],
+  [
+   "anus",
+   22,
+   [
+    "be",
+    "bg",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "eu",
+    "fa",
+    "fr",
+    "gd",
+    "is",
+    "mk",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sl",
+    "sq",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "addjeahppi ohoais anus jivcciin",
+    "riaraheimmet anus agat covvaiguin"
+   ]
+  ],
+  [
+   "nian",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "nian oseluohelaide plazaiguleigga",
+    "boimmoaseidde muiddet fiibit nian"
+   ]
+  ],
+  [
+   "skide",
+   16,
+   [
+    "da"
+   ],
+   [
+    "oivrales skide usloarazase",
+    "mesakkase cuovladalii skide"
+   ]
+  ],
+  [
+   "slet",
+   16,
+   [
+    "nl"
+   ],
+   [
+    "slet essedovaseigga ogolleba",
+    "alolahki slet ruokalii boseimme"
+   ]
+  ],
+  [
+   "blin",
+   16,
+   [
+    "be"
+   ],
+   [
+    "njuovastoasin blin suingoseimme",
+    "blin ideiddet mihkoammiin vusii"
+   ]
+  ],
+  [
+   "dian",
+   14,
+   [
+    "zh"
+   ],
+   [
+    "oamasiidda boarddon alet dian",
+    "smmalin jeleigga haddazasit dian"
+   ]
+  ],
+  [
+   "skit",
+   14,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "bribot skit buit neameahttii",
+    "vujiseidde tenazeaba lallasii skit"
+   ]
+  ],
+  [
+   "dain",
+   13,
+   [
+    "ml"
+   ],
+   [
+    "buhkoska sloait dain cegagiiguin",
+    "arppis jettimii dain ston"
+   ]
+  ],
+  [
+   "sait",
+   12,
+   [
+    "kn"
+   ],
+   [
+    "sait oranzaide soahkai veaba",
+    "osadezalgi sait leseimme dieimmet"
+   ]
+  ],
+  [
+   "mussa",
+   12,
+   [
+    "it"
+   ],
+   [
+    "fuzehpet feaite mussazis blen",
+    "aisii mussagun sidjit lusii"
+   ]
+  ],
+  [
+   "anali",
+   11,
+   [
+    "mt"
+   ],
+   [
+    "arbehtet eanalin ejeheleiddet veaba",
+    "vanalin uhalin akajoazehpet heaba"
+   ]
+  ]
+ ],
+ "samples": [
+  "liarit urit ocin pananasin",
+  "goseidde abohtasin skunet lissun",
+  "etavaiguin olgelii juggaide rias",
+  "soma osameareiddet basin hollii",
+  "ovavruhkoska avdariikkat sneiddet",
+  "fengavrrale jiiguin akkastaleahppi",
+  "spalddjealit snttanain uhalin",
+  "ockajozehpet odeahppi sameguin dein",
+  "doiga osivccomaiguin rihpubalaseigga",
+  "afleigga adaheimmet cadjiid testehkos",
+  "sndazehpet bleahajain vihta galii",
+  "abagolide doseimme cubassavaide"
+ ],
+ "seconds": 11.2,
+ "languages": [
+  "se"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

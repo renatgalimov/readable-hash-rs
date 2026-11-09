@@ -1,0 +1,228 @@
+{
+ "name": "ta",
+ "corpus_words": 68497,
+ "relaxed_rows": 59,
+ "relaxed_examples": [
+  "ch",
+  "jn",
+  "cv",
+  "de",
+  "ju",
+  "sr",
+  "hu",
+  "th",
+  "so",
+  "sh",
+  "cy",
+  "ky"
+ ],
+ "segmented_words": 50902,
+ "skipped_words": 17595,
+ "middle_attested_fraction": 0.3802490234375,
+ "end32_attested_fraction": 0.3701985677083333,
+ "end16_attested_fraction": 0.5816243489583334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.82,
+ "max_chars": 38,
+ "consonant_runs_pct": 45.315,
+ "vowel_runs_pct": 9.119,
+ "english_words_pct": 0.324,
+ "own_words_pct": 24.784,
+ "offensive_whole_pct": 0.83,
+ "offensive_whole_english_list_pct": 0.055,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.31,
+ "offensive_severe_en_pct": 0.01,
+ "offensive_inside5_pct": 2.71,
+ "offensive_inside4_pct": 15.46,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "vittu",
+   99,
+   [
+    "fi"
+   ],
+   [
+    "colluvittu vtikporrar nail",
+    "amecmpuvte taru putm avittu"
+   ]
+  ],
+  [
+   "tittu",
+   60,
+   [
+    "te"
+   ],
+   [
+    "mtittullnintu pinttal akkrin",
+    "kuran litittu unkuppak ckri"
+   ]
+  ],
+  [
+   "maiyin",
+   50,
+   [
+    "zh"
+   ],
+   [
+    "ikmamaiyin koytu nulukku utlmin",
+    "icrrciru prnakkmaiyin nekk"
+   ]
+  ],
+  [
+   "kutta",
+   24,
+   [
+    "hi"
+   ],
+   [
+    "pnttirku acrrkkuttai murnvlruppu",
+    "tolmrai nlirvenr vkuttakkttil"
+   ]
+  ],
+  [
+   "tetta",
+   22,
+   [
+    "it"
+   ],
+   [
+    "ovvalakum mitvai penr tettai",
+    "cntettalm utpinaiyil orvakp"
+   ]
+  ],
+  [
+   "tuttar",
+   22,
+   [
+    "sv"
+   ],
+   [
+    "crkatu lila yacinar ettuttar",
+    "ntniyak mtuttar ctym mknuvil"
+   ]
+  ],
+  [
+   "nikla",
+   17,
+   [
+    "mr"
+   ],
+   [
+    "vkaic urntu nncarniklaic vytirku",
+    "pninikla ulnalrrikkum aial"
+   ]
+  ],
+  [
+   "porm",
+   17,
+   [
+    "et"
+   ],
+   [
+    "mettait porm tontan kovakt",
+    "porm mniven cpppauttn nmin"
+   ]
+  ],
+  [
+   "rota",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "rota vyttpptvillai tutrkl yatkkum",
+    "pottu tviticotti rota vktu"
+   ]
+  ],
+  [
+   "kukk",
+   16,
+   [
+    "et"
+   ],
+   [
+    "kukk tekp strivitttu turnin",
+    "rorventum kukk trnklai evimin"
+   ]
+  ],
+  [
+   "nrai",
+   15,
+   [
+    "my"
+   ],
+   [
+    "pirtiptrutn varkacin nrai",
+    "eluvrtrintu vnippktukl nrai"
+   ]
+  ],
+  [
+   "trut",
+   15,
+   [
+    "ru"
+   ],
+   [
+    "trut ttvurntal aittu pearttai",
+    "trut tnttu vyltiyil nnvaiyavil"
+   ]
+  ],
+  [
+   "pippa",
+   15,
+   [
+    "it",
+    "sv"
+   ],
+   [
+    "tnru cunivulral ipippavan",
+    "netvrrin ipippar utit mrrtu"
+   ]
+  ],
+  [
+   "kutiya",
+   14,
+   [
+    "hi"
+   ],
+   [
+    "trppu nompkutiyan nnal mnnutn",
+    "enpnittuttil tuttiltan jekutiyan"
+   ]
+  ],
+  [
+   "naci",
+   14,
+   [
+    "hu"
+   ],
+   [
+    "upar yalliytak nmviyin naci",
+    "plak naci icniparvan kvan"
+   ]
+  ]
+ ],
+ "samples": [
+  "cmarttin opti kmlai pcirukmaiyai",
+  "cearkl orlvukku pulvrum cmcciai",
+  "yuklittil vtkaiyai itaittlm inil",
+  "aktu mollaiyakum niya nerklukku",
+  "nunkllltak acuvrikkpptttu knttu",
+  "aippelrakk ayti nkuvruvum",
+  "ilkkitirrkl knecccikl ipiy",
+  "kmulmini mlum polutl pnttai",
+  "pemak molvniyin inkkumtkaiyan",
+  "yaic amrvar pirpal litirm",
+  "knukkvum tynkktak tatai kutl",
+  "orlirptn peya murppaluttn"
+ ],
+ "seconds": 10.5,
+ "languages": [
+  "ta"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

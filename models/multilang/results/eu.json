@@ -1,0 +1,215 @@
+{
+ "name": "eu",
+ "corpus_words": 80000,
+ "relaxed_rows": 0,
+ "relaxed_examples": [],
+ "segmented_words": 57414,
+ "skipped_words": 22586,
+ "middle_attested_fraction": 0.4872639973958333,
+ "end32_attested_fraction": 0.4115397135416667,
+ "end16_attested_fraction": 0.6282552083333334,
+ "begin_attested": 128,
+ "chars": 28.48,
+ "max_chars": 40,
+ "consonant_runs_pct": 3.98,
+ "vowel_runs_pct": 6.245,
+ "english_words_pct": 0.694,
+ "own_words_pct": 18.589,
+ "offensive_whole_pct": 1.06,
+ "offensive_whole_english_list_pct": 0.055,
+ "offensive_whole_own_list_pct": 0.07,
+ "offensive_whole_major_lists_pct": 0.665,
+ "offensive_severe_en_pct": 0.05,
+ "offensive_inside5_pct": 2.69,
+ "offensive_inside4_pct": 17.215,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "dian",
+   22,
+   [
+    "zh"
+   ],
+   [
+    "kokoari emaztekitik suen dian",
+    "steak keitmoaren idenetik dian"
+   ]
+  ],
+  [
+   "site",
+   17,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "raren atentsibilarekin site txez",
+    "site asiaonari adriazikien"
+   ]
+  ],
+  [
+   "griet",
+   16,
+   [
+    "nl"
+   ],
+   [
+    "fetan grietilla azpaduonera",
+    "grietek fira nori vidialdien"
+   ]
+  ],
+  [
+   "apara",
+   15,
+   [
+    "fi"
+   ],
+   [
+    "moeta aparaen paren kresitzeko",
+    "shasko aparana naguren jena"
+   ]
+  ],
+  [
+   "ases",
+   15,
+   [
+    "cy"
+   ],
+   [
+    "ases daltegak jada sortatzeko",
+    "irei ases orakioan nabien"
+   ]
+  ],
+  [
+   "puto",
+   15,
+   [
+    "pt"
+   ],
+   [
+    "fatan euldostasunari puto abra",
+    "emaztebada jeizia puto frari"
+   ]
+  ],
+  [
+   "mama",
+   14,
+   [
+    "pt"
+   ],
+   [
+    "romatu heen mama fiesumetan",
+    "origaren mama idak ziurriarekin"
+   ]
+  ],
+  [
+   "perra",
+   14,
+   [
+    "es"
+   ],
+   [
+    "baan bernatigoen inozperra",
+    "lezagiatu goldatzen abalperra"
+   ]
+  ],
+  [
+   "dike",
+   14,
+   [
+    "eu",
+    "sr"
+   ],
+   [
+    "kilapilduz dike noan irarekin",
+    "dike hoetan brendeioek jatu"
+   ]
+  ],
+  [
+   "kran",
+   13,
+   [
+    "be"
+   ],
+   [
+    "mugatsaren emaiderik kran emanik",
+    "noldua lentoa arbuki kran"
+   ]
+  ],
+  [
+   "zizi",
+   12,
+   [
+    "fr"
+   ],
+   [
+    "zizi edariari nazatea aihoari",
+    "zizi enigabeen lian hilotik"
+   ]
+  ],
+  [
+   "tate",
+   12,
+   [
+    "ro"
+   ],
+   [
+    "elgean apoarentzat ekoiari tate",
+    "jerik aterik tate stoneonolaren"
+   ]
+  ],
+  [
+   "sung",
+   12,
+   [
+    "vi"
+   ],
+   [
+    "atlemedeei sung huke abak",
+    "sung kasa toetan vianurperra"
+   ]
+  ],
+  [
+   "linda",
+   12,
+   [
+    "zu"
+   ],
+   [
+    "enetan elua ezersetik lindatu",
+    "pulindan inak aietan zanpatzen"
+   ]
+  ],
+  [
+   "manda",
+   11,
+   [
+    "ru"
+   ],
+   [
+    "pinaen gueratzeko somandazila",
+    "igotilen nomandan hizkoen"
+   ]
+  ]
+ ],
+ "samples": [
+  "aierarekin tiean fuek klilitazioa",
+  "zizi edariari nazatea aihoari",
+  "iguria jotzailen zekarren ataren",
+  "oren sieraska arta amilen",
+  "apusganean toalinalki kola",
+  "eginkalaziotu nino frektoretik",
+  "izenagalekin kortruan puna",
+  "fumelakoan ilko gatatzen liatzen",
+  "deei sitanatu atonolarrez",
+  "feen higitu alabatzeko vibetan",
+  "kokoari emaztekitik suen dian",
+  "edicolte dearen laustitxatu"
+ ],
+ "seconds": 9.4,
+ "languages": [
+  "eu"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

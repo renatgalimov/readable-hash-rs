@@ -1,0 +1,247 @@
+{
+ "name": "nan",
+ "corpus_words": 17864,
+ "relaxed_rows": 67,
+ "relaxed_examples": [
+  "cz",
+  "qu",
+  "mc",
+  "nu",
+  "sw",
+  "dz",
+  "ry",
+  "fu",
+  "av",
+  "ji",
+  "wh",
+  "zy"
+ ],
+ "segmented_words": 10295,
+ "skipped_words": 7569,
+ "middle_attested_fraction": 0.2727457682291667,
+ "end32_attested_fraction": 0.22465006510416666,
+ "end16_attested_fraction": 0.4039713541666667,
+ "begin_attested": 128,
+ "chars": 25.67,
+ "max_chars": 34,
+ "consonant_runs_pct": 13.275,
+ "vowel_runs_pct": 1.862,
+ "english_words_pct": 2.16,
+ "own_words_pct": 15.728,
+ "offensive_whole_pct": 3.68,
+ "offensive_whole_english_list_pct": 0.445,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.695,
+ "offensive_severe_en_pct": 0.255,
+ "offensive_inside5_pct": 3.185,
+ "offensive_inside4_pct": 17.11,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "anal",
+   25,
+   [
+    "ca",
+    "cy",
+    "da",
+    "de",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fr",
+    "gd",
+    "gl",
+    "hy",
+    "id",
+    "pt",
+    "ro",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "tr",
+    "uz",
+    "zu"
+   ],
+   [
+    "anal chhomata ponce estoria",
+    "anal luta leland blavllation"
+   ]
+  ],
+  [
+   "cona",
+   22,
+   [
+    "pt"
+   ],
+   [
+    "haki cona szysilla hortre",
+    "grovce dubregna cona raia"
+   ]
+  ],
+  [
+   "asal",
+   20,
+   [
+    "gd"
+   ],
+   [
+    "edirtrio asal mien pachia",
+    "jordir capiater asal skry"
+   ]
+  ],
+  [
+   "noki",
+   20,
+   [
+    "fi"
+   ],
+   [
+    "noki naca blikabraine kren",
+    "vino zawichollby dziow noki"
+   ]
+  ],
+  [
+   "kaka",
+   19,
+   [
+    "eu"
+   ],
+   [
+    "sean szulsina kaka jusznia",
+    "dean siah iletagodel kaka"
+   ]
+  ],
+  [
+   "sega",
+   19,
+   [
+    "it"
+   ],
+   [
+    "zarata sega quna bureantown",
+    "dzies assele biskogno sega"
+   ]
+  ],
+  [
+   "muna",
+   18,
+   [
+    "fi"
+   ],
+   [
+    "tales muna tereto flagegne",
+    "ligoared muna raki hedeby"
+   ]
+  ],
+  [
+   "hoor",
+   18,
+   [
+    "et"
+   ],
+   [
+    "zempedro destablanie hoor",
+    "foscie speaton hoor dridlo"
+   ]
+  ],
+  [
+   "giat",
+   18,
+   [
+    "vi"
+   ],
+   [
+    "giat dridan rorvndon gley",
+    "kintodadle giat gino paso"
+   ]
+  ],
+  [
+   "szart",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "tool buszartater cree grio",
+    "cung brel blaiszartre beia"
+   ]
+  ],
+  [
+   "mesa",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "glis mesa ciarpeno dakowa",
+    "totomost ashare geli mesa"
+   ]
+  ],
+  [
+   "cena",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "yaka glowlesorow cena diao",
+    "vada woopigette cena vite"
+   ]
+  ],
+  [
+   "muda",
+   17,
+   [
+    "ru"
+   ],
+   [
+    "hier kumano pucielino muda",
+    "muda hurisseffield cape kiat"
+   ]
+  ],
+  [
+   "fela",
+   17,
+   [
+    "cs"
+   ],
+   [
+    "orotitak fela silegarora",
+    "woodwady hiares fela fano"
+   ]
+  ],
+  [
+   "kisa",
+   16,
+   [
+    "is"
+   ],
+   [
+    "dien cascro kisa mackopki",
+    "frebnia kisa flette workland"
+   ]
+  ]
+ ],
+ "samples": [
+  "tetrao rute eder clidzery",
+  "cold kellan beckon tendsville",
+  "plebra dindry wasono buro",
+  "ines hutintina caton gistry",
+  "fincopos wesanilona sian",
+  "klatagidno geli thundsno",
+  "dabrosansville simpodek glice",
+  "edagague phau brotan vara",
+  "lais hugassina bunkndotka",
+  "slio serett sabano swnier",
+  "silovce founoras rice chia",
+  "ketielet laia baglaylvna"
+ ],
+ "seconds": 8.0,
+ "languages": [
+  "nan"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

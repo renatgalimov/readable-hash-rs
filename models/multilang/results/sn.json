@@ -1,0 +1,259 @@
+{
+ "name": "sn",
+ "corpus_words": 65224,
+ "relaxed_rows": 27,
+ "relaxed_examples": [
+  "je",
+  "ju",
+  "ce",
+  "sc",
+  "ae",
+  "ex",
+  "fl",
+  "zu",
+  "ao",
+  "cu",
+  "sy",
+  "ji"
+ ],
+ "segmented_words": 52249,
+ "skipped_words": 12975,
+ "middle_attested_fraction": 0.3867594401041667,
+ "end32_attested_fraction": 0.34912109375,
+ "end16_attested_fraction": 0.5521647135416666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.99,
+ "max_chars": 38,
+ "consonant_runs_pct": 4.168,
+ "vowel_runs_pct": 4.338,
+ "english_words_pct": 0.877,
+ "own_words_pct": 21.881,
+ "offensive_whole_pct": 1.49,
+ "offensive_whole_english_list_pct": 0.1,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.015,
+ "offensive_severe_en_pct": 0.11,
+ "offensive_inside5_pct": 5.27,
+ "offensive_inside4_pct": 21.88,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "tanga",
+   362,
+   [
+    "fil"
+   ],
+   [
+    "yayo kepetotanga atotirengwa",
+    "tunda aputanga isimadzirwe name"
+   ]
+  ],
+  [
+   "kunda",
+   72,
+   [
+    "cs"
+   ],
+   [
+    "kunda apomamai idungira agira",
+    "zamu hetongwa acongokunda mbonga"
+   ]
+  ],
+  [
+   "chipa",
+   50,
+   [
+    "uz"
+   ],
+   [
+    "agnese nyota irasikana idichipa",
+    "zvoda yanga kusachipakura arawo"
+   ]
+  ],
+  [
+   "manda",
+   32,
+   [
+    "ru"
+   ],
+   [
+    "manda janda dochauya dushekani",
+    "utokuzviti manda afri aungobuda"
+   ]
+  ],
+  [
+   "chich",
+   31,
+   [
+    "vi"
+   ],
+   [
+    "chichikoho vokura betsvarura",
+    "chichaunza narudzira inhimutedzwa"
+   ]
+  ],
+  [
+   "kurwa",
+   31,
+   [
+    "pl"
+   ],
+   [
+    "kurwa gobhodapana ndiro mune",
+    "vokwenera auye kurwa avaiti"
+   ]
+  ],
+  [
+   "zizi",
+   25,
+   [
+    "fr"
+   ],
+   [
+    "praibatwa rukapihwa zizi waha",
+    "zizi jewe ecapakuaiti inera"
+   ]
+  ],
+  [
+   "here",
+   23,
+   [
+    "hu"
+   ],
+   [
+    "ukirwa yenyazova here edichiedza",
+    "ngiswa here pfichibhidya avita"
+   ]
+  ],
+  [
+   "tsipa",
+   23,
+   [
+    "sr"
+   ],
+   [
+    "gwiwa mositsipa nedzimikidzwa",
+    "noise negutsipa dunoita neina"
+   ]
+  ],
+  [
+   "damba",
+   23,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "payaro aidambabuya dhimira",
+    "idambana orange gwere chawakaenda"
+   ]
+  ],
+  [
+   "fenda",
+   21,
+   [
+    "pt"
+   ],
+   [
+    "shastion afenda wepo vourai",
+    "otwe primonyidza shuka afenda"
+   ]
+  ],
+  [
+   "hore",
+   20,
+   [
+    "be",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "hr",
+    "hu",
+    "id",
+    "is",
+    "it",
+    "la",
+    "lv",
+    "mr",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk"
+   ],
+   [
+    "hore bookuchamai denga agwe",
+    "moinoda epaikwanisa tora hore"
+   ]
+  ],
+  [
+   "zakar",
+   20,
+   [
+    "ms"
+   ],
+   [
+    "dzakare ezirwa shoromba edawo",
+    "asendeswa tsapwe zakarirwamuwana"
+   ]
+  ],
+  [
+   "dambi",
+   19,
+   [
+    "uk"
+   ],
+   [
+    "sahi ukemara mboma edambitika",
+    "nhepaiita edambichiendai mava"
+   ]
+  ],
+  [
+   "mama",
+   19,
+   [
+    "pt"
+   ],
+   [
+    "irekutengibanga poitwa fava mama",
+    "mama voroboora bowa azorwe"
+   ]
+  ]
+ ],
+ "samples": [
+  "apopia soura dunhu fuhungunda",
+  "zvera hotema acomhu apumbo",
+  "beputwa gumusi hwerwo atidza",
+  "isiri keichifadza neno tsambe",
+  "bhemabri gwingoitakapihwa aiisa",
+  "ezekuverchaisa dawe podiurama",
+  "urikubvokunzi aisinira fata",
+  "dudikupa aara haaiita ucera",
+  "yayo kepetotanga atotirengwa",
+  "zano ngwene pandari onyati",
+  "aishiri evadzisadza toona kuisa",
+  "hotsiphi yaba nditengadisa"
+ ],
+ "seconds": 10.9,
+ "languages": [
+  "sn"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

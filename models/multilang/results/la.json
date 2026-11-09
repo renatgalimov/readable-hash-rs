@@ -1,0 +1,250 @@
+{
+ "name": "la",
+ "corpus_words": 80000,
+ "relaxed_rows": 46,
+ "relaxed_examples": [
+  "af",
+  "my",
+  "vu",
+  "aq",
+  "ty",
+  "eq",
+  "py",
+  "wo",
+  "je",
+  "zo",
+  "dy",
+  "mc"
+ ],
+ "segmented_words": 60055,
+ "skipped_words": 19945,
+ "middle_attested_fraction": 0.4130452473958333,
+ "end32_attested_fraction": 0.4288736979166667,
+ "end16_attested_fraction": 0.627685546875,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.43,
+ "max_chars": 37,
+ "consonant_runs_pct": 5.344,
+ "vowel_runs_pct": 3.958,
+ "english_words_pct": 4.248,
+ "own_words_pct": 23.638,
+ "offensive_whole_pct": 1.56,
+ "offensive_whole_english_list_pct": 0.155,
+ "offensive_whole_own_list_pct": 0.05,
+ "offensive_whole_major_lists_pct": 0.875,
+ "offensive_severe_en_pct": 0.065,
+ "offensive_inside5_pct": 3.565,
+ "offensive_inside4_pct": 21.655,
+ "offensive_across_words_pct": 0.07,
+ "top_hits": [
+  [
+   "tissi",
+   30,
+   [
+    "fi"
+   ],
+   [
+    "marsalti ninnectissimorum irae",
+    "atne lumbidas hoeutissimas"
+   ]
+  ],
+  [
+   "ianus",
+   21,
+   [
+    "zu"
+   ],
+   [
+    "ilianus cubaribium damidum",
+    "itta boretradensis phocianus"
+   ]
+  ],
+  [
+   "charu",
+   21,
+   [
+    "ja"
+   ],
+   [
+    "egio lustivit curisticharum",
+    "fliduleosa brorum adulcharum"
+   ]
+  ],
+  [
+   "gandu",
+   20,
+   [
+    "hi"
+   ],
+   [
+    "diem seta defigengandum nodum",
+    "dore nuorgandum camus londae"
+   ]
+  ],
+  [
+   "anus",
+   20,
+   [
+    "be",
+    "bg",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "eu",
+    "fa",
+    "fr",
+    "gd",
+    "is",
+    "mk",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sl",
+    "sq",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "glendatorum anus serum rutiches",
+    "plicae anus arcebrinis dino"
+   ]
+  ],
+  [
+   "serat",
+   19,
+   [
+    "bg"
+   ],
+   [
+    "rurum elserat dubare acheus",
+    "nivamido spadimirus luserat"
+   ]
+  ],
+  [
+   "curat",
+   18,
+   [
+    "cs"
+   ],
+   [
+    "ditur murophitus amicuratio",
+    "precurata mama libertum momus"
+   ]
+  ],
+  [
+   "trio",
+   18,
+   [
+    "es"
+   ],
+   [
+    "semprochia trio alni mulum",
+    "trio efomate efibus lusecris"
+   ]
+  ],
+  [
+   "pios",
+   18,
+   [
+    "gd"
+   ],
+   [
+    "diruum hunnadendi pios emibus",
+    "purivationis pios renosum buam"
+   ]
+  ],
+  [
+   "puto",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "liam hotum puto apiacetica",
+    "viis rochopibus puto dumona"
+   ]
+  ],
+  [
+   "mesa",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "mesa lunis asam grulfettius",
+    "utare polum biodamiliti mesa"
+   ]
+  ],
+  [
+   "bunda",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "gangobia casa lovehibunda",
+    "habunda esoclato sato thri"
+   ]
+  ],
+  [
+   "hori",
+   17,
+   [
+    "ms"
+   ],
+   [
+    "ephenodonum hori bari chus",
+    "orca catalaense cram hori"
+   ]
+  ],
+  [
+   "culus",
+   17,
+   [
+    "la"
+   ],
+   [
+    "tacunasque socculus respes",
+    "clos deni pugitinus faculus"
+   ]
+  ],
+  [
+   "peos",
+   17,
+   [
+    "el"
+   ],
+   [
+    "deni ciebant niditicchon peos",
+    "enututidere peos alii aforum"
+   ]
+  ]
+ ],
+ "samples": [
+  "orbare hita euta guelagni",
+  "dion ravenio mendat orodicis",
+  "efurorum flerata telare limum",
+  "soto hediviae inuit bernus",
+  "plotonidae lostentarias aeni",
+  "unctutiliani hoes brenobes",
+  "multatelorum aetibile oces",
+  "eunthatum votur pollum imis",
+  "searum hendrere litumannos",
+  "ruente mittet regiorum cygnas",
+  "aegendis evanitii sint deum",
+  "radebiarum sese canandausa"
+ ],
+ "seconds": 10.7,
+ "languages": [
+  "la"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

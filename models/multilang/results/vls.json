@@ -1,0 +1,227 @@
+{
+ "name": "vls",
+ "corpus_words": 25311,
+ "relaxed_rows": 19,
+ "relaxed_examples": [
+  "ku",
+  "zu",
+  "by",
+  "ex",
+  "ofg",
+  "vu",
+  "tj",
+  "ry",
+  "sj",
+  "ly",
+  "uk",
+  "uz"
+ ],
+ "segmented_words": 16160,
+ "skipped_words": 9151,
+ "middle_attested_fraction": 0.3538004557291667,
+ "end32_attested_fraction": 0.23527018229166666,
+ "end16_attested_fraction": 0.4239095052083333,
+ "begin_attested": 128,
+ "chars": 26.74,
+ "max_chars": 40,
+ "consonant_runs_pct": 21.615,
+ "vowel_runs_pct": 4.413,
+ "english_words_pct": 1.856,
+ "own_words_pct": 16.6,
+ "offensive_whole_pct": 2.295,
+ "offensive_whole_english_list_pct": 0.44,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.21,
+ "offensive_severe_en_pct": 0.185,
+ "offensive_inside5_pct": 5.33,
+ "offensive_inside4_pct": 19.295,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "ische",
+   561,
+   [
+    "de"
+   ],
+   [
+    "mulounderst capectoische gotn",
+    "oetaische fenallon enrimpek"
+   ]
+  ],
+  [
+   "veres",
+   30,
+   [
+    "hu"
+   ],
+   [
+    "twoupn darone ipeesde overes",
+    "veres devollollen dopitone"
+   ]
+  ],
+  [
+   "niger",
+   27,
+   [
+    "hy"
+   ],
+   [
+    "nigereezn tose sakn vrider",
+    "pakn fann oadenigeruus zwet"
+   ]
+  ],
+  [
+   "arsch",
+   23,
+   [
+    "de"
+   ],
+   [
+    "pauler soarschelik nikkniet",
+    "arsche oorzee eunigischn arnd"
+   ]
+  ],
+  [
+   "mater",
+   23,
+   [
+    "sl"
+   ],
+   [
+    "lion bing materrand seigheid",
+    "sere comeulsen materroorkant"
+   ]
+  ],
+  [
+   "mona",
+   22,
+   [
+    "it"
+   ],
+   [
+    "ring mona mutoverhate exse",
+    "niks mona ondukskate pone"
+   ]
+  ],
+  [
+   "chati",
+   21,
+   [
+    "te"
+   ],
+   [
+    "adunlere duvn chatikn eusche",
+    "ipeur hauwschatief foutekke"
+   ]
+  ],
+  [
+   "sund",
+   20,
+   [
+    "et"
+   ],
+   [
+    "sund exrichtre zulln siatus",
+    "ofvolkoanel sund hond spus"
+   ]
+  ],
+  [
+   "sise",
+   20,
+   [
+    "hr"
+   ],
+   [
+    "rovert mommodoal sise live",
+    "kercus elienge sise grotegaze"
+   ]
+  ],
+  [
+   "sere",
+   19,
+   [
+    "hr",
+    "sk"
+   ],
+   [
+    "sere comeulsen materroorkant",
+    "foroedkery sere zore eler"
+   ]
+  ],
+  [
+   "trap",
+   18,
+   [
+    "sq"
+   ],
+   [
+    "trap kuloofdn belle gotien",
+    "brazermde arlielteern trap"
+   ]
+  ],
+  [
+   "dust",
+   18,
+   [
+    "hi"
+   ],
+   [
+    "opig dust callodste anbels",
+    "dust vlebodns disceerd preid"
+   ]
+  ],
+  [
+   "kuje",
+   17,
+   [
+    "hr"
+   ],
+   [
+    "asge overeenzbout kuje bunt",
+    "kuje kercosere galanoberg"
+   ]
+  ],
+  [
+   "mist",
+   17,
+   [
+    "de"
+   ],
+   [
+    "dachtn streaten mist kattery",
+    "mist wostorte vakn verpling"
+   ]
+  ],
+  [
+   "choot",
+   17,
+   [
+    "hi"
+   ],
+   [
+    "basen eunaschootn kwit riddngn",
+    "mist beschootn mitote dumolle"
+   ]
+  ]
+ ],
+ "samples": [
+  "slogan pign hite tiortica",
+  "mente olteld poolet slilos",
+  "twoupn darone ipeesde overes",
+  "trap kuloofdn belle gotien",
+  "durpomtje oeegbeween tote",
+  "energolumeerd oarienge sastrieje",
+  "perspelery topriver ameerd",
+  "hilorade foel moortn spen",
+  "kasn kuvoeekn overmeroplakt",
+  "elders voeland maktre adopus",
+  "tornde famioozn bitje geen",
+  "olunbodn katen relisenboar"
+ ],
+ "seconds": 8.4,
+ "languages": [
+  "vls"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

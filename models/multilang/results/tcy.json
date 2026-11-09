@@ -1,0 +1,249 @@
+{
+ "name": "tcy",
+ "corpus_words": 9302,
+ "relaxed_rows": 284,
+ "relaxed_examples": [
+  "ko",
+  "bh",
+  "po",
+  "ml",
+  "bo",
+  "pn",
+  "jn",
+  "kt",
+  "km",
+  "kn",
+  "bl",
+  "ay"
+ ],
+ "segmented_words": 5626,
+ "skipped_words": 3676,
+ "middle_attested_fraction": 0.082275390625,
+ "end32_attested_fraction": 0.136474609375,
+ "end16_attested_fraction": 0.26953125,
+ "begin_attested": 128,
+ "chars": 25.93,
+ "max_chars": 34,
+ "consonant_runs_pct": 33.553,
+ "vowel_runs_pct": 6.711,
+ "english_words_pct": 0.229,
+ "own_words_pct": 14.265,
+ "offensive_whole_pct": 2.155,
+ "offensive_whole_english_list_pct": 0.235,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.73,
+ "offensive_severe_en_pct": 0.02,
+ "offensive_inside5_pct": 1.25,
+ "offensive_inside4_pct": 12.645,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "anale",
+   25,
+   [
+    "it"
+   ],
+   [
+    "koditt prvanalen aret sodd",
+    "valen denanaleg srogu omjrtudu"
+   ]
+  ],
+  [
+   "palen",
+   24,
+   [
+    "nl"
+   ],
+   [
+    "totholu mdud gautpalen knter",
+    "kttomdu vidydard palen maiped"
+   ]
+  ],
+  [
+   "mail",
+   17,
+   [
+    "hi"
+   ],
+   [
+    "pnarmglen mail ganire produ",
+    "vikimjolu peer mail poddng"
+   ]
+  ],
+  [
+   "kher",
+   17,
+   [
+    "be"
+   ],
+   [
+    "praylitrolu kher pndu stad",
+    "anayur kher nrnaye ksagvad"
+   ]
+  ],
+  [
+   "kran",
+   17,
+   [
+    "be"
+   ],
+   [
+    "aphuyamgid kran ptne bene",
+    "meid irin survnivoer kran"
+   ]
+  ],
+  [
+   "blin",
+   17,
+   [
+    "be"
+   ],
+   [
+    "pdivdhar uddu blin apllid",
+    "blin kasd punnumdu dodhavumdu"
+   ]
+  ],
+  [
+   "blit",
+   17,
+   [
+    "hy"
+   ],
+   [
+    "bttnath kard sombmjin blit",
+    "tanniylu bttinen blit kuda"
+   ]
+  ],
+  [
+   "sitt",
+   16,
+   [
+    "et"
+   ],
+   [
+    "agavstrt sitt irgokkksad",
+    "udimjoer karnyostrt sitt"
+   ]
+  ],
+  [
+   "nuli",
+   15,
+   [
+    "ja"
+   ],
+   [
+    "nuli ayiiymd ilelunu simbri",
+    "bhvirase sudyne nuli bare"
+   ]
+  ],
+  [
+   "bite",
+   15,
+   [
+    "fr"
+   ],
+   [
+    "ksauarlu klesin bite dedu",
+    "bite urulu pomd bhdaveurugu"
+   ]
+  ],
+  [
+   "niti",
+   14,
+   [
+    "te"
+   ],
+   [
+    "niti hiktne bakrad udisro",
+    "mrthare klitt kavethed niti"
+   ]
+  ],
+  [
+   "butt",
+   14,
+   [
+    "cy",
+    "en",
+    "mn",
+    "mt",
+    "sr",
+    "zu"
+   ],
+   [
+    "butt phrudrse byre ilaidi",
+    "butt solu orsudi mrdhyvene"
+   ]
+  ],
+  [
+   "bile",
+   14,
+   [
+    "ro"
+   ],
+   [
+    "ilen mude brsasndkre bile",
+    "bhayre immasnolu mayad bile"
+   ]
+  ],
+  [
+   "kalu",
+   13,
+   [
+    "fi"
+   ],
+   [
+    "kalu boanuker nmtovarted",
+    "sard mdayikimer kalu viti"
+   ]
+  ],
+  [
+   "turd",
+   13,
+   [
+    "ca",
+    "cy",
+    "de",
+    "en",
+    "et",
+    "eu",
+    "gd",
+    "gl",
+    "hi",
+    "is",
+    "kn",
+    "lt",
+    "lv",
+    "ms",
+    "my",
+    "sl",
+    "sr",
+    "te",
+    "uz"
+   ],
+   [
+    "enumbaisnte turd kadhrted",
+    "purmtuver kttuver turd urumit"
+   ]
+  ]
+ ],
+ "samples": [
+  "ndlivat ered iled orsvmbed",
+  "puje bttamolu silide nddoodu",
+  "ceratmd kttuppodu buriyat akla",
+  "ledd svaystrd mudumdu ittmbri",
+  "stimgldi vyarkkmbayi gudi",
+  "dopukrekonu gadd asvtpuna",
+  "bdlastilld guryveru omjlen",
+  "ilelukumdu inin diponu kdle",
+  "mard sviprulu aklltrkttu",
+  "jomd derone baledd otmbodu",
+  "gumire nmbukrtt mlpu sala",
+  "bttaidrolu masd karmtothen"
+ ],
+ "seconds": 8.0,
+ "languages": [
+  "tcy"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

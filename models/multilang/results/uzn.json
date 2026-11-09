@@ -1,0 +1,226 @@
+{
+ "name": "uzn",
+ "corpus_words": 80000,
+ "relaxed_rows": 11,
+ "relaxed_examples": [
+  "uc",
+  "kuc",
+  "kec",
+  "ic",
+  "oc",
+  "vc",
+  "uvc",
+  "nc",
+  "ac",
+  "kn",
+  "ic"
+ ],
+ "segmented_words": 52791,
+ "skipped_words": 27209,
+ "middle_attested_fraction": 0.4052327473958333,
+ "end32_attested_fraction": 0.309814453125,
+ "end16_attested_fraction": 0.5164388020833334,
+ "begin_attested": 128,
+ "chars": 29.73,
+ "max_chars": 42,
+ "consonant_runs_pct": 17.525,
+ "vowel_runs_pct": 3.049,
+ "english_words_pct": 0.61,
+ "own_words_pct": 17.014,
+ "offensive_whole_pct": 1.56,
+ "offensive_whole_english_list_pct": 0.105,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.715,
+ "offensive_severe_en_pct": 0.15,
+ "offensive_inside5_pct": 3.61,
+ "offensive_inside4_pct": 23.685,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "asini",
+   101,
+   [
+    "it"
+   ],
+   [
+    "deydak umlanasining antalalini",
+    "nikilgan peladi kecharim enyasini"
+   ]
+  ],
+  [
+   "hlang",
+   58,
+   [
+    "th"
+   ],
+   [
+    "fokhlangan meti gapidan zhahkhdan",
+    "berim pukhlangan hurlik sokhobini"
+   ]
+  ],
+  [
+   "amlar",
+   32,
+   [
+    "tr"
+   ],
+   [
+    "qisnagi ekakilshlik muamlar",
+    "alli pardomlik risoginamlar"
+   ]
+  ],
+  [
+   "billi",
+   32,
+   [
+    "hi"
+   ],
+   [
+    "uchidagi taqidi billigi perkomning",
+    "oqaetgan billigi qilti kelghoturida"
+   ]
+  ],
+  [
+   "chim",
+   23,
+   [
+    "th"
+   ],
+   [
+    "uzatimini ulning orkatlar chim",
+    "chim kechdi rakhsi utasilmaydi"
+   ]
+  ],
+  [
+   "chani",
+   21,
+   [
+    "zh"
+   ],
+   [
+    "magitodagi imaylanslidan kechani",
+    "kechani eganogoslik qarinadir"
+   ]
+  ],
+  [
+   "ashol",
+   21,
+   [
+    "kn"
+   ],
+   [
+    "asridan ablasholga pisi aminuvchi",
+    "nakhini ilasholam ghning damni"
+   ]
+  ],
+  [
+   "paki",
+   21,
+   [
+    "en",
+    "hi"
+   ],
+   [
+    "khin paki gaparning lillatafasi",
+    "paki odlar oquroslar ettirlik"
+   ]
+  ],
+  [
+   "niga",
+   19,
+   [
+    "ja"
+   ],
+   [
+    "kechiladi unstrush belizmda niga",
+    "amghoniy niga gapik oqkhiy"
+   ]
+  ],
+  [
+   "pesi",
+   18,
+   [
+    "mr"
+   ],
+   [
+    "egin emin pesi adolumrardi",
+    "iktonning amim pesi pubighasi"
+   ]
+  ],
+  [
+   "pusi",
+   18,
+   [
+    "kn"
+   ],
+   [
+    "gurganaktosi amish pusi derlar",
+    "pusi huligi embabiadi qumoni"
+   ]
+  ],
+  [
+   "naida",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "naidan ulidan imomurlashlari belini",
+    "fidovchbish ketinonalar naidan"
+   ]
+  ],
+  [
+   "chishi",
+   15,
+   [
+    "zh"
+   ],
+   [
+    "osharlar yighilida ziarning ichishib",
+    "kechishidagi emurgilarga baensusida"
+   ]
+  ],
+  [
+   "pisi",
+   15,
+   [
+    "hu"
+   ],
+   [
+    "pisi vidagi sahimga latotamga",
+    "asridan ablasholga pisi aminuvchi"
+   ]
+  ],
+  [
+   "chich",
+   15,
+   [
+    "vi"
+   ],
+   [
+    "siti ruqinni ezining bundchich",
+    "sodachich nunni suzildi qizik"
+   ]
+  ]
+ ],
+ "samples": [
+  "zamatni azhim vidan istkhlisligi",
+  "basi ekollik soturib zaghlik",
+  "laekdagi pakatdan meshimiz bermiz",
+  "ulib hisriylab khdi realgan",
+  "biringtohlari ketlanastaga uzning",
+  "gapilyakding uchdagi illablish",
+  "almaklalaniga uzugunga otani",
+  "vintezni emiga bularim damni",
+  "kuarga hisbirkon bersamlaqali",
+  "aviga utqaman tabiri putisiz",
+  "uzogir stadiqaladi folar muning",
+  "eklanslizga kudagi tulatlarolini"
+ ],
+ "seconds": 9.7,
+ "languages": [
+  "uzn"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

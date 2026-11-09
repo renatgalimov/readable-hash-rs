@@ -1,0 +1,232 @@
+{
+ "name": "ba",
+ "corpus_words": 80000,
+ "relaxed_rows": 21,
+ "relaxed_examples": [
+  "aw",
+  "co",
+  "dz",
+  "jo",
+  "ij",
+  "xe",
+  "xu",
+  "cu",
+  "ix",
+  "sv",
+  "iq",
+  "bm"
+ ],
+ "segmented_words": 54071,
+ "skipped_words": 25929,
+ "middle_attested_fraction": 0.4194742838541667,
+ "end32_attested_fraction": 0.33154296875,
+ "end16_attested_fraction": 0.5342610677083334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.46,
+ "max_chars": 38,
+ "consonant_runs_pct": 10.216,
+ "vowel_runs_pct": 3.964,
+ "english_words_pct": 0.41,
+ "own_words_pct": 16.568,
+ "offensive_whole_pct": 2.35,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.695,
+ "offensive_severe_en_pct": 0.03,
+ "offensive_inside5_pct": 2.41,
+ "offensive_inside4_pct": 18.88,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "linda",
+   28,
+   [
+    "zu"
+   ],
+   [
+    "xacha atielinda unin duryen",
+    "ysezova kuse zalinda gorova"
+   ]
+  ],
+  [
+   "meni",
+   23,
+   [
+    "tr"
+   ],
+   [
+    "meni tamilysy akny urakbez",
+    "ysynskilar meni imatshasha"
+   ]
+  ],
+  [
+   "sega",
+   23,
+   [
+    "it"
+   ],
+   [
+    "jinin sega dayn ildiaslisa",
+    "agiyaneng rien sega synamirdan"
+   ]
+  ],
+  [
+   "peder",
+   21,
+   [
+    "hr",
+    "mk",
+    "sl"
+   ],
+   [
+    "peder undy fauziyali dielgan",
+    "aptyrtyru gilmen qunda peder"
+   ]
+  ],
+  [
+   "fenda",
+   21,
+   [
+    "pt"
+   ],
+   [
+    "aden fenda ayanylanadym mias",
+    "ellap qurmyk ysbargane fenda"
+   ]
+  ],
+  [
+   "amlar",
+   21,
+   [
+    "tr"
+   ],
+   [
+    "uragan omekly amlar rilyuzsez",
+    "rien usiyalyrga esselare amlar"
+   ]
+  ],
+  [
+   "tanga",
+   20,
+   [
+    "fil"
+   ],
+   [
+    "ukuga nissany zaittanga aeta",
+    "kristanga adlar yoskva nizair"
+   ]
+  ],
+  [
+   "faen",
+   20,
+   [
+    "no"
+   ],
+   [
+    "yustiq sune ysshatlary faen",
+    "faen idarga ockemnny muskilar"
+   ]
+  ],
+  [
+   "pene",
+   20,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "ocashygytuy pene none lirga",
+    "pene initsker ozda omisennan"
+   ]
+  ],
+  [
+   "baka",
+   19,
+   [
+    "ja"
+   ],
+   [
+    "muenykallar duarnyng baka onin",
+    "osholinin panitststan baka"
+   ]
+  ],
+  [
+   "xana",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "miarga xana bunda kilmescasi",
+    "qannan dennan sigrantymy xana"
+   ]
+  ],
+  [
+   "bunda",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "miarga xana bunda kilmescasi",
+    "ikylar feylar instalarrina bunda"
+   ]
+  ],
+  [
+   "nima",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "krylisin miarnyng nima ildiaga",
+    "aghannarga nima eskistamne"
+   ]
+  ],
+  [
+   "niga",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "erin omtyrbasena niga olny",
+    "asny harchishman niga anen"
+   ]
+  ],
+  [
+   "biga",
+   17,
+   [
+    "it"
+   ],
+   [
+    "strullavin lany biga kyga",
+    "prare biga sekunyng ezirlanam"
+   ]
+  ]
+ ],
+ "samples": [
+  "mersny amov ozde plikhirga",
+  "yava adapmy jideev meyday",
+  "krayneng olshny esshep tida",
+  "rana abieviev kuyk paygylar",
+  "oerionchy devinnatlarga diep",
+  "ezzamortasy posa goldovne",
+  "javalantyuy disalina omsa",
+  "ozmadyrgan dunnan shulla assa",
+  "toer abkatner tishatoltan",
+  "grov aydalap kitany nuruybyz",
+  "divier ligauzny atta baga",
+  "adyachesa tolar kolayazhan"
+ ],
+ "seconds": 11.0,
+ "languages": [
+  "ba"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

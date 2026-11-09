@@ -1,0 +1,227 @@
+{
+ "name": "te",
+ "corpus_words": 59332,
+ "relaxed_rows": 5,
+ "relaxed_examples": [
+  "bm",
+  "cb",
+  "mcb",
+  "imcb",
+  "vc"
+ ],
+ "segmented_words": 35510,
+ "skipped_words": 23822,
+ "middle_attested_fraction": 0.4689534505208333,
+ "end32_attested_fraction": 0.4043782552083333,
+ "end16_attested_fraction": 0.62109375,
+ "begin_attested": 128,
+ "chars": 27.09,
+ "max_chars": 37,
+ "consonant_runs_pct": 40.488,
+ "vowel_runs_pct": 3.956,
+ "english_words_pct": 0.237,
+ "own_words_pct": 24.192,
+ "offensive_whole_pct": 1.705,
+ "offensive_whole_english_list_pct": 0.085,
+ "offensive_whole_own_list_pct": 0.115,
+ "offensive_whole_major_lists_pct": 1.13,
+ "offensive_severe_en_pct": 0.11,
+ "offensive_inside5_pct": 1.495,
+ "offensive_inside4_pct": 15.7,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "ganni",
+   47,
+   [
+    "zh"
+   ],
+   [
+    "loplvumganni brmga smadhbhmlo",
+    "lakkstri atganni ndini simlo"
+   ]
+  ],
+  [
+   "seit",
+   21,
+   [
+    "te"
+   ],
+   [
+    "phretu seit vasaru garaluga",
+    "kuturi islaku seit kraisi"
+   ]
+  ],
+  [
+   "rini",
+   18,
+   [
+    "zh"
+   ],
+   [
+    "rini avpati tgudu upstapet",
+    "rini khodhm serlu svrunaina"
+   ]
+  ],
+  [
+   "reto",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "yuvtasku smetti apna reto",
+    "jarjidya blagtm isulu reto"
+   ]
+  ],
+  [
+   "haji",
+   17,
+   [
+    "en"
+   ],
+   [
+    "haji dandulto speyil agmtone",
+    "klanpracalu haji haku bhnu"
+   ]
+  ],
+  [
+   "jinu",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "dhmga vayunu stavkarm jinu",
+    "brukovulu jinu amerrmrkulu"
+   ]
+  ],
+  [
+   "kalu",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "srit kolimprduni kidi kalu",
+    "pllku kalu jatkai hatsahmga"
+   ]
+  ],
+  [
+   "trni",
+   17,
+   [
+    "bg"
+   ],
+   [
+    "trni tomu pitistunn jrpaleru",
+    "mharmu jnuvulku trni anistm"
+   ]
+  ],
+  [
+   "vana",
+   17,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "mmgokarbimdi biharasal vana",
+    "vmulu vana kigastik cmperu"
+   ]
+  ],
+  [
+   "pene",
+   16,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "pene trkitsmu jacaddpdutumdi",
+    "vedetriga khlo pene nmiptl"
+   ]
+  ],
+  [
+   "anali",
+   16,
+   [
+    "mt"
+   ],
+   [
+    "brmu anali dhmlo bylmodmdmlo",
+    "jans gallu melnukumkrym anali"
+   ]
+  ],
+  [
+   "culo",
+   15,
+   [
+    "es",
+    "it"
+   ],
+   [
+    "tomdriydradu amni udnu culo",
+    "culo desivegmnm stta ksmlo"
+   ]
+  ],
+  [
+   "suki",
+   14,
+   [
+    "be",
+    "pl",
+    "ru",
+    "uk"
+   ],
+   [
+    "akkilsudu suki pttupunmtmain",
+    "suki simlo hinu ndilavkaralu"
+   ]
+  ],
+  [
+   "pele",
+   14,
+   [
+    "hu"
+   ],
+   [
+    "adaynptslu pele piji muti",
+    "pele tomeralnu nanu saguku"
+   ]
+  ],
+  [
+   "meni",
+   14,
+   [
+    "tr"
+   ],
+   [
+    "meni nesnnu riri potlmanalu",
+    "goni meni borbithulu aptm"
+   ]
+  ]
+ ],
+ "samples": [
+  "dryiga vsmdi skym agdhiknu",
+  "satlu imtlpai sultulu drdalni",
+  "tunipai kmdasu asvsmu cumga",
+  "temga domnaylu vimg kepalni",
+  "jrukrnimci mmaskasmulo pulnu",
+  "dukudriliki bolnu pttrarulto",
+  "trliynmtulo pugaimcimdi nmto",
+  "skovvali sosn korugu dallo",
+  "amto doklitilo cumdevddadu",
+  "ksulu styalto bhisimg nremda",
+  "punevaru mhilitvm sesn smdu",
+  "imphaddm amit sitaptsallo"
+ ],
+ "seconds": 8.5,
+ "languages": [
+  "te"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

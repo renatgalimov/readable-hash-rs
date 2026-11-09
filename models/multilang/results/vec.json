@@ -1,0 +1,219 @@
+{
+ "name": "vec",
+ "corpus_words": 49990,
+ "relaxed_rows": 0,
+ "relaxed_examples": [],
+ "segmented_words": 37432,
+ "skipped_words": 12558,
+ "middle_attested_fraction": 0.414794921875,
+ "end32_attested_fraction": 0.4060872395833333,
+ "end16_attested_fraction": 0.6188151041666666,
+ "begin_attested": 128,
+ "chars": 28.42,
+ "max_chars": 42,
+ "consonant_runs_pct": 5.1,
+ "vowel_runs_pct": 1.61,
+ "english_words_pct": 2.354,
+ "own_words_pct": 19.776,
+ "offensive_whole_pct": 2.365,
+ "offensive_whole_english_list_pct": 0.12,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.325,
+ "offensive_severe_en_pct": 0.13,
+ "offensive_inside5_pct": 4.775,
+ "offensive_inside4_pct": 31.455,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "stiche",
+   51,
+   [
+    "de"
+   ],
+   [
+    "elevadano enstiche putronda",
+    "chiesche sgondastiche progridare"
+   ]
+  ],
+  [
+   "samen",
+   47,
+   [
+    "de"
+   ],
+   [
+    "affosamente junimina noia slazione",
+    "aldissamento poponiperti veati"
+   ]
+  ],
+  [
+   "retto",
+   37,
+   [
+    "it"
+   ],
+   [
+    "dotamenti lesso garetto famiti",
+    "tavoni dino diretto pisici"
+   ]
+  ],
+  [
+   "anita",
+   27,
+   [
+    "nl"
+   ],
+   [
+    "smata masciarpiro anita tori",
+    "goica lepoco gumanita pottata"
+   ]
+  ],
+  [
+   "monta",
+   26,
+   [
+    "it"
+   ],
+   [
+    "smaculcion jurtale smontaia",
+    "smontascico osesco sporcolari"
+   ]
+  ],
+  [
+   "zamen",
+   25,
+   [
+    "ja"
+   ],
+   [
+    "faggio svogna accale costruzzamento",
+    "ruanizzamente cenno impurisatiare"
+   ]
+  ],
+  [
+   "fitta",
+   21,
+   [
+    "sv"
+   ],
+   [
+    "datura rudeva anfittamento noando",
+    "renato kase gorgominate fitta"
+   ]
+  ],
+  [
+   "curat",
+   21,
+   [
+    "cs"
+   ],
+   [
+    "savete narcurate cechi soro",
+    "colera accurato suplio geranda"
+   ]
+  ],
+  [
+   "mater",
+   19,
+   [
+    "sl"
+   ],
+   [
+    "slunocte araro materistossa",
+    "sugo amianscrando materrezione"
+   ]
+  ],
+  [
+   "asno",
+   19,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "asno sbici silicella petremo",
+    "demode asno ginghe agisteva"
+   ]
+  ],
+  [
+   "galo",
+   19,
+   [
+    "gl",
+    "pt"
+   ],
+   [
+    "accro galo sbarovutati proare",
+    "idrara muombiati galo attate"
+   ]
+  ],
+  [
+   "gote",
+   18,
+   [
+    "tr"
+   ],
+   [
+    "zase gote liana vadainsaro",
+    "gote ciacava ornara touriamo"
+   ]
+  ],
+  [
+   "chier",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "prindilvanano agachiera more",
+    "kava crna chierfeia miletto"
+   ]
+  ],
+  [
+   "corno",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "accorno rustopac preso conata",
+    "frurata pasa corno lampatica"
+   ]
+  ],
+  [
+   "puta",
+   17,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "cuno ridanevolare puta osata",
+    "puta sori colmi merificeremo"
+   ]
+  ]
+ ],
+ "samples": [
+  "corolta emase glono smopolazione",
+  "proato slobato bacica corinamento",
+  "imminanti learci piedica bero",
+  "nere sfetille deare nasesimo",
+  "gandramento vogidiviso lato",
+  "funerosorati sbici logoviare",
+  "orgabrizone lavitrici tuia",
+  "gladattata sgrisimo palano mora",
+  "arati sfurgicare bestiviera",
+  "tiato donasi preciato triache",
+  "labiate guardunione none dita",
+  "slunocte araro materistossa"
+ ],
+ "seconds": 9.2,
+ "languages": [
+  "vec"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

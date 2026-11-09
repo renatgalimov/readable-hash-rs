@@ -1,0 +1,230 @@
+{
+ "name": "ts",
+ "corpus_words": 12222,
+ "relaxed_rows": 127,
+ "relaxed_examples": [
+  "fa",
+  "xa",
+  "vo",
+  "fi",
+  "po",
+  "co",
+  "mo",
+  "pe",
+  "tu",
+  "de",
+  "ci",
+  "ye"
+ ],
+ "segmented_words": 9353,
+ "skipped_words": 2869,
+ "middle_attested_fraction": 0.13529459635416666,
+ "end32_attested_fraction": 0.16597493489583334,
+ "end16_attested_fraction": 0.308349609375,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.94,
+ "max_chars": 39,
+ "consonant_runs_pct": 12.711,
+ "vowel_runs_pct": 5.721,
+ "english_words_pct": 0.56,
+ "own_words_pct": 13.44,
+ "offensive_whole_pct": 2.895,
+ "offensive_whole_english_list_pct": 0.01,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.38,
+ "offensive_severe_en_pct": 0.14,
+ "offensive_inside5_pct": 2.785,
+ "offensive_inside4_pct": 22.99,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "tanga",
+   76,
+   [
+    "fil"
+   ],
+   [
+    "tuela bulwicile danga ritanga",
+    "amatitanga lunyanyiso esuriwa"
+   ]
+  ],
+  [
+   "hlang",
+   47,
+   [
+    "th"
+   ],
+   [
+    "butluviwile hlanganeriwa heshotso",
+    "hlanganyi dari thitekisi gine"
+   ]
+  ],
+  [
+   "sheni",
+   31,
+   [
+    "zh"
+   ],
+   [
+    "gandlanyina rholiviwa sotsheni",
+    "bisheni atana nhisa lwahomiso"
+   ]
+  ],
+  [
+   "marha",
+   27,
+   [
+    "hu"
+   ],
+   [
+    "marha kuleviki kumiweke lota",
+    "marha panwihutla dukundlati"
+   ]
+  ],
+  [
+   "asini",
+   24,
+   [
+    "it"
+   ],
+   [
+    "ncani nyivati dyokweni arasini",
+    "eriwa anetaka alasini ntlhaka"
+   ]
+  ],
+  [
+   "bite",
+   22,
+   [
+    "fr"
+   ],
+   [
+    "bite twisa toriha byandzuxeka",
+    "sundlelo tenhongiwa bite site"
+   ]
+  ],
+  [
+   "tama",
+   21,
+   [
+    "pl",
+    "zh"
+   ],
+   [
+    "farimi tama karheleriwa terola",
+    "ntsaku dundzeka tama yavuku"
+   ]
+  ],
+  [
+   "rini",
+   21,
+   [
+    "zh"
+   ],
+   [
+    "faomokweni niyila inisa rini",
+    "ngidelo tondzelimeni rini lweli"
+   ]
+  ],
+  [
+   "ipeni",
+   21,
+   [
+    "zu"
+   ],
+   [
+    "mfumeka mpunanyisa teswipeni",
+    "vokuhi nsipeni totswidenge"
+   ]
+  ],
+  [
+   "pheni",
+   20,
+   [
+    "mr"
+   ],
+   [
+    "vole hluvayondzisi pheni nxelo",
+    "yeresa mbiwa pheni boxivuriwa"
+   ]
+  ],
+  [
+   "tate",
+   19,
+   [
+    "ro"
+   ],
+   [
+    "dathekeni karhi tate vhondzeni",
+    "khiwaka buku tate webambisukele"
+   ]
+  ],
+  [
+   "nomo",
+   19,
+   [
+    "ko"
+   ],
+   [
+    "mfungisa nomo kankuswa kweni",
+    "ntitsipaka nomo khelo tundia"
+   ]
+  ],
+  [
+   "satan",
+   18,
+   [
+    "no",
+    "sv"
+   ],
+   [
+    "tikarose nsipasatana atelo",
+    "vonantsatani mangelo mohini"
+   ]
+  ],
+  [
+   "xana",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "larhatso xana binhisa riti",
+    "xana nadza dulusungondza himba"
+   ]
+  ],
+  [
+   "damba",
+   18,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "xilo mbisiwa damba ebrothemiwa",
+    "mhtedzerile damba mfava esiyiwi"
+   ]
+  ]
+ ],
+ "samples": [
+  "torela nwanga wine yetsenkulu",
+  "kundzi esiyisiwa enyaya tokerani",
+  "xombha mbongile ndesana anta",
+  "tweni dzerisitara xitsongo bohava",
+  "akavuvangi dlawuluvisa nala",
+  "datlumelasile biwini vhomorna",
+  "sungulurhala natlimila pikela",
+  "wimihuvo alava lendzelela lota",
+  "riala dzukubane anivititulu",
+  "peka byakulu vuyete fendzeka",
+  "nansana niswohisa taya swela",
+  "esanyiraku rito malavisawuli"
+ ],
+ "seconds": 9.4,
+ "languages": [
+  "ts"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

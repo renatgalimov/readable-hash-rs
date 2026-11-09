@@ -1,0 +1,258 @@
+{
+ "name": "ga",
+ "corpus_words": 80000,
+ "relaxed_rows": 47,
+ "relaxed_examples": [
+  "ja",
+  "qu",
+  "wo",
+  "ju",
+  "ex",
+  "of",
+  "sk",
+  "sw",
+  "ji",
+  "tc",
+  "ya",
+  "ye"
+ ],
+ "segmented_words": 57725,
+ "skipped_words": 22275,
+ "middle_attested_fraction": 0.4423421223958333,
+ "end32_attested_fraction": 0.3712158203125,
+ "end16_attested_fraction": 0.59326171875,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.02,
+ "max_chars": 37,
+ "consonant_runs_pct": 19.167,
+ "vowel_runs_pct": 10.846,
+ "english_words_pct": 1.163,
+ "own_words_pct": 22.478,
+ "offensive_whole_pct": 2.815,
+ "offensive_whole_english_list_pct": 0.36,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.31,
+ "offensive_severe_en_pct": 0.11,
+ "offensive_inside5_pct": 1.65,
+ "offensive_inside4_pct": 19.735,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "panna",
+   35,
+   [
+    "fi"
+   ],
+   [
+    "orir miotointar panna mone",
+    "panna fastlanna ligiciagan"
+   ]
+  ],
+  [
+   "dust",
+   20,
+   [
+    "hi"
+   ],
+   [
+    "airiobhlint dust maiodh race",
+    "ionrodru leafeach dust ndara"
+   ]
+  ],
+  [
+   "asail",
+   20,
+   [
+    "gd"
+   ],
+   [
+    "teiliri fhasail goireoreoir",
+    "plasail cuan taighte fidini"
+   ]
+  ],
+  [
+   "shite",
+   18,
+   [
+    "cs",
+    "da",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "gl",
+    "hi",
+    "hu",
+    "id",
+    "it",
+    "ja",
+    "lt",
+    "lv",
+    "mn",
+    "mr",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pt",
+    "sq",
+    "sv",
+    "th",
+    "uk",
+    "uz",
+    "vi",
+    "zu"
+   ],
+   [
+    "giospoisiam olrofinte shite",
+    "gcini gila shite collicatuil"
+   ]
+  ],
+  [
+   "hane",
+   17,
+   [
+    "da"
+   ],
+   [
+    "sinfaimid hane aoreacht oilfroioch",
+    "faghadh hane pheirligh reir"
+   ]
+  ],
+  [
+   "pina",
+   16,
+   [
+    "hu"
+   ],
+   [
+    "ardraghmal pina salormach",
+    "pina sell lunnse dumhphia"
+   ]
+  ],
+  [
+   "phan",
+   16,
+   [
+    "vi"
+   ],
+   [
+    "phan athdabhaidh rira hernas",
+    "phan sodar teus fleidornail"
+   ]
+  ],
+  [
+   "asas",
+   16,
+   [
+    "gl"
+   ],
+   [
+    "cote uilttastail asas leog",
+    "asas taimlinte meachain neti"
+   ]
+  ],
+  [
+   "asna",
+   16,
+   [
+    "is"
+   ],
+   [
+    "flin asna cnoilriuil cannas",
+    "aole asna shiunta imfheachaim"
+   ]
+  ],
+  [
+   "cham",
+   16,
+   [
+    "vi"
+   ],
+   [
+    "cham cras iltalfainn feiseadh",
+    "sruratha cham ciadh idiail"
+   ]
+  ],
+  [
+   "niti",
+   16,
+   [
+    "te"
+   ],
+   [
+    "saigi arfarodach faioch niti",
+    "cuitidis heorbartha niti aoigh"
+   ]
+  ],
+  [
+   "site",
+   16,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "goal gcluirchte sadh site",
+    "bagaigh pairi blognona site"
+   ]
+  ],
+  [
+   "cach",
+   16,
+   [
+    "cy"
+   ],
+   [
+    "cheachta ghlein cach aoislini",
+    "taifiulacht cach leairi bpadh"
+   ]
+  ],
+  [
+   "fena",
+   16,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "theaca fena dronfar partaithe",
+    "rudhiffete diail fena acir"
+   ]
+  ],
+  [
+   "made",
+   15,
+   [
+    "zh"
+   ],
+   [
+    "paineacha made olcaim sciuir",
+    "leimcheuain made ildiunamh"
+   ]
+  ]
+ ],
+ "samples": [
+  "toiniu pich guiodh goltriuil",
+  "thocht hostacht screll togrioch",
+  "smolaigh turlon ceanaigi miar",
+  "eann pascannas bhim romhadh",
+  "tibeghtha luirfiosadh fota",
+  "slioirgius muail grinnirid",
+  "iomataliam fondirin arte",
+  "guarscai oiai seinnigh trir",
+  "adreacht palebrionn mistateagach",
+  "gnir alltan sheisi cnamhni",
+  "folaiodh freageimis tele chin",
+  "horghiaigh adir gcosbhlair"
+ ],
+ "seconds": 11.0,
+ "languages": [
+  "ga"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

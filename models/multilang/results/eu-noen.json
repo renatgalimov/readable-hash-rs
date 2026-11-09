@@ -1,0 +1,234 @@
+{
+ "name": "eu-noen",
+ "corpus_words": 80000,
+ "relaxed_rows": 29,
+ "relaxed_examples": [
+  "sc",
+  "mc",
+  "wo",
+  "kh",
+  "wh",
+  "fb",
+  "ay",
+  "ly",
+  "yu",
+  "dy",
+  "dj",
+  "sw"
+ ],
+ "segmented_words": 60409,
+ "skipped_words": 19591,
+ "middle_attested_fraction": 0.4340413411458333,
+ "end32_attested_fraction": 0.394287109375,
+ "end16_attested_fraction": 0.588134765625,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.52,
+ "max_chars": 40,
+ "consonant_runs_pct": 3.78,
+ "vowel_runs_pct": 6.034,
+ "english_words_pct": 0.208,
+ "own_words_pct": 17.359,
+ "offensive_whole_pct": 1.115,
+ "offensive_whole_english_list_pct": 0.075,
+ "offensive_whole_own_list_pct": 0.1,
+ "offensive_whole_major_lists_pct": 0.7,
+ "offensive_severe_en_pct": 0.045,
+ "offensive_inside5_pct": 2.6,
+ "offensive_inside4_pct": 17.55,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "bratze",
+   33,
+   [
+    "de"
+   ],
+   [
+    "urtegi futa bratzeko teorengara",
+    "bratzeko itxinduko heregaduei"
+   ]
+  ],
+  [
+   "satan",
+   22,
+   [
+    "no",
+    "sv"
+   ],
+   [
+    "berpuatu apaz aptan tasatan",
+    "boer erara fortxosatan niri"
+   ]
+  ],
+  [
+   "puto",
+   19,
+   [
+    "pt"
+   ],
+   [
+    "bigarraren puto gorra figietiko",
+    "tourduan puto kirrorinarekin"
+   ]
+  ],
+  [
+   "dike",
+   19,
+   [
+    "eu",
+    "sr"
+   ],
+   [
+    "mesarekin dougeran dike hurrak",
+    "furukoei catu dike onleko"
+   ]
+  ],
+  [
+   "fena",
+   17,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "fena igren doilik hegatzailek",
+    "ebusinek egutzipean fena"
+   ]
+  ],
+  [
+   "fratze",
+   17,
+   [
+    "de"
+   ],
+   [
+    "edizatu pekailari pona fratzen",
+    "egan fratzen onarlerritik osari"
+   ]
+  ],
+  [
+   "tate",
+   16,
+   [
+    "ro"
+   ],
+   [
+    "eziloiari itaien osaz tate",
+    "tate juaritza sindizun brarekin"
+   ]
+  ],
+  [
+   "fuen",
+   16,
+   [
+    "th"
+   ],
+   [
+    "oparen fuen kenideek laudari",
+    "ilekin fuen galearen plizkuna"
+   ]
+  ],
+  [
+   "sexo",
+   15,
+   [
+    "en",
+    "es",
+    "gl",
+    "pt"
+   ],
+   [
+    "buelik sexo astorkoa unarekin",
+    "apurdeei sexo kazu geroetan"
+   ]
+  ],
+  [
+   "dian",
+   15,
+   [
+    "zh"
+   ],
+   [
+    "audiesnetik pain lotzeko dian",
+    "dian gairik atzian ehutsioko"
+   ]
+  ],
+  [
+   "site",
+   14,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "muen ezelkontza site boon",
+    "site iraungisatu moon soren"
+   ]
+  ],
+  [
+   "nian",
+   14,
+   [
+    "zh"
+   ],
+   [
+    "anterramoko niki nian gaira",
+    "sindalosua faktabatik nian"
+   ]
+  ],
+  [
+   "made",
+   14,
+   [
+    "zh"
+   ],
+   [
+    "momensala auaz made capioan",
+    "gatik made zutaberonek jeek"
+   ]
+  ],
+  [
+   "zizi",
+   14,
+   [
+    "fr"
+   ],
+   [
+    "ostroen zizi altan ekilurragatik",
+    "diotua keiloak kabiatik zizi"
+   ]
+  ],
+  [
+   "porra",
+   13,
+   [
+    "pt"
+   ],
+   [
+    "taporraosarekin fire asirilera",
+    "look zaporratea ezkilaztoa"
+   ]
+  ]
+ ],
+ "samples": [
+  "suhiei idera klek igronion",
+  "koak kredela zigorekin sutaka",
+  "oinpagatik emotzea dakuek ezeen",
+  "aden joxetxak bein giroia",
+  "peteltei akrialduren hiena",
+  "kikiorolla onko lurtasungarria",
+  "zuzenketneek hintonen iseak",
+  "klilitazioak toek inbako elio",
+  "detik jopurriek ezaundozak",
+  "puek heziek gazteria kemenak",
+  "hieratan frogamara azia bako",
+  "krabezearen deen arrealinoa"
+ ],
+ "seconds": 10.7,
+ "languages": [
+  "eu"
+ ],
+ "no_english": true,
+ "blocklist": false
+}

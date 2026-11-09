@@ -1,0 +1,232 @@
+{
+ "name": "so",
+ "corpus_words": 52061,
+ "relaxed_rows": 51,
+ "relaxed_examples": [
+  "xo",
+  "jo",
+  "fo",
+  "xe",
+  "qe",
+  "nu",
+  "ju",
+  "pr",
+  "pe",
+  "po",
+  "yu",
+  "wo"
+ ],
+ "segmented_words": 35287,
+ "skipped_words": 16774,
+ "middle_attested_fraction": 0.2757975260416667,
+ "end32_attested_fraction": 0.333984375,
+ "end16_attested_fraction": 0.5218912760416666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.39,
+ "max_chars": 36,
+ "consonant_runs_pct": 2.702,
+ "vowel_runs_pct": 19.58,
+ "english_words_pct": 0.604,
+ "own_words_pct": 16.617,
+ "offensive_whole_pct": 1.855,
+ "offensive_whole_english_list_pct": 0.07,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.25,
+ "offensive_severe_en_pct": 0.005,
+ "offensive_inside5_pct": 1.485,
+ "offensive_inside4_pct": 13.39,
+ "offensive_across_words_pct": 0.035,
+ "top_hits": [
+  [
+   "runka",
+   21,
+   [
+    "sv"
+   ],
+   [
+    "jolastrunka axba liwarmer",
+    "runka baqato xalka deysimkii"
+   ]
+  ],
+  [
+   "urin",
+   21,
+   [
+    "sl"
+   ],
+   [
+    "qaaya yesiiyeen cerisina urin",
+    "dhowabey agendhicdii urin"
+   ]
+  ],
+  [
+   "bile",
+   20,
+   [
+    "ro"
+   ],
+   [
+    "bile qureeray feliyo hibega",
+    "bile amuurbilaha gono qaso"
+   ]
+  ],
+  [
+   "nian",
+   19,
+   [
+    "zh"
+   ],
+   [
+    "nian bona soolaba jeercinta",
+    "qashisbatay fasha erdii nian"
+   ]
+  ],
+  [
+   "irata",
+   18,
+   [
+    "la"
+   ],
+   [
+    "rirataan uuxinesteen rigolin",
+    "miratay xasiiyo birmal yeyo"
+   ]
+  ],
+  [
+   "sudi",
+   17,
+   [
+    "lv"
+   ],
+   [
+    "gunaaya sudi geeeda aloomiin",
+    "irqaalkiisii tababtegey sudi"
+   ]
+  ],
+  [
+   "homo",
+   17,
+   [
+    "fi",
+    "id",
+    "ja",
+    "ko"
+   ],
+   [
+    "homo resiyidii huna morudaa",
+    "fiyo aqliiqaha sokonta homo"
+   ]
+  ],
+  [
+   "roba",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "timiirtu qayidnadhayo roba",
+    "roba riteen adliyida goliyey"
+   ]
+  ],
+  [
+   "orina",
+   15,
+   [
+    "es"
+   ],
+   [
+    "huga isgorinayo dhiirka asay",
+    "wedo xoreeyeen horinayo lohiiin"
+   ]
+  ],
+  [
+   "mona",
+   15,
+   [
+    "it"
+   ],
+   [
+    "ruusbinada ogamsaxaad mona",
+    "middomood madka mona feydka"
+   ]
+  ],
+  [
+   "loda",
+   15,
+   [
+    "hi"
+   ],
+   [
+    "loda walaadatadii sino inku",
+    "oona jourawow ceesaan loda"
+   ]
+  ],
+  [
+   "cono",
+   14,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "dhowidmayn ekow abtay cono",
+    "wayeen cono uurrodexyo wiiyo"
+   ]
+  ],
+  [
+   "figa",
+   14,
+   [
+    "it",
+    "ru"
+   ],
+   [
+    "imbishiinku xayn figa ayeen",
+    "yarkii umaalkeeda yirmis figa"
+   ]
+  ],
+  [
+   "niga",
+   14,
+   [
+    "ja"
+   ],
+   [
+    "joyo nana ubshaadiisatay niga",
+    "xidimato kommooda niga hudii"
+   ]
+  ],
+  [
+   "foda",
+   14,
+   [
+    "pt"
+   ],
+   [
+    "shisayga umaas uudhihii foda",
+    "olcansaaleed yahomeyo foda"
+   ]
+  ]
+ ],
+ "samples": [
+  "ogtidii yinka olin losimadan",
+  "bataan ahdaro diirkooda ogwais",
+  "uuntida mearto duuska tidu",
+  "afey xeaburin manta nolayey",
+  "corrafdii iisiixiyeed aaan",
+  "odawdeledu qinta kiinabiyo",
+  "ilaalmaraqdeen aaggaaraha liyo",
+  "olismeeyay alaan fasaan biyey",
+  "taku xeacahaan tiiglaawga",
+  "rusan werino shartii juriba",
+  "aadnadu leeyacna here daan",
+  "ahirnimid tain wakhasicdii"
+ ],
+ "seconds": 9.8,
+ "languages": [
+  "so"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,229 @@
+{
+ "name": "aa",
+ "corpus_words": 26247,
+ "relaxed_rows": 88,
+ "relaxed_examples": [
+  "go",
+  "fu",
+  "so",
+  "be",
+  "yo",
+  "es",
+  "bo",
+  "nu",
+  "ko",
+  "no",
+  "we",
+  "he"
+ ],
+ "segmented_words": 19933,
+ "skipped_words": 6314,
+ "middle_attested_fraction": 0.09733072916666667,
+ "end32_attested_fraction": 0.19156901041666666,
+ "end16_attested_fraction": 0.2996419270833333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 30.63,
+ "max_chars": 47,
+ "consonant_runs_pct": 0.786,
+ "vowel_runs_pct": 12.69,
+ "english_words_pct": 0.186,
+ "own_words_pct": 7.552,
+ "offensive_whole_pct": 0.735,
+ "offensive_whole_english_list_pct": 0.005,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.22,
+ "offensive_severe_en_pct": 0.01,
+ "offensive_inside5_pct": 2.925,
+ "offensive_inside4_pct": 16.8,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "retto",
+   74,
+   [
+    "it"
+   ],
+   [
+    "ceretton uyay yoisankeh erudah",
+    "fakimitoonuh siinnino nanniyoy afretton"
+   ]
+  ],
+  [
+   "fanni",
+   55,
+   [
+    "mk",
+    "ru",
+    "sr"
+   ],
+   [
+    "fannitoy moen kogiilugon koak",
+    "lukaftolte fanninoy idiruuqubetto"
+   ]
+  ],
+  [
+   "belino",
+   54,
+   [
+    "it"
+   ],
+   [
+    "asbane obiraasiisoo wagubelinoh",
+    "likittabelino tanniyoy iguh ugoonuh"
+   ]
+  ],
+  [
+   "moona",
+   41,
+   [
+    "sv"
+   ],
+   [
+    "taabeenimoonay usubinnoonay fana",
+    "cuttak ilmoonay burtukay exat"
+   ]
+  ],
+  [
+   "tetta",
+   25,
+   [
+    "it"
+   ],
+   [
+    "darubeliyoh yeek cota xeytettah",
+    "kollok amoytoonuh nelettettaloonuh"
+   ]
+  ],
+  [
+   "fitte",
+   22,
+   [
+    "no"
+   ],
+   [
+    "maafut kaat deqsifitte dottoonaanih",
+    "fiiyya souh yifitte biytuuqubiyya"
+   ]
+  ],
+  [
+   "kale",
+   21,
+   [
+    "lt"
+   ],
+   [
+    "gissoowiyonniyoy ceytimugeenih kale",
+    "siinnito ixuuqubih gudaqamoo kale"
+   ]
+  ],
+  [
+   "elle",
+   17,
+   [
+    "lv"
+   ],
+   [
+    "aalooffaloonuh liyo ukafennoh elle",
+    "gudurul elle guddiri aygile"
+   ]
+  ],
+  [
+   "inat",
+   17,
+   [
+    "sq"
+   ],
+   [
+    "inat loqunniyoy ahacitisoo quba",
+    "inat nikerden hiraananke ittoonay"
+   ]
+  ],
+  [
+   "esek",
+   16,
+   [
+    "tr"
+   ],
+   [
+    "coeh aydaak esek atabaanan",
+    "ibaddimuuk umah ubek esek"
+   ]
+  ],
+  [
+   "bite",
+   16,
+   [
+    "fr"
+   ],
+   [
+    "atuuqubbinnaan toffay heen bite",
+    "qutuuk bite esek akuuduureliyoh"
+   ]
+  ],
+  [
+   "sule",
+   15,
+   [
+    "kn"
+   ],
+   [
+    "yerdimabih adol neta sule",
+    "sule kuraaciytek binniyoy iyek"
+   ]
+  ],
+  [
+   "bile",
+   14,
+   [
+    "ro"
+   ],
+   [
+    "bile uyutubon raabukolta",
+    "bile ugdarroo xaqamiidutnoo"
+   ]
+  ],
+  [
+   "dalan",
+   14,
+   [
+    "mn"
+   ],
+   [
+    "uradan deedalan yinniyoy antooqinnuh",
+    "agoonuy geedkaanah gexerdeedalan"
+   ]
+  ],
+  [
+   "kamin",
+   14,
+   [
+    "mt"
+   ],
+   [
+    "kukaminnuk linkeh naaban irak",
+    "inettamabbetto qokamino utoonuh"
+   ]
+  ]
+ ],
+ "samples": [
+  "yigutton eyaanah uytoonuh leiyitelitoh",
+  "qankeh noisen axagut yiluton",
+  "loqina yolinnuk deeqooreh sube",
+  "sola moutukeeh abta inonuh",
+  "acrissooweyyo erassiirik anna",
+  "idaglaaltista fite uxttison",
+  "dodoobarciloonuh anetterak qete",
+  "uymaalak ibeh deedalaqal aguh",
+  "adelon mobaysal suguubasoo",
+  "iyak biimit nabbek engiton",
+  "antinnuk oloytaduh goroonuy tanay",
+  "nosintelon adek yafigibelon"
+ ],
+ "seconds": 10.1,
+ "languages": [
+  "aa"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

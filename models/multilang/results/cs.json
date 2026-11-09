@@ -1,0 +1,226 @@
+{
+ "name": "cs",
+ "corpus_words": 80000,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "ex"
+ ],
+ "segmented_words": 51743,
+ "skipped_words": 28257,
+ "middle_attested_fraction": 0.423828125,
+ "end32_attested_fraction": 0.4938557942708333,
+ "end16_attested_fraction": 0.7036946614583334,
+ "begin_attested": 128,
+ "chars": 25.66,
+ "max_chars": 32,
+ "consonant_runs_pct": 13.25,
+ "vowel_runs_pct": 0.163,
+ "english_words_pct": 0.571,
+ "own_words_pct": 28.507,
+ "offensive_whole_pct": 2.82,
+ "offensive_whole_english_list_pct": 0.2,
+ "offensive_whole_own_list_pct": 0.22,
+ "offensive_whole_major_lists_pct": 1.05,
+ "offensive_severe_en_pct": 0.17,
+ "offensive_inside5_pct": 2.665,
+ "offensive_inside4_pct": 15.92,
+ "offensive_across_words_pct": 0.045,
+ "top_hits": [
+  [
+   "stick",
+   58,
+   [
+    "sv"
+   ],
+   [
+    "bulluptovi amrili exsticky",
+    "umny titakost upsticky home"
+   ]
+  ],
+  [
+   "elle",
+   23,
+   [
+    "lv"
+   ],
+   [
+    "kosmenutil elle krve puli",
+    "brel elle znusodynce shut"
+   ]
+  ],
+  [
+   "niti",
+   19,
+   [
+    "te"
+   ],
+   [
+    "niti schte gresim zralorite",
+    "niti votrhnove unodis vyny"
+   ]
+  ],
+  [
+   "urvat",
+   19,
+   [
+    "ru"
+   ],
+   [
+    "kubankil urvat norestopim",
+    "blannicter snel urvat zmlo"
+   ]
+  ],
+  [
+   "osel",
+   17,
+   [
+    "cs"
+   ],
+   [
+    "sulu osel vliderie znekla",
+    "darorodu pulniku upky osel"
+   ]
+  ],
+  [
+   "prsi",
+   17,
+   [
+    "sl"
+   ],
+   [
+    "prsi aumale hony somausna",
+    "prsi zbozne znobleti grym"
+   ]
+  ],
+  [
+   "name",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "name chen netrhnobnou ciko",
+    "jeli janku exklivenej name"
+   ]
+  ],
+  [
+   "sudi",
+   17,
+   [
+    "lv"
+   ],
+   [
+    "sudi zaujesla zbim vyslej",
+    "tory sudi frozni pekeacka"
+   ]
+  ],
+  [
+   "mater",
+   16,
+   [
+    "sl"
+   ],
+   [
+    "arie vrny materardovi aren",
+    "fazeny svam zkovat matergaro"
+   ]
+  ],
+  [
+   "otaku",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "hrde utiska otaku toodavas",
+    "zvitivou rozim otaku zkratky"
+   ]
+  ],
+  [
+   "baka",
+   15,
+   [
+    "ja"
+   ],
+   [
+    "baka loliburu ranu zbably",
+    "baka vaservou pastacleta"
+   ]
+  ],
+  [
+   "cait",
+   15,
+   [
+    "gd"
+   ],
+   [
+    "bracce cait unuspeci ally",
+    "znych cait jeruje pisnasne"
+   ]
+  ],
+  [
+   "shit",
+   15,
+   [
+    "da",
+    "en",
+    "gd",
+    "hy",
+    "mt",
+    "my",
+    "nl",
+    "no",
+    "sk",
+    "uz",
+    "zu"
+   ],
+   [
+    "shit vselistit rise mlupis",
+    "shit opojky grek shodidlo"
+   ]
+  ],
+  [
+   "mail",
+   15,
+   [
+    "hi"
+   ],
+   [
+    "mail leky zpozeni svacecne",
+    "jihousim sanilo mail lalo"
+   ]
+  ],
+  [
+   "osli",
+   15,
+   [
+    "sl",
+    "uk"
+   ],
+   [
+    "pekene zadu hallodnou osli",
+    "hazine colianek osli aron"
+   ]
+  ]
+ ],
+ "samples": [
+  "nortie fail jinou altanedlo",
+  "navy vrtaji majicka nobocku",
+  "arterval jakazu optanu peto",
+  "vany shackavas povi hloupky",
+  "pinaskas blysatebna tete",
+  "ruciravolne upky uzemreje",
+  "znamzisitu tetakovy suze",
+  "jizvavil kulu kapelo plna",
+  "chek shavtraci peresnobuje",
+  "zbly smesti obvinis herodu",
+  "tetime snizskni baly nene",
+  "vrodusou chna dorumismem"
+ ],
+ "seconds": 8.2,
+ "languages": [
+  "cs"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

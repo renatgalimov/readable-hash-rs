@@ -1,0 +1,259 @@
+{
+ "name": "grc",
+ "corpus_words": 22322,
+ "relaxed_rows": 55,
+ "relaxed_examples": [
+  "dy",
+  "fr",
+  "ex",
+  "ft",
+  "ic",
+  "ny",
+  "ox",
+  "fl",
+  "sc",
+  "gl",
+  "ec",
+  "eh"
+ ],
+ "segmented_words": 18955,
+ "skipped_words": 3367,
+ "middle_attested_fraction": 0.11702473958333333,
+ "end32_attested_fraction": 0.24454752604166666,
+ "end16_attested_fraction": 0.4093424479166667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.37,
+ "max_chars": 36,
+ "consonant_runs_pct": 7.186,
+ "vowel_runs_pct": 12.404,
+ "english_words_pct": 1.222,
+ "own_words_pct": 15.375,
+ "offensive_whole_pct": 1.025,
+ "offensive_whole_english_list_pct": 0.1,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.42,
+ "offensive_severe_en_pct": 0.01,
+ "offensive_inside5_pct": 1.935,
+ "offensive_inside4_pct": 15.095,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "tiron",
+   29,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "idilotoy siri elin destiron",
+    "issi dramati egottiron adia"
+   ]
+  ],
+  [
+   "hore",
+   20,
+   [
+    "be",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "hr",
+    "hu",
+    "id",
+    "is",
+    "it",
+    "la",
+    "lv",
+    "mr",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk"
+   ],
+   [
+    "pyon meiragktikon hore prin",
+    "prichodoriais dria oknois hore"
+   ]
+  ],
+  [
+   "niti",
+   20,
+   [
+    "te"
+   ],
+   [
+    "niti ypodisei adoin filokta",
+    "prokeydoia niti tatikon erioin"
+   ]
+  ],
+  [
+   "etron",
+   20,
+   [
+    "fr"
+   ],
+   [
+    "tres lanon mylis xygkimetron",
+    "opotin kiomalidos ligetron"
+   ]
+  ],
+  [
+   "pios",
+   17,
+   [
+    "gd"
+   ],
+   [
+    "tagapate adon pios sfipos",
+    "pios agran diplia efipopia"
+   ]
+  ],
+  [
+   "pesi",
+   15,
+   [
+    "mr"
+   ],
+   [
+    "voymaktika vomoin ditrois pesi",
+    "strafygos pesi ptotai ptan"
+   ]
+  ],
+  [
+   "mama",
+   15,
+   [
+    "pt"
+   ],
+   [
+    "pioin pitriganioy mama mais",
+    "osketon fthomvatoin mama isti"
+   ]
+  ],
+  [
+   "chali",
+   14,
+   [
+    "el"
+   ],
+   [
+    "scnos iatrepin iseychalidi",
+    "ichoy ecirkonoin neion ichalidi"
+   ]
+  ],
+  [
+   "dran",
+   14,
+   [
+    "pl"
+   ],
+   [
+    "dran ipoin olia kotrogenti",
+    "faiiomoin ektrai dran ipton"
+   ]
+  ],
+  [
+   "alla",
+   13,
+   [
+    "mt"
+   ],
+   [
+    "ypaythron alla nota mixenos",
+    "oiopsee drepai alla miopikon"
+   ]
+  ],
+  [
+   "peos",
+   13,
+   [
+    "el"
+   ],
+   [
+    "mala dridapigoy peos momois",
+    "grimati ehopsei peos sagion"
+   ]
+  ],
+  [
+   "kaka",
+   13,
+   [
+    "eu"
+   ],
+   [
+    "rhika kaka ialotrayki opion",
+    "ptra ptamnon kaka krytofis"
+   ]
+  ],
+  [
+   "chati",
+   13,
+   [
+    "te"
+   ],
+   [
+    "mytos grydomin chatichipta",
+    "exmoma oichatia astois proin"
+   ]
+  ],
+  [
+   "teta",
+   12,
+   [
+    "es"
+   ],
+   [
+    "teta aiotis gldoseoin vyolis",
+    "akopninoion oxlanidoin teta"
+   ]
+  ],
+  [
+   "chalo",
+   12,
+   [
+    "th"
+   ],
+   [
+    "fonoy pichalon efakatidaioy",
+    "adopeknon meoin dripichalois"
+   ]
+  ]
+ ],
+ "samples": [
+  "megetas oxta iloy avaytrias",
+  "diin fthrita sirasei mellia",
+  "nystoin dantis kiotos emei",
+  "loon omyrriois hias eisatoy",
+  "vraportoin dyotnistoy aston",
+  "efotenimitoy oyta afiropseos",
+  "spastrieridoin asgikonon ichma",
+  "ileylaki olion epithi erion",
+  "chioy ommeryos emayktamatos",
+  "seion kratine korydon okeran",
+  "asimai gottodre teos maton",
+  "fthaklaai chma agorismedna"
+ ],
+ "seconds": 9.3,
+ "languages": [
+  "grc"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,279 @@
+{
+ "name": "xmf",
+ "corpus_words": 13645,
+ "relaxed_rows": 100,
+ "relaxed_examples": [
+  "jo",
+  "po",
+  "pu",
+  "tk",
+  "bz",
+  "rc",
+  "iu",
+  "vo",
+  "ie",
+  "dj",
+  "ic",
+  "uc"
+ ],
+ "segmented_words": 10112,
+ "skipped_words": 3533,
+ "middle_attested_fraction": 0.16780598958333334,
+ "end32_attested_fraction": 0.1624755859375,
+ "end16_attested_fraction": 0.297119140625,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.0,
+ "max_chars": 39,
+ "consonant_runs_pct": 12.587,
+ "vowel_runs_pct": 1.619,
+ "english_words_pct": 0.634,
+ "own_words_pct": 8.493,
+ "offensive_whole_pct": 1.295,
+ "offensive_whole_english_list_pct": 0.175,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.505,
+ "offensive_severe_en_pct": 0.045,
+ "offensive_inside5_pct": 2.785,
+ "offensive_inside4_pct": 20.73,
+ "offensive_across_words_pct": 0.04,
+ "top_hits": [
+  [
+   "khore",
+   43,
+   [
+    "sr"
+   ],
+   [
+    "biri osiash pararkhore toluri",
+    "tena railatas bule makhores"
+   ]
+  ],
+  [
+   "gouri",
+   28,
+   [
+    "zh"
+   ],
+   [
+    "kitakholo adgouri idvalgash",
+    "orengini nirugouri lakhanuri"
+   ]
+  ],
+  [
+   "anali",
+   27,
+   [
+    "mt"
+   ],
+   [
+    "atle eiosideps granali breps",
+    "kianali otomonet olash paro"
+   ]
+  ],
+  [
+   "ianus",
+   23,
+   [
+    "zu"
+   ],
+   [
+    "ndiemols dalo esianus osiash",
+    "idebedali kobarghi dgianus"
+   ]
+  ],
+  [
+   "giat",
+   18,
+   [
+    "vi"
+   ],
+   [
+    "giat jarjanish gershulish jona",
+    "etmukhat vaish kvizit giat"
+   ]
+  ],
+  [
+   "mocha",
+   18,
+   [
+    "mk",
+    "uk"
+   ],
+   [
+    "jimbans brianoba liramochamali",
+    "virgat vasha olali kemochamepish"
+   ]
+  ],
+  [
+   "chali",
+   18,
+   [
+    "el"
+   ],
+   [
+    "kili joongorguepi chali erali",
+    "jili chali zentieeruli viri"
+   ]
+  ],
+  [
+   "shit",
+   17,
+   [
+    "da",
+    "en",
+    "gd",
+    "hy",
+    "mt",
+    "my",
+    "nl",
+    "no",
+    "sk",
+    "uz",
+    "zu"
+   ],
+   [
+    "teneri damovakhet amiash shit",
+    "omiri shit bionshe ritsionesh"
+   ]
+  ],
+  [
+   "inat",
+   17,
+   [
+    "sq"
+   ],
+   [
+    "neeps inat sili khutshurkat",
+    "omepit sumemaulash mieps inat"
+   ]
+  ],
+  [
+   "dink",
+   17,
+   [
+    "bg",
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "eu",
+    "fi",
+    "gd",
+    "gl",
+    "hi",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "it",
+    "la",
+    "lt",
+    "mk",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "te",
+    "tr",
+    "uk",
+    "uz",
+    "vi",
+    "zu"
+   ],
+   [
+    "jiari roluepish dink grizmende",
+    "urish dink rule dialidghens"
+   ]
+  ],
+  [
+   "pele",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "rzish pele ogomebepit sekhuri",
+    "toms isorit pele skushemalo"
+   ]
+  ],
+  [
+   "molo",
+   16,
+   [
+    "fi"
+   ],
+   [
+    "ortsulende dgili molo rshieps",
+    "keri idvirumi molo puline"
+   ]
+  ],
+  [
+   "mocham",
+   16,
+   [
+    "mk"
+   ],
+   [
+    "jimbans brianoba liramochamali",
+    "virgat vasha olali kemochamepish"
+   ]
+  ],
+  [
+   "natsi",
+   15,
+   [
+    "fi",
+    "mk"
+   ],
+   [
+    "natsilisaani seserk rudueps",
+    "rarone natsile vins agorepi"
+   ]
+  ],
+  [
+   "bola",
+   14,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "miash bola bonalni chighoze",
+    "nimals bola emushadit guepish"
+   ]
+  ]
+ ],
+ "samples": [
+  "limbepish imili usli ughanonaluri",
+  "giens ereberi ordeeps liviepish",
+  "ndadit tudgeps baburepish skepit",
+  "aset sumbadiri miat kagama",
+  "zorgvene pudagerdzakh tasi",
+  "rughvalemuli adet kudochetish",
+  "urtinuartena targolos bzak",
+  "ushvigepish ogak damarosh tiri",
+  "dono suanganjalash skvemuziens",
+  "toni irondish mediro rzidak",
+  "tamobat atenmuat deash gerish",
+  "ertsotie doepit molastskhvat"
+ ],
+ "seconds": 9.2,
+ "languages": [
+  "xmf"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,258 @@
+{
+ "name": "et",
+ "corpus_words": 80000,
+ "relaxed_rows": 50,
+ "relaxed_examples": [
+  "sc",
+  "mc",
+  "qu",
+  "wo",
+  "cu",
+  "wh",
+  "ji",
+  "zo",
+  "ce",
+  "za",
+  "yo",
+  "sy"
+ ],
+ "segmented_words": 56560,
+ "skipped_words": 23440,
+ "middle_attested_fraction": 0.4359130859375,
+ "end32_attested_fraction": 0.4122314453125,
+ "end16_attested_fraction": 0.615966796875,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.27,
+ "max_chars": 34,
+ "consonant_runs_pct": 5.802,
+ "vowel_runs_pct": 3.535,
+ "english_words_pct": 1.101,
+ "own_words_pct": 24.261,
+ "offensive_whole_pct": 3.305,
+ "offensive_whole_english_list_pct": 0.21,
+ "offensive_whole_own_list_pct": 0.33,
+ "offensive_whole_major_lists_pct": 1.36,
+ "offensive_severe_en_pct": 0.025,
+ "offensive_inside5_pct": 2.66,
+ "offensive_inside4_pct": 24.725,
+ "offensive_across_words_pct": 0.025,
+ "top_hits": [
+  [
+   "idest",
+   45,
+   [
+    "la"
+   ],
+   [
+    "luke eeskusse tihtnidest piad",
+    "maalidest baaskanud ulub otti"
+   ]
+  ],
+  [
+   "kusse",
+   30,
+   [
+    "da"
+   ],
+   [
+    "kiskusse joite ootuslikeks ahem",
+    "diskusse russeksin tsad deke"
+   ]
+  ],
+  [
+   "paal",
+   24,
+   [
+    "nl"
+   ],
+   [
+    "paal kukkilne kukuna alma",
+    "paal plehenasel umoltamist"
+   ]
+  ],
+  [
+   "tate",
+   23,
+   [
+    "ro"
+   ],
+   [
+    "keersada trat avarane tate",
+    "tate ebid lemmin vegauksite"
+   ]
+  ],
+  [
+   "asas",
+   22,
+   [
+    "gl"
+   ],
+   [
+    "kent gaasvaks etardi asas",
+    "kaevakasse asas kulmen rous"
+   ]
+  ],
+  [
+   "mose",
+   22,
+   [
+    "de"
+   ],
+   [
+    "untses soogne mose voorile",
+    "cannas mehees mose hobusid"
+   ]
+  ],
+  [
+   "manda",
+   19,
+   [
+    "ru"
+   ],
+   [
+    "meesksana osakul ilmandada",
+    "nati jaal mihkimanda lute"
+   ]
+  ],
+  [
+   "deik",
+   19,
+   [
+    "te"
+   ],
+   [
+    "deik nunney otad anduloga",
+    "pesta hommores deik uremas"
+   ]
+  ],
+  [
+   "dada",
+   18,
+   [
+    "id"
+   ],
+   [
+    "dada nikaataja omeekaubus",
+    "urst dada idinda uurnikul"
+   ]
+  ],
+  [
+   "foda",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "ethiks foda nuis ilmuilile",
+    "triimasin ohenevad elda foda"
+   ]
+  ],
+  [
+   "lusta",
+   18,
+   [
+    "sv"
+   ],
+   [
+    "fanney poid juhtlustama nogi",
+    "prinete jeks alustamisega segi"
+   ]
+  ],
+  [
+   "hore",
+   18,
+   [
+    "be",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "hr",
+    "hu",
+    "id",
+    "is",
+    "it",
+    "la",
+    "lv",
+    "mr",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk"
+   ],
+   [
+    "budaoome ripputungi hore",
+    "edrede chilise hore fasuda"
+   ]
+  ],
+  [
+   "sung",
+   18,
+   [
+    "vi"
+   ],
+   [
+    "oilutuseks sung optidele idte",
+    "ilsurdulised havinaid sung"
+   ]
+  ],
+  [
+   "bout",
+   18,
+   [
+    "fr"
+   ],
+   [
+    "kraeemoonitakse neus bout hole",
+    "bout enma ekumenan rostas"
+   ]
+  ],
+  [
+   "pina",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "pina anatistrida rail deng",
+    "tempaasi sudi pina olivne"
+   ]
+  ]
+ ],
+ "samples": [
+  "stilgi cani cosa ehekuulas",
+  "kuud detred jahide steaid",
+  "gregor rutati siside miti",
+  "tres ooraatut koer autasesse",
+  "kleebiit ototilassi kese",
+  "aikehalada bada impunase",
+  "inimehetate keevoera akaks",
+  "corattle ekle sealise alma",
+  "tual ooreulem miilmekata",
+  "gaid veetuks suhtel botali",
+  "kerilt edastaide luke kaid",
+  "deiduvia tuad paluripiga"
+ ],
+ "seconds": 10.1,
+ "languages": [
+  "et"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

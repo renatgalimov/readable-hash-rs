@@ -1,0 +1,277 @@
+{
+ "name": "sk",
+ "corpus_words": 80000,
+ "relaxed_rows": 2,
+ "relaxed_examples": [
+  "ex",
+  "ny"
+ ],
+ "segmented_words": 52765,
+ "skipped_words": 27235,
+ "middle_attested_fraction": 0.4286295572916667,
+ "end32_attested_fraction": 0.481689453125,
+ "end16_attested_fraction": 0.69775390625,
+ "begin_attested": 128,
+ "chars": 25.76,
+ "max_chars": 32,
+ "consonant_runs_pct": 10.486,
+ "vowel_runs_pct": 0.212,
+ "english_words_pct": 0.668,
+ "own_words_pct": 27.831,
+ "offensive_whole_pct": 2.11,
+ "offensive_whole_english_list_pct": 0.175,
+ "offensive_whole_own_list_pct": 0.26,
+ "offensive_whole_major_lists_pct": 0.86,
+ "offensive_severe_en_pct": 0.075,
+ "offensive_inside5_pct": 2.78,
+ "offensive_inside4_pct": 16.455,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "stick",
+   67,
+   [
+    "sv"
+   ],
+   [
+    "ustlazcovi zdas zensticke",
+    "smolsticka busu gregacavanie"
+   ]
+  ],
+  [
+   "pravi",
+   25,
+   [
+    "ml"
+   ],
+   [
+    "pripravis ricklety drevstit",
+    "alimozpravit pletat smevajte"
+   ]
+  ],
+  [
+   "hora",
+   19,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "udzirsie hora dede ukelne",
+    "hora javy niet vsematelnu"
+   ]
+  ],
+  [
+   "usne",
+   18,
+   [
+    "hr"
+   ],
+   [
+    "usne benizala neje vzdany",
+    "dispusny znojetbami usne"
+   ]
+  ],
+  [
+   "geil",
+   18,
+   [
+    "de"
+   ],
+   [
+    "roztrie dostolenie kava geil",
+    "zoriellivy teach ukim geil"
+   ]
+  ],
+  [
+   "nasi",
+   18,
+   [
+    "ml",
+    "th"
+   ],
+   [
+    "umorette nasi pravodom okit",
+    "blobstopil chudedali nasi"
+   ]
+  ],
+  [
+   "blit",
+   17,
+   [
+    "hy"
+   ],
+   [
+    "buta bielelal zhrota blit",
+    "blit reny stimnu klavierku"
+   ]
+  ],
+  [
+   "stnom",
+   17,
+   [
+    "hi"
+   ],
+   [
+    "nalahastnom vova frusnice",
+    "miestnom udam cizime drezny"
+   ]
+  ],
+  [
+   "nazi",
+   17,
+   [
+    "ca",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "eu",
+    "fr",
+    "gd",
+    "gl",
+    "hy",
+    "id",
+    "is",
+    "la",
+    "mn",
+    "ms",
+    "mt",
+    "nl",
+    "pl",
+    "sr",
+    "tr",
+    "uz",
+    "vi",
+    "zu"
+   ],
+   [
+    "horulenu blia nazi chopni",
+    "nazi lookobrava hrny blych"
+   ]
+  ],
+  [
+   "spac",
+   16,
+   [
+    "bg",
+    "ca",
+    "cy",
+    "da",
+    "en",
+    "et",
+    "eu",
+    "fi",
+    "gl",
+    "hi",
+    "hr",
+    "hu",
+    "hy",
+    "it",
+    "ja",
+    "kn",
+    "lv",
+    "mk",
+    "mn",
+    "mr",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sv",
+    "te",
+    "th",
+    "tr",
+    "uk",
+    "uz",
+    "vi"
+   ],
+   [
+    "hrnila spac gratych limuky",
+    "upozerne sure spac minely"
+   ]
+  ],
+  [
+   "hani",
+   16,
+   [
+    "is"
+   ],
+   [
+    "uvolenia zrkanovo muku hani",
+    "okupim terovany odhalo hani"
+   ]
+  ],
+  [
+   "burat",
+   16,
+   [
+    "fil"
+   ],
+   [
+    "domantaike burat odskynet",
+    "burat uran laurodienka obne"
+   ]
+  ],
+  [
+   "nima",
+   16,
+   [
+    "zh"
+   ],
+   [
+    "nima tulabore mezi chanskej",
+    "nima hasidelo vzducu naha"
+   ]
+  ],
+  [
+   "elle",
+   15,
+   [
+    "lv"
+   ],
+   [
+    "provity runa elle aketskami",
+    "susetkinuje elle zosidlach"
+   ]
+  ],
+  [
+   "muna",
+   15,
+   [
+    "fi"
+   ],
+   [
+    "eletla muna jedodavil lila",
+    "vinu muna zdremanov animka"
+   ]
+  ]
+ ],
+ "samples": [
+  "provity runa elle aketskami",
+  "vyci hardim skvete proelni",
+  "vlupim zrebuju zvavit ceov",
+  "usne benizala neje vzdany",
+  "draclacky ucobzelske opia",
+  "tuzileroda smuje utokumou",
+  "svetrealych opromial jedka",
+  "elfoobny frov macime zona",
+  "stlo belibrak celentokuje",
+  "ukli banara natava putani",
+  "opevania buduaras liat pote",
+  "harkedas stte zatkadazuje"
+ ],
+ "seconds": 8.3,
+ "languages": [
+  "sk"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

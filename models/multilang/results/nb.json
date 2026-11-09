@@ -1,0 +1,228 @@
+{
+ "name": "nb",
+ "corpus_words": 80000,
+ "relaxed_rows": 11,
+ "relaxed_examples": [
+  "kj",
+  "gj",
+  "hj",
+  "fj",
+  "fy",
+  "sj",
+  "asj",
+  "kj",
+  "gh",
+  "igh",
+  "lj"
+ ],
+ "segmented_words": 56171,
+ "skipped_words": 23829,
+ "middle_attested_fraction": 0.5911458333333334,
+ "end32_attested_fraction": 0.3267008463541667,
+ "end16_attested_fraction": 0.5598958333333334,
+ "begin_attested": 128,
+ "chars": 28.14,
+ "max_chars": 38,
+ "consonant_runs_pct": 17.137,
+ "vowel_runs_pct": 1.254,
+ "english_words_pct": 2.481,
+ "own_words_pct": 22.783,
+ "offensive_whole_pct": 2.2,
+ "offensive_whole_english_list_pct": 0.135,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.735,
+ "offensive_severe_en_pct": 0.1,
+ "offensive_inside5_pct": 3.235,
+ "offensive_inside4_pct": 19.28,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "palle",
+   29,
+   [
+    "it"
+   ],
+   [
+    "klodtatt paller isaksvennitet",
+    "puljsen pallene enviker knirra"
+   ]
+  ],
+  [
+   "fitte",
+   28,
+   [
+    "no"
+   ],
+   [
+    "kida lengerte fitter fyrvamma",
+    "atning fitter kosa fennekroneres"
+   ]
+  ],
+  [
+   "mater",
+   28,
+   [
+    "sl"
+   ],
+   [
+    "hjemateriene rene gaverstikker",
+    "hylegelen skene ekssen materes"
+   ]
+  ],
+  [
+   "plase",
+   26,
+   [
+    "sq"
+   ],
+   [
+    "svovde hilteliv plaser lama",
+    "plasen fjert fjdiovitra alra"
+   ]
+  ],
+  [
+   "vang",
+   24,
+   [
+    "mk",
+    "sr",
+    "uz"
+   ],
+   [
+    "buffig vang veltheia huven",
+    "bekk vang rulesaksis latten"
+   ]
+  ],
+  [
+   "balen",
+   22,
+   [
+    "nl"
+   ],
+   [
+    "ruende kanster libalene rieblene",
+    "faes oppser kittbalene harbret"
+   ]
+  ],
+  [
+   "peter",
+   20,
+   [
+    "fr"
+   ],
+   [
+    "isier gjenskudte velsvapeter",
+    "ampeter faes opponer ordinnelse"
+   ]
+  ],
+  [
+   "minet",
+   20,
+   [
+    "uk"
+   ],
+   [
+    "blinfaes jektbumene aminet",
+    "aktivtatene armblominet grien"
+   ]
+  ],
+  [
+   "samen",
+   18,
+   [
+    "de"
+   ],
+   [
+    "bybinson slavissamen lift",
+    "gina auter mangsamen vitening"
+   ]
+  ],
+  [
+   "ment",
+   18,
+   [
+    "ru"
+   ],
+   [
+    "galsarken kviser ment nektes",
+    "syvende ment breiketter olle"
+   ]
+  ],
+  [
+   "flens",
+   17,
+   [
+    "id",
+    "nl"
+   ],
+   [
+    "vardbrar flens jorgranterer",
+    "siklal flens spentene sjampen"
+   ]
+  ],
+  [
+   "kanen",
+   17,
+   [
+    "nl"
+   ],
+   [
+    "reva natremserer kanene tilten",
+    "vida kanene absuelt flopates"
+   ]
+  ],
+  [
+   "dritt",
+   17,
+   [
+    "no"
+   ],
+   [
+    "sovntoer jekslet paret dritt",
+    "planatiker dritt morgor jere"
+   ]
+  ],
+  [
+   "sega",
+   16,
+   [
+    "it"
+   ],
+   [
+    "sega syden eksemte girkosken",
+    "sega hygarsikken bits apna"
+   ]
+  ],
+  [
+   "kokk",
+   16,
+   [
+    "ml"
+   ],
+   [
+    "kokk forhoene aregstning jura",
+    "geotetida ises kokk tablier"
+   ]
+  ]
+ ],
+ "samples": [
+  "ekskosen dyket etteres sunkuliene",
+  "resten jossor mottning eksliten",
+  "guddgen elianer diokes krid",
+  "buer rondolene kask nominna",
+  "tastlaeren rakneinster loten",
+  "sletsuskelig kimen uninatser",
+  "klesamerske lokkuler hyel",
+  "ettertisaret adte avgatt drar",
+  "oppsjoner rokekoden kroptrosjonene",
+  "orum bremens leseren pusters",
+  "lonnesen astrofal enna bete",
+  "jonnlaene oppsen anlegefirka"
+ ],
+ "seconds": 9.8,
+ "languages": [
+  "nb"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

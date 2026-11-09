@@ -1,0 +1,229 @@
+{
+ "name": "hu",
+ "corpus_words": 80000,
+ "relaxed_rows": 33,
+ "relaxed_examples": [
+  "mc",
+  "sc",
+  "wh",
+  "ij",
+  "ex",
+  "uv",
+  "qu",
+  "dz",
+  "sr",
+  "sv",
+  "ky",
+  "sy"
+ ],
+ "segmented_words": 52237,
+ "skipped_words": 27763,
+ "middle_attested_fraction": 0.4209798177083333,
+ "end32_attested_fraction": 0.4294840494791667,
+ "end16_attested_fraction": 0.6337890625,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.67,
+ "max_chars": 34,
+ "consonant_runs_pct": 8.082,
+ "vowel_runs_pct": 0.597,
+ "english_words_pct": 0.968,
+ "own_words_pct": 25.024,
+ "offensive_whole_pct": 2.165,
+ "offensive_whole_english_list_pct": 0.19,
+ "offensive_whole_own_list_pct": 0.14,
+ "offensive_whole_major_lists_pct": 0.845,
+ "offensive_severe_en_pct": 0.205,
+ "offensive_inside5_pct": 2.545,
+ "offensive_inside4_pct": 20.25,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "tette",
+   79,
+   [
+    "it"
+   ],
+   [
+    "oszart bajuk miatetted unban",
+    "pelhen atek autette cernak"
+   ]
+  ],
+  [
+   "jeben",
+   44,
+   [
+    "hr"
+   ],
+   [
+    "izgyitja jeben hajonak urban",
+    "igherveget keszejeben elvalunk"
+   ]
+  ],
+  [
+   "sung",
+   21,
+   [
+    "vi"
+   ],
+   [
+    "sung bratogok liba bocsot",
+    "ceciztonok sung akat trel"
+   ]
+  ],
+  [
+   "hora",
+   20,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "huntrol hepabol iglyben hora",
+    "biok hora untora gyorultel"
+   ]
+  ],
+  [
+   "here",
+   20,
+   [
+    "hu"
+   ],
+   [
+    "soul iskestezzuk here roan",
+    "roseglogva igem cola here"
+   ]
+  ],
+  [
+   "asas",
+   19,
+   [
+    "gl"
+   ],
+   [
+    "ontok asas stalhattenunk oltuk",
+    "asas cositeni orat piradjam"
+   ]
+  ],
+  [
+   "tasak",
+   18,
+   [
+    "tr"
+   ],
+   [
+    "tasak uzel tarkocon oseiert",
+    "egve tasak diat correszasai"
+   ]
+  ],
+  [
+   "puto",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "varanak szoldoket vetem puto",
+    "orrozatasi lasd uzon puto"
+   ]
+  ],
+  [
+   "tate",
+   17,
+   [
+    "ro"
+   ],
+   [
+    "fekerdnak ugre tate sisabol",
+    "atomunatlan solyszni tate"
+   ]
+  ],
+  [
+   "prik",
+   17,
+   [
+    "nl"
+   ],
+   [
+    "lolek prik tengvine enorlo",
+    "jobatoja spem prik bibois"
+   ]
+  ],
+  [
+   "baka",
+   15,
+   [
+    "ja"
+   ],
+   [
+    "szepitegadott adjon baka root",
+    "muljam lepeidban marol baka"
+   ]
+  ],
+  [
+   "nasi",
+   15,
+   [
+    "ml",
+    "th"
+   ],
+   [
+    "nasi saripaval daly termos",
+    "nasi goon lizzel unkossanak"
+   ]
+  ],
+  [
+   "osel",
+   15,
+   [
+    "cs"
+   ],
+   [
+    "sebbnak osel faltabban amok",
+    "orroidamon ittunk inez osel"
+   ]
+  ],
+  [
+   "gook",
+   14,
+   [
+    "en"
+   ],
+   [
+    "gook netet trikegben jenszek",
+    "jezudik gook onkedo enulni"
+   ]
+  ],
+  [
+   "peter",
+   13,
+   [
+    "fr"
+   ],
+   [
+    "petertetinti ultel okaznyem",
+    "bras peterdelles loni bige"
+   ]
+  ]
+ ],
+ "samples": [
+  "isgytak cabol gesa izitkeztem",
+  "kijon zarnam reagtol ishakat",
+  "frusod ananom bogadott dounk",
+  "iden stopperol eled eszetni",
+  "silvoztuk direalomnak rani",
+  "dannaghaert ugan amszterizni",
+  "olvantusra rabalasi okai",
+  "gecisten junak fotobb orat",
+  "teet stefirok doktegdiat",
+  "uzat milyel leszom coopen",
+  "raszom vonuerjuk egre meat",
+  "zaborjeg teje festajadban"
+ ],
+ "seconds": 10.3,
+ "languages": [
+  "hu"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

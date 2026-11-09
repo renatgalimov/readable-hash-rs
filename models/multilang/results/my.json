@@ -1,0 +1,261 @@
+{
+ "name": "my",
+ "corpus_words": 13424,
+ "relaxed_rows": 63,
+ "relaxed_examples": [
+  "ke",
+  "kye",
+  "te",
+  "de",
+  "bi",
+  "kv",
+  "lv",
+  "tv",
+  "mv",
+  "sc",
+  "sk",
+  "ye"
+ ],
+ "segmented_words": 8344,
+ "skipped_words": 5080,
+ "middle_attested_fraction": 0.20450846354166666,
+ "end32_attested_fraction": 0.17830403645833334,
+ "end16_attested_fraction": 0.3307291666666667,
+ "begin_attested": 128,
+ "chars": 27.68,
+ "max_chars": 40,
+ "consonant_runs_pct": 52.629,
+ "vowel_runs_pct": 4.23,
+ "english_words_pct": 0.194,
+ "own_words_pct": 15.179,
+ "offensive_whole_pct": 1.18,
+ "offensive_whole_english_list_pct": 0.08,
+ "offensive_whole_own_list_pct": 0.16,
+ "offensive_whole_major_lists_pct": 0.145,
+ "offensive_severe_en_pct": 0.01,
+ "offensive_inside5_pct": 0.92,
+ "offensive_inside4_pct": 12.02,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "pyany",
+   19,
+   [
+    "be"
+   ],
+   [
+    "cternteamtai dechnltve pyany",
+    "tminntmrun pyany patittiuk"
+   ]
+  ],
+  [
+   "skan",
+   19,
+   [
+    "ml",
+    "uk"
+   ],
+   [
+    "hmkhailanpyk letea skan retai",
+    "hambhamhcmha nynsusai skan"
+   ]
+  ],
+  [
+   "tunk",
+   19,
+   [
+    "te"
+   ],
+   [
+    "tnkhiunchvai tkalya sany tunk",
+    "hcac hralikrphn lekn tunk"
+   ]
+  ],
+  [
+   "tnha",
+   17,
+   [
+    "my"
+   ],
+   [
+    "mvra kyiukkram tnha pachnn",
+    "tnha vncitpkiu rvip chliuk"
+   ]
+  ],
+  [
+   "klam",
+   16,
+   [
+    "is"
+   ],
+   [
+    "dakhaitiuk klam haiu yeaksurhnk",
+    "nekhnk klam yeakncaramha ypre"
+   ]
+  ],
+  [
+   "cait",
+   16,
+   [
+    "gd"
+   ],
+   [
+    "kmbhackntya ekulak phnai cait",
+    "rvmriya tahkynhup mhit cait"
+   ]
+  ],
+  [
+   "here",
+   15,
+   [
+    "hu"
+   ],
+   [
+    "here ctpri trangwe caprapai",
+    "mutnlatve here chlimtchnmha"
+   ]
+  ],
+  [
+   "wank",
+   15,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "gd",
+    "hi",
+    "hr",
+    "hu",
+    "hy",
+    "is",
+    "it",
+    "la",
+    "lt",
+    "lv",
+    "mk",
+    "mn",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "ro",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "zu"
+   ],
+   [
+    "wank bheamrhn jathkum pusa",
+    "wank nenruk tveacciti lyun"
+   ]
+  ],
+  [
+   "klut",
+   14,
+   [
+    "ml"
+   ],
+   [
+    "vearkcinhc tvenn klut hmun",
+    "cunealisliu lvean klut bhyk"
+   ]
+  ],
+  [
+   "panna",
+   13,
+   [
+    "fi"
+   ],
+   [
+    "lkcucukiu tpmha rumsiu panna",
+    "panna ktnickai nykchtasup"
+   ]
+  ],
+  [
+   "catea",
+   13,
+   [
+    "ro"
+   ],
+   [
+    "lkheanitha cateaneca smtutve",
+    "cateatea pnetprpri brha lkva"
+   ]
+  ],
+  [
+   "muca",
+   13,
+   [
+    "lv",
+    "sl"
+   ],
+   [
+    "upntukhcatai netiu muca tnca",
+    "wapri hmchiuchiu muca teantnmnn"
+   ]
+  ],
+  [
+   "jatka",
+   12,
+   [
+    "fi"
+   ],
+   [
+    "nesa muncmha jatka tnkhyuptai",
+    "cketvnkrinkiu jatka penai yprn"
+   ]
+  ],
+  [
+   "sisa",
+   12,
+   [
+    "hr"
+   ],
+   [
+    "suha jatncncheanmha sisa pyeak",
+    "sisa ciprautnai upha punnsi"
+   ]
+  ],
+  [
+   "sisn",
+   12,
+   [
+    "kn",
+    "te"
+   ],
+   [
+    "vnlakykiu hmeknlekak sisn",
+    "sisn rkcheakhukiu repnpn petai"
+   ]
+  ]
+ ],
+ "samples": [
+  "dakhaitiuk klam haiu yeaksurhnk",
+  "thmi cumtik namktai dakhrtea",
+  "watcha mvcirai myapyk ckup",
+  "keatvn upareskhn phym lykcak",
+  "kvalacup nvhapnscnta pntea",
+  "ukkhyvnekun rutea yprhnphrn",
+  "sechumchnrit pnhirhnn tutvn",
+  "hanmkheaha ptnai neckhu nhean",
+  "paca upalaskri ckkrikykcak",
+  "kmbhavn kakrvy mibhvn ekncan",
+  "pnintvn trarunltai hpum khnai",
+  "cunlkcut pamha bhraseabht"
+ ],
+ "seconds": 8.5,
+ "languages": [
+  "my"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

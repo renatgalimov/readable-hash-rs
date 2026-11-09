@@ -1,0 +1,233 @@
+{
+ "name": "am",
+ "corpus_words": 45174,
+ "relaxed_rows": 141,
+ "relaxed_examples": [
+  "tw",
+  "gw",
+  "tt",
+  "tb",
+  "yg",
+  "tz",
+  "yk",
+  "po",
+  "kf",
+  "yw",
+  "pr",
+  "ml"
+ ],
+ "segmented_words": 27058,
+ "skipped_words": 18116,
+ "middle_attested_fraction": 0.22111002604166666,
+ "end32_attested_fraction": 0.2792154947916667,
+ "end16_attested_fraction": 0.4641927083333333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.28,
+ "max_chars": 40,
+ "consonant_runs_pct": 32.766,
+ "vowel_runs_pct": 5.768,
+ "english_words_pct": 0.331,
+ "own_words_pct": 19.0,
+ "offensive_whole_pct": 1.19,
+ "offensive_whole_english_list_pct": 0.14,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.755,
+ "offensive_severe_en_pct": 0.175,
+ "offensive_inside5_pct": 1.79,
+ "offensive_inside4_pct": 14.165,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "fena",
+   21,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "glajgalech fena ngabachn tkaw",
+    "kekerochun kilksaryal fena"
+   ]
+  ],
+  [
+   "twat",
+   18,
+   [
+    "en"
+   ],
+   [
+    "twat dnchwa gdwa yzgizelewn",
+    "ngezew lkagiytu twat tawn"
+   ]
+  ],
+  [
+   "neger",
+   18,
+   [
+    "de",
+    "hu",
+    "nl",
+    "sk",
+    "sv"
+   ],
+   [
+    "mknegere chwelotochat benetachew",
+    "denegeru sbonmede krebayew"
+   ]
+  ],
+  [
+   "raba",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "ykemedyalesh raba migezhwelu",
+    "botagewal dolksh raba lalu"
+   ]
+  ],
+  [
+   "name",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "taye hgnesnderwa name maya",
+    "name kolmusat gastachhu rewo"
+   ]
+  ],
+  [
+   "hure",
+   15,
+   [
+    "de"
+   ],
+   [
+    "kodolibrachn yesemawi hure",
+    "guru kiyoche hure botadrna"
+   ]
+  ],
+  [
+   "hora",
+   14,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "tdal twgajawech hora chen",
+    "hora wagoltnsna tbiya gnbu"
+   ]
+  ],
+  [
+   "muna",
+   14,
+   [
+    "fi"
+   ],
+   [
+    "ngezhi leyteyach gewn muna",
+    "bustwa ydachhu yzgiziachhu muna"
+   ]
+  ],
+  [
+   "layna",
+   13,
+   [
+    "bg"
+   ],
+   [
+    "gowa ywfelaynaw lala yksh",
+    "gztelekeya laynachew dnkaye"
+   ]
+  ],
+  [
+   "mona",
+   12,
+   [
+    "it"
+   ],
+   [
+    "tebanyadachew brhomahu mona",
+    "mona splu lehotn yetedachn"
+   ]
+  ],
+  [
+   "kalu",
+   12,
+   [
+    "fi"
+   ],
+   [
+    "kalu moyanetu trew chshale",
+    "kosandngachew zagwetwa kalu"
+   ]
+  ],
+  [
+   "samen",
+   12,
+   [
+    "de"
+   ],
+   [
+    "samenawot hunya mngestayew",
+    "seka samenytariya ttoch wegu"
+   ]
+  ],
+  [
+   "kesal",
+   12,
+   [
+    "id"
+   ],
+   [
+    "bheroch buku spkesalu sdlu",
+    "tbakoch msafsachew tkesalowo"
+   ]
+  ],
+  [
+   "gafa",
+   12,
+   [
+    "pl"
+   ],
+   [
+    "resasbachhu tbza gafa jeberat",
+    "drezrew kolmabat gafa wegu"
+   ]
+  ],
+  [
+   "gotu",
+   12,
+   [
+    "tr"
+   ],
+   [
+    "kamasebefnu gotu gdaw kume",
+    "tamastoch geya gotu twager"
+   ]
+  ]
+ ],
+ "samples": [
+  "sbsona bhun hmwa sfnyitna",
+  "kewa mnistsh newawochu sbselachew",
+  "glwetn mlfenu msabzu twun",
+  "bilu zalondmu betoch ygerachhu",
+  "podenbun jemngenbet mida",
+  "hbsergases dnachew sragrifa",
+  "tzegramima mizefalachhu lbse",
+  "hmnybalew sntachn feriwn ttwal",
+  "zetoch zamoketochsh tweglentwa",
+  "flwo tgaboch sebsen girywa",
+  "michalachhu hisasebru ymen teru",
+  "mnebnenn zech mesraslaleh"
+ ],
+ "seconds": 9.8,
+ "languages": [
+  "am"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

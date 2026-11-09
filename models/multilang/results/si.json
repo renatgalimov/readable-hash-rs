@@ -1,0 +1,277 @@
+{
+ "name": "si",
+ "corpus_words": 60201,
+ "relaxed_rows": 3,
+ "relaxed_examples": [
+  "io",
+  "cc",
+  "oj"
+ ],
+ "segmented_words": 34003,
+ "skipped_words": 26198,
+ "middle_attested_fraction": 0.4051513671875,
+ "end32_attested_fraction": 0.4453938802083333,
+ "end16_attested_fraction": 0.6853841145833334,
+ "begin_attested": 128,
+ "chars": 25.38,
+ "max_chars": 31,
+ "consonant_runs_pct": 31.215,
+ "vowel_runs_pct": 7.595,
+ "english_words_pct": 0.448,
+ "own_words_pct": 31.818,
+ "offensive_whole_pct": 2.055,
+ "offensive_whole_english_list_pct": 0.28,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.94,
+ "offensive_severe_en_pct": 0.07,
+ "offensive_inside5_pct": 1.015,
+ "offensive_inside4_pct": 10.74,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "srom",
+   21,
+   [
+    "pl"
+   ],
+   [
+    "srom dryi vicauvki dhvitr",
+    "maertiya srom ktaenu plny"
+   ]
+  ],
+  [
+   "porn",
+   19,
+   [
+    "cy",
+    "en",
+    "et",
+    "gd",
+    "hi",
+    "mt",
+    "sk",
+    "sl",
+    "sr",
+    "zu"
+   ],
+   [
+    "vtinki porn starattm snny",
+    "atsuksge porn anna svrunt"
+   ]
+  ],
+  [
+   "meni",
+   19,
+   [
+    "tr"
+   ],
+   [
+    "aege meni sklimk dhenemen",
+    "grahuge sresyamt meni blym"
+   ]
+  ],
+  [
+   "asly",
+   17,
+   [
+    "be"
+   ],
+   [
+    "asly brvy gaest girusudinu",
+    "ghki pitm kntovisavlt asly"
+   ]
+  ],
+  [
+   "vimk",
+   17,
+   [
+    "mr"
+   ],
+   [
+    "vimk hoti rtaruvkrmy vent",
+    "civl gembdudamk hene vimk"
+   ]
+  ],
+  [
+   "pina",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "meksika blekim vymgiy pina",
+    "tokatunkas pina vtny gmin"
+   ]
+  ],
+  [
+   "viry",
+   17,
+   [
+    "hi",
+    "kn",
+    "mr"
+   ],
+   [
+    "viry shyi vsruelmk srityt",
+    "veliyn mtarndhy meat viry"
+   ]
+  ],
+  [
+   "konn",
+   16,
+   [
+    "mr"
+   ],
+   [
+    "kamy konn stet ktunukeyid",
+    "kilige chik cimmndyen konn"
+   ]
+  ],
+  [
+   "bite",
+   15,
+   [
+    "fr"
+   ],
+   [
+    "liccanidad bite aguranykt",
+    "dury mrgynhi yotrabehi bite"
+   ]
+  ],
+  [
+   "gote",
+   15,
+   [
+    "tr"
+   ],
+   [
+    "gote dany lbatvasiym sken",
+    "srubav srya sirkikmk gote"
+   ]
+  ],
+  [
+   "dimk",
+   15,
+   [
+    "kn"
+   ],
+   [
+    "monoringe dimk yadi abhiren",
+    "vnaembviyd dimk drivahyn"
+   ]
+  ],
+  [
+   "pene",
+   15,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "dustvy snehusyn skyk pene",
+    "pene tolstotaly torvrtyn"
+   ]
+  ],
+  [
+   "name",
+   15,
+   [
+    "ja"
+   ],
+   [
+    "paksiles shki pelman name",
+    "plin name hins dhkaekkrmin"
+   ]
+  ],
+  [
+   "pula",
+   15,
+   [
+    "ro"
+   ],
+   [
+    "gaerisna miyt pula rumparin",
+    "moge levityuvki pula jaye"
+   ]
+  ],
+  [
+   "titt",
+   15,
+   [
+    "be",
+    "bg",
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "fr",
+    "gd",
+    "gl",
+    "hi",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "la",
+    "lt",
+    "lv",
+    "ml",
+    "mn",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "uz",
+    "vi",
+    "zu"
+   ],
+   [
+    "titt yugave pvilviyn stya",
+    "studhyedi mitk titt ampika"
+   ]
+  ]
+ ],
+ "samples": [
+  "mhtenm roks pnuvn abhaudagen",
+  "niry laenin asiyany mhatyi",
+  "mrnaeti grottm pudhyt aken",
+  "kiyk ingonkot vimy duskyeku",
+  "bolsisnge beatusyiya miki",
+  "lebnibsimyi jani agtitund",
+  "amatkyyavu mimarsyk pdya",
+  "pnismavn tuyage pibimyi veyi",
+  "pare inriccyk aknarupdvl",
+  "russ jnyaem kaelyk chityy",
+  "migmyn genytund sevu smyk",
+  "laetnsom pamin saetpebhye"
+ ],
+ "seconds": 8.1,
+ "languages": [
+  "si"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

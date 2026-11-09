@@ -1,0 +1,244 @@
+{
+ "name": "azj",
+ "corpus_words": 80000,
+ "relaxed_rows": 3,
+ "relaxed_examples": [
+  "ox",
+  "mue",
+  "ug"
+ ],
+ "segmented_words": 50513,
+ "skipped_words": 29487,
+ "middle_attested_fraction": 0.3802490234375,
+ "end32_attested_fraction": 0.266357421875,
+ "end16_attested_fraction": 0.4823404947916667,
+ "begin_attested": 128,
+ "chars": 27.55,
+ "max_chars": 37,
+ "consonant_runs_pct": 5.383,
+ "vowel_runs_pct": 9.914,
+ "english_words_pct": 0.939,
+ "own_words_pct": 14.848,
+ "offensive_whole_pct": 2.345,
+ "offensive_whole_english_list_pct": 0.16,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.235,
+ "offensive_severe_en_pct": 0.075,
+ "offensive_inside5_pct": 3.73,
+ "offensive_inside4_pct": 16.765,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "linda",
+   167,
+   [
+    "zu"
+   ],
+   [
+    "fazislindan kutletlidir usubda",
+    "zeismaatmisdir tezlindan mistam"
+   ]
+  ],
+  [
+   "asini",
+   133,
+   [
+    "it"
+   ],
+   [
+    "dolasinin vanlahzanda prokisi",
+    "yode qerlar imtilanrasinin viar"
+   ]
+  ],
+  [
+   "apara",
+   84,
+   [
+    "fi"
+   ],
+   [
+    "anasekdim paytir aparatusler",
+    "aparacusem fermaga lana saar"
+   ]
+  ],
+  [
+   "kamin",
+   50,
+   [
+    "mt"
+   ],
+   [
+    "plesi gikalliq sukatokamin",
+    "kuveci prokamin orilalizliq"
+   ]
+  ],
+  [
+   "cona",
+   23,
+   [
+    "pt"
+   ],
+   [
+    "dular dozanosa cona vurginden",
+    "neli cona nissebkaya arnin"
+   ]
+  ],
+  [
+   "pede",
+   23,
+   [
+    "fr"
+   ],
+   [
+    "dirclaslar pede rema odrurlar",
+    "pede fillaq lekselde tedir"
+   ]
+  ],
+  [
+   "anali",
+   22,
+   [
+    "mt"
+   ],
+   [
+    "uslar gobilline analib isib",
+    "indina odar unlanalinda arim"
+   ]
+  ],
+  [
+   "pina",
+   21,
+   [
+    "hu"
+   ],
+   [
+    "pina zaiq xaldurler haleye",
+    "vurguracaq hulligi larla pina"
+   ]
+  ],
+  [
+   "pisa",
+   20,
+   [
+    "ro"
+   ],
+   [
+    "buynslabon pisa aklar tuar",
+    "pisa fizibeesi yisi odlesek"
+   ]
+  ],
+  [
+   "geci",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "eylar laricadir geci buddir",
+    "elizan ronin geci sefiklinin"
+   ]
+  ],
+  [
+   "anus",
+   18,
+   [
+    "be",
+    "bg",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "eu",
+    "fa",
+    "fr",
+    "gd",
+    "is",
+    "mk",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sl",
+    "sq",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "gullem anus terminin idceye",
+    "anus kutleli plagili avesek"
+   ]
+  ],
+  [
+   "pesi",
+   17,
+   [
+    "mr"
+   ],
+   [
+    "pesi moli latin eynesslandim",
+    "cosi esgentulmek pesi agiq"
+   ]
+  ],
+  [
+   "pene",
+   17,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "pene revati axem nasimlede",
+    "pene heyi esmiyyetrdiyi stiq"
+   ]
+  ],
+  [
+   "bunda",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "abralar orbarlardan bunda bone",
+    "edvastde bunda vurun prordum"
+   ]
+  ],
+  [
+   "vana",
+   15,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "tiatusileri vana edilqinin",
+    "yusi vana kimeronin tarkasi"
+   ]
+  ]
+ ],
+ "samples": [
+  "icliqdan birinin yiler iledxalar",
+  "qainin kuncem qebusi iclensiya",
+  "tituya imagidir bilbeli yesa",
+  "miri ehlentinde muar qollesi",
+  "usuyedem orciyirsaq hair",
+  "hipelmuldir itli untifise",
+  "atmazlukam harlifden odar",
+  "yitleyine moma elmlerden ayiq",
+  "maci ehketorda yeminliyyetli",
+  "plar neqliye tesdilar eksklar",
+  "hacati tullagra edim senin",
+  "kuluxaye mainin sazilluklerden"
+ ],
+ "seconds": 9.0,
+ "languages": [
+  "azj"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

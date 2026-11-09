@@ -1,0 +1,252 @@
+{
+ "name": "nnb",
+ "corpus_words": 9308,
+ "relaxed_rows": 173,
+ "relaxed_examples": [
+  "no",
+  "ow",
+  "ec",
+  "su",
+  "so",
+  "bo",
+  "lo",
+  "ye",
+  "og",
+  "be",
+  "pa",
+  "tu"
+ ],
+ "segmented_words": 7602,
+ "skipped_words": 1706,
+ "middle_attested_fraction": 0.13118489583333334,
+ "end32_attested_fraction": 0.15397135416666666,
+ "end16_attested_fraction": 0.2884928385416667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.97,
+ "max_chars": 39,
+ "consonant_runs_pct": 2.803,
+ "vowel_runs_pct": 12.918,
+ "english_words_pct": 0.775,
+ "own_words_pct": 18.081,
+ "offensive_whole_pct": 1.095,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.455,
+ "offensive_severe_en_pct": 0.01,
+ "offensive_inside5_pct": 1.87,
+ "offensive_inside4_pct": 20.985,
+ "offensive_across_words_pct": 0.025,
+ "top_hits": [
+  [
+   "tanga",
+   64,
+   [
+    "fil"
+   ],
+   [
+    "hasa vomundu twetanganaya sorimbere",
+    "mokira mungalhiki naho utanga"
+   ]
+  ],
+  [
+   "dambi",
+   35,
+   [
+    "uk"
+   ],
+   [
+    "amanga lwevuthoma ndambi bwanzire",
+    "esyowa yalhendambi kalusobuke"
+   ]
+  ],
+  [
+   "randi",
+   22,
+   [
+    "hi"
+   ],
+   [
+    "bwihwe ewera mana ndikirandima",
+    "bithoka kolhengirandiko owmbanza"
+   ]
+  ],
+  [
+   "suka",
+   21,
+   [
+    "be",
+    "pl",
+    "ru",
+    "sk",
+    "uk"
+   ],
+   [
+    "ngwimuha suka biala nebyala",
+    "luma mwithi suka olalhamakawe"
+   ]
+  ],
+  [
+   "linda",
+   20,
+   [
+    "zu"
+   ],
+   [
+    "kyula atiri evuwalinda thahira",
+    "kyatsenge milinda swatsotomuha"
+   ]
+  ],
+  [
+   "hane",
+   19,
+   [
+    "da"
+   ],
+   [
+    "ebestero liamanza liha hane",
+    "kitsomere hane wemusenyire"
+   ]
+  ],
+  [
+   "baghal",
+   18,
+   [
+    "mt"
+   ],
+   [
+    "siwithe mbinyebia ibaghala lisu",
+    "owia owthibaghalhi siye silwe"
+   ]
+  ],
+  [
+   "homo",
+   18,
+   [
+    "fi",
+    "id",
+    "ja",
+    "ko"
+   ],
+   [
+    "homo thyo imendeke ngombokasi",
+    "lhya oyokinga homo kwekendya"
+   ]
+  ],
+  [
+   "shits",
+   15,
+   [
+    "cs",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "gd",
+    "lt",
+    "lv",
+    "ml",
+    "mr",
+    "mt",
+    "sq",
+    "sv",
+    "th",
+    "uk",
+    "uz",
+    "zu"
+   ],
+   [
+    "ukatsulhaya esyotsyo shitsulhisya",
+    "shitseseke hakuvwakumi syaghu"
+   ]
+  ],
+  [
+   "vana",
+   15,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "tandesonda epyo vana nemwaya",
+    "hetsia ovatsula vana chawana"
+   ]
+  ],
+  [
+   "ubera",
+   14,
+   [
+    "la"
+   ],
+   [
+    "lalwatsubera lisathu ukibika",
+    "vyaghu bighobwiri yibusu ubera"
+   ]
+  ],
+  [
+   "niti",
+   14,
+   [
+    "te"
+   ],
+   [
+    "hanywa ovutana niti asosira",
+    "lwihia omunaya mbetia niti"
+   ]
+  ],
+  [
+   "mama",
+   14,
+   [
+    "pt"
+   ],
+   [
+    "mayena agrika obonavya mama",
+    "bwandiko mama ulunemwe roasi"
+   ]
+  ],
+  [
+   "pisa",
+   13,
+   [
+    "ro"
+   ],
+   [
+    "mbondbindu mbihovamuma pisa",
+    "lake muleteekire ivyo pisa"
+   ]
+  ],
+  [
+   "pisi",
+   13,
+   [
+    "hu"
+   ],
+   [
+    "meesia sinyotho pisi ahaya",
+    "kobolo avusatha yimira pisi"
+   ]
+  ]
+ ],
+ "samples": [
+  "mbubwa henda ubaha tobirimo",
+  "kiosi loaligha ebighwe mbasaye",
+  "ewendika iwenduli lumina miaya",
+  "yawe igavaghula omanga ryakithi",
+  "ahesivuka yeolhughulia inaya",
+  "wiriomunyula atiri huhunyaho",
+  "alhighenditseka inivasabu imbya",
+  "ubetluyi boire buhike koyo",
+  "biabiri igekumba mikimulenga",
+  "keia oluvira akassi dababya",
+  "inahabo vwirendere esyoka siasi",
+  "loesokio biosi eryunyihuka"
+ ],
+ "seconds": 9.3,
+ "languages": [
+  "nnb"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

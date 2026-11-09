@@ -1,0 +1,243 @@
+{
+ "name": "ie",
+ "corpus_words": 8047,
+ "relaxed_rows": 177,
+ "relaxed_examples": [
+  "ex",
+  "ch",
+  "ju",
+  "qu",
+  "fu",
+  "mu",
+  "lu",
+  "vo",
+  "sp",
+  "exp",
+  "ka",
+  "cl"
+ ],
+ "segmented_words": 5326,
+ "skipped_words": 2721,
+ "middle_attested_fraction": 0.11006673177083333,
+ "end32_attested_fraction": 0.11739095052083333,
+ "end16_attested_fraction": 0.22639973958333334,
+ "begin_attested": 128,
+ "chars": 26.36,
+ "max_chars": 35,
+ "consonant_runs_pct": 14.111,
+ "vowel_runs_pct": 1.341,
+ "english_words_pct": 3.0,
+ "own_words_pct": 8.278,
+ "offensive_whole_pct": 3.29,
+ "offensive_whole_english_list_pct": 0.35,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.535,
+ "offensive_severe_en_pct": 0.265,
+ "offensive_inside5_pct": 3.005,
+ "offensive_inside4_pct": 21.24,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "tate",
+   26,
+   [
+    "ro"
+   ],
+   [
+    "vervie tate hune duchttat",
+    "talmen lissovndes mocat tate"
+   ]
+  ],
+  [
+   "samen",
+   24,
+   [
+    "de"
+   ],
+   [
+    "tase samen gutes humorcceal",
+    "evlock ture hampre fissamen"
+   ]
+  ],
+  [
+   "puta",
+   22,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "hundir puta kias firmsines",
+    "ortompervation puta dies ente"
+   ]
+  ],
+  [
+   "asal",
+   22,
+   [
+    "gd"
+   ],
+   [
+    "analingtion rilliferal asal",
+    "bilion asal kommta eteiia"
+   ]
+  ],
+  [
+   "recte",
+   22,
+   [
+    "ca"
+   ],
+   [
+    "lograr crectet pesa spvika",
+    "obloutte corectet abchlore"
+   ]
+  ],
+  [
+   "fena",
+   21,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "pituat orar condimanes fena",
+    "fena ricunituttion ischanne"
+   ]
+  ],
+  [
+   "cunt",
+   21,
+   [
+    "cs",
+    "cy",
+    "en",
+    "eu",
+    "gd",
+    "is",
+    "la",
+    "lv",
+    "mn",
+    "mt",
+    "my",
+    "pl",
+    "zu"
+   ],
+   [
+    "cunt prolefolictes luer namen",
+    "cunt rocient bascensat elon"
+   ]
+  ],
+  [
+   "anita",
+   20,
+   [
+    "nl"
+   ],
+   [
+    "etadavat anita emfale prone",
+    "cones jomoccta anita perues"
+   ]
+  ],
+  [
+   "pisse",
+   19,
+   [
+    "fr"
+   ],
+   [
+    "atadactic talmen compisse rete",
+    "reitania entutispisse cinist"
+   ]
+  ],
+  [
+   "mell",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "ruvigaltas dution clta mell",
+    "mell belocuse volde esolie"
+   ]
+  ],
+  [
+   "ische",
+   19,
+   [
+    "de"
+   ],
+   [
+    "chalagte hare dische paus",
+    "goterreuos honsatores ischen"
+   ]
+  ],
+  [
+   "fela",
+   18,
+   [
+    "cs"
+   ],
+   [
+    "edie sascandrican fela fator",
+    "oblosi ermitat fela avstant"
+   ]
+  ],
+  [
+   "coles",
+   18,
+   [
+    "la"
+   ],
+   [
+    "coles larg emuralvadet kaie",
+    "obcissouan bossinski coles"
+   ]
+  ],
+  [
+   "peter",
+   18,
+   [
+    "fr"
+   ],
+   [
+    "bripbana consert peter mita",
+    "devesommar peter corbaspan"
+   ]
+  ],
+  [
+   "mesa",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "edndian svbindat drre mesa",
+    "mesa waie ofdimission varine"
+   ]
+  ]
+ ],
+ "samples": [
+  "lorcar ocon elat undonctiones",
+  "pront nissie farator lopites",
+  "ofstosi biturat exlland orre",
+  "luar histrecta mation cipreser",
+  "corvitunde avcenclane sona",
+  "muhailavre rias dupligie",
+  "broschvende sorbmonie clra",
+  "elegllen evia adomes lena",
+  "vist hiclpore orlindancte",
+  "prial surrie campie ennime",
+  "sombte totancie fuar deos",
+  "nivarcri vition sedifishet"
+ ],
+ "seconds": 8.1,
+ "languages": [
+  "ie"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

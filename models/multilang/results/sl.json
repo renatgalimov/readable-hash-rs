@@ -1,0 +1,220 @@
+{
+ "name": "sl",
+ "corpus_words": 80000,
+ "relaxed_rows": 0,
+ "relaxed_examples": [],
+ "segmented_words": 53169,
+ "skipped_words": 26831,
+ "middle_attested_fraction": 0.3891194661458333,
+ "end32_attested_fraction": 0.4806722005208333,
+ "end16_attested_fraction": 0.6984049479166666,
+ "begin_attested": 128,
+ "chars": 25.89,
+ "max_chars": 32,
+ "consonant_runs_pct": 14.102,
+ "vowel_runs_pct": 0.041,
+ "english_words_pct": 0.759,
+ "own_words_pct": 29.348,
+ "offensive_whole_pct": 3.5,
+ "offensive_whole_english_list_pct": 0.07,
+ "offensive_whole_own_list_pct": 0.28,
+ "offensive_whole_major_lists_pct": 1.39,
+ "offensive_severe_en_pct": 0.005,
+ "offensive_inside5_pct": 1.91,
+ "offensive_inside4_pct": 15.505,
+ "offensive_across_words_pct": 0.035,
+ "top_hits": [
+  [
+   "geil",
+   24,
+   [
+    "de"
+   ],
+   [
+    "sung vlecirteti zaga geil",
+    "peno geil vpavil merifijo"
+   ]
+  ],
+  [
+   "dada",
+   22,
+   [
+    "id"
+   ],
+   [
+    "amiris dada tiri rokakovanje",
+    "brutetlijo dada doni svetla"
+   ]
+  ],
+  [
+   "osel",
+   20,
+   [
+    "cs"
+   ],
+   [
+    "enega kurcmegles osel drva",
+    "osel trosrcanje ukli zbarni"
+   ]
+  ],
+  [
+   "rini",
+   19,
+   [
+    "zh"
+   ],
+   [
+    "chopijo znassejo oder rini",
+    "baje enzili lomboditi rini"
+   ]
+  ],
+  [
+   "kuja",
+   18,
+   [
+    "hr"
+   ],
+   [
+    "padi kuja castva enoptimo",
+    "moskadel kuja vone smitje"
+   ]
+  ],
+  [
+   "hane",
+   18,
+   [
+    "da"
+   ],
+   [
+    "jubila svetega horvetja hane",
+    "trpeza vpolci capola hane"
+   ]
+  ],
+  [
+   "sranje",
+   18,
+   [
+    "hr",
+    "mk",
+    "sl",
+    "sr"
+   ],
+   [
+    "muza tuacerljuje bilo sranje",
+    "trsa gliram sranje placujete"
+   ]
+  ],
+  [
+   "cona",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "janja veljaj mikrblja cona",
+    "angajana cona kanarcotiti"
+   ]
+  ],
+  [
+   "pisi",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "ziga zdral orlocijenice pisi",
+    "cestorca pisi zbodovesne"
+   ]
+  ],
+  [
+   "kuje",
+   16,
+   [
+    "hr"
+   ],
+   [
+    "kuje mail ukuscahove judu",
+    "genstvezil ogavlece kuje"
+   ]
+  ],
+  [
+   "mail",
+   16,
+   [
+    "hi"
+   ],
+   [
+    "kuje mail ukuscahove judu",
+    "upocam hoje mail vojaranja"
+   ]
+  ],
+  [
+   "puta",
+   16,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "srci puta glabno canatiko",
+    "puta paco verseduje oskril"
+   ]
+  ],
+  [
+   "reva",
+   16,
+   [
+    "fi"
+   ],
+   [
+    "reva poteinjo ubrati hokemu",
+    "reva zmno odkljubi jasova"
+   ]
+  ],
+  [
+   "krik",
+   16,
+   [
+    "cs"
+   ],
+   [
+    "rejo pingaljsem krik areni",
+    "diva krik vpazlomite vaja"
+   ]
+  ],
+  [
+   "coco",
+   15,
+   [
+    "pt"
+   ],
+   [
+    "coco bezina izurljikom fien",
+    "objahanju skih hintano coco"
+   ]
+  ]
+ ],
+ "samples": [
+  "capoli hine faci zrirovanju",
+  "poku armadi sodine carval",
+  "filadica cimeti oslela brava",
+  "klal zvozaven pricni okoliski",
+  "vsevlesu ugozericami slim",
+  "albupomeno zban upepelni",
+  "topljiasanje sluhacije ziga",
+  "fazetnem urce menili sine",
+  "kang zvolavim brigiteden",
+  "omno mineze odkrska svetisli",
+  "slogih zdruzadlo zmne preiti",
+  "aresplita kake obljuracevanje"
+ ],
+ "seconds": 8.2,
+ "languages": [
+  "sl"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,270 @@
+{
+ "name": "ksh",
+ "corpus_words": 8238,
+ "relaxed_rows": 387,
+ "relaxed_examples": [
+  "sc",
+  "vo",
+  "op",
+  "sp",
+  "us",
+  "hu",
+  "su",
+  "ku",
+  "bu",
+  "du",
+  "ov",
+  "zo"
+ ],
+ "segmented_words": 5305,
+ "skipped_words": 2933,
+ "middle_attested_fraction": 0.1092529296875,
+ "end32_attested_fraction": 0.11690266927083333,
+ "end16_attested_fraction": 0.23038736979166666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.02,
+ "max_chars": 35,
+ "consonant_runs_pct": 28.964,
+ "vowel_runs_pct": 3.991,
+ "english_words_pct": 1.832,
+ "own_words_pct": 15.701,
+ "offensive_whole_pct": 2.74,
+ "offensive_whole_english_list_pct": 0.46,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.095,
+ "offensive_severe_en_pct": 0.225,
+ "offensive_inside5_pct": 3.64,
+ "offensive_inside4_pct": 16.275,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "ische",
+   374,
+   [
+    "de"
+   ],
+   [
+    "tulische wiritz pitine zore",
+    "scse voweeinische opdreczess"
+   ]
+  ],
+  [
+   "arsch",
+   65,
+   [
+    "de"
+   ],
+   [
+    "zede warschpeet gede zahuch",
+    "enna lononserich arsch vane"
+   ]
+  ],
+  [
+   "blin",
+   22,
+   [
+    "be"
+   ],
+   [
+    "iistare blin jlan buttsalt",
+    "saahhuhoss blin kass isch"
+   ]
+  ],
+  [
+   "hlang",
+   20,
+   [
+    "th"
+   ],
+   [
+    "aarlije iier vung blevhlang",
+    "opch reld muhlang ornieeve"
+   ]
+  ],
+  [
+   "tuss",
+   19,
+   [
+    "et"
+   ],
+   [
+    "teriecisch tuss subeidoold",
+    "floormhosch jure tuss kloor"
+   ]
+  ],
+  [
+   "usne",
+   18,
+   [
+    "hr"
+   ],
+   [
+    "usne arvorsht sorull wang",
+    "jridhoss usne amng usrisch"
+   ]
+  ],
+  [
+   "pene",
+   17,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "bodrebin pene plgerle hong",
+    "pene hitt meliienamme pess"
+   ]
+  ],
+  [
+   "wang",
+   17,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "gd",
+    "gl",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "ko",
+    "la",
+    "lt",
+    "lv",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "zu"
+   ],
+   [
+    "wang toluwall nemme pltate",
+    "usne arvorsht sorull wang"
+   ]
+  ],
+  [
+   "rind",
+   17,
+   [
+    "et"
+   ],
+   [
+    "enkeehrt rind thradiosch",
+    "rind weer porhen zitsprije"
+   ]
+  ],
+  [
+   "kord",
+   17,
+   [
+    "sv"
+   ],
+   [
+    "kord draurinzer aang kaat",
+    "elavnangk kord jambre vuen"
+   ]
+  ],
+  [
+   "peter",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "iier arte peter blamtischafss",
+    "troovaach eroonsnshe peter"
+   ]
+  ],
+  [
+   "neng",
+   16,
+   [
+    "zh"
+   ],
+   [
+    "neng wodoch letsaade wuch",
+    "perite unstorjet neng zane"
+   ]
+  ],
+  [
+   "mell",
+   16,
+   [
+    "hu"
+   ],
+   [
+    "osstaddng mell zaiistatuen",
+    "rinugeret vorberinsre mell"
+   ]
+  ],
+  [
+   "tate",
+   16,
+   [
+    "ro"
+   ],
+   [
+    "opel vuzemoroche zeel tate",
+    "hostann arediang tate chef"
+   ]
+  ],
+  [
+   "fuen",
+   16,
+   [
+    "th"
+   ],
+   [
+    "fuen lude herver wisiddett",
+    "fuen winseredem viss onte"
+   ]
+  ]
+ ],
+ "samples": [
+  "suritz auld orer amooddin",
+  "stung hinsing merkes surbor",
+  "peffet rajaal seedem sane",
+  "alde ajeenoote scet prosss",
+  "trebezisch flatlitale dach",
+  "omjankmeije foel ruijavel",
+  "fasskamase damphoss vuet",
+  "orhubeed teen verpass aach",
+  "lart ajeesisten sarousnshe",
+  "biet lennar kompsch isiiste",
+  "danika julikang litt beere",
+  "hitirkum lana vorurojraf"
+ ],
+ "seconds": 8.9,
+ "languages": [
+  "ksh"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

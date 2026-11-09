@@ -1,0 +1,228 @@
+{
+ "name": "ber",
+ "corpus_words": 46547,
+ "relaxed_rows": 63,
+ "relaxed_examples": [
+  "tx",
+  "sg",
+  "tj",
+  "lh",
+  "lg",
+  "sf",
+  "lk",
+  "lq",
+  "sq",
+  "ux",
+  "lx",
+  "ty"
+ ],
+ "segmented_words": 31456,
+ "skipped_words": 15091,
+ "middle_attested_fraction": 0.3240559895833333,
+ "end32_attested_fraction": 0.3979899088541667,
+ "end16_attested_fraction": 0.5904947916666666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.34,
+ "max_chars": 32,
+ "consonant_runs_pct": 10.14,
+ "vowel_runs_pct": 7.474,
+ "english_words_pct": 0.514,
+ "own_words_pct": 23.805,
+ "offensive_whole_pct": 0.98,
+ "offensive_whole_english_list_pct": 0.005,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.43,
+ "offensive_severe_en_pct": 0.02,
+ "offensive_inside5_pct": 1.21,
+ "offensive_inside4_pct": 11.91,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "smit",
+   23,
+   [
+    "mn"
+   ],
+   [
+    "tbam keeg smit myizebdiyen",
+    "inker swehred ifirmamen smit"
+   ]
+  ],
+  [
+   "meni",
+   20,
+   [
+    "tr"
+   ],
+   [
+    "seum qqehma rewaganen meni",
+    "heggiwsed tfawegamilen meni"
+   ]
+  ],
+  [
+   "mama",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "mama meni aqidrust maddem",
+    "smutem iclem mama myurtuni"
+   ]
+  ],
+  [
+   "saed",
+   16,
+   [
+    "da"
+   ],
+   [
+    "saed ufsirgaefen smagumar",
+    "saed ihug aeden anumeedart"
+   ]
+  ],
+  [
+   "slet",
+   15,
+   [
+    "nl"
+   ],
+   [
+    "tjemmi ggezedem deit slet",
+    "usran nnsafrewred slet unel"
+   ]
+  ],
+  [
+   "reet",
+   15,
+   [
+    "nl"
+   ],
+   [
+    "srecdacen degi reet ggawed",
+    "ieewweq qqleg reet trajujhed"
+   ]
+  ],
+  [
+   "mear",
+   13,
+   [
+    "es"
+   ],
+   [
+    "suqqden abehhan leesee mear",
+    "nezzun theggeb mear aserni"
+   ]
+  ],
+  [
+   "urin",
+   13,
+   [
+    "sl"
+   ],
+   [
+    "yeel uwerni altettiyen urin",
+    "urin nnawsileg twit ggunzi"
+   ]
+  ],
+  [
+   "nuli",
+   13,
+   [
+    "ja"
+   ],
+   [
+    "tnut anawwalt tliniyen nuli",
+    "uqren ubasebant ahmmer nuli"
+   ]
+  ],
+  [
+   "tette",
+   13,
+   [
+    "it"
+   ],
+   [
+    "itthaz tettel irurgezzmen",
+    "ggad tfaz sureg tettettlayed"
+   ]
+  ],
+  [
+   "amda",
+   12,
+   [
+    "hi"
+   ],
+   [
+    "amda llhen atehred ayyarrew",
+    "sbuzazdeg amda uraw ufuhlen"
+   ]
+  ],
+  [
+   "negre",
+   12,
+   [
+    "fr"
+   ],
+   [
+    "sfilizig nnegren twankiwin",
+    "zemzed wezrebekka negred"
+   ]
+  ],
+  [
+   "skit",
+   10,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "rren tudren skit ifukidiyen",
+    "masennezt skit srucilazan"
+   ]
+  ],
+  [
+   "ment",
+   10,
+   [
+    "ru"
+   ],
+   [
+    "uderrad ment kkig unehhuzgen",
+    "cerwujren ment uzamuswali"
+   ]
+  ],
+  [
+   "balen",
+   9,
+   [
+    "nl"
+   ],
+   [
+    "lmiklem wannebalent tuzazen",
+    "ilgen anezawal ggewjabalen"
+   ]
+  ]
+ ],
+ "samples": [
+  "yusmum maet ayut nunejjren",
+  "tied slalid umazren yulsel",
+  "suqqden abehhan leesee mear",
+  "ddeg sgeellin ttun azaged",
+  "ccmagzet uzbederreg iten",
+  "swagilmeid awleg arkatareg",
+  "gezzuzwadt itessusen ulmu",
+  "ayramust ixar tguran ifad",
+  "asam sgekined meccekettum",
+  "stem izmawt neqqed uwerreg",
+  "itadur aqeddezlu ibded yela",
+  "sluzwati asbi tazzilqeen"
+ ],
+ "seconds": 9.7,
+ "languages": [
+  "ber"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

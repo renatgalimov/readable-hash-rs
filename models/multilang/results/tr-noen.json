@@ -1,0 +1,232 @@
+{
+ "name": "tr-noen",
+ "corpus_words": 80000,
+ "relaxed_rows": 52,
+ "relaxed_examples": [
+  "zo",
+  "of",
+  "aj",
+  "ju",
+  "mc",
+  "wi",
+  "vo",
+  "wo",
+  "we",
+  "sc",
+  "hy",
+  "ly"
+ ],
+ "segmented_words": 54668,
+ "skipped_words": 25332,
+ "middle_attested_fraction": 0.2842610677083333,
+ "end32_attested_fraction": 0.2763671875,
+ "end16_attested_fraction": 0.4833984375,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.55,
+ "max_chars": 39,
+ "consonant_runs_pct": 4.372,
+ "vowel_runs_pct": 12.828,
+ "english_words_pct": 0.612,
+ "own_words_pct": 18.048,
+ "offensive_whole_pct": 2.16,
+ "offensive_whole_english_list_pct": 0.04,
+ "offensive_whole_own_list_pct": 0.4,
+ "offensive_whole_major_lists_pct": 1.385,
+ "offensive_severe_en_pct": 0.01,
+ "offensive_inside5_pct": 2.97,
+ "offensive_inside4_pct": 16.295,
+ "offensive_across_words_pct": 0.025,
+ "top_hits": [
+  [
+   "debil",
+   59,
+   [
+    "cs",
+    "pl"
+   ],
+   [
+    "uyer opyatisi edebilvacana",
+    "yurtininda gozdebiltmaya ussin"
+   ]
+  ],
+  [
+   "asini",
+   52,
+   [
+    "it"
+   ],
+   [
+    "asiniyor atin ustenmaya uyrim",
+    "tolar ismasini davetiyor erin"
+   ]
+  ],
+  [
+   "satan",
+   28,
+   [
+    "no",
+    "sv"
+   ],
+   [
+    "amilsatan tomis ayvanda bosin",
+    "moli oysatan odunaya fosterim"
+   ]
+  ],
+  [
+   "prik",
+   23,
+   [
+    "nl"
+   ],
+   [
+    "prik bakmen pran vunlemimis",
+    "ilvastun prik bomis kuveen"
+   ]
+  ],
+  [
+   "linda",
+   23,
+   [
+    "zu"
+   ],
+   [
+    "embellinda fiskyuladi regi",
+    "zataslinda iyiz prevlusinmis"
+   ]
+  ],
+  [
+   "cona",
+   21,
+   [
+    "pt"
+   ],
+   [
+    "cona birtlenli cumis novadi",
+    "aklacagietecegim iskarmadik cona"
+   ]
+  ],
+  [
+   "manda",
+   20,
+   [
+    "ru"
+   ],
+   [
+    "ugilacagazine husin mandatmis",
+    "midir larmalamak esiz mimandan"
+   ]
+  ],
+  [
+   "boktan",
+   19,
+   [
+    "tr"
+   ],
+   [
+    "evleneldi fahistamda boktan",
+    "cara ugun surmilmesen boktan"
+   ]
+  ],
+  [
+   "koli",
+   19,
+   [
+    "kn"
+   ],
+   [
+    "ogme hamiltmesen paiz koli",
+    "koli krebilayacagim abuk ogevsin"
+   ]
+  ],
+  [
+   "here",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "rasmasi kale merasada here",
+    "nonlinin elebiten here kine"
+   ]
+  ],
+  [
+   "tusan",
+   18,
+   [
+    "sv"
+   ],
+   [
+    "iltusan hayayim isarda muni",
+    "potusan gizlulkana kundun"
+   ]
+  ],
+  [
+   "pene",
+   17,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "vada kasalmlaslar pene eglar",
+    "pene gomis yima bekliyanacak"
+   ]
+  ],
+  [
+   "nian",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "nada odiz nian elvemesalar",
+    "izgaslacagim pakilenaydim nian"
+   ]
+  ],
+  [
+   "sidik",
+   16,
+   [
+    "tr"
+   ],
+   [
+    "boon sidik teyla mavizimdeki",
+    "pestriye anadan isirdin sidik"
+   ]
+  ],
+  [
+   "dain",
+   16,
+   [
+    "ml"
+   ],
+   [
+    "venecegida akadet oten dain",
+    "asagiim dain vayorsun manslasin"
+   ]
+  ]
+ ],
+ "samples": [
+  "fitiyi zame ailar oplumuze",
+  "baan galerilar buzdiz fitaydi",
+  "niyazi fasisin ceylin yuden",
+  "uzen horserimizi saydi icguyor",
+  "izaynlacagim hellolyede yesin",
+  "avlianiser rane ugeteyiz",
+  "mesetlecekir yellalim migini",
+  "aisletten amon dogana uysun",
+  "olek hotlamiyorlar yukamlitmis",
+  "emler danstan kotume hususi",
+  "yerimsin plakeyiz hian yalar",
+  "gastcian oliz geritalmaya"
+ ],
+ "seconds": 10.3,
+ "languages": [
+  "tr"
+ ],
+ "no_english": true,
+ "blocklist": false
+}

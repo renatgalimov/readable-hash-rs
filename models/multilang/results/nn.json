@@ -1,0 +1,220 @@
+{
+ "name": "nn",
+ "corpus_words": 80000,
+ "relaxed_rows": 2,
+ "relaxed_examples": [
+  "fj",
+  "hovu"
+ ],
+ "segmented_words": 50887,
+ "skipped_words": 29113,
+ "middle_attested_fraction": 0.6704915364583334,
+ "end32_attested_fraction": 0.3991292317708333,
+ "end16_attested_fraction": 0.64697265625,
+ "begin_attested": 128,
+ "chars": 26.95,
+ "max_chars": 37,
+ "consonant_runs_pct": 16.873,
+ "vowel_runs_pct": 1.45,
+ "english_words_pct": 2.787,
+ "own_words_pct": 26.843,
+ "offensive_whole_pct": 3.5,
+ "offensive_whole_english_list_pct": 0.325,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.595,
+ "offensive_severe_en_pct": 0.17,
+ "offensive_inside5_pct": 3.03,
+ "offensive_inside4_pct": 18.985,
+ "offensive_across_words_pct": 0.025,
+ "top_hits": [
+  [
+   "gaand",
+   38,
+   [
+    "hi"
+   ],
+   [
+    "bygdodist purbevere sigaande",
+    "nyna resuer negaande nykser"
+   ]
+  ],
+  [
+   "muda",
+   24,
+   [
+    "ru"
+   ],
+   [
+    "muda planitorar nybaruslas",
+    "smavstaenning prast muda joer"
+   ]
+  ],
+  [
+   "tikar",
+   24,
+   [
+    "sv"
+   ],
+   [
+    "gautikarane dunkta sjettommen",
+    "hjoken eksle natikar condne"
+   ]
+  ],
+  [
+   "paal",
+   24,
+   [
+    "nl"
+   ],
+   [
+    "enkevane puta paal algeret",
+    "fisjon jagamoda paal judier"
+   ]
+  ],
+  [
+   "pula",
+   23,
+   [
+    "ro"
+   ],
+   [
+    "buande fasaveri pula kjofus",
+    "dark pula amalvarmiske dopa"
+   ]
+  ],
+  [
+   "name",
+   22,
+   [
+    "ja"
+   ],
+   [
+    "sugera name eksittiske foresland",
+    "buddal heke hjansmetta name"
+   ]
+  ],
+  [
+   "mater",
+   22,
+   [
+    "sl"
+   ],
+   [
+    "anis tura hollus materforarane",
+    "raskane maternery farn rode"
+   ]
+  ],
+  [
+   "vang",
+   20,
+   [
+    "mk",
+    "sr",
+    "uz"
+   ],
+   [
+    "musa syntelukning vang trast",
+    "vang tennovrar kjet rismen"
+   ]
+  ],
+  [
+   "kokk",
+   19,
+   [
+    "ml"
+   ],
+   [
+    "host synshertnar kokk fael",
+    "viftig avhomare gjete kokk"
+   ]
+  ],
+  [
+   "kord",
+   19,
+   [
+    "sv"
+   ],
+   [
+    "ruva kord chaves machryland",
+    "audiktroka kita kaas kord"
+   ]
+  ],
+  [
+   "here",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "here feinar gisolock gjede",
+    "fuertel vang here polsaker"
+   ]
+  ],
+  [
+   "peder",
+   18,
+   [
+    "hr",
+    "mk",
+    "sl"
+   ],
+   [
+    "reva dunnes pedernisia lure",
+    "gela heartilliana pedersera"
+   ]
+  ],
+  [
+   "sega",
+   18,
+   [
+    "it"
+   ],
+   [
+    "soylsing sega dodsnes etiske",
+    "goor trugradtrum sega jaen"
+   ]
+  ],
+  [
+   "made",
+   18,
+   [
+    "zh"
+   ],
+   [
+    "folkeen sjankodar made ormala",
+    "heksisk voet made rekondra"
+   ]
+  ],
+  [
+   "hoer",
+   17,
+   [
+    "nl"
+   ],
+   [
+    "kathodane salval hoer kusk",
+    "flekolis hoer dionberiske"
+   ]
+  ]
+ ],
+ "samples": [
+  "gulfane gjeande fjellne hjaffaret",
+  "bain svensast sonalet gudrap",
+  "unodalen kvodset varuka viks",
+  "toten eksakonane steg carome",
+  "lopaigum bymebatting saar",
+  "neglstevets rice fyrmeland",
+  "elvestjerande sabonter chiske",
+  "fjelltulata suen heidarar gres",
+  "boskap ekskjengande videforsive",
+  "glon daviske skjela dunney",
+  "sakkene hurthala drer rene",
+  "svendvaar boarane belligjort"
+ ],
+ "seconds": 9.1,
+ "languages": [
+  "nn"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,227 @@
+{
+ "name": "tyv",
+ "corpus_words": 80000,
+ "relaxed_rows": 159,
+ "relaxed_examples": [
+  "av",
+  "as",
+  "ap",
+  "ac",
+  "af",
+  "br",
+  "ae",
+  "au",
+  "uz",
+  "pr",
+  "no",
+  "ul"
+ ],
+ "segmented_words": 60017,
+ "skipped_words": 19983,
+ "middle_attested_fraction": 0.1966552734375,
+ "end32_attested_fraction": 0.15360514322916666,
+ "end16_attested_fraction": 0.281005859375,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 32.84,
+ "max_chars": 47,
+ "consonant_runs_pct": 28.289,
+ "vowel_runs_pct": 5.197,
+ "english_words_pct": 0.353,
+ "own_words_pct": 5.052,
+ "offensive_whole_pct": 0.635,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.42,
+ "offensive_severe_en_pct": 0.005,
+ "offensive_inside5_pct": 2.36,
+ "offensive_inside4_pct": 13.175,
+ "offensive_across_words_pct": 0.035,
+ "top_hits": [
+  [
+   "ische",
+   85,
+   [
+    "de"
+   ],
+   [
+    "isizylamnyng aczhylazardan aftische",
+    "ocaalaatische ayardan agarlyvystan"
+   ]
+  ],
+  [
+   "skyla",
+   48,
+   [
+    "el"
+   ],
+   [
+    "tingarda bargyvysta foarlar iskylargar",
+    "fivysche vede tavystan khunuskylaryngny"
+   ]
+  ],
+  [
+   "panna",
+   32,
+   [
+    "fi"
+   ],
+   [
+    "dykchimdaryvysty mumche utpannaryngche",
+    "ynyvytpannaryarzhe dyzhitpadym aaylarga"
+   ]
+  ],
+  [
+   "sharlar",
+   18,
+   [
+    "uz"
+   ],
+   [
+    "sharlar bungnyng kutagylaannar teatyvyssa",
+    "eglaadyngar nangarza aybaaandan sharlar"
+   ]
+  ],
+  [
+   "tanga",
+   18,
+   [
+    "fil"
+   ],
+   [
+    "okelatangarzhe krdy oyagashyvyssa",
+    "naryn ugardan avvytpavystan egitangarga"
+   ]
+  ],
+  [
+   "dian",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "dian rergazyn kurzher leylazynnar",
+    "evarnyng dian esvytpashkeende oyan"
+   ]
+  ],
+  [
+   "niga",
+   15,
+   [
+    "ja"
+   ],
+   [
+    "aeruusuuryngda niga orgylavaptstyng",
+    "niga oolgevan oyde krazhyktar"
+   ]
+  ],
+  [
+   "meni",
+   12,
+   [
+    "tr"
+   ],
+   [
+    "domdan klze meni britogbaza",
+    "fakaktarymny eereri meni odim"
+   ]
+  ],
+  [
+   "tikar",
+   11,
+   [
+    "sv"
+   ],
+   [
+    "ekstyng noptikarnyng kyvysche uetsarzhe",
+    "falygzer aslaryktikarga khtyng"
+   ]
+  ],
+  [
+   "kran",
+   11,
+   [
+    "be"
+   ],
+   [
+    "kran kemden trardan algynada",
+    "unurzhan kran muza suktadym"
+   ]
+  ],
+  [
+   "mater",
+   11,
+   [
+    "sl"
+   ],
+   [
+    "toogze materiazyngza kaaptar klyn",
+    "materidan kyyshkyrladym bergumarlar"
+   ]
+  ],
+  [
+   "dilda",
+   10,
+   [
+    "sk"
+   ],
+   [
+    "farular atkylarzhe rodildavanyng",
+    "kldildazalar okas unardan ocatka"
+   ]
+  ],
+  [
+   "kelba",
+   10,
+   [
+    "mt"
+   ],
+   [
+    "kelbayn uengen poza mektadyvys",
+    "kelbalar arzylcrumga siktyng"
+   ]
+  ],
+  [
+   "sega",
+   10,
+   [
+    "it"
+   ],
+   [
+    "argyvytpaza fotidan sega trarnyng",
+    "ynardan myardan sega ylzinggunda"
+   ]
+  ],
+  [
+   "blin",
+   10,
+   [
+    "be"
+   ],
+   [
+    "fotobastar siarzhe ozukke blin",
+    "blin tatarzhiining abyn isavadym"
+   ]
+  ]
+ ],
+ "samples": [
+  "yrdirde usary niardan vediptarga",
+  "alze reytarlar chyyrymdan yrtyraly",
+  "ekatin intavysche koktarymny abary",
+  "dyka evkaldardan buning passarnyng",
+  "siktolzymza odudlaryldarynda tuyn",
+  "krrakhylavavysche prarzhe yyaalgym",
+  "dilettashtivis tutsezhe ladan",
+  "nimandyngar osyvyssa akylary soyn",
+  "ayge evrgydyngar abavvytparyym",
+  "ylza kulden aartsa tskaza",
+  "turlaryngar fashazin unnyng boyn",
+  "rereningga ayaar armyldazyzyn"
+ ],
+ "seconds": 12.7,
+ "languages": [
+  "tyv"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

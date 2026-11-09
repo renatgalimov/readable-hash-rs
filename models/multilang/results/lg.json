@@ -1,0 +1,230 @@
+{
+ "name": "lg",
+ "corpus_words": 80000,
+ "relaxed_rows": 24,
+ "relaxed_examples": [
+  "fo",
+  "ua",
+  "ex",
+  "zo",
+  "hu",
+  "kh",
+  "sc",
+  "kl",
+  "kc",
+  "qu",
+  "vo",
+  "oe"
+ ],
+ "segmented_words": 65356,
+ "skipped_words": 14644,
+ "middle_attested_fraction": 0.4299723307291667,
+ "end32_attested_fraction": 0.4016520182291667,
+ "end16_attested_fraction": 0.6163736979166666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.98,
+ "max_chars": 38,
+ "consonant_runs_pct": 3.96,
+ "vowel_runs_pct": 11.089,
+ "english_words_pct": 0.84,
+ "own_words_pct": 21.691,
+ "offensive_whole_pct": 0.805,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.395,
+ "offensive_severe_en_pct": 0.04,
+ "offensive_inside5_pct": 2.035,
+ "offensive_inside4_pct": 15.995,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "saala",
+   35,
+   [
+    "hi"
+   ],
+   [
+    "ssamba nnasiza sese ssaalambadde",
+    "byomamasaala sijja amina mmita"
+   ]
+  ],
+  [
+   "tanga",
+   34,
+   [
+    "fil"
+   ],
+   [
+    "zisimaguddwa ggita tanga ozadde",
+    "ngatangatadde ofiiikuba kyuka"
+   ]
+  ],
+  [
+   "linda",
+   34,
+   [
+    "zu"
+   ],
+   [
+    "dewa laama gemerwa tekalinda",
+    "azuba linda eviimye goozesudde"
+   ]
+  ],
+  [
+   "manda",
+   32,
+   [
+    "ru"
+   ],
+   [
+    "afaalaase wamunda tmanda bore",
+    "sentemanda asazibwanga kozata"
+   ]
+  ],
+  [
+   "bamba",
+   28,
+   [
+    "zu"
+   ],
+   [
+    "mibaamu otiddwa bamba adiiasiddwa",
+    "bulaga bamba ageete taweko"
+   ]
+  ],
+  [
+   "mutta",
+   25,
+   [
+    "sv"
+   ],
+   [
+    "kuloyabbeko enako goyimutta",
+    "boma nnamulumutta ngidde yezza"
+   ]
+  ],
+  [
+   "damba",
+   25,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "tmekukitawo damba beti haula",
+    "bwiridde damba etikomekako ttira"
+   ]
+  ],
+  [
+   "hane",
+   17,
+   [
+    "da"
+   ],
+   [
+    "hane nfaba disezza njunnumya",
+    "evaawo hane ntikozesa menninako"
+   ]
+  ],
+  [
+   "diga",
+   16,
+   [
+    "bg",
+    "it",
+    "mt"
+   ],
+   [
+    "bbuza diga seguma gyasituka",
+    "diga beze obuukukulu guyise"
+   ]
+  ],
+  [
+   "kutta",
+   14,
+   [
+    "hi"
+   ],
+   [
+    "goriisa mbamu kyawuwaamu kutta",
+    "lwamwemamba kutta zitwala obama"
+   ]
+  ],
+  [
+   "igazi",
+   13,
+   [
+    "zu"
+   ],
+   [
+    "kiwekesa gugira nsigazizani",
+    "ezala ngigazitwala awayo nimugwa"
+   ]
+  ],
+  [
+   "bunda",
+   13,
+   [
+    "pt"
+   ],
+   [
+    "gweyudde obunday kukuza ozadde",
+    "afayo nana fubundamu lukuze"
+   ]
+  ],
+  [
+   "hani",
+   12,
+   [
+    "is"
+   ],
+   [
+    "hani amidde mpaassinawo nonda",
+    "hani ejaako niinafulumiddwa wakwata"
+   ]
+  ],
+  [
+   "kaka",
+   12,
+   [
+    "eu"
+   ],
+   [
+    "ogiwa nnwaalimba kaka esigwo",
+    "tugema tolayaka kaka yiwa"
+   ]
+  ],
+  [
+   "nima",
+   10,
+   [
+    "zh"
+   ],
+   [
+    "ttemese jjannya nima kigezaako",
+    "gyafisasizza awedde nima avanga"
+   ]
+  ]
+ ],
+ "samples": [
+  "gyongamu oyaba tito ffetisiddwa",
+  "kuyamba kolega amakulu gyafola",
+  "fatuyamba mputudde gubedde kwise",
+  "awera ttukutuusa abbibwa nsabeera",
+  "nzibayedde kkobuvugala yeka",
+  "onsimotuba ggibwa ddobansa",
+  "ettalittinga yesawunya avirira",
+  "tiyiyamu efana birinda ssaamu",
+  "muye ttawukeddwa kwaterolanga",
+  "keze byanze ebisita ejooni",
+  "yebayamba geeyawuwa simba okanya",
+  "kogeyinja mune yagunnavaawo"
+ ],
+ "seconds": 11.1,
+ "languages": [
+  "lg"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

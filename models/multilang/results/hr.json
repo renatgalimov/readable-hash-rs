@@ -1,0 +1,226 @@
+{
+ "name": "hr",
+ "corpus_words": 80000,
+ "relaxed_rows": 8,
+ "relaxed_examples": [
+  "vj",
+  "sj",
+  "vl",
+  "vj",
+  "avl",
+  "mj",
+  "sj",
+  "jt"
+ ],
+ "segmented_words": 54247,
+ "skipped_words": 25753,
+ "middle_attested_fraction": 0.4059651692708333,
+ "end32_attested_fraction": 0.4962565104166667,
+ "end16_attested_fraction": 0.7162272135416666,
+ "begin_attested": 128,
+ "chars": 26.14,
+ "max_chars": 32,
+ "consonant_runs_pct": 10.995,
+ "vowel_runs_pct": 0.069,
+ "english_words_pct": 1.061,
+ "own_words_pct": 32.912,
+ "offensive_whole_pct": 3.32,
+ "offensive_whole_english_list_pct": 0.08,
+ "offensive_whole_own_list_pct": 0.465,
+ "offensive_whole_major_lists_pct": 1.705,
+ "offensive_severe_en_pct": 0.015,
+ "offensive_inside5_pct": 2.19,
+ "offensive_inside4_pct": 17.145,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "grdi",
+   20,
+   [
+    "bg"
+   ],
+   [
+    "preom urinu tuseavelju grdi",
+    "urom retaricno progaju grdi"
+   ]
+  ],
+  [
+   "site",
+   19,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "uluzljni site osati frinama",
+    "site klila ugala geogasicne"
+   ]
+  ],
+  [
+   "rima",
+   19,
+   [
+    "la"
+   ],
+   [
+    "ucobom osmu ultrojao rima",
+    "rima muza donjevila ucavaju"
+   ]
+  ],
+  [
+   "kuja",
+   18,
+   [
+    "hr"
+   ],
+   [
+    "kuja kluponiti garnica gean",
+    "stitala snozdece kuja ocni"
+   ]
+  ],
+  [
+   "niti",
+   18,
+   [
+    "te"
+   ],
+   [
+    "niti lesianta riplar jelom",
+    "srebio niti saslusis brom"
+   ]
+  ],
+  [
+   "maca",
+   18,
+   [
+    "hr"
+   ],
+   [
+    "ljivreplis maca dene znili",
+    "ispen klubili pametljita maca"
+   ]
+  ],
+  [
+   "hani",
+   17,
+   [
+    "is"
+   ],
+   [
+    "kutovi teda hani korijezni",
+    "cincio putaka hani uvljom"
+   ]
+  ],
+  [
+   "trio",
+   17,
+   [
+    "es"
+   ],
+   [
+    "ocna trio murovanje iskrvucio",
+    "trio ludonijatiti ulom tuku"
+   ]
+  ],
+  [
+   "inat",
+   17,
+   [
+    "sq"
+   ],
+   [
+    "inat sitnih govnici osvrti",
+    "istli inat odem udvijerovanje"
+   ]
+  ],
+  [
+   "mose",
+   17,
+   [
+    "de"
+   ],
+   [
+    "sloj davarenje mose googiji",
+    "nepona spakasnu kunu mose"
+   ]
+  ],
+  [
+   "tate",
+   16,
+   [
+    "ro"
+   ],
+   [
+    "cimbis probe tate udaljajno",
+    "slogije hausan veljaja tate"
+   ]
+  ],
+  [
+   "kran",
+   16,
+   [
+    "be"
+   ],
+   [
+    "kran porabice radom lukala",
+    "kran kula sanjivni klance"
+   ]
+  ],
+  [
+   "pene",
+   16,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "pene uvam papuca balamiti",
+    "mempozni luinlifiku pene"
+   ]
+  ],
+  [
+   "krma",
+   16,
+   [
+    "hr"
+   ],
+   [
+    "gusaminiku krma fang venice",
+    "krma liam alge snorlijedna"
+   ]
+  ],
+  [
+   "dada",
+   16,
+   [
+    "id"
+   ],
+   [
+    "vaza dada prebati blezdire",
+    "dada progriskicu upirati zeno"
+   ]
+  ]
+ ],
+ "samples": [
+  "dadile ocio fona juljopao",
+  "pozi bugace slucno davedu",
+  "ljestre annatu temama modu",
+  "pena ubovjerom nase gostika",
+  "vasiednu muhaoruzili mina",
+  "hallozdeca zeki isticavao",
+  "drzakodivanje micesuda oriti",
+  "foresrenje tori traviti usni",
+  "obdi ubuslaci molijetreda",
+  "frao skidni samoti elvinom",
+  "mirante uveranne kunu odao",
+  "bubavnan obao protivorabla"
+ ],
+ "seconds": 8.4,
+ "languages": [
+  "hr"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

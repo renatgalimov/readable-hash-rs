@@ -1,0 +1,317 @@
+{
+ "name": "fr",
+ "corpus_words": 80000,
+ "relaxed_rows": 4,
+ "relaxed_examples": [
+  "sy",
+  "iq",
+  "tiq",
+  "aq"
+ ],
+ "segmented_words": 53422,
+ "skipped_words": 26578,
+ "middle_attested_fraction": 0.4779866536458333,
+ "end32_attested_fraction": 0.4464518229166667,
+ "end16_attested_fraction": 0.6818033854166666,
+ "begin_attested": 128,
+ "chars": 27.21,
+ "max_chars": 37,
+ "consonant_runs_pct": 7.026,
+ "vowel_runs_pct": 7.888,
+ "english_words_pct": 4.156,
+ "own_words_pct": 28.618,
+ "offensive_whole_pct": 2.97,
+ "offensive_whole_english_list_pct": 0.745,
+ "offensive_whole_own_list_pct": 0.475,
+ "offensive_whole_major_lists_pct": 1.805,
+ "offensive_severe_en_pct": 0.425,
+ "offensive_inside5_pct": 3.52,
+ "offensive_inside4_pct": 25.415,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "semen",
+   90,
+   [
+    "ca",
+    "cy",
+    "en",
+    "es",
+    "eu",
+    "gl",
+    "mt",
+    "pt",
+    "sr",
+    "uz"
+   ],
+   [
+    "semens elaicinage aglina",
+    "phechontaire esement kinte trus"
+   ]
+  ],
+  [
+   "dique",
+   54,
+   [
+    "ca",
+    "es",
+    "gl"
+   ],
+   [
+    "crement abaglidique nate gime",
+    "florte biodique giez accutif"
+   ]
+  ],
+  [
+   "trique",
+   42,
+   [
+    "fr"
+   ],
+   [
+    "paique avictrique minibiorme",
+    "syle quait doue arlimentrique"
+   ]
+  ],
+  [
+   "poon",
+   23,
+   [
+    "en"
+   ],
+   [
+    "liberisation freur applaire poon",
+    "poon cieux trepot brumonnais"
+   ]
+  ],
+  [
+   "name",
+   22,
+   [
+    "ja"
+   ],
+   [
+    "branni kinada name auparte",
+    "mimilasse name agement hansai"
+   ]
+  ],
+  [
+   "coon",
+   19,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "gd",
+    "gl",
+    "id",
+    "is",
+    "la",
+    "lv",
+    "mn",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pt",
+    "sl",
+    "sv",
+    "vi"
+   ],
+   [
+    "assemulant hemond tuee coon",
+    "gobestitaire mara coon teau"
+   ]
+  ],
+  [
+   "chier",
+   19,
+   [
+    "fr"
+   ],
+   [
+    "hemistingiez plue chiera ares",
+    "chiera elmer scivissee footer"
+   ]
+  ],
+  [
+   "duche",
+   18,
+   [
+    "be",
+    "bg",
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "gl",
+    "hi",
+    "hr",
+    "hu",
+    "id",
+    "is",
+    "it",
+    "ko",
+    "la",
+    "lt",
+    "lv",
+    "mk",
+    "mn",
+    "mr",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "uz",
+    "vi",
+    "zu"
+   ],
+   [
+    "duchetrique prepocken dorope",
+    "cranicte enduchets aurire"
+   ]
+  ],
+  [
+   "dain",
+   18,
+   [
+    "ml"
+   ],
+   [
+    "aussie reaux gratling dain",
+    "dubies eldrutation dain teant"
+   ]
+  ],
+  [
+   "niger",
+   17,
+   [
+    "hy"
+   ],
+   [
+    "nigertraient emise rimmeccats",
+    "ecolican honniger poignera"
+   ]
+  ],
+  [
+   "conne",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "amait felene corron connement",
+    "merchaination attin circonnee"
+   ]
+  ],
+  [
+   "gort",
+   17,
+   [
+    "gd"
+   ],
+   [
+    "rote harconsin gort garoit",
+    "diabetez tintees gort juif"
+   ]
+  ],
+  [
+   "hoer",
+   17,
+   [
+    "nl"
+   ],
+   [
+    "drette thrurgoyant hoer spique",
+    "aiant niurochutent alda hoer"
+   ]
+  ],
+  [
+   "anus",
+   16,
+   [
+    "be",
+    "bg",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "eu",
+    "fa",
+    "fr",
+    "gd",
+    "is",
+    "mk",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sl",
+    "sq",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "vautbuons dricraatie anus",
+    "choon impenete anus enreguar"
+   ]
+  ],
+  [
+   "boles",
+   16,
+   [
+    "ca"
+   ],
+   [
+    "boles mots baillillware dante",
+    "spactriouee arne boles glation"
+   ]
+  ]
+ ],
+ "samples": [
+  "empede jora rune aimonnon",
+  "mame clotto virente emboer",
+  "thrime volling suisent ming",
+  "free avularite race loueuse",
+  "vermigateur daupaciaque lier",
+  "jurecedoin ause sparcaire",
+  "grosphener lilloute puee",
+  "ruberrell scement laitent anis",
+  "paique avictrique minibiorme",
+  "shes broulee decheur chippas",
+  "licheur blessmile vans care",
+  "clieitaux page convoricats"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "fr"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

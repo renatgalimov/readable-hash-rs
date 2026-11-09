@@ -1,0 +1,227 @@
+{
+ "name": "ps",
+ "corpus_words": 26115,
+ "relaxed_rows": 85,
+ "relaxed_examples": [
+  "wg",
+  "mk",
+  "gw",
+  "bd",
+  "ks",
+  "jw",
+  "dk",
+  "ds",
+  "sp",
+  "bs",
+  "pn",
+  "pk"
+ ],
+ "segmented_words": 15383,
+ "skipped_words": 10732,
+ "middle_attested_fraction": 0.07100423177083333,
+ "end32_attested_fraction": 0.2840169270833333,
+ "end16_attested_fraction": 0.4795735677083333,
+ "begin_attested": 128,
+ "chars": 26.59,
+ "max_chars": 34,
+ "consonant_runs_pct": 77.62,
+ "vowel_runs_pct": 0.793,
+ "english_words_pct": 0.019,
+ "own_words_pct": 29.309,
+ "offensive_whole_pct": 0.585,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.17,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 0.135,
+ "offensive_inside4_pct": 4.885,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "pene",
+   23,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "bwrwybryzhy brydnw pene dhyt",
+    "klme tyryrdzkhly rwwnky pene"
+   ]
+  ],
+  [
+   "gryh",
+   17,
+   [
+    "fa"
+   ],
+   [
+    "lmwnyysws jrdzydle gryh zynw",
+    "fydrstne gryh dmhnytr wbyw"
+   ]
+  ],
+  [
+   "kyry",
+   16,
+   [
+    "fa"
+   ],
+   [
+    "kyry wwzy blly mhsehrtswk",
+    "kyry nmyw zymn knlywnglsry"
+   ]
+  ],
+  [
+   "lshy",
+   15,
+   [
+    "fa"
+   ],
+   [
+    "lshy skelmnrshh wptryghwr",
+    "dzyswbwy mdhtyne lshy jwrshy"
+   ]
+  ],
+  [
+   "bydh",
+   13,
+   [
+    "fa"
+   ],
+   [
+    "nseneznkw wpyry bydh hwykhy",
+    "mtngertgwnw thyy wgly bydh"
+   ]
+  ],
+  [
+   "lwty",
+   11,
+   [
+    "ar"
+   ],
+   [
+    "rney dhngebrtryn wlwly lwty",
+    "dlne plyjwnh lwty wyngltnh"
+   ]
+  ],
+  [
+   "pele",
+   11,
+   [
+    "hu"
+   ],
+   [
+    "wyrjgrhtyy lery pele hylt",
+    "pytyydtrey pele zywr tnwy"
+   ]
+  ],
+  [
+   "jnwry",
+   10,
+   [
+    "fa"
+   ],
+   [
+    "wkmny persrnshey jnwry jrydh",
+    "jnwry hdyjndhyrh msyr dymy"
+   ]
+  ],
+  [
+   "zhene",
+   10,
+   [
+    "ja"
+   ],
+   [
+    "dymy rghzhene snemrtyk swfy",
+    "tmerstyl swlyghle ndzhene"
+   ]
+  ],
+  [
+   "hshry",
+   7,
+   [
+    "fa"
+   ],
+   [
+    "wbde jnghyytmynw hshrymnde",
+    "nnty nrekhshrye wsekrnde"
+   ]
+  ],
+  [
+   "chert",
+   2,
+   [
+    "ru"
+   ],
+   [
+    "mntene cherth knygwyngrw",
+    "mkhwnky cherth knyn ngryyrlw"
+   ]
+  ],
+  [
+   "pwsyr",
+   2,
+   [
+    "fa"
+   ],
+   [
+    "pypwsyry sprly nwerlw brky",
+    "wpwsyrh dntryry wbstyytkwth"
+   ]
+  ],
+  [
+   "rymyng",
+   2,
+   [
+    "fa"
+   ],
+   [
+    "sntyke tkhrymyngedw lrendw",
+    "rwybwnw rwdrymyngedw rtysry"
+   ]
+  ],
+  [
+   "pwrnw",
+   1,
+   [
+    "fa"
+   ],
+   [
+    "wple typwrnwl lydzndh spwre"
+   ]
+  ],
+  [
+   "pylly",
+   1,
+   [
+    "fi"
+   ],
+   [
+    "rnty jnyd spylly tnndyyrwnh"
+   ]
+  ]
+ ],
+ "samples": [
+  "hykhwy nmedw nngy pkmenswr",
+  "ghde wpesey tryznh hygwsw",
+  "bkpedly rkydlwy wwhtylw mlndy",
+  "nrey tmdryydle wrdy ryfwlw",
+  "grwryngezhy tnkhetserey dwey",
+  "lekhkwyswlw mkhzy wtkhywrezhy",
+  "hmyshghdznw dwndysynw ntyt",
+  "nnybykrw ktwnke kweste wsly",
+  "pyrs tmdhyzwlw mlgepwyzhm",
+  "ptyzhy kmedzw chygnw jrmery",
+  "dwghewnw dkmezhdnw tkyw khly",
+  "wpwrebwty pyzw rwwyzhytyw"
+ ],
+ "seconds": 7.9,
+ "languages": [
+  "ps"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

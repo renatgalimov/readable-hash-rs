@@ -1,0 +1,222 @@
+{
+ "name": "pt",
+ "corpus_words": 80000,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "mc"
+ ],
+ "segmented_words": 53537,
+ "skipped_words": 26463,
+ "middle_attested_fraction": 0.4556477864583333,
+ "end32_attested_fraction": 0.4658203125,
+ "end16_attested_fraction": 0.6897786458333334,
+ "begin_attested": 128,
+ "chars": 26.82,
+ "max_chars": 35,
+ "consonant_runs_pct": 4.755,
+ "vowel_runs_pct": 3.865,
+ "english_words_pct": 2.717,
+ "own_words_pct": 29.78,
+ "offensive_whole_pct": 2.815,
+ "offensive_whole_english_list_pct": 0.26,
+ "offensive_whole_own_list_pct": 0.595,
+ "offensive_whole_major_lists_pct": 1.595,
+ "offensive_severe_en_pct": 0.185,
+ "offensive_inside5_pct": 3.44,
+ "offensive_inside4_pct": 21.92,
+ "offensive_across_words_pct": 0.09,
+ "top_hits": [
+  [
+   "anita",
+   31,
+   [
+    "nl"
+   ],
+   [
+    "luto keno coma alieganita",
+    "danita emos pretear proibam"
+   ]
+  ],
+  [
+   "asses",
+   22,
+   [
+    "en",
+    "mr",
+    "pt",
+    "sr",
+    "te"
+   ],
+   [
+    "gregincaste frada clearasses",
+    "freguirside certon classes"
+   ]
+  ],
+  [
+   "sung",
+   21,
+   [
+    "vi"
+   ],
+   [
+    "amalimente linglopele sung",
+    "guta dustado prefeitos sung"
+   ]
+  ],
+  [
+   "bite",
+   20,
+   [
+    "fr"
+   ],
+   [
+    "bite niricurrie stas titas",
+    "ciprador thelhudo gata bite"
+   ]
+  ],
+  [
+   "bile",
+   20,
+   [
+    "ro"
+   ],
+   [
+    "tuliza bile asslito vestima",
+    "cereensia bile aron afortaram"
+   ]
+  ],
+  [
+   "biga",
+   19,
+   [
+    "it"
+   ],
+   [
+    "biga horaste rido harrendes",
+    "exio missupes biga troulos"
+   ]
+  ],
+  [
+   "cona",
+   19,
+   [
+    "pt"
+   ],
+   [
+    "gulopele centaria wine cona",
+    "tilinlebres maia cona exando"
+   ]
+  ],
+  [
+   "cono",
+   19,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "mcnata impella wattar cono",
+    "provasimo cono elegacao rene"
+   ]
+  ],
+  [
+   "coco",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "coco evelones mitirem alla",
+    "coco elincrou trocador jeem"
+   ]
+  ],
+  [
+   "manda",
+   18,
+   [
+    "ru"
+   ],
+   [
+    "jemandalava hias flio cito",
+    "biscoinia emmandalizei sera"
+   ]
+  ],
+  [
+   "foda",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "gudeliar does certando foda",
+    "foda tocautei blonfiding"
+   ]
+  ],
+  [
+   "tissi",
+   18,
+   [
+    "fi"
+   ],
+   [
+    "brutico arittissian sicial",
+    "vacimento girei ludo attissindo"
+   ]
+  ],
+  [
+   "pele",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "pele shem petiscava aromao",
+    "gage pele rion waleontegal"
+   ]
+  ],
+  [
+   "satan",
+   17,
+   [
+    "no",
+    "sv"
+   ],
+   [
+    "satanmano cloussassem trequem",
+    "stido jogucadas abla satanni"
+   ]
+  ],
+  [
+   "culo",
+   17,
+   [
+    "es",
+    "it"
+   ],
+   [
+    "goro culo acho proprilecto",
+    "junho votaleceria caco culo"
+   ]
+  ]
+ ],
+ "samples": [
+  "fendado flis kion rubrosta",
+  "mares biscoes metoando felavel",
+  "tubante quegando larsal impao",
+  "sita vocifias cala nervam",
+  "ordibuino ripouscial ches",
+  "jorrugagou obao pupiedeira",
+  "trabaterria cherlote jasao",
+  "kimustes avou encoar apto",
+  "vivo voitmaria imposlochos",
+  "shue legeando separador wardinha",
+  "chicacao buroquiador gate dear",
+  "bipocorando viro colhetners"
+ ],
+ "seconds": 8.6,
+ "languages": [
+  "pt"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

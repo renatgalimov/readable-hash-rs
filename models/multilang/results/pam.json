@@ -1,0 +1,277 @@
+{
+ "name": "pam",
+ "corpus_words": 13377,
+ "relaxed_rows": 178,
+ "relaxed_examples": [
+  "ve",
+  "fi",
+  "cu",
+  "cl",
+  "fo",
+  "qu",
+  "th",
+  "fr",
+  "ju",
+  "wi",
+  "ex",
+  "fa"
+ ],
+ "segmented_words": 8518,
+ "skipped_words": 4859,
+ "middle_attested_fraction": 0.17891438802083334,
+ "end32_attested_fraction": 0.15897623697916666,
+ "end16_attested_fraction": 0.296630859375,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.05,
+ "max_chars": 34,
+ "consonant_runs_pct": 6.147,
+ "vowel_runs_pct": 4.299,
+ "english_words_pct": 1.939,
+ "own_words_pct": 12.784,
+ "offensive_whole_pct": 3.135,
+ "offensive_whole_english_list_pct": 0.48,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.68,
+ "offensive_severe_en_pct": 0.06,
+ "offensive_inside5_pct": 2.99,
+ "offensive_inside4_pct": 22.53,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "bular",
+   35,
+   [
+    "eu"
+   ],
+   [
+    "valybular qukasibawal puku",
+    "nuer lubular gilas commucation"
+   ]
+  ],
+  [
+   "randi",
+   27,
+   [
+    "hi"
+   ],
+   [
+    "carcit unia esit brandiranan",
+    "chesion hion brandial iketang"
+   ]
+  ],
+  [
+   "wang",
+   23,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "gd",
+    "gl",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "ko",
+    "la",
+    "lt",
+    "lv",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "zu"
+   ],
+   [
+    "wang hitria ikon intisiam",
+    "melikiran wang opirer moli"
+   ]
+  ],
+  [
+   "name",
+   23,
+   [
+    "ja"
+   ],
+   [
+    "pake rumagobes chapyan name",
+    "randeaer name hian abutas"
+   ]
+  ],
+  [
+   "sait",
+   19,
+   [
+    "kn"
+   ],
+   [
+    "surtal bohinction sait clay",
+    "jarisuban rila sait engpung"
+   ]
+  ],
+  [
+   "pene",
+   18,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "puna inglupientu mais pene",
+    "clmultinute pene unsa deal"
+   ]
+  ],
+  [
+   "niti",
+   18,
+   [
+    "te"
+   ],
+   [
+    "keltigial niti excric busa",
+    "niti dora ving gobebinyng"
+   ]
+  ],
+  [
+   "koli",
+   17,
+   [
+    "kn"
+   ],
+   [
+    "ampopikati ikis diung koli",
+    "grit elarter koli tambebes"
+   ]
+  ],
+  [
+   "bulal",
+   17,
+   [
+    "ko"
+   ],
+   [
+    "uldasa celoti sibulaluluan",
+    "nane akbulalla ilikan mill"
+   ]
+  ],
+  [
+   "piru",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "gandiker piru plia extres",
+    "kontetru vice piru angyuan"
+   ]
+  ],
+  [
+   "bits",
+   17,
+   [
+    "mr"
+   ],
+   [
+    "autootte lehiya ulung bits",
+    "fuas aber mocompliwa bits"
+   ]
+  ],
+  [
+   "tate",
+   17,
+   [
+    "ro"
+   ],
+   [
+    "tate asarangadala koti saug",
+    "emelames tate billor yaung"
+   ]
+  ],
+  [
+   "bola",
+   17,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "bola luli opoliroter cine",
+    "ikeland krocing ikaluan bola"
+   ]
+  ],
+  [
+   "site",
+   16,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "site cendeake exal adocas",
+    "site raul akus ikipubrior"
+   ]
+  ],
+  [
+   "crap",
+   16,
+   [
+    "cy",
+    "en",
+    "eu",
+    "gd",
+    "la",
+    "lv"
+   ],
+   [
+    "ulbato plad krothian crap",
+    "test gandiring habite crap"
+   ]
+  ]
+ ],
+ "samples": [
+  "cursus elut ayni kravnine",
+  "mead credung recone cuguman",
+  "fathis wagpia poponu apia",
+  "stung tootosung kantu domain",
+  "abetosam aussuguese chum",
+  "queaklirag enut lompleke",
+  "soligtkikan chintuglung yaut",
+  "aygasian fiung libebe kota",
+  "lani torcantal apikipiotic",
+  "hoon businan tangge phalier",
+  "chaile undemukal akit maus",
+  "crivkido layun miratorcia"
+ ],
+ "seconds": 9.0,
+ "languages": [
+  "pam"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

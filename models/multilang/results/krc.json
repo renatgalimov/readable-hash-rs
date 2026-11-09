@@ -1,0 +1,231 @@
+{
+ "name": "krc",
+ "corpus_words": 7805,
+ "relaxed_rows": 336,
+ "relaxed_examples": [
+  "dz",
+  "bi",
+  "ty",
+  "bo",
+  "ky",
+  "ay",
+  "po",
+  "sy",
+  "su",
+  "to",
+  "bu",
+  "mo"
+ ],
+ "segmented_words": 5281,
+ "skipped_words": 2524,
+ "middle_attested_fraction": 0.10196940104166667,
+ "end32_attested_fraction": 0.0887451171875,
+ "end16_attested_fraction": 0.17578125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.15,
+ "max_chars": 38,
+ "consonant_runs_pct": 20.462,
+ "vowel_runs_pct": 11.922,
+ "english_words_pct": 0.612,
+ "own_words_pct": 3.678,
+ "offensive_whole_pct": 1.955,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.125,
+ "offensive_severe_en_pct": 0.115,
+ "offensive_inside5_pct": 2.44,
+ "offensive_inside4_pct": 15.49,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "chunu",
+   49,
+   [
+    "zh"
+   ],
+   [
+    "achkchunu frekrunkni zatny",
+    "gimpllyb ledzhde chunu beyb"
+   ]
+  ],
+  [
+   "muda",
+   21,
+   [
+    "ru"
+   ],
+   [
+    "muda khkitgnu idle yzatda",
+    "byetrlartada etrlaunu muda"
+   ]
+  ],
+  [
+   "natsi",
+   21,
+   [
+    "fi",
+    "mk"
+   ],
+   [
+    "natsispiy pane grazhnulla",
+    "natsildda etkitsiya amrezhyn"
+   ]
+  ],
+  [
+   "shota",
+   20,
+   [
+    "en"
+   ],
+   [
+    "gatellatsiya valeshotantynda avdi",
+    "areshotaydy asparge aynu grni"
+   ]
+  ],
+  [
+   "kales",
+   18,
+   [
+    "lt"
+   ],
+   [
+    "maly kaleshyu adrinden testrni",
+    "kaleshyrmely isin ishuatda"
+   ]
+  ],
+  [
+   "fode",
+   18,
+   [
+    "gl",
+    "pt"
+   ],
+   [
+    "auutlaryna fena fode plrakhady",
+    "slle likildle fode batuny"
+   ]
+  ],
+  [
+   "pede",
+   18,
+   [
+    "fr"
+   ],
+   [
+    "ykedi pede tamyry flizrtirge",
+    "elemle pede fretib entuladyla"
+   ]
+  ],
+  [
+   "etchi",
+   18,
+   [
+    "ja"
+   ],
+   [
+    "grdi bestetchiyu esile shni",
+    "evimimile uretchilege notean"
+   ]
+  ],
+  [
+   "fela",
+   18,
+   [
+    "cs"
+   ],
+   [
+    "ykrtayyny slylile dili fela",
+    "yzady auan pringystiya fela"
+   ]
+  ],
+  [
+   "rini",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "enedi foratsiyana edlinni rini",
+    "rini flemekitar azady rash"
+   ]
+  ],
+  [
+   "pele",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "entsirge barola pele rongine",
+    "pele chanyndan acrada lagende"
+   ]
+  ],
+  [
+   "vana",
+   16,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "bardiyada muzyunyu yungal vana",
+    "vana zamatutsiyadan yzrlitedi"
+   ]
+  ],
+  [
+   "bola",
+   15,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "bola veunu daryny tenglitla",
+    "meklovny bola chimge syny"
+   ]
+  ],
+  [
+   "foda",
+   14,
+   [
+    "pt"
+   ],
+   [
+    "grtemeda tyurge emar foda",
+    "orni goylitasy foda afatrny"
+   ]
+  ],
+  [
+   "dian",
+   14,
+   [
+    "zh"
+   ],
+   [
+    "dian tyni sanshillary enan",
+    "rastulebda suuu dian fuiya"
+   ]
+  ]
+ ],
+ "samples": [
+  "aktoan noly peda tsiarlege",
+  "dzhada geneda boyade akheyn",
+  "flmende frrelgendi prevny atde",
+  "tula fiortuna chnu morgge",
+  "avmateatsiya ensermannga reyn",
+  "ilimretena kldi rallimda",
+  "ligaltulyb reymrany nyly",
+  "peulakat fayu tistiya kierge",
+  "matny firamlaydy atriudrtiu",
+  "gion argenda shariya lerlady",
+  "relgny appaketsiya erla baydy",
+  "gespchatsiya maunyu teriditony"
+ ],
+ "seconds": 9.3,
+ "languages": [
+  "krc"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

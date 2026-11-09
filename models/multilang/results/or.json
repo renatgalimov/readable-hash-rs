@@ -1,0 +1,227 @@
+{
+ "name": "or",
+ "corpus_words": 44639,
+ "relaxed_rows": 11,
+ "relaxed_examples": [
+  "dw",
+  "ky",
+  "kary",
+  "dw",
+  "rr",
+  "ry",
+  "lr",
+  "kdw",
+  "ary",
+  "tw",
+  "arr"
+ ],
+ "segmented_words": 25623,
+ "skipped_words": 19016,
+ "middle_attested_fraction": 0.4122721354166667,
+ "end32_attested_fraction": 0.3577880859375,
+ "end16_attested_fraction": 0.581787109375,
+ "begin_attested": 128,
+ "chars": 26.35,
+ "max_chars": 37,
+ "consonant_runs_pct": 38.328,
+ "vowel_runs_pct": 3.56,
+ "english_words_pct": 0.41,
+ "own_words_pct": 27.056,
+ "offensive_whole_pct": 2.66,
+ "offensive_whole_english_list_pct": 0.325,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.28,
+ "offensive_severe_en_pct": 0.265,
+ "offensive_inside5_pct": 1.74,
+ "offensive_inside4_pct": 13.46,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "asini",
+   40,
+   [
+    "it"
+   ],
+   [
+    "tena gayisuddle utkiasini",
+    "atheiskrar binasini natr"
+   ]
+  ],
+  [
+   "deich",
+   27,
+   [
+    "de"
+   ],
+   [
+    "trsiksenna sbahir bndeichi",
+    "deichi mher plapri bupryaku"
+   ]
+  ],
+  [
+   "kale",
+   23,
+   [
+    "lt"
+   ],
+   [
+    "jnik bhansmti kale rhniba",
+    "kale udenar sajink namghku"
+   ]
+  ],
+  [
+   "anaru",
+   23,
+   [
+    "ja"
+   ],
+   [
+    "sbra kusiheumre rkasanaru",
+    "rial blpiku mnanaru hemine"
+   ]
+  ],
+  [
+   "ases",
+   21,
+   [
+    "cy"
+   ],
+   [
+    "goparre galiayan paiba ases",
+    "klir brnaharmane ases bneing"
+   ]
+  ],
+  [
+   "pele",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "yurtimdwara yuddhir pele jlna",
+    "polabtre asarmane pele krim"
+   ]
+  ],
+  [
+   "rota",
+   19,
+   [
+    "ja"
+   ],
+   [
+    "byngsion uptykrosre rota",
+    "hoian stnyayini mnekha rota"
+   ]
+  ],
+  [
+   "daik",
+   18,
+   [
+    "kn",
+    "mr"
+   ],
+   [
+    "merunk stnyatit daik gudwara",
+    "mnanyutthr daik antrchlre"
+   ]
+  ],
+  [
+   "charu",
+   18,
+   [
+    "ja"
+   ],
+   [
+    "charu jyrohre khlamukt lire",
+    "pittthbita charu chtu smkri"
+   ]
+  ],
+  [
+   "piru",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "byakar piru menthre hribas",
+    "dwnku piru abku apuribajin"
+   ]
+  ],
+  [
+   "pisr",
+   16,
+   [
+    "kn",
+    "mr"
+   ],
+   [
+    "utni baksyr pisr pryuroti",
+    "spunti pisr jlrapt yurttn"
+   ]
+  ],
+  [
+   "spic",
+   16,
+   [
+    "en"
+   ],
+   [
+    "pati permgudinru jarn spic",
+    "spic molikaili yadonre nile"
+   ]
+  ],
+  [
+   "dust",
+   15,
+   [
+    "hi"
+   ],
+   [
+    "dust gnir sbar gaisddastik",
+    "daknidin hibr dust ghagle"
+   ]
+  ],
+  [
+   "boru",
+   15,
+   [
+    "ja"
+   ],
+   [
+    "injendhu palnrmpadre boru",
+    "teka kltiarar boru aplikti"
+   ]
+  ],
+  [
+   "sisa",
+   15,
+   [
+    "hr"
+   ],
+   [
+    "bykr kinnth sisa gosenjnk",
+    "khir mntriascation sisa lisa"
+   ]
+  ]
+ ],
+ "samples": [
+  "bebhul tuta bldwara dwamerna",
+  "male knkand srijire bellni",
+  "bdrinni utteru detalre arnk",
+  "apku dradptink baink chatna",
+  "repryysi hrpadhbika muri",
+  "pleslanoli tela skramkik",
+  "misrdhoiaku munarohre liti",
+  "blmibhut gnnku brsiku mhur",
+  "sian druroili arccamcnaku",
+  "udist campas anuslr lokmure",
+  "mulbnk ksudbhru ptru bhri",
+  "knidurnik sida sakhunbhir"
+ ],
+ "seconds": 8.3,
+ "languages": [
+  "or"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

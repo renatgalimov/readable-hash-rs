@@ -1,0 +1,229 @@
+{
+ "name": "mg",
+ "corpus_words": 8117,
+ "relaxed_rows": 141,
+ "relaxed_examples": [
+  "co",
+  "fe",
+  "jo",
+  "au",
+  "je",
+  "su",
+  "wi",
+  "lu",
+  "ce",
+  "gu",
+  "go",
+  "bu"
+ ],
+ "segmented_words": 5823,
+ "skipped_words": 2294,
+ "middle_attested_fraction": 0.12886555989583334,
+ "end32_attested_fraction": 0.12032063802083333,
+ "end16_attested_fraction": 0.22998046875,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.78,
+ "max_chars": 37,
+ "consonant_runs_pct": 5.948,
+ "vowel_runs_pct": 1.342,
+ "english_words_pct": 1.072,
+ "own_words_pct": 9.7,
+ "offensive_whole_pct": 1.145,
+ "offensive_whole_english_list_pct": 0.005,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.63,
+ "offensive_severe_en_pct": 0.035,
+ "offensive_inside5_pct": 4.72,
+ "offensive_inside4_pct": 23.445,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "orina",
+   279,
+   [
+    "es"
+   ],
+   [
+    "ihiny komonazahana ramorina arta",
+    "sabana liaka prony gorgnorina"
+   ]
+  ],
+  [
+   "tanga",
+   60,
+   [
+    "fil"
+   ],
+   [
+    "otangara ilangotaka bobasiany",
+    "bahabeno tangadindriana ekotra"
+   ]
+  ],
+  [
+   "sidik",
+   42,
+   [
+    "tr"
+   ],
+   [
+    "gusidika itsy pambana antovo",
+    "patrialana liana vahoanosidika"
+   ]
+  ],
+  [
+   "randi",
+   39,
+   [
+    "hi"
+   ],
+   [
+    "bratra roambinina brandidy gria",
+    "triliny assineto gandrandidy"
+   ]
+  ],
+  [
+   "filla",
+   24,
+   [
+    "gl"
+   ],
+   [
+    "afillaukiany toany foncmbony",
+    "doalahimory ifillalaka flta"
+   ]
+  ],
+  [
+   "manda",
+   23,
+   [
+    "ru"
+   ],
+   [
+    "otirimandatra legostana potika",
+    "gunividy lesitra mandavanitra"
+   ]
+  ],
+  [
+   "tiron",
+   22,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "taro jonelesa cocontirony",
+    "netirona satrany ahova ivaharka"
+   ]
+  ],
+  [
+   "kanto",
+   18,
+   [
+    "ja"
+   ],
+   [
+    "ikantovezika cedy domomboka",
+    "vahitsiany ekantoana donia lota"
+   ]
+  ],
+  [
+   "apara",
+   18,
+   [
+    "fi"
+   ],
+   [
+    "apara guta driziny botsosiny",
+    "jindrintafahana enany apara azay"
+   ]
+  ],
+  [
+   "fela",
+   17,
+   [
+    "cs"
+   ],
+   [
+    "lavoafana simpona fela irina",
+    "itsolezana fela chihavieria"
+   ]
+  ],
+  [
+   "tsipa",
+   17,
+   [
+    "sr"
+   ],
+   [
+    "tsipandatra fohintsy kere nisy",
+    "tsipatiroro dipahany ifatoina"
+   ]
+  ],
+  [
+   "feny",
+   17,
+   [
+    "cs"
+   ],
+   [
+    "feny ilina datemicourt trantana",
+    "prony cantes feny drazavigny"
+   ]
+  ],
+  [
+   "bola",
+   17,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "etassa chika bola lundrarihy",
+    "adritregatsy afifontany bola"
+   ]
+  ],
+  [
+   "cona",
+   16,
+   [
+    "pt"
+   ],
+   [
+    "sufitra cona sinkitra ompolo",
+    "prazatolera orta cona toaka"
+   ]
+  ],
+  [
+   "mona",
+   16,
+   [
+    "it"
+   ],
+   [
+    "mona illa amasavoana nefika",
+    "zoaka hividriaka mona prizony"
+   ]
+  ]
+ ],
+ "samples": [
+  "enanteny thony drona izatsetry",
+  "fala tindrika tolieres enahoana",
+  "gentsoka grambato areraky cora",
+  "iata joviette naona afintry",
+  "ifirarily plounikiky sina",
+  "ikantovezika cedy domomboka",
+  "francharoana sialandre eria",
+  "dranosoana gotra vakota pole",
+  "taro jonelesa cocontirony",
+  "zota atolony nihene onkiaka",
+  "simbina clervetra didy misy",
+  "timokitsy tanay anamomizona"
+ ],
+ "seconds": 9.3,
+ "languages": [
+  "mg"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

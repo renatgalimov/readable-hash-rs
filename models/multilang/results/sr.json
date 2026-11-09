@@ -1,0 +1,222 @@
+{
+ "name": "sr",
+ "corpus_words": 80000,
+ "relaxed_rows": 2,
+ "relaxed_examples": [
+  "vj",
+  "hv"
+ ],
+ "segmented_words": 55014,
+ "skipped_words": 24986,
+ "middle_attested_fraction": 0.4027913411458333,
+ "end32_attested_fraction": 0.5148111979166666,
+ "end16_attested_fraction": 0.7386067708333334,
+ "begin_attested": 128,
+ "chars": 26.04,
+ "max_chars": 32,
+ "consonant_runs_pct": 11.584,
+ "vowel_runs_pct": 0.124,
+ "english_words_pct": 0.677,
+ "own_words_pct": 32.934,
+ "offensive_whole_pct": 4.085,
+ "offensive_whole_english_list_pct": 0.07,
+ "offensive_whole_own_list_pct": 0.09,
+ "offensive_whole_major_lists_pct": 1.8,
+ "offensive_severe_en_pct": 0.08,
+ "offensive_inside5_pct": 2.2,
+ "offensive_inside4_pct": 17.205,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "kuce",
+   22,
+   [
+    "lv"
+   ],
+   [
+    "spim lupadnik ubucite kuce",
+    "dodeosku kuce sandre grlu"
+   ]
+  ],
+  [
+   "jaja",
+   21,
+   [
+    "hr"
+   ],
+   [
+    "jaja odlimima gema cupoli",
+    "ukrostazila razmovinom jaja"
+   ]
+  ],
+  [
+   "kuje",
+   21,
+   [
+    "hr"
+   ],
+   [
+    "aune svalviljati arne kuje",
+    "kuje smilju amacalim vine"
+   ]
+  ],
+  [
+   "pano",
+   19,
+   [
+    "fi"
+   ],
+   [
+    "pano svaras tojodicu rida",
+    "galoga meci pano levidaju"
+   ]
+  ],
+  [
+   "homo",
+   19,
+   [
+    "fi",
+    "id",
+    "ja",
+    "ko"
+   ],
+   [
+    "aumila origuzeo poima homo",
+    "leom jutova klevstiti homo"
+   ]
+  ],
+  [
+   "kisa",
+   18,
+   [
+    "is"
+   ],
+   [
+    "albila ulla uguzecemo kisa",
+    "opaliti imerija biopao kisa"
+   ]
+  ],
+  [
+   "prsa",
+   18,
+   [
+    "cs"
+   ],
+   [
+    "prsa nitkavaju petorice odaju",
+    "prsa oracarac imigama geti"
+   ]
+  ],
+  [
+   "kran",
+   18,
+   [
+    "be"
+   ],
+   [
+    "kran vrlividlaka reku udem",
+    "izjavljanje pozu kran klijeti"
+   ]
+  ],
+  [
+   "pica",
+   17,
+   [
+    "cs",
+    "pt",
+    "sk"
+   ],
+   [
+    "rezone pica peng dubrodni",
+    "aumelotu stardiolni pica"
+   ]
+  ],
+  [
+   "osli",
+   17,
+   [
+    "sl",
+    "uk"
+   ],
+   [
+    "osli ruke svio burigarandi",
+    "elsa pare frategozila osli"
+   ]
+  ],
+  [
+   "mama",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "iskulirem mama orao dugoju",
+    "celjuba smorlica mama spim"
+   ]
+  ],
+  [
+   "okao",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "okao orna bordetrete inno",
+    "okorne boka unosazati okao"
+   ]
+  ],
+  [
+   "baka",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "baka mera srna mirisinjenju",
+    "baka rici cima pudiolovacu"
+   ]
+  ],
+  [
+   "pula",
+   16,
+   [
+    "ro"
+   ],
+   [
+    "okides pula rice ambuljala",
+    "gargozesni pula iskla klica"
+   ]
+  ],
+  [
+   "hane",
+   16,
+   [
+    "da"
+   ],
+   [
+    "drazen foorucicu hane snen",
+    "reseilaska hane stojsica"
+   ]
+  ]
+ ],
+ "samples": [
+  "biopci risa ekno chickadom",
+  "sake udvovi osumem birget",
+  "fostili rochna melila otno",
+  "tana jerizgao zato ceniti",
+  "istupendu umucucnikom spao",
+  "ucenigadelu iskva rastrudite",
+  "gospavoluje spiradio blali",
+  "ekacedim dusa pantima tela",
+  "stlo jedaijom otplovucila",
+  "luku bozalo poluku ulagnu",
+  "spomim uvjeraden brda doom",
+  "udradnen stina prebrojive"
+ ],
+ "seconds": 8.2,
+ "languages": [
+  "sr"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

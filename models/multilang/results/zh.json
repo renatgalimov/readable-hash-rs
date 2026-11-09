@@ -1,0 +1,267 @@
+{
+ "name": "zh",
+ "corpus_words": 80000,
+ "relaxed_rows": 162,
+ "relaxed_examples": [
+  "yo",
+  "ko",
+  "zo",
+  "pr",
+  "ex",
+  "fo",
+  "fr",
+  "ja",
+  "wh",
+  "pl",
+  "ae",
+  "sl"
+ ],
+ "segmented_words": 59982,
+ "skipped_words": 20018,
+ "middle_attested_fraction": 0.386474609375,
+ "end32_attested_fraction": 0.3954671223958333,
+ "end16_attested_fraction": 0.560791015625,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.62,
+ "max_chars": 34,
+ "consonant_runs_pct": 7.423,
+ "vowel_runs_pct": 15.839,
+ "english_words_pct": 1.673,
+ "own_words_pct": 32.44,
+ "offensive_whole_pct": 2.275,
+ "offensive_whole_english_list_pct": 0.315,
+ "offensive_whole_own_list_pct": 0.34,
+ "offensive_whole_major_lists_pct": 1.35,
+ "offensive_severe_en_pct": 0.19,
+ "offensive_inside5_pct": 1.71,
+ "offensive_inside4_pct": 21.61,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "zazhong",
+   24,
+   [
+    "zh"
+   ],
+   [
+    "xuduozanzhou vier zazhong hequ",
+    "zaixei sailurke zazhong huji"
+   ]
+  ],
+  [
+   "bride",
+   20,
+   [
+    "fr"
+   ],
+   [
+    "bride spokxingren aizhong cuiji",
+    "nailin zaotilei huli bride"
+   ]
+  ],
+  [
+   "homo",
+   20,
+   [
+    "fi",
+    "id",
+    "ja",
+    "ko"
+   ],
+   [
+    "kuerheli homo agusuluchang",
+    "molaigian homo baiwou zhan"
+   ]
+  ],
+  [
+   "chishi",
+   20,
+   [
+    "zh"
+   ],
+   [
+    "chishi dien shubuyncer sisheng",
+    "erin peshi emidecixai chishi"
+   ]
+  ],
+  [
+   "nazi",
+   19,
+   [
+    "ca",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "eu",
+    "fr",
+    "gd",
+    "gl",
+    "hy",
+    "id",
+    "is",
+    "la",
+    "mn",
+    "ms",
+    "mt",
+    "nl",
+    "pl",
+    "sr",
+    "tr",
+    "uz",
+    "vi",
+    "zu"
+   ],
+   [
+    "facholian louges loin nazi",
+    "chuciluan nazi counihouxi"
+   ]
+  ],
+  [
+   "nasi",
+   19,
+   [
+    "ml",
+    "th"
+   ],
+   [
+    "agirujiyan nasi mehu arilei",
+    "nasi lezi iner atejibuzou"
+   ]
+  ],
+  [
+   "buzi",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "dabaibihui buzi greluyei",
+    "blihei fasi buzi toulichang"
+   ]
+  ],
+  [
+   "gote",
+   17,
+   [
+    "tr"
+   ],
+   [
+    "gote done ertiao zouledian",
+    "struyi loilao gote yushichang"
+   ]
+  ],
+  [
+   "shihu",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "boshu emoshihui guodixnjiu",
+    "bran niuder shihuo budaji"
+   ]
+  ],
+  [
+   "elle",
+   16,
+   [
+    "lv"
+   ],
+   [
+    "gaishi ennyiqingkuang kuguo elle",
+    "genyian honeible elle inai"
+   ]
+  ],
+  [
+   "kale",
+   16,
+   [
+    "lt"
+   ],
+   [
+    "kale goumiyijian bootanduxing",
+    "buyiaofu muqi kale energe"
+   ]
+  ],
+  [
+   "zizi",
+   16,
+   [
+    "fr"
+   ],
+   [
+    "zizi prigunjuan qiyi cuts",
+    "taitodizun zizi mifu fouo"
+   ]
+  ],
+  [
+   "hoer",
+   15,
+   [
+    "nl"
+   ],
+   [
+    "haai dien dewencodai hoer",
+    "erners hoer haliya absole"
+   ]
+  ],
+  [
+   "arse",
+   15,
+   [
+    "en"
+   ],
+   [
+    "taer arse inbuxuke kelina",
+    "plihei arse candazai loin"
+   ]
+  ],
+  [
+   "cunt",
+   15,
+   [
+    "cs",
+    "cy",
+    "en",
+    "eu",
+    "gd",
+    "is",
+    "la",
+    "lv",
+    "mn",
+    "mt",
+    "my",
+    "pl",
+    "zu"
+   ],
+   [
+    "cunt qinmudding mingeleder",
+    "meijnjnjao weai cunt tehao"
+   ]
+  ]
+ ],
+ "samples": [
+  "ruyifu tryuan plian spobuliang",
+  "chike zenzhou fantuan ruimide",
+  "grudge penzhou fenman rexian",
+  "bean nouyixie jiqi zizuyu",
+  "zoutuddan aobeitibie miou",
+  "amongyoufie ralai rougglen",
+  "gongnashiren mibungren enya",
+  "pligneiya ouren laojiu xuhui",
+  "dina nouxeshou renleciwing",
+  "arao luodou yilisha apiled",
+  "midequ starical pade shao",
+  "zeihizhong difu xinxbuents"
+ ],
+ "seconds": 10.4,
+ "languages": [
+  "zh"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

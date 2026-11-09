@@ -1,0 +1,265 @@
+{
+ "name": "ang",
+ "corpus_words": 64110,
+ "relaxed_rows": 13,
+ "relaxed_examples": [
+  "fy",
+  "ny",
+  "ax",
+  "iu",
+  "py",
+  "ev",
+  "ky",
+  "ox",
+  "io",
+  "zi",
+  "ia",
+  "gd"
+ ],
+ "segmented_words": 52736,
+ "skipped_words": 11374,
+ "middle_attested_fraction": 0.2921142578125,
+ "end32_attested_fraction": 0.3691813151041667,
+ "end16_attested_fraction": 0.5694173177083334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.77,
+ "max_chars": 38,
+ "consonant_runs_pct": 16.433,
+ "vowel_runs_pct": 0.565,
+ "english_words_pct": 1.743,
+ "own_words_pct": 22.696,
+ "offensive_whole_pct": 1.6,
+ "offensive_whole_english_list_pct": 0.14,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.02,
+ "offensive_severe_en_pct": 0.115,
+ "offensive_inside5_pct": 1.455,
+ "offensive_inside4_pct": 16.91,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "suce",
+   23,
+   [
+    "fr"
+   ],
+   [
+    "incypescas aran suce hrigan",
+    "sutedum hlinereth suce aecst"
+   ]
+  ],
+  [
+   "nian",
+   21,
+   [
+    "zh"
+   ],
+   [
+    "blandende nian oferreada cwyrdan",
+    "liegna dunnigra nian sicean"
+   ]
+  ],
+  [
+   "dran",
+   20,
+   [
+    "pl"
+   ],
+   [
+    "cnde botherhegth dran bare",
+    "bascunaese agte plena dran"
+   ]
+  ],
+  [
+   "sule",
+   18,
+   [
+    "kn"
+   ],
+   [
+    "wron unwealthath wynum sule",
+    "marcde worhige agunath sule"
+   ]
+  ],
+  [
+   "hore",
+   18,
+   [
+    "be",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "hr",
+    "hu",
+    "id",
+    "is",
+    "it",
+    "la",
+    "lv",
+    "mr",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk"
+   ],
+   [
+    "colagonde bide baecon hore",
+    "hore cythwitan oteothottiende"
+   ]
+  ],
+  [
+   "errea",
+   17,
+   [
+    "eu"
+   ],
+   [
+    "oferreada biccan grende cunnes",
+    "blandende nian oferreada cwyrdan"
+   ]
+  ],
+  [
+   "dian",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "gyrgleasaldum asas agige dian",
+    "dian gaethircda mathanne"
+   ]
+  ],
+  [
+   "pina",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "thysitne mynne tupedum pina",
+    "fetogen pina ferecende mandath"
+   ]
+  ],
+  [
+   "maca",
+   17,
+   [
+    "hr"
+   ],
+   [
+    "maca orenne thyriath tiloecenne",
+    "collendod ciriclicre bradle maca"
+   ]
+  ],
+  [
+   "site",
+   16,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "tole site oferden crycawemige",
+    "wyrnenne plian ategligne site"
+   ]
+  ],
+  [
+   "cena",
+   14,
+   [
+    "zh"
+   ],
+   [
+    "orwillast lecum cena hwamiende",
+    "cena horan thed tidritlitath"
+   ]
+  ],
+  [
+   "caca",
+   14,
+   [
+    "ca",
+    "es",
+    "fr",
+    "gl",
+    "ro"
+   ],
+   [
+    "caca bygehrian baeged hleth",
+    "caca harum raende meahalwege"
+   ]
+  ],
+  [
+   "dige",
+   14,
+   [
+    "da",
+    "sq"
+   ],
+   [
+    "dige atan alealgst ymbbith",
+    "turgroed dige wurdnilenne"
+   ]
+  ],
+  [
+   "tama",
+   13,
+   [
+    "pl",
+    "zh"
+   ],
+   [
+    "tama snileth cirictucige ciriclices",
+    "wilum pintst tama bocinnes"
+   ]
+  ],
+  [
+   "fica",
+   13,
+   [
+    "it"
+   ],
+   [
+    "fica bothenu locolige orum",
+    "fica danilaetan cluteafted"
+   ]
+  ]
+ ],
+ "samples": [
+  "bollienne roed cust nyolbaerre",
+  "unenne ahaefes wilidon bondast",
+  "lundian iewisum wurhtra minra",
+  "wynne syltacum formum efstra",
+  "daerhutum gysiemneth ymblath",
+  "fulornolenne tade riddeogan",
+  "mortheorndest ymbfecnum trec",
+  "cunierna awena sehtan incan",
+  "lafen sylgileth minlafarna",
+  "eost firgas tocniath pleona",
+  "ymbthennes tealthdon nietst bean",
+  "ahonelena latum stiegendardes"
+ ],
+ "seconds": 10.9,
+ "languages": [
+  "ang"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

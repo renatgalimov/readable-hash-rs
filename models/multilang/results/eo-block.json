@@ -1,0 +1,223 @@
+{
+ "name": "eo-block",
+ "corpus_words": 80000,
+ "relaxed_rows": 2,
+ "relaxed_examples": [
+  "gr",
+  "uj"
+ ],
+ "banned_pairs": 4482,
+ "segmented_words": 60876,
+ "skipped_words": 19124,
+ "middle_attested_fraction": 0.494873046875,
+ "end32_attested_fraction": 0.4186604817708333,
+ "end16_attested_fraction": 0.662109375,
+ "begin_attested": 128,
+ "three_token_rounds": [
+  818,
+  634,
+  386,
+  240
+ ],
+ "chars": 26.88,
+ "max_chars": 35,
+ "consonant_runs_pct": 6.684,
+ "vowel_runs_pct": 0.617,
+ "english_words_pct": 1.394,
+ "own_words_pct": 25.496,
+ "offensive_whole_pct": 1.18,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.005,
+ "offensive_inside5_pct": 1.24,
+ "offensive_inside4_pct": 14.4,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "anita",
+   27,
+   [
+    "nl"
+   ],
+   [
+    "janita uraldas muldulo progo",
+    "ortaj plesis unutanita jano"
+   ]
+  ],
+  [
+   "bobo",
+   23,
+   [
+    "fil"
+   ],
+   [
+    "akta bobo trigis abliforitis",
+    "agvena seras bobo tondistado"
+   ]
+  ],
+  [
+   "pele",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "pele forestporten vogo sento",
+    "lidiliglego duaj pele ekis"
+   ]
+  ],
+  [
+   "kakas",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "bazimuson todo kakas korego",
+    "kakas grosekostis pias tojo"
+   ]
+  ],
+  [
+   "flis",
+   16,
+   [
+    "da"
+   ],
+   [
+    "marso bovana flis adiaulado",
+    "fiis flis figuarjare cine"
+   ]
+  ],
+  [
+   "dran",
+   16,
+   [
+    "pl"
+   ],
+   [
+    "visilvita sekigidingado dran",
+    "marie stonimis dran niagos"
+   ]
+  ],
+  [
+   "mater",
+   15,
+   [
+    "sl"
+   ],
+   [
+    "rusuto urumatera goigis pasa",
+    "aumaterlaro filikisto geto"
+   ]
+  ],
+  [
+   "asas",
+   15,
+   [
+    "gl"
+   ],
+   [
+    "asas herbovro ties tenismojn",
+    "kricigis asas jarlokigo like"
+   ]
+  ],
+  [
+   "pula",
+   14,
+   [
+    "ro"
+   ],
+   [
+    "kojogis auita pula abomsako",
+    "ricakvio pula orra bokajo"
+   ]
+  ],
+  [
+   "gamo",
+   14,
+   [
+    "el"
+   ],
+   [
+    "gamo opsega ingula godeto",
+    "jugacio jakapeno hujoj gamo"
+   ]
+  ],
+  [
+   "reva",
+   13,
+   [
+    "fi"
+   ],
+   [
+    "reva jurablimeo deigis senaj",
+    "licienta okigis reva anonan"
+   ]
+  ],
+  [
+   "nomo",
+   13,
+   [
+    "ko"
+   ],
+   [
+    "nomo obirigas stiranta abudulo",
+    "daorfioj avidinte nomo scino"
+   ]
+  ],
+  [
+   "krado",
+   12,
+   [
+    "th"
+   ],
+   [
+    "afropiso nigilega lukrado",
+    "krurkrado opozon asaj muna"
+   ]
+  ],
+  [
+   "alla",
+   12,
+   [
+    "mt"
+   ],
+   [
+    "kitara adekselo alla aroj",
+    "suldado baldigas alla ludajo"
+   ]
+  ],
+  [
+   "tate",
+   12,
+   [
+    "ro"
+   ],
+   [
+    "lida ablo tate amuzurfiaj",
+    "aurindeto grupoj tate flulo"
+   ]
+  ]
+ ],
+ "samples": [
+  "plidge blia eteco acalifto",
+  "elano marboradon aktuto plolia",
+  "afgacio geamus lanteroj leis",
+  "noan kvimpago neado skurbo",
+  "luncumato flolacikisto cias",
+  "hiruemocebla bieco buklerigu",
+  "gardlurgra ciudrujo gligu",
+  "etnesajo tutu formume preto",
+  "ekte kvaundra lekspindes",
+  "kiis origitas kauzaj edifita",
+  "cistulo autotuis mita rean",
+  "mararpusto ekta degediniko"
+ ],
+ "seconds": 218.3,
+ "languages": [
+  "eo"
+ ],
+ "no_english": false,
+ "blocklist": true
+}

@@ -1,0 +1,231 @@
+{
+ "name": "bcl",
+ "corpus_words": 11990,
+ "relaxed_rows": 173,
+ "relaxed_examples": [
+  "vi",
+  "fr",
+  "ja",
+  "fi",
+  "au",
+  "ek",
+  "jo",
+  "fe",
+  "ce",
+  "fa",
+  "fo",
+  "ge"
+ ],
+ "segmented_words": 7946,
+ "skipped_words": 4044,
+ "middle_attested_fraction": 0.17635091145833334,
+ "end32_attested_fraction": 0.15055338541666666,
+ "end16_attested_fraction": 0.28173828125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.08,
+ "max_chars": 34,
+ "consonant_runs_pct": 8.063,
+ "vowel_runs_pct": 4.407,
+ "english_words_pct": 1.387,
+ "own_words_pct": 10.093,
+ "offensive_whole_pct": 3.235,
+ "offensive_whole_english_list_pct": 0.235,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.99,
+ "offensive_severe_en_pct": 0.2,
+ "offensive_inside5_pct": 2.435,
+ "offensive_inside4_pct": 20.265,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "kran",
+   20,
+   [
+    "be"
+   ],
+   [
+    "girepasaro kran kubong kona",
+    "corkay bora ambenaan kran"
+   ]
+  ],
+  [
+   "holo",
+   20,
+   [
+    "ko"
+   ],
+   [
+    "holo elar josturabay dasyon",
+    "holo gedo gomina deklarigos"
+   ]
+  ],
+  [
+   "bola",
+   19,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "tonggusan atraghukto bola",
+    "tida leda antonghugmang bola"
+   ]
+  ],
+  [
+   "rota",
+   19,
+   [
+    "ja"
+   ],
+   [
+    "jostilunyan iplo rota kusog",
+    "fogpon cutistro rota rora"
+   ]
+  ],
+  [
+   "puto",
+   19,
+   [
+    "pt"
+   ],
+   [
+    "abreto puto ceng delentro",
+    "crra negulong luminaktas puto"
+   ]
+  ],
+  [
+   "loda",
+   19,
+   [
+    "hi"
+   ],
+   [
+    "loda prectural siyenumbas",
+    "braipitales loda asit klat"
+   ]
+  ],
+  [
+   "cono",
+   18,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "krak elambliones cono ekng",
+    "priko inoman cono ornigkod"
+   ]
+  ],
+  [
+   "reto",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "sumpopas opya reto berdon",
+    "aundog reto puhihial feng"
+   ]
+  ],
+  [
+   "mail",
+   17,
+   [
+    "hi"
+   ],
+   [
+    "mail jaal achimanapit isaw",
+    "fena froraketso ikon mail"
+   ]
+  ],
+  [
+   "pedo",
+   17,
+   [
+    "es"
+   ],
+   [
+    "pedo toka abapos ekwahero",
+    "frkano endelo pedo tercng"
+   ]
+  ],
+  [
+   "poon",
+   17,
+   [
+    "en"
+   ],
+   [
+    "clgkaon teda poon kwnigsik",
+    "nenyayasios ibuggdoan poon"
+   ]
+  ],
+  [
+   "maal",
+   17,
+   [
+    "hi"
+   ],
+   [
+    "maal auar urbobista alising",
+    "ispitan rupultod soko maal"
+   ]
+  ],
+  [
+   "tama",
+   16,
+   [
+    "pl",
+    "zh"
+   ],
+   [
+    "tama dudula tindok benibo",
+    "portidog prang goninong tama"
+   ]
+  ],
+  [
+   "rong",
+   16,
+   [
+    "th"
+   ],
+   [
+    "pustigdumod meta hamo rong",
+    "arak sias bomoderemala rong"
+   ]
+  ],
+  [
+   "satan",
+   16,
+   [
+    "no",
+    "sv"
+   ],
+   [
+    "puliko cusatan lord plaina",
+    "guel grurigsatan orsilinga"
+   ]
+  ]
+ ],
+ "samples": [
+  "dukiro wado awan syhitood",
+  "pial rarihan hampog dunggat",
+  "obabiko atimbong bukiton delo",
+  "apog nigliting manto ibaray",
+  "ekritoros vigdugriya cote",
+  "stadipubugan plag lebansige",
+  "persogabod corabusyon geyo",
+  "awgpakit brod arlaog isay",
+  "kotion ninsibay debarcgbay",
+  "klos puerso signan irbista",
+  "cornao fratresyon mera paon",
+  "rabikago koko kawagturak"
+ ],
+ "seconds": 8.9,
+ "languages": [
+  "bcl"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,225 @@
+{
+ "name": "hi",
+ "corpus_words": 80000,
+ "relaxed_rows": 7,
+ "relaxed_examples": [
+  "bm",
+  "ao",
+  "ae",
+  "hw",
+  "tao",
+  "uo",
+  "tae"
+ ],
+ "segmented_words": 45852,
+ "skipped_words": 34148,
+ "middle_attested_fraction": 0.3954671223958333,
+ "end32_attested_fraction": 0.4989827473958333,
+ "end16_attested_fraction": 0.689453125,
+ "begin_attested": 128,
+ "chars": 25.75,
+ "max_chars": 34,
+ "consonant_runs_pct": 33.372,
+ "vowel_runs_pct": 13.225,
+ "english_words_pct": 0.117,
+ "own_words_pct": 37.666,
+ "offensive_whole_pct": 3.07,
+ "offensive_whole_english_list_pct": 0.085,
+ "offensive_whole_own_list_pct": 0.225,
+ "offensive_whole_major_lists_pct": 1.56,
+ "offensive_severe_en_pct": 0.015,
+ "offensive_inside5_pct": 1.37,
+ "offensive_inside4_pct": 14.63,
+ "offensive_across_words_pct": 0.06,
+ "top_hits": [
+  [
+   "sudi",
+   23,
+   [
+    "lv"
+   ],
+   [
+    "storke isro kaladhaom sudi",
+    "punisegi bman rakhni sudi"
+   ]
+  ],
+  [
+   "puto",
+   20,
+   [
+    "pt"
+   ],
+   [
+    "late puto crunya trejatit",
+    "bmda puto khpaya cksaptao"
+   ]
+  ],
+  [
+   "kaka",
+   18,
+   [
+    "eu"
+   ],
+   [
+    "byulvismno eksrisis kaka",
+    "baya byry kaka dhomganvate"
+   ]
+  ],
+  [
+   "tama",
+   18,
+   [
+    "pl",
+    "zh"
+   ],
+   [
+    "isuddh ikiyo hmumadhna tama",
+    "asemom ahkhegi ktavto tama"
+   ]
+  ],
+  [
+   "tate",
+   18,
+   [
+    "ro"
+   ],
+   [
+    "tate krto kesane ghtirohan",
+    "klem sidiega tate mnmalikom"
+   ]
+  ],
+  [
+   "cona",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "calvaiye cona mircrtiyom deke",
+    "mhagna domgptti hato cona"
+   ]
+  ],
+  [
+   "culo",
+   17,
+   [
+    "es",
+    "it"
+   ],
+   [
+    "bkalubhata culo that daiyo",
+    "kmake byaiyo durmuktrao culo"
+   ]
+  ],
+  [
+   "sisa",
+   17,
+   [
+    "hr"
+   ],
+   [
+    "smeted sisa guthan moniye",
+    "inse sisa hilo ksabrajuma"
+   ]
+  ],
+  [
+   "dike",
+   17,
+   [
+    "eu",
+    "sr"
+   ],
+   [
+    "smbhavi agnyna pasiko dike",
+    "selsmisayi dike ceke isne"
+   ]
+  ],
+  [
+   "kuso",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "ltalvastaem nima clni kuso",
+    "klaimjti distiyo aungi kuso"
+   ]
+  ],
+  [
+   "site",
+   16,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "bdke chicke site bhajgaogi",
+    "htiyate site codiyo lgapno"
+   ]
+  ],
+  [
+   "pute",
+   16,
+   [
+    "fr"
+   ],
+   [
+    "dhem codhukrana pute cane",
+    "pute aturkanevale alviti sisom"
+   ]
+  ],
+  [
+   "thim",
+   16,
+   [
+    "th"
+   ],
+   [
+    "mimcherta mhikta muim thim",
+    "thim hosiyal ramartom take"
+   ]
+  ],
+  [
+   "phan",
+   16,
+   [
+    "vi"
+   ],
+   [
+    "phan mamdakal mlta hmahtem",
+    "phan bete kaumsika admiytem"
+   ]
+  ],
+  [
+   "luan",
+   16,
+   [
+    "zh"
+   ],
+   [
+    "kasa loretinatho luan staye",
+    "tate luan hraridimg aghurn"
+   ]
+  ]
+ ],
+ "samples": [
+  "ktaviya rine trsa insiphom",
+  "mari leseso gardho ktasay",
+  "aynila bdruti apryai mind",
+  "ksom abhajpati chli mmgengi",
+  "jornsiem moramcariyam haom",
+  "jgikbhmjega bmke hrargiso",
+  "jmvastsaye hajiariyom keel",
+  "trnivesi srav disani grto",
+  "andr abhthuriyo milihasrit",
+  "dbte brains kahlate ikheto",
+  "hamgne gmgaimkom bero khiyo",
+  "lettmtkom anto baitashttr"
+ ],
+ "seconds": 8.4,
+ "languages": [
+  "hi"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

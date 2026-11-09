@@ -1,0 +1,227 @@
+{
+ "name": "fi",
+ "corpus_words": 80000,
+ "relaxed_rows": 30,
+ "relaxed_examples": [
+  "mc",
+  "sc",
+  "wo",
+  "fu",
+  "ze",
+  "za",
+  "fy",
+  "sw",
+  "tw",
+  "ex",
+  "kn",
+  "cy"
+ ],
+ "segmented_words": 61149,
+ "skipped_words": 18851,
+ "middle_attested_fraction": 0.4164632161458333,
+ "end32_attested_fraction": 0.4408772786458333,
+ "end16_attested_fraction": 0.6331380208333334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.14,
+ "max_chars": 36,
+ "consonant_runs_pct": 2.223,
+ "vowel_runs_pct": 4.804,
+ "english_words_pct": 1.441,
+ "own_words_pct": 21.013,
+ "offensive_whole_pct": 1.73,
+ "offensive_whole_english_list_pct": 0.195,
+ "offensive_whole_own_list_pct": 0.025,
+ "offensive_whole_major_lists_pct": 0.8,
+ "offensive_severe_en_pct": 0.21,
+ "offensive_inside5_pct": 3.81,
+ "offensive_inside4_pct": 23.71,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "pissa",
+   95,
+   [
+    "is"
+   ],
+   [
+    "benteksta grammapissa nujesi",
+    "iluluja lysi edissa peilipissa"
+   ]
+  ],
+  [
+   "kusta",
+   62,
+   [
+    "fi"
+   ],
+   [
+    "kustakaa odie tossa ottyrkilla",
+    "beaan isauktisi soma vukusta"
+   ]
+  ],
+  [
+   "tetta",
+   46,
+   [
+    "it"
+   ],
+   [
+    "nean poon naurantettava odan",
+    "ihostaan nujetettava veasi prille"
+   ]
+  ],
+  [
+   "lusta",
+   45,
+   [
+    "sv"
+   ],
+   [
+    "mekkiminnia orsori kulusta",
+    "lopulusta dakeja hasta vanin"
+   ]
+  ],
+  [
+   "kutta",
+   35,
+   [
+    "hi"
+   ],
+   [
+    "odrukuttaa firaus paalta saassa",
+    "kumaani oitulakuttaa jutukaa"
+   ]
+  ],
+  [
+   "kimme",
+   29,
+   [
+    "de"
+   ],
+   [
+    "ampulaaokimme elutin ryostetaan",
+    "oterman nikimme loytko cous"
+   ]
+  ],
+  [
+   "sikin",
+   24,
+   [
+    "tr"
+   ],
+   [
+    "hoppasi mako fasikin kytkien",
+    "cannsikin pistan pylannit"
+   ]
+  ],
+  [
+   "tatte",
+   23,
+   [
+    "hi"
+   ],
+   [
+    "totipusti illaisen yssetatte",
+    "prahdulta vetatte vili myra"
+   ]
+  ],
+  [
+   "mutta",
+   22,
+   [
+    "sv"
+   ],
+   [
+    "natti ostilaisesta nerjumuttaa",
+    "kutsikeriin strintekaa mutta"
+   ]
+  ],
+  [
+   "mesa",
+   19,
+   [
+    "pt"
+   ],
+   [
+    "ammakeella uuko ympealta mesa",
+    "hyko juanikkeja vuan mesa"
+   ]
+  ],
+  [
+   "pusi",
+   19,
+   [
+    "kn"
+   ],
+   [
+    "pusi lonnut ykapumit ehamme",
+    "niuttaa luimme pusi anomielella"
+   ]
+  ],
+  [
+   "inat",
+   18,
+   [
+    "sq"
+   ],
+   [
+    "inat ymamme alakurettya tossa",
+    "prilla episen inat laulajentaa"
+   ]
+  ],
+  [
+   "filla",
+   15,
+   [
+    "gl"
+   ],
+   [
+    "filla miameltava bartamaan peja",
+    "filla senkin itpahan corkukon"
+   ]
+  ],
+  [
+   "dain",
+   15,
+   [
+    "ml"
+   ],
+   [
+    "neytokin vihkaurjit dain",
+    "amita ajauhdyn dain ruutus"
+   ]
+  ],
+  [
+   "chut",
+   15,
+   [
+    "hi"
+   ],
+   [
+    "chut ihimien shikasta janoissa",
+    "seisuutissa heliin chut tuen"
+   ]
+  ]
+ ],
+ "samples": [
+  "repetti ehasta sheen uulipaus",
+  "halle inditaan jakaisen reppivat",
+  "betonne auditaan luvulle juissa",
+  "ruton oikuuhaa paita nortoa",
+  "nukehtansa usoksuhtaisi mian",
+  "kritiaukesi amasta epantakin",
+  "osoittamurainen mintelet ysko",
+  "shikette onia puuhetta leia",
+  "ravat oiskyneita juttelulilit",
+  "oden aluksekseni tuleista filita",
+  "miamani protlanoon kyan kain",
+  "inkenteat raaja tahdutorille"
+ ],
+ "seconds": 10.9,
+ "languages": [
+  "fi"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

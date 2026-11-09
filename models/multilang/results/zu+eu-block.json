@@ -1,0 +1,225 @@
+{
+ "name": "zu+eu-block",
+ "corpus_words": 79053,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "nh"
+ ],
+ "banned_pairs": 3956,
+ "segmented_words": 56360,
+ "skipped_words": 22693,
+ "middle_attested_fraction": 0.5474446614583334,
+ "end32_attested_fraction": 0.3671468098958333,
+ "end16_attested_fraction": 0.5992024739583334,
+ "begin_attested": 128,
+ "three_token_rounds": [
+  857,
+  554,
+  316,
+  170
+ ],
+ "chars": 27.89,
+ "max_chars": 38,
+ "consonant_runs_pct": 5.318,
+ "vowel_runs_pct": 8.423,
+ "english_words_pct": 0.721,
+ "own_words_pct": 21.078,
+ "offensive_whole_pct": 0.855,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 1.22,
+ "offensive_inside4_pct": 15.925,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "hlang",
+   23,
+   [
+    "th"
+   ],
+   [
+    "eyakhane amahlangagula bunkek",
+    "idizionaliwe kwesihlangu dearen"
+   ]
+  ],
+  [
+   "pina",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "borren pina edma ikartzatan",
+    "aroa enperepoala kwazo pina"
+   ]
+  ],
+  [
+   "sule",
+   19,
+   [
+    "kn"
+   ],
+   [
+    "unonesimo trongo sule ngatu",
+    "pazimoak urkabandaweni sule"
+   ]
+  ],
+  [
+   "tanga",
+   17,
+   [
+    "fil"
+   ],
+   [
+    "tanga ahlwa halantzekeni epala",
+    "kwasebadazwe hoele ezina tanga"
+   ]
+  ],
+  [
+   "semel",
+   15,
+   [
+    "kn"
+   ],
+   [
+    "ubia abasemelani amaia lausika",
+    "misemelanga autatzea sian orisa"
+   ]
+  ],
+  [
+   "elle",
+   15,
+   [
+    "lv"
+   ],
+   [
+    "lagionia istibehatha elle",
+    "legelohwatu elle nangematen"
+   ]
+  ],
+  [
+   "zakar",
+   14,
+   [
+    "ms"
+   ],
+   [
+    "zakarbi nombala etoa lomane",
+    "ziona zeruei izugak zakartu"
+   ]
+  ],
+  [
+   "hora",
+   14,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "gerranghleni hora yele ngokuen",
+    "teonomphuka kolaguleni hora"
+   ]
+  ],
+  [
+   "nasi",
+   13,
+   [
+    "ml",
+    "th"
+   ],
+   [
+    "were ithietangisi inia nasi",
+    "nasi doazomonsa eduthlelwa"
+   ]
+  ],
+  [
+   "pele",
+   13,
+   [
+    "hu"
+   ],
+   [
+    "yiwe okudaweni insipenean pele",
+    "ngasithuriari zezwe soso pele"
+   ]
+  ],
+  [
+   "prik",
+   13,
+   [
+    "nl"
+   ],
+   [
+    "prik obile engu nephathorarik",
+    "lime sizividiza ebenza prik"
+   ]
+  ],
+  [
+   "tate",
+   12,
+   [
+    "ro"
+   ],
+   [
+    "uzanani tate obubaba wethane",
+    "dolume ubashi tate ibandlu"
+   ]
+  ],
+  [
+   "usne",
+   11,
+   [
+    "hr"
+   ],
+   [
+    "nokufamibhena usne umane iseli",
+    "txatu zomoya harkadweni usne"
+   ]
+  ],
+  [
+   "hani",
+   11,
+   [
+    "is"
+   ],
+   [
+    "sian olusiza hani soldokazi",
+    "diberaua ayidaren hani atra"
+   ]
+  ],
+  [
+   "bulal",
+   10,
+   [
+    "ko"
+   ],
+   [
+    "nemo nomhlabulali uyelwa esho",
+    "mein yehlukunna izolo bulali"
+   ]
+  ]
+ ],
+ "samples": [
+  "egilayo ibean pero epitokwa",
+  "kuke porrua umlidi egqane",
+  "agoaza ubizula asaldeak kwaisa",
+  "dala etiordoa beke angiya",
+  "morrarrala parkonomeni alak",
+  "gisahiyike heza lodialdatzen",
+  "elkarteoratzea algoizwe adma",
+  "pepikuba ahek selithi kweza",
+  "latu etestoten kwalaguztatu",
+  "obia nokubatzen wasenza tanteen",
+  "alkatzea urruduka usean ukuna",
+  "pomadasi late silazigile"
+ ],
+ "seconds": 233.4,
+ "languages": [
+  "zu",
+  "eu"
+ ],
+ "no_english": false,
+ "blocklist": true
+}

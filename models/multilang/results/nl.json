@@ -1,0 +1,260 @@
+{
+ "name": "nl",
+ "corpus_words": 80000,
+ "relaxed_rows": 2,
+ "relaxed_examples": [
+  "opg",
+  "ex"
+ ],
+ "segmented_words": 50872,
+ "skipped_words": 29128,
+ "middle_attested_fraction": 0.6412760416666666,
+ "end32_attested_fraction": 0.4036458333333333,
+ "end16_attested_fraction": 0.6448567708333334,
+ "begin_attested": 128,
+ "chars": 26.84,
+ "max_chars": 34,
+ "consonant_runs_pct": 16.258,
+ "vowel_runs_pct": 2.502,
+ "english_words_pct": 3.536,
+ "own_words_pct": 28.796,
+ "offensive_whole_pct": 3.59,
+ "offensive_whole_english_list_pct": 0.77,
+ "offensive_whole_own_list_pct": 1.215,
+ "offensive_whole_major_lists_pct": 1.235,
+ "offensive_severe_en_pct": 0.265,
+ "offensive_inside5_pct": 5.1,
+ "offensive_inside4_pct": 20.16,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "ische",
+   384,
+   [
+    "de"
+   ],
+   [
+    "opes soortaal hoorische huddheid",
+    "gilingen aund flamatische mikt"
+   ]
+  ],
+  [
+   "verga",
+   27,
+   [
+    "es"
+   ],
+   [
+    "overgauw glus archer smachting",
+    "ruden purnum vergaal aanrengen"
+   ]
+  ],
+  [
+   "puta",
+   23,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "kleven uitkimaar puta eldora",
+    "dina puta blokachraken seat"
+   ]
+  ],
+  [
+   "balen",
+   23,
+   [
+    "nl"
+   ],
+   [
+    "nita wormlairot balen nang",
+    "balen kartduelen elam forgie"
+   ]
+  ],
+  [
+   "tate",
+   23,
+   [
+    "ro"
+   ],
+   [
+    "tate gliland smis costbaum",
+    "oproofan tate frunst buut"
+   ]
+  ],
+  [
+   "veres",
+   22,
+   [
+    "hu"
+   ],
+   [
+    "veres revouwer aanmoribile",
+    "veres tudomien algezoraven"
+   ]
+  ],
+  [
+   "bekken",
+   22,
+   [
+    "nl"
+   ],
+   [
+    "karibudies wietbekken alon",
+    "kubekken haarks existheid overen"
+   ]
+  ],
+  [
+   "chlen",
+   22,
+   [
+    "uk"
+   ],
+   [
+    "rialig soda chlen fictebten",
+    "chlen overton vitaren klamaton"
+   ]
+  ],
+  [
+   "wang",
+   21,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "gd",
+    "gl",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "ko",
+    "la",
+    "lt",
+    "lv",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "zu"
+   ],
+   [
+    "poincete afijn wang exraal",
+    "vlamtekeert wang joss zapt"
+   ]
+  ],
+  [
+   "matje",
+   21,
+   [
+    "nl"
+   ],
+   [
+    "snie glasrende matje pinoom",
+    "onmors voles matje beweares"
+   ]
+  ],
+  [
+   "hanen",
+   21,
+   [
+    "nl"
+   ],
+   [
+    "roeinves wons zeeman hanen",
+    "vren hanen klek lavalosbaan"
+   ]
+  ],
+  [
+   "loden",
+   21,
+   [
+    "ro"
+   ],
+   [
+    "floden voltigt zieking jund",
+    "subanecht kwallodend gler"
+   ]
+  ],
+  [
+   "kutje",
+   19,
+   [
+    "nl"
+   ],
+   [
+    "zoekte kutje sitje checuees",
+    "core nabochnoven voorman kutje"
+   ]
+  ],
+  [
+   "tette",
+   19,
+   [
+    "it"
+   ],
+   [
+    "saboteeken kerser tetten waden",
+    "afkilikt vist dageren tetten"
+   ]
+  ],
+  [
+   "reet",
+   19,
+   [
+    "nl"
+   ],
+   [
+    "shocoenen longton glee reet",
+    "sundristers opal reet aanie"
+   ]
+  ]
+ ],
+ "samples": [
+  "humoot joer gila kwezingsden",
+  "opes soortaal hoorische huddheid",
+  "adrieen talige balang voortje",
+  "daten runkbels verft vissey",
+  "slaaikek tingwegids overje",
+  "knaanwipheid foten dundbende",
+  "neervancek overvanussen flaat",
+  "gingwezen thmen oneertig schon",
+  "roly rubruwing voornarboeien",
+  "cring diagan borstden eerlar",
+  "overreden zandween miek been",
+  "sonarbla rolt redehaloten"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "nl"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

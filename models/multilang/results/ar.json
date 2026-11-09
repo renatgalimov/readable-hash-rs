@@ -1,0 +1,242 @@
+{
+ "name": "ar",
+ "corpus_words": 80000,
+ "relaxed_rows": 15,
+ "relaxed_examples": [
+  "lg",
+  "lz",
+  "tg",
+  "bj",
+  "mg",
+  "ng",
+  "nz",
+  "tg",
+  "lg",
+  "rg",
+  "yg",
+  "mg"
+ ],
+ "segmented_words": 46566,
+ "skipped_words": 33434,
+ "middle_attested_fraction": 0.1448974609375,
+ "end32_attested_fraction": 0.4827473958333333,
+ "end16_attested_fraction": 0.6844075520833334,
+ "begin_attested": 128,
+ "chars": 25.63,
+ "max_chars": 30,
+ "consonant_runs_pct": 76.989,
+ "vowel_runs_pct": 0.0,
+ "english_words_pct": 0.0,
+ "own_words_pct": 38.678,
+ "offensive_whole_pct": 0.45,
+ "offensive_whole_english_list_pct": 0.06,
+ "offensive_whole_own_list_pct": 0.09,
+ "offensive_whole_major_lists_pct": 0.235,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 0.2,
+ "offensive_inside4_pct": 3.395,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "hshry",
+   21,
+   [
+    "fa"
+   ],
+   [
+    "tdnsyhshryf lfwry mtshy skyr",
+    "jwrdyry hshryhsytkm lqlydh"
+   ]
+  ],
+  [
+   "lwty",
+   18,
+   [
+    "ar"
+   ],
+   [
+    "lyntdhmtny lwty msfy flka",
+    "lwty tamsfh tayn mlakhwrh"
+   ]
+  ],
+  [
+   "tama",
+   17,
+   [
+    "pl",
+    "zh"
+   ],
+   [
+    "msqyntys tama wbwlyyn brny",
+    "tama mqwy wtslyrkrwkh tara"
+   ]
+  ],
+  [
+   "khwy",
+   17,
+   [
+    "th"
+   ],
+   [
+    "ltyq bwys kthuhswrkm khwy",
+    "hsdrystndyq khwy msra bqra"
+   ]
+  ],
+  [
+   "tnha",
+   16,
+   [
+    "my"
+   ],
+   [
+    "bmydha shuqbl tnha bkmyrt",
+    "nsyzyn tnha kysntwla lhyl"
+   ]
+  ],
+  [
+   "turd",
+   12,
+   [
+    "ca",
+    "cy",
+    "de",
+    "en",
+    "et",
+    "eu",
+    "gd",
+    "gl",
+    "hi",
+    "is",
+    "kn",
+    "lt",
+    "lv",
+    "ms",
+    "my",
+    "sl",
+    "sr",
+    "te",
+    "uz"
+   ],
+   [
+    "hwghytrtyngh turd dhzyhtrq",
+    "yrqbtsna turd tawn tmdhyfy"
+   ]
+  ],
+  [
+   "bydh",
+   10,
+   [
+    "fa"
+   ],
+   [
+    "stywhwystwf bydh hmzyyrwn",
+    "sltryny hwny bydh nhkryghyn"
+   ]
+  ],
+  [
+   "hywnt",
+   6,
+   [
+    "fa"
+   ],
+   [
+    "bdunty ysrh nhywnt kyrmyn",
+    "slyzybhu khywnt lnunqyqh"
+   ]
+  ],
+  [
+   "murkh",
+   2,
+   [
+    "hi",
+    "mr"
+   ],
+   [
+    "tldrywn sbtrywn khtu wmurkh",
+    "slbryhr hmurkh ywjwhlghth"
+   ]
+  ],
+  [
+   "mshrh",
+   2,
+   [
+    "fa"
+   ],
+   [
+    "fwshytrhbyn jrymshrh lnwy",
+    "kmdhywltlqwn wlbyna ymshrh"
+   ]
+  ],
+  [
+   "tqdyr",
+   2,
+   [
+    "fa"
+   ],
+   [
+    "tqdyrh yqrn mrwlyny bnnsyyh",
+    "mwrkydrhm btqdyrktk wbdrymy"
+   ]
+  ],
+  [
+   "tushy",
+   1,
+   [
+    "en"
+   ],
+   [
+    "dyhm ystmrt lghty tushysyn"
+   ]
+  ],
+  [
+   "kusta",
+   1,
+   [
+    "fi"
+   ],
+   [
+    "dyna wydhlyrtyn tkustaty"
+   ]
+  ],
+  [
+   "tkhmy",
+   1,
+   [
+    "fa"
+   ],
+   [
+    "smuklmhi lzmyth sytkhmydh"
+   ]
+  ],
+  [
+   "sakra",
+   1,
+   [
+    "cs"
+   ],
+   [
+    "lqntyhllyws hsakra yklfzh"
+   ]
+  ]
+ ],
+ "samples": [
+  "tfhrytn slys sbhy wrakrwyh",
+  "stra mqhury wtkhylt tfrkylh",
+  "tathdr bnygyh bmwryrw mwtu",
+  "mdyh whthyhyly blka nsmymh",
+  "tlyjlwht wkrkyhbshhd mhyn",
+  "tbyqrbntry dwra jwyqhwrn",
+  "flynmystrk mhygnsbh ndma",
+  "sbthystyk yqhr lnmyty myhm",
+  "lylk whwryswyh mwykryrtbh",
+  "wdby ldlymh syqtlth ylwmyw",
+  "mhhuwr bklytrfyn lrby ltyn",
+  "mqalmwyn lykm lljyhwtlqa"
+ ],
+ "seconds": 7.8,
+ "languages": [
+  "ar"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

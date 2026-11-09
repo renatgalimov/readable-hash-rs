@@ -1,0 +1,227 @@
+{
+ "name": "got",
+ "corpus_words": 80000,
+ "relaxed_rows": 77,
+ "relaxed_examples": [
+  "du",
+  "fu",
+  "hu",
+  "su",
+  "sp",
+  "me",
+  "mu",
+  "ku",
+  "ne",
+  "fo",
+  "be",
+  "fe"
+ ],
+ "segmented_words": 66356,
+ "skipped_words": 13644,
+ "middle_attested_fraction": 0.19999186197916666,
+ "end32_attested_fraction": 0.2903645833333333,
+ "end16_attested_fraction": 0.4222005208333333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 30.12,
+ "max_chars": 44,
+ "consonant_runs_pct": 11.461,
+ "vowel_runs_pct": 3.311,
+ "english_words_pct": 0.921,
+ "own_words_pct": 8.198,
+ "offensive_whole_pct": 1.25,
+ "offensive_whole_english_list_pct": 0.08,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.425,
+ "offensive_severe_en_pct": 0.01,
+ "offensive_inside5_pct": 2.955,
+ "offensive_inside4_pct": 14.19,
+ "offensive_across_words_pct": 0.105,
+ "top_hits": [
+  [
+   "manda",
+   107,
+   [
+    "ru"
+   ],
+   [
+    "plmahtedeis mandau modonaswane",
+    "sumandans nidjerun mondogjam"
+   ]
+  ],
+  [
+   "naida",
+   81,
+   [
+    "fi"
+   ],
+   [
+    "hrais hraldrinnaidau biai bideima",
+    "asth trahanaidai fairledeith ubjau"
+   ]
+  ],
+  [
+   "kunda",
+   37,
+   [
+    "cs"
+   ],
+   [
+    "qainone drukafulidons lekundata",
+    "mithts pita wokundana ithaidedan"
+   ]
+  ],
+  [
+   "bride",
+   30,
+   [
+    "fr"
+   ],
+   [
+    "awibridedi thaihodediuts skim",
+    "etubridedeis timanwetuth eijan"
+   ]
+  ],
+  [
+   "bunda",
+   30,
+   [
+    "pt"
+   ],
+   [
+    "atsnodes wlitsteith urrins bundau",
+    "uzusuts ubignjaits jindau bundau"
+   ]
+  ],
+  [
+   "linda",
+   28,
+   [
+    "zu"
+   ],
+   [
+    "wededun lindau herigkan swibos",
+    "snunitheina lindau gleima aphaiwa"
+   ]
+  ],
+  [
+   "skide",
+   22,
+   [
+    "da"
+   ],
+   [
+    "skidedu quusqidedjau trjandilhideduth",
+    "pindeins awraskidedeiwa luts gona"
+   ]
+  ],
+  [
+   "muts",
+   21,
+   [
+    "nl"
+   ],
+   [
+    "muts afagkjeigam hlon slon",
+    "muts tainon skugnoda itis"
+   ]
+  ],
+  [
+   "skata",
+   21,
+   [
+    "el"
+   ],
+   [
+    "flaftaima fotuteima giskata",
+    "itagnaskata hwalibau eijai"
+   ]
+  ],
+  [
+   "kran",
+   19,
+   [
+    "be"
+   ],
+   [
+    "kreis oguts makilokida kran",
+    "kran lida snartoma unmands"
+   ]
+  ],
+  [
+   "pits",
+   19,
+   [
+    "ca"
+   ],
+   [
+    "hindos pits rundeino selewedeis",
+    "lada aubastahais fijam pits"
+   ]
+  ],
+  [
+   "seins",
+   19,
+   [
+    "fr"
+   ],
+   [
+    "inseins neis azins riwamida",
+    "awins gafahtai qadeduts hoseins"
+   ]
+  ],
+  [
+   "quai",
+   18,
+   [
+    "vi"
+   ],
+   [
+    "quai twahstom soteirthada",
+    "bneina quai abiheina rogahtim"
+   ]
+  ],
+  [
+   "dada",
+   18,
+   [
+    "id"
+   ],
+   [
+    "ateis afau dada kreigkawats",
+    "jutjaldeina huwaiwa bnos dada"
+   ]
+  ],
+  [
+   "dran",
+   16,
+   [
+    "pl"
+   ],
+   [
+    "dran affulwidedi abith tigjith",
+    "dran qida inmahtos hnunis"
+   ]
+  ]
+ ],
+ "samples": [
+  "kuridedum bonds itam asnomeai",
+  "afeis ogagam maistjau kunowa",
+  "kragjaits utgides rahais fidedeis",
+  "hlis sminonidedjau usau rekjaidau",
+  "gotohuna busnunjoths kain",
+  "jisksathun wlaza qannwane",
+  "aglahsilats kanikands iujai",
+  "itugneits knau fauraqai fullos",
+  "fredeina smizidideduth filitikandau",
+  "uzau liudana inlidedum etulus",
+  "kawidedi awisaldeima qins bida",
+  "ogetaraizos fraima unhahantands"
+ ],
+ "seconds": 12.0,
+ "languages": [
+  "got"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

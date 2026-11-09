@@ -1,0 +1,236 @@
+{
+ "name": "sc",
+ "corpus_words": 11461,
+ "relaxed_rows": 105,
+ "relaxed_examples": [
+  "ch",
+  "fu",
+  "gh",
+  "ha",
+  "jo",
+  "go",
+  "ja",
+  "eu",
+  "ju",
+  "uf",
+  "wi",
+  "fl"
+ ],
+ "segmented_words": 8741,
+ "skipped_words": 2720,
+ "middle_attested_fraction": 0.14937337239583334,
+ "end32_attested_fraction": 0.1688232421875,
+ "end16_attested_fraction": 0.3021647135416667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.34,
+ "max_chars": 39,
+ "consonant_runs_pct": 6.296,
+ "vowel_runs_pct": 1.285,
+ "english_words_pct": 1.501,
+ "own_words_pct": 9.959,
+ "offensive_whole_pct": 2.04,
+ "offensive_whole_english_list_pct": 0.15,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.16,
+ "offensive_severe_en_pct": 0.035,
+ "offensive_inside5_pct": 3.455,
+ "offensive_inside4_pct": 22.63,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "samen",
+   44,
+   [
+    "de"
+   ],
+   [
+    "edisamente tzidade piraeradu roba",
+    "punsamente ognuntatos vetollis"
+   ]
+  ],
+  [
+   "panna",
+   24,
+   [
+    "fi"
+   ],
+   [
+    "gadeniel aspanna adotodicos",
+    "tipanna trados zessingadu clidu"
+   ]
+  ],
+  [
+   "culos",
+   21,
+   [
+    "es"
+   ],
+   [
+    "emolis alica aculos prefida",
+    "bosa etoculos teos bantada"
+   ]
+  ],
+  [
+   "teta",
+   21,
+   [
+    "es"
+   ],
+   [
+    "nodiana rainitores sero teta",
+    "leada megiomisa teta allota"
+   ]
+  ],
+  [
+   "boru",
+   19,
+   [
+    "ja"
+   ],
+   [
+    "vanas atada boru fondissirda",
+    "corsagada fedu cambes boru"
+   ]
+  ],
+  [
+   "sule",
+   19,
+   [
+    "kn"
+   ],
+   [
+    "sule rune atessumat bidiri",
+    "ispena sule pubeca dansadores"
+   ]
+  ],
+  [
+   "ische",
+   19,
+   [
+    "de"
+   ],
+   [
+    "opunnos atheservica ischende",
+    "aces diant gessische geogras"
+   ]
+  ],
+  [
+   "dada",
+   19,
+   [
+    "id"
+   ],
+   [
+    "pubende dada zutu tandessit",
+    "dada ecapilobiu galu cenu"
+   ]
+  ],
+  [
+   "ghat",
+   18,
+   [
+    "mr"
+   ],
+   [
+    "runcit cure laguigamente ghat",
+    "ituros elomuter ghat liale"
+   ]
+  ],
+  [
+   "semen",
+   18,
+   [
+    "ca",
+    "cy",
+    "en",
+    "es",
+    "eu",
+    "gl",
+    "mt",
+    "pt",
+    "sr",
+    "uz"
+   ],
+   [
+    "semenchit fone faghiu intu",
+    "semenada briat ursigatzione sena"
+   ]
+  ],
+  [
+   "gotu",
+   17,
+   [
+    "tr"
+   ],
+   [
+    "tangiat uncatzione gotu murgen",
+    "gotu nimmulentas gare suadu"
+   ]
+  ],
+  [
+   "unchi",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "varboriat dongos nunchiadu",
+    "unchighentzia tuis nincogennes"
+   ]
+  ],
+  [
+   "roba",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "roba tzonana bridu grafonara",
+    "azntuatos roba nampadu pore"
+   ]
+  ],
+  [
+   "ases",
+   17,
+   [
+    "cy"
+   ],
+   [
+    "itimpostu ases avicu zergali",
+    "fladu ases bilidu unneordu"
+   ]
+  ],
+  [
+   "inat",
+   16,
+   [
+    "sq"
+   ],
+   [
+    "inat lochesa monudu rotziat",
+    "crababura pesta empoda inat"
+   ]
+  ]
+ ],
+ "samples": [
+  "loscare spicu eradu irotegus",
+  "cadu lumpuras arruentes lorsadu",
+  "umpeadu tirris finniu chtzione",
+  "rios scipolentzia ises agasmu",
+  "brianconi ghcastumentu tziu",
+  "enstilogale rune tudingat",
+  "lassorinde tzionaghet ecle",
+  "erorgare clia megare sale",
+  "deau scontuariu chespeseadu",
+  "ciare eseret mantados urgadore",
+  "tzideas otennodia gere core",
+  "lusestamente dedu prantoparadu"
+ ],
+ "seconds": 8.9,
+ "languages": [
+  "sc"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

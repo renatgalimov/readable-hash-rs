@@ -1,0 +1,238 @@
+{
+ "name": "kk",
+ "corpus_words": 59641,
+ "relaxed_rows": 49,
+ "relaxed_examples": [
+  "dz",
+  "fu",
+  "kv",
+  "af",
+  "co",
+  "uc",
+  "ae",
+  "ky",
+  "yo",
+  "of",
+  "uo",
+  "gv"
+ ],
+ "segmented_words": 40873,
+ "skipped_words": 18768,
+ "middle_attested_fraction": 0.3566080729166667,
+ "end32_attested_fraction": 0.2603352864583333,
+ "end16_attested_fraction": 0.4635416666666667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.48,
+ "max_chars": 39,
+ "consonant_runs_pct": 12.09,
+ "vowel_runs_pct": 5.477,
+ "english_words_pct": 0.723,
+ "own_words_pct": 16.731,
+ "offensive_whole_pct": 1.2,
+ "offensive_whole_english_list_pct": 0.005,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.76,
+ "offensive_severe_en_pct": 0.02,
+ "offensive_inside5_pct": 2.225,
+ "offensive_inside4_pct": 14.445,
+ "offensive_across_words_pct": 0.035,
+ "top_hits": [
+  [
+   "zamen",
+   26,
+   [
+    "ja"
+   ],
+   [
+    "mayyshasy zamen playdyng plin",
+    "fazhulyghy figanizamen payng"
+   ]
+  ],
+  [
+   "khuy",
+   25,
+   [
+    "ru"
+   ],
+   [
+    "ingha tusustitedi gelar khuy",
+    "khuy aldyny peular dandigi"
+   ]
+  ],
+  [
+   "panna",
+   25,
+   [
+    "fi"
+   ],
+   [
+    "asudyng trigining dopannan tolghardyng",
+    "onning ereumiyady otinipannan"
+   ]
+  ],
+  [
+   "natsi",
+   21,
+   [
+    "fi",
+    "mk"
+   ],
+   [
+    "gayq finaluy natsitarlyq okrynyng",
+    "monebasha ulaunatsiygha kedi"
+   ]
+  ],
+  [
+   "samen",
+   21,
+   [
+    "de"
+   ],
+   [
+    "autsalylau emgha emdi samen",
+    "esan enesamen undiding open"
+   ]
+  ],
+  [
+   "dada",
+   19,
+   [
+    "id"
+   ],
+   [
+    "selomide nesimen dada soda",
+    "birulian stmen olendting dada"
+   ]
+  ],
+  [
+   "tushy",
+   19,
+   [
+    "en"
+   ],
+   [
+    "sensenguge osetter tyqty atushy",
+    "ligha laparatushysy krakenine"
+   ]
+  ],
+  [
+   "semen",
+   18,
+   [
+    "ca",
+    "cy",
+    "en",
+    "es",
+    "eu",
+    "gl",
+    "mt",
+    "pt",
+    "sr",
+    "uz"
+   ],
+   [
+    "semensuy murtedi milenudyng",
+    "ghayuy aker lien auelsemen"
+   ]
+  ],
+  [
+   "merde",
+   18,
+   [
+    "fr",
+    "it"
+   ],
+   [
+    "erardyng kungesinde open aqmerden",
+    "birdynan genoyng namerden lili"
+   ]
+  ],
+  [
+   "urin",
+   16,
+   [
+    "sl"
+   ],
+   [
+    "etip urin ommastyrtese taqtyng",
+    "urin dolaylyghy azimgha katar"
+   ]
+  ],
+  [
+   "prik",
+   15,
+   [
+    "nl"
+   ],
+   [
+    "prik roldeydi oydy zhonysynyng",
+    "prik tryuge didy uralqyda"
+   ]
+  ],
+  [
+   "muda",
+   14,
+   [
+    "ru"
+   ],
+   [
+    "baqyrygha muda plolynyng lagha",
+    "dening rubishyna muda ekshan"
+   ]
+  ],
+  [
+   "kedi",
+   14,
+   [
+    "tr"
+   ],
+   [
+    "monebasha ulaunatsiygha kedi",
+    "uarynyng mughan kedi asirtusing"
+   ]
+  ],
+  [
+   "manda",
+   13,
+   [
+    "ru"
+   ],
+   [
+    "ornylmandasy ushilik rosidy",
+    "seugha uzbaugha mada eramandardyng"
+   ]
+  ],
+  [
+   "amda",
+   13,
+   [
+    "hi"
+   ],
+   [
+    "amda fidy egisi burghaqylugha",
+    "amda antronnyng myzhdi tigha"
+   ]
+  ]
+ ],
+ "samples": [
+  "iskata plarda iegha opulandy",
+  "taqqa nuridi tesila iseliya",
+  "chirti urimmen qydyrugha sydy",
+  "oldi zersyngha shep stilui",
+  "eksheuip pingnatyldy kagha",
+  "fiksirtana enik rabizdedi",
+  "ulgiyasanu kaktittik irary",
+  "iemingdy avedi artion andi",
+  "mayz zentosov syrlorgilik",
+  "spyng attanin saqtaugha tseliya",
+  "katysy okpettylyq onining qasy",
+  "nulemiyng mamen bazaynyden"
+ ],
+ "seconds": 10.5,
+ "languages": [
+  "kk"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

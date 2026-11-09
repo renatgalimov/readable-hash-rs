@@ -1,0 +1,238 @@
+{
+ "name": "qu",
+ "corpus_words": 80000,
+ "relaxed_rows": 203,
+ "relaxed_examples": [
+  "ac",
+  "ic",
+  "gr",
+  "dy",
+  "co",
+  "mo",
+  "be",
+  "me",
+  "po",
+  "se",
+  "bo",
+  "ro"
+ ],
+ "segmented_words": 64382,
+ "skipped_words": 15618,
+ "middle_attested_fraction": 0.1396484375,
+ "end32_attested_fraction": 0.22489420572916666,
+ "end16_attested_fraction": 0.3357747395833333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 36.28,
+ "max_chars": 53,
+ "consonant_runs_pct": 13.689,
+ "vowel_runs_pct": 7.13,
+ "english_words_pct": 0.531,
+ "own_words_pct": 5.939,
+ "offensive_whole_pct": 0.445,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.31,
+ "offensive_severe_en_pct": 0.265,
+ "offensive_inside5_pct": 8.735,
+ "offensive_inside4_pct": 34.685,
+ "offensive_across_words_pct": 0.075,
+ "top_hits": [
+  [
+   "unchi",
+   491,
+   [
+    "ja"
+   ],
+   [
+    "itipikkama jaakunchik huyniykunakama rinapura",
+    "lula noasunchik llipurwan biunalla"
+   ]
+  ],
+  [
+   "nakun",
+   231,
+   [
+    "sq"
+   ],
+   [
+    "plallallirpaq cokichik faankukunakunapi",
+    "abwan nukukunakunata kanani biuykuhina"
+   ]
+  ],
+  [
+   "chani",
+   166,
+   [
+    "zh"
+   ],
+   [
+    "ibsqusas qumanta qimanta rachaninka",
+    "calpaykuhina umunaman altunta chani"
+   ]
+  ],
+  [
+   "okama",
+   110,
+   [
+    "ja"
+   ],
+   [
+    "qhachunchik iqikmanta cokama saniyhina",
+    "niyninakannakunapi pokama canannaq uslla"
+   ]
+  ],
+  [
+   "chuka",
+   82,
+   [
+    "bg"
+   ],
+   [
+    "prariyllachukama urunaman qiskirpura",
+    "tranqachukama nakunapi deipatunchunalla"
+   ]
+  ],
+  [
+   "chich",
+   79,
+   [
+    "vi"
+   ],
+   [
+    "abpaq afwan sinchichu meuyntina",
+    "kakichik sachichikkchikkuhina dillpaqikama"
+   ]
+  ],
+  [
+   "rakun",
+   63,
+   [
+    "hr"
+   ],
+   [
+    "lumanta iymayurakunapura ucachatani",
+    "atunnasintin usmayuruta rakunata"
+   ]
+  ],
+  [
+   "chink",
+   53,
+   [
+    "cy",
+    "en",
+    "et",
+    "eu",
+    "gd",
+    "gl",
+    "is",
+    "lt",
+    "ms",
+    "my",
+    "zu"
+   ],
+   [
+    "blyninanichunalla kruchinkichik wachu",
+    "qayniykutuypa arunapaq toachinkawnininka"
+   ]
+  ],
+  [
+   "yuchi",
+   37,
+   [
+    "ja"
+   ],
+   [
+    "llallikkunapi miyuchinpi mesqukama",
+    "iqpaq ukyuchimaykunapi icpaq irkama"
+   ]
+  ],
+  [
+   "chuchi",
+   33,
+   [
+    "hi"
+   ],
+   [
+    "cenayman nanta veuchuchiman hikunata",
+    "kuninka juurichuchikama billa ucunanka"
+   ]
+  ],
+  [
+   "panna",
+   32,
+   [
+    "fi"
+   ],
+   [
+    "prunalla mesiasayninkama tianchik upannaq",
+    "ahilliylanta hinintin upannaq dean"
+   ]
+  ],
+  [
+   "chipa",
+   32,
+   [
+    "uz"
+   ],
+   [
+    "aqannaq ajykiquykunahina zeachikchipaq",
+    "iqachipapaq zeykukuniparayku buykukunarayku"
+   ]
+  ],
+  [
+   "chati",
+   30,
+   [
+    "te"
+   ],
+   [
+    "trunchu gechatitintin shanchik qinapura",
+    "acchatiwan utanaypi prunaman jopura"
+   ]
+  ],
+  [
+   "nachi",
+   30,
+   [
+    "ja",
+    "ko"
+   ],
+   [
+    "takukunachik apupullanwan iqankunahina",
+    "kryniykiwan tukama hapura inachiparayku"
+   ]
+  ],
+  [
+   "yuchu",
+   24,
+   [
+    "zh"
+   ],
+   [
+    "liyuchuyhina archaychu bitimunku",
+    "iyuchunku llnintin asanchik nochupiyta"
+   ]
+  ]
+ ],
+ "samples": [
+  "ukyuqa zepaq tshina meawchachun",
+  "mawan jisini naykinnaq ukanqunchu",
+  "itipikkama jaakunchik huyniykunakama rinapura",
+  "tupi iyiyniykimanta kuninnaq iqsinqaku",
+  "bratantukunap ahuntharaspa akaq",
+  "plallallirpaq cokichik faankukunakunapi",
+  "ichanchikuchhina akiryana genantin",
+  "tsurkunakama tekama anqipi waychu",
+  "muychu iyakukhanchik riykinaynkunahina",
+  "abwan nukukunakunata kanani biuykuhina",
+  "akiykama cuarirunawan qamanta panki",
+  "jilaykunaninka muta llchayniyiynintin"
+ ],
+ "seconds": 14.0,
+ "languages": [
+  "qu"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

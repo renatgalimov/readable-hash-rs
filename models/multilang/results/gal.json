@@ -1,0 +1,238 @@
+{
+ "name": "gal",
+ "corpus_words": 24170,
+ "relaxed_rows": 243,
+ "relaxed_examples": [
+  "pr",
+  "su",
+  "mo",
+  "ex",
+  "so",
+  "qu",
+  "xu",
+  "al",
+  "ch",
+  "to",
+  "vo",
+  "ad"
+ ],
+ "segmented_words": 22046,
+ "skipped_words": 2124,
+ "middle_attested_fraction": 0.042277018229166664,
+ "end32_attested_fraction": 0.20393880208333334,
+ "end16_attested_fraction": 0.3126627604166667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 32.68,
+ "max_chars": 48,
+ "consonant_runs_pct": 14.301,
+ "vowel_runs_pct": 2.516,
+ "english_words_pct": 1.183,
+ "own_words_pct": 11.765,
+ "offensive_whole_pct": 0.505,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.305,
+ "offensive_severe_en_pct": 0.035,
+ "offensive_inside5_pct": 2.945,
+ "offensive_inside4_pct": 22.225,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "veres",
+   46,
+   [
+    "hu"
+   ],
+   [
+    "compaban constompveres nalldeirrei",
+    "adoveres gores trias suecediren"
+   ]
+  ],
+  [
+   "gasti",
+   30,
+   [
+    "hi"
+   ],
+   [
+    "sogastian bamaberian proliren",
+    "hoixes gastiriamos xupuxeches sermos"
+   ]
+  ],
+  [
+   "porra",
+   30,
+   [
+    "pt"
+   ],
+   [
+    "proporrases marian promaxiunas",
+    "consticlano xistina porrapemos"
+   ]
+  ],
+  [
+   "dermo",
+   28,
+   [
+    "ru",
+    "uk"
+   ],
+   [
+    "menacindo turemos dermos motiches",
+    "sinades mestralaban federmos xeredes"
+   ]
+  ],
+  [
+   "zamen",
+   24,
+   [
+    "ja"
+   ],
+   [
+    "saes simar sinsemos zamenezpona",
+    "berei enamos pezamensires saiamos"
+   ]
+  ],
+  [
+   "orina",
+   19,
+   [
+    "es"
+   ],
+   [
+    "rirdes furedes pondo veneraporinan",
+    "usorinamos ammaminen blxiriamos"
+   ]
+  ],
+  [
+   "foda",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "foda xisfntabades bltade tririades",
+    "foda vincxiredes esbade tinques"
+   ]
+  ],
+  [
+   "semen",
+   17,
+   [
+    "ca",
+    "cy",
+    "en",
+    "es",
+    "eu",
+    "gl",
+    "mt",
+    "pt",
+    "sr",
+    "uz"
+   ],
+   [
+    "semenstrastes huvira gantapas",
+    "tinstatudo bambstabamos semenades"
+   ]
+  ],
+  [
+   "concha",
+   16,
+   [
+    "es"
+   ],
+   [
+    "sein conchaboixen falencas",
+    "concharmos arertiriades ustrambres"
+   ]
+  ],
+  [
+   "merde",
+   13,
+   [
+    "fr",
+    "it"
+   ],
+   [
+    "merdes vopuxeren oderres dangas",
+    "amguaristas noponerardes merdes"
+   ]
+  ],
+  [
+   "pede",
+   13,
+   [
+    "fr"
+   ],
+   [
+    "pede prointean sindigangen",
+    "hoades pede compariadra roecorias"
+   ]
+  ],
+  [
+   "queca",
+   13,
+   [
+    "pt"
+   ],
+   [
+    "tena quecalada zaremos oistarian",
+    "edliremos satiamos quecariades axren"
+   ]
+  ],
+  [
+   "emased",
+   13,
+   [
+    "et"
+   ],
+   [
+    "emzares caerpemasedes fallabas",
+    "enfancen verdes remasedes enan"
+   ]
+  ],
+  [
+   "made",
+   12,
+   [
+    "zh"
+   ],
+   [
+    "transponstirdes vorrasedes made abades",
+    "tollamos made hunarei soinen"
+   ]
+  ],
+  [
+   "comer",
+   12,
+   [
+    "pt"
+   ],
+   [
+    "martusaban edganxas ocomermos",
+    "nollar estizando trasamos concomera"
+   ]
+  ]
+ ],
+ "samples": [
+  "condecedes node adorei xastarraramos",
+  "diamos tecares atecei conditada",
+  "guecei similizade senterei narias",
+  "auriades constepxida saide tarrasedes",
+  "elrrelren xembrrecin feriades",
+  "sineraleraban admirdes fillviredes",
+  "arborixuido fecoberemos afedes",
+  "adonaleriamos faren pacaredes acan",
+  "compaban constompveres nalldeirrei",
+  "ocou transpixabamos preparasemos tuixabas",
+  "festarmos piinirada mean rece",
+  "telepuxedo compan enveixceres"
+ ],
+ "seconds": 11.1,
+ "languages": [
+  "gal"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

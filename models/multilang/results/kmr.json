@@ -1,0 +1,229 @@
+{
+ "name": "kmr",
+ "corpus_words": 80000,
+ "relaxed_rows": 58,
+ "relaxed_examples": [
+  "fu",
+  "ja",
+  "fl",
+  "dr",
+  "gl",
+  "au",
+  "gw",
+  "ae",
+  "qu",
+  "eu",
+  "ao",
+  "by"
+ ],
+ "segmented_words": 58223,
+ "skipped_words": 21777,
+ "middle_attested_fraction": 0.2340087890625,
+ "end32_attested_fraction": 0.3240966796875,
+ "end16_attested_fraction": 0.5104166666666666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.62,
+ "max_chars": 35,
+ "consonant_runs_pct": 6.484,
+ "vowel_runs_pct": 7.805,
+ "english_words_pct": 0.749,
+ "own_words_pct": 19.542,
+ "offensive_whole_pct": 1.66,
+ "offensive_whole_english_list_pct": 0.18,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.03,
+ "offensive_severe_en_pct": 0.085,
+ "offensive_inside5_pct": 2.57,
+ "offensive_inside4_pct": 14.99,
+ "offensive_across_words_pct": 0.045,
+ "top_hits": [
+  [
+   "randi",
+   146,
+   [
+    "hi"
+   ],
+   [
+    "kopicino coxirandinek drpien",
+    "glirandinen alio afie ibetan"
+   ]
+  ],
+  [
+   "bikin",
+   42,
+   [
+    "id"
+   ],
+   [
+    "bikin dastanmarisno aragilee",
+    "pivike efea hormeki hebikin"
+   ]
+  ],
+  [
+   "asini",
+   24,
+   [
+    "it"
+   ],
+   [
+    "gitasinin axiiia piki fanno",
+    "evthizyaren aumiijno asinin"
+   ]
+  ],
+  [
+   "dalan",
+   24,
+   [
+    "mn"
+   ],
+   [
+    "asirno idiseain dalan meze",
+    "kibelate gwie dalan flhemin"
+   ]
+  ],
+  [
+   "hanen",
+   23,
+   [
+    "nl"
+   ],
+   [
+    "durrokalie ganin gavehanen",
+    "iqurek amhanen evgikan azim"
+   ]
+  ],
+  [
+   "here",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "egoiarea jiberieke zike here",
+    "ehavdengen deek here dukno"
+   ]
+  ],
+  [
+   "sise",
+   18,
+   [
+    "hr"
+   ],
+   [
+    "sise apishiko ixemee acim",
+    "egisyi sise ciherbim awaran"
+   ]
+  ],
+  [
+   "gote",
+   17,
+   [
+    "tr"
+   ],
+   [
+    "awseran gote dryi aqameleken",
+    "ezirina gote hiluzaen emin"
+   ]
+  ],
+  [
+   "ititi",
+   16,
+   [
+    "uz"
+   ],
+   [
+    "ewititie etie lizaek dalan",
+    "efseititiya nathek evgele"
+   ]
+  ],
+  [
+   "esek",
+   15,
+   [
+    "tr"
+   ],
+   [
+    "esek iferrese hesitilanek",
+    "ibranberno izdikno esek efin"
+   ]
+  ],
+  [
+   "cono",
+   15,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "koendevibam artiraetie cono",
+    "diwerimee elifnan imain cono"
+   ]
+  ],
+  [
+   "corno",
+   15,
+   [
+    "pt"
+   ],
+   [
+    "adankno corno etbersek likno",
+    "edalevikin corno gunin facihe"
+   ]
+  ],
+  [
+   "fuen",
+   14,
+   [
+    "th"
+   ],
+   [
+    "cizizizinin isnin akran fuen",
+    "gangazminen ziin ewin fuen"
+   ]
+  ],
+  [
+   "kale",
+   14,
+   [
+    "lt"
+   ],
+   [
+    "amavie ajihdikno caek kale",
+    "sinano acizno kale pelikan"
+   ]
+  ],
+  [
+   "paki",
+   14,
+   [
+    "en",
+    "hi"
+   ],
+   [
+    "gaan paki adia fazilantean",
+    "naskilno ajim paki erminin"
+   ]
+  ]
+ ],
+ "samples": [
+  "ajorte penin tina ipokbeno",
+  "dere eqberno dongama ajameke",
+  "ijavein grivibuma atavia azran",
+  "ilin iqedaletan berno imamia",
+  "ihilviko ifiyairciki buin",
+  "gllihijiibuma fliin ibavistiban",
+  "irtiqangir bubuhame keim",
+  "ticimean aqiin fesani eser",
+  "cakno iqeyiqek azbacerrno",
+  "venan iskaraa cikime ragile",
+  "buribu epigurko afek diin",
+  "eqedizibayi cale hetikstiyaya"
+ ],
+ "seconds": 10.6,
+ "languages": [
+  "kmr"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

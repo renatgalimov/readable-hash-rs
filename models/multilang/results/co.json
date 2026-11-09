@@ -1,0 +1,229 @@
+{
+ "name": "co",
+ "corpus_words": 12357,
+ "relaxed_rows": 139,
+ "relaxed_examples": [
+  "ch",
+  "gh",
+  "qu",
+  "fo",
+  "bo",
+  "au",
+  "vo",
+  "vu",
+  "go",
+  "sv",
+  "ha",
+  "af"
+ ],
+ "segmented_words": 9541,
+ "skipped_words": 2816,
+ "middle_attested_fraction": 0.1424560546875,
+ "end32_attested_fraction": 0.18684895833333334,
+ "end16_attested_fraction": 0.328369140625,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.87,
+ "max_chars": 38,
+ "consonant_runs_pct": 9.518,
+ "vowel_runs_pct": 1.872,
+ "english_words_pct": 1.48,
+ "own_words_pct": 12.931,
+ "offensive_whole_pct": 2.29,
+ "offensive_whole_english_list_pct": 0.005,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.42,
+ "offensive_severe_en_pct": 0.015,
+ "offensive_inside5_pct": 3.71,
+ "offensive_inside4_pct": 25.685,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "samen",
+   62,
+   [
+    "de"
+   ],
+   [
+    "codiarani gursacatu bansamenti",
+    "ossamentu esattone restaldi"
+   ]
+  ],
+  [
+   "linda",
+   33,
+   [
+    "zu"
+   ],
+   [
+    "linda ginghjiti opavaduciu edda",
+    "linda gestrilettu tiglifattutu"
+   ]
+  ],
+  [
+   "manda",
+   29,
+   [
+    "ru"
+   ],
+   [
+    "oranu cescacce mandamprana",
+    "aiavviitatu demanda gentratu"
+   ]
+  ],
+  [
+   "fitta",
+   27,
+   [
+    "sv"
+   ],
+   [
+    "evaducagiu fitta encenna pane",
+    "chtu sfhjurgate fitta falliti"
+   ]
+  ],
+  [
+   "cagna",
+   25,
+   [
+    "it"
+   ],
+   [
+    "dettidutu ulanu cagna innaria",
+    "ocerimpati vere etrola cagna"
+   ]
+  ],
+  [
+   "osti",
+   23,
+   [
+    "fr"
+   ],
+   [
+    "evia asulini ganorsatu osti",
+    "biccendu otica afprapani osti"
+   ]
+  ],
+  [
+   "fena",
+   23,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "duvimentu fena saremu biulotali",
+    "fena pilorcaghju cascanu ista"
+   ]
+  ],
+  [
+   "stiche",
+   22,
+   [
+    "de"
+   ],
+   [
+    "trali misoti testatu ristiche",
+    "stione ebli firi avansistiche"
+   ]
+  ],
+  [
+   "pussi",
+   21,
+   [
+    "sr",
+    "te"
+   ],
+   [
+    "pussiunicani sfiu esini fochi",
+    "gunghjiti sinove aiutu pussili"
+   ]
+  ],
+  [
+   "bite",
+   21,
+   [
+    "fr"
+   ],
+   [
+    "mana bite boti zitogussione",
+    "bite enia opelidente specani"
+   ]
+  ],
+  [
+   "tetta",
+   19,
+   [
+    "it"
+   ],
+   [
+    "ebnu mottettata feni custrio",
+    "biata liati seni sultidutetta"
+   ]
+  ],
+  [
+   "topa",
+   18,
+   [
+    "it"
+   ],
+   [
+    "ghra topa chra stamaducluzione",
+    "pochi orati asizzandera topa"
+   ]
+  ],
+  [
+   "elle",
+   17,
+   [
+    "lv"
+   ],
+   [
+    "isigiegele elle fancurata",
+    "elle fustrolta isuventu naiu"
+   ]
+  ],
+  [
+   "pede",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "pede atacia rispru rivinu",
+    "tattedaraghju pede farcugani"
+   ]
+  ],
+  [
+   "rota",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "sudu figurata rota ciartu",
+    "sippioti bercuri rota bodda"
+   ]
+  ]
+ ],
+ "samples": [
+  "giavule ecendu drata uschiunu",
+  "paia ungara ambate gitrii",
+  "idisore biscita utroni basu",
+  "quta dopermata maia natimu",
+  "getrigre orarnuticulta avia",
+  "bostuvacri auanu nigascenti",
+  "montifidanu avasuppi vuini",
+  "drindigati adini sciana ariu",
+  "trara dolteglia balertigamenti",
+  "svati lighjesi studate ulavini",
+  "avivate uriersoni dente cura",
+  "unurarazioni trii riunitindendu"
+ ],
+ "seconds": 9.1,
+ "languages": [
+  "co"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

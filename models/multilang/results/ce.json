@@ -1,0 +1,247 @@
+{
+ "name": "ce",
+ "corpus_words": 22009,
+ "relaxed_rows": 90,
+ "relaxed_examples": [
+  "bh",
+  "vy",
+  "fe",
+  "fi",
+  "dh",
+  "sv",
+  "dz",
+  "my",
+  "by",
+  "ph",
+  "kn",
+  "fo"
+ ],
+ "segmented_words": 15613,
+ "skipped_words": 6396,
+ "middle_attested_fraction": 0.23567708333333334,
+ "end32_attested_fraction": 0.21634928385416666,
+ "end16_attested_fraction": 0.3790690104166667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 29.19,
+ "max_chars": 39,
+ "consonant_runs_pct": 22.161,
+ "vowel_runs_pct": 4.7,
+ "english_words_pct": 0.559,
+ "own_words_pct": 12.42,
+ "offensive_whole_pct": 1.615,
+ "offensive_whole_english_list_pct": 0.065,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.385,
+ "offensive_severe_en_pct": 0.045,
+ "offensive_inside5_pct": 3.18,
+ "offensive_inside4_pct": 31.325,
+ "offensive_across_words_pct": 0.025,
+ "top_hits": [
+  [
+   "devka",
+   37,
+   [
+    "cs"
+   ],
+   [
+    "kitovo alageran pogamandevka",
+    "byhonakh elkha bondevka fihora"
+   ]
+  ],
+  [
+   "paska",
+   26,
+   [
+    "fi"
+   ],
+   [
+    "paskaya khekh klodnyy zolomina",
+    "svurskoe susligry paskaya hasa"
+   ]
+  ],
+  [
+   "shits",
+   24,
+   [
+    "cs",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "gd",
+    "lt",
+    "lv",
+    "ml",
+    "mr",
+    "mt",
+    "sq",
+    "sv",
+    "th",
+    "uk",
+    "uz",
+    "zu"
+   ],
+   [
+    "gonna kael promashitskiy tekovo",
+    "dushitsa nilovo isurlaya slikha"
+   ]
+  ],
+  [
+   "spats",
+   21,
+   [
+    "sr"
+   ],
+   [
+    "attsa spatsa haka nolykkhorovo",
+    "taskatiman dhrilkontsa spatsa"
+   ]
+  ],
+  [
+   "runka",
+   20,
+   [
+    "sv"
+   ],
+   [
+    "spovan zenino torgachirikha runka",
+    "breshan runka pkogavlevo biki"
+   ]
+  ],
+  [
+   "asna",
+   19,
+   [
+    "is"
+   ],
+   [
+    "asna ryumykotekh neevo zaki",
+    "aran ghazakhoran duga asna"
+   ]
+  ],
+  [
+   "kran",
+   19,
+   [
+    "be"
+   ],
+   [
+    "orkkhel tyskaya akolepash kran",
+    "ruzhash tegarksa voniyn kran"
+   ]
+  ],
+  [
+   "esel",
+   18,
+   [
+    "de"
+   ],
+   [
+    "esel khayas hera bremunan",
+    "esolbistki byyarstovo esel"
+   ]
+  ],
+  [
+   "pina",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "kindeevo neevka pina kugarkhi",
+    "roronskan gandrevo pina addalo"
+   ]
+  ],
+  [
+   "muna",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "zoskoe mirnogoghiyn muna lolovo",
+    "muna durebitsa abdurgozino"
+   ]
+  ],
+  [
+   "kiska",
+   17,
+   [
+    "ru"
+   ],
+   [
+    "yarkiska tretash tran sanevo",
+    "mitronilesovo kiskaya slekh sukino"
+   ]
+  ],
+  [
+   "kaka",
+   17,
+   [
+    "eu"
+   ],
+   [
+    "saltabashna brikha kaka bondekh",
+    "kaka yirnisloran diash brikovo"
+   ]
+  ],
+  [
+   "akki",
+   16,
+   [
+    "et"
+   ],
+   [
+    "bogonovo fistiyn akki muralla",
+    "akki ivonovskan niel tskhaarna"
+   ]
+  ],
+  [
+   "tetas",
+   15,
+   [
+    "ca",
+    "es",
+    "gl",
+    "pt"
+   ],
+   [
+    "revka nisergakh zetetash usal",
+    "dubrik makho puretetash khoy"
+   ]
+  ],
+  [
+   "orga",
+   15,
+   [
+    "mt"
+   ],
+   [
+    "atirghoraya orga drenenan",
+    "zeevka tabardagekh esatsa orga"
+   ]
+  ]
+ ],
+ "samples": [
+  "bityovo fiakh spal myrekhka",
+  "bahan ivonkovo yartatsa birgaya",
+  "zudinki tireshka nekoni minskan",
+  "alan murgashkovo bentsa thulevo",
+  "turymiskoe relesnyanka dara",
+  "pikhorusevo lynyy puzileevka",
+  "yuzhevlanino dalenets dhvka",
+  "spiskutino vika goryanovo annovka",
+  "busovo murnedin milomergal",
+  "ruskaya vertakh kamyevo knysash",
+  "darinka adzhumovskoe kisa shash",
+  "ivisubla buskan chukolghanasha"
+ ],
+ "seconds": 10.0,
+ "languages": [
+  "ce"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

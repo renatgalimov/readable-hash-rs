@@ -1,0 +1,239 @@
+{
+ "name": "war",
+ "corpus_words": 74763,
+ "relaxed_rows": 0,
+ "relaxed_examples": [],
+ "segmented_words": 49777,
+ "skipped_words": 24986,
+ "middle_attested_fraction": 0.6957194010416666,
+ "end32_attested_fraction": 0.4219563802083333,
+ "end16_attested_fraction": 0.63720703125,
+ "begin_attested": 128,
+ "chars": 27.91,
+ "max_chars": 40,
+ "consonant_runs_pct": 6.965,
+ "vowel_runs_pct": 6.668,
+ "english_words_pct": 3.514,
+ "own_words_pct": 18.226,
+ "offensive_whole_pct": 2.325,
+ "offensive_whole_english_list_pct": 0.155,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.01,
+ "offensive_severe_en_pct": 0.02,
+ "offensive_inside5_pct": 4.31,
+ "offensive_inside4_pct": 21.85,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "culata",
+   93,
+   [
+    "ca",
+    "gl"
+   ],
+   [
+    "glentus enarypaculata bradix",
+    "eusiaculata aconupes visses"
+   ]
+  ],
+  [
+   "culus",
+   90,
+   [
+    "la"
+   ],
+   [
+    "rumacronella orta huthyliculus",
+    "arus proscadoculus faurgidae"
+   ]
+  ],
+  [
+   "ianus",
+   68,
+   [
+    "zu"
+   ],
+   [
+    "kalliersolicus keltrianus trais",
+    "gerynianus muiraephalia bere"
+   ]
+  ],
+  [
+   "orina",
+   35,
+   [
+    "es"
+   ],
+   [
+    "phia storina brix phlochti",
+    "allus adveicata margulorina"
+   ]
+  ],
+  [
+   "nicht",
+   25,
+   [
+    "nl"
+   ],
+   [
+    "eriphora rhius lyncki lanichthys",
+    "vaia fenichthys grella termudum"
+   ]
+  ],
+  [
+   "anita",
+   24,
+   [
+    "nl"
+   ],
+   [
+    "sialis anita nanuichthys hippes",
+    "roensis animinata rickman anita"
+   ]
+  ],
+  [
+   "asna",
+   23,
+   [
+    "is"
+   ],
+   [
+    "aucheria abila armatolus asna",
+    "quitolus eltus cuiacus asna"
+   ]
+  ],
+  [
+   "muna",
+   22,
+   [
+    "fi"
+   ],
+   [
+    "trautidocchi fopiceae muna",
+    "agkisi muna butaculodes tori"
+   ]
+  ],
+  [
+   "long",
+   21,
+   [
+    "vi"
+   ],
+   [
+    "long racetus subartina cetus",
+    "long narella leius tegumiviensis"
+   ]
+  ],
+  [
+   "cena",
+   21,
+   [
+    "zh"
+   ],
+   [
+    "cena diventogea moensis dang",
+    "cena crasia melittii rita"
+   ]
+  ],
+  [
+   "vana",
+   21,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "pahora suratum tucuncias vana",
+    "cassodius adminiaculata vana"
+   ]
+  ],
+  [
+   "mees",
+   18,
+   [
+    "nl"
+   ],
+   [
+    "kanscherella lyae mees phum",
+    "grissus kaestoides mees ambitus"
+   ]
+  ],
+  [
+   "pula",
+   17,
+   [
+    "ro"
+   ],
+   [
+    "pula husadero bilipennis syus",
+    "pula duis ruida suppobilinus"
+   ]
+  ],
+  [
+   "anus",
+   17,
+   [
+    "be",
+    "bg",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "eu",
+    "fa",
+    "fr",
+    "gd",
+    "is",
+    "mk",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sl",
+    "sq",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "anus fana immerstum proctum",
+    "phacus audrichinae aptes anus"
+   ]
+  ],
+  [
+   "site",
+   16,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "site hovaca atensis lucimosa",
+    "syngapicum dina cotes site"
+   ]
+  ]
+ ],
+ "samples": [
+  "cibosus frium ricta ecphopoma",
+  "diin glandiae alterpes cindrum",
+  "fergai loteae pouralis piis",
+  "mola gosochen aneta pumicus",
+  "burskaum hyndlagilla spes",
+  "aemuthynini elella tosculax",
+  "rubrocresa spenobius gunus",
+  "rigiogmus veae inferi phus",
+  "taea goiasensis pilettomus",
+  "epae napola archra obeson",
+  "spiroi clypoges rhum maia",
+  "gledorius tarensis colungomon"
+ ],
+ "seconds": 9.2,
+ "languages": [
+  "war"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

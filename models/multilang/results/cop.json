@@ -1,0 +1,227 @@
+{
+ "name": "cop",
+ "corpus_words": 80000,
+ "relaxed_rows": 171,
+ "relaxed_examples": [
+  "el",
+  "ex",
+  "ba",
+  "ap",
+  "je",
+  "co",
+  "ja",
+  "fm",
+  "ab",
+  "bo",
+  "ca",
+  "ep"
+ ],
+ "segmented_words": 65806,
+ "skipped_words": 14194,
+ "middle_attested_fraction": 0.23881022135416666,
+ "end32_attested_fraction": 0.2403564453125,
+ "end16_attested_fraction": 0.357666015625,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.11,
+ "max_chars": 40,
+ "consonant_runs_pct": 31.777,
+ "vowel_runs_pct": 13.217,
+ "english_words_pct": 0.149,
+ "own_words_pct": 17.174,
+ "offensive_whole_pct": 0.715,
+ "offensive_whole_english_list_pct": 0.08,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.235,
+ "offensive_severe_en_pct": 0.125,
+ "offensive_inside5_pct": 1.77,
+ "offensive_inside4_pct": 11.695,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "asini",
+   53,
+   [
+    "it"
+   ],
+   [
+    "alshe enof kejoasini kcaikot",
+    "adasini brhe auji aompenaolk"
+   ]
+  ],
+  [
+   "hanar",
+   46,
+   [
+    "is"
+   ],
+   [
+    "adshanareh exarejo adsi ahathisi",
+    "acme fcioui abshanareh kenaronh"
+   ]
+  ],
+  [
+   "noune",
+   27,
+   [
+    "fr"
+   ],
+   [
+    "khemanolk janouneosh aserohe",
+    "aunouneantobe aretenbosh esnaphorobe"
+   ]
+  ],
+  [
+   "eshak",
+   24,
+   [
+    "uz"
+   ],
+   [
+    "akshatnouhe eshakhatop ajshopi",
+    "apauonx eshakhob benjrolobe"
+   ]
+  ],
+  [
+   "hanen",
+   23,
+   [
+    "nl"
+   ],
+   [
+    "caxotetntorxre doshanenkto hbei",
+    "here gaop jece leshaneneixe"
+   ]
+  ],
+  [
+   "jaji",
+   20,
+   [
+    "ko"
+   ],
+   [
+    "jiounefmoti jaji ksont anji",
+    "fsanhor kaei kkonshanbol jaji"
+   ]
+  ],
+  [
+   "mamka",
+   15,
+   [
+    "bg"
+   ],
+   [
+    "aoloesonh emamkah chpoekrois",
+    "daholomamkah enmour feposhanmkah"
+   ]
+  ],
+  [
+   "kolet",
+   15,
+   [
+    "kn"
+   ],
+   [
+    "eompatonihoje ekosh ankoletenfi",
+    "bitame koletenmonmhe enahise"
+   ]
+  ],
+  [
+   "haji",
+   15,
+   [
+    "en"
+   ],
+   [
+    "femafi asini epphappe haji",
+    "epsoli jeciolei haji jper"
+   ]
+  ],
+  [
+   "haner",
+   14,
+   [
+    "da"
+   ],
+   [
+    "eknemeteei jiohem jpshanernabosh",
+    "faksnkmi leshaneroxi cbmoini"
+   ]
+  ],
+  [
+   "here",
+   13,
+   [
+    "hu"
+   ],
+   [
+    "ksobi eati klefsatosi here",
+    "kiojjobe here fgkareh eumoulh"
+   ]
+  ],
+  [
+   "kale",
+   12,
+   [
+    "lt"
+   ],
+   [
+    "esnasolsel henjont kale iaksini",
+    "diefmkah kale ameenhob citipi"
+   ]
+  ],
+  [
+   "hori",
+   12,
+   [
+    "ms"
+   ],
+   [
+    "hori ateiop bore houskeei",
+    "enobe grsi kblekoujti hori"
+   ]
+  ],
+  [
+   "anale",
+   12,
+   [
+    "it"
+   ],
+   [
+    "ateftome jeetenshanalei fjbe",
+    "cekhohem kkirobe chshanaleskot"
+   ]
+  ],
+  [
+   "koli",
+   11,
+   [
+    "kn"
+   ],
+   [
+    "koli hlsajohm drini camoure",
+    "ader heri koli fcakciouhbe"
+   ]
+  ]
+ ],
+ "samples": [
+  "abauji cbini ctji ademefbosh",
+  "eamkah hremeei amenolk abhoshi",
+  "jpafhko laxasi esnkmisi feme",
+  "fcine hmshoshorshr enkot kjshancotp",
+  "cothishmkah htiatanafi fsini",
+  "axafenajop acri ebafeiji",
+  "krasphetnobe fsitsxeei crshe",
+  "ctleismou ager eraouom hope",
+  "anposh hmhnanahioui fenajemtihioue",
+  "clsi keisobi efetop gnesmkah",
+  "fsemoute cnshanpope aolk empei",
+  "hraourole anau eshaihakrareh"
+ ],
+ "seconds": 11.1,
+ "languages": [
+  "cop"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

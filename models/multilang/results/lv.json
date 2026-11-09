@@ -1,0 +1,238 @@
+{
+ "name": "lv",
+ "corpus_words": 80000,
+ "relaxed_rows": 26,
+ "relaxed_examples": [
+  "fu",
+  "vc",
+  "hu",
+  "vu",
+  "wa",
+  "mc",
+  "bc",
+  "ex",
+  "hr",
+  "wh",
+  "wi",
+  "cs"
+ ],
+ "segmented_words": 57099,
+ "skipped_words": 22901,
+ "middle_attested_fraction": 0.3960367838541667,
+ "end32_attested_fraction": 0.4278971354166667,
+ "end16_attested_fraction": 0.6295572916666666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.26,
+ "max_chars": 34,
+ "consonant_runs_pct": 9.57,
+ "vowel_runs_pct": 1.597,
+ "english_words_pct": 0.661,
+ "own_words_pct": 26.827,
+ "offensive_whole_pct": 3.215,
+ "offensive_whole_english_list_pct": 0.185,
+ "offensive_whole_own_list_pct": 0.175,
+ "offensive_whole_major_lists_pct": 1.27,
+ "offensive_severe_en_pct": 0.095,
+ "offensive_inside5_pct": 2.215,
+ "offensive_inside4_pct": 17.96,
+ "offensive_across_words_pct": 0.075,
+ "top_hits": [
+  [
+   "griet",
+   27,
+   [
+    "nl"
+   ],
+   [
+    "kuja hausnadietis gonogriet",
+    "jaaicejs guts griet murmsi"
+   ]
+  ],
+  [
+   "skita",
+   24,
+   [
+    "sv"
+   ],
+   [
+    "domadara eibu skita ausets",
+    "tuam fermskakas skita gotisma"
+   ]
+  ],
+  [
+   "puta",
+   20,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "teservigus puta gasa mata",
+    "krodra tret plevietna puta"
+   ]
+  ],
+  [
+   "vana",
+   20,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "vana zogs greta cituterasti",
+    "alisdariju baiskidiena vana"
+   ]
+  ],
+  [
+   "niti",
+   20,
+   [
+    "te"
+   ],
+   [
+    "jurslatvat niti frika hati",
+    "niti ritenriji avsanas fontiju"
+   ]
+  ],
+  [
+   "anali",
+   19,
+   [
+    "mt"
+   ],
+   [
+    "ganaliju randiete ornins",
+    "masiju begsanu analiendeta"
+   ]
+  ],
+  [
+   "pigu",
+   19,
+   [
+    "zh"
+   ],
+   [
+    "brucies anitentu pigu fast",
+    "edstinajuma hosanas pigu glelas"
+   ]
+  ],
+  [
+   "mees",
+   18,
+   [
+    "nl"
+   ],
+   [
+    "spards jadzigos mees rods",
+    "cikakapienu mees iesaukas"
+   ]
+  ],
+  [
+   "muca",
+   18,
+   [
+    "lv",
+    "sl"
+   ],
+   [
+    "abignema svat barkumu muca",
+    "espiebuma muca favoromiku"
+   ]
+  ],
+  [
+   "blin",
+   17,
+   [
+    "be"
+   ],
+   [
+    "ipot dibileemti blin zios",
+    "blin ariemanu asmeistmetu"
+   ]
+  ],
+  [
+   "roba",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "idam roba kidzverusi griekam",
+    "abus keneru roba dirstojas"
+   ]
+  ],
+  [
+   "pica",
+   16,
+   [
+    "cs",
+    "pt",
+    "sk"
+   ],
+   [
+    "heijumi hipets ziditati pica",
+    "modrianojums dibeigts pica"
+   ]
+  ],
+  [
+   "paki",
+   16,
+   [
+    "en",
+    "hi"
+   ],
+   [
+    "paki bros zoolucis raunis",
+    "himasimies paki muri esleti"
+   ]
+  ],
+  [
+   "siki",
+   16,
+   [
+    "ja",
+    "pl",
+    "tr"
+   ],
+   [
+    "bula hovejs stenacibas siki",
+    "aspilniviem hain klsi siki"
+   ]
+  ],
+  [
+   "bite",
+   15,
+   [
+    "fr"
+   ],
+   [
+    "bite dzastlesanas akvelu anri",
+    "krapcigu glaujas zars bite"
+   ]
+  ]
+ ],
+ "samples": [
+  "dresas tosu avas opdeklija",
+  "salu bonuks stabos dralvu",
+  "agesibas ekente regliga dizi",
+  "akas blacinasanas izis svaidu",
+  "elenotacijas suzaugusiem krana",
+  "lupaudriti glibu orbilejos",
+  "slepkalite krempiem foni",
+  "avspusiem kima veleti beta",
+  "mastu blazdota diagajuanta",
+  "abta milins iespem idstis",
+  "kruzos harvizais tisi pata",
+  "bosinedu mara atslodidit"
+ ],
+ "seconds": 10.2,
+ "languages": [
+  "lv"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

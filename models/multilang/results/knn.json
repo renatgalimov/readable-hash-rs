@@ -1,0 +1,226 @@
+{
+ "name": "knn",
+ "corpus_words": 12266,
+ "relaxed_rows": 418,
+ "relaxed_examples": [
+  "ms",
+  "pr",
+  "mh",
+  "khw",
+  "rw",
+  "sr",
+  "tw",
+  "nm",
+  "mr",
+  "mn",
+  "gr",
+  "mt"
+ ],
+ "segmented_words": 6062,
+ "skipped_words": 6204,
+ "middle_attested_fraction": 0.029703776041666668,
+ "end32_attested_fraction": 0.13680013020833334,
+ "end16_attested_fraction": 0.2638346354166667,
+ "begin_attested": 128,
+ "chars": 25.52,
+ "max_chars": 32,
+ "consonant_runs_pct": 70.078,
+ "vowel_runs_pct": 1.546,
+ "english_words_pct": 0.05,
+ "own_words_pct": 19.383,
+ "offensive_whole_pct": 0.65,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.155,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 0.235,
+ "offensive_inside4_pct": 4.095,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "jnwry",
+   17,
+   [
+    "fa"
+   ],
+   [
+    "pymy krashhy jnwry dstenhbht",
+    "thhy jnwry frahhkdh kwywyn"
+   ]
+  ],
+  [
+   "mama",
+   16,
+   [
+    "pt"
+   ],
+   [
+    "mama bgaahy rdry sparmrgh",
+    "nmhtyhy mama msly bgilhswn"
+   ]
+  ],
+  [
+   "maal",
+   15,
+   [
+    "hi"
+   ],
+   [
+    "maal bwybrbny slanhhy mnyt",
+    "bnynwlzhny maal gzynhshy"
+   ]
+  ],
+  [
+   "gryh",
+   14,
+   [
+    "fa"
+   ],
+   [
+    "gryh ndyn tlshhy mwaahwyrny",
+    "gryh qdhhy tkahhbyn nkmayy"
+   ]
+  ],
+  [
+   "bydh",
+   13,
+   [
+    "fa"
+   ],
+   [
+    "whyd dehwyn nmadwynd bydh",
+    "bydh azchhbyt msym rzyzyhy"
+   ]
+  ],
+  [
+   "pykr",
+   13,
+   [
+    "fa"
+   ],
+   [
+    "tynnnd byyrwdyhy pykr rwhny",
+    "zmym rymtrftn sfdary pykr"
+   ]
+  ],
+  [
+   "khwy",
+   11,
+   [
+    "th"
+   ],
+   [
+    "zmgaym mkmy khwy sfwnyrsht",
+    "khwy bthtymy jnyt hrwaknndgn"
+   ]
+  ],
+  [
+   "sksy",
+   11,
+   [
+    "fa"
+   ],
+   [
+    "arngwdnt sksy srhohwdrdh",
+    "mhkahy sksy gryzyd jwylyd"
+   ]
+  ],
+  [
+   "hani",
+   10,
+   [
+    "is"
+   ],
+   [
+    "nqygwyrk hani mnhevangdh",
+    "kmyl hani byyy slhikhnmdy"
+   ]
+  ],
+  [
+   "kwny",
+   10,
+   [
+    "fa"
+   ],
+   [
+    "tlhhy mjly kwny mnhehtbsrh",
+    "kwny nbkahnwn mnakhy kryy"
+   ]
+  ],
+  [
+   "hshry",
+   9,
+   [
+    "fa"
+   ],
+   [
+    "hmhy qdylnsth hdyh hshryym",
+    "psyghksy hshryby spgazysty"
+   ]
+  ],
+  [
+   "randi",
+   5,
+   [
+    "hi"
+   ],
+   [
+    "azgrmwdn spym prandi amdy",
+    "bzarandi rswnydh knry kmyt"
+   ]
+  ],
+  [
+   "hawnm",
+   4,
+   [
+    "th"
+   ],
+   [
+    "mqakym dhawnmhhy bbhhy dstny",
+    "nderhbnwmy asym dhawnmym"
+   ]
+  ],
+  [
+   "kamin",
+   3,
+   [
+    "mt"
+   ],
+   [
+    "dkaminym mtilhy thyd rdry",
+    "skaminwzhe tlyd bymwjwqy"
+   ]
+  ],
+  [
+   "tatti",
+   3,
+   [
+    "hi"
+   ],
+   [
+    "bygrwdhsh btatti sldy rzyn",
+    "mtatti mrilhy wrym kshrmydh"
+   ]
+  ]
+ ],
+ "samples": [
+  "sftrydh hyym azdgn nqilysth",
+  "cher dkansh bhhoyy sfakdy",
+  "wyrsnh antshhy grardh slty",
+  "psry skarnsny brgy rhpyry",
+  "blhisyrt pdgaghhrmyn rsny",
+  "dnamaswynh rzyt nhmahwby",
+  "hwpyngtryh rsygykhth jnyh",
+  "azgrmwdn spym prandi amdy",
+  "rwky skyghlym slaygrdkhy",
+  "mjyy mwandy krawsh btpywn",
+  "rsvash dlawknym swty shhy",
+  "dkhtykttr rwsty mygyrwgwym"
+ ],
+ "seconds": 7.8,
+ "languages": [
+  "knn"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

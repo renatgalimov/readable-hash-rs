@@ -1,0 +1,231 @@
+{
+ "name": "mhr",
+ "corpus_words": 15826,
+ "relaxed_rows": 148,
+ "relaxed_examples": [
+  "pr",
+  "vu",
+  "uz",
+  "gr",
+  "ob",
+  "fe",
+  "uc",
+  "fo",
+  "kn",
+  "sp",
+  "pl",
+  "be"
+ ],
+ "segmented_words": 11247,
+ "skipped_words": 4579,
+ "middle_attested_fraction": 0.16752115885416666,
+ "end32_attested_fraction": 0.17854817708333334,
+ "end16_attested_fraction": 0.3218587239583333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.1,
+ "max_chars": 36,
+ "consonant_runs_pct": 21.292,
+ "vowel_runs_pct": 4.081,
+ "english_words_pct": 0.419,
+ "own_words_pct": 9.871,
+ "offensive_whole_pct": 1.52,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.6,
+ "offensive_severe_en_pct": 0.035,
+ "offensive_inside5_pct": 1.935,
+ "offensive_inside4_pct": 12.98,
+ "offensive_across_words_pct": 0.08,
+ "top_hits": [
+  [
+   "mocha",
+   20,
+   [
+    "mk",
+    "uk"
+   ],
+   [
+    "neva ulimocharash ayaposhto",
+    "uzeryshte mochashan torsoklalan"
+   ]
+  ],
+  [
+   "alla",
+   17,
+   [
+    "mt"
+   ],
+   [
+    "alla namym fiminchogam otym",
+    "omyaen drimik omirak alla"
+   ]
+  ],
+  [
+   "orina",
+   16,
+   [
+    "es"
+   ],
+   [
+    "orina efchan ruymo onarylymash",
+    "nomym poen orina fermodoksho"
+   ]
+  ],
+  [
+   "faen",
+   16,
+   [
+    "no"
+   ],
+   [
+    "gezhym shudyshte faen otyargin",
+    "faen litendak nungen dryzhe"
+   ]
+  ],
+  [
+   "vana",
+   16,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "yogayzhe miromdenyt vana umyn",
+    "vana elliyyshte oltat lumdaltynyt"
+   ]
+  ],
+  [
+   "bolas",
+   15,
+   [
+    "es",
+    "gl",
+    "pt"
+   ],
+   [
+    "nediatysh torvrtlykta bolash",
+    "dekyn krisitem bolash mekshlan"
+   ]
+  ],
+  [
+   "dran",
+   15,
+   [
+    "pl"
+   ],
+   [
+    "dran chaptemdymo vele relan",
+    "okna udvotskiy ozhase dran"
+   ]
+  ],
+  [
+   "rota",
+   14,
+   [
+    "ja"
+   ],
+   [
+    "napogayzhe rota sadylotarshe",
+    "brargyrkat raym otyn rota"
+   ]
+  ],
+  [
+   "kuso",
+   14,
+   [
+    "ja"
+   ],
+   [
+    "ucnynenelash kuso obyn teta",
+    "kuso luyzho brryketiyzhe yoskiy"
+   ]
+  ],
+  [
+   "dian",
+   14,
+   [
+    "zh"
+   ],
+   [
+    "dian zhogiy sessin slaryshe",
+    "ikash dian fitroman kanalyn"
+   ]
+  ],
+  [
+   "muna",
+   14,
+   [
+    "fi"
+   ],
+   [
+    "retsavin kitsochyrzhym muna",
+    "ayzhe oysh muna yyltsyratyshe"
+   ]
+  ],
+  [
+   "pidyn",
+   14,
+   [
+    "cy"
+   ],
+   [
+    "pidyn vldelan ennyan intiyzhe",
+    "nezyza ikam tamariy epidyn"
+   ]
+  ],
+  [
+   "klam",
+   14,
+   [
+    "is"
+   ],
+   [
+    "erysh klam pyssoruzhna izyzhym",
+    "layzhe gotryzhym kilestash klam"
+   ]
+  ],
+  [
+   "chlen",
+   13,
+   [
+    "uk"
+   ],
+   [
+    "penyy vendra ilalmyzhym chlenash",
+    "pllyal ulanur gochlennna"
+   ]
+  ],
+  [
+   "inat",
+   13,
+   [
+    "sq"
+   ],
+   [
+    "inat styn aylyktogo sylnash",
+    "inat faen neyteletyn sazhe"
+   ]
+  ]
+ ],
+ "samples": [
+  "tirikyshte klylan acysh drosnyzhe",
+  "posho urgeyn ongymat tikeyzhym",
+  "bartmash divyan vunyzhe orem",
+  "melyn ulirarash koden nolymym",
+  "indyrlyse nizyningge kyna",
+  "asarmyrakyn demash lyutyshkyzhe",
+  "kidyrachnyy kyrstlaltyn mymash",
+  "acgynena numash sangge liesh",
+  "penam ulommutat orlykogaznyy",
+  "emna videnym palynat efngyt",
+  "kyrzat knagezsh uzash kuash",
+  "uryarter pekyn chuchonktyn"
+ ],
+ "seconds": 9.3,
+ "languages": [
+  "mhr"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

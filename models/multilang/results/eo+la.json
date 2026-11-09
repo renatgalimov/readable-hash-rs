@@ -1,0 +1,218 @@
+{
+ "name": "eo+la",
+ "corpus_words": 77536,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "ii"
+ ],
+ "segmented_words": 57418,
+ "skipped_words": 20118,
+ "middle_attested_fraction": 0.48779296875,
+ "end32_attested_fraction": 0.4639078776041667,
+ "end16_attested_fraction": 0.6958821614583334,
+ "begin_attested": 128,
+ "chars": 26.74,
+ "max_chars": 37,
+ "consonant_runs_pct": 5.638,
+ "vowel_runs_pct": 2.64,
+ "english_words_pct": 3.655,
+ "own_words_pct": 26.154,
+ "offensive_whole_pct": 2.155,
+ "offensive_whole_english_list_pct": 0.065,
+ "offensive_whole_own_list_pct": 0.205,
+ "offensive_whole_major_lists_pct": 0.93,
+ "offensive_severe_en_pct": 0.06,
+ "offensive_inside5_pct": 2.78,
+ "offensive_inside4_pct": 20.295,
+ "offensive_across_words_pct": 0.045,
+ "top_hits": [
+  [
+   "anita",
+   22,
+   [
+    "nl"
+   ],
+   [
+    "skembelo anita edendere prosa",
+    "lano klidneto anita mutium"
+   ]
+  ],
+  [
+   "pano",
+   19,
+   [
+    "fi"
+   ],
+   [
+    "ceta adambulajo mearum pano",
+    "pano komsierat ocas cereus"
+   ]
+  ],
+  [
+   "klam",
+   18,
+   [
+    "is"
+   ],
+   [
+    "abam voco klam acquitiulas",
+    "opperi piko klam thuastris"
+   ]
+  ],
+  [
+   "manda",
+   18,
+   [
+    "ru"
+   ],
+   [
+    "federent cigata komandam asti",
+    "cenaciebon iunius komandam"
+   ]
+  ],
+  [
+   "galo",
+   18,
+   [
+    "gl",
+    "pt"
+   ],
+   [
+    "taktita reigis lusocesa galo",
+    "torcaj brodalae galo vejn"
+   ]
+  ],
+  [
+   "mater",
+   17,
+   [
+    "sl"
+   ],
+   [
+    "elue reta pluigas materirajo",
+    "gargos formaterinon marisso"
+   ]
+  ],
+  [
+   "muna",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "ordojn muna suldigis gaudas",
+    "jusa muna nomo tropinmeto"
+   ]
+  ],
+  [
+   "tissi",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "bollacium froton austissimo",
+    "logespus gente bokstissico"
+   ]
+  ],
+  [
+   "nudo",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "nudo busi demus vigifectio",
+    "tambutus lobigigebat nudo"
+   ]
+  ],
+  [
+   "curat",
+   15,
+   [
+    "cs"
+   ],
+   [
+    "occuratam natationis kuma povo",
+    "scurata topopuderat inauro"
+   ]
+  ],
+  [
+   "hure",
+   15,
+   [
+    "de"
+   ],
+   [
+    "apuddaenia hure nonaskeo",
+    "hure nautlega celo marcant"
+   ]
+  ],
+  [
+   "bobo",
+   14,
+   [
+    "fil"
+   ],
+   [
+    "caeccanum bobo chestia obeo",
+    "percinationem sasa mirationis bobo"
+   ]
+  ],
+  [
+   "flens",
+   14,
+   [
+    "id",
+    "nl"
+   ],
+   [
+    "flens agamsiae spimatoligis",
+    "pako socogagian sesa flens"
+   ]
+  ],
+  [
+   "pico",
+   14,
+   [
+    "eo"
+   ],
+   [
+    "manor inam matroicentan pico",
+    "poludelo sobrum pico kuon"
+   ]
+  ],
+  [
+   "marica",
+   14,
+   [
+    "es"
+   ],
+   [
+    "cielon auon marica asmisere",
+    "marica tuam duso debearmujo"
+   ]
+  ]
+ ],
+ "samples": [
+  "lettan emia huaj jugoedojn",
+  "proas daconi pertinatus lezitu",
+  "unuarum impotiae aueroj vadum",
+  "tron ronacias diem hororo",
+  "duciebarum gakomunitus mota",
+  "marittadeno talo iuvatoda",
+  "lumiraciam mokaneis heia",
+  "hucillus voras alkuro konon",
+  "katum robimigas vallinaesis",
+  "praeus formutoj palares therus",
+  "moduti bildsito ekigis malis",
+  "dabazama kais delentactus"
+ ],
+ "seconds": 8.5,
+ "languages": [
+  "eo",
+  "la"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

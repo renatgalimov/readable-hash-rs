@@ -1,0 +1,265 @@
+{
+ "name": "sco",
+ "corpus_words": 44573,
+ "relaxed_rows": 8,
+ "relaxed_examples": [
+  "ex",
+  "qu",
+  "ow",
+  "ow",
+  "iz",
+  "aw",
+  "oy",
+  "tc"
+ ],
+ "segmented_words": 26571,
+ "skipped_words": 18002,
+ "middle_attested_fraction": 0.455078125,
+ "end32_attested_fraction": 0.3739827473958333,
+ "end16_attested_fraction": 0.6033528645833334,
+ "begin_attested": 128,
+ "chars": 25.88,
+ "max_chars": 33,
+ "consonant_runs_pct": 11.54,
+ "vowel_runs_pct": 2.367,
+ "english_words_pct": 3.831,
+ "own_words_pct": 25.693,
+ "offensive_whole_pct": 2.905,
+ "offensive_whole_english_list_pct": 0.49,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.44,
+ "offensive_severe_en_pct": 0.25,
+ "offensive_inside5_pct": 2.59,
+ "offensive_inside4_pct": 18.72,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "bits",
+   23,
+   [
+    "mr"
+   ],
+   [
+    "bits appovit erer armolory",
+    "sereignes bits abutin thee"
+   ]
+  ],
+  [
+   "nian",
+   21,
+   [
+    "zh"
+   ],
+   [
+    "goat nian enrigifest dios",
+    "bues appodatit afirsence nian"
+   ]
+  ],
+  [
+   "rass",
+   19,
+   [
+    "is"
+   ],
+   [
+    "herodits curten rass unam",
+    "diagerrit pina wikies rass"
+   ]
+  ],
+  [
+   "clit",
+   18,
+   [
+    "en"
+   ],
+   [
+    "muricuar sapomanely clit",
+    "erskaiaran rete tros clit"
+   ]
+  ],
+  [
+   "pula",
+   17,
+   [
+    "ro"
+   ],
+   [
+    "teal auly pula chapoleein",
+    "lain geninfan pula trokha"
+   ]
+  ],
+  [
+   "fuck",
+   17,
+   [
+    "cy",
+    "da",
+    "en",
+    "gd",
+    "mn",
+    "ms",
+    "mt",
+    "no",
+    "zu"
+   ],
+   [
+    "phion whitueed durada fuck",
+    "fuck dinin meshment pretorouned"
+   ]
+  ],
+  [
+   "rong",
+   17,
+   [
+    "th"
+   ],
+   [
+    "bidit parahaun rong meried",
+    "rong scenistan exly revely"
+   ]
+  ],
+  [
+   "shit",
+   17,
+   [
+    "da",
+    "en",
+    "gd",
+    "hy",
+    "mt",
+    "my",
+    "nl",
+    "no",
+    "sk",
+    "uz",
+    "zu"
+   ],
+   [
+    "shit guen tremio tihachia",
+    "tenely galets impidae shit"
+   ]
+  ],
+  [
+   "cono",
+   17,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "cono fral keegunas narros",
+    "sorter fusirales heit cono"
+   ]
+  ],
+  [
+   "pico",
+   16,
+   [
+    "eo"
+   ],
+   [
+    "abrachal vicarporus pico",
+    "gild fadit tolmincation pico"
+   ]
+  ],
+  [
+   "trio",
+   16,
+   [
+    "es"
+   ],
+   [
+    "mukaans maly trio amazikha",
+    "pollas plulum dolion trio"
+   ]
+  ],
+  [
+   "muda",
+   16,
+   [
+    "ru"
+   ],
+   [
+    "muda gars geer anatidward",
+    "muda cier hoang fenivaigner"
+   ]
+  ],
+  [
+   "anus",
+   16,
+   [
+    "be",
+    "bg",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "eu",
+    "fa",
+    "fr",
+    "gd",
+    "is",
+    "mk",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sl",
+    "sq",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "sparched nong frames anus",
+    "diarshkitic keane unie anus"
+   ]
+  ],
+  [
+   "dust",
+   16,
+   [
+    "hi"
+   ],
+   [
+    "abas dust livigamies rime",
+    "refeboons dust shallounfish"
+   ]
+  ],
+  [
+   "fena",
+   15,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "ballas courable spachin fena",
+    "feaspied fena selace alive"
+   ]
+  ]
+ ],
+ "samples": [
+  "nevard cily sked eslivity",
+  "seto googous poishin nehern",
+  "jarvara binyit gamade teon",
+  "wies kievetion cola pitced",
+  "dagelmum clivairgin waed",
+  "plunoradle aution astonvar",
+  "locarnilatit wadepura ries",
+  "skaustic atal stirit soter",
+  "meic kilmoved tenavenute",
+  "emna engatin samaya israda",
+  "warich photstal toen deed",
+  "gossforo meza masterappen"
+ ],
+ "seconds": 8.2,
+ "languages": [
+  "sco"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

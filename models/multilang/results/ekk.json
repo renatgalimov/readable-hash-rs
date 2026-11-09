@@ -1,0 +1,258 @@
+{
+ "name": "ekk",
+ "corpus_words": 80000,
+ "relaxed_rows": 44,
+ "relaxed_examples": [
+  "wo",
+  "cu",
+  "uj",
+  "ex",
+  "qu",
+  "dz",
+  "yo",
+  "zo",
+  "ji",
+  "mc",
+  "kh",
+  "sy"
+ ],
+ "segmented_words": 56042,
+ "skipped_words": 23958,
+ "middle_attested_fraction": 0.5101318359375,
+ "end32_attested_fraction": 0.3552652994791667,
+ "end16_attested_fraction": 0.5667317708333334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.6,
+ "max_chars": 37,
+ "consonant_runs_pct": 5.765,
+ "vowel_runs_pct": 3.98,
+ "english_words_pct": 1.266,
+ "own_words_pct": 20.08,
+ "offensive_whole_pct": 3.055,
+ "offensive_whole_english_list_pct": 0.265,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.175,
+ "offensive_severe_en_pct": 0.09,
+ "offensive_inside5_pct": 3.465,
+ "offensive_inside4_pct": 24.27,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "orina",
+   43,
+   [
+    "es"
+   ],
+   [
+    "ehas emsi nanotorina pistri",
+    "rentel koorina bida birmise"
+   ]
+  ],
+  [
+   "idest",
+   41,
+   [
+    "la"
+   ],
+   [
+    "nuhtupolidest gria dous sues",
+    "keki lemmolli peidest vati"
+   ]
+  ],
+  [
+   "kusse",
+   29,
+   [
+    "da"
+   ],
+   [
+    "emetuse coia mihakusse moes",
+    "mael burjalike rikusse lati"
+   ]
+  ],
+  [
+   "tsust",
+   27,
+   [
+    "mn"
+   ],
+   [
+    "ohuvaiga butsust tommuuruni",
+    "arhetsust siitama idne mesa"
+   ]
+  ],
+  [
+   "pina",
+   25,
+   [
+    "hu"
+   ],
+   [
+    "kliga teaverimenad amle pina",
+    "pina liikel emolis kirguga"
+   ]
+  ],
+  [
+   "mama",
+   24,
+   [
+    "pt"
+   ],
+   [
+    "mama tasemakuks taktiga pult",
+    "mama trapinnosaga chieutamine"
+   ]
+  ],
+  [
+   "randi",
+   23,
+   [
+    "hi"
+   ],
+   [
+    "hittida idrandit suusikad",
+    "adis kiiead aberandid iget"
+   ]
+  ],
+  [
+   "sulin",
+   22,
+   [
+    "cs"
+   ],
+   [
+    "laskset otsuline etis uktuste",
+    "ulistrega mitmas joulsuline"
+   ]
+  ],
+  [
+   "hora",
+   22,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "ukal geotajaliitu ekis hora",
+    "hora doulises fuuga frumooda"
+   ]
+  ],
+  [
+   "anaal",
+   20,
+   [
+    "nl"
+   ],
+   [
+    "huad tanaalsoja nose rohi",
+    "aigutoad opimanaali rude"
+   ]
+  ],
+  [
+   "asna",
+   18,
+   [
+    "is"
+   ],
+   [
+    "idis mujaeelutada asna song",
+    "ohraga otlane asna omatajad"
+   ]
+  ],
+  [
+   "anus",
+   18,
+   [
+    "be",
+    "bg",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "eu",
+    "fa",
+    "fr",
+    "gd",
+    "is",
+    "mk",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sl",
+    "sq",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "hakkudel anus neegiga rami",
+    "anus reed chimupalal lisi"
+   ]
+  ],
+  [
+   "dain",
+   18,
+   [
+    "ml"
+   ],
+   [
+    "caetri abtimede dain mona",
+    "hune dimendisikaks enad dain"
+   ]
+  ],
+  [
+   "lust",
+   17,
+   [
+    "cy",
+    "de",
+    "en",
+    "eu",
+    "gd",
+    "is",
+    "mt",
+    "nl"
+   ],
+   [
+    "lust okkodeen loendamise geri",
+    "lust ohna auus ekvapamade"
+   ]
+  ],
+  [
+   "bile",
+   17,
+   [
+    "ro"
+   ],
+   [
+    "teoskuus foti nuestuses bile",
+    "limastavad bile libias kihtis"
+   ]
+  ]
+ ],
+ "samples": [
+  "oprakud fuli boni imbulandi",
+  "tala titamisel soolega oplumise",
+  "ehteini oraalaja ingrel viad",
+  "noid edemilisele koja luliks",
+  "ajupiirri omorumnemise reid",
+  "tsenttunnine neda gradaoda",
+  "autoloollub reimkonda doks",
+  "boledade plud seitside pult",
+  "rari edvildud viindarvet",
+  "aiale juhela kunstilise damida",
+  "reneid spetmena esata kaid",
+  "tigupolt rait magiooskast"
+ ],
+ "seconds": 10.7,
+ "languages": [
+  "ekk"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

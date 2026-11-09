@@ -1,0 +1,233 @@
+{
+ "name": "scn",
+ "corpus_words": 22041,
+ "relaxed_rows": 77,
+ "relaxed_examples": [
+  "jo",
+  "je",
+  "ho",
+  "ka",
+  "sb",
+  "wa",
+  "ki",
+  "wi",
+  "gh",
+  "ke",
+  "az",
+  "we"
+ ],
+ "segmented_words": 16945,
+ "skipped_words": 5096,
+ "middle_attested_fraction": 0.240234375,
+ "end32_attested_fraction": 0.2653401692708333,
+ "end16_attested_fraction": 0.44482421875,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.98,
+ "max_chars": 39,
+ "consonant_runs_pct": 5.351,
+ "vowel_runs_pct": 1.472,
+ "english_words_pct": 1.368,
+ "own_words_pct": 17.685,
+ "offensive_whole_pct": 1.695,
+ "offensive_whole_english_list_pct": 0.065,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.16,
+ "offensive_severe_en_pct": 0.045,
+ "offensive_inside5_pct": 4.205,
+ "offensive_inside4_pct": 29.295,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "samen",
+   111,
+   [
+    "de"
+   ],
+   [
+    "brisamenti sfedecari clupuvili",
+    "apistuvaru tarmenti havutrisamenti"
+   ]
+  ],
+  [
+   "ecchi",
+   39,
+   [
+    "en"
+   ],
+   [
+    "laicu rummon pliustanti ecchi",
+    "precchi uttesiru mprofita"
+   ]
+  ],
+  [
+   "cazzi",
+   31,
+   [
+    "it"
+   ],
+   [
+    "abostu idiocazzioni motu leva",
+    "cazzioni frana ntucifircara unta"
+   ]
+  ],
+  [
+   "zamen",
+   24,
+   [
+    "ja"
+   ],
+   [
+    "nzamenti juncatu possiva streru",
+    "navinnenza nzamenti geri papira"
+   ]
+  ],
+  [
+   "irata",
+   22,
+   [
+    "la"
+   ],
+   [
+    "burmettunu tichinzirata rene",
+    "pristima nvirata luti boli"
+   ]
+  ],
+  [
+   "anita",
+   21,
+   [
+    "nl"
+   ],
+   [
+    "sponnesi sanitati meti biru",
+    "leatu isosciri tisordanita"
+   ]
+  ],
+  [
+   "fitta",
+   21,
+   [
+    "sv"
+   ],
+   [
+    "usulini nfidilamenti upali fitta",
+    "enata auredi fitta ididimii"
+   ]
+  ],
+  [
+   "puta",
+   21,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "jarnaccu puta napisci gitu",
+    "caruviari nnigreluenti puta"
+   ]
+  ],
+  [
+   "cena",
+   21,
+   [
+    "zh"
+   ],
+   [
+    "piangetti cena suntu sinniri",
+    "chati scra cena larvisunia"
+   ]
+  ],
+  [
+   "chati",
+   21,
+   [
+    "te"
+   ],
+   [
+    "chati scra cena larvisunia",
+    "idari manza iserarchati agatu"
+   ]
+  ],
+  [
+   "mutta",
+   19,
+   [
+    "sv"
+   ],
+   [
+    "numutta plari doru urnarmati",
+    "pelli mellini urmutta emesimi"
+   ]
+  ],
+  [
+   "muca",
+   19,
+   [
+    "lv",
+    "sl"
+   ],
+   [
+    "induncru orientatu muca fazzioni",
+    "coscreti tettu atilatu muca"
+   ]
+  ],
+  [
+   "pico",
+   18,
+   [
+    "eo"
+   ],
+   [
+    "acutu mitalaterni dioni pico",
+    "nemugnaduna pico svuni vata"
+   ]
+  ],
+  [
+   "piru",
+   18,
+   [
+    "fi"
+   ],
+   [
+    "rotta etismusa piru elusita",
+    "pupantu aini piru difileti"
+   ]
+  ],
+  [
+   "pussi",
+   17,
+   [
+    "sr",
+    "te"
+   ],
+   [
+    "plita jinnari pussile ntatti",
+    "asatu neati ainciu pussinciri"
+   ]
+  ]
+ ],
+ "samples": [
+  "ruscenza nzaru erettu toncrenti",
+  "cairu lecini cittinu rufiari",
+  "jautto agreddu chritanti quiti",
+  "atri burmunari ritta tessicu",
+  "juccasticu brudonunatu sanu",
+  "clietridici isci guandinati",
+  "apprispreri sassuvari dosa",
+  "erfiggicu unia purgia nudi",
+  "suru bunzarazza quacrepiru",
+  "utiu latizza passili uppici",
+  "sansava svorcumenti moru diari",
+  "lescaggusi suoni propicutatu"
+ ],
+ "seconds": 9.4,
+ "languages": [
+  "scn"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

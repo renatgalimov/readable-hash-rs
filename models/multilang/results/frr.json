@@ -1,0 +1,248 @@
+{
+ "name": "frr",
+ "corpus_words": 7126,
+ "relaxed_rows": 196,
+ "relaxed_examples": [
+  "fo",
+  "hu",
+  "sp",
+  "su",
+  "da",
+  "ju",
+  "lu",
+  "ja",
+  "nu",
+  "du",
+  "ap",
+  "mu"
+ ],
+ "segmented_words": 4837,
+ "skipped_words": 2289,
+ "middle_attested_fraction": 0.10176595052083333,
+ "end32_attested_fraction": 0.12080891927083333,
+ "end16_attested_fraction": 0.23868815104166666,
+ "begin_attested": 128,
+ "chars": 27.24,
+ "max_chars": 37,
+ "consonant_runs_pct": 22.601,
+ "vowel_runs_pct": 3.509,
+ "english_words_pct": 2.685,
+ "own_words_pct": 13.495,
+ "offensive_whole_pct": 2.47,
+ "offensive_whole_english_list_pct": 0.6,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.08,
+ "offensive_severe_en_pct": 0.27,
+ "offensive_inside5_pct": 2.97,
+ "offensive_inside4_pct": 18.0,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "ische",
+   93,
+   [
+    "de"
+   ],
+   [
+    "ruken oomische peleesen gunstair",
+    "kasch plamaagin alapiisches"
+   ]
+  ],
+  [
+   "mater",
+   45,
+   [
+    "sl"
+   ],
+   [
+    "stat friessen just jatjmater",
+    "baasaankaren frimater delosen"
+   ]
+  ],
+  [
+   "choot",
+   33,
+   [
+    "hi"
+   ],
+   [
+    "heest chootechwiden alon smak",
+    "tjurwen doin uastet chooteriar"
+   ]
+  ],
+  [
+   "kanen",
+   30,
+   [
+    "nl"
+   ],
+   [
+    "weegoogcht meten iinfali kanen",
+    "riten uurkaal bonkakrt kanen"
+   ]
+  ],
+  [
+   "sait",
+   21,
+   [
+    "kn"
+   ],
+   [
+    "fain jauuteest sait engair",
+    "johambechig sait twransor"
+   ]
+  ],
+  [
+   "paal",
+   21,
+   [
+    "nl"
+   ],
+   [
+    "paal weruuchrt orst goesal",
+    "flwitjakal lamiljter paal"
+   ]
+  ],
+  [
+   "mong",
+   21,
+   [
+    "en",
+    "vi"
+   ],
+   [
+    "aplikt uteetopal buum mong",
+    "fiir diipuurd mong sirian"
+   ]
+  ],
+  [
+   "nicht",
+   20,
+   [
+    "nl"
+   ],
+   [
+    "nicht boor oopalindon airen",
+    "tjbetschaal wuberbunen nicht"
+   ]
+  ],
+  [
+   "peter",
+   20,
+   [
+    "fr"
+   ],
+   [
+    "uunden ampeter loodin gediter",
+    "ouniiwaat omuuret tult peter"
+   ]
+  ],
+  [
+   "hoor",
+   19,
+   [
+    "et"
+   ],
+   [
+    "daanakent poolteenate hoor",
+    "lial schti luanakwest hoor"
+   ]
+  ],
+  [
+   "folle",
+   18,
+   [
+    "fr"
+   ],
+   [
+    "folleematen mermon droogron",
+    "chaakwial amet wutsden follen"
+   ]
+  ],
+  [
+   "anal",
+   17,
+   [
+    "ca",
+    "cy",
+    "da",
+    "de",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fr",
+    "gd",
+    "gl",
+    "hy",
+    "id",
+    "pt",
+    "ro",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "tr",
+    "uz",
+    "zu"
+   ],
+   [
+    "husjninger anal unkasen haal",
+    "anal raden lerkopbert anten"
+   ]
+  ],
+  [
+   "skeet",
+   17,
+   [
+    "en"
+   ],
+   [
+    "folten ferjekt foont skeetsjocht",
+    "binana trodcht skeetsjsiik"
+   ]
+  ],
+  [
+   "lort",
+   17,
+   [
+    "da"
+   ],
+   [
+    "lort wuten blutem tjtatart",
+    "iinkanen tolood goolen lort"
+   ]
+  ],
+  [
+   "maal",
+   16,
+   [
+    "hi"
+   ],
+   [
+    "jinjkrugnt maal skeesleeme",
+    "aton maal guaakser witsei"
+   ]
+  ]
+ ],
+ "samples": [
+  "trotem uunis knap foorolais",
+  "ferken raawin lenski trupden",
+  "anooker ponher tohaalen iingen",
+  "grun klandlike fornen krumten",
+  "amooroor gaidtswaal aart",
+  "slualpsial iask schteesiari",
+  "detsjotsder aarmeewsk frader",
+  "knranisk woen ditjst bring",
+  "skum klanerming iintoomiimten",
+  "join kolaad sansem chaansen",
+  "aamanen eefttsrt iner benen",
+  "raurwaner skoor biljrimast"
+ ],
+ "seconds": 8.3,
+ "languages": [
+  "frr"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

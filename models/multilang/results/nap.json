@@ -1,0 +1,228 @@
+{
+ "name": "nap",
+ "corpus_words": 11249,
+ "relaxed_rows": 104,
+ "relaxed_examples": [
+  "ka",
+  "sf",
+  "fl",
+  "vu",
+  "sh",
+  "ho",
+  "eu",
+  "az",
+  "je",
+  "jo",
+  "sb",
+  "uf"
+ ],
+ "segmented_words": 8955,
+ "skipped_words": 2294,
+ "middle_attested_fraction": 0.1517333984375,
+ "end32_attested_fraction": 0.17252604166666666,
+ "end16_attested_fraction": 0.3059895833333333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 29.24,
+ "max_chars": 40,
+ "consonant_runs_pct": 6.906,
+ "vowel_runs_pct": 0.459,
+ "english_words_pct": 4.038,
+ "own_words_pct": 10.732,
+ "offensive_whole_pct": 2.39,
+ "offensive_whole_english_list_pct": 0.145,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.74,
+ "offensive_severe_en_pct": 0.17,
+ "offensive_inside5_pct": 5.69,
+ "offensive_inside4_pct": 28.43,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "samen",
+   226,
+   [
+    "de"
+   ],
+   [
+    "runne ciprine flessamende nfallassemo",
+    "cervessamende duale fete iaconne"
+   ]
+  ],
+  [
+   "ische",
+   52,
+   [
+    "de"
+   ],
+   [
+    "patrolta fiate mirie oprische",
+    "lece ternevere brembrische"
+   ]
+  ],
+  [
+   "zamen",
+   51,
+   [
+    "ja"
+   ],
+   [
+    "crazzamende guacane essa nummita",
+    "carne mmondosprene nzamende oramende"
+   ]
+  ],
+  [
+   "anale",
+   48,
+   [
+    "it"
+   ],
+   [
+    "uergate nitte istuscene anale",
+    "fussille flusarrissevo anale biate"
+   ]
+  ],
+  [
+   "ecchi",
+   48,
+   [
+    "en"
+   ],
+   [
+    "sibecchione tambione spande fece",
+    "opinde dammacendenze devecchita"
+   ]
+  ],
+  [
+   "tette",
+   33,
+   [
+    "it"
+   ],
+   [
+    "fongalate tette jarivente dote",
+    "rungere tette sofignete leme"
+   ]
+  ],
+  [
+   "tatte",
+   29,
+   [
+    "hi"
+   ],
+   [
+    "abane fromuttusione bite tatte",
+    "ospocuenze dambile grafetatte"
+   ]
+  ],
+  [
+   "fitte",
+   26,
+   [
+    "no"
+   ],
+   [
+    "elusivane sinfitte nuate buele",
+    "bese cemise fitte imbultre"
+   ]
+  ],
+  [
+   "stiche",
+   25,
+   [
+    "de"
+   ],
+   [
+    "sumana ascucchita mbizstiche",
+    "zerdamante clite candate esistiche"
+   ]
+  ],
+  [
+   "sere",
+   23,
+   [
+    "hr",
+    "sk"
+   ],
+   [
+    "vinganelle ndazione valustre sere",
+    "sere osce sindere apisedene"
+   ]
+  ],
+  [
+   "cena",
+   21,
+   [
+    "zh"
+   ],
+   [
+    "cena amave scupesciate sontavano",
+    "sepapuse cena mbellave lime"
+   ]
+  ],
+  [
+   "bitte",
+   20,
+   [
+    "fr"
+   ],
+   [
+    "calembitte ncallusidenze afete",
+    "bitte edia aputtevimeche dunate"
+   ]
+  ],
+  [
+   "chani",
+   20,
+   [
+    "zh"
+   ],
+   [
+    "lame chaniniale faminale sume",
+    "solise piovazione muro chanita"
+   ]
+  ],
+  [
+   "sise",
+   20,
+   [
+    "hr"
+   ],
+   [
+    "everisteche nvedigine sise ciale",
+    "biere stete jassarnopete sise"
+   ]
+  ],
+  [
+   "gasti",
+   20,
+   [
+    "hi"
+   ],
+   [
+    "muttusita gastiesie diverane",
+    "biosiuzione gastiale vegge frie"
+   ]
+  ]
+ ],
+ "samples": [
+  "aummastevo ecave uete nfrivosine",
+  "reche bionende piatteche aundano",
+  "erogse forgie vedule alia",
+  "ndese elessaseve scazione atense",
+  "lacittante tosartesce vine",
+  "sfumersimeno loste negangamende",
+  "luttespuele vintuttave isite",
+  "uenurmazione afende strine citte",
+  "pavane eliverisce alcuntisiune",
+  "nuene apriane accete nnasta",
+  "viggiarene gallosale ande cande",
+  "bilimiette paine prugnurosi"
+ ],
+ "seconds": 9.4,
+ "languages": [
+  "nap"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

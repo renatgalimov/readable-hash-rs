@@ -1,0 +1,234 @@
+{
+ "name": "zu-block",
+ "corpus_words": 80000,
+ "relaxed_rows": 12,
+ "relaxed_examples": [
+  "ex",
+  "ux",
+  "ix",
+  "ax",
+  "ii",
+  "ua",
+  "fl",
+  "ru",
+  "au",
+  "cu",
+  "nu",
+  "ox"
+ ],
+ "banned_pairs": 2377,
+ "segmented_words": 63118,
+ "skipped_words": 16882,
+ "middle_attested_fraction": 0.4649251302083333,
+ "end32_attested_fraction": 0.3300374348958333,
+ "end16_attested_fraction": 0.5501302083333334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "three_token_rounds": [
+  548,
+  324,
+  179,
+  95
+ ],
+ "chars": 28.76,
+ "max_chars": 36,
+ "consonant_runs_pct": 6.686,
+ "vowel_runs_pct": 10.689,
+ "english_words_pct": 0.498,
+ "own_words_pct": 19.022,
+ "offensive_whole_pct": 0.535,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 1.26,
+ "offensive_inside4_pct": 19.35,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "hlang",
+   50,
+   [
+    "th"
+   ],
+   [
+    "iheli utomfani basayehlanga",
+    "sibe ighlanga abadile isonde"
+   ]
+  ],
+  [
+   "ezeli",
+   26,
+   [
+    "lv"
+   ],
+   [
+    "yaze ikunqalwa thela ubezeli",
+    "athlouthena kandezeli khwebe"
+   ]
+  ],
+  [
+   "olla",
+   17,
+   [
+    "sv"
+   ],
+   [
+    "ihubhikumbi olla ihambuzani",
+    "iqhwini olla upula linazayo"
+   ]
+  ],
+  [
+   "kale",
+   17,
+   [
+    "lt"
+   ],
+   [
+    "kale amanqeshwa emisani ilela",
+    "kale udiziswasele eyayo emka"
+   ]
+  ],
+  [
+   "nomo",
+   16,
+   [
+    "ko"
+   ],
+   [
+    "ebhozi nomo afafoni maselo",
+    "uthabhale wewe nomo ungoka"
+   ]
+  ],
+  [
+   "pheni",
+   16,
+   [
+    "mr"
+   ],
+   [
+    "wentimipheni lawe zozimpile",
+    "kwipheni edudedishwe njabule"
+   ]
+  ],
+  [
+   "long",
+   16,
+   [
+    "vi"
+   ],
+   [
+    "siqoshe zenkesine long zoke",
+    "long ikukene buye wezinyama"
+   ]
+  ],
+  [
+   "usne",
+   15,
+   [
+    "hr"
+   ],
+   [
+    "usne athuka ediwe ilobumulo",
+    "kunelisa utunzimela usne egini"
+   ]
+  ],
+  [
+   "seme",
+   14,
+   [
+    "sl"
+   ],
+   [
+    "seme sena uqhathasosha ekayo",
+    "egeni ecekonkathi seme ngwane"
+   ]
+  ],
+  [
+   "simel",
+   13,
+   [
+    "te"
+   ],
+   [
+    "eyabhande sesimelela utasha",
+    "ecuka abasimele uqhathelwe ekelo"
+   ]
+  ],
+  [
+   "semel",
+   13,
+   [
+    "kn"
+   ],
+   [
+    "zasemelelwa nkabane epelwe ebiwe",
+    "aziwe zisemelele lowe zaleke"
+   ]
+  ],
+  [
+   "tanga",
+   13,
+   [
+    "fil"
+   ],
+   [
+    "wosuze avuka epetanga khonde",
+    "uqiwe adeni entanga emfusheli"
+   ]
+  ],
+  [
+   "buzi",
+   11,
+   [
+    "hu"
+   ],
+   [
+    "ukolele buzi zindleni michaka",
+    "buzi iqandlululwa kwayo usebenzisi"
+   ]
+  ],
+  [
+   "khokh",
+   9,
+   [
+    "mn"
+   ],
+   [
+    "etugela izifakhokhu mobuye",
+    "bephiya ningikhokhwe behlwe"
+   ]
+  ],
+  [
+   "ashol",
+   8,
+   [
+    "kn"
+   ],
+   [
+    "yesasholo ovele ngazi ubabwe",
+    "ngamasholo wuho osaphazwindla"
+   ]
+  ]
+ ],
+ "samples": [
+  "iyakuwo iqiwe moto avuyolele",
+  "ukeka aholweni lisando iyafeka",
+  "ecalthi nikeli amtshwe njelwa",
+  "onisa edelungwane bake imvumi",
+  "eposipalo ihibhiqina akwa",
+  "egudaliphiza iloli ozodingelela",
+  "ayisikhoheli akamleyo eqiswa",
+  "mosahluke khiwe zivulwa kana",
+  "okene eduzukana njikaluqisa",
+  "igisa yaloli esiyeke nkwaya",
+  "akuphekile oyinesiye mane kuwe",
+  "ahezeselwe okiswa abaqwathoma"
+ ],
+ "seconds": 340.9,
+ "languages": [
+  "zu"
+ ],
+ "no_english": false,
+ "blocklist": true
+}

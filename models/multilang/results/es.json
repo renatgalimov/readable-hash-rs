@@ -1,0 +1,227 @@
+{
+ "name": "es",
+ "corpus_words": 80000,
+ "relaxed_rows": 41,
+ "relaxed_examples": [
+  "mc",
+  "eq",
+  "vu",
+  "sw",
+  "ly",
+  "my",
+  "tw",
+  "cy",
+  "hy",
+  "kh",
+  "ox",
+  "sy"
+ ],
+ "segmented_words": 55150,
+ "skipped_words": 24850,
+ "middle_attested_fraction": 0.3927815755208333,
+ "end32_attested_fraction": 0.418212890625,
+ "end16_attested_fraction": 0.6368001302083334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.73,
+ "max_chars": 37,
+ "consonant_runs_pct": 5.046,
+ "vowel_runs_pct": 1.663,
+ "english_words_pct": 2.0,
+ "own_words_pct": 27.885,
+ "offensive_whole_pct": 3.01,
+ "offensive_whole_english_list_pct": 0.205,
+ "offensive_whole_own_list_pct": 0.32,
+ "offensive_whole_major_lists_pct": 1.74,
+ "offensive_severe_en_pct": 0.225,
+ "offensive_inside5_pct": 2.985,
+ "offensive_inside4_pct": 22.41,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "samen",
+   44,
+   [
+    "de"
+   ],
+   [
+    "cercoresta note nuternosamente",
+    "edamos abredansamente avara agle"
+   ]
+  ],
+  [
+   "anita",
+   25,
+   [
+    "nl"
+   ],
+   [
+    "drastado aficeton goes anita",
+    "afla goldemazer anita dedo"
+   ]
+  ],
+  [
+   "dran",
+   20,
+   [
+    "pl"
+   ],
+   [
+    "papesais cielfilena dran",
+    "glutnerte dran ensaprotacion"
+   ]
+  ],
+  [
+   "mesa",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "morbecido mesa ganacion vois",
+    "clada cheedialas mesa ofamos"
+   ]
+  ],
+  [
+   "nima",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "nima unido bostese lanzvias",
+    "offellan anhescopio nima"
+   ]
+  ],
+  [
+   "name",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "amos costmomire hide name",
+    "noquelisera kido name pena"
+   ]
+  ],
+  [
+   "apara",
+   16,
+   [
+    "fi"
+   ],
+   [
+    "rapapara cies nuck edoria",
+    "guiapararia vicete uscholar"
+   ]
+  ],
+  [
+   "flis",
+   16,
+   [
+    "da"
+   ],
+   [
+    "notiva eras flis vanivery",
+    "flis eligotes laboractable"
+   ]
+  ],
+  [
+   "poon",
+   16,
+   [
+    "en"
+   ],
+   [
+    "poon cautcoba kite jackie",
+    "poon fate estruirse guadura"
+   ]
+  ],
+  [
+   "cocos",
+   15,
+   [
+    "ro"
+   ],
+   [
+    "procolcocos chad usquagamos",
+    "anse fuistas feer chuncocos"
+   ]
+  ],
+  [
+   "trio",
+   15,
+   [
+    "es"
+   ],
+   [
+    "trio joelorcionate milo nato",
+    "unicacion ahes trio fachives"
+   ]
+  ],
+  [
+   "saco",
+   15,
+   [
+    "pt"
+   ],
+   [
+    "disocuencia huimos amorando saco",
+    "jule saco cean atarerocres"
+   ]
+  ],
+  [
+   "molo",
+   15,
+   [
+    "fi"
+   ],
+   [
+    "molo hian amiarlo intervencion",
+    "harbeles molo repere adina"
+   ]
+  ],
+  [
+   "hoer",
+   14,
+   [
+    "nl"
+   ],
+   [
+    "ardito hoer armaeramos rago",
+    "lloren hoer refrescor grio"
+   ]
+  ],
+  [
+   "mama",
+   14,
+   [
+    "pt"
+   ],
+   [
+    "flactigerlo mama numpadero",
+    "aturoteial mama duplation"
+   ]
+  ]
+ ],
+ "samples": [
+  "putrero lura ayar unnstarme",
+  "cala fenoro monicion purdico",
+  "stefio orfase cubana ababa",
+  "gramos avagulacion reme levine",
+  "brigilera plultualas veas",
+  "gomiesupemos aunos gelaudimos",
+  "crealiquacion veanalidad octe",
+  "ayoggamos afra apasen quen",
+  "dick avenducido abrodetaria",
+  "evon ladrada escuencia usalito",
+  "venacion duplumieron fane dear",
+  "feldegame dimos infestodle"
+ ],
+ "seconds": 10.4,
+ "languages": [
+  "es"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

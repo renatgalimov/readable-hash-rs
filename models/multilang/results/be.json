@@ -1,0 +1,232 @@
+{
+ "name": "be",
+ "corpus_words": 80000,
+ "relaxed_rows": 40,
+ "relaxed_examples": [
+  "fo",
+  "ac",
+  "co",
+  "ca",
+  "uc",
+  "uo",
+  "io",
+  "cr",
+  "kp",
+  "wi",
+  "wa",
+  "fy"
+ ],
+ "segmented_words": 56442,
+ "skipped_words": 23558,
+ "middle_attested_fraction": 0.4546305338541667,
+ "end32_attested_fraction": 0.3706461588541667,
+ "end16_attested_fraction": 0.5574544270833334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.82,
+ "max_chars": 39,
+ "consonant_runs_pct": 19.619,
+ "vowel_runs_pct": 12.76,
+ "english_words_pct": 0.259,
+ "own_words_pct": 17.185,
+ "offensive_whole_pct": 2.075,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.18,
+ "offensive_whole_major_lists_pct": 0.855,
+ "offensive_severe_en_pct": 0.07,
+ "offensive_inside5_pct": 2.775,
+ "offensive_inside4_pct": 14.825,
+ "offensive_across_words_pct": 0.025,
+ "top_hits": [
+  [
+   "chali",
+   47,
+   [
+    "el"
+   ],
+   [
+    "pyasenne agulay sluchali amyu",
+    "vachali akraemnuyu naymarski"
+   ]
+  ],
+  [
+   "ganni",
+   36,
+   [
+    "zh"
+   ],
+   [
+    "naroganni upatam ukussiya",
+    "asesnery elganni zdabmena"
+   ]
+  ],
+  [
+   "fiki",
+   21,
+   [
+    "eo"
+   ],
+   [
+    "fiki avakakhavyya vuyu gramau",
+    "pynimatychnykh fiki syau nomy"
+   ]
+  ],
+  [
+   "sadze",
+   20,
+   [
+    "sk"
+   ],
+   [
+    "teziyay gryu bler sadzestki",
+    "sachennya afam sadzennyau spatay"
+   ]
+  ],
+  [
+   "droga",
+   19,
+   [
+    "pt"
+   ],
+   [
+    "droga minniya auty syareznami",
+    "tyragase droga sklyya raki"
+   ]
+  ],
+  [
+   "pula",
+   19,
+   [
+    "ro"
+   ],
+   [
+    "pektytkovyya klala pula inyu",
+    "ellyapnykh baronu pula seam"
+   ]
+  ],
+  [
+   "mama",
+   19,
+   [
+    "pt"
+   ],
+   [
+    "dzvuka svazmena mama puna",
+    "isaekhii ryam mama ellyya"
+   ]
+  ],
+  [
+   "siski",
+   19,
+   [
+    "ru",
+    "uk"
+   ],
+   [
+    "livinska siski zgulyachytsau",
+    "siski adam gurony motousan"
+   ]
+  ],
+  [
+   "puta",
+   18,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "puta padkusya unka dokhgana",
+    "pusparchaga nouvoser puta"
+   ]
+  ],
+  [
+   "pina",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "yula uzbazhnenaya noya pina",
+    "upali pichuchany yarkim pina"
+   ]
+  ],
+  [
+   "sega",
+   17,
+   [
+    "it"
+   ],
+   [
+    "zluyu nozareagavali urka sega",
+    "samu bukovykh sega angliyskaga"
+   ]
+  ],
+  [
+   "piyan",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "piyanislinki tyryyadnym zvaga",
+    "piyanskae giyatsau uplau dushaya"
+   ]
+  ],
+  [
+   "alla",
+   16,
+   [
+    "mt"
+   ],
+   [
+    "khikh sveshklovy azon alla",
+    "alla tarmulina pompodziki"
+   ]
+  ],
+  [
+   "siska",
+   16,
+   [
+    "ru"
+   ],
+   [
+    "butsiskasa uvorzhskaga ulavatstsa",
+    "siskaga mystae dualka krykay"
+   ]
+  ],
+  [
+   "deyu",
+   15,
+   [
+    "ja"
+   ],
+   [
+    "deyu tsvyukatsyi faskve svykh",
+    "mikhnury eliyakh alaga deyu"
+   ]
+  ]
+ ],
+ "samples": [
+  "znutnym glala yuay tulushykh",
+  "zaty azounyya barysava znuchna",
+  "amunki myline gruvanni uzskaga",
+  "fani pimeshka kasya byagskay",
+  "aushshalasya agrortyyskikh miny",
+  "blukladafya ella voynitse",
+  "kinalabldu milynovy gouyu",
+  "yutradychnyya frykh nechanaya zhay",
+  "stvau pirsabam uzgomelenym",
+  "ukli plauku pedavannya utsannya",
+  "mikini dublerskuyu temu proy",
+  "azadnaenne stetstsa naybinapakh"
+ ],
+ "seconds": 10.8,
+ "languages": [
+  "be"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

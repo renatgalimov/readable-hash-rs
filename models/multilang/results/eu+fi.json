@@ -1,0 +1,217 @@
+{
+ "name": "eu+fi",
+ "corpus_words": 77231,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "hy"
+ ],
+ "segmented_words": 55783,
+ "skipped_words": 21448,
+ "middle_attested_fraction": 0.50830078125,
+ "end32_attested_fraction": 0.4297281901041667,
+ "end16_attested_fraction": 0.6608072916666666,
+ "begin_attested": 128,
+ "chars": 27.33,
+ "max_chars": 37,
+ "consonant_runs_pct": 2.796,
+ "vowel_runs_pct": 6.291,
+ "english_words_pct": 0.961,
+ "own_words_pct": 20.202,
+ "offensive_whole_pct": 1.8,
+ "offensive_whole_english_list_pct": 0.01,
+ "offensive_whole_own_list_pct": 0.095,
+ "offensive_whole_major_lists_pct": 0.78,
+ "offensive_severe_en_pct": 0.045,
+ "offensive_inside5_pct": 2.94,
+ "offensive_inside4_pct": 19.365,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "lusta",
+   48,
+   [
+    "sv"
+   ],
+   [
+    "zakillainen trokilulusta kehan",
+    "opta iktosi aurken emulusta"
+   ]
+  ],
+  [
+   "tetta",
+   26,
+   [
+    "it"
+   ],
+   [
+    "satturtettava jousatu ekarien",
+    "ostettava mikaista tuohak lanen"
+   ]
+  ],
+  [
+   "hora",
+   25,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "atta lakundentria ettu hora",
+    "hora tehdimme azotan diboia"
+   ]
+  ],
+  [
+   "pissa",
+   22,
+   [
+    "is"
+   ],
+   [
+    "jokoarekin iksapissa goibalia",
+    "itsapissa miresak ohen tesi"
+   ]
+  ],
+  [
+   "luan",
+   22,
+   [
+    "zh"
+   ],
+   [
+    "kytijoukiko nuntajasi luan",
+    "ahterea luan aualadek nina"
+   ]
+  ],
+  [
+   "tatte",
+   20,
+   [
+    "hi"
+   ],
+   [
+    "espatatte esua nalkatu tuesta",
+    "ruek egukainen unkissa sietatte"
+   ]
+  ],
+  [
+   "bout",
+   20,
+   [
+    "fr"
+   ],
+   [
+    "bout emoteadessa azak egea",
+    "huhuin kyllastin zaien bout"
+   ]
+  ],
+  [
+   "gotu",
+   18,
+   [
+    "tr"
+   ],
+   [
+    "patu huijaiskeak emun gotu",
+    "gotu bono viskasta tutuguko"
+   ]
+  ],
+  [
+   "pesi",
+   18,
+   [
+    "mr"
+   ],
+   [
+    "uretaituko hius gauzarik pesi",
+    "pesi ostibitik ekattarriarekin"
+   ]
+  ],
+  [
+   "esek",
+   17,
+   [
+    "tr"
+   ],
+   [
+    "arvostin oraren esek nuurtu",
+    "esek olinak abit apsedeta"
+   ]
+  ],
+  [
+   "meni",
+   16,
+   [
+    "tr"
+   ],
+   [
+    "amoa batera meni kaskostia",
+    "egulusta meni oheraren enterin"
+   ]
+  ],
+  [
+   "pina",
+   16,
+   [
+    "hu"
+   ],
+   [
+    "jari haseesi pina azkalaan",
+    "seisemista pina mutate nean"
+   ]
+  ],
+  [
+   "pusi",
+   15,
+   [
+    "kn"
+   ],
+   [
+    "toivertzatuta goko pusi inek",
+    "sympat pusi gunnyn eksara"
+   ]
+  ],
+  [
+   "asna",
+   15,
+   [
+    "is"
+   ],
+   [
+    "kaapairaren noek asna garen",
+    "tommalta kodiegea poissa asna"
+   ]
+  ],
+  [
+   "kanen",
+   15,
+   [
+    "nl"
+   ],
+   [
+    "gona fiaa txerosalaren kanen",
+    "veli kanen isratzea edozabei"
+   ]
+  ]
+ ],
+ "samples": [
+  "oneren buek unetan krosiztu",
+  "nalle borota sillissa ontoak",
+  "ylakoak amarrez heroaren aiaa",
+  "ezan tynengin bayn iragako",
+  "augukumme itletxibia leen",
+  "apultoliek syat nikoitzetako",
+  "antzagoiksi lerdagatik giista",
+  "unkingissa abat alaista keak",
+  "arssa tyligara aitayttsio",
+  "doaren zirkan kokotan famansa",
+  "leijilla ederriona zazu jako",
+  "bonezaiko argo paivastrura"
+ ],
+ "seconds": 8.7,
+ "languages": [
+  "eu",
+  "fi"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

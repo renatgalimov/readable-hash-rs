@@ -1,0 +1,245 @@
+{
+ "name": "fil",
+ "corpus_words": 55673,
+ "relaxed_rows": 48,
+ "relaxed_examples": [
+  "ex",
+  "qu",
+  "wo",
+  "aw",
+  "kw",
+  "sw",
+  "mc",
+  "hy",
+  "ev",
+  "av",
+  "cy",
+  "af"
+ ],
+ "segmented_words": 35377,
+ "skipped_words": 20296,
+ "middle_attested_fraction": 0.4673258463541667,
+ "end32_attested_fraction": 0.3502197265625,
+ "end16_attested_fraction": 0.5703938802083334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.02,
+ "max_chars": 33,
+ "consonant_runs_pct": 6.194,
+ "vowel_runs_pct": 5.125,
+ "english_words_pct": 2.005,
+ "own_words_pct": 25.419,
+ "offensive_whole_pct": 2.925,
+ "offensive_whole_english_list_pct": 0.505,
+ "offensive_whole_own_list_pct": 0.005,
+ "offensive_whole_major_lists_pct": 1.385,
+ "offensive_severe_en_pct": 0.215,
+ "offensive_inside5_pct": 2.455,
+ "offensive_inside4_pct": 21.08,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "mesa",
+   22,
+   [
+    "pt"
+   ],
+   [
+    "jora neokimbigan load mesa",
+    "mesa unampa ries juspinig"
+   ]
+  ],
+  [
+   "pico",
+   22,
+   [
+    "eo"
+   ],
+   [
+    "koryo pico gerodugo tricle",
+    "minoon elisment pico peso"
+   ]
+  ],
+  [
+   "giat",
+   21,
+   [
+    "vi"
+   ],
+   [
+    "prid neurback asiada giat",
+    "arles eslagang igamorta giat"
+   ]
+  ],
+  [
+   "asal",
+   18,
+   [
+    "gd"
+   ],
+   [
+    "asal adbodigan mago ibilos",
+    "anastigma guianduring asal"
+   ]
+  ],
+  [
+   "pute",
+   18,
+   [
+    "fr"
+   ],
+   [
+    "plia gracterminasyon pute raya",
+    "diana sakasyon pute hugpayad"
+   ]
+  ],
+  [
+   "tate",
+   18,
+   [
+    "ro"
+   ],
+   [
+    "tsabuhay tate lockar scis",
+    "wakilimpas tiyastal tate"
+   ]
+  ],
+  [
+   "suki",
+   17,
+   [
+    "be",
+    "pl",
+    "ru",
+    "uk"
+   ],
+   [
+    "ambilynehan orkearap suki",
+    "kein suki hokarenta foreng"
+   ]
+  ],
+  [
+   "rong",
+   17,
+   [
+    "th"
+   ],
+   [
+    "amoy lambuwit rong posiko",
+    "huas tsitor aayastika rong"
+   ]
+  ],
+  [
+   "muna",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "nasali timuduling itla muna",
+    "abugol luad kindiraan muna"
+   ]
+  ],
+  [
+   "hani",
+   16,
+   [
+    "is"
+   ],
+   [
+    "chagat hani fiba lamilyano",
+    "nils fedempihan hani plekot"
+   ]
+  ],
+  [
+   "reto",
+   16,
+   [
+    "pt"
+   ],
+   [
+    "reto nepokalain shia sourno",
+    "reto hobo chya jolurirapan"
+   ]
+  ],
+  [
+   "sisa",
+   16,
+   [
+    "hr"
+   ],
+   [
+    "vakululong obunas mare sisa",
+    "bolein selukala trio sisa"
+   ]
+  ],
+  [
+   "dick",
+   16,
+   [
+    "cs",
+    "cy",
+    "da",
+    "en",
+    "eu",
+    "gd",
+    "is",
+    "la",
+    "mt",
+    "nl",
+    "zu"
+   ],
+   [
+    "dick patuon dealhaan auan",
+    "akuripad scer dick rainig"
+   ]
+  ],
+  [
+   "ases",
+   16,
+   [
+    "cy"
+   ],
+   [
+    "ases idos seback ikuwtina",
+    "trupaisa friwenheon ases"
+   ]
+  ],
+  [
+   "crap",
+   15,
+   [
+    "cy",
+    "en",
+    "eu",
+    "gd",
+    "la",
+    "lv"
+   ],
+   [
+    "qunding crap untumbal chot",
+    "lulong crap horrutos vibrero"
+   ]
+  ]
+ ],
+ "samples": [
+  "ekisal rise quito wisiklap",
+  "pilay ilapiko kirili ekabis",
+  "emilad noguhin hansen moal",
+  "asal adbodigan mago ibilos",
+  "rachodli ampothesyon pula",
+  "fibeluwalto apes kratupta",
+  "straligsaan pugakulo unay",
+  "qukabihan enin prepes daing",
+  "bios adstodya modukomone",
+  "vana allian tangke oberson",
+  "puguhang identinaad cheng naing",
+  "iluwkiad bibo katipuiling"
+ ],
+ "seconds": 9.8,
+ "languages": [
+  "fil"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

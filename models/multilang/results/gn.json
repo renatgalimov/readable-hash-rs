@@ -1,0 +1,236 @@
+{
+ "name": "gn",
+ "corpus_words": 10259,
+ "relaxed_rows": 175,
+ "relaxed_examples": [
+  "co",
+  "pu",
+  "jo",
+  "to",
+  "ru",
+  "hi",
+  "ce",
+  "so",
+  "be",
+  "lo",
+  "my",
+  "yg"
+ ],
+ "segmented_words": 7516,
+ "skipped_words": 2743,
+ "middle_attested_fraction": 0.1444091796875,
+ "end32_attested_fraction": 0.15401204427083334,
+ "end16_attested_fraction": 0.2884928385416667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.91,
+ "max_chars": 37,
+ "consonant_runs_pct": 1.832,
+ "vowel_runs_pct": 5.169,
+ "english_words_pct": 0.936,
+ "own_words_pct": 10.147,
+ "offensive_whole_pct": 1.9,
+ "offensive_whole_english_list_pct": 0.19,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.13,
+ "offensive_severe_en_pct": 0.065,
+ "offensive_inside5_pct": 1.87,
+ "offensive_inside4_pct": 18.68,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "bicha",
+   26,
+   [
+    "pt"
+   ],
+   [
+    "isykotinto vera mambichava",
+    "aictajos okonanombicha hose"
+   ]
+  ],
+  [
+   "raeva",
+   25,
+   [
+    "no"
+   ],
+   [
+    "guigui ypyengiraeva dohyepovo",
+    "limbindapome vosiaha ygaraeva"
+   ]
+  ],
+  [
+   "mama",
+   24,
+   [
+    "pt"
+   ],
+   [
+    "humairiva nuna mama mopeva",
+    "viape ysonopivo mama kyahaha"
+   ]
+  ],
+  [
+   "piru",
+   20,
+   [
+    "fi"
+   ],
+   [
+    "ovopekuera upomandu hyipei piru",
+    "amete piru tyanco haimpiti"
+   ]
+  ],
+  [
+   "pipe",
+   20,
+   [
+    "fr"
+   ],
+   [
+    "okehuvo pyepe supoanara pipe",
+    "pipe bona voikuaapuvo hipyveva"
+   ]
+  ],
+  [
+   "pina",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "joajejape ruvictispo pina",
+    "jehara game imombograve pina"
+   ]
+  ],
+  [
+   "trio",
+   19,
+   [
+    "es"
+   ],
+   [
+    "jangastopaite jore trio upyva",
+    "banepytape yvypyi trio dive"
+   ]
+  ],
+  [
+   "reva",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "masa reva tuekombipe primera",
+    "orava relicios locoava reva"
+   ]
+  ],
+  [
+   "charu",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "ryarakuera gasuro hivo isecharu",
+    "ekare atei plarrecharu salino"
+   ]
+  ],
+  [
+   "guro",
+   17,
+   [
+    "en",
+    "ja"
+   ],
+   [
+    "ekas guro deitype susempeva",
+    "hiapotiata guro tapekuri ipei"
+   ]
+  ],
+  [
+   "tate",
+   17,
+   [
+    "ro"
+   ],
+   [
+    "ahapontityva tate osei mbigua",
+    "vika tygui kuinonakava tate"
+   ]
+  ],
+  [
+   "pene",
+   16,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "inaha anohekombiru pene plasa",
+    "lobotoorro auai cuete pene"
+   ]
+  ],
+  [
+   "puta",
+   16,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "enta imova puta gusupipiru",
+    "naniapoajete puta chete ligua"
+   ]
+  ],
+  [
+   "baka",
+   14,
+   [
+    "ja"
+   ],
+   [
+    "komi baka hyra nopytyvombope",
+    "baka hoviapoural ruanongo"
+   ]
+  ],
+  [
+   "hora",
+   14,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "myape monguseriva raigui hora",
+    "neguereko gasyehova hora coro"
+   ]
+  ]
+ ],
+ "samples": [
+  "asonor vegua loava tiviativo",
+  "teru ygkokatu yvykaha asykara",
+  "eiatava ruhengue kampia kogua",
+  "vare sorimbia reape juayty",
+  "ajekojehe ypekopirica ogape",
+  "lembiolorokuri bato gambipuro",
+  "membyatareta ogarrogia iste",
+  "loapotiva plagui potiva coro",
+  "arero sobogaru kogapillava",
+  "grei tujakuera jaguapy ekohyva",
+  "ogakare iraienso puente ongue",
+  "ygrietante arre omosicoriano"
+ ],
+ "seconds": 9.1,
+ "languages": [
+  "gn"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

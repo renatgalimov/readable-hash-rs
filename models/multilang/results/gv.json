@@ -1,0 +1,249 @@
+{
+ "name": "gv",
+ "corpus_words": 6575,
+ "relaxed_rows": 224,
+ "relaxed_examples": [
+  "fr",
+  "cu",
+  "bu",
+  "neu",
+  "sl",
+  "sp",
+  "ye",
+  "bi",
+  "du",
+  "bl",
+  "vi",
+  "ru"
+ ],
+ "segmented_words": 4390,
+ "skipped_words": 2185,
+ "middle_attested_fraction": 0.083740234375,
+ "end32_attested_fraction": 0.10026041666666667,
+ "end16_attested_fraction": 0.1962890625,
+ "begin_attested": 128,
+ "chars": 27.9,
+ "max_chars": 38,
+ "consonant_runs_pct": 17.925,
+ "vowel_runs_pct": 16.986,
+ "english_words_pct": 1.183,
+ "own_words_pct": 7.351,
+ "offensive_whole_pct": 1.485,
+ "offensive_whole_english_list_pct": 0.28,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.75,
+ "offensive_severe_en_pct": 0.27,
+ "offensive_inside5_pct": 1.725,
+ "offensive_inside4_pct": 13.775,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "blin",
+   20,
+   [
+    "be"
+   ],
+   [
+    "jeimit arymchroo blin geys",
+    "gleoey obbid blin benteiley"
+   ]
+  ],
+  [
+   "skit",
+   19,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "hurraghys skit keeayaitagh spoar",
+    "eardntar skit jeyn scarree"
+   ]
+  ],
+  [
+   "peter",
+   18,
+   [
+    "fr"
+   ],
+   [
+    "heid huee peter ghoonsoaney",
+    "murrey vees ghroteaydyn peter"
+   ]
+  ],
+  [
+   "jian",
+   18,
+   [
+    "ja",
+    "zh"
+   ],
+   [
+    "jian spenymys nioilagh blish",
+    "rummar jian reireaee yeys"
+   ]
+  ],
+  [
+   "scal",
+   17,
+   [
+    "sl"
+   ],
+   [
+    "scal aansin grish oardeanagh",
+    "karncknagh scal cruggey feeyn"
+   ]
+  ],
+  [
+   "ryssa",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "dooryssagh rhan plachroo inaait",
+    "aney neatoirsoit obbchoryssagh"
+   ]
+  ],
+  [
+   "anal",
+   17,
+   [
+    "ca",
+    "cy",
+    "da",
+    "de",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fr",
+    "gd",
+    "gl",
+    "hy",
+    "id",
+    "pt",
+    "ro",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "tr",
+    "uz",
+    "zu"
+   ],
+   [
+    "anal ooit oandenit raltyssagh",
+    "volyn tuatyn anal ymeastee"
+   ]
+  ],
+  [
+   "maal",
+   16,
+   [
+    "hi"
+   ],
+   [
+    "ynndstart maal enreimyiree",
+    "hirdader baaraanged maal"
+   ]
+  ],
+  [
+   "dian",
+   16,
+   [
+    "zh"
+   ],
+   [
+    "sian dian abmaggys ghiooil",
+    "rioo dian restyl pickenyn"
+   ]
+  ],
+  [
+   "paal",
+   16,
+   [
+    "nl"
+   ],
+   [
+    "viaactee joish mueney paal",
+    "paal finish sissrrotoo foney"
+   ]
+  ],
+  [
+   "poon",
+   16,
+   [
+    "en"
+   ],
+   [
+    "soigin assaglane poon giee",
+    "poon parley unney kiloinit"
+   ]
+  ],
+  [
+   "folle",
+   14,
+   [
+    "fr"
+   ],
+   [
+    "vryr folley thar jiardarliagh",
+    "croil folley drolacghyssyn raley"
+   ]
+  ],
+  [
+   "mail",
+   14,
+   [
+    "hi"
+   ],
+   [
+    "giatourey mail lustayleishyn",
+    "mail bagh imys snenndaell"
+   ]
+  ],
+  [
+   "phan",
+   13,
+   [
+    "vi"
+   ],
+   [
+    "sporral phimoillagh oltyn phan",
+    "vuayrlaiyr ghyn phan kaish"
+   ]
+  ],
+  [
+   "cait",
+   13,
+   [
+    "gd"
+   ],
+   [
+    "saar cait sniresacnagh alit",
+    "biin bimays cait vagisoon"
+   ]
+  ]
+ ],
+ "samples": [
+  "olgaal mulagh ymit joaaddin",
+  "foar froilagh mayllagh olacid",
+  "vustiaght filaaid toscar thad",
+  "pragh shardreilys cotagh vrooghyn",
+  "growchon intoighoagh aarey",
+  "agaislailey viish lueiseid",
+  "mestacoiley aaihiryn duney",
+  "ymghoryn tein areiney hene",
+  "stion shadeecan thaidjaydyn",
+  "obbys vargish renaan abmmnagh",
+  "aadeey deinndyn lhieu chee",
+  "frrinsdyn stish baaimychia"
+ ],
+ "seconds": 8.1,
+ "languages": [
+  "gv"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

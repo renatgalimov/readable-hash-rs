@@ -1,0 +1,218 @@
+{
+ "name": "lb",
+ "corpus_words": 73629,
+ "relaxed_rows": 4,
+ "relaxed_examples": [
+  "iww",
+  "qu",
+  "ww",
+  "qu"
+ ],
+ "segmented_words": 47277,
+ "skipped_words": 26352,
+ "middle_attested_fraction": 0.6146647135416666,
+ "end32_attested_fraction": 0.3234456380208333,
+ "end16_attested_fraction": 0.5491536458333334,
+ "begin_attested": 128,
+ "chars": 28.4,
+ "max_chars": 43,
+ "consonant_runs_pct": 21.318,
+ "vowel_runs_pct": 10.857,
+ "english_words_pct": 2.87,
+ "own_words_pct": 22.969,
+ "offensive_whole_pct": 1.44,
+ "offensive_whole_english_list_pct": 0.08,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.41,
+ "offensive_severe_en_pct": 0.09,
+ "offensive_inside5_pct": 3.64,
+ "offensive_inside4_pct": 18.855,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "ische",
+   113,
+   [
+    "de"
+   ],
+   [
+    "waach orcht wasselais emaischen",
+    "schiedenner winsatischen reie"
+   ]
+  ],
+  [
+   "arsch",
+   61,
+   [
+    "de"
+   ],
+   [
+    "rift elon zwer prestwarschst",
+    "chel arschalten saueneckung"
+   ]
+  ],
+  [
+   "chich",
+   40,
+   [
+    "vi"
+   ],
+   [
+    "preeg zwennses schicht keiechen",
+    "ofschicht austrar drach bianche"
+   ]
+  ],
+  [
+   "chert",
+   35,
+   [
+    "ru"
+   ],
+   [
+    "foch asamerei genn kichert",
+    "storelle funfahnallen tachert"
+   ]
+  ],
+  [
+   "chlen",
+   28,
+   [
+    "uk"
+   ],
+   [
+    "quichlech virfaire gollion chlen",
+    "zilen posch duerchlen gotzreglen"
+   ]
+  ],
+  [
+   "veres",
+   24,
+   [
+    "hu"
+   ],
+   [
+    "glorin blem veres emstiviteit",
+    "benone prolene veres graiteg"
+   ]
+  ],
+  [
+   "zinne",
+   19,
+   [
+    "it"
+   ],
+   [
+    "erschniwener sous tilizinner",
+    "autoes wirial zinnen werbomin"
+   ]
+  ],
+  [
+   "faen",
+   19,
+   [
+    "no"
+   ],
+   [
+    "faen alel spunding latescht",
+    "genereieren faen drepsen cabissen"
+   ]
+  ],
+  [
+   "dain",
+   18,
+   [
+    "ml"
+   ],
+   [
+    "optainnen dain aldram sewen",
+    "dain coach iemmaisien papp"
+   ]
+  ],
+  [
+   "asss",
+   17,
+   [
+    "ca"
+   ],
+   [
+    "voch dohikaritt pist asss",
+    "aarel aspomellt dropung asss"
+   ]
+  ],
+  [
+   "palle",
+   17,
+   [
+    "it"
+   ],
+   [
+    "gent kurzst verpallen goncan",
+    "teck soder verlecht alzepallen"
+   ]
+  ],
+  [
+   "hoer",
+   15,
+   [
+    "nl"
+   ],
+   [
+    "cartes emintina hoer emden",
+    "biet dast autozeitecel hoer"
+   ]
+  ],
+  [
+   "here",
+   15,
+   [
+    "hu"
+   ],
+   [
+    "lesbelag schten here pribees",
+    "dreper plagen ratskelen here"
+   ]
+  ],
+  [
+   "pede",
+   15,
+   [
+    "fr"
+   ],
+   [
+    "pede futste ieitekteiert baden",
+    "backenee cold pede frigren"
+   ]
+  ],
+  [
+   "mist",
+   14,
+   [
+    "de"
+   ],
+   [
+    "ennerung emfamievin teck mist",
+    "opbann eewerwesch mist prosten"
+   ]
+  ]
+ ],
+ "samples": [
+  "horaaft nang vott abrutsen",
+  "deus juniken ausenem hotsem",
+  "duerchbrelen bossenn motein dock",
+  "foch asamerei genn kichert",
+  "galeriellen neizeluecht cote",
+  "nigeklonech alel eesastioun",
+  "fraifaschmer cohaften ugeem",
+  "vorwillt elan onneieren prosten",
+  "selt asblebung donaneroseiert",
+  "oreiert iwwerdrement membat tintik",
+  "coveer globbeut saat reel",
+  "junanertioun seed verweinkafen"
+ ],
+ "seconds": 9.5,
+ "languages": [
+  "lb"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,236 @@
+{
+ "name": "nds",
+ "corpus_words": 49719,
+ "relaxed_rows": 15,
+ "relaxed_examples": [
+  "ov",
+  "tw",
+  "qu",
+  "sy",
+  "ex",
+  "sc",
+  "tsc",
+  "isc",
+  "nsc",
+  "ov",
+  "atsc",
+  "rv"
+ ],
+ "segmented_words": 32911,
+ "skipped_words": 16808,
+ "middle_attested_fraction": 0.5602213541666666,
+ "end32_attested_fraction": 0.310791015625,
+ "end16_attested_fraction": 0.5267740885416666,
+ "begin_attested": 128,
+ "chars": 27.12,
+ "max_chars": 36,
+ "consonant_runs_pct": 24.391,
+ "vowel_runs_pct": 1.352,
+ "english_words_pct": 2.572,
+ "own_words_pct": 22.532,
+ "offensive_whole_pct": 1.915,
+ "offensive_whole_english_list_pct": 0.195,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.725,
+ "offensive_severe_en_pct": 0.21,
+ "offensive_inside5_pct": 3.945,
+ "offensive_inside4_pct": 21.55,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "ische",
+   184,
+   [
+    "de"
+   ],
+   [
+    "bischeden rohmon marmland erig",
+    "upwisch stden amische hadelkon"
+   ]
+  ],
+  [
+   "arsch",
+   38,
+   [
+    "de"
+   ],
+   [
+    "gaaten faltig gussiarsch pacht",
+    "arer theogaarsch hour ooken"
+   ]
+  ],
+  [
+   "loden",
+   31,
+   [
+    "ro"
+   ],
+   [
+    "chesleriert loden inforning",
+    "prey joloden univisch tempest"
+   ]
+  ],
+  [
+   "kanen",
+   25,
+   [
+    "nl"
+   ],
+   [
+    "arkanen superg zeie roersche",
+    "norminde pult nipp arkanen"
+   ]
+  ],
+  [
+   "mater",
+   23,
+   [
+    "sl"
+   ],
+   [
+    "materrache dullogasma orken",
+    "materbasen lapp overtreten drey"
+   ]
+  ],
+  [
+   "holle",
+   21,
+   [
+    "de"
+   ],
+   [
+    "tuung tiakey sybers schollen",
+    "holles weiseert hanneseitas"
+   ]
+  ],
+  [
+   "gort",
+   21,
+   [
+    "gd"
+   ],
+   [
+    "gort mantsetz thsche vinlos",
+    "unguldeerie vorlossor gort"
+   ]
+  ],
+  [
+   "here",
+   21,
+   [
+    "hu"
+   ],
+   [
+    "eholik endshutten amsen here",
+    "enten amateligsden here geet"
+   ]
+  ],
+  [
+   "reet",
+   20,
+   [
+    "nl"
+   ],
+   [
+    "reet ungues huudwing fugen",
+    "reet orberalkten oltmaude"
+   ]
+  ],
+  [
+   "slet",
+   19,
+   [
+    "nl"
+   ],
+   [
+    "slet ritzken swers ratikong",
+    "opes dummasens slet adoord"
+   ]
+  ],
+  [
+   "chlen",
+   19,
+   [
+    "uk"
+   ],
+   [
+    "gong chlen gultipamern utig",
+    "chlen umretion ravelt naht"
+   ]
+  ],
+  [
+   "foder",
+   19,
+   [
+    "gl",
+    "pt"
+   ],
+   [
+    "twden miel swert fodermatsmann",
+    "foderdendeert suger larithur"
+   ]
+  ],
+  [
+   "fuck",
+   19,
+   [
+    "cy",
+    "da",
+    "en",
+    "gd",
+    "mn",
+    "ms",
+    "mt",
+    "no",
+    "zu"
+   ],
+   [
+    "radral fuck ehen rietnaten",
+    "fuck hitoollkel uneven trat"
+   ]
+  ],
+  [
+   "pissen",
+   18,
+   [
+    "de",
+    "nl"
+   ],
+   [
+    "rael oldebueerd mare pissen",
+    "mosahler lingen pissen linsen"
+   ]
+  ],
+  [
+   "feken",
+   18,
+   [
+    "eo"
+   ],
+   [
+    "unnd feken probacon resoort",
+    "infeken fuck gliekten fabigen"
+   ]
+  ]
+ ],
+ "samples": [
+  "wormsch peung syten piesveres",
+  "utcht slesschoon schaaven wolsson",
+  "twileert chefsen sterin darin",
+  "arten camassig beren fernau",
+  "poggslol swehmiling naon",
+  "amalgerties coet lonnboer",
+  "tempaganns naloftig hisen",
+  "sybennst enver bornum hong",
+  "mekt cameschacht danzifoger",
+  "auten minerell weerter zensas",
+  "namara globamung upken geten",
+  "sluptrad meden antistucer"
+ ],
+ "seconds": 8.6,
+ "languages": [
+  "nds"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

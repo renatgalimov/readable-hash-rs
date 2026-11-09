@@ -1,0 +1,255 @@
+{
+ "name": "vro",
+ "corpus_words": 9250,
+ "relaxed_rows": 201,
+ "relaxed_examples": [
+  "op",
+  "he",
+  "ao",
+  "ed",
+  "ne",
+  "eh",
+  "nu",
+  "eg",
+  "bu",
+  "od",
+  "pl",
+  "ge"
+ ],
+ "segmented_words": 6406,
+ "skipped_words": 2844,
+ "middle_attested_fraction": 0.12996419270833334,
+ "end32_attested_fraction": 0.133544921875,
+ "end16_attested_fraction": 0.2539876302083333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 25.91,
+ "max_chars": 32,
+ "consonant_runs_pct": 7.328,
+ "vowel_runs_pct": 3.222,
+ "english_words_pct": 0.502,
+ "own_words_pct": 9.914,
+ "offensive_whole_pct": 2.45,
+ "offensive_whole_english_list_pct": 0.23,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.095,
+ "offensive_severe_en_pct": 0.14,
+ "offensive_inside5_pct": 2.24,
+ "offensive_inside4_pct": 18.605,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "tetas",
+   38,
+   [
+    "ca",
+    "es",
+    "gl",
+    "pt"
+   ],
+   [
+    "rohammal uuvaq chuq ontetas",
+    "veda puunohil akeriigitetas"
+   ]
+  ],
+  [
+   "udoti",
+   22,
+   [
+    "zu"
+   ],
+   [
+    "jaloudoti huuldaq etido ohil",
+    "soudoti ajal ripuido irkuti"
+   ]
+  ],
+  [
+   "osti",
+   21,
+   [
+    "fr"
+   ],
+   [
+    "umatri aasigomiso osti ahit",
+    "okkeluist osti aimmin ujido"
+   ]
+  ],
+  [
+   "galo",
+   19,
+   [
+    "gl",
+    "pt"
+   ],
+   [
+    "gani orit pikluhiras galo",
+    "galo tiik aolannan markna"
+   ]
+  ],
+  [
+   "manda",
+   18,
+   [
+    "ru"
+   ],
+   [
+    "mandarist slit tikoli voso",
+    "abri ajroimandal veil osoq"
+   ]
+  ],
+  [
+   "kusi",
+   18,
+   [
+    "et",
+    "fi"
+   ],
+   [
+    "plan enemiidiq kusi amekund",
+    "muuran onon kusi kombbara"
+   ]
+  ],
+  [
+   "kutas",
+   17,
+   [
+    "pl"
+   ],
+   [
+    "kutas fian nurokuumise huni",
+    "rokutas opilast lohaulluma"
+   ]
+  ],
+  [
+   "niga",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "privit rutmavvaq kera niga",
+    "batas niga sormido ampakuist"
+   ]
+  ],
+  [
+   "holo",
+   16,
+   [
+    "ko"
+   ],
+   [
+    "domurkhalik kunuq ajuq holo",
+    "aeuq holo egtoni suidmias"
+   ]
+  ],
+  [
+   "meni",
+   15,
+   [
+    "tr"
+   ],
+   [
+    "tundit kanaala juusen meni",
+    "mermapist meni taidsoq vist"
+   ]
+  ],
+  [
+   "inat",
+   15,
+   [
+    "sq"
+   ],
+   [
+    "inat tiso chtonomist vidagu",
+    "inat aurdel suri aambimaal"
+   ]
+  ],
+  [
+   "seit",
+   15,
+   [
+    "te"
+   ],
+   [
+    "seit budini eroq imedlleq",
+    "kolmen esoongido seit diti"
+   ]
+  ],
+  [
+   "kuso",
+   15,
+   [
+    "ja"
+   ],
+   [
+    "manuq omorahan aakuri kuso",
+    "kori uumbrauldu maas kuso"
+   ]
+  ],
+  [
+   "pisa",
+   15,
+   [
+    "ro"
+   ],
+   [
+    "unadust pisa nest egroliido",
+    "lolo pisa bahiin helstsal"
+   ]
+  ],
+  [
+   "anus",
+   15,
+   [
+    "be",
+    "bg",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "eu",
+    "fa",
+    "fr",
+    "gd",
+    "is",
+    "mk",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sl",
+    "sq",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "meseq anus jagi apariikord",
+    "uteluund semerdhani anus"
+   ]
+  ]
+ ],
+ "samples": [
+  "eettuq feal slin oulgavva",
+  "tasso orimus piisan eemiisi",
+  "gargas heoliidsi elorist arga",
+  "opas ervostin katus kreius",
+  "osemekuisi barmeroloq luuq",
+  "disseelguq imia ussakaas",
+  "oloviisaaq lupossiq iihe",
+  "slsaliga ohan mullon riist",
+  "sule eraaluuq arotskkalt",
+  "geoq tiitet lattist okemma",
+  "luurmiis ajavokot ilas koit",
+  "orkitsen susso maavimahhi"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "vro"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

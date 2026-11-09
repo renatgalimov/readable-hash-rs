@@ -1,0 +1,234 @@
+{
+ "name": "ko",
+ "corpus_words": 80000,
+ "relaxed_rows": 85,
+ "relaxed_examples": [
+  "hw",
+  "mw",
+  "jw",
+  "sw",
+  "nw",
+  "ac",
+  "kw",
+  "ic",
+  "ok",
+  "tv",
+  "fb",
+  "ow"
+ ],
+ "segmented_words": 62345,
+ "skipped_words": 17655,
+ "middle_attested_fraction": 0.4068196614583333,
+ "end32_attested_fraction": 0.3866373697916667,
+ "end16_attested_fraction": 0.5845540364583334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 29.27,
+ "max_chars": 40,
+ "consonant_runs_pct": 10.096,
+ "vowel_runs_pct": 25.864,
+ "english_words_pct": 0.252,
+ "own_words_pct": 24.541,
+ "offensive_whole_pct": 1.585,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.22,
+ "offensive_whole_major_lists_pct": 0.8,
+ "offensive_severe_en_pct": 0.015,
+ "offensive_inside5_pct": 1.545,
+ "offensive_inside4_pct": 15.675,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "holeu",
+   40,
+   [
+    "ko"
+   ],
+   [
+    "idolcholeul asobsi potabolo",
+    "iswa choleul oggyeoonligi iyae"
+   ]
+  ],
+  [
+   "linda",
+   24,
+   [
+    "zu"
+   ],
+   [
+    "teji chyeonloigi linda mwge",
+    "linda magi pelo ileonaewoneul"
+   ]
+  ],
+  [
+   "unchi",
+   20,
+   [
+    "ja"
+   ],
+   [
+    "nunchiji joileul igondeulijyo yaga",
+    "oglyeoni asge nyaileun eunchido"
+   ]
+  ],
+  [
+   "dige",
+   18,
+   [
+    "da",
+    "sq"
+   ],
+   [
+    "osiji deedo ibsuelyohage dige",
+    "bwigo dige loneun jinchwoldeuleun"
+   ]
+  ],
+  [
+   "galo",
+   18,
+   [
+    "gl",
+    "pt"
+   ],
+   [
+    "isneun doegonghimui saeyo galo",
+    "usojuiumoga galo pussda noeneun"
+   ]
+  ],
+  [
+   "boji",
+   18,
+   [
+    "ko"
+   ],
+   [
+    "hoseulghyeollo ajya boji sona",
+    "igeoseossda hojuge boji gwigon"
+   ]
+  ],
+  [
+   "naji",
+   16,
+   [
+    "hi",
+    "kn",
+    "my",
+    "te"
+   ],
+   [
+    "yaoenda naji ajchiya paligi",
+    "wonlyudo meui naji gwabui"
+   ]
+  ],
+  [
+   "niga",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "ajyo niga nwalseoga doseoni",
+    "oneseo niga baeumeul oseheossin"
+   ]
+  ],
+  [
+   "aeja",
+   16,
+   [
+    "ko"
+   ],
+   [
+    "aeja dwaebutaneul guli nuineun",
+    "aeja yuhan byeutnadameul ilul"
+   ]
+  ],
+  [
+   "pula",
+   16,
+   [
+    "ro"
+   ],
+   [
+    "mwoeseo nuidisil mido pula",
+    "joui pula ijeonmyeoyeossda linda"
+   ]
+  ],
+  [
+   "diga",
+   15,
+   [
+    "bg",
+    "it",
+    "mt"
+   ],
+   [
+    "dojeonen apgileul diga jwaehal",
+    "imanhan diga loga maelobsi"
+   ]
+  ],
+  [
+   "meni",
+   15,
+   [
+    "tr"
+   ],
+   [
+    "meni hwgi umolkkiga jogasseoyo",
+    "meni lijoega sijyo mijunhaessda"
+   ]
+  ],
+  [
+   "molo",
+   15,
+   [
+    "fi"
+   ],
+   [
+    "niasinjeoni molo ingeuleul kige",
+    "molo pungcji idun salinghal"
+   ]
+  ],
+  [
+   "manda",
+   14,
+   [
+    "ru"
+   ],
+   [
+    "amanda hwaheun bakkneun nwyeomyeon",
+    "amanda hiyo jusyeobdeulmyeon aido"
+   ]
+  ],
+  [
+   "biga",
+   13,
+   [
+    "it"
+   ],
+   [
+    "neeseo biga jeomwigi ttadie",
+    "hoelyeoboleo pyobhyeosseoyo biga"
+   ]
+  ]
+ ],
+ "samples": [
+  "tobeleul ihog tiui elguineyo",
+  "hayeo laibdoen deolie totoeyo",
+  "nyengiji ibmanyo kkeullim hyuneun",
+  "pineun ulteubuga jemeul yojedo",
+  "nuneujeoseo lobusinghal guneun",
+  "abseunsikeyo ijeog kondalji",
+  "pyeonggideulago gudosaleul kige",
+  "tillowaneun hieul jumida soui",
+  "sillo ulchoega hyeombuidan",
+  "amanda hwaheun bakkneun nwyeomyeon",
+  "gugaleul pulloldo paseo saui",
+  "lamangjyeo sigeul geoduleudeuldo"
+ ],
+ "seconds": 11.6,
+ "languages": [
+  "ko"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

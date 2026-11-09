@@ -1,0 +1,255 @@
+{
+ "name": "kl",
+ "corpus_words": 33890,
+ "relaxed_rows": 133,
+ "relaxed_examples": [
+  "so",
+  "po",
+  "qe",
+  "da",
+  "bo",
+  "no",
+  "de",
+  "kl",
+  "mo",
+  "bu",
+  "he",
+  "uf"
+ ],
+ "segmented_words": 30030,
+ "skipped_words": 3860,
+ "middle_attested_fraction": 0.3149007161458333,
+ "end32_attested_fraction": 0.23563639322916666,
+ "end16_attested_fraction": 0.4025065104166667,
+ "begin_attested": 122,
+ "beginning_fallback": true,
+ "chars": 33.56,
+ "max_chars": 46,
+ "consonant_runs_pct": 7.055,
+ "vowel_runs_pct": 6.998,
+ "english_words_pct": 0.124,
+ "own_words_pct": 5.589,
+ "offensive_whole_pct": 0.075,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.005,
+ "offensive_severe_en_pct": 0.05,
+ "offensive_inside5_pct": 3.52,
+ "offensive_inside4_pct": 29.78,
+ "offensive_across_words_pct": 0.06,
+ "top_hits": [
+  [
+   "pillu",
+   99,
+   [
+    "fi"
+   ],
+   [
+    "pillugu nnagat kaakkut upiveruani",
+    "apillu aulanneqarlutik bunagit agani"
+   ]
+  ],
+  [
+   "pissa",
+   69,
+   [
+    "is"
+   ],
+   [
+    "kiap sangamik upissaat quanngaaraat",
+    "ussut ipissaat ukkillimik atsatik"
+   ]
+  ],
+  [
+   "sulin",
+   67,
+   [
+    "cs"
+   ],
+   [
+    "sulinikiortani iminguuttut nnarput",
+    "manngasullu quarfimmi dknit sulineq"
+   ]
+  ],
+  [
+   "natsi",
+   57,
+   [
+    "fi",
+    "mk"
+   ],
+   [
+    "afsoq oligiinnatsigit steqqissaaq",
+    "asit oqup viaat ikarfiginatsianut"
+   ]
+  ],
+  [
+   "nartut",
+   49,
+   [
+    "fi"
+   ],
+   [
+    "tuimaasimasut ilaqanartut fakiaq",
+    "olini loqusollamut ivaq unartut"
+   ]
+  ],
+  [
+   "vittu",
+   39,
+   [
+    "fi"
+   ],
+   [
+    "prillu arinnalavoq oqivittut asap",
+    "iltigamik ogsoq ikivittut isumullu"
+   ]
+  ],
+  [
+   "penis",
+   29,
+   [
+    "be",
+    "bg",
+    "ca",
+    "cs",
+    "da",
+    "de",
+    "en",
+    "fi",
+    "fr",
+    "hr",
+    "hy",
+    "id",
+    "lt",
+    "lv",
+    "mk",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "bossumaasutigut abnit penissaa imannut",
+    "nunngunumut dipenissaq rusartarnissaa"
+   ]
+  ],
+  [
+   "tsitsi",
+   21,
+   [
+    "bg"
+   ],
+   [
+    "lialanut borsionerit allitsitsikkut",
+    "teeratsitsiaat buavaripput kinut"
+   ]
+  ],
+  [
+   "aasit",
+   21,
+   [
+    "fi"
+   ],
+   [
+    "nusannut ifissaat jumut viaasitaq",
+    "usarfimmi qoaasitami qouninnata"
+   ]
+  ],
+  [
+   "saala",
+   21,
+   [
+    "hi"
+   ],
+   [
+    "irneq isumikkut kiassaalat assorlugit",
+    "saalakkannut prassuulatigut heanut"
+   ]
+  ],
+  [
+   "mussa",
+   20,
+   [
+    "it"
+   ],
+   [
+    "bgsoq konerat imammani mussaaqqasut",
+    "mussaaqummit ukarput orunnup buaat"
+   ]
+  ],
+  [
+   "apara",
+   19,
+   [
+    "fi"
+   ],
+   [
+    "apara afqqavunga ruup ajakkut",
+    "kussatut apara asani auunartimmat"
+   ]
+  ],
+  [
+   "rinnat",
+   16,
+   [
+    "fi"
+   ],
+   [
+    "dknermut aferinnatut ponanga temik",
+    "lnnut urinnatiginaaq uiuuneranni"
+   ]
+  ],
+  [
+   "ganni",
+   14,
+   [
+    "zh"
+   ],
+   [
+    "raanut inilu uiavigannit qisuup",
+    "eannganni sersiuamiillu pernissakkut"
+   ]
+  ],
+  [
+   "asini",
+   14,
+   [
+    "it"
+   ],
+   [
+    "fagasinissaq peqatani qaniutaannut",
+    "usariaasini lertioreetut upartut"
+   ]
+  ]
+ ],
+ "samples": [
+  "uataatigut aitigut ogarput jotaanngap",
+  "aatigut steraat eqeeanut uaqusup",
+  "fralip noeraat aseeat tonerup",
+  "igavoq lariiaqartut natit ipersoq",
+  "qoaveqqara teqarfilitsikkut apat",
+  "uvlannerorinik efnit hoavigassamut",
+  "ullussiartanut apualaatit lommat",
+  "ognasukkut luup akiullugu soat",
+  "anamut laguinertut toqilunnaarlutik",
+  "auup ikillutik suliassaqarpoq adnngarput",
+  "appimut ifornanga utarput inneq",
+  "stigiginit anullu ilimagarsinnaat"
+ ],
+ "seconds": 11.7,
+ "languages": [
+  "kl"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

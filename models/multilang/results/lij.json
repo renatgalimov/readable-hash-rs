@@ -1,0 +1,228 @@
+{
+ "name": "lij",
+ "corpus_words": 10016,
+ "relaxed_rows": 136,
+ "relaxed_examples": [
+  "qu",
+  "pu",
+  "mu",
+  "fu",
+  "ch",
+  "ao",
+  "au",
+  "ze",
+  "bu",
+  "sv",
+  "zo",
+  "sf"
+ ],
+ "segmented_words": 7493,
+ "skipped_words": 2523,
+ "middle_attested_fraction": 0.134033203125,
+ "end32_attested_fraction": 0.16499837239583334,
+ "end16_attested_fraction": 0.3021647135416667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.01,
+ "max_chars": 37,
+ "consonant_runs_pct": 7.388,
+ "vowel_runs_pct": 9.923,
+ "english_words_pct": 1.745,
+ "own_words_pct": 13.203,
+ "offensive_whole_pct": 2.515,
+ "offensive_whole_english_list_pct": 0.06,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.535,
+ "offensive_severe_en_pct": 0.07,
+ "offensive_inside5_pct": 3.575,
+ "offensive_inside4_pct": 24.645,
+ "offensive_across_words_pct": 0.025,
+ "top_hits": [
+  [
+   "samen",
+   132,
+   [
+    "de"
+   ],
+   [
+    "osoreissamente goli aoatoriua",
+    "exlatinsamente puia impoguia"
+   ]
+  ],
+  [
+   "lucio",
+   31,
+   [
+    "ca"
+   ],
+   [
+    "lucion ruccosse emae specca",
+    "gurgiusciua lucion acin aera"
+   ]
+  ],
+  [
+   "tetta",
+   29,
+   [
+    "it"
+   ],
+   [
+    "emae brassotetta gurbie zeie",
+    "enscionimo emotetta nencovica"
+   ]
+  ],
+  [
+   "retto",
+   29,
+   [
+    "it"
+   ],
+   [
+    "acitae adelompalmente plembretto",
+    "dalonstretto efettificra muiun"
+   ]
+  ],
+  [
+   "fente",
+   24,
+   [
+    "fr"
+   ],
+   [
+    "agoale preuva ofente zetrie",
+    "ofente inscie orecento situti"
+   ]
+  ],
+  [
+   "zuie",
+   23,
+   [
+    "ja"
+   ],
+   [
+    "censica gron bermezin zuie",
+    "zuie gongue uneuio ofilisce"
+   ]
+  ],
+  [
+   "gote",
+   22,
+   [
+    "tr"
+   ],
+   [
+    "gote geia gastrao saviltou",
+    "avigie tormorato gote ligna"
+   ]
+  ],
+  [
+   "pina",
+   22,
+   [
+    "hu"
+   ],
+   [
+    "lincruatale pina ammavise",
+    "pritae pina oencarso umuxia"
+   ]
+  ],
+  [
+   "elle",
+   19,
+   [
+    "lv"
+   ],
+   [
+    "ocetorco elle fermestadan",
+    "scae elle cronemio spadoa"
+   ]
+  ],
+  [
+   "sesso",
+   19,
+   [
+    "it"
+   ],
+   [
+    "sesso daviagiuou esica clan",
+    "siesesso tambervae dogian"
+   ]
+  ],
+  [
+   "site",
+   19,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "vaticruta zostro site feca",
+    "agetecce adocadedin site"
+   ]
+  ],
+  [
+   "corno",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "fene posepiche elidocorno",
+    "ciaeghi ogorte zempica corno"
+   ]
+  ],
+  [
+   "bite",
+   18,
+   [
+    "fr"
+   ],
+   [
+    "zundiglia bracea naio bite",
+    "oeso erotagou colegio bite"
+   ]
+  ],
+  [
+   "casci",
+   18,
+   [
+    "it"
+   ],
+   [
+    "spenti ducasciscie elutimin",
+    "rimelogna ascasciou zeximi"
+   ]
+  ],
+  [
+   "bile",
+   17,
+   [
+    "ro"
+   ],
+   [
+    "bile droxttua aflenta chio",
+    "bile trindito otou bonfan"
+   ]
+  ]
+ ],
+ "samples": [
+  "gandeiva ecca ofon uremoria",
+  "diga duerte molenta gatuti",
+  "exntava apedra spidico noie",
+  "gese clexttamente inin roditae",
+  "tifortiamente agoestitore mion",
+  "osoreissamente goli aoatoriua",
+  "avveniorale miarcento nise",
+  "ofercopoli auan somaio esci",
+  "riuo clazceae nononspere",
+  "erio salune respacion azsciva",
+  "migrie adordenti imou pria",
+  "dundigiuo ricion carbadifichi"
+ ],
+ "seconds": 9.1,
+ "languages": [
+  "lij"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

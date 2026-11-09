@@ -1,0 +1,229 @@
+{
+ "name": "sv",
+ "corpus_words": 80000,
+ "relaxed_rows": 9,
+ "relaxed_examples": [
+  "sv",
+  "sj",
+  "tj",
+  "ex",
+  "kv",
+  "hj",
+  "mc",
+  "sv",
+  "yc"
+ ],
+ "segmented_words": 50678,
+ "skipped_words": 29322,
+ "middle_attested_fraction": 0.5822347005208334,
+ "end32_attested_fraction": 0.416259765625,
+ "end16_attested_fraction": 0.6669108072916666,
+ "begin_attested": 128,
+ "chars": 26.51,
+ "max_chars": 36,
+ "consonant_runs_pct": 20.266,
+ "vowel_runs_pct": 0.086,
+ "english_words_pct": 2.649,
+ "own_words_pct": 28.406,
+ "offensive_whole_pct": 3.705,
+ "offensive_whole_english_list_pct": 0.42,
+ "offensive_whole_own_list_pct": 0.365,
+ "offensive_whole_major_lists_pct": 1.615,
+ "offensive_severe_en_pct": 0.335,
+ "offensive_inside5_pct": 3.48,
+ "offensive_inside4_pct": 18.2,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "loden",
+   32,
+   [
+    "ro"
+   ],
+   [
+    "kvloden heffebbaser turiet",
+    "galoden bets befringar gropra"
+   ]
+  ],
+  [
+   "siska",
+   27,
+   [
+    "ru"
+   ],
+   [
+    "fibrapning rosiska boga dior",
+    "hirierna slen solaysiska stay"
+   ]
+  ],
+  [
+   "poot",
+   26,
+   [
+    "nl"
+   ],
+   [
+    "bleining poot nyarna tungmind",
+    "pole daritanstade fatet poot"
+   ]
+  ],
+  [
+   "kanen",
+   23,
+   [
+    "nl"
+   ],
+   [
+    "organkanen versskrala dade",
+    "spam stirkanen nina astrerade"
+   ]
+  ],
+  [
+   "peder",
+   23,
+   [
+    "hr",
+    "mk",
+    "sl"
+   ],
+   [
+    "atrillet peder mognsen noer",
+    "presforvalen labber rupeder"
+   ]
+  ],
+  [
+   "niga",
+   21,
+   [
+    "ja"
+   ],
+   [
+    "conler uppter niga galindling",
+    "niga kriggias kuslat lyat"
+   ]
+  ],
+  [
+   "neger",
+   21,
+   [
+    "de",
+    "hu",
+    "nl",
+    "sk",
+    "sv"
+   ],
+   [
+    "haverne rehasson neger spen",
+    "dimmade atna neger sekuldade"
+   ]
+  ],
+  [
+   "long",
+   20,
+   [
+    "vi"
+   ],
+   [
+    "viljad leken long luktsande",
+    "rumpar mingritt long duas"
+   ]
+  ],
+  [
+   "veres",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "overes osna nolautgisen peer",
+    "hylorkas overes snorda inpa"
+   ]
+  ],
+  [
+   "pula",
+   19,
+   [
+    "ro"
+   ],
+   [
+    "kryckakig overtaffbarn pula",
+    "kiara arslapas gammet pula"
+   ]
+  ],
+  [
+   "cait",
+   19,
+   [
+    "gd"
+   ],
+   [
+    "fiam ryman tjadbevist cait",
+    "drer snyldstoder cait alda"
+   ]
+  ],
+  [
+   "made",
+   18,
+   [
+    "zh"
+   ],
+   [
+    "made fras atalbern hytton",
+    "lumatoden aser made rysliga"
+   ]
+  ],
+  [
+   "slet",
+   17,
+   [
+    "nl"
+   ],
+   [
+    "lyra funkribeln slet vere",
+    "tear fendtrummer slet spus"
+   ]
+  ],
+  [
+   "nian",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "forutningsbour nian cogs mier",
+    "prylen nian keyser hyndan"
+   ]
+  ],
+  [
+   "peter",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "sarbat peterfars leter skas",
+    "nyarsla flocor peterrumple"
+   ]
+  ]
+ ],
+ "samples": [
+  "bittes kvon obade shoreller",
+  "stten elemsen kokster birket",
+  "akuses vendade grytas liken",
+  "bura golingsta inom pedagar",
+  "mikateus pilschanna taten",
+  "joinchmonna kues tullmana",
+  "toppstnater taurminner fure",
+  "obsinuin lurt renande teet",
+  "bach gongmiska likaptolin",
+  "atade filtig vapeka tyckna",
+  "tagset dunksalt fros beer",
+  "elstnaes bart lakeplygas"
+ ],
+ "seconds": 8.6,
+ "languages": [
+  "sv"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

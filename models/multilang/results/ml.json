@@ -1,0 +1,231 @@
+{
+ "name": "ml",
+ "corpus_words": 80000,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "kp"
+ ],
+ "segmented_words": 51402,
+ "skipped_words": 28598,
+ "middle_attested_fraction": 0.4803466796875,
+ "end32_attested_fraction": 0.380859375,
+ "end16_attested_fraction": 0.6167805989583334,
+ "begin_attested": 128,
+ "chars": 28.53,
+ "max_chars": 42,
+ "consonant_runs_pct": 42.45,
+ "vowel_runs_pct": 12.72,
+ "english_words_pct": 0.487,
+ "own_words_pct": 26.031,
+ "offensive_whole_pct": 1.105,
+ "offensive_whole_english_list_pct": 0.065,
+ "offensive_whole_own_list_pct": 0.09,
+ "offensive_whole_major_lists_pct": 0.465,
+ "offensive_severe_en_pct": 0.015,
+ "offensive_inside5_pct": 1.48,
+ "offensive_inside4_pct": 18.04,
+ "offensive_across_words_pct": 0.045,
+ "top_hits": [
+  [
+   "vittu",
+   46,
+   [
+    "fi"
+   ],
+   [
+    "ceppettt bnntanm asnm yuvittu",
+    "ntkkunnsiyute ayam untavittu bham"
+   ]
+  ],
+  [
+   "tittu",
+   20,
+   [
+    "te"
+   ],
+   [
+    "mrman valttil ettr namtittu",
+    "dhal riruti tritittull triccu"
+   ]
+  ],
+  [
+   "pene",
+   18,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "apikkill pene pticcyasm kiran",
+    "tltirikkunnt tuttppetunnill pene vinn"
+   ]
+  ],
+  [
+   "kont",
+   18,
+   [
+    "nl"
+   ],
+   [
+    "kulinre sumanttekk kont tnal",
+    "vyrrlukkont kont muttyate"
+   ]
+  ],
+  [
+   "ayam",
+   17,
+   [
+    "id"
+   ],
+   [
+    "abhite enntan adhillavukl ayam",
+    "pelum aticcirihikkan ayam minr"
+   ]
+  ],
+  [
+   "pele",
+   16,
+   [
+    "hu"
+   ],
+   [
+    "kkoldhvum nmti krutnnl pele",
+    "cotont utsikstte bhnnlil pele"
+   ]
+  ],
+  [
+   "nakun",
+   16,
+   [
+    "sq"
+   ],
+   [
+    "cilykaum mrnakunnu aknmikkin",
+    "mnntidinakunnu aslil dhityvne"
+   ]
+  ],
+  [
+   "pute",
+   15,
+   [
+    "fr"
+   ],
+   [
+    "pute adipiyam avarryennu",
+    "tllupikkuk untayirikkyan pute culum"
+   ]
+  ],
+  [
+   "meni",
+   15,
+   [
+    "tr"
+   ],
+   [
+    "manm srttum alumavarkk meni",
+    "untasikkunnu meni mannnl bordnm"
+   ]
+  ],
+  [
+   "kale",
+   15,
+   [
+    "lt"
+   ],
+   [
+    "kale siyum pure kunkrosrrukl",
+    "askk kale tlkilull melumnre"
+   ]
+  ],
+  [
+   "mohm",
+   14,
+   [
+    "ml"
+   ],
+   [
+    "ormglm mohm elkl mtsimiyo",
+    "untaknal nluvil shsini mohm"
+   ]
+  ],
+  [
+   "aslil",
+   13,
+   [
+    "hi",
+    "kn",
+    "mr",
+    "te"
+   ],
+   [
+    "aslil tommdhyman stte phkkunnu",
+    "mnntidinakunnu aslil dhityvne"
+   ]
+  ],
+  [
+   "shit",
+   13,
+   [
+    "da",
+    "en",
+    "gd",
+    "hy",
+    "mt",
+    "my",
+    "nl",
+    "no",
+    "sk",
+    "uz",
+    "zu"
+   ],
+   [
+    "rigran shit ciryunnu ruryil",
+    "ntnnunne vyekkan shit varsttil"
+   ]
+  ],
+  [
+   "pitt",
+   13,
+   [
+    "sv"
+   ],
+   [
+    "soyum pitt ptikklum onnippikkukyne",
+    "dhruvukk nmill pitt pintakki"
+   ]
+  ],
+  [
+   "kukk",
+   12,
+   [
+    "et"
+   ],
+   [
+    "kriyuriyil bunn ksliyil kukk",
+    "utsvyum kukk nillinre pakkiyill"
+   ]
+  ]
+ ],
+ "samples": [
+  "pilutum otman vntan kyricconin",
+  "atokke moskril ttyakkan pintaye",
+  "butteyum balkttinre samgtn tori",
+  "aytt skitnnlan pono sekkumpol",
+  "amukrikkayi adyrrsuklute ntan",
+  "isrreyriytum dhman tllyereyum",
+  "tutrmasiym ntenllenkil deyan",
+  "vnikkurnn ulut kllilum puvum",
+  "srunnu sklisrvum tontetutyttin",
+  "yunm svdeti murile brsini",
+  "nttoyute oliccatiyute mnlum vine",
+  "monarmyan srti avlovakril"
+ ],
+ "seconds": 9.2,
+ "languages": [
+  "ml"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

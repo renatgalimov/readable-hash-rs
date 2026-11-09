@@ -1,0 +1,228 @@
+{
+ "name": "kab",
+ "corpus_words": 52106,
+ "relaxed_rows": 38,
+ "relaxed_examples": [
+  "tg",
+  "tz",
+  "tx",
+  "tj",
+  "uj",
+  "ap",
+  "sw",
+  "co",
+  "ux",
+  "lx",
+  "mo",
+  "rz"
+ ],
+ "segmented_words": 34563,
+ "skipped_words": 17543,
+ "middle_attested_fraction": 0.3499755859375,
+ "end32_attested_fraction": 0.4204508463541667,
+ "end16_attested_fraction": 0.60986328125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.3,
+ "max_chars": 32,
+ "consonant_runs_pct": 8.541,
+ "vowel_runs_pct": 7.13,
+ "english_words_pct": 0.651,
+ "own_words_pct": 25.628,
+ "offensive_whole_pct": 0.83,
+ "offensive_whole_english_list_pct": 0.04,
+ "offensive_whole_own_list_pct": 0.135,
+ "offensive_whole_major_lists_pct": 0.165,
+ "offensive_severe_en_pct": 0.005,
+ "offensive_inside5_pct": 1.155,
+ "offensive_inside4_pct": 11.73,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "reet",
+   21,
+   [
+    "nl"
+   ],
+   [
+    "reet tineetemmed ceden azru",
+    "reet thuder tgeffsuten sired"
+   ]
+  ],
+  [
+   "urin",
+   18,
+   [
+    "sl"
+   ],
+   [
+    "qqraelfan tserzirumen urin",
+    "yuwin acun urin ilsadusses"
+   ]
+  ],
+  [
+   "sulin",
+   17,
+   [
+    "cs"
+   ],
+   [
+    "tkarsayt uhawin sulin qeen",
+    "laedliyin sulin uchent deit"
+   ]
+  ],
+  [
+   "thim",
+   16,
+   [
+    "th"
+   ],
+   [
+    "insa ifulawdirem thim acki",
+    "sizdeqqladen slek lmam thim"
+   ]
+  ],
+  [
+   "kanen",
+   16,
+   [
+    "nl"
+   ],
+   [
+    "abdefrer ikelbed udellkanen",
+    "wellmakanen thin deed isad"
+   ]
+  ],
+  [
+   "uqan",
+   14,
+   [
+    "kab"
+   ],
+   [
+    "deraegwa tqewwag uqan akumt",
+    "bendameg tlam uqan stuzen"
+   ]
+  ],
+  [
+   "amda",
+   13,
+   [
+    "hi"
+   ],
+   [
+    "igeffaglu amda tnarikulled",
+    "melt amda aemer trussukkud"
+   ]
+  ],
+  [
+   "semle",
+   12,
+   [
+    "mr"
+   ],
+   [
+    "agezzufgen udus yiwan semleh",
+    "aqlen neem tzizagay semled"
+   ]
+  ],
+  [
+   "qqan",
+   12,
+   [
+    "kab"
+   ],
+   [
+    "qqan azeffgammreg smiegret",
+    "ireecufen deit qqan txewsen"
+   ]
+  ],
+  [
+   "skit",
+   11,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "skit timimen seig tqusilat",
+    "ilha ukelyunen kersed skit"
+   ]
+  ],
+  [
+   "nuli",
+   11,
+   [
+    "ja"
+   ],
+   [
+    "ddibagit nuli hulen ayamar",
+    "zzezmed nuli geni geffurin"
+   ]
+  ],
+  [
+   "saed",
+   10,
+   [
+    "da"
+   ],
+   [
+    "saed sutret uggalen sehhmeg",
+    "zemmucan saed srid yibaed"
+   ]
+  ],
+  [
+   "gerbe",
+   10,
+   [
+    "fr"
+   ],
+   [
+    "gerbeyyal usettraedel ucreg",
+    "nuttdeed gerbeqqewwlem cemen"
+   ]
+  ],
+  [
+   "zamen",
+   9,
+   [
+    "ja"
+   ],
+   [
+    "hedmikuren lmeemer ierazamen",
+    "temlugzamen mmuh lean ikna"
+   ]
+  ],
+  [
+   "slet",
+   9,
+   [
+    "nl"
+   ],
+   [
+    "icit slet aeli tumagdukel",
+    "wuden tbim myikunarun slet"
+   ]
+  ]
+ ],
+ "samples": [
+  "feread saren sisi sbewwugel",
+  "tizi wuraben tmeqqef femmal",
+  "rrezla aluffed mezred iemt",
+  "cemer ukabbeed ttay iwulta",
+  "surgifgem smetawsint tnin",
+  "lhawriergen unden awururek",
+  "gelluzawar tnasrahen yaki",
+  "simrezel acemt userni icid",
+  "tsec ukeyyised ieiwehelem",
+  "skent treklen yisayeg uheddud",
+  "tnaeun mastagun bera yemen",
+  "wudagniyen tsun tallexzigen"
+ ],
+ "seconds": 9.4,
+ "languages": [
+  "kab"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

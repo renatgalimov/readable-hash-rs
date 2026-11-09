@@ -1,0 +1,236 @@
+{
+ "name": "el-block",
+ "corpus_words": 80000,
+ "relaxed_rows": 12,
+ "relaxed_examples": [
+  "sc",
+  "py",
+  "arc",
+  "ac",
+  "ic",
+  "oc",
+  "yc",
+  "nd",
+  "ec",
+  "rc",
+  "ng",
+  "sc"
+ ],
+ "banned_pairs": 4071,
+ "segmented_words": 58435,
+ "skipped_words": 21565,
+ "middle_attested_fraction": 0.4637044270833333,
+ "end32_attested_fraction": 0.4221598307291667,
+ "end16_attested_fraction": 0.6636555989583334,
+ "begin_attested": 128,
+ "three_token_rounds": [
+  801,
+  588,
+  402,
+  203
+ ],
+ "chars": 27.89,
+ "max_chars": 38,
+ "consonant_runs_pct": 10.602,
+ "vowel_runs_pct": 9.843,
+ "english_words_pct": 1.365,
+ "own_words_pct": 23.357,
+ "offensive_whole_pct": 0.52,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 1.33,
+ "offensive_inside4_pct": 19.95,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "apara",
+   20,
+   [
+    "fi"
+   ],
+   [
+    "arkermio olia aparamei teos",
+    "aparatleka ethaimoi eikora"
+   ]
+  ],
+  [
+   "palli",
+   19,
+   [
+    "fi"
+   ],
+   [
+    "lichoes pallisoyme pleyasfaro",
+    "gkmeno ftigrovata palliriseis"
+   ]
+  ],
+  [
+   "petel",
+   17,
+   [
+    "bg",
+    "mk"
+   ],
+   [
+    "eythna ftavages aytopetelo",
+    "petelos rori stilizoys mano"
+   ]
+  ],
+  [
+   "panna",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "logono aneggie epanna kleroyme",
+    "epanna eikastarika symon erno"
+   ]
+  ],
+  [
+   "tate",
+   17,
+   [
+    "ro"
+   ],
+   [
+    "xanavadimatikoi tate frio mean",
+    "voika petos migiindeza tate"
+   ]
+  ],
+  [
+   "pios",
+   14,
+   [
+    "gd"
+   ],
+   [
+    "laspyrsa pios sygkekkinforo",
+    "pios proika pyran oyitagoniko"
+   ]
+  ],
+  [
+   "satan",
+   14,
+   [
+    "no",
+    "sv"
+   ],
+   [
+    "tzemika netreis satanas freon",
+    "eromenolen satandinesai apali"
+   ]
+  ],
+  [
+   "kisa",
+   14,
+   [
+    "is"
+   ],
+   [
+    "erli regigmiliko aftes kisa",
+    "ypokemvro sygkma kisa ekkria"
+   ]
+  ],
+  [
+   "asas",
+   14,
+   [
+    "gl"
+   ],
+   [
+    "asas tiresei epema medooria",
+    "leno asas sesoyindioy aies"
+   ]
+  ],
+  [
+   "niti",
+   12,
+   [
+    "te"
+   ],
+   [
+    "olas niti tinaysan tereta",
+    "teiona speytara efoy niti"
+   ]
+  ],
+  [
+   "veres",
+   12,
+   [
+    "hu"
+   ],
+   [
+    "goyngk sfia apekares egkliveres",
+    "ataraveres prootheis estizaria"
+   ]
+  ],
+  [
+   "koli",
+   12,
+   [
+    "kn"
+   ],
+   [
+    "olan alogaras koli aytovine",
+    "axiardys frampse adate koli"
+   ]
+  ],
+  [
+   "perse",
+   12,
+   [
+    "et",
+    "fi"
+   ],
+   [
+    "yperse favotreis aligan apali",
+    "schra etoiaras sapides yperse"
+   ]
+  ],
+  [
+   "anali",
+   9,
+   [
+    "mt"
+   ],
+   [
+    "zoso aganalidoma mitsiloyme",
+    "neoypisan planalistor momo"
+   ]
+  ],
+  [
+   "fela",
+   9,
+   [
+    "cs"
+   ],
+   [
+    "fela nomares kririko faneas",
+    "petos trennigontai fela nina"
+   ]
+  ]
+ ],
+ "samples": [
+  "vrykto egkta myiko omvalesei",
+  "maiki goyntis pineon vrirnei",
+  "olonisei plegoy kroois mois",
+  "tois naiografis kaio ametiso",
+  "kerkepika isavtimias deia",
+  "rapsolexto sema sygklithlo",
+  "nomioyrarin deniachon pansa",
+  "mytoyiosi empto agenti vaso",
+  "ekete nasichtoyn montloyron",
+  "schas akinter epivela reysia",
+  "deigisi ftochlemo fati apoti",
+  "goyikidil ekso proodidoler"
+ ],
+ "seconds": 234.7,
+ "languages": [
+  "el"
+ ],
+ "no_english": false,
+ "blocklist": true
+}

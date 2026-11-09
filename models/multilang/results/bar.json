@@ -1,0 +1,229 @@
+{
+ "name": "bar",
+ "corpus_words": 67769,
+ "relaxed_rows": 6,
+ "relaxed_examples": [
+  "sc",
+  "gsc",
+  "ex",
+  "uc",
+  "ruc",
+  "rc"
+ ],
+ "segmented_words": 42521,
+ "skipped_words": 25248,
+ "middle_attested_fraction": 0.6327718098958334,
+ "end32_attested_fraction": 0.427978515625,
+ "end16_attested_fraction": 0.6686197916666666,
+ "begin_attested": 128,
+ "chars": 26.39,
+ "max_chars": 36,
+ "consonant_runs_pct": 30.395,
+ "vowel_runs_pct": 2.462,
+ "english_words_pct": 1.197,
+ "own_words_pct": 27.352,
+ "offensive_whole_pct": 2.63,
+ "offensive_whole_english_list_pct": 0.32,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.13,
+ "offensive_severe_en_pct": 0.075,
+ "offensive_inside5_pct": 7.53,
+ "offensive_inside4_pct": 19.905,
+ "offensive_across_words_pct": 0.05,
+ "top_hits": [
+  [
+   "ische",
+   985,
+   [
+    "de"
+   ],
+   [
+    "kies vadn voifer vinschanische",
+    "tres altatn reinrische pidn"
+   ]
+  ],
+  [
+   "schoft",
+   87,
+   [
+    "nl"
+   ],
+   [
+    "bsum gean brot platsoschoftn",
+    "obhorkle wirkafer kladschoft"
+   ]
+  ],
+  [
+   "chich",
+   61,
+   [
+    "vi"
+   ],
+   [
+    "inteigam gschichstn gwoch blal",
+    "faschicht eanach studisrium"
+   ]
+  ],
+  [
+   "arsch",
+   30,
+   [
+    "de"
+   ],
+   [
+    "schnetn toag gustischn parsch",
+    "foon niadschoft arsch afregens"
+   ]
+  ],
+  [
+   "porn",
+   23,
+   [
+    "cy",
+    "en",
+    "et",
+    "gd",
+    "hi",
+    "mt",
+    "sk",
+    "sl",
+    "sr",
+    "zu"
+   ],
+   [
+    "mest porn fohn kiemassoltn",
+    "furinga punischn porn niedoakeit"
+   ]
+  ],
+  [
+   "chert",
+   22,
+   [
+    "ru"
+   ],
+   [
+    "fuchschiagn klna gwal gschert",
+    "gschert waldau gananzoi vaer"
+   ]
+  ],
+  [
+   "fela",
+   20,
+   [
+    "cs"
+   ],
+   [
+    "mussing birkus bodend fela",
+    "mite fela huiter stankindn"
+   ]
+  ],
+  [
+   "bits",
+   20,
+   [
+    "mr"
+   ],
+   [
+    "wellach kumt bits bleassan",
+    "gwehma perelatz bits iwana"
+   ]
+  ],
+  [
+   "asna",
+   20,
+   [
+    "is"
+   ],
+   [
+    "asna ibropain entat zugrung",
+    "kurzhandlung asna buin faam"
+   ]
+  ],
+  [
+   "rima",
+   20,
+   [
+    "la"
+   ],
+   [
+    "dublung rima unfaln dreida",
+    "kurztondn rima side kipfts"
+   ]
+  ],
+  [
+   "pele",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "chit pele bibermanik instine",
+    "pele klaboaren moasts fold"
+   ]
+  ],
+  [
+   "inat",
+   18,
+   [
+    "sq"
+   ],
+   [
+    "mentsprach inat finare gfat",
+    "zwit auffoiafurt inat ghad"
+   ]
+  ],
+  [
+   "pisa",
+   18,
+   [
+    "ro"
+   ],
+   [
+    "kuschwillach boog pisa bian",
+    "pisa zaan blekraga klimma"
+   ]
+  ],
+  [
+   "rong",
+   18,
+   [
+    "th"
+   ],
+   [
+    "rong umstredli gschdalich wost",
+    "buschnell rong thit rontiat"
+   ]
+  ],
+  [
+   "lund",
+   17,
+   [
+    "hi"
+   ],
+   [
+    "bahntawoat pild kufa lund",
+    "lund hiln hoibegem niagne"
+   ]
+  ]
+ ],
+ "samples": [
+  "sunsde jont lutz thonfene",
+  "gecha richdee mearign suatum",
+  "dumpur kettlt erotte brum",
+  "raung aristiert vatn bsondat",
+  "perltich fraznschaut grad",
+  "orwaflazes afna krafarkt",
+  "neadrimigen gruboden zeat",
+  "lubetiad blne deposs fain",
+  "kaen arieandl bruahrtign",
+  "ogts sessing eafugt pietien",
+  "grator iwalemadl antn schen",
+  "ritzbign kare rechneiskischn"
+ ],
+ "seconds": 8.7,
+ "languages": [
+  "bar"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

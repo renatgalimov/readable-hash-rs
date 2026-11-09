@@ -1,0 +1,231 @@
+{
+ "name": "kn",
+ "corpus_words": 80000,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "yg"
+ ],
+ "segmented_words": 47608,
+ "skipped_words": 32392,
+ "middle_attested_fraction": 0.4571533203125,
+ "end32_attested_fraction": 0.3957926432291667,
+ "end16_attested_fraction": 0.6175944010416666,
+ "begin_attested": 128,
+ "chars": 28.93,
+ "max_chars": 41,
+ "consonant_runs_pct": 53.074,
+ "vowel_runs_pct": 4.942,
+ "english_words_pct": 0.268,
+ "own_words_pct": 25.785,
+ "offensive_whole_pct": 1.545,
+ "offensive_whole_english_list_pct": 0.265,
+ "offensive_whole_own_list_pct": 0.15,
+ "offensive_whole_major_lists_pct": 0.605,
+ "offensive_severe_en_pct": 0.22,
+ "offensive_inside5_pct": 1.875,
+ "offensive_inside4_pct": 12.535,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "vittu",
+   106,
+   [
+    "fi"
+   ],
+   [
+    "todglige masthneglnnu nisesvittu",
+    "mnarbhvvittu milu udgrdhglnnu"
+   ]
+  ],
+  [
+   "tittu",
+   62,
+   [
+    "te"
+   ],
+   [
+    "jariytittu matnvu nekarduvu",
+    "sird sayn muttittu eruttvrad"
+   ]
+  ],
+  [
+   "damn",
+   23,
+   [
+    "cy",
+    "en",
+    "gd"
+   ],
+   [
+    "shvadlli demt adugomdnu damn",
+    "enraduvu hrru tulkal damn"
+   ]
+  ],
+  [
+   "seks",
+   18,
+   [
+    "be",
+    "bg",
+    "hr",
+    "id",
+    "mk",
+    "ms",
+    "nl",
+    "pl",
+    "ru",
+    "sq",
+    "te",
+    "tr",
+    "uk"
+   ],
+   [
+    "gidmasne tevlanviti seks",
+    "tlarglu notkke seks gmtynu"
+   ]
+  ],
+  [
+   "koks",
+   17,
+   [
+    "ml",
+    "mr"
+   ],
+   [
+    "velsnn canlstige geguttde koks",
+    "koks cliruv kttlitiglnnu gumpiglu"
+   ]
+  ],
+  [
+   "clit",
+   17,
+   [
+    "en"
+   ],
+   [
+    "smanarikeylli clit aknnu trvu",
+    "utisiddru clit knikeynnu enilglnnu"
+   ]
+  ],
+  [
+   "prsi",
+   17,
+   [
+    "sl"
+   ],
+   [
+    "ninn nastamttiglnnu prsi toglu",
+    "atre prsi pairuttde aphanvne"
+   ]
+  ],
+  [
+   "konn",
+   17,
+   [
+    "mr"
+   ],
+   [
+    "vitt phgllli jostrkttiy konn",
+    "cilkarnydimd konn kuvnnu dens"
+   ]
+  ],
+  [
+   "billi",
+   16,
+   [
+    "hi"
+   ],
+   [
+    "goribillin jagdad kdtelglnnu",
+    "edriysibillin rupad drimd konvu"
+   ]
+  ],
+  [
+   "dike",
+   15,
+   [
+    "eu",
+    "sr"
+   ],
+   [
+    "pujndhiy dike splu hmavnnu",
+    "dike jigisbiy kdideybekglu"
+   ]
+  ],
+  [
+   "mona",
+   15,
+   [
+    "it"
+   ],
+   [
+    "arte mona parkhasikvu kndimd",
+    "mona anniglu siyu kstutddi"
+   ]
+  ],
+  [
+   "ragut",
+   14,
+   [
+    "ms"
+   ],
+   [
+    "vrguttde gleraguttde pudhanvele",
+    "braguttve kreyisigiruttde ndeduglige"
+   ]
+  ],
+  [
+   "tuttar",
+   14,
+   [
+    "sv"
+   ],
+   [
+    "kttuttare vayuddhdhglnnu iduttane ksvu",
+    "kttuttare ulliglnnu pule mdildnad"
+   ]
+  ],
+  [
+   "vitt",
+   14,
+   [
+    "et"
+   ],
+   [
+    "ghitlgasglu vitt mmte asege",
+    "vitt phgllli jostrkttiy konn"
+   ]
+  ],
+  [
+   "ullu",
+   14,
+   [
+    "hi"
+   ],
+   [
+    "gathmkrnglu anne ullu mmru",
+    "amis matipavlige adynnu ullu"
+   ]
+  ]
+ ],
+ "samples": [
+  "grenge ayiruv skhi yujivinlli",
+  "nita ilikeylli anmtvagi gravnd",
+  "kttunyvnnu mrikeylli klniyu blege",
+  "upglu sorupduttve prlu jnreglnnu",
+  "tritraige spormnkariglu biti",
+  "ndeylpnviddu hrin rupdriyan",
+  "rastisrpiy bikarbri drin",
+  "skvadtiglu bdvu horayd dhnu",
+  "bhdimd sokitiglu bllastdhglu",
+  "iragi vyutgllli adrsglnnu hmisth",
+  "bijiynnu tleddhdimd sthlu vige",
+  "ilarajittu bhide saumiymmel"
+ ],
+ "seconds": 9.1,
+ "languages": [
+  "kn"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,262 @@
+{
+ "name": "mkw",
+ "corpus_words": 68959,
+ "relaxed_rows": 4,
+ "relaxed_examples": [
+  "aa",
+  "vaa",
+  "vs",
+  "vu"
+ ],
+ "segmented_words": 45398,
+ "skipped_words": 23561,
+ "middle_attested_fraction": 0.517333984375,
+ "end32_attested_fraction": 0.3801676432291667,
+ "end16_attested_fraction": 0.6150716145833334,
+ "begin_attested": 128,
+ "chars": 26.58,
+ "max_chars": 36,
+ "consonant_runs_pct": 19.219,
+ "vowel_runs_pct": 0.057,
+ "english_words_pct": 1.094,
+ "own_words_pct": 24.423,
+ "offensive_whole_pct": 3.075,
+ "offensive_whole_english_list_pct": 0.175,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.335,
+ "offensive_severe_en_pct": 0.015,
+ "offensive_inside5_pct": 4.375,
+ "offensive_inside4_pct": 20.65,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "skata",
+   236,
+   [
+    "el"
+   ],
+   [
+    "vaskata argupreshki jaguski",
+    "altsesilnata loki atomunskata"
+   ]
+  ],
+  [
+   "natsi",
+   44,
+   [
+    "fi",
+    "mk"
+   ],
+   [
+    "koston ekti tomokot fanatsijata",
+    "santekachar unesto gernatsija"
+   ]
+  ],
+  [
+   "shite",
+   32,
+   [
+    "cs",
+    "da",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "gl",
+    "hi",
+    "hu",
+    "id",
+    "it",
+    "ja",
+    "lt",
+    "lv",
+    "mn",
+    "mr",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pt",
+    "sq",
+    "sv",
+    "th",
+    "uk",
+    "uz",
+    "vi",
+    "zu"
+   ],
+   [
+    "golitekhiski fulashite kvel",
+    "lele vozdelba cola kushite"
+   ]
+  ],
+  [
+   "chani",
+   29,
+   [
+    "zh"
+   ],
+   [
+    "vilna usavolchani etti lose",
+    "vechani taki realdenja kano"
+   ]
+  ],
+  [
+   "kale",
+   21,
+   [
+    "lt"
+   ],
+   [
+    "addemanski kale beniti viet",
+    "neusvane frijodintsi kale"
+   ]
+  ],
+  [
+   "chlen",
+   20,
+   [
+    "uk"
+   ],
+   [
+    "cochlenti tski dodejki ruska",
+    "mitetslo machlensko okrein"
+   ]
+  ],
+  [
+   "siski",
+   20,
+   [
+    "ru",
+    "uk"
+   ],
+   [
+    "jarile iminsko khuva totsiski",
+    "natsiski devitsi izoben enka"
+   ]
+  ],
+  [
+   "niti",
+   20,
+   [
+    "te"
+   ],
+   [
+    "adelska niti robuko normna",
+    "gordnerot niti vort plemija"
+   ]
+  ],
+  [
+   "site",
+   19,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "bilini site asia spodstven",
+    "kvel oktena rodivier site"
+   ]
+  ],
+  [
+   "dust",
+   19,
+   [
+    "hi"
+   ],
+   [
+    "eresni muzielil izet dust",
+    "noti upopsko suliteni dust"
+   ]
+  ],
+  [
+   "mater",
+   18,
+   [
+    "sl"
+   ],
+   [
+    "trgunjeto spirainka materstvoto",
+    "materka ethina vidian imla"
+   ]
+  ],
+  [
+   "noki",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "adrijomot momi noki pliziraat",
+    "firenorska noki opsariktna"
+   ]
+  ],
+  [
+   "chich",
+   17,
+   [
+    "vi"
+   ],
+   [
+    "dvanano sletochichniot frimot",
+    "tatali ekkhti pitoechichen"
+   ]
+  ],
+  [
+   "pusi",
+   17,
+   [
+    "kn"
+   ],
+   [
+    "pusi etiona rapergas veno",
+    "pusi degencot kosi lektel"
+   ]
+  ],
+  [
+   "tits",
+   16,
+   [
+    "cy",
+    "en",
+    "gd",
+    "is",
+    "la",
+    "mn",
+    "ms",
+    "mt",
+    "my",
+    "sq",
+    "sr",
+    "te",
+    "zu"
+   ],
+   [
+    "osogaat dvata tits svesvidni",
+    "plecutanitsa tits baum plot"
+   ]
+  ]
+ ],
+ "samples": [
+  "dantata jual ekite conizhal",
+  "neda nikano sherki dancte",
+  "advotni tonosi oplana spes",
+  "alite kinimala pros ortoto",
+  "zhizdiki fallicolot krot",
+  "luchemodira imuva vlazners",
+  "varimenstskite krakation tino",
+  "ekkespni blal kavalde osen",
+  "raki kiedshta spiskurzen",
+  "pusta simeli izbron etimion",
+  "krasha riziemil sale poen",
+  "nivopiko raba revideksata"
+ ],
+ "seconds": 9.0,
+ "languages": [
+  "mkw"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

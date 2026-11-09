@@ -1,0 +1,228 @@
+{
+ "name": "lad",
+ "corpus_words": 10295,
+ "relaxed_rows": 89,
+ "relaxed_examples": [
+  "dj",
+  "av",
+  "fo",
+  "ch",
+  "bo",
+  "fu",
+  "af",
+  "az",
+  "ag",
+  "hu",
+  "du",
+  "ay"
+ ],
+ "segmented_words": 7174,
+ "skipped_words": 3121,
+ "middle_attested_fraction": 0.13179524739583334,
+ "end32_attested_fraction": 0.14798990885416666,
+ "end16_attested_fraction": 0.279541015625,
+ "begin_attested": 128,
+ "chars": 27.08,
+ "max_chars": 36,
+ "consonant_runs_pct": 9.452,
+ "vowel_runs_pct": 4.493,
+ "english_words_pct": 1.917,
+ "own_words_pct": 10.315,
+ "offensive_whole_pct": 2.82,
+ "offensive_whole_english_list_pct": 0.065,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.58,
+ "offensive_severe_en_pct": 0.03,
+ "offensive_inside5_pct": 2.27,
+ "offensive_inside4_pct": 19.61,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "veres",
+   48,
+   [
+    "hu"
+   ],
+   [
+    "abala pedaduas kriveres eksples",
+    "erisidel edininiya liveres"
+   ]
+  ],
+  [
+   "fela",
+   21,
+   [
+    "cs"
+   ],
+   [
+    "sonezas fela amendio isatales",
+    "aktuna janyta fela mozores"
+   ]
+  ],
+  [
+   "vana",
+   21,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "vana egzta romaguruto endo",
+    "sevilokto filmsemika vana"
+   ]
+  ],
+  [
+   "kales",
+   21,
+   [
+    "lt"
+   ],
+   [
+    "morensina kreatemir pekales",
+    "azas noviesas kales espiles"
+   ]
+  ],
+  [
+   "ayam",
+   20,
+   [
+    "id"
+   ],
+   [
+    "ofitilas bino kurdado ayam",
+    "obizava bustros espinito ayam"
+   ]
+  ],
+  [
+   "pedo",
+   19,
+   [
+    "es"
+   ],
+   [
+    "pedo hual dadutilyto atadas",
+    "lusidotado pedo vendas kante"
+   ]
+  ],
+  [
+   "yasa",
+   19,
+   [
+    "ko"
+   ],
+   [
+    "sueno gustrasion yasa ayliseria",
+    "adukatikas yasa auvituntus"
+   ]
+  ],
+  [
+   "foda",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "alkubres dote foda gembar",
+    "foda afuela agna plabernes"
+   ]
+  ],
+  [
+   "galo",
+   17,
+   [
+    "gl",
+    "pt"
+   ],
+   [
+    "arvena osyarmer auada galo",
+    "hera galo diksibadiar gear"
+   ]
+  ],
+  [
+   "puto",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "furiranial shiko estar puto",
+    "kesa botanta puto dishledo"
+   ]
+  ],
+  [
+   "asal",
+   16,
+   [
+    "gd"
+   ],
+   [
+    "ofrente asal ofado folizamente",
+    "enduos imetra impeal asal"
+   ]
+  ],
+  [
+   "kisa",
+   16,
+   [
+    "is"
+   ],
+   [
+    "leno kisa servada aumbisado",
+    "kisa regiodurya abad rita"
+   ]
+  ],
+  [
+   "pute",
+   15,
+   [
+    "fr"
+   ],
+   [
+    "pute tidinyta renampatus",
+    "edifndio chikada pute donde"
+   ]
+  ],
+  [
+   "mama",
+   15,
+   [
+    "pt"
+   ],
+   [
+    "fekurridad stro mama kuadan",
+    "turguendas djta jarikla mama"
+   ]
+  ],
+  [
+   "rota",
+   15,
+   [
+    "ja"
+   ],
+   [
+    "majoguension nuar rota leta",
+    "mules estulokas huertos rota"
+   ]
+  ]
+ ],
+ "samples": [
+  "kiatales bodo justo ofnsisas",
+  "aras eksposisyon insples kindito",
+  "ellizo canyal avdena sako",
+  "empos yarvreto kanto atlanas",
+  "lejancla tishmansio musa",
+  "plalichjision rida edemitre",
+  "bushkumidia murbitimas jeon",
+  "jursevado agio paroyo pues",
+  "alga yardadiar satevencon",
+  "evia pirinos dizines studon",
+  "murtin imajniya fena dedo",
+  "ekspovoktro alya retormizamiento"
+ ],
+ "seconds": 8.2,
+ "languages": [
+  "lad"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

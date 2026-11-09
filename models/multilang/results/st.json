@@ -1,0 +1,248 @@
+{
+ "name": "st",
+ "corpus_words": 12027,
+ "relaxed_rows": 181,
+ "relaxed_examples": [
+  "bu",
+  "fo",
+  "tj",
+  "fu",
+  "du",
+  "bi",
+  "co",
+  "ru",
+  "no",
+  "kw",
+  "su",
+  "qe"
+ ],
+ "segmented_words": 9370,
+ "skipped_words": 2657,
+ "middle_attested_fraction": 0.12434895833333333,
+ "end32_attested_fraction": 0.1639404296875,
+ "end16_attested_fraction": 0.30078125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.32,
+ "max_chars": 38,
+ "consonant_runs_pct": 10.945,
+ "vowel_runs_pct": 1.758,
+ "english_words_pct": 1.01,
+ "own_words_pct": 14.397,
+ "offensive_whole_pct": 2.285,
+ "offensive_whole_english_list_pct": 0.035,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.985,
+ "offensive_severe_en_pct": 0.055,
+ "offensive_inside5_pct": 2.505,
+ "offensive_inside4_pct": 31.53,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "polla",
+   45,
+   [
+    "ca",
+    "es"
+   ],
+   [
+    "sobehwere akoroko khampolla",
+    "lipolla kgoaeng ninwa isekang"
+   ]
+  ],
+  [
+   "hlang",
+   42,
+   [
+    "th"
+   ],
+   [
+    "kwae qahlang namese torise",
+    "dehlang supilwe jeang daniele"
+   ]
+  ],
+  [
+   "shits",
+   30,
+   [
+    "cs",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "gd",
+    "lt",
+    "lv",
+    "ml",
+    "mr",
+    "mt",
+    "sq",
+    "sv",
+    "th",
+    "uk",
+    "uz",
+    "zu"
+   ],
+   [
+    "chetso ethuto gelesa rishitse",
+    "nishitse enkgala tsikarisano"
+   ]
+  ],
+  [
+   "semel",
+   24,
+   [
+    "kn"
+   ],
+   [
+    "semela modisa hlaledi kiraisiswa",
+    "asemele alisitumo kahobone"
+   ]
+  ],
+  [
+   "sung",
+   21,
+   [
+    "vi"
+   ],
+   [
+    "tikala futhopolo sung jole",
+    "rweletshueng sung ememolo ubano"
+   ]
+  ],
+  [
+   "kanen",
+   21,
+   [
+    "nl"
+   ],
+   [
+    "roritsoetsa tealomakaneng tjalo",
+    "foela ekapapakaneng sona emara"
+   ]
+  ],
+  [
+   "ruang",
+   20,
+   [
+    "id"
+   ],
+   [
+    "foela utopusomelo ruang okana",
+    "trosedika alobiso qeporuang"
+   ]
+  ],
+  [
+   "sule",
+   20,
+   [
+    "kn"
+   ],
+   [
+    "emea ekomorutloa beso sule",
+    "sule roho alafisitiso hwne"
+   ]
+  ],
+  [
+   "hure",
+   19,
+   [
+    "de"
+   ],
+   [
+    "tsikwa hure iteta kuohapela",
+    "nnamahetseng hure mipotuomola"
+   ]
+  ],
+  [
+   "rota",
+   19,
+   [
+    "ja"
+   ],
+   [
+    "mphalethoho qapotjpakeng rota",
+    "ngaba jaong temamphata rota"
+   ]
+  ],
+  [
+   "baka",
+   19,
+   [
+    "ja"
+   ],
+   [
+    "nkiso kgakomiseng reeng baka",
+    "baka imemokela uber nkasho"
+   ]
+  ],
+  [
+   "pene",
+   18,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "tokilosela thakala pene hanwa",
+    "borasatolwa pene suposupo"
+   ]
+  ],
+  [
+   "pina",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "prenyorositse khoa uyka pina",
+    "pina nationatlwe katomollo"
+   ]
+  ],
+  [
+   "pisa",
+   17,
+   [
+    "ro"
+   ],
+   [
+    "motso pisa banyane tsilisialong",
+    "duohohorang pisa emelwa uzwa"
+   ]
+  ],
+  [
+   "fing",
+   16,
+   [
+    "hu"
+   ],
+   [
+    "fing lifi abetse temaremane",
+    "fing wetsweng niana mmefantsapano"
+   ]
+  ]
+ ],
+ "samples": [
+  "sopolong weso yung rinyapela",
+  "letho enthaka fetaro sohune",
+  "datlehang qabatsa litsona tjka",
+  "sale elobohong mali shekeha",
+  "sukgosile prohlekanyeng beng",
+  "mihleferetsa aketsa jakgabala",
+  "totorolika bekilamano ometso",
+  "yumetane nnana ntjhaeng etswa",
+  "meano elanyatsweng tjrafoametse",
+  "hulo rakgisa baleho rwanyelwa",
+  "betohile isitsilo faele boela",
+  "enethahlaba mealo moketjtopo"
+ ],
+ "seconds": 9.3,
+ "languages": [
+  "st"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

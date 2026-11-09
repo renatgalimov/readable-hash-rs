@@ -1,0 +1,281 @@
+{
+ "name": "vo",
+ "corpus_words": 11989,
+ "relaxed_rows": 138,
+ "relaxed_examples": [
+  "sp",
+  "wi",
+  "je",
+  "pu",
+  "av",
+  "ru",
+  "sc",
+  "wo",
+  "jo",
+  "yu",
+  "ja",
+  "ji"
+ ],
+ "segmented_words": 7390,
+ "skipped_words": 4599,
+ "middle_attested_fraction": 0.17215983072916666,
+ "end32_attested_fraction": 0.16752115885416666,
+ "end16_attested_fraction": 0.3116048177083333,
+ "begin_attested": 128,
+ "chars": 26.68,
+ "max_chars": 38,
+ "consonant_runs_pct": 13.169,
+ "vowel_runs_pct": 1.347,
+ "english_words_pct": 2.152,
+ "own_words_pct": 12.398,
+ "offensive_whole_pct": 2.77,
+ "offensive_whole_english_list_pct": 0.21,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.35,
+ "offensive_severe_en_pct": 0.13,
+ "offensive_inside5_pct": 2.305,
+ "offensive_inside4_pct": 14.955,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "spol",
+   25,
+   [
+    "sl"
+   ],
+   [
+    "siom lombitunau tula spol",
+    "spol mercom esabik moodam"
+   ]
+  ],
+  [
+   "fena",
+   24,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "fena inedague slougikely",
+    "juelutulee rads fena esas"
+   ]
+  ],
+  [
+   "teta",
+   21,
+   [
+    "es"
+   ],
+   [
+    "teta soartick jose olamer",
+    "papreffield teer teta turrow"
+   ]
+  ],
+  [
+   "hore",
+   21,
+   [
+    "be",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "hr",
+    "hu",
+    "id",
+    "is",
+    "it",
+    "la",
+    "lv",
+    "mr",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk"
+   ],
+   [
+    "hore lecellador gasburg hien",
+    "hore settom moodauro jols"
+   ]
+  ],
+  [
+   "boles",
+   19,
+   [
+    "ca"
+   ],
+   [
+    "agatirebik boles olta toda",
+    "boles aras drey okedownsan"
+   ]
+  ],
+  [
+   "asas",
+   19,
+   [
+    "gl"
+   ],
+   [
+    "dien covintor clefna asas",
+    "asas escandrinen geda bens"
+   ]
+  ],
+  [
+   "hora",
+   18,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "nobolod hora vicomena luton",
+    "akstiana sonnisal hora alum"
+   ]
+  ],
+  [
+   "here",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "stable amburg akeaunna here",
+    "wias cias lavarshasburg here"
+   ]
+  ],
+  [
+   "coon",
+   17,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "gd",
+    "gl",
+    "id",
+    "is",
+    "la",
+    "lv",
+    "mn",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pt",
+    "sl",
+    "sv",
+    "vi"
+   ],
+   [
+    "daut lilonierre cela coon",
+    "wels coon clawsville jertleta"
+   ]
+  ],
+  [
+   "muda",
+   17,
+   [
+    "ru"
+   ],
+   [
+    "wauker muda teelol ongada",
+    "klel jeon muda larnewttes"
+   ]
+  ],
+  [
+   "rota",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "teilarrasburg rota tuda hans",
+    "sheville mces riarmornet rota"
+   ]
+  ],
+  [
+   "kran",
+   16,
+   [
+    "be"
+   ],
+   [
+    "cempirson vessbompad kran",
+    "fonnsville kran elsilo heilla"
+   ]
+  ],
+  [
+   "loda",
+   16,
+   [
+    "hi"
+   ],
+   [
+    "woodiocheanville loda cashauri",
+    "jins loda shirshara nelsom"
+   ]
+  ],
+  [
+   "drol",
+   16,
+   [
+    "nl"
+   ],
+   [
+    "apel drol stamalocsville amin",
+    "marcnoville drol plegembrook"
+   ]
+  ],
+  [
+   "cona",
+   15,
+   [
+    "pt"
+   ],
+   [
+    "lago mcfantsville tisbuma cona",
+    "alol lunundimel lana cona"
+   ]
+  ]
+ ],
+ "samples": [
+  "glemas they jong nuparisville",
+  "leer rulava peture glapia",
+  "ginnah kengos reetas kads",
+  "gams blabares paville taylol",
+  "muttifda cropachant anton",
+  "klaushebla nala akonostry",
+  "somersouds anidowton amburg",
+  "jottigan cisville liegre vedon",
+  "cami blakteli kaleinemik",
+  "wian eldrol pollas eantee",
+  "anudorf orchuteville asom alan",
+  "ruelarom cama lafabuldas"
+ ],
+ "seconds": 8.1,
+ "languages": [
+  "vo"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

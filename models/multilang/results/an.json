@@ -1,0 +1,238 @@
+{
+ "name": "an",
+ "corpus_words": 29189,
+ "relaxed_rows": 95,
+ "relaxed_examples": [
+  "fl",
+  "vu",
+  "ja",
+  "jo",
+  "wa",
+  "az",
+  "ix",
+  "aq",
+  "eq",
+  "ko",
+  "ju",
+  "wi"
+ ],
+ "segmented_words": 21900,
+ "skipped_words": 7289,
+ "middle_attested_fraction": 0.23832194010416666,
+ "end32_attested_fraction": 0.264404296875,
+ "end16_attested_fraction": 0.4256998697916667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.74,
+ "max_chars": 36,
+ "consonant_runs_pct": 4.778,
+ "vowel_runs_pct": 3.658,
+ "english_words_pct": 1.914,
+ "own_words_pct": 14.6,
+ "offensive_whole_pct": 2.725,
+ "offensive_whole_english_list_pct": 0.13,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.775,
+ "offensive_severe_en_pct": 0.07,
+ "offensive_inside5_pct": 3.235,
+ "offensive_inside4_pct": 22.35,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "ariano",
+   146,
+   [
+    "pt"
+   ],
+   [
+    "xagarrarianos abatz sira eltras",
+    "roncameria tiro mido pigarianos"
+   ]
+  ],
+  [
+   "puto",
+   26,
+   [
+    "pt"
+   ],
+   [
+    "hameya puto zion elimurals",
+    "puta suenaclica acen puto"
+   ]
+  ],
+  [
+   "dran",
+   22,
+   [
+    "pl"
+   ],
+   [
+    "lomispato dran adata laterato",
+    "dinativia erna criadors dran"
+   ]
+  ],
+  [
+   "puta",
+   20,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "litercols puta eredeguiban",
+    "guntriors puta pasias cota"
+   ]
+  ],
+  [
+   "suar",
+   20,
+   [
+    "hi"
+   ],
+   [
+    "quiega piada llarsismo suar",
+    "suar scoron leinnacion botent"
+   ]
+  ],
+  [
+   "pene",
+   18,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "pene bateituyon leato cada",
+    "pigavaduro oras pene crica"
+   ]
+  ],
+  [
+   "bite",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "ubon azteauns homoba bite",
+    "bite mers crulla routibre"
+   ]
+  ],
+  [
+   "tetas",
+   17,
+   [
+    "ca",
+    "es",
+    "gl",
+    "pt"
+   ],
+   [
+    "tetas coda vocrue straitaban",
+    "evensada amoncins tetas aqos"
+   ]
+  ],
+  [
+   "trio",
+   17,
+   [
+    "es"
+   ],
+   [
+    "trio zagartusca napintar",
+    "bichent naganyes mels trio"
+   ]
+  ],
+  [
+   "loda",
+   17,
+   [
+    "hi"
+   ],
+   [
+    "irar loda olopulio fixada",
+    "daus gargra loda muyesuada"
+   ]
+  ],
+  [
+   "orau",
+   16,
+   [
+    "cy"
+   ],
+   [
+    "orau valaxallon pollo lara",
+    "orau soses cuaducopus fons"
+   ]
+  ],
+  [
+   "filla",
+   16,
+   [
+    "gl"
+   ],
+   [
+    "frixiespez filla buras aria",
+    "ruratividat filla hamica liana"
+   ]
+  ],
+  [
+   "pios",
+   16,
+   [
+    "gd"
+   ],
+   [
+    "pios beltos botar oleldata",
+    "amelos pios semos besidulo"
+   ]
+  ],
+  [
+   "fena",
+   16,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "lacion fena calica hitruloron",
+    "fena pracultela sasa tuses"
+   ]
+  ],
+  [
+   "olla",
+   16,
+   [
+    "sv"
+   ],
+   [
+    "foras samitielatas alos olla",
+    "fragaba olla anan edeymins"
+   ]
+  ]
+ ],
+ "samples": [
+  "fenidat rien uras idolenta",
+  "esato zachos dialez fetroron",
+  "islanan imeges cencar muez",
+  "anos ededacto chacion cluces",
+  "laguleza afedegrioron pora",
+  "xadigueido tura elorrois",
+  "tornavagia popoticas nuna",
+  "urguixer olta bandio fura",
+  "criva edagricanos mudermidius",
+  "dama atacer tranes irstau",
+  "podiato ubiertuar sida retos",
+  "zatibieta croron prinebutica"
+ ],
+ "seconds": 9.4,
+ "languages": [
+  "an"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

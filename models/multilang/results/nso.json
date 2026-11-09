@@ -1,0 +1,249 @@
+{
+ "name": "nso",
+ "corpus_words": 9593,
+ "relaxed_rows": 209,
+ "relaxed_examples": [
+  "fo",
+  "ny",
+  "fi",
+  "du",
+  "bu",
+  "kw",
+  "no",
+  "tu",
+  "bi",
+  "bj",
+  "ru",
+  "co"
+ ],
+ "segmented_words": 7494,
+ "skipped_words": 2099,
+ "middle_attested_fraction": 0.10428873697916667,
+ "end32_attested_fraction": 0.142333984375,
+ "end16_attested_fraction": 0.26318359375,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.08,
+ "max_chars": 38,
+ "consonant_runs_pct": 11.04,
+ "vowel_runs_pct": 1.459,
+ "english_words_pct": 0.788,
+ "own_words_pct": 12.69,
+ "offensive_whole_pct": 1.86,
+ "offensive_whole_english_list_pct": 0.05,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.555,
+ "offensive_severe_en_pct": 0.03,
+ "offensive_inside5_pct": 2.765,
+ "offensive_inside4_pct": 27.16,
+ "offensive_across_words_pct": 0.04,
+ "top_hits": [
+  [
+   "shits",
+   75,
+   [
+    "cs",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "gd",
+    "lt",
+    "lv",
+    "ml",
+    "mr",
+    "mt",
+    "sq",
+    "sv",
+    "th",
+    "uk",
+    "uz",
+    "zu"
+   ],
+   [
+    "notshitse progego twkolwa boile",
+    "heotobekgile fatse sirutshitse"
+   ]
+  ],
+  [
+   "palen",
+   28,
+   [
+    "nl"
+   ],
+   [
+    "interahlogo tupaleng wenotila",
+    "rwoletse kame inse nkagapaleng"
+   ]
+  ],
+  [
+   "kadit",
+   24,
+   [
+    "cs"
+   ],
+   [
+    "asotsego okaditho swegeago duse",
+    "pore omelela kolekaditsego mooko"
+   ]
+  ],
+  [
+   "pele",
+   20,
+   [
+    "hu"
+   ],
+   [
+    "yaritlolo lwwa belosago pele",
+    "pumekatswa pele temaakabiso"
+   ]
+  ],
+  [
+   "pina",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "pina subatho jala nohladitho",
+    "ntele santekhe pina obantsago"
+   ]
+  ],
+  [
+   "sung",
+   19,
+   [
+    "vi"
+   ],
+   [
+    "muelo efetlethwa fuomelago sung",
+    "elerekhe sung gego omapisa"
+   ]
+  ],
+  [
+   "mama",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "siatama mama hule nkaramiswa",
+    "mama puboraro opana loruwa"
+   ]
+  ],
+  [
+   "muna",
+   18,
+   [
+    "fi"
+   ],
+   [
+    "lladipokgolo indiro siana muna",
+    "opetse ebothemo dinare muna"
+   ]
+  ],
+  [
+   "sadis",
+   18,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "molwa aratsadisate nakgabeng",
+    "jariatoseng sadisa okego ekaba"
+   ]
+  ],
+  [
+   "fela",
+   17,
+   [
+    "cs"
+   ],
+   [
+    "fela tuisolokgolo kgile gwsole",
+    "fela phetse mpeitshiking huana"
+   ]
+  ],
+  [
+   "nasi",
+   17,
+   [
+    "ml",
+    "th"
+   ],
+   [
+    "nasi dimela ruomelago sohuthollo",
+    "rurutlala nyhetswe nyane nasi"
+   ]
+  ],
+  [
+   "elle",
+   17,
+   [
+    "lv"
+   ],
+   [
+    "ribilego rone elle kanegadiana",
+    "kilikgosego elle jephoming"
+   ]
+  ],
+  [
+   "sule",
+   17,
+   [
+    "kn"
+   ],
+   [
+    "yuong cahokiposeng efego sule",
+    "kong prontle sule rerekisi"
+   ]
+  ],
+  [
+   "pene",
+   16,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "buferitse gwkerwhasa pene",
+    "twla kenweng pene sefahemo"
+   ]
+  ],
+  [
+   "alla",
+   16,
+   [
+    "mt"
+   ],
+   [
+    "alla prontelo anagahatha caela",
+    "isasele dubotlala alla khela"
+   ]
+  ]
+ ],
+ "samples": [
+  "ruroso rika yala lifobago",
+  "boso pihleng kanari rukgane",
+  "asotsego okaditho swegeago duse",
+  "tona otobohlwa leno etakete",
+  "pupamielo jahatsemone rago",
+  "gebookapedi mielo wentlhale",
+  "netekaposwa ratshereng jotse",
+  "yaritlolo lwwa belosago pele",
+  "pheo otikasela dubobohalo",
+  "ebong lokwela kgaoago lubomo",
+  "raphere ishapasa butse moago",
+  "piisatisa phola malepokwata"
+ ],
+ "seconds": 9.3,
+ "languages": [
+  "nso"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

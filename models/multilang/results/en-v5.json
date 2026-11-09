@@ -1,0 +1,248 @@
+{
+ "name": "en-v5",
+ "corpus_words": 94080,
+ "relaxed_rows": 0,
+ "relaxed_examples": [],
+ "segmented_words": 62942,
+ "skipped_words": 31138,
+ "middle_attested_fraction": 0.6162109375,
+ "end32_attested_fraction": 0.4763590494791667,
+ "end16_attested_fraction": 0.7115885416666666,
+ "begin_attested": 128,
+ "chars": 27.29,
+ "max_chars": 36,
+ "consonant_runs_pct": 13.629,
+ "vowel_runs_pct": 2.059,
+ "english_words_pct": 21.897,
+ "own_words_pct": 21.897,
+ "offensive_whole_pct": 1.425,
+ "offensive_whole_english_list_pct": 0.365,
+ "offensive_whole_own_list_pct": 0.365,
+ "offensive_whole_major_lists_pct": 0.605,
+ "offensive_severe_en_pct": 0.22,
+ "offensive_inside5_pct": 2.715,
+ "offensive_inside4_pct": 20.71,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "peter",
+   27,
+   [
+    "fr"
+   ],
+   [
+    "misswailities foly peter mener",
+    "slies lightin trusts pipeter"
+   ]
+  ],
+  [
+   "coons",
+   24,
+   [
+    "en"
+   ],
+   [
+    "coons matanier maddly roist",
+    "coons purlitmory japhlage"
+   ]
+  ],
+  [
+   "asses",
+   24,
+   [
+    "en",
+    "mr",
+    "pt",
+    "sr",
+    "te"
+   ],
+   [
+    "burkasses glest propose arere",
+    "glaims sesed espeting teasses"
+   ]
+  ],
+  [
+   "semen",
+   22,
+   [
+    "ca",
+    "cy",
+    "en",
+    "es",
+    "eu",
+    "gl",
+    "mt",
+    "pt",
+    "sr",
+    "uz"
+   ],
+   [
+    "wessemence dives couraggage",
+    "bordocted ried semen porcia"
+   ]
+  ],
+  [
+   "turs",
+   18,
+   [
+    "mn"
+   ],
+   [
+    "fuegation smic luscelet turs",
+    "hansity evearing cummon turs"
+   ]
+  ],
+  [
+   "coles",
+   18,
+   [
+    "la"
+   ],
+   [
+    "coles sendly acaccoes cron",
+    "glibbilisle elal lures coles"
+   ]
+  ],
+  [
+   "hure",
+   18,
+   [
+    "de"
+   ],
+   [
+    "irefeads freers lence hure",
+    "syse augulaid reader hure"
+   ]
+  ],
+  [
+   "boles",
+   17,
+   [
+    "ca"
+   ],
+   [
+    "boles vored acadaching muffry",
+    "cernfire boles enre furmus"
+   ]
+  ],
+  [
+   "saed",
+   16,
+   [
+    "da"
+   ],
+   [
+    "hurlouter saed ormongibre",
+    "slivailing collormating saed"
+   ]
+  ],
+  [
+   "mater",
+   16,
+   [
+    "sl"
+   ],
+   [
+    "fily matermintate feus dosed",
+    "materizounle abutauld impia"
+   ]
+  ],
+  [
+   "flis",
+   16,
+   [
+    "da"
+   ],
+   [
+    "flis achrossible beets amis",
+    "livenaunks flis hoer kial"
+   ]
+  ],
+  [
+   "veres",
+   16,
+   [
+    "hu"
+   ],
+   [
+    "breweth negala overes tidian",
+    "midgroes overes adler samaster"
+   ]
+  ],
+  [
+   "muts",
+   15,
+   [
+    "nl"
+   ],
+   [
+    "muts cunnas fearached boons",
+    "ataber kinograte muts gued"
+   ]
+  ],
+  [
+   "fecal",
+   15,
+   [
+    "en",
+    "pt"
+   ],
+   [
+    "shirpoustic fecal overcommas",
+    "growled carequely fecal vings"
+   ]
+  ],
+  [
+   "anus",
+   14,
+   [
+    "be",
+    "bg",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "eu",
+    "fa",
+    "fr",
+    "gd",
+    "is",
+    "mk",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sl",
+    "sq",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "agic anus plotle aggebois",
+    "bladocted ringaldeth anus"
+   ]
+  ]
+ ],
+ "samples": [
+  "cumman quion nings whinthly",
+  "mally wetteth saucked cupras",
+  "cinnot nonest exhorus soted",
+  "feted godlepts dence flutation",
+  "drudorer phledicile holes",
+  "nathocotis tiens celivial",
+  "trouncluan holowers woter",
+  "nitistes glation stylor roist",
+  "dirs goitrula soldrenade",
+  "aule hellion searly smooting",
+  "holmas rushavum thite unable",
+  "wessemence dives couraggage"
+ ],
+ "seconds": 9.1,
+ "languages": [
+  "en"
+ ]
+}

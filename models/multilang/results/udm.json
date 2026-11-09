@@ -1,0 +1,233 @@
+{
+ "name": "udm",
+ "corpus_words": 6487,
+ "relaxed_rows": 359,
+ "relaxed_examples": [
+  "ky",
+  "pr",
+  "ki",
+  "by",
+  "tu",
+  "be",
+  "mu",
+  "vy",
+  "so",
+  "sy",
+  "py",
+  "bu"
+ ],
+ "segmented_words": 4182,
+ "skipped_words": 2305,
+ "middle_attested_fraction": 0.09639485677083333,
+ "end32_attested_fraction": 0.0947265625,
+ "end16_attested_fraction": 0.18465169270833334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.09,
+ "max_chars": 35,
+ "consonant_runs_pct": 19.885,
+ "vowel_runs_pct": 5.011,
+ "english_words_pct": 0.223,
+ "own_words_pct": 6.165,
+ "offensive_whole_pct": 1.495,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.81,
+ "offensive_severe_en_pct": 0.03,
+ "offensive_inside5_pct": 2.365,
+ "offensive_inside4_pct": 14.995,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "site",
+   23,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "ogshev akly maskvasa site",
+    "everasez ucaz atekyn site"
+   ]
+  ],
+  [
+   "chuka",
+   20,
+   [
+    "bg"
+   ],
+   [
+    "ukes adurdelen chukartske",
+    "arangely salen zalmchukae"
+   ]
+  ],
+  [
+   "pene",
+   19,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "aktemlize lyurkyltan pene",
+    "ogtyez tsisoton pene mazy"
+   ]
+  ],
+  [
+   "sisa",
+   18,
+   [
+    "hr"
+   ],
+   [
+    "paspze obka duormalen sisa",
+    "utiyn ukto pozhantiate sisa"
+   ]
+  ],
+  [
+   "kolos",
+   18,
+   [
+    "el"
+   ],
+   [
+    "sitsedon lepatyny pamikolos",
+    "kolose spsyyn raziukadiy"
+   ]
+  ],
+  [
+   "asly",
+   17,
+   [
+    "be"
+   ],
+   [
+    "trudninskoy glnilen asly piez",
+    "uramariez asly aprdyny eslo"
+   ]
+  ],
+  [
+   "bite",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "bite nyukalen gatiz sakltyosyn",
+    "bite kelo beervatazy boan"
+   ]
+  ],
+  [
+   "pede",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "sinsen pede erem ukalarmayn",
+    "torkyn pede lyakyshly kenly"
+   ]
+  ],
+  [
+   "kozy",
+   17,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "kyon tyskespchaz kozy orda",
+    "vika kozy vurcly molkshid"
+   ]
+  ],
+  [
+   "mose",
+   16,
+   [
+    "de"
+   ],
+   [
+    "aptyldrian mose ysez mute",
+    "lion mose goorcheylly vuto"
+   ]
+  ],
+  [
+   "kran",
+   15,
+   [
+    "be"
+   ],
+   [
+    "kran uzzhnoy anatymyl inaz",
+    "ivllar sptyllem kran eryn"
+   ]
+  ],
+  [
+   "faen",
+   15,
+   [
+    "no"
+   ],
+   [
+    "vuttya dentodem faen nyny",
+    "boyn dotseksha faen aktica"
+   ]
+  ],
+  [
+   "natsi",
+   13,
+   [
+    "fi",
+    "mk"
+   ],
+   [
+    "tardam natsingem geen shat",
+    "tempramase kase natsissan"
+   ]
+  ],
+  [
+   "yasa",
+   13,
+   [
+    "ko"
+   ],
+   [
+    "yasa mayyerytiz tvka tera",
+    "askolen aduryn gondiya yasa"
+   ]
+  ],
+  [
+   "dian",
+   13,
+   [
+    "zh"
+   ],
+   [
+    "dian dote uyatika streylaly",
+    "froraletrez uzly dian foze"
+   ]
+  ]
+ ],
+ "samples": [
+  "uzuran otsa uysy zakschan",
+  "kyzy avzhtemyn setemyn uzllaez",
+  "tiriem suatid yasyyn pyte",
+  "anna alpidoez kona oskoze",
+  "assyrolo nuskchamaz taly",
+  "finntindiz ucya durtodzy",
+  "adminorstse tasprolen obka",
+  "uykhidae ukos vedrey bush",
+  "aray alisalyze pydalleyen",
+  "utos syudez matelez glrian",
+  "tardam natsingem geen shat",
+  "avryldse aron ponikunsus"
+ ],
+ "seconds": 8.5,
+ "languages": [
+  "udm"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

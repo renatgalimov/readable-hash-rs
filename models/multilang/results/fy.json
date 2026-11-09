@@ -1,0 +1,238 @@
+{
+ "name": "fy",
+ "corpus_words": 46731,
+ "relaxed_rows": 19,
+ "relaxed_examples": [
+  "sc",
+  "wy",
+  "troc",
+  "oc",
+  "iu",
+  "ec",
+  "ev",
+  "iz",
+  "joc",
+  "zj",
+  "az",
+  "rc"
+ ],
+ "segmented_words": 30104,
+ "skipped_words": 16627,
+ "middle_attested_fraction": 0.5362141927083334,
+ "end32_attested_fraction": 0.3041585286458333,
+ "end16_attested_fraction": 0.525390625,
+ "begin_attested": 128,
+ "chars": 26.95,
+ "max_chars": 35,
+ "consonant_runs_pct": 15.153,
+ "vowel_runs_pct": 2.514,
+ "english_words_pct": 2.407,
+ "own_words_pct": 20.856,
+ "offensive_whole_pct": 2.19,
+ "offensive_whole_english_list_pct": 0.365,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.015,
+ "offensive_severe_en_pct": 0.19,
+ "offensive_inside5_pct": 3.17,
+ "offensive_inside4_pct": 18.935,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "bekken",
+   53,
+   [
+    "nl"
+   ],
+   [
+    "tintbekken rjilla dollator",
+    "alds alstormard bekken beat"
+   ]
+  ],
+  [
+   "folle",
+   29,
+   [
+    "fr"
+   ],
+   [
+    "trektree kiesfolle semisten",
+    "foller elanhoalen opsje pleger"
+   ]
+  ],
+  [
+   "anaal",
+   24,
+   [
+    "nl"
+   ],
+   [
+    "blanaal pinianaring smolten",
+    "dublease welt meubikanaal"
+   ]
+  ],
+  [
+   "kanen",
+   24,
+   [
+    "nl"
+   ],
+   [
+    "jadina kreoke sjes nakanen",
+    "spet bykanen akoeksee pusje"
+   ]
+  ],
+  [
+   "dick",
+   21,
+   [
+    "cs",
+    "cy",
+    "da",
+    "en",
+    "eu",
+    "gd",
+    "is",
+    "la",
+    "mt",
+    "nl",
+    "zu"
+   ],
+   [
+    "fuloft kees meartive dick",
+    "dick randshamne puttelet"
+   ]
+  ],
+  [
+   "samen",
+   21,
+   [
+    "de"
+   ],
+   [
+    "marioare slen samen eloard",
+    "samen gardyk rues eispyler"
+   ]
+  ],
+  [
+   "holle",
+   20,
+   [
+    "de"
+   ],
+   [
+    "skopten hindholle trje koge",
+    "oanholle einned nevelle gram"
+   ]
+  ],
+  [
+   "peder",
+   20,
+   [
+    "hr",
+    "mk",
+    "sl"
+   ],
+   [
+    "ealmarinnus pederjien wurt",
+    "pedernoing goal kropten thum"
+   ]
+  ],
+  [
+   "dust",
+   18,
+   [
+    "hi"
+   ],
+   [
+    "hoale dust hurden fjolsenen",
+    "moaiwurpen dust alest goretten"
+   ]
+  ],
+  [
+   "mama",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "soevndum mama rampaan ferus",
+    "opmeskat cory mama ynbrocht"
+   ]
+  ],
+  [
+   "mona",
+   17,
+   [
+    "it"
+   ],
+   [
+    "mona wuld koarius slakmeer",
+    "tunimmal galje harcks mona"
+   ]
+  ],
+  [
+   "bits",
+   16,
+   [
+    "mr"
+   ],
+   [
+    "bits frar ratiseling jentskip",
+    "synjoksen bits napoes noge"
+   ]
+  ],
+  [
+   "folla",
+   15,
+   [
+    "es"
+   ],
+   [
+    "kurach follatorgie noorjende",
+    "flopslearjen kaak follasstriid"
+   ]
+  ],
+  [
+   "sule",
+   15,
+   [
+    "kn"
+   ],
+   [
+    "saanske sule unike sjefearmaasje",
+    "haldieker poethutriden sule"
+   ]
+  ],
+  [
+   "teven",
+   15,
+   [
+    "nl"
+   ],
+   [
+    "verdoanen teven oerwunitikken",
+    "sofochten jury teven grevniers"
+   ]
+  ]
+ ],
+ "samples": [
+  "huront inich nias chazebius",
+  "getten kursels oandinnen hudset",
+  "judelan blusten wissearre kene",
+  "bien jojaarde stee hilaat",
+  "peinksme sybalassende baen",
+  "einouinnar raje earbeizen",
+  "langreliene baltiisk pium",
+  "nilswell ruen spulaasje ofen",
+  "maum joekateing kelthenley",
+  "akst roeich kanaat prelaus",
+  "bastering muorsues fring been",
+  "kubannocht mallen respriiger"
+ ],
+ "seconds": 8.7,
+ "languages": [
+  "fy"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

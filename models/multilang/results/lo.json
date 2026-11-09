@@ -1,0 +1,229 @@
+{
+ "name": "lo",
+ "corpus_words": 6400,
+ "relaxed_rows": 324,
+ "relaxed_examples": [
+  "em",
+  "ex",
+  "es",
+  "ec",
+  "eb",
+  "ed",
+  "tn",
+  "yo",
+  "kn",
+  "po",
+  "ev",
+  "mo"
+ ],
+ "segmented_words": 4061,
+ "skipped_words": 2339,
+ "middle_attested_fraction": 0.17191569010416666,
+ "end32_attested_fraction": 0.0699462890625,
+ "end16_attested_fraction": 0.13850911458333334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.02,
+ "max_chars": 40,
+ "consonant_runs_pct": 36.652,
+ "vowel_runs_pct": 6.383,
+ "english_words_pct": 0.164,
+ "own_words_pct": 6.867,
+ "offensive_whole_pct": 1.275,
+ "offensive_whole_english_list_pct": 0.06,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.545,
+ "offensive_severe_en_pct": 0.025,
+ "offensive_inside5_pct": 1.875,
+ "offensive_inside4_pct": 13.31,
+ "offensive_across_words_pct": 0.12,
+ "top_hits": [
+  [
+   "hlang",
+   51,
+   [
+    "th"
+   ],
+   [
+    "eohlang hloa ekagn eietnepaethd",
+    "fahlngpampoun adthan phalhlang"
+   ]
+  ],
+  [
+   "phani",
+   34,
+   [
+    "ml"
+   ],
+   [
+    "keli akni tomkathkan knphani",
+    "egni khkan dophani mvnekakan"
+   ]
+  ],
+  [
+   "outhan",
+   32,
+   [
+    "th"
+   ],
+   [
+    "aghaboupatham eohuthouthan chuk",
+    "otun mophanouthan aeva radaikan"
+   ]
+  ],
+  [
+   "hamma",
+   26,
+   [
+    "sv"
+   ],
+   [
+    "phaix eidthammammthi sana aipaethd",
+    "phthi apdthammansab etladsagn"
+   ]
+  ],
+  [
+   "dyam",
+   23,
+   [
+    "kn"
+   ],
+   [
+    "duan dotikhom kyetngmam dyam",
+    "tidtoa piun xyaimtid dyam"
+   ]
+  ],
+  [
+   "kanen",
+   19,
+   [
+    "nl"
+   ],
+   [
+    "yangkanena adni dykhaluktang",
+    "okhi hiekhvagn dankanengin atgn"
+   ]
+  ],
+  [
+   "bola",
+   19,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "bola otnsoukanevn ikathukoa",
+    "brpaethd egnomehi vghabak bola"
+   ]
+  ],
+  [
+   "xana",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "xana xvna eian exephunaxvng",
+    "evaxgn nntaboav xana ekad"
+   ]
+  ],
+  [
+   "muna",
+   18,
+   [
+    "fi"
+   ],
+   [
+    "ladvoa dynsng muna hgtiemung",
+    "emnhvgnomsn vakhun xvoa muna"
+   ]
+  ],
+  [
+   "sung",
+   17,
+   [
+    "vi"
+   ],
+   [
+    "lvtansoueoun sung ngevdlam",
+    "sung hnanexina lvovak okkan"
+   ]
+  ],
+  [
+   "tanga",
+   17,
+   [
+    "fil"
+   ],
+   [
+    "hmtangakan bodehi tomahlaphab",
+    "snekolid otmetangakad banung"
+   ]
+  ],
+  [
+   "ebam",
+   17,
+   [
+    "mk"
+   ],
+   [
+    "ebam lihan addanung fabadkaik",
+    "xadhni vidkhun olvyngchan ebam"
+   ]
+  ],
+  [
+   "dain",
+   15,
+   [
+    "ml"
+   ],
+   [
+    "biepapapa idna dain paainlav",
+    "mbdthakan hansaich dain svtakan"
+   ]
+  ],
+  [
+   "khokh",
+   14,
+   [
+    "mn"
+   ],
+   [
+    "koncyn eromkhokha etithng",
+    "khokhi eimaich esboukadni"
+   ]
+  ],
+  [
+   "vana",
+   13,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "phni eivyphamaaid vana voun",
+    "bidaich eohoakab vana gnesak"
+   ]
+  ]
+ ],
+ "samples": [
+  "dvtiti mbav aekan nuetieva",
+  "kapaethd opaena banesad dvovla",
+  "hiboum tinkham viktak xakhun",
+  "ohgn muekaphan thni okalum",
+  "vyxammnung snvyanaboam tong",
+  "brdthaelaehd xvpaethd hgnedavn",
+  "mounthnemi tomsxang omthan",
+  "aexonkhgn avkan soulani knun",
+  "maemung muvyvyva xadaixboak",
+  "nvoa hoaili chonoa hdngekhun",
+  "tommin mvdkaehagn hvydnam pham",
+  "opetahaa masad sathignhougn"
+ ],
+ "seconds": 9.4,
+ "languages": [
+  "lo"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

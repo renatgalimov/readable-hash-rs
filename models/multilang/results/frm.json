@@ -1,0 +1,234 @@
+{
+ "name": "frm",
+ "corpus_words": 26580,
+ "relaxed_rows": 159,
+ "relaxed_examples": [
+  "so",
+  "ex",
+  "su",
+  "to",
+  "qu",
+  "as",
+  "af",
+  "ef",
+  "pl",
+  "gu",
+  "fa",
+  "av"
+ ],
+ "segmented_words": 24139,
+ "skipped_words": 2441,
+ "middle_attested_fraction": 0.057861328125,
+ "end32_attested_fraction": 0.23844401041666666,
+ "end16_attested_fraction": 0.3232421875,
+ "begin_attested": 126,
+ "beginning_fallback": true,
+ "chars": 34.74,
+ "max_chars": 49,
+ "consonant_runs_pct": 13.326,
+ "vowel_runs_pct": 29.433,
+ "english_words_pct": 0.887,
+ "own_words_pct": 8.144,
+ "offensive_whole_pct": 0.21,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.075,
+ "offensive_severe_en_pct": 0.085,
+ "offensive_inside5_pct": 7.365,
+ "offensive_inside4_pct": 21.88,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "asses",
+   860,
+   [
+    "en",
+    "mr",
+    "pt",
+    "sr",
+    "te"
+   ],
+   [
+    "dattoit gres ouassiez erendasses",
+    "urelloyt sardoyent horriez frasses"
+   ]
+  ],
+  [
+   "chier",
+   50,
+   [
+    "fr"
+   ],
+   [
+    "haullons anouchierions sesiratyez",
+    "boroyent suschierions ayterant doassent"
+   ]
+  ],
+  [
+   "troie",
+   47,
+   [
+    "it"
+   ],
+   [
+    "evulleions appryttontroient vuyons",
+    "effoyt nattiez ymttontroient imoyent"
+   ]
+  ],
+  [
+   "recto",
+   45,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "fussions irectois lyrageons notons",
+    "bara turrectois emperiez obinast"
+   ]
+  ],
+  [
+   "fisse",
+   41,
+   [
+    "da"
+   ],
+   [
+    "approyent ottarifissent celyez assioyent",
+    "deroient fisses affroyent rigensinoit"
+   ]
+  ],
+  [
+   "retto",
+   31,
+   [
+    "it"
+   ],
+   [
+    "mouyeras ozllyez reillirettoyent",
+    "affois grettoit alez ralanoriez"
+   ]
+  ],
+  [
+   "tissi",
+   31,
+   [
+    "fi"
+   ],
+   [
+    "cacorouoyt veiglyons difistissions",
+    "cusloys roumons bestissions empirons"
+   ]
+  ],
+  [
+   "tiron",
+   29,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "urassent flassiez impreilleryons entirons",
+    "appois hoyons tirons euvernteryons"
+   ]
+  ],
+  [
+   "enfer",
+   23,
+   [
+    "fr"
+   ],
+   [
+    "gouvlatyons ametenferoyt celoyent",
+    "assingriancoient feroyt edienferoyt"
+   ]
+  ],
+  [
+   "recte",
+   19,
+   [
+    "ca"
+   ],
+   [
+    "yrectes hariez garent iolincois",
+    "enyez nerrectes laspions merons"
+   ]
+  ],
+  [
+   "hora",
+   16,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "lenflois hora aoroyent accouernerions",
+    "chez ozouveroys hora evelloyt"
+   ]
+  ],
+  [
+   "gasti",
+   16,
+   [
+    "hi"
+   ],
+   [
+    "enerions neroyt raerons gastimargeriez",
+    "qucqulioit gastiez uryez froient"
+   ]
+  ],
+  [
+   "rota",
+   14,
+   [
+    "ja"
+   ],
+   [
+    "urachiroyent experyons plisant rota",
+    "everyons rota hastinentoyent jeassiez"
+   ]
+  ],
+  [
+   "comer",
+   13,
+   [
+    "pt"
+   ],
+   [
+    "jeulevoyent doassent accomeront amoyt",
+    "buargeassions riellyenoyent comerions"
+   ]
+  ],
+  [
+   "pisse",
+   12,
+   [
+    "fr"
+   ],
+   [
+    "buerchastes lyiteryons cerions empisseriez",
+    "irerent preslorassions empissepouchassent"
+   ]
+  ]
+ ],
+ "samples": [
+  "dattoit gres ouassiez erendasses",
+  "morez belorois pancast davent",
+  "urelloyt sardoyent horriez frasses",
+  "loroient aqffiassent derez dostyons",
+  "tuarpele empieroulleryons pesiez",
+  "aousprifiiez voons auloreois",
+  "faucyorieryez perpiassiez edoys",
+  "ouppentions ostoys expustiez alassiez",
+  "seeroys aqillyeroyent fracheillienyons",
+  "jeoient fluchasmes raportoys elisons",
+  "perchyez bloulatoyt lessions estiez",
+  "berprochasse seeryons enonnmponneryons"
+ ],
+ "seconds": 11.3,
+ "languages": [
+  "frm"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

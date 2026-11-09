@@ -1,0 +1,227 @@
+{
+ "name": "bua",
+ "corpus_words": 11533,
+ "relaxed_rows": 279,
+ "relaxed_examples": [
+  "mu",
+  "az",
+  "uz",
+  "ko",
+  "uy",
+  "ek",
+  "ny",
+  "yu",
+  "uk",
+  "ub",
+  "ez",
+  "ts"
+ ],
+ "segmented_words": 8592,
+ "skipped_words": 2941,
+ "middle_attested_fraction": 0.12845865885416666,
+ "end32_attested_fraction": 0.154296875,
+ "end16_attested_fraction": 0.2806803385416667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.04,
+ "max_chars": 36,
+ "consonant_runs_pct": 16.928,
+ "vowel_runs_pct": 5.598,
+ "english_words_pct": 0.328,
+ "own_words_pct": 9.214,
+ "offensive_whole_pct": 0.825,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.515,
+ "offensive_severe_en_pct": 0.005,
+ "offensive_inside5_pct": 1.52,
+ "offensive_inside4_pct": 13.08,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "dalan",
+   17,
+   [
+    "mn"
+   ],
+   [
+    "iinkhagad xarkhurdalan emtay",
+    "uhnuud tanadalan uuskhorlokha"
+   ]
+  ],
+  [
+   "khokh",
+   17,
+   [
+    "mn"
+   ],
+   [
+    "inag azamkhokha aykhe afulaa",
+    "usaday nyzha stuskhokha peel"
+   ]
+  ],
+  [
+   "maal",
+   16,
+   [
+    "hi"
+   ],
+   [
+    "maal ukagal eztey emnerlakha",
+    "chudabsakha budey tulda maal"
+   ]
+  ],
+  [
+   "esel",
+   16,
+   [
+    "de"
+   ],
+   [
+    "esel myligdshuud tatey uhay",
+    "gartuhegoo esel uugan stoo"
+   ]
+  ],
+  [
+   "amda",
+   15,
+   [
+    "hi"
+   ],
+   [
+    "amda khog poromargoy myel",
+    "obal derkhuladag shukhaa amda"
+   ]
+  ],
+  [
+   "mona",
+   14,
+   [
+    "it"
+   ],
+   [
+    "mona garyn hunanglaar adel",
+    "avgarimden uyadag mona dihan"
+   ]
+  ],
+  [
+   "pano",
+   14,
+   [
+    "fi"
+   ],
+   [
+    "edaban muroylye pano mikha",
+    "avloginyay hortubel pano"
+   ]
+  ],
+  [
+   "palen",
+   14,
+   [
+    "nl"
+   ],
+   [
+    "palen fremiin uklgokho gebsay",
+    "nuukhidashaa meguy palen grhan"
+   ]
+  ],
+  [
+   "ashol",
+   14,
+   [
+    "kn"
+   ],
+   [
+    "eshaa uzrgeldezhe boney asholnuud",
+    "sugey dien asholiridag akye"
+   ]
+  ],
+  [
+   "dian",
+   13,
+   [
+    "zh"
+   ],
+   [
+    "azdool noguy emagamuud dian",
+    "bren urezhottay dian baashan"
+   ]
+  ],
+  [
+   "made",
+   13,
+   [
+    "zh"
+   ],
+   [
+    "made dirgamuurel aana ueiyn",
+    "zegtahan tiitad made royken"
+   ]
+  ],
+  [
+   "odor",
+   13,
+   [
+    "mn"
+   ],
+   [
+    "amerilhan odolzho myye odor",
+    "suloode eholyn odor avgdekhe"
+   ]
+  ],
+  [
+   "khuy",
+   12,
+   [
+    "ru"
+   ],
+   [
+    "khuy dadagtledeg galuubahaar",
+    "khuy afolyaatay uurkhahan udee"
+   ]
+  ],
+  [
+   "hoer",
+   11,
+   [
+    "nl"
+   ],
+   [
+    "bral odurbageed elguy hoer",
+    "orodrgeer hete enaguudta hoer"
+   ]
+  ],
+  [
+   "asal",
+   10,
+   [
+    "gd"
+   ],
+   [
+    "tigaar parsay nyegshuulzha asal",
+    "asal hamzhye myangoo limaan"
+   ]
+  ]
+ ],
+ "samples": [
+  "ublgokho izzha xaye feubural",
+  "buna langakha unekhal ubygnuud",
+  "vayghaa usetney zhylaa uzay",
+  "alazha akdobonuud baan esuulhen",
+  "hogdletay adhelamzhalye uukha",
+  "ebgaglumoo tsguy avgergon",
+  "ashabantakha uurllazha silhan",
+  "xaubasan fray zursye aziin",
+  "teguud akemdozho uzratsamyn",
+  "obel dergay zakhaltay aargekhe",
+  "uulondo ododbagan nihan shoo",
+  "laglabkho tehen tuulisteelnuud"
+ ],
+ "seconds": 9.3,
+ "languages": [
+  "bua"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

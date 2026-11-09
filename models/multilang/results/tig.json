@@ -1,0 +1,237 @@
+{
+ "name": "tig",
+ "corpus_words": 7140,
+ "relaxed_rows": 490,
+ "relaxed_examples": [
+  "tf",
+  "hl",
+  "lb",
+  "ms",
+  "hd",
+  "mo",
+  "tg",
+  "di",
+  "tw",
+  "tr",
+  "gr",
+  "kr"
+ ],
+ "segmented_words": 4382,
+ "skipped_words": 2758,
+ "middle_attested_fraction": 0.049275716145833336,
+ "end32_attested_fraction": 0.11519368489583333,
+ "end16_attested_fraction": 0.22224934895833334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 25.7,
+ "max_chars": 31,
+ "consonant_runs_pct": 41.614,
+ "vowel_runs_pct": 8.881,
+ "english_words_pct": 0.305,
+ "own_words_pct": 13.923,
+ "offensive_whole_pct": 1.28,
+ "offensive_whole_english_list_pct": 0.09,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.67,
+ "offensive_severe_en_pct": 0.01,
+ "offensive_inside5_pct": 1.24,
+ "offensive_inside4_pct": 11.295,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "sheni",
+   44,
+   [
+    "zh"
+   ],
+   [
+    "tiegeburki kret tigisheni",
+    "stut dore wlzewu swabsheni"
+   ]
+  ],
+  [
+   "marha",
+   26,
+   [
+    "hu"
+   ],
+   [
+    "shagew loet marhadgye blen",
+    "kera bdmarhajetu sulalkye"
+   ]
+  ],
+  [
+   "hane",
+   19,
+   [
+    "da"
+   ],
+   [
+    "ftwetayaye totu hane fnre",
+    "wdyaskne dagarhadray hane"
+   ]
+  ],
+  [
+   "rini",
+   19,
+   [
+    "zh"
+   ],
+   [
+    "nsle trjekum ktemolay rini",
+    "landon rini fnay takbshko"
+   ]
+  ],
+  [
+   "hure",
+   19,
+   [
+    "de"
+   ],
+   [
+    "kewu habriste beneko hure",
+    "hgdiru hure srer loktjeko"
+   ]
+  ],
+  [
+   "trni",
+   18,
+   [
+    "bg"
+   ],
+   [
+    "grne trni sffeyahu lbzeko",
+    "gizerble trni sutu hjegit"
+   ]
+  ],
+  [
+   "meni",
+   17,
+   [
+    "tr"
+   ],
+   [
+    "hdyet meni trheyaha hsabar",
+    "kulne mehajerye nhelat meni"
+   ]
+  ],
+  [
+   "seni",
+   17,
+   [
+    "it"
+   ],
+   [
+    "seni shakay drselabeke kabe",
+    "tojelheynay fneni tnke seni"
+   ]
+  ],
+  [
+   "shit",
+   17,
+   [
+    "da",
+    "en",
+    "gd",
+    "hy",
+    "mt",
+    "my",
+    "nl",
+    "no",
+    "sk",
+    "uz",
+    "zu"
+   ],
+   [
+    "shit grefzerbet watu werh",
+    "rostkble shit tsebrew kore"
+   ]
+  ],
+  [
+   "rahat",
+   16,
+   [
+    "ro"
+   ],
+   [
+    "ktyani nssako msrakeb rahat",
+    "duliye rahat tkam dregktye"
+   ]
+  ],
+  [
+   "tate",
+   16,
+   [
+    "ro"
+   ],
+   [
+    "tate moke wdet tderehenaye",
+    "tate rhle kmni dolhendsayke"
+   ]
+  ],
+  [
+   "deyu",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "yenbko deyu hgay sdherate",
+    "zerbzektom deyu lflirset"
+   ]
+  ],
+  [
+   "ktte",
+   15,
+   [
+    "kn"
+   ],
+   [
+    "tsam ktte tbezhlalew suko",
+    "ktte baraye belo sikbabom"
+   ]
+  ],
+  [
+   "sike",
+   14,
+   [
+    "tr"
+   ],
+   [
+    "frre muefhahani gnet sike",
+    "sike hbasakew mobe beryew"
+   ]
+  ],
+  [
+   "rima",
+   12,
+   [
+    "la"
+   ],
+   [
+    "tlte hdet hlmenardke rima",
+    "koew bereskum rima kebane"
+   ]
+  ]
+ ],
+ "samples": [
+  "musakin rhew nhze gwedzete",
+  "teye hrwege badytu muedne",
+  "btzenaha hmlibke molheko mnne",
+  "klet hiktferu medeyu danahom",
+  "kbdijemi tijedrhate zere",
+  "lokulfhltu yore buzelher",
+  "nthashlaki zelbkteb kotu",
+  "nhrorske tote jerbtu wadi",
+  "ltbo hilhektye mnyatabsko",
+  "riye trgege shekahu dugesne",
+  "zebabat hkhanatu lhay hake",
+  "hredkbki lthat sekozebreye"
+ ],
+ "seconds": 8.7,
+ "languages": [
+  "tig"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

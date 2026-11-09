@@ -1,0 +1,229 @@
+{
+ "name": "ng",
+ "corpus_words": 14367,
+ "relaxed_rows": 102,
+ "relaxed_examples": [
+  "nu",
+  "oi",
+  "vo",
+  "co",
+  "ei",
+  "ve",
+  "jo",
+  "pr",
+  "zi",
+  "ca",
+  "ar",
+  "se"
+ ],
+ "segmented_words": 11409,
+ "skipped_words": 2958,
+ "middle_attested_fraction": 0.18208821614583334,
+ "end32_attested_fraction": 0.17692057291666666,
+ "end16_attested_fraction": 0.3238932291666667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.48,
+ "max_chars": 37,
+ "consonant_runs_pct": 4.398,
+ "vowel_runs_pct": 10.11,
+ "english_words_pct": 0.578,
+ "own_words_pct": 16.806,
+ "offensive_whole_pct": 1.47,
+ "offensive_whole_english_list_pct": 0.005,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.74,
+ "offensive_severe_en_pct": 0.065,
+ "offensive_inside5_pct": 2.96,
+ "offensive_inside4_pct": 23.9,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "tanga",
+   153,
+   [
+    "fil"
+   ],
+   [
+    "udometa pamwe yoya otetutanga",
+    "epotanga eiinaateni oukundi"
+   ]
+  ],
+  [
+   "kunda",
+   83,
+   [
+    "cs"
+   ],
+   [
+    "kaahuluguuka mamonona lumikunda",
+    "lesemikunda ululugulwa imosikola"
+   ]
+  ],
+  [
+   "dombo",
+   28,
+   [
+    "nl"
+   ],
+   [
+    "tuko peedombo piitano imwe",
+    "dombo ogaata aadhapo mupita"
+   ]
+  ],
+  [
+   "shipa",
+   25,
+   [
+    "ja"
+   ],
+   [
+    "meela ilwa osele shipakakulwa",
+    "petana ohoovashipa imimbi"
+   ]
+  ],
+  [
+   "meni",
+   24,
+   [
+    "tr"
+   ],
+   [
+    "wahuupewa meni hako ogalena",
+    "fiku anunkwaya meni gaanimbo"
+   ]
+  ],
+  [
+   "manda",
+   21,
+   [
+    "ru"
+   ],
+   [
+    "ikopati vatemba giimandatuka",
+    "otoomwenyo maalekwa hehemomanda"
+   ]
+  ],
+  [
+   "teta",
+   17,
+   [
+    "es"
+   ],
+   [
+    "epopolwa konda wumunyolo teta",
+    "tootendola epitika teta onala"
+   ]
+  ],
+  [
+   "nuli",
+   15,
+   [
+    "ja"
+   ],
+   [
+    "paanopoodhi omalitola nuli",
+    "tuni iloshi nuli fikaunitha"
+   ]
+  ],
+  [
+   "galo",
+   15,
+   [
+    "gl",
+    "pt"
+   ],
+   [
+    "galo omambo efilitetole ilya",
+    "adola ndafashana nookula galo"
+   ]
+  ],
+  [
+   "kaka",
+   15,
+   [
+    "eu"
+   ],
+   [
+    "kuukupambaka papa oula kaka",
+    "kaka shano nghena owedungwa"
+   ]
+  ],
+  [
+   "pele",
+   15,
+   [
+    "hu"
+   ],
+   [
+    "lyile ondangepekwa haye pele",
+    "euameni pele dereuputu owilo"
+   ]
+  ],
+  [
+   "pina",
+   15,
+   [
+    "hu"
+   ],
+   [
+    "muumwainwa pina yeengwa kohi",
+    "pina gaasambaka doluli dhula"
+   ]
+  ],
+  [
+   "topa",
+   14,
+   [
+    "it"
+   ],
+   [
+    "gwindondoka topa lemibia lele",
+    "getu weluunketa itala topa"
+   ]
+  ],
+  [
+   "vana",
+   14,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "vuenga vana yelapo yudhaila",
+    "vana ikila gwedhunandithwa alya"
+   ]
+  ],
+  [
+   "zile",
+   14,
+   [
+    "lv"
+   ],
+   [
+    "oudonguni gathimo zile mwile",
+    "ololomimvo andi zile ilushe"
+   ]
+  ]
+ ],
+ "samples": [
+  "mbiiva leilo unya vuopeleka",
+  "okola epateka goosele mbidina",
+  "odakila tihungu keyoga inana",
+  "mike vadohike mole endimba",
+  "hetunkepo ohilindjamena lola",
+  "wilusinyeka fuma hitulena",
+  "lundafililo lomepipi egapo",
+  "ungomeya uvilo aasiona yile",
+  "gwithi vambisala inasoomitha",
+  "adilo ndamekwa shiilongo eukuta",
+  "lomweli oyeniila olyi nola",
+  "epololuni gwitha komwalaadhina"
+ ],
+ "seconds": 9.3,
+ "languages": [
+  "ng"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,243 @@
+{
+ "name": "mai",
+ "corpus_words": 7776,
+ "relaxed_rows": 334,
+ "relaxed_examples": [
+  "pu",
+  "de",
+  "mh",
+  "mu",
+  "prt",
+  "ad",
+  "raj",
+  "mn",
+  "bn",
+  "bi",
+  "sv",
+  "ji"
+ ],
+ "segmented_words": 4416,
+ "skipped_words": 3360,
+ "middle_attested_fraction": 0.07169596354166667,
+ "end32_attested_fraction": 0.113037109375,
+ "end16_attested_fraction": 0.223388671875,
+ "begin_attested": 128,
+ "chars": 26.08,
+ "max_chars": 36,
+ "consonant_runs_pct": 42.105,
+ "vowel_runs_pct": 3.728,
+ "english_words_pct": 0.294,
+ "own_words_pct": 12.621,
+ "offensive_whole_pct": 2.68,
+ "offensive_whole_english_list_pct": 0.3,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.05,
+ "offensive_severe_en_pct": 0.18,
+ "offensive_inside5_pct": 1.355,
+ "offensive_inside4_pct": 12.705,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "dike",
+   21,
+   [
+    "eu",
+    "sr"
+   ],
+   [
+    "avarsi demarsta khas dike",
+    "thime gamgasnme dike kebhik"
+   ]
+  ],
+  [
+   "dran",
+   20,
+   [
+    "pl"
+   ],
+   [
+    "ehpask rastrkrayke dran bink",
+    "clta gala tarurmausbh dran"
+   ]
+  ],
+  [
+   "skit",
+   19,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "skit cili grkhyrk durvyali",
+    "marsauabik gait ktan skit"
+   ]
+  ],
+  [
+   "teta",
+   19,
+   [
+    "es"
+   ],
+   [
+    "ghask udrtna teta neisvisy",
+    "grsthakhsm teta bdsaukkrsn"
+   ]
+  ],
+  [
+   "sike",
+   18,
+   [
+    "tr"
+   ],
+   [
+    "upri phlayogayik smak sike",
+    "neudkadrime sike agri vysm"
+   ]
+  ],
+  [
+   "anita",
+   18,
+   [
+    "nl"
+   ],
+   [
+    "rhaphume anita airtik bhim",
+    "khne isktrsana anita grekta"
+   ]
+  ],
+  [
+   "vank",
+   18,
+   [
+    "bg",
+    "sr"
+   ],
+   [
+    "vank tavaneti gragnk khai",
+    "jnihntri vank rupen vatnak"
+   ]
+  ],
+  [
+   "pisi",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "agrk blathoke sdsyni pisi",
+    "pisi akime pamiti caipbhai"
+   ]
+  ],
+  [
+   "hori",
+   17,
+   [
+    "ms"
+   ],
+   [
+    "biri ptabalin mnyani hori",
+    "hori grabme vyrana partak"
+   ]
+  ],
+  [
+   "krik",
+   17,
+   [
+    "cs"
+   ],
+   [
+    "jekanusimasm krik dunk bdhi",
+    "hoabhar sime makhunit krik"
+   ]
+  ],
+  [
+   "trni",
+   16,
+   [
+    "bg"
+   ],
+   [
+    "trni rajesnk mumjvark jonk",
+    "ksetrphak skrivestr trni aila"
+   ]
+  ],
+  [
+   "shit",
+   16,
+   [
+    "da",
+    "en",
+    "gd",
+    "hy",
+    "mt",
+    "my",
+    "nl",
+    "no",
+    "sk",
+    "uz",
+    "zu"
+   ],
+   [
+    "kedairit mevani klna shit",
+    "klmaum mhke adhajhasbh shit"
+   ]
+  ],
+  [
+   "puta",
+   16,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "bddirtna puta airvrtkalke",
+    "itreudrme vibhrtabsbh puta"
+   ]
+  ],
+  [
+   "sait",
+   16,
+   [
+    "kn"
+   ],
+   [
+    "ropaivti mentina sait nity",
+    "divnkhit sait bhymnk mesm"
+   ]
+  ],
+  [
+   "clit",
+   16,
+   [
+    "en"
+   ],
+   [
+    "jevarme jidhrtnk atme clit",
+    "mdhayak jabhak kantai clit"
+   ]
+  ]
+ ],
+ "samples": [
+  "yurthk pork kyati rupisndime",
+  "bhak clessbhme pururi yuabri",
+  "ksetravkari jiavni ptrivnk vran",
+  "lina tentksik sada jhaske",
+  "klabrmkar ayksalabhar stik",
+  "mystrptnke hosbh kmaystmi",
+  "ekedvaksai stasairsm hitr",
+  "kyarsidin abhirk gavadk bita",
+  "para tedisrsbh vridrjayke",
+  "ronk mudrke krmatr mesthme",
+  "stkalsbh agntijrk chel smet",
+  "clbhaisin pasbh virtivntrk"
+ ],
+ "seconds": 8.0,
+ "languages": [
+  "mai"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

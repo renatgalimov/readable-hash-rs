@@ -1,0 +1,228 @@
+{
+ "name": "sw",
+ "corpus_words": 56209,
+ "relaxed_rows": 8,
+ "relaxed_examples": [
+  "mc",
+  "ex",
+  "hy",
+  "sy",
+  "cy",
+  "ty",
+  "ly",
+  "eo"
+ ],
+ "segmented_words": 38642,
+ "skipped_words": 17567,
+ "middle_attested_fraction": 0.4048258463541667,
+ "end32_attested_fraction": 0.3485921223958333,
+ "end16_attested_fraction": 0.55126953125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.26,
+ "max_chars": 41,
+ "consonant_runs_pct": 5.886,
+ "vowel_runs_pct": 6.58,
+ "english_words_pct": 1.055,
+ "own_words_pct": 25.183,
+ "offensive_whole_pct": 2.3,
+ "offensive_whole_english_list_pct": 0.28,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.455,
+ "offensive_severe_en_pct": 0.225,
+ "offensive_inside5_pct": 2.925,
+ "offensive_inside4_pct": 21.715,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "linda",
+   50,
+   [
+    "zu"
+   ],
+   [
+    "buiwa rijiwearini linda uzani",
+    "holinda bachangioweza twachua"
+   ]
+  ],
+  [
+   "bamba",
+   49,
+   [
+    "zu"
+   ],
+   [
+    "geraka riisha jadelbamba bidi",
+    "fariaume rolaya bambaimama"
+   ]
+  ],
+  [
+   "tanga",
+   36,
+   [
+    "fil"
+   ],
+   [
+    "pabatangaya bawa montigumba",
+    "rungetangasha tramaanza akeza"
+   ]
+  ],
+  [
+   "sheni",
+   28,
+   [
+    "zh"
+   ],
+   [
+    "washeni itoker ziisha furung",
+    "stansheni mane tusisha wezo"
+   ]
+  ],
+  [
+   "sudi",
+   22,
+   [
+    "lv"
+   ],
+   [
+    "kogo wiwa sudi posijawala",
+    "sudi beatilia shimwiti dira"
+   ]
+  ],
+  [
+   "pene",
+   20,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "fienetoka ridhayoshika pene",
+    "rekiwenda pene islaya dien"
+   ]
+  ],
+  [
+   "fenda",
+   19,
+   [
+    "pt"
+   ],
+   [
+    "togo kabodi ufenda mtumatala",
+    "mfenda salameota mlakuwahapa"
+   ]
+  ],
+  [
+   "muda",
+   19,
+   [
+    "ru"
+   ],
+   [
+    "sakaambri rajaji muda ukiwa",
+    "ikikires gani perina muda"
+   ]
+  ],
+  [
+   "pisa",
+   18,
+   [
+    "ro"
+   ],
+   [
+    "almala ellastee pisa rape",
+    "sonakuza pisa vifunga ujea"
+   ]
+  ],
+  [
+   "vana",
+   17,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "enkeana ufuacha zahamika vana",
+    "ufuliana ubumamani bomu vana"
+   ]
+  ],
+  [
+   "dada",
+   17,
+   [
+    "id"
+   ],
+   [
+    "baye hupishi bariasuka dada",
+    "dada funduliwa dipongebaki kota"
+   ]
+  ],
+  [
+   "seni",
+   17,
+   [
+    "it"
+   ],
+   [
+    "seni faba borahi statarishwa",
+    "filiza brafue seni ukande"
+   ]
+  ],
+  [
+   "rape",
+   17,
+   [
+    "en",
+    "fr"
+   ],
+   [
+    "almala ellastee pisa rape",
+    "vanua rape vingaliabafuta uwika"
+   ]
+  ],
+  [
+   "kunda",
+   17,
+   [
+    "cs"
+   ],
+   [
+    "chaarung ufishwa kunda poliana",
+    "kunda faniungamaji mchulini"
+   ]
+  ],
+  [
+   "nima",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "nima denseres mlana ubumlisha",
+    "msea primuite kokevu nima"
+   ]
+  ]
+ ],
+ "samples": [
+  "mmariri kwoa gemu uzapandisha",
+  "alwa hiring ulivie mmipani",
+  "lunguvu jikofu utayia shma",
+  "pewa thuwaamwa kule galipe",
+  "strobodo ruatsiyola umma",
+  "tifuakoodi juin ucapozia",
+  "serekarino umanbakia jaua",
+  "geamchia dika unaacha itika",
+  "ille thmethai shabokitiza",
+  "rege atajani vimebariki ngongwa",
+  "umakti finaandikea bile kiisha",
+  "hikuamko ileza zibitopeke"
+ ],
+ "seconds": 10.0,
+ "languages": [
+  "sw"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

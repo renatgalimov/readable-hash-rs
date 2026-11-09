@@ -1,0 +1,248 @@
+{
+ "name": "os",
+ "corpus_words": 8774,
+ "relaxed_rows": 297,
+ "relaxed_examples": [
+  "ku",
+  "dz",
+  "fy",
+  "pr",
+  "by",
+  "sk",
+  "po",
+  "do",
+  "fi",
+  "no",
+  "to",
+  "du"
+ ],
+ "segmented_words": 6234,
+ "skipped_words": 2540,
+ "middle_attested_fraction": 0.119140625,
+ "end32_attested_fraction": 0.12373860677083333,
+ "end16_attested_fraction": 0.23811848958333334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.47,
+ "max_chars": 38,
+ "consonant_runs_pct": 19.334,
+ "vowel_runs_pct": 22.019,
+ "english_words_pct": 0.211,
+ "own_words_pct": 5.877,
+ "offensive_whole_pct": 0.72,
+ "offensive_whole_english_list_pct": 0.155,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.515,
+ "offensive_severe_en_pct": 0.1,
+ "offensive_inside5_pct": 2.325,
+ "offensive_inside4_pct": 13.84,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "ekhma",
+   94,
+   [
+    "th"
+   ],
+   [
+    "teroltytae amaekhmae merandzaer",
+    "galiskdta roneaekhmae piesys"
+   ]
+  ],
+  [
+   "tetta",
+   29,
+   [
+    "it"
+   ],
+   [
+    "kayn raytae aktettae izymaelaety",
+    "tettae beesuraekhay vatty oraey"
+   ]
+  ],
+  [
+   "titty",
+   27,
+   [
+    "en",
+    "sk"
+   ],
+   [
+    "somaetitty frrazyn fenymbmae",
+    "byad kiekhaedamyy titstitty"
+   ]
+  ],
+  [
+   "sksy",
+   25,
+   [
+    "fa"
+   ],
+   [
+    "settae tsorenysyy frny sksy",
+    "sksy nartau ekaliston uyrsaen"
+   ]
+  ],
+  [
+   "sadis",
+   23,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "mbsadis bomae vzeron elomon",
+    "kuyraemaety noyl poyy sbsadis"
+   ]
+  ],
+  [
+   "trut",
+   23,
+   [
+    "ru"
+   ],
+   [
+    "syut trut irimae semezaesaedzhy",
+    "frsaty evyl trut gramezon"
+   ]
+  ],
+  [
+   "suar",
+   20,
+   [
+    "hi"
+   ],
+   [
+    "dayn numbty doekhelty suar",
+    "restaeman mivoyrydydta suar"
+   ]
+  ],
+  [
+   "viry",
+   15,
+   [
+    "hi",
+    "kn",
+    "mr"
+   ],
+   [
+    "ferozieraer viry parvyrag",
+    "borauyyy viry fembyn afut"
+   ]
+  ],
+  [
+   "poon",
+   15,
+   [
+    "en"
+   ],
+   [
+    "apmae poon bueraen tinsaudaer",
+    "poon znaen byltezaeg saegay"
+   ]
+  ],
+  [
+   "kord",
+   14,
+   [
+    "sv"
+   ],
+   [
+    "lasayy kord uimbaen etorty",
+    "uyzdon kord yadaer veuydzyng"
+   ]
+  ],
+  [
+   "raeva",
+   14,
+   [
+    "no"
+   ],
+   [
+    "ektraevay siny duniuaystyr",
+    "sbaem viraevaeg muaraeuuard"
+   ]
+  ],
+  [
+   "shits",
+   14,
+   [
+    "cs",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "gd",
+    "lt",
+    "lv",
+    "ml",
+    "mr",
+    "mt",
+    "sq",
+    "sv",
+    "th",
+    "uk",
+    "uz",
+    "zu"
+   ],
+   [
+    "ziaryn shitsiyy azdaeyag abag",
+    "gaeppdzyl uadta shitsomaesag"
+   ]
+  ],
+  [
+   "anali",
+   13,
+   [
+    "mt"
+   ],
+   [
+    "iueloydtoy sydta analikaetikon",
+    "tambeseyy analidaer rtyaetty"
+   ]
+  ],
+  [
+   "kutta",
+   12,
+   [
+    "hi"
+   ],
+   [
+    "opauty uyvaeuayy ardaem kuttae",
+    "ataelty neekhaekhyn ainy kuttae"
+   ]
+  ],
+  [
+   "chert",
+   12,
+   [
+    "ru"
+   ],
+   [
+    "lasaursarmae mbysttae chertatsi",
+    "mydaer chertdzhyn kuertsi brysttae"
+   ]
+  ]
+ ],
+ "samples": [
+  "dyldaen mury aumae neuarkhaey",
+  "fadta deeleyy syndzad dysddy",
+  "brelttae lizikae chaefgae suttae",
+  "zyny buekhonyl bamae asyyau",
+  "sorzuady kizaendiyag gary",
+  "fsuylguram runy anyrddyn",
+  "zonaelattaen gaystudzhyty zhat",
+  "auazoran eryl dzesaen fity",
+  "kuad buntassy suaelaekhyzyn",
+  "peyy diasaen saekhdzhy beertsi",
+  "gambtae veneezydis attae khyl",
+  "deezygrd kuny ratttseton"
+ ],
+ "seconds": 9.5,
+ "languages": [
+  "os"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

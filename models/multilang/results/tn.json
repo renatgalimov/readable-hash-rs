@@ -1,0 +1,288 @@
+{
+ "name": "tn",
+ "corpus_words": 14406,
+ "relaxed_rows": 171,
+ "relaxed_examples": [
+  "fi",
+  "su",
+  "fo",
+  "ny",
+  "co",
+  "ku",
+  "tu",
+  "jo",
+  "je",
+  "pu",
+  "ca",
+  "da"
+ ],
+ "segmented_words": 11471,
+ "skipped_words": 2935,
+ "middle_attested_fraction": 0.14119466145833334,
+ "end32_attested_fraction": 0.1915283203125,
+ "end16_attested_fraction": 0.33544921875,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.43,
+ "max_chars": 37,
+ "consonant_runs_pct": 11.752,
+ "vowel_runs_pct": 2.059,
+ "english_words_pct": 1.342,
+ "own_words_pct": 16.647,
+ "offensive_whole_pct": 1.83,
+ "offensive_whole_english_list_pct": 0.18,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.69,
+ "offensive_severe_en_pct": 0.12,
+ "offensive_inside5_pct": 2.46,
+ "offensive_inside4_pct": 30.335,
+ "offensive_across_words_pct": 0.035,
+ "top_hits": [
+  [
+   "shits",
+   56,
+   [
+    "cs",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "gd",
+    "lt",
+    "lv",
+    "ml",
+    "mr",
+    "mt",
+    "sq",
+    "sv",
+    "th",
+    "uk",
+    "uz",
+    "zu"
+   ],
+   [
+    "anwe ikolo kithashitse hoelo",
+    "mmoshi fupelela noshitse emang"
+   ]
+  ],
+  [
+   "ruang",
+   27,
+   [
+    "id"
+   ],
+   [
+    "rwethalepaso boruang etomanya",
+    "siruang yuwa kukgobeditse kgelo"
+   ]
+  ],
+  [
+   "petel",
+   25,
+   [
+    "bg",
+    "mk"
+   ],
+   [
+    "apabitageleng inang hapetelong",
+    "petelaalwa rekwantile opamelwe"
+   ]
+  ],
+  [
+   "kadit",
+   20,
+   [
+    "cs"
+   ],
+   [
+    "amekaditsweng yoele lobati biwa",
+    "akadithedi gurabeelo sunetsa"
+   ]
+  ],
+  [
+   "olla",
+   20,
+   [
+    "sv"
+   ],
+   [
+    "iteeatanyana anokempisa olla",
+    "jwebaang olla tlitakesana"
+   ]
+  ],
+  [
+   "alla",
+   20,
+   [
+    "mt"
+   ],
+   [
+    "ilarelwa alla nkeega folodi",
+    "inotakisa alla pana othoga"
+   ]
+  ],
+  [
+   "mong",
+   19,
+   [
+    "en",
+    "vi"
+   ],
+   [
+    "isamomphelo rwanya mong onele",
+    "arokokisa etapaantone mong"
+   ]
+  ],
+  [
+   "sere",
+   18,
+   [
+    "hr",
+    "sk"
+   ],
+   [
+    "unisibareko afifannelwa sere",
+    "bone untso sere lepogwabotse"
+   ]
+  ],
+  [
+   "holo",
+   18,
+   [
+    "ko"
+   ],
+   [
+    "olerebile mitega nasha holo",
+    "lise jewe reritlobalo holo"
+   ]
+  ],
+  [
+   "wang",
+   17,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "gd",
+    "gl",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "ko",
+    "la",
+    "lt",
+    "lv",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "zu"
+   ],
+   [
+    "nnagala wang jobetsa puhutso",
+    "otemabalano mmileng jesa wang"
+   ]
+  ],
+  [
+   "sadis",
+   16,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "umane kuisadiso tlogisilwale",
+    "pare akelo kokelo otesadisa"
+   ]
+  ],
+  [
+   "jama",
+   14,
+   [
+    "et"
+   ],
+   [
+    "fubamabomo jama haamposo",
+    "rumo jama poemebele ragata"
+   ]
+  ],
+  [
+   "pina",
+   14,
+   [
+    "hu"
+   ],
+   [
+    "pina ritshang bolekgola doane",
+    "pina bjpiwe anng etherebe"
+   ]
+  ],
+  [
+   "popel",
+   14,
+   [
+    "de"
+   ],
+   [
+    "atapopela fiang cophipitela",
+    "afrero afetse yupopelo hila"
+   ]
+  ],
+  [
+   "teta",
+   14,
+   [
+    "es"
+   ],
+   [
+    "tong anegakutiwa teta mhelo",
+    "buraamboele teta ontopitsa"
+   ]
+  ]
+ ],
+ "samples": [
+  "abaane hena ebeng eperamele",
+  "tsang alathi mmassi abaene",
+  "ilogelo switeana retisa tolwe",
+  "nele omostola maaka etrakeng",
+  "kurakolwa wetlopatlho sila",
+  "fubamabomo jama haamposo",
+  "atoloabekae sikiphelo hiwe",
+  "ebadibalo rwetse ikanka ngala",
+  "meanya omerodilo tolarephiwa",
+  "mhwa tebota sediri dorati",
+  "sitiro rranguntse kwao moeng",
+  "alaafenyana meane bomakatotse"
+ ],
+ "seconds": 9.6,
+ "languages": [
+  "tn"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,251 @@
+{
+ "name": "sq",
+ "corpus_words": 80000,
+ "relaxed_rows": 8,
+ "relaxed_examples": [
+  "nx",
+  "dy",
+  "mj",
+  "zg",
+  "shq",
+  "tj",
+  "hj",
+  "sj"
+ ],
+ "segmented_words": 51554,
+ "skipped_words": 28446,
+ "middle_attested_fraction": 0.4396565755208333,
+ "end32_attested_fraction": 0.4661458333333333,
+ "end16_attested_fraction": 0.7073567708333334,
+ "begin_attested": 128,
+ "chars": 25.97,
+ "max_chars": 32,
+ "consonant_runs_pct": 12.955,
+ "vowel_runs_pct": 1.146,
+ "english_words_pct": 1.339,
+ "own_words_pct": 29.035,
+ "offensive_whole_pct": 3.28,
+ "offensive_whole_english_list_pct": 0.18,
+ "offensive_whole_own_list_pct": 0.09,
+ "offensive_whole_major_lists_pct": 1.41,
+ "offensive_severe_en_pct": 0.14,
+ "offensive_inside5_pct": 2.13,
+ "offensive_inside4_pct": 16.33,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "pina",
+   24,
+   [
+    "hu"
+   ],
+   [
+    "fansas pina poiibilin botes",
+    "remi pina zotadodiale prore"
+   ]
+  ],
+  [
+   "rini",
+   24,
+   [
+    "zh"
+   ],
+   [
+    "hidhikim auni rini savara",
+    "frave volustoj rini ninusi"
+   ]
+  ],
+  [
+   "kran",
+   21,
+   [
+    "be"
+   ],
+   [
+    "kran ngit perdhiqen posita",
+    "kabigjshme kran feelje nete"
+   ]
+  ],
+  [
+   "mater",
+   19,
+   [
+    "sl"
+   ],
+   [
+    "funte matervisit hani pioniste",
+    "gaspalle materoje pakurumi"
+   ]
+  ],
+  [
+   "pusi",
+   19,
+   [
+    "kn"
+   ],
+   [
+    "gazenshme robercimona pusi",
+    "rrne naive doktashtira pusi"
+   ]
+  ],
+  [
+   "meni",
+   19,
+   [
+    "tr"
+   ],
+   [
+    "grine maniportave polli meni",
+    "meni tiricial gusi grevis"
+   ]
+  ],
+  [
+   "jaja",
+   18,
+   [
+    "hr"
+   ],
+   [
+    "zgjizmoko kongtieses jaja",
+    "rajen elon jaja grunkopiet"
+   ]
+  ],
+  [
+   "kaka",
+   18,
+   [
+    "eu"
+   ],
+   [
+    "doen ndezomundi reje kaka",
+    "jazerrtohen kaka eksur trut"
+   ]
+  ],
+  [
+   "kike",
+   18,
+   [
+    "en"
+   ],
+   [
+    "kike amje sekusutimet mone",
+    "eksur naive kike prethoqeve"
+   ]
+  ],
+  [
+   "fing",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "fing hees guns ngarmuloja",
+    "fratet luin zhankluar fing"
+   ]
+  ],
+  [
+   "suka",
+   17,
+   [
+    "be",
+    "pl",
+    "ru",
+    "sk",
+    "uk"
+   ],
+   [
+    "imtellat mois suka tucking",
+    "njenjtje suka latileding"
+   ]
+  ],
+  [
+   "siki",
+   17,
+   [
+    "ja",
+    "pl",
+    "tr"
+   ],
+   [
+    "akrobakatuar siki njta aren",
+    "fruan urave bergohemata siki"
+   ]
+  ],
+  [
+   "mesa",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "mesa piedukrroj fita mane",
+    "zotescier mesa anguli zbohet"
+   ]
+  ],
+  [
+   "tate",
+   16,
+   [
+    "ro"
+   ],
+   [
+    "valekuta vrojes gero tate",
+    "gerrit miret tuckallin tate"
+   ]
+  ],
+  [
+   "anus",
+   16,
+   [
+    "be",
+    "bg",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "eu",
+    "fa",
+    "fr",
+    "gd",
+    "is",
+    "mk",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sl",
+    "sq",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "jemi zotafoli kimite anus",
+    "bini mjelluar anus harlifer"
+   ]
+  ]
+ ],
+ "samples": [
+  "furrur noin ruka blaktojne",
+  "shmit kitarte inkuronte fultoi",
+  "imazhen roaren ladena stli",
+  "fain astuazon perike sparku",
+  "genexhej draplikove mban",
+  "adrenoslisa huit navilizen",
+  "brendimcati mbuirres zbem",
+  "rurahesha elton vemera fiat",
+  "koha asirktin striodasje",
+  "sosa serbal meditur vrimik",
+  "mbloja eksperteritje dane rein",
+  "kintussi kola delegrajve"
+ ],
+ "seconds": 8.4,
+ "languages": [
+  "sq"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

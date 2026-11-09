@@ -1,0 +1,269 @@
+{
+ "name": "it",
+ "corpus_words": 80000,
+ "relaxed_rows": 22,
+ "relaxed_examples": [
+  "sq",
+  "eq",
+  "ex",
+  "sy",
+  "hy",
+  "my",
+  "vu",
+  "ly",
+  "cy",
+  "ty",
+  "by",
+  "ny"
+ ],
+ "segmented_words": 57252,
+ "skipped_words": 22748,
+ "middle_attested_fraction": 0.4355875651041667,
+ "end32_attested_fraction": 0.4794921875,
+ "end16_attested_fraction": 0.6754557291666666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.57,
+ "max_chars": 38,
+ "consonant_runs_pct": 5.634,
+ "vowel_runs_pct": 1.709,
+ "english_words_pct": 2.181,
+ "own_words_pct": 25.728,
+ "offensive_whole_pct": 3.635,
+ "offensive_whole_english_list_pct": 0.52,
+ "offensive_whole_own_list_pct": 0.55,
+ "offensive_whole_major_lists_pct": 2.095,
+ "offensive_severe_en_pct": 0.405,
+ "offensive_inside5_pct": 4.53,
+ "offensive_inside4_pct": 27.12,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "samen",
+   49,
+   [
+    "de"
+   ],
+   [
+    "lancato rudeosamente uretisca",
+    "pace enicato prosamente acegni"
+   ]
+  ],
+  [
+   "anita",
+   48,
+   [
+    "nl"
+   ],
+   [
+    "rotuceanita rase vegascito",
+    "tanita ruga ginette erboni"
+   ]
+  ],
+  [
+   "ecchi",
+   38,
+   [
+    "en"
+   ],
+   [
+    "cecchicava restro ciate pula",
+    "sclo prarlo stanco ecchimote"
+   ]
+  ],
+  [
+   "retto",
+   32,
+   [
+    "it"
+   ],
+   [
+    "mitivi ecate subers atretto",
+    "optoriosendo atretto marante"
+   ]
+  ],
+  [
+   "tissi",
+   23,
+   [
+    "fi"
+   ],
+   [
+    "ottissimo funzorare lida blenti",
+    "amascheorato nanetissimo stava"
+   ]
+  ],
+  [
+   "fica",
+   23,
+   [
+    "it"
+   ],
+   [
+    "ceda aung cellettacco fica",
+    "dicefalore fica legabono"
+   ]
+  ],
+  [
+   "bola",
+   21,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "bola sbarcate dagliammi grita",
+    "bola sugo teli acutabacente"
+   ]
+  ],
+  [
+   "tette",
+   20,
+   [
+    "it"
+   ],
+   [
+    "dumpicali buckotettero cate",
+    "otettentero emelare gini laici"
+   ]
+  ],
+  [
+   "pirla",
+   19,
+   [
+    "it"
+   ],
+   [
+    "onti bird pirla torillopano",
+    "amami crassula dichiata pirla"
+   ]
+  ],
+  [
+   "nude",
+   19,
+   [
+    "en"
+   ],
+   [
+    "nude samagniamo pasa evocata",
+    "vaganizione nude paleggstro"
+   ]
+  ],
+  [
+   "meni",
+   19,
+   [
+    "tr"
+   ],
+   [
+    "lima geate meni clotomosto",
+    "meni masa gridstidente biro"
+   ]
+  ],
+  [
+   "irata",
+   19,
+   [
+    "la"
+   ],
+   [
+    "irata apro rusparmelo irgata",
+    "vampente lite irata katagliate"
+   ]
+  ],
+  [
+   "pute",
+   19,
+   [
+    "fr"
+   ],
+   [
+    "pute sonneggiarti marianfora",
+    "goinvensini pute lima enano"
+   ]
+  ],
+  [
+   "muca",
+   18,
+   [
+    "lv",
+    "sl"
+   ],
+   [
+    "deleno drutta muca volling",
+    "stupotorace anano neela muca"
+   ]
+  ],
+  [
+   "pube",
+   18,
+   [
+    "be",
+    "bg",
+    "ca",
+    "cs",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "gl",
+    "hi",
+    "hr",
+    "hu",
+    "id",
+    "is",
+    "it",
+    "la",
+    "lt",
+    "lv",
+    "mk",
+    "mn",
+    "ms",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "vi"
+   ],
+   [
+    "varrano ocando pube fellablo",
+    "ucati bedurina pube rinfero"
+   ]
+  ]
+ ],
+ "samples": [
+  "agason irne otato ileservate",
+  "dirmi elegati ragami agocarlo",
+  "unicarlo bossano alderti apino",
+  "frazione mustardare inare romance",
+  "gazzasino ausciungton fite",
+  "tuttibociti neato vocadurla",
+  "benediofita filenzare smendo",
+  "otasparono gotta segrata chon",
+  "trire muorsera apocifieghi",
+  "enio sussiamo maniche ofolante",
+  "fidulo russocarmi lele rita",
+  "eldregarsi trera prefischiera"
+ ],
+ "seconds": 10.3,
+ "languages": [
+  "it"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

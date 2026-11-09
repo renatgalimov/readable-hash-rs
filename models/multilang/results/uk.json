@@ -1,0 +1,232 @@
+{
+ "name": "uk",
+ "corpus_words": 80000,
+ "relaxed_rows": 13,
+ "relaxed_examples": [
+  "shc",
+  "poc",
+  "ic",
+  "hc",
+  "shc",
+  "ac",
+  "uc",
+  "oc",
+  "ec",
+  "yuc",
+  "tic",
+  "ls"
+ ],
+ "segmented_words": 54376,
+ "skipped_words": 25624,
+ "middle_attested_fraction": 0.4947509765625,
+ "end32_attested_fraction": 0.46337890625,
+ "end16_attested_fraction": 0.6746419270833334,
+ "begin_attested": 128,
+ "chars": 26.96,
+ "max_chars": 37,
+ "consonant_runs_pct": 15.313,
+ "vowel_runs_pct": 8.554,
+ "english_words_pct": 0.339,
+ "own_words_pct": 24.912,
+ "offensive_whole_pct": 2.56,
+ "offensive_whole_english_list_pct": 0.005,
+ "offensive_whole_own_list_pct": 0.175,
+ "offensive_whole_major_lists_pct": 1.225,
+ "offensive_severe_en_pct": 0.055,
+ "offensive_inside5_pct": 3.455,
+ "offensive_inside4_pct": 18.52,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "chati",
+   69,
+   [
+    "te"
+   ],
+   [
+    "sibiotki chati paik pramila",
+    "zliv yunosti grechatiti kravila"
+   ]
+  ],
+  [
+   "natsi",
+   45,
+   [
+    "fi",
+    "mk"
+   ],
+   [
+    "elki vozvla zachiy vznatsiyu",
+    "avadim natsitu spami pravlin"
+   ]
+  ],
+  [
+   "yuchi",
+   42,
+   [
+    "ja"
+   ],
+   [
+    "ekhayuchi labovu zone vtikakh",
+    "vikrusechila niotuyuchi visiy"
+   ]
+  ],
+  [
+   "pravi",
+   24,
+   [
+    "ml"
+   ],
+   [
+    "plenii vati glati vpravishcha",
+    "meti dinu opravisttili seym"
+   ]
+  ],
+  [
+   "chich",
+   23,
+   [
+    "vi"
+   ],
+   [
+    "obiv elsya obuchichku sobomu",
+    "zonu zrichichidesh plotvina"
+   ]
+  ],
+  [
+   "yasa",
+   21,
+   [
+    "ko"
+   ],
+   [
+    "rikoroila mekhitobtsi yasa",
+    "lost mushiti realogii yasa"
+   ]
+  ],
+  [
+   "chali",
+   21,
+   [
+    "el"
+   ],
+   [
+    "platichali dzhyu peregodnedili",
+    "znishshuchali vpoyu main spem"
+   ]
+  ],
+  [
+   "suka",
+   20,
+   [
+    "be",
+    "pl",
+    "ru",
+    "sk",
+    "uk"
+   ],
+   [
+    "rutsi tolektiziv suka vyyu",
+    "vygotigniv bitu vzom suka"
+   ]
+  ],
+  [
+   "guda",
+   20,
+   [
+    "hi",
+    "mr"
+   ],
+   [
+    "obsulotsi biopozhyaie guda",
+    "keligakh guda ponaznolav"
+   ]
+  ],
+  [
+   "fiku",
+   19,
+   [
+    "eo"
+   ],
+   [
+    "zbagav vodonu fiku aronov",
+    "fiku frantsov vidbuti nishi"
+   ]
+  ],
+  [
+   "sheni",
+   18,
+   [
+    "zh"
+   ],
+   [
+    "lantsyushenim bokayu zadali",
+    "vedurilyer vsami okorusheni"
+   ]
+  ],
+  [
+   "long",
+   17,
+   [
+    "vi"
+   ],
+   [
+    "vrudii zbulonili vidru long",
+    "slabiti tirichna pane long"
+   ]
+  ],
+  [
+   "bite",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "gledet grila bite diyskuli",
+    "anaterdyala bite lovuchene"
+   ]
+  ],
+  [
+   "mail",
+   17,
+   [
+    "hi"
+   ],
+   [
+    "veng teizuvati mail zridatki",
+    "vikti mail fila maydotriyte"
+   ]
+  ],
+  [
+   "fava",
+   17,
+   [
+    "it"
+   ],
+   [
+    "chemivvitniy vzla vyno fava",
+    "fava benom potshite lobolu"
+   ]
+  ]
+ ],
+ "samples": [
+  "tonuiesh gluvati fanya fraieroga",
+  "rozti zbreya dikhla tonsin",
+  "iznaty iskhodilo movnim opno",
+  "sviy visunichno nato taynim",
+  "virogorennya vspendvivsya kryu",
+  "filograzhetsya arnu dugazivi",
+  "vikonimshoi krikinku geok",
+  "favladka bule stezhku gone",
+  "pidie viskhikam opinyaravsya",
+  "elki vozvla zachiy vznatsiyu",
+  "krizhu orenrivu seal vidni",
+  "zbicherik pidti dotricharyu"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "uk"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

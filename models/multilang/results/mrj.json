@@ -1,0 +1,251 @@
+{
+ "name": "mrj",
+ "corpus_words": 6393,
+ "relaxed_rows": 383,
+ "relaxed_examples": [
+  "ku",
+  "pr",
+  "pe",
+  "vi",
+  "pu",
+  "so",
+  "pi",
+  "ys",
+  "tu",
+  "su",
+  "yo",
+  "ay"
+ ],
+ "segmented_words": 4418,
+ "skipped_words": 1975,
+ "middle_attested_fraction": 0.08447265625,
+ "end32_attested_fraction": 0.09269205729166667,
+ "end16_attested_fraction": 0.18172200520833334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.73,
+ "max_chars": 37,
+ "consonant_runs_pct": 31.322,
+ "vowel_runs_pct": 2.734,
+ "english_words_pct": 0.444,
+ "own_words_pct": 6.091,
+ "offensive_whole_pct": 1.99,
+ "offensive_whole_english_list_pct": 0.085,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.705,
+ "offensive_severe_en_pct": 0.02,
+ "offensive_inside5_pct": 1.335,
+ "offensive_inside4_pct": 12.07,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "manda",
+   25,
+   [
+    "ru"
+   ],
+   [
+    "izyryzhy klaktimanda iziren",
+    "ikirat tuylvla mandash vysh"
+   ]
+  ],
+  [
+   "kanen",
+   20,
+   [
+    "nl"
+   ],
+   [
+    "kanen nyntsh akaykhti fryn",
+    "kanen edykshtatinyt olaylina"
+   ]
+  ],
+  [
+   "sits",
+   19,
+   [
+    "kn",
+    "te"
+   ],
+   [
+    "donat edmdritimash sits khesh",
+    "syrela yoorekshty gian sits"
+   ]
+  ],
+  [
+   "faen",
+   19,
+   [
+    "no"
+   ],
+   [
+    "admdmdat baavtinovla faen",
+    "faen klsharozanyt anym shshty"
+   ]
+  ],
+  [
+   "seni",
+   19,
+   [
+    "it"
+   ],
+   [
+    "seni lyklyavla kunsorvela",
+    "gurnrngynyt seni ynta mets"
+   ]
+  ],
+  [
+   "alla",
+   18,
+   [
+    "mt"
+   ],
+   [
+    "alla mungan mellryan movla",
+    "rots pymbla alla viemdyshyshty"
+   ]
+  ],
+  [
+   "anal",
+   17,
+   [
+    "ca",
+    "cy",
+    "da",
+    "de",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fr",
+    "gd",
+    "gl",
+    "hy",
+    "id",
+    "pt",
+    "ro",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "tr",
+    "uz",
+    "zu"
+   ],
+   [
+    "usryrtuken anal iryzhy yanvla",
+    "asts beyshty lalmynyshara anal"
+   ]
+  ],
+  [
+   "epsh",
+   16,
+   [
+    "sq"
+   ],
+   [
+    "opan epsh urezdymash lynozhy",
+    "buesh epsh kundyzhy osherlyzhy"
+   ]
+  ],
+  [
+   "rota",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "kunyt ukydkhstryn rota esin",
+    "bayn rota galitikvla krlikvla"
+   ]
+  ],
+  [
+   "meni",
+   15,
+   [
+    "tr"
+   ],
+   [
+    "yamyzhy meni yandtina tatidy",
+    "meni gosh isstarstyn feyn"
+   ]
+  ],
+  [
+   "bola",
+   15,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "bola oshy pion ylepretuna",
+    "bola formninela tredalta"
+   ]
+  ],
+  [
+   "fena",
+   15,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "mylash fena fala festemadat",
+    "akydtissen dezhy baan fena"
+   ]
+  ],
+  [
+   "dian",
+   15,
+   [
+    "zh"
+   ],
+   [
+    "laat dian proryatyren komash",
+    "dolirmrgna amyn epyn dian"
+   ]
+  ],
+  [
+   "muna",
+   14,
+   [
+    "fi"
+   ],
+   [
+    "muyzhy ikstor bomdemvlam muna",
+    "gollzhy muna aturolist okat"
+   ]
+  ],
+  [
+   "inat",
+   14,
+   [
+    "sq"
+   ],
+   [
+    "inat tutshenyt kryzhy asipovich",
+    "inat ynal leminsresh yushy"
+   ]
+  ]
+ ],
+ "samples": [
+  "kisten gimy emash aznikten",
+  "vaka yrtyam mynyyn kiayzhy",
+  "klyrta golvym pernan syyzhy",
+  "vuesh ratonomi pats millyn",
+  "knrimanyvla gryledylynyt puash",
+  "fangtekhna legy galinedy",
+  "luatsikhvlazhy putiller nimy",
+  "emnigalyn gula yyshtylesh pion",
+  "malyk rayyshlyn syndgyratyn",
+  "meta chekam kushkyzhy urnimyzhy",
+  "pumdsh fermnimash sush kola",
+  "yrnentyt mats kyngezrina"
+ ],
+ "seconds": 9.2,
+ "languages": [
+  "mrj"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

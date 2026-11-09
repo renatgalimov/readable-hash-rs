@@ -1,0 +1,225 @@
+{
+ "name": "eu+fi-block",
+ "corpus_words": 77231,
+ "relaxed_rows": 2,
+ "relaxed_examples": [
+  "hy",
+  "nn"
+ ],
+ "banned_pairs": 4921,
+ "segmented_words": 55783,
+ "skipped_words": 21448,
+ "middle_attested_fraction": 0.4971923828125,
+ "end32_attested_fraction": 0.4156087239583333,
+ "end16_attested_fraction": 0.6521809895833334,
+ "begin_attested": 128,
+ "three_token_rounds": [
+  962,
+  712,
+  517,
+  315
+ ],
+ "chars": 27.36,
+ "max_chars": 35,
+ "consonant_runs_pct": 3.455,
+ "vowel_runs_pct": 6.471,
+ "english_words_pct": 0.914,
+ "own_words_pct": 19.623,
+ "offensive_whole_pct": 0.87,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 1.47,
+ "offensive_inside4_pct": 15.71,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "lusta",
+   44,
+   [
+    "sv"
+   ],
+   [
+    "tunkignona daari tuululusta",
+    "usen epaimulusta bonboi teosta"
+   ]
+  ],
+  [
+   "pissa",
+   24,
+   [
+    "is"
+   ],
+   [
+    "onegeen gelakin mekin ispissa",
+    "kriinpatu proa veritxapissa"
+   ]
+  ],
+  [
+   "pesi",
+   18,
+   [
+    "mr"
+   ],
+   [
+    "uretakevan hius gauzarik pesi",
+    "pesi osasisiaan ekatiokazio"
+   ]
+  ],
+  [
+   "pina",
+   16,
+   [
+    "hu"
+   ],
+   [
+    "jari hasevan pina azkalatu",
+    "seisoivat pina mulkoak neen"
+   ]
+  ],
+  [
+   "hora",
+   15,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "ketu hora reko mikeammotaan",
+    "pine ingazitzeko hora entonta"
+   ]
+  ],
+  [
+   "asna",
+   15,
+   [
+    "is"
+   ],
+   [
+    "kamillyyni noek asna garen",
+    "torjeen kodiolin poissa asna"
+   ]
+  ],
+  [
+   "kanen",
+   15,
+   [
+    "nl"
+   ],
+   [
+    "gona fiaa txernimassa kanen",
+    "veli kanen isrago edozabei"
+   ]
+  ],
+  [
+   "zakar",
+   13,
+   [
+    "ms"
+   ],
+   [
+    "epaista eroon zakargagana irari",
+    "dali zeukia zabaiko zakario"
+   ]
+  ],
+  [
+   "pusi",
+   13,
+   [
+    "kn"
+   ],
+   [
+    "suomus pusi verrayn edonia",
+    "lintegua sian baitti pusi"
+   ]
+  ],
+  [
+   "kale",
+   12,
+   [
+    "lt"
+   ],
+   [
+    "kale maniikuvaa sarjaiaren",
+    "kale pyhistoren lennrik hoia"
+   ]
+  ],
+  [
+   "tate",
+   12,
+   [
+    "ro"
+   ],
+   [
+    "erruntesi tate inberurkitu",
+    "rola tekeildasta arra tate"
+   ]
+  ],
+  [
+   "sait",
+   12,
+   [
+    "kn"
+   ],
+   [
+    "sait angeliek teidaluoaa",
+    "ginget sait peukeminen tino"
+   ]
+  ],
+  [
+   "alla",
+   11,
+   [
+    "mt"
+   ],
+   [
+    "dabiaren alla krallatzen tulta",
+    "mekin egoimaan azazurra alla"
+   ]
+  ],
+  [
+   "dain",
+   10,
+   [
+    "ml"
+   ],
+   [
+    "pakeasneni gestadaz dain",
+    "dain onetaz lerdizut baden"
+   ]
+  ],
+  [
+   "hani",
+   10,
+   [
+    "is"
+   ],
+   [
+    "hani biokutulako txetan tyen",
+    "gama linezain ajetela hani"
+   ]
+  ]
+ ],
+ "samples": [
+  "oneren buek unetan krosizten",
+  "nalle borota silloon ontoak",
+  "ylakoak amarrez heztatu aiaa",
+  "ezan tynengin bayn iragako",
+  "augutoasi itletxibia leen",
+  "apulelipla syat nikortani",
+  "antzagoille lerdemassa giista",
+  "unkiagia abat alaista keak",
+  "arssa tylihurik aitazadeetan",
+  "doaren zirkan kokohan famansa",
+  "leijilla ederrimus zazu jako",
+  "bonagete argo paivastabeko"
+ ],
+ "seconds": 234.9,
+ "languages": [
+  "eu",
+  "fi"
+ ],
+ "no_english": false,
+ "blocklist": true
+}

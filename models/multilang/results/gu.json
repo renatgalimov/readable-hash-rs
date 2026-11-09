@@ -1,0 +1,224 @@
+{
+ "name": "gu",
+ "corpus_words": 80000,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "vu"
+ ],
+ "segmented_words": 48554,
+ "skipped_words": 31446,
+ "middle_attested_fraction": 0.4746500651041667,
+ "end32_attested_fraction": 0.5772298177083334,
+ "end16_attested_fraction": 0.7819010416666666,
+ "begin_attested": 128,
+ "chars": 26.8,
+ "max_chars": 34,
+ "consonant_runs_pct": 36.691,
+ "vowel_runs_pct": 5.237,
+ "english_words_pct": 0.754,
+ "own_words_pct": 37.091,
+ "offensive_whole_pct": 2.235,
+ "offensive_whole_english_list_pct": 0.055,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.37,
+ "offensive_severe_en_pct": 0.07,
+ "offensive_inside5_pct": 1.655,
+ "offensive_inside4_pct": 16.87,
+ "offensive_across_words_pct": 0.27,
+ "top_hits": [
+  [
+   "corne",
+   20,
+   [
+    "fr"
+   ],
+   [
+    "rosiltelthi corne upnam almni",
+    "corne vrtavrini certhi butaoe"
+   ]
+  ],
+  [
+   "cono",
+   20,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "cono rein bnikrapurmam benne",
+    "cono bune heresvr anmtesni"
+   ]
+  ],
+  [
+   "puta",
+   19,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "puta krtyudha vatadynsna",
+    "nokasbudri puta jatna jnano"
+   ]
+  ],
+  [
+   "turs",
+   18,
+   [
+    "mn"
+   ],
+   [
+    "umdesna uttmigro turs senum",
+    "aisa gauvesotomam svnum turs"
+   ]
+  ],
+  [
+   "panna",
+   18,
+   [
+    "fi"
+   ],
+   [
+    "prda tatni abhipropanum panna",
+    "hrsotravvano panna dhis shni"
+   ]
+  ],
+  [
+   "guda",
+   17,
+   [
+    "hi",
+    "mr"
+   ],
+   [
+    "guda lgiphkthi raniti ekni",
+    "guda titmam grsi dukhvangne"
+   ]
+  ],
+  [
+   "molo",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "tunum molo utkrie citlilnum",
+    "goldesnum molo bijhnni sera"
+   ]
+  ],
+  [
+   "chani",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "narakhie duhasrse aechani",
+    "chani vaijiprpnna plansimgni"
+   ]
+  ],
+  [
+   "bite",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "svatekstrs bite pdti vini",
+    "riki hrit kedresatnum bite"
+   ]
+  ],
+  [
+   "gote",
+   17,
+   [
+    "tr"
+   ],
+   [
+    "vrna bhatarksamam gote ekli",
+    "gote sila jhol korprdavyo"
+   ]
+  ],
+  [
+   "vamg",
+   17,
+   [
+    "kn",
+    "mr",
+    "te"
+   ],
+   [
+    "vamg taeditkana dara khre",
+    "abhesaythi vamg kanpno burt"
+   ]
+  ],
+  [
+   "chie",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "chie bnse sikhne pinalone",
+    "kurbjarna pulno trtimamthi chie"
+   ]
+  ],
+  [
+   "vana",
+   17,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "dombhlitmam vana pethi ptmam",
+    "jorune mara sitahamnam vana"
+   ]
+  ],
+  [
+   "bamdh",
+   17,
+   [
+    "hi"
+   ],
+   [
+    "jharkasavyum arjiyo bamdhthi",
+    "chpanum cimtini ajthi bamdhnum"
+   ]
+  ],
+  [
+   "phani",
+   16,
+   [
+    "ml"
+   ],
+   [
+    "phani bektano kara akaunharmam",
+    "maphanimgnum ptimam kesne smie"
+   ]
+  ]
+ ],
+ "samples": [
+  "adasie likmam cese hilistmam",
+  "phlna agaumam distresn adosana",
+  "mniptr kmranum stodum anathi",
+  "atse klaphtne saro gunvano",
+  "endoitithi hophtvakno nani",
+  "vyikmiphte josmam mmdevdrni",
+  "grammderie nanpdani bumam",
+  "cekandrmam nona nihalse dane",
+  "amathi klustithi anuposadthi",
+  "jnoni mumbni valithi turnata",
+  "nakrna allalavva brai prni",
+  "agvddika amse smkuphdimg"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "gu"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

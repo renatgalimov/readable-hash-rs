@@ -1,0 +1,274 @@
+{
+ "name": "ckb",
+ "corpus_words": 54129,
+ "relaxed_rows": 54,
+ "relaxed_examples": [
+  "zo",
+  "bc",
+  "fl",
+  "dz",
+  "tq",
+  "qs",
+  "qo",
+  "co",
+  "ma",
+  "gs",
+  "pz",
+  "kc"
+ ],
+ "segmented_words": 34744,
+ "skipped_words": 19385,
+ "middle_attested_fraction": 0.24471028645833334,
+ "end32_attested_fraction": 0.3738199869791667,
+ "end16_attested_fraction": 0.599365234375,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.61,
+ "max_chars": 36,
+ "consonant_runs_pct": 47.966,
+ "vowel_runs_pct": 5.121,
+ "english_words_pct": 0.152,
+ "own_words_pct": 29.679,
+ "offensive_whole_pct": 0.515,
+ "offensive_whole_english_list_pct": 0.165,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.29,
+ "offensive_severe_en_pct": 0.04,
+ "offensive_inside5_pct": 0.575,
+ "offensive_inside4_pct": 6.285,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "neger",
+   18,
+   [
+    "de",
+    "hu",
+    "nl",
+    "sk",
+    "sv"
+   ],
+   [
+    "serdotonkny psezenn dneger",
+    "bebeshrdysh bhdy negerlery"
+   ]
+  ],
+  [
+   "porn",
+   17,
+   [
+    "cy",
+    "en",
+    "et",
+    "gd",
+    "hi",
+    "mt",
+    "sk",
+    "sl",
+    "sr",
+    "zu"
+   ],
+   [
+    "rdegwskrdnry porn qerm bkry",
+    "yreky khebstdeye swye porn"
+   ]
+  ],
+  [
+   "lwty",
+   15,
+   [
+    "ar"
+   ],
+   [
+    "dnwe lwty fyzerd serberekny",
+    "msebngyeky lwty bgysh nkezekny"
+   ]
+  ],
+  [
+   "hore",
+   14,
+   [
+    "be",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "hr",
+    "hu",
+    "id",
+    "is",
+    "it",
+    "la",
+    "lv",
+    "mr",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk"
+   ],
+   [
+    "nmeyn twrestkesheky boty hore",
+    "restet rsoshwnekey hore grne"
+   ]
+  ],
+  [
+   "kwny",
+   12,
+   [
+    "fa"
+   ],
+   [
+    "kwny dykemewe wteke gwyzeky",
+    "dwhewwkhtd slykewteky kwny"
+   ]
+  ],
+  [
+   "kyry",
+   12,
+   [
+    "fa"
+   ],
+   [
+    "bechwdry lwtryn kyry bnrdest",
+    "kertrkhrty bcymykne kyry"
+   ]
+  ],
+  [
+   "konn",
+   11,
+   [
+    "mr"
+   ],
+   [
+    "setn blegeyemene konn qwry",
+    "dktolkekey konn bsybey doyl"
+   ]
+  ],
+  [
+   "gote",
+   10,
+   [
+    "tr"
+   ],
+   [
+    "peny gote hong mozekngezewe",
+    "gote swtoneke spoldy ddybey"
+   ]
+  ],
+  [
+   "kord",
+   8,
+   [
+    "sv"
+   ],
+   [
+    "nwwsewnret kord stdybebeny",
+    "kord gorbsh dytn bheshtromy"
+   ]
+  ],
+  [
+   "gerbe",
+   7,
+   [
+    "fr"
+   ],
+   [
+    "bzgerbern tyly folghtkhny",
+    "gerberekye srbytn klyngwewe"
+   ]
+  ],
+  [
+   "merde",
+   7,
+   [
+    "fr",
+    "it"
+   ],
+   [
+    "tropye yeye rsny znmerdewe",
+    "knde glorzhymyn merdekheke"
+   ]
+  ],
+  [
+   "negry",
+   6,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "knorye kldy retkne snegry",
+    "tony yrwe horkhnegry glwy"
+   ]
+  ],
+  [
+   "khore",
+   6,
+   [
+    "sr"
+   ],
+   [
+    "mermtr bwdy nkyzkrdn nzkhorekn",
+    "zyrwetewe khorey jelywredrw"
+   ]
+  ],
+  [
+   "perse",
+   5,
+   [
+    "et",
+    "fi"
+   ],
+   [
+    "wykny persemye royshtrdokysh",
+    "dwdewh htelshry dzperser"
+   ]
+  ],
+  [
+   "gerber",
+   4,
+   [
+    "fr"
+   ],
+   [
+    "bzgerbern tyly folghtkhny",
+    "gerberekye srbytn klyngwewe"
+   ]
+  ]
+ ],
+ "samples": [
+  "yrngry snky dkey hteshkhty",
+  "hemn mlykre weshen yrwtet",
+  "bcbetekn nsylke zhestn syns",
+  "jwyn slybwnyn pekny yekkeky",
+  "ktzewrbet hyktheltne rony",
+  "bgensegyle pozy rsemmeyn",
+  "bzwenbermeysh rongoleke wyye",
+  "dkhogeyeky mnkey gezhyn grne",
+  "krky sloyktekd syrwybrgne",
+  "wsekny jegrdy selmysh spromn",
+  "roksne bhelyetry zyer deny",
+  "mlefebky krmy khwykhezet"
+ ],
+ "seconds": 9.6,
+ "languages": [
+  "ckb"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

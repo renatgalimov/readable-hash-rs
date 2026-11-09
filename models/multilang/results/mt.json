@@ -1,0 +1,224 @@
+{
+ "name": "mt",
+ "corpus_words": 61411,
+ "relaxed_rows": 3,
+ "relaxed_examples": [
+  "tg",
+  "tq",
+  "ax"
+ ],
+ "segmented_words": 33832,
+ "skipped_words": 27579,
+ "middle_attested_fraction": 0.462890625,
+ "end32_attested_fraction": 0.3688151041666667,
+ "end16_attested_fraction": 0.5855305989583334,
+ "begin_attested": 128,
+ "chars": 26.59,
+ "max_chars": 39,
+ "consonant_runs_pct": 18.673,
+ "vowel_runs_pct": 0.041,
+ "english_words_pct": 0.793,
+ "own_words_pct": 18.212,
+ "offensive_whole_pct": 3.04,
+ "offensive_whole_english_list_pct": 0.085,
+ "offensive_whole_own_list_pct": 0.09,
+ "offensive_whole_major_lists_pct": 1.64,
+ "offensive_severe_en_pct": 0.245,
+ "offensive_inside5_pct": 2.735,
+ "offensive_inside4_pct": 17.945,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "asses",
+   28,
+   [
+    "en",
+    "mr",
+    "pt",
+    "sr",
+    "te"
+   ],
+   [
+    "mulu foolli assessanda meja",
+    "assessisat kelihom naqsewli"
+   ]
+  ],
+  [
+   "sisa",
+   23,
+   [
+    "hr"
+   ],
+   [
+    "belha jghha belantimenti sisa",
+    "imsimbiani sisa suggwiti"
+   ]
+  ],
+  [
+   "fitta",
+   21,
+   [
+    "sv"
+   ],
+   [
+    "imka prefittaqha pacittajna",
+    "brek botananna nfittabdixxi"
+   ]
+  ],
+  [
+   "sugu",
+   21,
+   [
+    "et"
+   ],
+   [
+    "rrakkna sugu degrata nomara",
+    "isties tufflu sugu pagaha"
+   ]
+  ],
+  [
+   "folla",
+   19,
+   [
+    "es"
+   ],
+   [
+    "dozzjoni assgarazzjoni nfimer folla",
+    "ignanzax folla muka kiestaw"
+   ]
+  ],
+  [
+   "samen",
+   19,
+   [
+    "de"
+   ],
+   [
+    "rekwar rikruni mansament dewa",
+    "sament tghidnunzel pornejju"
+   ]
+  ],
+  [
+   "guda",
+   19,
+   [
+    "hi",
+    "mr"
+   ],
+   [
+    "jadaljifika ikkux guda jola",
+    "twagered tespha guda fotu"
+   ]
+  ],
+  [
+   "trio",
+   19,
+   [
+    "es"
+   ],
+   [
+    "dinjan trio iggajna ponter",
+    "trio heda prora takkupageb"
+   ]
+  ],
+  [
+   "here",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "ikkastreta igijiet here jfegga",
+    "adegha betlitu tghonda here"
+   ]
+  ],
+  [
+   "ghat",
+   17,
+   [
+    "mr"
+   ],
+   [
+    "itla ghat jghmilu iddahhulhom",
+    "ghat mgibneratur heda jhani"
+   ]
+  ],
+  [
+   "twat",
+   17,
+   [
+    "en"
+   ],
+   [
+    "tfakkmeghad twat gema ikkna",
+    "ddijiet tifrejazzi fazi twat"
+   ]
+  ],
+  [
+   "pisi",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "cila abousihom pisi pprovar",
+    "tajtiex igri alabilita pisi"
+   ]
+  ],
+  [
+   "diga",
+   17,
+   [
+    "bg",
+    "it",
+    "mt"
+   ],
+   [
+    "diga frew naghad jsolucci",
+    "kenjones oret monesi diga"
+   ]
+  ],
+  [
+   "jaja",
+   17,
+   [
+    "hr"
+   ],
+   [
+    "grezzghaulek jaja tond dota",
+    "twageb renti naziorti jaja"
+   ]
+  ],
+  [
+   "koli",
+   17,
+   [
+    "kn"
+   ],
+   [
+    "twieliema koli agha ammitu",
+    "wajehom famunnen koli sine"
+   ]
+  ]
+ ],
+ "samples": [
+  "ddevew itat cilu ihaggghlu",
+  "imlu ilaqqfu teollha ddepijiet",
+  "krimer pestine porrah skah",
+  "anna vatanghha niex wahder",
+  "kkurtiet jghorversaq sija",
+  "muntlegitx twiku nserronata",
+  "preferibritx siggwati appali",
+  "cielibni amta ghorti fiha",
+  "sement vaggaghlu skomottrati",
+  "adha raties jammaw tghaqqxu",
+  "sikkat ibbernia sufu jidu",
+  "ilwimmni seni tinserazzjonisti"
+ ],
+ "seconds": 8.6,
+ "languages": [
+  "mt"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

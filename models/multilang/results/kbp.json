@@ -1,0 +1,269 @@
+{
+ "name": "kbp",
+ "corpus_words": 7111,
+ "relaxed_rows": 362,
+ "relaxed_examples": [
+  "ku",
+  "pu",
+  "co",
+  "do",
+  "lo",
+  "ci",
+  "ce",
+  "we",
+  "yo",
+  "se",
+  "wi",
+  "fe"
+ ],
+ "segmented_words": 4923,
+ "skipped_words": 2188,
+ "middle_attested_fraction": 0.06465657552083333,
+ "end32_attested_fraction": 0.11604817708333333,
+ "end16_attested_fraction": 0.22216796875,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.24,
+ "max_chars": 32,
+ "consonant_runs_pct": 15.302,
+ "vowel_runs_pct": 17.747,
+ "english_words_pct": 0.477,
+ "own_words_pct": 18.741,
+ "offensive_whole_pct": 1.965,
+ "offensive_whole_english_list_pct": 0.17,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.075,
+ "offensive_severe_en_pct": 0.13,
+ "offensive_inside5_pct": 1.99,
+ "offensive_inside4_pct": 16.855,
+ "offensive_across_words_pct": 0.025,
+ "top_hits": [
+  [
+   "randi",
+   25,
+   [
+    "hi"
+   ],
+   [
+    "etrandima mvlondeli pvdoku",
+    "herandilvkv elag werikonee"
+   ]
+  ],
+  [
+   "cagna",
+   21,
+   [
+    "it"
+   ],
+   [
+    "fukpetemag awaa cagna kiina",
+    "niming cagna azag osikegbkuta"
+   ]
+  ],
+  [
+   "prsi",
+   19,
+   [
+    "sl"
+   ],
+   [
+    "cotindii kvriki leki prsi",
+    "yosi krkateemba etiye prsi"
+   ]
+  ],
+  [
+   "pelek",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "yukuakili sekpelekitv denotu",
+    "awag diga lusi ekpekpelekutu"
+   ]
+  ],
+  [
+   "cham",
+   17,
+   [
+    "vi"
+   ],
+   [
+    "cewalu cakuu cham tononsuu",
+    "dakeluu wekpau cham itokang"
+   ]
+  ],
+  [
+   "wang",
+   17,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "gd",
+    "gl",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "ko",
+    "la",
+    "lt",
+    "lv",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "zu"
+   ],
+   [
+    "afoladina loakina wang yung",
+    "yegzina etong wang magzwide"
+   ]
+  ],
+  [
+   "sung",
+   16,
+   [
+    "vi"
+   ],
+   [
+    "kvlooytu frteeri hiag sung",
+    "hitondu teyvv atutwiya sung"
+   ]
+  ],
+  [
+   "figa",
+   16,
+   [
+    "it",
+    "ru"
+   ],
+   [
+    "amaheluu ruyu nvadii figa",
+    "figa epali cupitosesi kpandi"
+   ]
+  ],
+  [
+   "jama",
+   16,
+   [
+    "et"
+   ],
+   [
+    "jama osolooyag beki irlaau",
+    "dipisi jama rong tvkeyooduu"
+   ]
+  ],
+  [
+   "dike",
+   16,
+   [
+    "eu",
+    "sr"
+   ],
+   [
+    "ezii yameki dike ayadodee",
+    "deeladala prkugzndiye dike"
+   ]
+  ],
+  [
+   "aarik",
+   15,
+   [
+    "et"
+   ],
+   [
+    "ciuu nuwaacla kaarikombayi",
+    "mudaariki amading bekakeyaa"
+   ]
+  ],
+  [
+   "neng",
+   15,
+   [
+    "zh"
+   ],
+   [
+    "coki irvv egakidoming neng",
+    "cuwilizzuu afpilegzig neng"
+   ]
+  ],
+  [
+   "krma",
+   15,
+   [
+    "hr"
+   ],
+   [
+    "eytosaye fronilabuma krma",
+    "neke krma deyi motitakung"
+   ]
+  ],
+  [
+   "kamin",
+   15,
+   [
+    "mt"
+   ],
+   [
+    "hing labu kaming meolipiduu",
+    "kaming kuaking frenee apicuu"
+   ]
+  ],
+  [
+   "sega",
+   15,
+   [
+    "it"
+   ],
+   [
+    "azgzbiya ceriyi reli sega",
+    "nvsi sega taawtatezuu atoo"
+   ]
+  ]
+ ],
+ "samples": [
+  "ecsoki nvyi jasi ruolaton",
+  "kpig ndeditu liking eciting",
+  "gaamba epitema caapig wadig",
+  "hung duadolii piyv netrasi",
+  "hirierini nuadodaduu anag",
+  "chtemoakiye aming yagzndiyom",
+  "delatisoma anestraa prde",
+  "jabisong mvtu koming ciii",
+  "siluu dueliteki waamusanzaa",
+  "pltu hombsi natuwaa frtoku",
+  "aneyele itriizki celuu king",
+  "ndunekoli sike kantatotuu"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "kbp"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

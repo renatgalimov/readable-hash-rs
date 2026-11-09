@@ -1,0 +1,226 @@
+{
+ "name": "zu",
+ "corpus_words": 80000,
+ "relaxed_rows": 11,
+ "relaxed_examples": [
+  "ex",
+  "ux",
+  "ix",
+  "ax",
+  "ii",
+  "ua",
+  "fl",
+  "ru",
+  "au",
+  "nu",
+  "ox"
+ ],
+ "segmented_words": 63118,
+ "skipped_words": 16882,
+ "middle_attested_fraction": 0.4703369140625,
+ "end32_attested_fraction": 0.3389892578125,
+ "end16_attested_fraction": 0.5550944010416666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.73,
+ "max_chars": 36,
+ "consonant_runs_pct": 6.406,
+ "vowel_runs_pct": 10.605,
+ "english_words_pct": 0.525,
+ "own_words_pct": 19.254,
+ "offensive_whole_pct": 1.34,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.205,
+ "offensive_whole_major_lists_pct": 0.6,
+ "offensive_severe_en_pct": 0.02,
+ "offensive_inside5_pct": 2.76,
+ "offensive_inside4_pct": 21.75,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "bamba",
+   87,
+   [
+    "zu"
+   ],
+   [
+    "ebambane ahlinele kweduzosini",
+    "uhengcilelwe ebambane eliza bolo"
+   ]
+  ],
+  [
+   "hlang",
+   54,
+   [
+    "th"
+   ],
+   [
+    "iheli utomfani basayehlanga",
+    "umisa mosehlanga neela ilimane"
+   ]
+  ],
+  [
+   "sheni",
+   36,
+   [
+    "zh"
+   ],
+   [
+    "ecalini nikeli amtsheni njelwa",
+    "afele itsheni bake efambitheka"
+   ]
+  ],
+  [
+   "linda",
+   35,
+   [
+    "zu"
+   ],
+   [
+    "enqoko woka yina khulindawo",
+    "olindayo epaphela bosimo alayo"
+   ]
+  ],
+  [
+   "asini",
+   32,
+   [
+    "it"
+   ],
+   [
+    "evubopicwe ndandle afasini",
+    "opicle wezesani owahlasini"
+   ]
+  ],
+  [
+   "ezeli",
+   27,
+   [
+    "lv"
+   ],
+   [
+    "yaze ikunqalwa thela ubezeli",
+    "awezeli nodani efelwe neloso"
+   ]
+  ],
+  [
+   "sike",
+   23,
+   [
+    "tr"
+   ],
+   [
+    "obiwe kusifihle sike ugashwa",
+    "sike ighlanga abadile isonda"
+   ]
+  ],
+  [
+   "ipeni",
+   20,
+   [
+    "zu"
+   ],
+   [
+    "awukahlayo sandula njula ipeni",
+    "osana umbantshwa ngalelwa ipeni"
+   ]
+  ],
+  [
+   "pheni",
+   19,
+   [
+    "mr"
+   ],
+   [
+    "kwipheni edudedishwe njabuza",
+    "uzipheni nikhohlala okhoshise"
+   ]
+  ],
+  [
+   "eblo",
+   17,
+   [
+    "ru"
+   ],
+   [
+    "udongo omdakhali eblo aheni",
+    "etini eblo mookugqise ohlalisa"
+   ]
+  ],
+  [
+   "zizi",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "iqela zizi ihashwe bonyikeza",
+    "zizi ugunzulwela iculwa omila"
+   ]
+  ],
+  [
+   "tanga",
+   17,
+   [
+    "fil"
+   ],
+   [
+    "njintangayo etingeke itelwa ipele",
+    "wosuse avuka epetanga khonda"
+   ]
+  ],
+  [
+   "olla",
+   17,
+   [
+    "sv"
+   ],
+   [
+    "ihubhitoye olla ihambuzani",
+    "iqhwini olla upula linasethi"
+   ]
+  ],
+  [
+   "kale",
+   17,
+   [
+    "lt"
+   ],
+   [
+    "kale amanquzela emisani ilela",
+    "kale udiziswasele eyayo emka"
+   ]
+  ],
+  [
+   "nomo",
+   16,
+   [
+    "ko"
+   ],
+   [
+    "ebhozi nomo afafoni maselo",
+    "uthabhisi wewe nomo ungoka"
+   ]
+  ]
+ ],
+ "samples": [
+  "iyakuwo iqiwe moso avuyolele",
+  "ukeka aholweni lisamo iyafeka",
+  "ecalini nikeli amtsheni njelwa",
+  "onisa edelungwane bake imvumi",
+  "eposipathi ihibhiqina akwa",
+  "egudaliphiza iloli ozodingelela",
+  "ayisikhoheli akamhlelo eqiswa",
+  "motshekelwe khiwe zivulwa kana",
+  "okene eduzukana njikalezibe",
+  "igisa yalodi esiyelwa nkwaya",
+  "akuphekile oyinziya mane kuwe",
+  "ahezeselwa okiswa abaqwathoma"
+ ],
+ "seconds": 10.9,
+ "languages": [
+  "zu"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

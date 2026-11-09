@@ -1,0 +1,234 @@
+{
+ "name": "la-block",
+ "corpus_words": 80000,
+ "relaxed_rows": 47,
+ "relaxed_examples": [
+  "af",
+  "my",
+  "vu",
+  "aq",
+  "ty",
+  "eq",
+  "py",
+  "wo",
+  "je",
+  "zo",
+  "dy",
+  "mc"
+ ],
+ "banned_pairs": 4572,
+ "segmented_words": 60055,
+ "skipped_words": 19945,
+ "middle_attested_fraction": 0.4010416666666667,
+ "end32_attested_fraction": 0.4130045572916667,
+ "end16_attested_fraction": 0.620361328125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "three_token_rounds": [
+  1067,
+  826,
+  547,
+  316
+ ],
+ "chars": 27.5,
+ "max_chars": 36,
+ "consonant_runs_pct": 6.798,
+ "vowel_runs_pct": 4.099,
+ "english_words_pct": 4.175,
+ "own_words_pct": 23.028,
+ "offensive_whole_pct": 0.685,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.005,
+ "offensive_inside5_pct": 1.72,
+ "offensive_inside4_pct": 17.83,
+ "offensive_across_words_pct": 0.08,
+ "top_hits": [
+  [
+   "tissi",
+   24,
+   [
+    "fi"
+   ],
+   [
+    "platissimium hosiones minihita",
+    "unorum lupora totissimas faes"
+   ]
+  ],
+  [
+   "serat",
+   20,
+   [
+    "bg"
+   ],
+   [
+    "efit rates membanserat efas",
+    "pupumpatis permserat infimi"
+   ]
+  ],
+  [
+   "molo",
+   19,
+   [
+    "fi"
+   ],
+   [
+    "cincastis emantem molo sata",
+    "alcinans beata sorbam molo"
+   ]
+  ],
+  [
+   "pios",
+   18,
+   [
+    "gd"
+   ],
+   [
+    "diruum hunnacis pios emibus",
+    "punclumus pios renoque buam"
+   ]
+  ],
+  [
+   "hori",
+   17,
+   [
+    "ms"
+   ],
+   [
+    "epheosmius hori bari chus",
+    "orca catalaenus cram hori"
+   ]
+  ],
+  [
+   "peos",
+   17,
+   [
+    "el"
+   ],
+   [
+    "deni ciebant nidibindoris peos",
+    "enutigmesis peos alii aforum"
+   ]
+  ],
+  [
+   "elle",
+   14,
+   [
+    "lv"
+   ],
+   [
+    "fuco aleapebat soston elle",
+    "elle clivum cedibus iuviri"
+   ]
+  ],
+  [
+   "anita",
+   14,
+   [
+    "nl"
+   ],
+   [
+    "ranitas dammium locertebor",
+    "murus cuipit danitatis iastra"
+   ]
+  ],
+  [
+   "ianus",
+   14,
+   [
+    "zu"
+   ],
+   [
+    "ilianus cubarierae damidum",
+    "itta boretrudet phocianus"
+   ]
+  ],
+  [
+   "flis",
+   13,
+   [
+    "da"
+   ],
+   [
+    "pendoris actos flis fabucere",
+    "loarum quadio rumputam flis"
+   ]
+  ],
+  [
+   "seit",
+   12,
+   [
+    "te"
+   ],
+   [
+    "fetegobertum natum cures seit",
+    "serunt auas seit levernivum"
+   ]
+  ],
+  [
+   "murum",
+   11,
+   [
+    "mr"
+   ],
+   [
+    "sileam murum apae supictas",
+    "murum guinemitum phecica asarum"
+   ]
+  ],
+  [
+   "anali",
+   11,
+   [
+    "mt"
+   ],
+   [
+    "getus ocam veas ferodanalibus",
+    "agincempii aullti danalis"
+   ]
+  ],
+  [
+   "curat",
+   9,
+   [
+    "cs"
+   ],
+   [
+    "diere murovertationis amicuratio",
+    "cynisiniones mecum apiaticuratio"
+   ]
+  ],
+  [
+   "hamma",
+   8,
+   [
+    "sv"
+   ],
+   [
+    "itta totum imis achammacio",
+    "nubirimilem actos bohammata"
+   ]
+  ]
+ ],
+ "samples": [
+  "orbare hita euta guelagni",
+  "dion ravenio messunt orodibus",
+  "efurorum flerata telare limum",
+  "soto heintivi inuit bernit",
+  "plotonidae losturrere aeni",
+  "unctipiatur hoat brenobes",
+  "multathein aetibile oces",
+  "euntulae votur pollati imis",
+  "searum hedectam litumannos",
+  "ruente mittet regiorum cygnas",
+  "aegentem evanuenae sint deum",
+  "radegeos sese canandeare"
+ ],
+ "seconds": 296.1,
+ "languages": [
+  "la"
+ ],
+ "no_english": false,
+ "blocklist": true
+}

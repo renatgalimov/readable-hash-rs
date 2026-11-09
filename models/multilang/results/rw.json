@@ -1,0 +1,233 @@
+{
+ "name": "rw",
+ "corpus_words": 25194,
+ "relaxed_rows": 101,
+ "relaxed_examples": [
+  "co",
+  "mo",
+  "pr",
+  "me",
+  "pe",
+  "fa",
+  "do",
+  "po",
+  "jo",
+  "ju",
+  "no",
+  "fi"
+ ],
+ "segmented_words": 20213,
+ "skipped_words": 4981,
+ "middle_attested_fraction": 0.23372395833333334,
+ "end32_attested_fraction": 0.2501627604166667,
+ "end16_attested_fraction": 0.4309895833333333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.36,
+ "max_chars": 37,
+ "consonant_runs_pct": 2.772,
+ "vowel_runs_pct": 14.051,
+ "english_words_pct": 0.679,
+ "own_words_pct": 19.836,
+ "offensive_whole_pct": 1.15,
+ "offensive_whole_english_list_pct": 0.01,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.86,
+ "offensive_severe_en_pct": 0.05,
+ "offensive_inside5_pct": 4.2,
+ "offensive_inside4_pct": 18.24,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "kunda",
+   186,
+   [
+    "cs"
+   ],
+   [
+    "unkunda myifumuseke idamusigira",
+    "noamikunda zeabucyo mpatezwa"
+   ]
+  ],
+  [
+   "tanga",
+   152,
+   [
+    "fil"
+   ],
+   [
+    "nezi vikwatanga sosina kuwa",
+    "taguma liga ugimutanga ruke"
+   ]
+  ],
+  [
+   "ubera",
+   103,
+   [
+    "la"
+   ],
+   [
+    "nyuka nyihekikura kuki kubera",
+    "nomubera nzugire dora bareka"
+   ]
+  ],
+  [
+   "kurwa",
+   58,
+   [
+    "pl"
+   ],
+   [
+    "ningugakirwa ituza akurwa miye",
+    "paroshekurwa bumwe gezugori"
+   ]
+  ],
+  [
+   "manda",
+   30,
+   [
+    "ru"
+   ],
+   [
+    "ntacenabwa manda ubaze mwuga",
+    "manda noubuza noiye uhumugire"
+   ]
+  ],
+  [
+   "linda",
+   19,
+   [
+    "zu"
+   ],
+   [
+    "noana midaheke duga belinda",
+    "avirierewe ashari linda birwa"
+   ]
+  ],
+  [
+   "bonze",
+   19,
+   [
+    "de"
+   ],
+   [
+    "ryashiseka bonze ubwara twenda",
+    "mbimera serituruka rwawe bonze"
+   ]
+  ],
+  [
+   "satan",
+   17,
+   [
+    "no",
+    "sv"
+   ],
+   [
+    "wumpumuba adasatanze ngifanye",
+    "gize mfashason atira nsatanye"
+   ]
+  ],
+  [
+   "mose",
+   17,
+   [
+    "de"
+   ],
+   [
+    "mose tekunze ntangafira iganze",
+    "mose byicikina runo utakana"
+   ]
+  ],
+  [
+   "name",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "cane acamushingira idakora name",
+    "ahirwa limbura name inzegize"
+   ]
+  ],
+  [
+   "tama",
+   16,
+   [
+    "pl",
+    "zh"
+   ],
+   [
+    "tama shyicika maza byafre",
+    "tama idachiye ngikira tmaye"
+   ]
+  ],
+  [
+   "mama",
+   16,
+   [
+    "pt"
+   ],
+   [
+    "abibaye mama usigize ifotire",
+    "kengukwacirwa ikajya mama ndana"
+   ]
+  ],
+  [
+   "bunda",
+   15,
+   [
+    "pt"
+   ],
+   [
+    "wafasha moze watuvurwa imbunda",
+    "hebunda naya setoya temereye"
+   ]
+  ],
+  [
+   "suka",
+   15,
+   [
+    "be",
+    "pl",
+    "ru",
+    "sk",
+    "uk"
+   ],
+   [
+    "akerekamuye suka ingori saze",
+    "suka gufatsego ivuza mahakana"
+   ]
+  ],
+  [
+   "hane",
+   14,
+   [
+    "da"
+   ],
+   [
+    "hane hame cashibuvaho kaje",
+    "shana nosikutine hane basha"
+   ]
+  ]
+ ],
+ "samples": [
+  "uwigaje coana uyera hekwifuka",
+  "abanze idusaza akorere uweguma",
+  "nonsanye kotonde atitaho ukuka",
+  "irye ifanzumira yako ngamura",
+  "mpakomwuza nukwasoheje arye",
+  "shenistizi semo ayiritaga",
+  "mwangumugura aricongo wenze",
+  "uyumariye bozi ibyure agana",
+  "ntemo ifukudukana ukagranakire",
+  "modi ninjra tmubire tetete",
+  "arabyira regiruje iteza kuwa",
+  "idegumuza ntwe bigikoryuma"
+ ],
+ "seconds": 9.6,
+ "languages": [
+  "rw"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

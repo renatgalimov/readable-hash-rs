@@ -1,0 +1,242 @@
+{
+ "name": "ast",
+ "corpus_words": 80000,
+ "relaxed_rows": 31,
+ "relaxed_examples": [
+  "mc",
+  "eq",
+  "vu",
+  "aq",
+  "sw",
+  "cy",
+  "ly",
+  "my",
+  "sy",
+  "kn",
+  "cn",
+  "kh"
+ ],
+ "segmented_words": 53935,
+ "skipped_words": 26065,
+ "middle_attested_fraction": 0.4697265625,
+ "end32_attested_fraction": 0.4672037760416667,
+ "end16_attested_fraction": 0.6787923177083334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.85,
+ "max_chars": 37,
+ "consonant_runs_pct": 3.888,
+ "vowel_runs_pct": 4.491,
+ "english_words_pct": 2.579,
+ "own_words_pct": 28.268,
+ "offensive_whole_pct": 2.06,
+ "offensive_whole_english_list_pct": 0.21,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.14,
+ "offensive_severe_en_pct": 0.185,
+ "offensive_inside5_pct": 3.115,
+ "offensive_inside4_pct": 20.91,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "dique",
+   37,
+   [
+    "ca",
+    "es",
+    "gl"
+   ],
+   [
+    "blenes xiamicu fouren diques",
+    "rabatreping cinguaba diques"
+   ]
+  ],
+  [
+   "veres",
+   25,
+   [
+    "hu"
+   ],
+   [
+    "inveres irbies ablutibaron",
+    "notaplaes azerlivaes veres"
+   ]
+  ],
+  [
+   "trique",
+   24,
+   [
+    "fr"
+   ],
+   [
+    "orion glarse pune supotriques",
+    "fral emmino notriques shoples"
+   ]
+  ],
+  [
+   "maca",
+   23,
+   [
+    "hr"
+   ],
+   [
+    "pisu defibong maca erupau",
+    "maca ruxios revera sundau"
+   ]
+  ],
+  [
+   "tate",
+   21,
+   [
+    "ro"
+   ],
+   [
+    "azia cherellica sting tate",
+    "tate cefando shustivar veta"
+   ]
+  ],
+  [
+   "puta",
+   18,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "beron xiren puta arrancolos",
+    "axis picu argoniciau puta"
+   ]
+  ],
+  [
+   "peos",
+   17,
+   [
+    "el"
+   ],
+   [
+    "axio peos rianera hibrimos",
+    "peos erudimpico xies bula"
+   ]
+  ],
+  [
+   "site",
+   17,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "tiada site gante biotaganesu",
+    "bloona evogotal site solo"
+   ]
+  ],
+  [
+   "olla",
+   17,
+   [
+    "sv"
+   ],
+   [
+    "olla guen somodo irtrapau",
+    "avizalon mirina olla creu"
+   ]
+  ],
+  [
+   "mama",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "dedo fatos istrepiniada mama",
+    "nirvimstiques mama apse evia"
+   ]
+  ],
+  [
+   "fuck",
+   16,
+   [
+    "cy",
+    "da",
+    "en",
+    "gd",
+    "mn",
+    "ms",
+    "mt",
+    "no",
+    "zu"
+   ],
+   [
+    "exemprazina fuck carnitariu",
+    "munsituyaes fuck fiertiendo"
+   ]
+  ],
+  [
+   "samen",
+   16,
+   [
+    "de"
+   ],
+   [
+    "dunsamente meza xudada cortaba",
+    "untico oltiendo erosamente ayaes"
+   ]
+  ],
+  [
+   "saco",
+   16,
+   [
+    "pt"
+   ],
+   [
+    "tardofer draes saco saboticu",
+    "guiongueru saco elau idding"
+   ]
+  ],
+  [
+   "amador",
+   15,
+   [
+    "pt"
+   ],
+   [
+    "chicar same amador ruleonicu",
+    "hise humorepero amador hare"
+   ]
+  ],
+  [
+   "pula",
+   14,
+   [
+    "ro"
+   ],
+   [
+    "pula cando agallo nutiraos",
+    "servaxicos agan pula honeros"
+   ]
+  ]
+ ],
+ "samples": [
+  "gundon axica luco ectelista",
+  "esaes lisivu acuticu gurriando",
+  "gladices neniendo amputo ciaes",
+  "adda xullinaos canes narcase",
+  "plazemencia riegoclamaos sata",
+  "huerlomemente hava honduraes",
+  "afayeurteros sabolones unaes",
+  "lugundio dude penicu been",
+  "llmos xusinciu cistionitacion",
+  "rude abritos alteriu juncando",
+  "saluin vocataben aulos deos",
+  "linduits llaes recalampada"
+ ],
+ "seconds": 10.5,
+ "languages": [
+  "ast"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

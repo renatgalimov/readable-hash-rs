@@ -1,0 +1,231 @@
+{
+ "name": "fro",
+ "corpus_words": 80000,
+ "relaxed_rows": 16,
+ "relaxed_examples": [
+  "aq",
+  "ex",
+  "je",
+  "ay",
+  "aj",
+  "aw",
+  "ku",
+  "ki",
+  "ip",
+  "by",
+  "oz",
+  "emb"
+ ],
+ "segmented_words": 72612,
+ "skipped_words": 7388,
+ "middle_attested_fraction": 0.14058430989583334,
+ "end32_attested_fraction": 0.3766276041666667,
+ "end16_attested_fraction": 0.4842122395833333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 33.21,
+ "max_chars": 46,
+ "consonant_runs_pct": 8.034,
+ "vowel_runs_pct": 41.212,
+ "english_words_pct": 0.665,
+ "own_words_pct": 17.981,
+ "offensive_whole_pct": 0.225,
+ "offensive_whole_english_list_pct": 0.04,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.15,
+ "offensive_severe_en_pct": 1.12,
+ "offensive_inside5_pct": 6.35,
+ "offensive_inside4_pct": 21.165,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "asses",
+   226,
+   [
+    "en",
+    "mr",
+    "pt",
+    "sr",
+    "te"
+   ],
+   [
+    "gasses jepeiriez alginirrai",
+    "bentitasses aytivreurt foist"
+   ]
+  ],
+  [
+   "cissie",
+   220,
+   [
+    "en"
+   ],
+   [
+    "ofercissiez noustes juons cumbroit",
+    "aertot oifiseroiz aupencissiez"
+   ]
+  ],
+  [
+   "tissi",
+   164,
+   [
+    "fi"
+   ],
+   [
+    "difelussez aengeroies alurtissiens",
+    "facheroit kulintissiez ceillovissoiz"
+   ]
+  ],
+  [
+   "troie",
+   156,
+   [
+    "it"
+   ],
+   [
+    "augistroies juvriiens alames ocent",
+    "evevangetroies otissoiz keez raons"
+   ]
+  ],
+  [
+   "ische",
+   60,
+   [
+    "de"
+   ],
+   [
+    "fonz pischeignissiez ancontotelai",
+    "craluischereies pureit crevortoit"
+   ]
+  ],
+  [
+   "randi",
+   30,
+   [
+    "hi"
+   ],
+   [
+    "beilliiez afeies oissiens gurrandissons",
+    "cranditeies acesmempriiens ayissoiz"
+   ]
+  ],
+  [
+   "irata",
+   22,
+   [
+    "la"
+   ],
+   [
+    "oeie ciratames eses aylarciez",
+    "doriez clorigniiez oiratasse soent"
+   ]
+  ],
+  [
+   "lorte",
+   22,
+   [
+    "da"
+   ],
+   [
+    "blortereiz coilledas daissiez notast",
+    "joiez inraireie clortera jaiens"
+   ]
+  ],
+  [
+   "haner",
+   20,
+   [
+    "da"
+   ],
+   [
+    "chaneront frons goiviroit eriiens",
+    "ooeignendiiez osceigneit haneroient"
+   ]
+  ],
+  [
+   "chalo",
+   18,
+   [
+    "th"
+   ],
+   [
+    "chaloserez daissez honteriens mere",
+    "nons admins aischaloit esent"
+   ]
+  ],
+  [
+   "etron",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "eroient bues iras atimometrons",
+    "leilleigneriens afaunchetrons moliiez"
+   ]
+  ],
+  [
+   "chali",
+   16,
+   [
+    "el"
+   ],
+   [
+    "ofandroies purchalis enrinaiiens",
+    "metoit efent fiemouroit chalioit"
+   ]
+  ],
+  [
+   "fisse",
+   13,
+   [
+    "da"
+   ],
+   [
+    "fisseondireies hueit abueunas",
+    "ooit eveignetassent aneies oonfissez"
+   ]
+  ],
+  [
+   "ases",
+   13,
+   [
+    "cy"
+   ],
+   [
+    "aort ases anent dimentivant",
+    "asiez elendegaliiez ases anreient"
+   ]
+  ],
+  [
+   "billi",
+   12,
+   [
+    "hi"
+   ],
+   [
+    "cumbillioereiz abercent dundriens",
+    "killiiez bumbtissent doubilliiens"
+   ]
+  ]
+ ],
+ "samples": [
+  "nuloierent elons eussiez jaucouroies",
+  "reiez mileroies atargeriens nurgeies",
+  "aasereiz osarra afrussent aloe",
+  "danz jeirstreient eses grilliiez",
+  "aoncunra pirtenduriiens chaiens",
+  "oiraseurer ineit otacratames",
+  "duisdrecereies chaoutereient kerons",
+  "eumbinissiez exissiez manoir foissiez",
+  "gasses jepeiriez alginirrai",
+  "glissoiz empreiez aceptoie sastiiens",
+  "chainez girrivoient beent enreient",
+  "mimailient gaas anvoiremerons"
+ ],
+ "seconds": 12.3,
+ "languages": [
+  "fro"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

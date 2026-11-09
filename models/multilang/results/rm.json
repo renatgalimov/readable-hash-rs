@@ -1,0 +1,235 @@
+{
+ "name": "rm",
+ "corpus_words": 36282,
+ "relaxed_rows": 67,
+ "relaxed_examples": [
+  "ex",
+  "zu",
+  "ju",
+  "ki",
+  "sb",
+  "uf",
+  "ps",
+  "sk",
+  "ku",
+  "ko",
+  "zo",
+  "wo"
+ ],
+ "segmented_words": 25913,
+ "skipped_words": 10369,
+ "middle_attested_fraction": 0.3207194010416667,
+ "end32_attested_fraction": 0.2871500651041667,
+ "end16_attested_fraction": 0.4916178385416667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.89,
+ "max_chars": 37,
+ "consonant_runs_pct": 13.271,
+ "vowel_runs_pct": 2.83,
+ "english_words_pct": 1.574,
+ "own_words_pct": 19.157,
+ "offensive_whole_pct": 2.15,
+ "offensive_whole_english_list_pct": 0.09,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.175,
+ "offensive_severe_en_pct": 0.105,
+ "offensive_inside5_pct": 3.185,
+ "offensive_inside4_pct": 20.13,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "ische",
+   45,
+   [
+    "de"
+   ],
+   [
+    "braischet liar antercenar",
+    "clischemetaziuns imis vincuralas"
+   ]
+  ],
+  [
+   "igazi",
+   29,
+   [
+    "zu"
+   ],
+   [
+    "fligaziuns pontascha gambel chon",
+    "svadieu rabazia mava erigaziuns"
+   ]
+  ],
+  [
+   "anita",
+   23,
+   [
+    "nl"
+   ],
+   [
+    "drutilias anita plis immola",
+    "foscaziun luccer anita imorau"
+   ]
+  ],
+  [
+   "puta",
+   21,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "ustara glorregn eras puta",
+    "glen eruilietgna puta cotga"
+   ]
+  ],
+  [
+   "brida",
+   20,
+   [
+    "ca",
+    "es"
+   ],
+   [
+    "tuta brida apunizartada inta",
+    "dragas rievlein brida frir"
+   ]
+  ],
+  [
+   "cena",
+   19,
+   [
+    "zh"
+   ],
+   [
+    "cena laudrotta panadi exel",
+    "rauna nuscheia vunumble cena"
+   ]
+  ],
+  [
+   "muts",
+   19,
+   [
+    "nl"
+   ],
+   [
+    "apparlezia smica drosivas muts",
+    "quists arcachinar auer muts"
+   ]
+  ],
+  [
+   "luan",
+   18,
+   [
+    "zh"
+   ],
+   [
+    "obada smisunicaziun dour luan",
+    "asteorutar tset luan ever"
+   ]
+  ],
+  [
+   "asas",
+   18,
+   [
+    "gl"
+   ],
+   [
+    "aprena resch tamboger asas",
+    "blevadas rubrolau asas enns"
+   ]
+  ],
+  [
+   "tissi",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "rotissils gesuns alcherenza",
+    "satissiar tista cais staivla"
+   ]
+  ],
+  [
+   "peder",
+   17,
+   [
+    "hr",
+    "mk",
+    "sl"
+   ],
+   [
+    "anaziun quiderada peder agnistrads",
+    "tagn peder eras penarmenada"
+   ]
+  ],
+  [
+   "bola",
+   16,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "elts bola niads datatensescha",
+    "bola cale tituras tinnienzas"
+   ]
+  ],
+  [
+   "fava",
+   16,
+   [
+    "it"
+   ],
+   [
+    "fava intentgira zuond heimar",
+    "fava aczia candriur freivel"
+   ]
+  ],
+  [
+   "manda",
+   16,
+   [
+    "ru"
+   ],
+   [
+    "gormovri tgal datomandada",
+    "exescha blada smandas beavulescha"
+   ]
+  ],
+  [
+   "dian",
+   16,
+   [
+    "zh"
+   ],
+   [
+    "cotga delegas dian cereneivel",
+    "versevadas dian stadar orte"
+   ]
+  ]
+ ],
+ "samples": [
+  "nursada tgica eser smogatica",
+  "inda avantats medezia nustur",
+  "isonds nomala expura araziun",
+  "emna abutilisaziun pran bullis",
+  "brenfument ascipogranta poda",
+  "eropilstus apus hanglunzas",
+  "taglionettar pommulta sviu",
+  "esdebila glescha trocha liar",
+  "scivla abieitta arrangavias",
+  "bonn ragiel carser vusino",
+  "pontiar totaltgond acas cola",
+  "avornigia scai curdliveras"
+ ],
+ "seconds": 10.0,
+ "languages": [
+  "rm"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

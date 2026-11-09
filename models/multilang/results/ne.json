@@ -1,0 +1,220 @@
+{
+ "name": "ne",
+ "corpus_words": 80000,
+ "relaxed_rows": 3,
+ "relaxed_examples": [
+  "ky",
+  "pc",
+  "epc"
+ ],
+ "segmented_words": 49190,
+ "skipped_words": 30810,
+ "middle_attested_fraction": 0.4954427083333333,
+ "end32_attested_fraction": 0.5071207682291666,
+ "end16_attested_fraction": 0.7263997395833334,
+ "begin_attested": 128,
+ "chars": 27.44,
+ "max_chars": 36,
+ "consonant_runs_pct": 41.245,
+ "vowel_runs_pct": 3.804,
+ "english_words_pct": 0.404,
+ "own_words_pct": 33.837,
+ "offensive_whole_pct": 0.985,
+ "offensive_whole_english_list_pct": 0.055,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.535,
+ "offensive_severe_en_pct": 0.04,
+ "offensive_inside5_pct": 1.75,
+ "offensive_inside4_pct": 18.35,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "asilai",
+   32,
+   [
+    "lt"
+   ],
+   [
+    "sercasilai dirgdiprama begko",
+    "jimgrle senetle pididhasilai"
+   ]
+  ],
+  [
+   "manko",
+   18,
+   [
+    "ja"
+   ],
+   [
+    "kimanko panma pipies ptasile",
+    "bdhasavan hepamanko delilai"
+   ]
+  ],
+  [
+   "prsi",
+   17,
+   [
+    "sl"
+   ],
+   [
+    "aniko prsi durakhko brsarma",
+    "ekpchi prytavma tuhika prsi"
+   ]
+  ],
+  [
+   "rota",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "riai stropnkhbat rota apko",
+    "rota ladipaune ksitoplieko"
+   ]
+  ],
+  [
+   "kale",
+   17,
+   [
+    "lt"
+   ],
+   [
+    "kale brkhanihru barma bjivile",
+    "kale pale ligaldidieka jaun"
+   ]
+  ],
+  [
+   "dust",
+   15,
+   [
+    "hi"
+   ],
+   [
+    "cinetka dust bjraphabat ciph",
+    "bele bsthyanubhri cura dust"
+   ]
+  ],
+  [
+   "mama",
+   14,
+   [
+    "pt"
+   ],
+   [
+    "setma mama stnma postapaumdai",
+    "gaeka mama gostheslihrule raji"
+   ]
+  ],
+  [
+   "anale",
+   14,
+   [
+    "it"
+   ],
+   [
+    "naepchi ayma disalanale smtiko",
+    "bdhika romi anale dlisasmplai"
+   ]
+  ],
+  [
+   "ekhma",
+   13,
+   [
+    "th"
+   ],
+   [
+    "lekhma ghlaunema snibrtkrmko",
+    "akva lekhma drdima ktartmika"
+   ]
+  ],
+  [
+   "mona",
+   13,
+   [
+    "it"
+   ],
+   [
+    "calkthru mophma runu mona",
+    "amgrima aunedekhi mona attrama"
+   ]
+  ],
+  [
+   "jama",
+   12,
+   [
+    "et"
+   ],
+   [
+    "dler jama socipasma kraunu",
+    "telko jama jondko vistivale"
+   ]
+  ],
+  [
+   "bile",
+   12,
+   [
+    "ro"
+   ],
+   [
+    "liphajik bsyo kusvbat bile",
+    "josma uptyubasit jonlai bile"
+   ]
+  ],
+  [
+   "suki",
+   12,
+   [
+    "be",
+    "pl",
+    "ru",
+    "uk"
+   ],
+   [
+    "nata suki smmma vrdaubrusko",
+    "suki bnothma nbsaibka jhko"
+   ]
+  ],
+  [
+   "kher",
+   11,
+   [
+    "be"
+   ],
+   [
+    "grlle rukurle potinjko kher",
+    "klyamma giyaer kher dhaiprne"
+   ]
+  ],
+  [
+   "muda",
+   10,
+   [
+    "ru"
+   ],
+   [
+    "adurupile sravlai chyo muda",
+    "muda ptaunu nagko ptaldvarko"
+   ]
+  ]
+ ],
+ "samples": [
+  "hundai ktabat turma mekholle",
+  "marle akrohma grairheka hukurma",
+  "nbirbat kmyaeko puskhru stlko",
+  "avko royalnale prnu sevnlai",
+  "bevastinch kerktthari kuch",
+  "clakdhpulai vrska athrkhaka",
+  "mhilavidynle kusaibare udlai",
+  "tunaunka jorn srmiko jhale",
+  "paen rolkanka sthitdidhiko",
+  "pien duhkhi bamceka bllanle",
+  "kuslla mohnotsthit tismg smka",
+  "aksntaha parn khetrihaim"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "ne"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

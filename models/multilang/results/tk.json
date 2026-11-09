@@ -1,0 +1,230 @@
+{
+ "name": "tk",
+ "corpus_words": 40268,
+ "relaxed_rows": 64,
+ "relaxed_examples": [
+  "co",
+  "fo",
+  "jo",
+  "ib",
+  "zo",
+  "cu",
+  "ic",
+  "fu",
+  "fr",
+  "of",
+  "aj",
+  "wo"
+ ],
+ "segmented_words": 26031,
+ "skipped_words": 14237,
+ "middle_attested_fraction": 0.253173828125,
+ "end32_attested_fraction": 0.16410319010416666,
+ "end16_attested_fraction": 0.314697265625,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.25,
+ "max_chars": 39,
+ "consonant_runs_pct": 5.209,
+ "vowel_runs_pct": 7.628,
+ "english_words_pct": 1.103,
+ "own_words_pct": 7.566,
+ "offensive_whole_pct": 1.52,
+ "offensive_whole_english_list_pct": 0.06,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.755,
+ "offensive_severe_en_pct": 0.095,
+ "offensive_inside5_pct": 1.905,
+ "offensive_inside4_pct": 14.155,
+ "offensive_across_words_pct": 0.035,
+ "top_hits": [
+  [
+   "amlar",
+   35,
+   [
+    "tr"
+   ],
+   [
+    "esden ongasmreji yayar amlar",
+    "yakaygyny jenagrik uldyr amlar"
+   ]
+  ],
+  [
+   "asini",
+   35,
+   [
+    "it"
+   ],
+   [
+    "reatmerasinin ylymyz cysgynda",
+    "kuslalydyr kaygyny anbasinin meyp"
+   ]
+  ],
+  [
+   "manda",
+   29,
+   [
+    "ru"
+   ],
+   [
+    "ayer abyn manda gusaklulda",
+    "acen emasy agzamyrmagy manda"
+   ]
+  ],
+  [
+   "prik",
+   21,
+   [
+    "nl"
+   ],
+   [
+    "yanyolar prik bimegi gecylyk",
+    "diana kayn prik atsayjenanyn"
+   ]
+  ],
+  [
+   "okama",
+   21,
+   [
+    "ja"
+   ],
+   [
+    "deyan yaymyrgyn jende okamaty",
+    "ucaslygy sidan rokamagyn firelen"
+   ]
+  ],
+  [
+   "kusi",
+   20,
+   [
+    "et",
+    "fi"
+   ],
+   [
+    "noriathanalary kusi orplesidir",
+    "adumatydyr hunyn kusi yilenyar"
+   ]
+  ],
+  [
+   "bular",
+   19,
+   [
+    "eu"
+   ],
+   [
+    "tisy esyledlar bular ahymegi",
+    "yuzurkin bular hayk canany"
+   ]
+  ],
+  [
+   "pisa",
+   18,
+   [
+    "ro"
+   ],
+   [
+    "nykagemagy biliatyynda pisa",
+    "agin hyyp pisa ortirasiyyar"
+   ]
+  ],
+  [
+   "mama",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "mama nutilmekleri redan zarten",
+    "cydyr yylgasdyrar astadir mama"
+   ]
+  ],
+  [
+   "pusi",
+   17,
+   [
+    "kn"
+   ],
+   [
+    "delikarmly kular yysi pusi",
+    "agan pusi ormlementara winde"
+   ]
+  ],
+  [
+   "mona",
+   16,
+   [
+    "it"
+   ],
+   [
+    "eylditjilan mona oklastap",
+    "ucly yazdylanmagy mona ibrtdir"
+   ]
+  ],
+  [
+   "kunda",
+   16,
+   [
+    "cs"
+   ],
+   [
+    "aldir ynygyny kunda ynesiktilar",
+    "kunda zada pesy syplorsilyar"
+   ]
+  ],
+  [
+   "mudak",
+   16,
+   [
+    "be",
+    "ru",
+    "uk"
+   ],
+   [
+    "mudaky sidyr tusadyleninin bogini",
+    "ameksaty mudaky daslyna gande"
+   ]
+  ],
+  [
+   "nuli",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "nuli case ahlesen jaldayyar",
+    "birger asagulip nuli inip"
+   ]
+  ],
+  [
+   "cona",
+   15,
+   [
+    "pt"
+   ],
+   [
+    "gyzylynmigini edorplygy cona",
+    "cona ynly bunlyandadygyny eymak"
+   ]
+  ]
+ ],
+ "samples": [
+  "pubayar eren fily nistlunde",
+  "tanin ekiplerden alnydygyny putemaga",
+  "obesek oytlerde disdyk onygyny",
+  "mili uglumynyn gasy okalyar",
+  "usylyjat ygyjezilyar edlar",
+  "kuyzyullynda elygyny enedrisa",
+  "gyzylynmigini edorplygy cona",
+  "fistrasyn hyygyny sekulyan yunden",
+  "biym ugylyusine onegiryakdygyny",
+  "inan attregin guwaler rozmer",
+  "edayyar ynamalap weler balary",
+  "ektirlir bidaky sagirtitin"
+ ],
+ "seconds": 10.4,
+ "languages": [
+  "tk"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

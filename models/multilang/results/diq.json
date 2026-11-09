@@ -1,0 +1,231 @@
+{
+ "name": "diq",
+ "corpus_words": 20218,
+ "relaxed_rows": 149,
+ "relaxed_examples": [
+  "nu",
+  "po",
+  "qu",
+  "xi",
+  "ru",
+  "xo",
+  "kh",
+  "qo",
+  "je",
+  "ju",
+  "zo",
+  "zu"
+ ],
+ "segmented_words": 12176,
+ "skipped_words": 8042,
+ "middle_attested_fraction": 0.1541748046875,
+ "end32_attested_fraction": 0.20536295572916666,
+ "end16_attested_fraction": 0.3656412760416667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 25.73,
+ "max_chars": 32,
+ "consonant_runs_pct": 4.184,
+ "vowel_runs_pct": 17.925,
+ "english_words_pct": 0.896,
+ "own_words_pct": 22.517,
+ "offensive_whole_pct": 2.49,
+ "offensive_whole_english_list_pct": 0.17,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.245,
+ "offensive_severe_en_pct": 0.02,
+ "offensive_inside5_pct": 1.69,
+ "offensive_inside4_pct": 15.76,
+ "offensive_across_words_pct": 0.025,
+ "top_hits": [
+  [
+   "zile",
+   23,
+   [
+    "lv"
+   ],
+   [
+    "surrasis ceneti zile hime",
+    "alki nusnobewanan heine zile"
+   ]
+  ],
+  [
+   "elle",
+   23,
+   [
+    "lv"
+   ],
+   [
+    "huse qowertene dortande elle",
+    "qirtomiyo elle friye ezamur"
+   ]
+  ],
+  [
+   "muda",
+   21,
+   [
+    "ru"
+   ],
+   [
+    "vusavere muda imya lertane",
+    "moci muda emurwede pirceni"
+   ]
+  ],
+  [
+   "hane",
+   20,
+   [
+    "da"
+   ],
+   [
+    "qisatasnayis hane rahitadi",
+    "awistilia xara itoxeno hane"
+   ]
+  ],
+  [
+   "guro",
+   19,
+   [
+    "en",
+    "ja"
+   ],
+   [
+    "guro jura golmawanska riye",
+    "idulilme guro anatis sewe"
+   ]
+  ],
+  [
+   "akki",
+   19,
+   [
+    "et"
+   ],
+   [
+    "fasizasi akki sorretelali",
+    "gancogijde bude akki waro"
+   ]
+  ],
+  [
+   "hani",
+   18,
+   [
+    "is"
+   ],
+   [
+    "dollehal keweyi hani mawo",
+    "biyastitena hani posarkiye"
+   ]
+  ],
+  [
+   "dian",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "tuse giskafsani geye dian",
+    "eymurkaya dian vaydarweka"
+   ]
+  ],
+  [
+   "pina",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "verdemaye lani pina grideno",
+    "pina hingen fate orondaya"
+   ]
+  ],
+  [
+   "prik",
+   17,
+   [
+    "nl"
+   ],
+   [
+    "durwerane eritede qeso prik",
+    "imde beynezazan muri prik"
+   ]
+  ],
+  [
+   "rini",
+   16,
+   [
+    "zh"
+   ],
+   [
+    "rini awampaya erciye wiye",
+    "adolis rini qangweno ciki"
+   ]
+  ],
+  [
+   "suki",
+   16,
+   [
+    "be",
+    "pl",
+    "ru",
+    "uk"
+   ],
+   [
+    "zisyya eryo arastebiyo suki",
+    "suki almeta taciran tavato"
+   ]
+  ],
+  [
+   "rota",
+   15,
+   [
+    "ja"
+   ],
+   [
+    "qetezati sida rota bramaran",
+    "alexye user hasakaya rota"
+   ]
+  ],
+  [
+   "hori",
+   14,
+   [
+    "ms"
+   ],
+   [
+    "aserri hori pocide nuskeri",
+    "yazi uslambiyo hori varete"
+   ]
+  ],
+  [
+   "pisa",
+   14,
+   [
+    "ro"
+   ],
+   [
+    "verkumeye pisa ewekan ewru",
+    "elki anawecidon qalo pisa"
+   ]
+  ]
+ ],
+ "samples": [
+  "sosnan ewti yide abivmana",
+  "memo xizano dilino sorgki",
+  "awekeri hobale ballesi xeci",
+  "aman lincepene seba rivaya",
+  "polanoniye galornivne muri",
+  "oregwirbande xozi imatures",
+  "domantabunde mungwani khde",
+  "yirbadiya fano safete eski",
+  "velo lipesyre xeylidevye",
+  "xaya astadi ciwano eywanu",
+  "murtera budisniye tame bine",
+  "xiwartime veno hestkebani"
+ ],
+ "seconds": 8.9,
+ "languages": [
+  "diq"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

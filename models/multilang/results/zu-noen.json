@@ -1,0 +1,227 @@
+{
+ "name": "zu-noen",
+ "corpus_words": 80000,
+ "relaxed_rows": 14,
+ "relaxed_examples": [
+  "ux",
+  "ex",
+  "ix",
+  "ax",
+  "ii",
+  "ua",
+  "fo",
+  "ox",
+  "ru",
+  "hh",
+  "nu",
+  "cu"
+ ],
+ "segmented_words": 64451,
+ "skipped_words": 15549,
+ "middle_attested_fraction": 0.4660237630208333,
+ "end32_attested_fraction": 0.3404541015625,
+ "end16_attested_fraction": 0.55615234375,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.82,
+ "max_chars": 36,
+ "consonant_runs_pct": 6.135,
+ "vowel_runs_pct": 10.981,
+ "english_words_pct": 0.292,
+ "own_words_pct": 19.066,
+ "offensive_whole_pct": 1.11,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.075,
+ "offensive_whole_major_lists_pct": 0.585,
+ "offensive_severe_en_pct": 0.005,
+ "offensive_inside5_pct": 3.075,
+ "offensive_inside4_pct": 22.335,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "bamba",
+   81,
+   [
+    "zu"
+   ],
+   [
+    "ezizwa apesizabamba zowa atiswa",
+    "sitshwa epenza nawulo igobamba"
+   ]
+  ],
+  [
+   "hlang",
+   52,
+   [
+    "th"
+   ],
+   [
+    "ipiswe aqukuhlangalweni azakhileyo",
+    "kobe balwe yeluhlanga uyisweni"
+   ]
+  ],
+  [
+   "asini",
+   44,
+   [
+    "it"
+   ],
+   [
+    "umasheaniso lashaka thasini",
+    "aqasini anemincingo ohubane"
+   ]
+  ],
+  [
+   "bulal",
+   30,
+   [
+    "ko"
+   ],
+   [
+    "sabukibulala isikhaza ehomali",
+    "apingamandela lizwe igabulalukazi"
+   ]
+  ],
+  [
+   "sheni",
+   29,
+   [
+    "zh"
+   ],
+   [
+    "sotsheni imiqondiswa kohe ucle",
+    "zotsheni njelwa mbhitshani kabi"
+   ]
+  ],
+  [
+   "tanga",
+   24,
+   [
+    "fil"
+   ],
+   [
+    "eyalingwayo zizoliyo iketanga",
+    "bami ukhentwana konyoketanga"
+   ]
+  ],
+  [
+   "ezeli",
+   23,
+   [
+    "lv"
+   ],
+   [
+    "ukuphezeli efubela egamakali",
+    "kwadezeli nola wesilisa loyo"
+   ]
+  ],
+  [
+   "name",
+   22,
+   [
+    "ja"
+   ],
+   [
+    "bube name edamunesibe mika",
+    "iculwa name opikhumzizwa linye"
+   ]
+  ],
+  [
+   "linda",
+   20,
+   [
+    "zu"
+   ],
+   [
+    "ndane ihula anile olindandemba",
+    "ngalindawo etheke eqedolayo"
+   ]
+  ],
+  [
+   "semel",
+   20,
+   [
+    "kn"
+   ],
+   [
+    "ufelwe ahula linasemelika ufini",
+    "ebusemelwe ntelwa ngathi abaweni"
+   ]
+  ],
+  [
+   "ipeni",
+   20,
+   [
+    "zu"
+   ],
+   [
+    "njena akisa ipeni lentasamisa",
+    "epalikhenza ezihlonipeni olane"
+   ]
+  ],
+  [
+   "okama",
+   19,
+   [
+    "ja"
+   ],
+   [
+    "linye epelwe yango upuyiphokama",
+    "odela alokama upemithela motho"
+   ]
+  ],
+  [
+   "pheni",
+   19,
+   [
+    "mr"
+   ],
+   [
+    "uzozeni avuthasela uthwipheni",
+    "uzipheni ehaqondile okhobemi"
+   ]
+  ],
+  [
+   "kale",
+   17,
+   [
+    "lt"
+   ],
+   [
+    "iliqubuhlano kale ilahlekeni",
+    "iqhwini kale bubi linazayo"
+   ]
+  ],
+  [
+   "made",
+   16,
+   [
+    "zh"
+   ],
+   [
+    "made nensibungu oqela igatelwa",
+    "aziyabelwa zokongifuno made"
+   ]
+  ]
+ ],
+ "samples": [
+  "iyathaka iqiswa adeni ivemibalo",
+  "side aholweni lisamo iyehana",
+  "ufezeke ehakazi akafisi weelwe",
+  "onisa itashuba bake zaleso",
+  "nithezala iliziqhuma amele",
+  "thenacweme awalo omanekisi",
+  "ayisikhawiswa amtshokuba ugeke",
+  "adakuhlane khiwe nabono usile",
+  "okene itusafike wesamiqoke",
+  "egini yesango ezisela ntenawo",
+  "amarela idalithiya ebuza kuwe",
+  "ahubusba okiwe ukulethaselwe"
+ ],
+ "seconds": 10.6,
+ "languages": [
+  "zu"
+ ],
+ "no_english": true,
+ "blocklist": false
+}

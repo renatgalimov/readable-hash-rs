@@ -1,0 +1,229 @@
+{
+ "name": "lvs",
+ "corpus_words": 80000,
+ "relaxed_rows": 20,
+ "relaxed_examples": [
+  "wa",
+  "wo",
+  "we",
+  "ex",
+  "hl",
+  "sw",
+  "aa",
+  "fj",
+  "qu",
+  "sy",
+  "hj",
+  "yo"
+ ],
+ "segmented_words": 57351,
+ "skipped_words": 22649,
+ "middle_attested_fraction": 0.465087890625,
+ "end32_attested_fraction": 0.4422200520833333,
+ "end16_attested_fraction": 0.6522623697916666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.52,
+ "max_chars": 35,
+ "consonant_runs_pct": 9.825,
+ "vowel_runs_pct": 0.748,
+ "english_words_pct": 1.061,
+ "own_words_pct": 28.011,
+ "offensive_whole_pct": 2.95,
+ "offensive_whole_english_list_pct": 0.075,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.16,
+ "offensive_severe_en_pct": 0.055,
+ "offensive_inside5_pct": 2.0,
+ "offensive_inside4_pct": 18.855,
+ "offensive_across_words_pct": 0.085,
+ "top_hits": [
+  [
+   "skata",
+   26,
+   [
+    "el"
+   ],
+   [
+    "skata idra ainu trasvarsniba",
+    "bars uzas ergaskataju noija"
+   ]
+  ],
+  [
+   "muca",
+   21,
+   [
+    "lv",
+    "sl"
+   ],
+   [
+    "muca sludalem zonu bliktu",
+    "izstancis muli muca kirmajos"
+   ]
+  ],
+  [
+   "teta",
+   20,
+   [
+    "es"
+   ],
+   [
+    "ordinetu brilem sofilu teta",
+    "jaes teta lupaks vardirsanu"
+   ]
+  ],
+  [
+   "anita",
+   20,
+   [
+    "nl"
+   ],
+   [
+    "anita jostriklem udenstetu",
+    "prioalajiem anita laikam atas"
+   ]
+  ],
+  [
+   "kisa",
+   19,
+   [
+    "is"
+   ],
+   [
+    "mulkoltiba reida kisa kats",
+    "zoodejolina svegatajam kisa"
+   ]
+  ],
+  [
+   "zakar",
+   19,
+   [
+    "ms"
+   ],
+   [
+    "labotu zogu alpirs zakaribas",
+    "kairsanas siki klots zakariovu"
+   ]
+  ],
+  [
+   "puto",
+   19,
+   [
+    "pt"
+   ],
+   [
+    "dumbernikas petu puto auda",
+    "lugans eselikts puto puma"
+   ]
+  ],
+  [
+   "lits",
+   17,
+   [
+    "et"
+   ],
+   [
+    "lits tinteita ieza kvodem",
+    "lits vina aistecrotas nass"
+   ]
+  ],
+  [
+   "dada",
+   17,
+   [
+    "id"
+   ],
+   [
+    "emju dada kesties olrerali",
+    "forundrs dada redzis laka"
+   ]
+  ],
+  [
+   "sugu",
+   17,
+   [
+    "et"
+   ],
+   [
+    "nezenes udrovika glis sugu",
+    "vons sugu iekarkaideja erai"
+   ]
+  ],
+  [
+   "bits",
+   17,
+   [
+    "mr"
+   ],
+   [
+    "bits teki hailmarkss abas",
+    "zvizam ildzas zvipos bits"
+   ]
+  ],
+  [
+   "cena",
+   16,
+   [
+    "zh"
+   ],
+   [
+    "risigars emules dosanu cena",
+    "dobelu damu lovasities cena"
+   ]
+  ],
+  [
+   "juru",
+   16,
+   [
+    "ja",
+    "zh"
+   ],
+   [
+    "priem golandaris pera juru",
+    "juru glariento svienigi stigu"
+   ]
+  ],
+  [
+   "klam",
+   16,
+   [
+    "is"
+   ],
+   [
+    "ilas notelekrins banu klam",
+    "sicins boots duetvesanas klam"
+   ]
+  ],
+  [
+   "pesi",
+   16,
+   [
+    "mr"
+   ],
+   [
+    "hincakmajiem atos toiem pesi",
+    "unna pesi elists visivaku"
+   ]
+  ]
+ ],
+ "samples": [
+  "akrejot gues zoda iljoncis",
+  "neona rudaja megine aknisija",
+  "fasatu alpatu mirstie plibu",
+  "kuts boinigais izis turins",
+  "dotardumi zalvadatakas seas",
+  "agneprusajas adija dragedus",
+  "slepenitajai senodams caiem",
+  "zoopedes zevs veders ineta",
+  "vizu bovinejas plazioanija",
+  "heds devels ievala emaliju",
+  "sekstos tokselos mola satu",
+  "rutubabu viks norazideva"
+ ],
+ "seconds": 10.4,
+ "languages": [
+  "lvs"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

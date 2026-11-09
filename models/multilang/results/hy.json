@@ -1,0 +1,227 @@
+{
+ "name": "hy",
+ "corpus_words": 80000,
+ "relaxed_rows": 38,
+ "relaxed_examples": [
+  "ac",
+  "hy",
+  "sy",
+  "by",
+  "gy",
+  "ly",
+  "my",
+  "kp",
+  "vc",
+  "np",
+  "tp",
+  "oc"
+ ],
+ "segmented_words": 56808,
+ "skipped_words": 23192,
+ "middle_attested_fraction": 0.3835856119791667,
+ "end32_attested_fraction": 0.4035237630208333,
+ "end16_attested_fraction": 0.5792643229166666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.58,
+ "max_chars": 41,
+ "consonant_runs_pct": 23.079,
+ "vowel_runs_pct": 4.994,
+ "english_words_pct": 0.423,
+ "own_words_pct": 19.99,
+ "offensive_whole_pct": 1.225,
+ "offensive_whole_english_list_pct": 0.005,
+ "offensive_whole_own_list_pct": 0.16,
+ "offensive_whole_major_lists_pct": 0.37,
+ "offensive_severe_en_pct": 0.245,
+ "offensive_inside5_pct": 2.455,
+ "offensive_inside4_pct": 15.715,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "boner",
+   45,
+   [
+    "en"
+   ],
+   [
+    "khov bonery hyghatakin yonery",
+    "bonern niid nayaky viviatorakan"
+   ]
+  ],
+  [
+   "haner",
+   34,
+   [
+    "da"
+   ],
+   [
+    "gtosabsi paharowhaner pery",
+    "takhndzahaners folov dzhartsi"
+   ]
+  ],
+  [
+   "drsowm",
+   22,
+   [
+    "hy"
+   ],
+   [
+    "ferajrowm drsowm prats derakashnern",
+    "adrenazatown drsowm abos odin"
+   ]
+  ],
+  [
+   "prsi",
+   20,
+   [
+    "sl"
+   ],
+   [
+    "baktowm tslahann prsi eros",
+    "kramnern sris prsi stentanowm"
+   ]
+  ],
+  [
+   "chort",
+   19,
+   [
+    "uk"
+   ],
+   [
+    "jeman pirdakan chortsowm sraghn",
+    "srem aknkyan khrvel chortveir"
+   ]
+  ],
+  [
+   "pios",
+   19,
+   [
+    "gd"
+   ],
+   [
+    "pios minsherd kavowm atsaknern",
+    "ajlistem pios kayayorkvowm"
+   ]
+  ],
+  [
+   "seni",
+   17,
+   [
+    "it"
+   ],
+   [
+    "ahchivowm sarisi seni sinn",
+    "sparraberowm seni ergotsrerov"
+   ]
+  ],
+  [
+   "nian",
+   16,
+   [
+    "zh"
+   ],
+   [
+    "ktowrneri towlvels dinery nian",
+    "rrid nian nsheminanar ayneri"
+   ]
+  ],
+  [
+   "hani",
+   15,
+   [
+    "is"
+   ],
+   [
+    "rrealanern heniki folow hani",
+    "donken khli hani tenaghbar"
+   ]
+  ],
+  [
+   "srika",
+   14,
+   [
+    "hy"
+   ],
+   [
+    "srikaahor ogazogyans hyneri",
+    "innderel bnon eler srikaner"
+   ]
+  ],
+  [
+   "anows",
+   14,
+   [
+    "hy"
+   ],
+   [
+    "meis anowshowms bonnavvats tonov",
+    "ahordzery ahnerowm anid anowshovd"
+   ]
+  ],
+  [
+   "kher",
+   13,
+   [
+    "be"
+   ],
+   [
+    "kher tevowm nsters dimavels",
+    "leyi kher tibastashnerov zohn"
+   ]
+  ],
+  [
+   "ayam",
+   13,
+   [
+    "id"
+   ],
+   [
+    "vektemnerowm ayam amerowms spanayi",
+    "foti ayam mowmrayowm astannerowm"
+   ]
+  ],
+  [
+   "karts",
+   13,
+   [
+    "lv"
+   ],
+   [
+    "kartsenanam aderi hans hineri",
+    "zhaberowm nvasnern altowm kartsvowm"
+   ]
+  ],
+  [
+   "trni",
+   13,
+   [
+    "bg"
+   ],
+   [
+    "skikrakn naan trni zarnerowms",
+    "zhineris isreir sivaky trni"
+   ]
+  ]
+ ],
+ "samples": [
+  "ograna nvners tnin zikalnern",
+  "aknov insowmi vardaneri ogdaky",
+  "ekvordy azkarner gorsheln adners",
+  "boni glowsakis amany sokhid",
+  "tongagary nkavnasyowsy saneri",
+  "irkowkasonern nsni giorowysy",
+  "getaskhatin sapatkhin firy",
+  "tnadzhovs osov tsornery acakan",
+  "payi glkeamnery addonnjaky",
+  "srvowm teghean havaki odzerowm",
+  "saowki nistarnerovs avanneri anin",
+  "inhavatry pahn agrarrowmotis"
+ ],
+ "seconds": 11.1,
+ "languages": [
+  "hy"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

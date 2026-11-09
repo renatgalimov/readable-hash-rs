@@ -1,0 +1,235 @@
+{
+ "name": "lmo",
+ "corpus_words": 17883,
+ "relaxed_rows": 123,
+ "relaxed_examples": [
+  "qu",
+  "fu",
+  "ch",
+  "vu",
+  "of",
+  "sb",
+  "jo",
+  "sf",
+  "zo",
+  "gh",
+  "wi",
+  "je"
+ ],
+ "segmented_words": 11933,
+ "skipped_words": 5950,
+ "middle_attested_fraction": 0.18505859375,
+ "end32_attested_fraction": 0.22623697916666666,
+ "end16_attested_fraction": 0.390869140625,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.21,
+ "max_chars": 38,
+ "consonant_runs_pct": 7.074,
+ "vowel_runs_pct": 2.885,
+ "english_words_pct": 1.345,
+ "own_words_pct": 19.616,
+ "offensive_whole_pct": 2.87,
+ "offensive_whole_english_list_pct": 0.005,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.09,
+ "offensive_severe_en_pct": 0.105,
+ "offensive_inside5_pct": 2.945,
+ "offensive_inside4_pct": 22.435,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "samen",
+   86,
+   [
+    "de"
+   ],
+   [
+    "fuarpa olimazion lengiansament",
+    "streersazion eler muden sfosament"
+   ]
+  ],
+  [
+   "igazi",
+   31,
+   [
+    "zu"
+   ],
+   [
+    "negosteva techlitt ghigazion",
+    "tuada diferrazion mita stigazion"
+   ]
+  ],
+  [
+   "pica",
+   21,
+   [
+    "cs",
+    "pt",
+    "sk"
+   ],
+   [
+    "omicada drivirol uraa pica",
+    "drat urienormer pica cann"
+   ]
+  ],
+  [
+   "pull",
+   20,
+   [
+    "ml"
+   ],
+   [
+    "vedrea oraa pull druastion",
+    "enfich gasotess pull avra"
+   ]
+  ],
+  [
+   "puta",
+   20,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "duaria rolicumitaa puta oral",
+    "orscruleda neen ndre puta"
+   ]
+  ],
+  [
+   "fava",
+   20,
+   [
+    "it"
+   ],
+   [
+    "canai fava illiquent simega",
+    "spot fava dalmaa leghngen"
+   ]
+  ],
+  [
+   "seme",
+   20,
+   [
+    "sl"
+   ],
+   [
+    "elagotetti sacch seme plini",
+    "fava ofscela toliolegh seme"
+   ]
+  ],
+  [
+   "giat",
+   19,
+   [
+    "vi"
+   ],
+   [
+    "ilututocent giat ghell suada",
+    "undies musiveto giat osen"
+   ]
+  ],
+  [
+   "paal",
+   19,
+   [
+    "nl"
+   ],
+   [
+    "emoviusuer acch idal paal",
+    "paal grenscee edan volava"
+   ]
+  ],
+  [
+   "mesa",
+   19,
+   [
+    "pt"
+   ],
+   [
+    "mesa sacezion gurbiencc vula",
+    "dasema cile mesa todesema"
+   ]
+  ],
+  [
+   "manda",
+   19,
+   [
+    "ru"
+   ],
+   [
+    "mandaa pinegica fess arts",
+    "dran cendruzion mandamentira"
+   ]
+  ],
+  [
+   "peter",
+   18,
+   [
+    "fr"
+   ],
+   [
+    "mordumicich lopeteral nella",
+    "peter abieda esvelica arda"
+   ]
+  ],
+  [
+   "bile",
+   17,
+   [
+    "ro"
+   ],
+   [
+    "bile busuasgion evancaber",
+    "diplizer nain beceal bile"
+   ]
+  ],
+  [
+   "mees",
+   17,
+   [
+    "nl"
+   ],
+   [
+    "qusizzion todeva fuscaa mees",
+    "ombaspiella mees zena ecada"
+   ]
+  ],
+  [
+   "diga",
+   16,
+   [
+    "bg",
+    "it",
+    "mt"
+   ],
+   [
+    "diga rognit scurad logiaa",
+    "credoval vera nindazion diga"
+   ]
+  ]
+ ],
+ "samples": [
+  "roeusa vuss erita ostudott",
+  "iner luchegh sporna roscra",
+  "agenzat tulena ciaccen arej",
+  "gera bunuminat prer brande",
+  "gamoceazion amoccetten fora",
+  "urbaguseno tila acogheia",
+  "centricuma fordavia idazion",
+  "erasevia dral menten lila",
+  "stie bunzispaa argoscagaa",
+  "ofer finetich deterina ndunus",
+  "fomiaa avanerent fess cada",
+  "ludificel stita retiatopat"
+ ],
+ "seconds": 8.9,
+ "languages": [
+  "lmo"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

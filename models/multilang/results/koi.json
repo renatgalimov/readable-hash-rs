@@ -1,0 +1,254 @@
+{
+ "name": "koi",
+ "corpus_words": 6016,
+ "relaxed_rows": 259,
+ "relaxed_examples": [
+  "yu",
+  "tu",
+  "py",
+  "ke",
+  "ly",
+  "su",
+  "kyv",
+  "chu",
+  "pu",
+  "by",
+  "lu",
+  "med"
+ ],
+ "segmented_words": 3974,
+ "skipped_words": 2042,
+ "middle_attested_fraction": 0.10319010416666667,
+ "end32_attested_fraction": 0.09696451822916667,
+ "end16_attested_fraction": 0.192138671875,
+ "begin_attested": 128,
+ "chars": 26.74,
+ "max_chars": 37,
+ "consonant_runs_pct": 15.148,
+ "vowel_runs_pct": 10.828,
+ "english_words_pct": 0.481,
+ "own_words_pct": 6.69,
+ "offensive_whole_pct": 1.26,
+ "offensive_whole_english_list_pct": 0.17,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.71,
+ "offensive_severe_en_pct": 0.25,
+ "offensive_inside5_pct": 2.94,
+ "offensive_inside4_pct": 17.36,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "tette",
+   64,
+   [
+    "it"
+   ],
+   [
+    "sporytettez fias mergez bydto",
+    "tettez yaka yitrevttiys yitya"
+   ]
+  ],
+  [
+   "yoniy",
+   33,
+   [
+    "kn"
+   ],
+   [
+    "akyn dzas stopayoniya stirys",
+    "klor rayoniya sikkezos mykhalissez"
+   ]
+  ],
+  [
+   "natsi",
+   20,
+   [
+    "fi",
+    "mk"
+   ],
+   [
+    "landalom syso enatsiya gorkiy",
+    "adzzterdas pyas natsiya nystoma"
+   ]
+  ],
+  [
+   "leso",
+   18,
+   [
+    "en"
+   ],
+   [
+    "amelion zhsya leso myrttinys",
+    "caya inolkhlo leso poleso"
+   ]
+  ],
+  [
+   "kaka",
+   18,
+   [
+    "eu"
+   ],
+   [
+    "kaka feshveto stames chan",
+    "kaka brigenne falenya duan"
+   ]
+  ],
+  [
+   "kusse",
+   16,
+   [
+    "da"
+   ],
+   [
+    "shvezh kussera lostays taka",
+    "kiatoktalalon beriya kusserdyn"
+   ]
+  ],
+  [
+   "pina",
+   16,
+   [
+    "hu"
+   ],
+   [
+    "sukhayn kalo pina gramtetyn",
+    "nerkiy glposo anerya pina"
+   ]
+  ],
+  [
+   "gort",
+   15,
+   [
+    "gd"
+   ],
+   [
+    "klatisplo gort kyvtyn akan",
+    "oymualaon udzhaya cadona gort"
+   ]
+  ],
+  [
+   "prik",
+   15,
+   [
+    "nl"
+   ],
+   [
+    "akulosez glaustitas prik",
+    "gizhsya glavoson prik kyslan"
+   ]
+  ],
+  [
+   "orchis",
+   15,
+   [
+    "el"
+   ],
+   [
+    "kerimiya orchis tivekias esyn",
+    "inna orchis vylayn nychoyez"
+   ]
+  ],
+  [
+   "coon",
+   15,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "gd",
+    "gl",
+    "id",
+    "is",
+    "la",
+    "lv",
+    "mn",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pt",
+    "sl",
+    "sv",
+    "vi"
+   ],
+   [
+    "adzzez akoztipilus coon olas",
+    "zoronora foktya coon udzhalan"
+   ]
+  ],
+  [
+   "suka",
+   15,
+   [
+    "be",
+    "pl",
+    "ru",
+    "sk",
+    "uk"
+   ],
+   [
+    "suka syuzhottezyn saleva tean",
+    "stroktydan suka tistaras"
+   ]
+  ],
+  [
+   "bola",
+   14,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "spunom bola zakorrez kyktsya",
+    "yitytaon neka bola gruyriyn"
+   ]
+  ],
+  [
+   "serat",
+   14,
+   [
+    "bg"
+   ],
+   [
+    "avskys ayon sylayas tseratov",
+    "dylo lunachlo piluas tseraton"
+   ]
+  ],
+  [
+   "reto",
+   14,
+   [
+    "pt"
+   ],
+   [
+    "bydnys mylalyalayn reto voma",
+    "reto esna beryn medermyano"
+   ]
+  ]
+ ],
+ "samples": [
+  "rayontsan unodz spiya esrtator",
+  "maes aynovo neshoniya rayondyka",
+  "averas lundrez goslso saryn",
+  "klez yamistan kusya devilo",
+  "nyroktia gekholevyn siya",
+  "glutlyrosa osov udzharennisya",
+  "indotchelays sitrazyn coov",
+  "sporytettez fias mergez bydto",
+  "muki yatshoron saktamrtsya",
+  "yottez galeny pervas dylavny",
+  "sidiko zororeto lymys polo",
+  "ayslalera mura kaynstuktsiya"
+ ],
+ "seconds": 7.8,
+ "languages": [
+  "koi"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

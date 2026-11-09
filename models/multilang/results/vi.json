@@ -1,0 +1,271 @@
+{
+ "name": "vi",
+ "corpus_words": 41344,
+ "relaxed_rows": 17,
+ "relaxed_examples": [
+  "ex",
+  "sy",
+  "az",
+  "aw",
+  "iu",
+  "tc",
+  "ew",
+  "iz",
+  "uy",
+  "lv",
+  "dg",
+  "nz"
+ ],
+ "segmented_words": 22899,
+ "skipped_words": 18445,
+ "middle_attested_fraction": 0.4037272135416667,
+ "end32_attested_fraction": 0.4167073567708333,
+ "end16_attested_fraction": 0.645751953125,
+ "begin_attested": 128,
+ "chars": 25.22,
+ "max_chars": 30,
+ "consonant_runs_pct": 12.89,
+ "vowel_runs_pct": 2.764,
+ "english_words_pct": 3.892,
+ "own_words_pct": 33.284,
+ "offensive_whole_pct": 4.105,
+ "offensive_whole_english_list_pct": 0.845,
+ "offensive_whole_own_list_pct": 0.49,
+ "offensive_whole_major_lists_pct": 2.145,
+ "offensive_severe_en_pct": 0.355,
+ "offensive_inside5_pct": 2.565,
+ "offensive_inside4_pct": 15.69,
+ "offensive_across_words_pct": 0.04,
+ "top_hits": [
+  [
+   "prick",
+   24,
+   [
+    "cy",
+    "en",
+    "eu",
+    "is",
+    "lt",
+    "mn",
+    "mt",
+    "sl"
+   ],
+   [
+    "innosuke prick eschnisota",
+    "phieckard prick larkman main"
+   ]
+  ],
+  [
+   "pisa",
+   21,
+   [
+    "ro"
+   ],
+   [
+    "pisa song corrakey heigio",
+    "chescren pisa phurger clum"
+   ]
+  ],
+  [
+   "tits",
+   21,
+   [
+    "cy",
+    "en",
+    "gd",
+    "is",
+    "la",
+    "mn",
+    "ms",
+    "mt",
+    "my",
+    "sq",
+    "sr",
+    "te",
+    "zu"
+   ],
+   [
+    "coin tits vella whavauranda",
+    "tits abby fulipina landry"
+   ]
+  ],
+  [
+   "luan",
+   20,
+   [
+    "zh"
+   ],
+   [
+    "luan unashmetier bling tuya",
+    "bication essecker ares luan"
+   ]
+  ],
+  [
+   "molo",
+   20,
+   [
+    "fi"
+   ],
+   [
+    "rourckiche cuni cuon molo",
+    "hermus gemmunky molo glis"
+   ]
+  ],
+  [
+   "rong",
+   19,
+   [
+    "th"
+   ],
+   [
+    "blakov orhan hitaverton rong",
+    "ensena fahrager dell rong"
+   ]
+  ],
+  [
+   "mong",
+   19,
+   [
+    "en",
+    "vi"
+   ],
+   [
+    "inan bootstraddy helo mong",
+    "mong jushawler auger insane"
+   ]
+  ],
+  [
+   "fena",
+   19,
+   [
+    "cs",
+    "sk"
+   ],
+   [
+    "fena senagato moorexbeck",
+    "fluglottlin fena grio enan"
+   ]
+  ],
+  [
+   "kord",
+   19,
+   [
+    "sv"
+   ],
+   [
+    "jeter kord rumistetro muop",
+    "kord cithan loan scholane"
+   ]
+  ],
+  [
+   "anal",
+   18,
+   [
+    "ca",
+    "cy",
+    "da",
+    "de",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fr",
+    "gd",
+    "gl",
+    "hy",
+    "id",
+    "pt",
+    "ro",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "tr",
+    "uz",
+    "zu"
+   ],
+   [
+    "anal rurusher cory crawna",
+    "daesnite higaanyang anal"
+   ]
+  ],
+  [
+   "puto",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "puto gertooky fricus korg",
+    "elizer puto monoceland hiem"
+   ]
+  ],
+  [
+   "trni",
+   18,
+   [
+    "bg"
+   ],
+   [
+    "zarofaus brathrolet trni",
+    "folago untron trni whaben"
+   ]
+  ],
+  [
+   "munn",
+   17,
+   [
+    "et"
+   ],
+   [
+    "munn fiat weaper amalobal",
+    "founce tutlow munn kalett"
+   ]
+  ],
+  [
+   "suki",
+   17,
+   [
+    "be",
+    "pl",
+    "ru",
+    "uk"
+   ],
+   [
+    "pleackoras suki vengamas",
+    "jena suki stai wiesssalth"
+   ]
+  ],
+  [
+   "mose",
+   17,
+   [
+    "de"
+   ],
+   [
+    "mose suet tano phadimmotion",
+    "flugov mose vooney kamann"
+   ]
+  ]
+ ],
+ "samples": [
+  "neandan khau exin slockani",
+  "hager lucene shorra nevice",
+  "kutced tidette dothus buoi",
+  "anal rurusher cory crawna",
+  "amnestrer widoweather peng",
+  "venefiorit joko mclaurch",
+  "mumbolllock pelipian ason",
+  "exaullie fler minore loan",
+  "reen ruprival bungooated",
+  "enin narres moutin cinnad",
+  "pensley fourtinent arne cain",
+  "lupiarun reit baranskata"
+ ],
+ "seconds": 8.2,
+ "languages": [
+  "vi"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

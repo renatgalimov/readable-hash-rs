@@ -1,0 +1,228 @@
+{
+ "name": "ext",
+ "corpus_words": 10720,
+ "relaxed_rows": 125,
+ "relaxed_examples": [
+  "fo",
+  "af",
+  "ex",
+  "jo",
+  "fu",
+  "ka",
+  "az",
+  "ej",
+  "fl",
+  "of",
+  "ah",
+  "ei"
+ ],
+ "segmented_words": 7934,
+ "skipped_words": 2786,
+ "middle_attested_fraction": 0.1376953125,
+ "end32_attested_fraction": 0.14986165364583334,
+ "end16_attested_fraction": 0.278564453125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.98,
+ "max_chars": 36,
+ "consonant_runs_pct": 4.3,
+ "vowel_runs_pct": 2.731,
+ "english_words_pct": 1.383,
+ "own_words_pct": 10.803,
+ "offensive_whole_pct": 2.545,
+ "offensive_whole_english_list_pct": 0.09,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.415,
+ "offensive_severe_en_pct": 0.085,
+ "offensive_inside5_pct": 2.49,
+ "offensive_inside4_pct": 21.235,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "topa",
+   24,
+   [
+    "it"
+   ],
+   [
+    "casa diana escomarrin topa",
+    "parmaeseus ches plena topa"
+   ]
+  ],
+  [
+   "chert",
+   22,
+   [
+    "ru"
+   ],
+   [
+    "pinicueta gossemus chertau",
+    "petrarun chertis predan griu"
+   ]
+  ],
+  [
+   "muna",
+   21,
+   [
+    "fi"
+   ],
+   [
+    "brebia apis arcargas muna",
+    "muna dustipaictu ofervantis"
+   ]
+  ],
+  [
+   "asas",
+   20,
+   [
+    "gl"
+   ],
+   [
+    "esica asas eulevacion batetica",
+    "cuna asas biemenu galembris"
+   ]
+  ],
+  [
+   "folla",
+   17,
+   [
+    "es"
+   ],
+   [
+    "apas duta folla hucopidias",
+    "aras briespis folla amadau"
+   ]
+  ],
+  [
+   "samen",
+   17,
+   [
+    "de"
+   ],
+   [
+    "groculau pias hinona samenti",
+    "tansamenti utectu ganastecus"
+   ]
+  ],
+  [
+   "hora",
+   17,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "lliu peniatura hora orihra",
+    "grenti imotta uretogan hora"
+   ]
+  ],
+  [
+   "mama",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "acoguica mama hoca fonoma",
+    "satiesia rius mama suminismu"
+   ]
+  ],
+  [
+   "urin",
+   16,
+   [
+    "sl"
+   ],
+   [
+    "data urin talena nemposau",
+    "urin anca trenviia craracion"
+   ]
+  ],
+  [
+   "teta",
+   16,
+   [
+    "es"
+   ],
+   [
+    "teta cotoracion mucearus olis",
+    "aurbensiva eial teta guetan"
+   ]
+  ],
+  [
+   "fela",
+   16,
+   [
+    "cs"
+   ],
+   [
+    "fela bonfianteria entu foan",
+    "polanombica fela linu fuia"
+   ]
+  ],
+  [
+   "osel",
+   16,
+   [
+    "cs"
+   ],
+   [
+    "osel cenomercera plenti isus",
+    "osel fesa afnstesta oremencias"
+   ]
+  ],
+  [
+   "esel",
+   15,
+   [
+    "de"
+   ],
+   [
+    "pista pilentasius esel esacion",
+    "urebais exntocion esel lolis"
+   ]
+  ],
+  [
+   "pula",
+   15,
+   [
+    "ro"
+   ],
+   [
+    "plades depeno pula niniru",
+    "idietentu arabitemencias pula"
+   ]
+  ],
+  [
+   "orau",
+   15,
+   [
+    "cy"
+   ],
+   [
+    "orau logril afan dultopan",
+    "escrus undurracion orau luin"
+   ]
+  ]
+ ],
+ "samples": [
+  "nereis avol obis erectorica",
+  "caena exillo cuatras nescica",
+  "otobel roloma crunio apes",
+  "junu aftelmau deacion fechinus",
+  "guisietru llogarrecia lial",
+  "lundiberila duria aditomacion",
+  "naciontrabol lipietas tucion",
+  "obarrizal ocan motivia saga",
+  "dilis afnsendio apopototras",
+  "clica mieracion paraol ejtida",
+  "lilera identivin citas esus",
+  "exgulolia dilsi prefsivista"
+ ],
+ "seconds": 8.9,
+ "languages": [
+  "ext"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

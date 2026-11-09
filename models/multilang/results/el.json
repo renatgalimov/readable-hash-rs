@@ -1,0 +1,227 @@
+{
+ "name": "el",
+ "corpus_words": 80000,
+ "relaxed_rows": 11,
+ "relaxed_examples": [
+  "sc",
+  "py",
+  "arc",
+  "ac",
+  "ic",
+  "oc",
+  "yc",
+  "ec",
+  "rc",
+  "ng",
+  "sc"
+ ],
+ "segmented_words": 58435,
+ "skipped_words": 21565,
+ "middle_attested_fraction": 0.4727783203125,
+ "end32_attested_fraction": 0.4354654947916667,
+ "end16_attested_fraction": 0.66943359375,
+ "begin_attested": 128,
+ "chars": 27.85,
+ "max_chars": 38,
+ "consonant_runs_pct": 9.674,
+ "vowel_runs_pct": 9.806,
+ "english_words_pct": 1.472,
+ "own_words_pct": 23.841,
+ "offensive_whole_pct": 1.41,
+ "offensive_whole_english_list_pct": 0.005,
+ "offensive_whole_own_list_pct": 0.09,
+ "offensive_whole_major_lists_pct": 0.79,
+ "offensive_severe_en_pct": 0.085,
+ "offensive_inside5_pct": 3.135,
+ "offensive_inside4_pct": 23.92,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "epano",
+   74,
+   [
+    "el"
+   ],
+   [
+    "epanodyme garevano foginika",
+    "dothoyn lexodekara gkia epanos"
+   ]
+  ],
+  [
+   "ripi",
+   24,
+   [
+    "zh"
+   ],
+   [
+    "epanoi dyspilochoi diase ripi",
+    "soos ripi diegeis agroxete"
+   ]
+  ],
+  [
+   "apara",
+   22,
+   [
+    "fi"
+   ],
+   [
+    "arkeyeil olia aparamei teos",
+    "aparatleka ethayros eikois"
+   ]
+  ],
+  [
+   "palle",
+   22,
+   [
+    "it"
+   ],
+   [
+    "schna epiis apallei apaorfana",
+    "psiles gyma pallein perilant"
+   ]
+  ],
+  [
+   "palli",
+   20,
+   [
+    "fi"
+   ],
+   [
+    "lichoes pallisoyme pleyasfaro",
+    "gkmeno ftigismiden pallixotes"
+   ]
+  ],
+  [
+   "anale",
+   20,
+   [
+    "it"
+   ],
+   [
+    "xanales despos kean gkarkema",
+    "epeigarete xanales sagies mean"
+   ]
+  ],
+  [
+   "mose",
+   18,
+   [
+    "de"
+   ],
+   [
+    "mose seos apeei tethorisloyn",
+    "asevin efiggero mose paraei"
+   ]
+  ],
+  [
+   "tate",
+   17,
+   [
+    "ro"
+   ],
+   [
+    "xanavadiofio tate frio mean",
+    "voika petis mimeinopoioi tate"
+   ]
+  ],
+  [
+   "skata",
+   17,
+   [
+    "el"
+   ],
+   [
+    "istoeino klemma axoi skata",
+    "aytosa kees langoyfima skata"
+   ]
+  ],
+  [
+   "meni",
+   16,
+   [
+    "tr"
+   ],
+   [
+    "titran meni epanakro falaka",
+    "xanarchleos eres meni eykada"
+   ]
+  ],
+  [
+   "peter",
+   16,
+   [
+    "fr"
+   ],
+   [
+    "peter ftylovirei ortymito",
+    "lyon tripsa davasmiki peter"
+   ]
+  ],
+  [
+   "anali",
+   16,
+   [
+    "mt"
+   ],
+   [
+    "zoso aganalimmis minismiki",
+    "neofreta planalindan moko"
+   ]
+  ],
+  [
+   "satan",
+   15,
+   [
+    "no",
+    "sv"
+   ],
+   [
+    "tzemises nefonon satanas freon",
+    "eromenoler satandiktoi apali"
+   ]
+  ],
+  [
+   "petel",
+   15,
+   [
+    "bg",
+    "mk"
+   ],
+   [
+    "petelos rori stilizen maio",
+    "klimapiko skoi mpai petelaki"
+   ]
+  ],
+  [
+   "pios",
+   14,
+   [
+    "gd"
+   ],
+   [
+    "laspyrsa pios sygkekkinforo",
+    "pios proika pyran oyitagoniko"
+   ]
+  ]
+ ],
+ "samples": [
+  "vrykto egkta myiko omvalesei",
+  "mano goyntel pineza vriraki",
+  "olongk plegoy kroois moter",
+  "tois nadilose kaio ametiso",
+  "kerkepika isavtimias deia",
+  "rapsolaron sese sygklithetai",
+  "nomitheymeno deisiforo pansa",
+  "mytoyiosi empto agenti vaso",
+  "ekete nakariodi montotidothei",
+  "schas akinate epivela reysia",
+  "denoseis ftochlemo fati apoti",
+  "goyikilla ekso proodidigon"
+ ],
+ "seconds": 9.0,
+ "languages": [
+  "el"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

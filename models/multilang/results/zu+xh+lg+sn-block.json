@@ -1,0 +1,230 @@
+{
+ "name": "zu+xh+lg+sn-block",
+ "corpus_words": 73004,
+ "relaxed_rows": 4,
+ "relaxed_examples": [
+  "ex",
+  "mt",
+  "ua",
+  "ix"
+ ],
+ "banned_pairs": 2595,
+ "segmented_words": 56936,
+ "skipped_words": 16068,
+ "middle_attested_fraction": 0.5402425130208334,
+ "end32_attested_fraction": 0.4136962890625,
+ "end16_attested_fraction": 0.6368815104166666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "three_token_rounds": [
+  656,
+  372,
+  193,
+  110
+ ],
+ "chars": 27.36,
+ "max_chars": 34,
+ "consonant_runs_pct": 4.313,
+ "vowel_runs_pct": 9.915,
+ "english_words_pct": 0.687,
+ "own_words_pct": 25.722,
+ "offensive_whole_pct": 0.92,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 1.535,
+ "offensive_inside4_pct": 17.205,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "tanga",
+   98,
+   [
+    "fil"
+   ],
+   [
+    "bitanga pena uteni ssegiridza",
+    "acelwa utatanga ngiyeke obutudde"
+   ]
+  ],
+  [
+   "gafa",
+   17,
+   [
+    "pl"
+   ],
+   [
+    "hwetro ramuggira bayo gafa",
+    "unotera afinothwa zine gafa"
+   ]
+  ],
+  [
+   "ubera",
+   17,
+   [
+    "la"
+   ],
+   [
+    "zaali ubera makophulo usiyele",
+    "zontegedde mwisa ubera bukhondo"
+   ]
+  ],
+  [
+   "hani",
+   16,
+   [
+    "is"
+   ],
+   [
+    "katswa temukolo hani kwazi",
+    "sheencika baana hani nokumbi"
+   ]
+  ],
+  [
+   "rima",
+   16,
+   [
+    "la"
+   ],
+   [
+    "luyayo itroodle rima eheni",
+    "ezicumelwona rima mazataala"
+   ]
+  ],
+  [
+   "pheni",
+   15,
+   [
+    "mr"
+   ],
+   [
+    "mipheni tmegwe olulira belu",
+    "nogomeko wawa okupheni bumba"
+   ]
+  ],
+  [
+   "olla",
+   15,
+   [
+    "sv"
+   ],
+   [
+    "nsula olla ibangwa nyaambiswa",
+    "olla awela esihagidde mumina"
+   ]
+  ],
+  [
+   "alla",
+   14,
+   [
+    "mt"
+   ],
+   [
+    "sikadde alla sisiqhume zowa",
+    "konyini alla okhantaba tandi"
+   ]
+  ],
+  [
+   "elle",
+   14,
+   [
+    "lv"
+   ],
+   [
+    "tututwakalisa ndini elle aleli",
+    "lutuuka mbhenga ictonde elle"
+   ]
+  ],
+  [
+   "anita",
+   14,
+   [
+    "nl"
+   ],
+   [
+    "esula anita noothalwe reselwa",
+    "anita unozezikiti vena yezwe"
+   ]
+  ],
+  [
+   "simel",
+   14,
+   [
+    "te"
+   ],
+   [
+    "isusaani haachesimele botha",
+    "edza ikle shesimela hwacho"
+   ]
+  ],
+  [
+   "seme",
+   14,
+   [
+    "sl"
+   ],
+   [
+    "nkka dzavanya yiphavile seme",
+    "njonnyiisa seme kwalathele"
+   ]
+  ],
+  [
+   "sere",
+   13,
+   [
+    "hr",
+    "sk"
+   ],
+   [
+    "etyeni sere akasitika ummi",
+    "ezze weekezeswe sere pena"
+   ]
+  ],
+  [
+   "chipa",
+   12,
+   [
+    "uz"
+   ],
+   [
+    "chipaukana woyigize annyika",
+    "kufadza vawana pemuwa sechipa"
+   ]
+  ],
+  [
+   "anali",
+   11,
+   [
+    "mt"
+   ],
+   [
+    "ukele onera ukanalise amacana",
+    "ipelo unanalise amargaqalwa"
+   ]
+  ]
+ ],
+ "samples": [
+  "leembwa icanga apere edweyako",
+  "nganda raakalo wandelwa leenzo",
+  "itsiri athwala bekweni sera",
+  "taisa ibomsebwe okele tekyadde",
+  "mishonganga solwimishwa pana",
+  "bobunkaasa kyura ikwiinora",
+  "tmomutakye pabasula guisa",
+  "apfiitha nkela yeetho isma",
+  "maoko ibetunhu sebantayazi",
+  "onira dzicera munopa iliselo",
+  "panhika egisiiba asula bawe",
+  "rabucayo mase nerusashele"
+ ],
+ "seconds": 282.2,
+ "languages": [
+  "zu",
+  "xh",
+  "lg",
+  "sn"
+ ],
+ "no_english": false,
+ "blocklist": true
+}

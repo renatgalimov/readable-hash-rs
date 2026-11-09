@@ -1,0 +1,222 @@
+{
+ "name": "en-v5-block",
+ "corpus_words": 94080,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "tc"
+ ],
+ "banned_pairs": 4791,
+ "segmented_words": 62942,
+ "skipped_words": 31138,
+ "middle_attested_fraction": 0.6082356770833334,
+ "end32_attested_fraction": 0.4607747395833333,
+ "end16_attested_fraction": 0.7042643229166666,
+ "begin_attested": 128,
+ "three_token_rounds": [
+  1102,
+  705,
+  488,
+  262
+ ],
+ "chars": 27.31,
+ "max_chars": 35,
+ "consonant_runs_pct": 15.738,
+ "vowel_runs_pct": 2.011,
+ "english_words_pct": 21.129,
+ "own_words_pct": 21.129,
+ "offensive_whole_pct": 0.95,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.015,
+ "offensive_inside5_pct": 1.495,
+ "offensive_inside4_pct": 16.375,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "luder",
+   19,
+   [
+    "da"
+   ],
+   [
+    "boght goals lurceculing luders",
+    "evate luders rumond melocile"
+   ]
+  ],
+  [
+   "veres",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "breweth negala overes tidily",
+    "midlighth overes adler samaster"
+   ]
+  ],
+  [
+   "turs",
+   18,
+   [
+    "mn"
+   ],
+   [
+    "fuegation smic lucupersion turs",
+    "hansus evearing cummes turs"
+   ]
+  ],
+  [
+   "boles",
+   17,
+   [
+    "ca"
+   ],
+   [
+    "boles vored acadmotion muffry",
+    "cerncator boles enre fugier"
+   ]
+  ],
+  [
+   "coles",
+   17,
+   [
+    "la"
+   ],
+   [
+    "coles sendful acaccoes cron",
+    "glibbickest elal lures coles"
+   ]
+  ],
+  [
+   "saed",
+   16,
+   [
+    "da"
+   ],
+   [
+    "hurlouet saed ormongibre",
+    "slivaids collulphing saed"
+   ]
+  ],
+  [
+   "pele",
+   16,
+   [
+    "hu"
+   ],
+   [
+    "erecoche grathy pues pele",
+    "peals pele fumismection boded"
+   ]
+  ],
+  [
+   "flis",
+   16,
+   [
+    "da"
+   ],
+   [
+    "flis achrivolis beets amis",
+    "livenaunian flis hoer kial"
+   ]
+  ],
+  [
+   "muts",
+   15,
+   [
+    "nl"
+   ],
+   [
+    "muts cunnered fearached boons",
+    "atabus kinograte muts gued"
+   ]
+  ],
+  [
+   "sits",
+   14,
+   [
+    "kn",
+    "te"
+   ],
+   [
+    "agolus vitude sits meanks",
+    "overpareverance sits clable aner"
+   ]
+  ],
+  [
+   "mater",
+   13,
+   [
+    "sl"
+   ],
+   [
+    "fily matermintate feers dosed",
+    "materizitied abuteura impia"
+   ]
+  ],
+  [
+   "asly",
+   13,
+   [
+    "be"
+   ],
+   [
+    "doted musang asly strunkland",
+    "sonaceptum fumed asly ceus"
+   ]
+  ],
+  [
+   "culus",
+   13,
+   [
+    "la"
+   ],
+   [
+    "gonculus garland aunce adse",
+    "evethaia foemnaculus nore"
+   ]
+  ],
+  [
+   "slet",
+   11,
+   [
+    "nl"
+   ],
+   [
+    "drifts turbly slet guains",
+    "glamlium acrish ented slet"
+   ]
+  ],
+  [
+   "chali",
+   9,
+   [
+    "el"
+   ],
+   [
+    "esus chalie tomed gathomine",
+    "abysia hester ating sorchaling"
+   ]
+  ]
+ ],
+ "samples": [
+  "cumman quion nings whinfened",
+  "maying wettse saucis cupras",
+  "cinnage nonest exhorus soted",
+  "feted godlepts dence flutation",
+  "drudorious phledicity holes",
+  "nauscupacy tiens celivial",
+  "trouncluan hoggrust woter",
+  "nitistle glation stylor roist",
+  "diate goititing soldrenade",
+  "aule helmos searity smoore",
+  "hothia rushavum thite unable",
+  "wessmiere dives coquaracts"
+ ],
+ "seconds": 234.0,
+ "languages": [
+  "en"
+ ],
+ "blocklist": true
+}

@@ -1,0 +1,224 @@
+{
+ "name": "tr+zu-block",
+ "corpus_words": 79101,
+ "relaxed_rows": 2,
+ "relaxed_examples": [
+  "rd",
+  "nh"
+ ],
+ "banned_pairs": 4136,
+ "segmented_words": 53740,
+ "skipped_words": 25361,
+ "middle_attested_fraction": 0.4859619140625,
+ "end32_attested_fraction": 0.3137613932291667,
+ "end16_attested_fraction": 0.5396321614583334,
+ "begin_attested": 128,
+ "three_token_rounds": [
+  820,
+  557,
+  348,
+  209
+ ],
+ "chars": 27.38,
+ "max_chars": 37,
+ "consonant_runs_pct": 5.74,
+ "vowel_runs_pct": 11.268,
+ "english_words_pct": 0.742,
+ "own_words_pct": 21.831,
+ "offensive_whole_pct": 0.82,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 1.715,
+ "offensive_inside4_pct": 17.355,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "kunda",
+   48,
+   [
+    "cs"
+   ],
+   [
+    "lokunda njengile utka dosebambule",
+    "zokunda yokungako yattutha oteni"
+   ]
+  ],
+  [
+   "bobo",
+   21,
+   [
+    "fil"
+   ],
+   [
+    "onerim ettidale bobo zokuwa",
+    "rekhometi bobo veramiza gane"
+   ]
+  ],
+  [
+   "hlang",
+   18,
+   [
+    "th"
+   ],
+   [
+    "versa hihlangane yenkactuba",
+    "lehida dollik enhlangaphane"
+   ]
+  ],
+  [
+   "molo",
+   16,
+   [
+    "fi"
+   ],
+   [
+    "suistomonzo molo peso here",
+    "moralim molo esemamlisa lumi"
+   ]
+  ],
+  [
+   "tate",
+   15,
+   [
+    "ro"
+   ],
+   [
+    "dolasak tate akabasela peze",
+    "angazaya tate ezide ayithane"
+   ]
+  ],
+  [
+   "seme",
+   15,
+   [
+    "sl"
+   ],
+   [
+    "seme ubandodetti lwin kezi",
+    "nokulukandla seme elithani lubi"
+   ]
+  ],
+  [
+   "rahat",
+   14,
+   [
+    "ro"
+   ],
+   [
+    "tuka rahatesir nomkhayo adela",
+    "dolanirni rahatkuza iclerken"
+   ]
+  ],
+  [
+   "semel",
+   13,
+   [
+    "kn"
+   ],
+   [
+    "yumadin meksemeli sako asela",
+    "hesemelli uncilden wafile"
+   ]
+  ],
+  [
+   "bular",
+   13,
+   [
+    "eu"
+   ],
+   [
+    "bularlitsula ucuk esiphalaleni",
+    "njengane ille bularilimde tusa"
+   ]
+  ],
+  [
+   "dain",
+   13,
+   [
+    "ml"
+   ],
+   [
+    "dain njengile amain mathomhoda",
+    "alta balistekela gula dain"
+   ]
+  ],
+  [
+   "pele",
+   12,
+   [
+    "hu"
+   ],
+   [
+    "verelula gaisa lentusur pele",
+    "pele ilwa cikollutiyi isiyor"
+   ]
+  ],
+  [
+   "zile",
+   11,
+   [
+    "lv"
+   ],
+   [
+    "varsti zile amakhangisi gema",
+    "zile derim umonetecegim kegim"
+   ]
+  ],
+  [
+   "bulal",
+   11,
+   [
+    "ko"
+   ],
+   [
+    "njengane eyne bashobulale uyde",
+    "yuli sovuna nombulale kori"
+   ]
+  ],
+  [
+   "olla",
+   11,
+   [
+    "sv"
+   ],
+   [
+    "olla gaselele argenjala cato",
+    "asola uyenkade olla hirozi"
+   ]
+  ],
+  [
+   "here",
+   10,
+   [
+    "hu"
+   ],
+   [
+    "suistomonzo molo peso here",
+    "isiqobolo here lokugim ungece"
+   ]
+  ]
+ ],
+ "samples": [
+  "cakteki suma wole cottitir",
+  "bende lwakhe esibumba cathelwa",
+  "otheda ilizulu gottuk weeni",
+  "edip ogukhole kumi izintina",
+  "bobameani icakaramisa lila",
+  "yurerlebim tezi payindeli",
+  "duyakufiela libirdun luzi",
+  "wombibalo eyele umuteni enza",
+  "hame ogezgasi wenyadeyip",
+  "njengwe kwangami kafaya regida",
+  "limala tutansal unayo sina",
+  "lwahkugim hama batirmulumo"
+ ],
+ "seconds": 222.7,
+ "languages": [
+  "tr",
+  "zu"
+ ],
+ "no_english": false,
+ "blocklist": true
+}

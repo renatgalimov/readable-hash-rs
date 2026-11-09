@@ -1,0 +1,229 @@
+{
+ "name": "anw",
+ "corpus_words": 23354,
+ "relaxed_rows": 88,
+ "relaxed_examples": [
+  "qu",
+  "ex",
+  "fl",
+  "wa",
+  "ju",
+  "zu",
+  "eq",
+  "kh",
+  "wi",
+  "we",
+  "aq",
+  "ix"
+ ],
+ "segmented_words": 16005,
+ "skipped_words": 7349,
+ "middle_attested_fraction": 0.2768147786458333,
+ "end32_attested_fraction": 0.2435302734375,
+ "end16_attested_fraction": 0.4219563802083333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.41,
+ "max_chars": 34,
+ "consonant_runs_pct": 4.851,
+ "vowel_runs_pct": 3.608,
+ "english_words_pct": 1.592,
+ "own_words_pct": 15.288,
+ "offensive_whole_pct": 2.455,
+ "offensive_whole_english_list_pct": 0.18,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.45,
+ "offensive_severe_en_pct": 0.035,
+ "offensive_inside5_pct": 2.89,
+ "offensive_inside4_pct": 20.175,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "peter",
+   24,
+   [
+    "fr"
+   ],
+   [
+    "olecoloto peter dorrero soco",
+    "predemus zadiretuas peter"
+   ]
+  ],
+  [
+   "asal",
+   23,
+   [
+    "gd"
+   ],
+   [
+    "linefostial voto asal sial",
+    "asesato pisaguda asal paia"
+   ]
+  ],
+  [
+   "pula",
+   19,
+   [
+    "ro"
+   ],
+   [
+    "lubiar hina pula afagunidat",
+    "pula bida autenos plemisis"
+   ]
+  ],
+  [
+   "samen",
+   19,
+   [
+    "de"
+   ],
+   [
+    "toza senturisament niebedito",
+    "etebotacion erandixata obisament"
+   ]
+  ],
+  [
+   "pico",
+   18,
+   [
+    "eo"
+   ],
+   [
+    "dear proron pico olettigando",
+    "zidevins orzana judo pico"
+   ]
+  ],
+  [
+   "igazi",
+   17,
+   [
+    "zu"
+   ],
+   [
+    "fileya teon glio crodigazion",
+    "actuntia aproquigazion oria"
+   ]
+  ],
+  [
+   "coco",
+   17,
+   [
+    "pt"
+   ],
+   [
+    "coco aziens vios firmolous",
+    "coco nicomas qurtomas glidat"
+   ]
+  ],
+  [
+   "lucio",
+   17,
+   [
+    "ca"
+   ],
+   [
+    "anfita harreu laca zelucion",
+    "laicos hadito llas vocelucion"
+   ]
+  ],
+  [
+   "maca",
+   17,
+   [
+    "hr"
+   ],
+   [
+    "maca lachebolos lisis pasion",
+    "vostisinas maca aristina hana"
+   ]
+  ],
+  [
+   "folle",
+   16,
+   [
+    "fr"
+   ],
+   [
+    "giato etagro folleza ninfon",
+    "nias promos baum follepeas"
+   ]
+  ],
+  [
+   "mocha",
+   16,
+   [
+    "mk",
+    "uk"
+   ],
+   [
+    "sallel glimochata morbuccion",
+    "kals libramis homocha scato"
+   ]
+  ],
+  [
+   "site",
+   16,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "scebedat onnias site taen",
+    "site loma radiolaen branes"
+   ]
+  ],
+  [
+   "follas",
+   16,
+   [
+    "gl"
+   ],
+   [
+    "precta follas adiben nueide",
+    "ecucipluez lais follas suas"
+   ]
+  ],
+  [
+   "anita",
+   15,
+   [
+    "nl"
+   ],
+   [
+    "conotz anita faresa qulino",
+    "despetucacion anita ibigutica"
+   ]
+  ],
+  [
+   "muda",
+   15,
+   [
+    "ru"
+   ],
+   [
+    "quistutal muda glebeduello",
+    "normobleda exes muda none"
+   ]
+  ]
+ ],
+ "samples": [
+  "rachon llsa eura sculgols",
+  "prica hibindo posaca rafaca",
+  "olberos apecie tonnen feica",
+  "lera nuneixer retor aumencha",
+  "riguachazion bribligaro bios",
+  "agustegoder elato ocurisos",
+  "quintalitica bicintas hada",
+  "eucuenta hona pelena lisa",
+  "moma nurcipato fermecetando",
+  "nios gascina malado iblius",
+  "bisuia educollar guion caen",
+  "hidichano moica esclafeite"
+ ],
+ "seconds": 9.2,
+ "languages": [
+  "anw"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

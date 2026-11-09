@@ -1,0 +1,228 @@
+{
+ "name": "tg",
+ "corpus_words": 80000,
+ "relaxed_rows": 22,
+ "relaxed_examples": [
+  "oc",
+  "ic",
+  "au",
+  "co",
+  "ca",
+  "ly",
+  "ac",
+  "by",
+  "eq",
+  "gs",
+  "my",
+  "ec"
+ ],
+ "segmented_words": 50066,
+ "skipped_words": 29934,
+ "middle_attested_fraction": 0.4478759765625,
+ "end32_attested_fraction": 0.3990885416666667,
+ "end16_attested_fraction": 0.598876953125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.54,
+ "max_chars": 34,
+ "consonant_runs_pct": 10.061,
+ "vowel_runs_pct": 7.83,
+ "english_words_pct": 0.4,
+ "own_words_pct": 21.211,
+ "offensive_whole_pct": 1.645,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.79,
+ "offensive_severe_en_pct": 0.045,
+ "offensive_inside5_pct": 1.69,
+ "offensive_inside4_pct": 14.81,
+ "offensive_across_words_pct": 0.11,
+ "top_hits": [
+  [
+   "manda",
+   23,
+   [
+    "ru"
+   ],
+   [
+    "mobiyu amandash valo qiyathoi",
+    "nona dermandahoi peta homatro"
+   ]
+  ],
+  [
+   "ghat",
+   22,
+   [
+    "mr"
+   ],
+   [
+    "looram ghat njaest khohiro",
+    "omekthoi koida rerdovnjoi ghat"
+   ]
+  ],
+  [
+   "jinu",
+   19,
+   [
+    "zh"
+   ],
+   [
+    "ijaro ervosiya feobiro jinu",
+    "nubakhho jinu ahoi ofkahoi"
+   ]
+  ],
+  [
+   "idest",
+   18,
+   [
+    "la"
+   ],
+   [
+    "hochro hilmodii idest jost",
+    "oisofiqotash zoisad lidest"
+   ]
+  ],
+  [
+   "boru",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "torhoi zibari boru erahidani",
+    "fihoi boru ahdu bombgarkhkhoi"
+   ]
+  ],
+  [
+   "raand",
+   17,
+   [
+    "hi"
+   ],
+   [
+    "lahamadandu isoi raand ibudivu",
+    "raand meii doshtmonro deriam"
+   ]
+  ],
+  [
+   "oyro",
+   16,
+   [
+    "el"
+   ],
+   [
+    "moed oyro redonro siridumi",
+    "oyro lami sorbat akobekand"
+   ]
+  ],
+  [
+   "kiem",
+   15,
+   [
+    "vi"
+   ],
+   [
+    "kiem pristkazi sudu litsev",
+    "kiem ruzmedov botilloemu"
+   ]
+  ],
+  [
+   "gaand",
+   15,
+   [
+    "hi"
+   ],
+   [
+    "inam afsukumulu gaand bain",
+    "gaand redi juem korvazikhoe"
+   ]
+  ],
+  [
+   "buzi",
+   14,
+   [
+    "hu"
+   ],
+   [
+    "buzi ondonzida gurboneniya",
+    "buzi zakoyaro nigarrighvi"
+   ]
+  ],
+  [
+   "chie",
+   14,
+   [
+    "fr"
+   ],
+   [
+    "moinraam juftkofoev chie",
+    "iqzorro chie zemani qarnur"
+   ]
+  ],
+  [
+   "nigar",
+   14,
+   [
+    "mr"
+   ],
+   [
+    "nigariho ijakidast genhoi dode",
+    "buzi zakoyaro nigarrighvi"
+   ]
+  ],
+  [
+   "rini",
+   14,
+   [
+    "zh"
+   ],
+   [
+    "oinro astu rini geofaksayu",
+    "rini miand innoyathoro bungem"
+   ]
+  ],
+  [
+   "noki",
+   14,
+   [
+    "fi"
+   ],
+   [
+    "noki inoni konubati jughzi",
+    "getikhnivu miri zetu noki"
+   ]
+  ],
+  [
+   "kusi",
+   13,
+   [
+    "et",
+    "fi"
+   ],
+   [
+    "ford kusi mehoi afgaskurai",
+    "kuli illoksisted kusi meoi"
+   ]
+  ]
+ ],
+ "samples": [
+  "deletro ilni onash reaniloro",
+  "mayu nekston nozire depaem",
+  "rifonro turgin modagiyu pekhoi",
+  "ruvu njusumati mushi hosimi",
+  "fokhabest ozidsobiyu javu",
+  "ahonoksaash ovai lavodari",
+  "firizontad janihand odad",
+  "onunbiyu loii kornoro inho",
+  "kairo njidohavii pedoragohe",
+  "lioni buneed sarbivu iqroiro",
+  "jamsash zerimomi kivu nari",
+  "nekhmane kaen medinjshand"
+ ],
+ "seconds": 10.6,
+ "languages": [
+  "tg"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

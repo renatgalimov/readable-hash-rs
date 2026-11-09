@@ -1,0 +1,226 @@
+{
+ "name": "da",
+ "corpus_words": 80000,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "mc"
+ ],
+ "segmented_words": 50383,
+ "skipped_words": 29617,
+ "middle_attested_fraction": 0.6111246744791666,
+ "end32_attested_fraction": 0.3856608072916667,
+ "end16_attested_fraction": 0.6378580729166666,
+ "begin_attested": 128,
+ "chars": 26.76,
+ "max_chars": 35,
+ "consonant_runs_pct": 14.613,
+ "vowel_runs_pct": 1.143,
+ "english_words_pct": 3.132,
+ "own_words_pct": 27.285,
+ "offensive_whole_pct": 3.075,
+ "offensive_whole_english_list_pct": 0.39,
+ "offensive_whole_own_list_pct": 0.41,
+ "offensive_whole_major_lists_pct": 1.11,
+ "offensive_severe_en_pct": 0.32,
+ "offensive_inside5_pct": 3.25,
+ "offensive_inside4_pct": 17.175,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "mater",
+   30,
+   [
+    "sl"
+   ],
+   [
+    "udrevet maternt lonnan liar",
+    "aele svagers alarmater brag"
+   ]
+  ],
+  [
+   "fanden",
+   22,
+   [
+    "da"
+   ],
+   [
+    "modala opfanden livandskaering",
+    "omte opfanden like hyletation"
+   ]
+  ],
+  [
+   "ases",
+   21,
+   [
+    "cy"
+   ],
+   [
+    "misbede bots ases gretrisk",
+    "ases daemasme omkrie byse"
+   ]
+  ],
+  [
+   "dige",
+   20,
+   [
+    "da",
+    "sq"
+   ],
+   [
+    "nome svefferdre dige buet",
+    "burkeiaeser rino erdet dige"
+   ]
+  ],
+  [
+   "hane",
+   20,
+   [
+    "da"
+   ],
+   [
+    "niemar hane koter jollgate",
+    "flas hane satelkonner kaste"
+   ]
+  ],
+  [
+   "kanen",
+   19,
+   [
+    "nl"
+   ],
+   [
+    "regnusion amning tilkanen overede",
+    "puente hedekanen jeger bode"
+   ]
+  ],
+  [
+   "rima",
+   18,
+   [
+    "la"
+   ],
+   [
+    "keld hjetabevist siog rima",
+    "enfostband gres rima shed"
+   ]
+  ],
+  [
+   "kale",
+   18,
+   [
+    "lt"
+   ],
+   [
+    "kale prekkede bebolier sick",
+    "jerrails bras sheige kale"
+   ]
+  ],
+  [
+   "bite",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "bite trolis flest superliet",
+    "isradgon bite morgas paen"
+   ]
+  ],
+  [
+   "smar",
+   17,
+   [
+    "pl"
+   ],
+   [
+    "syme smar kostsaer kistedt",
+    "preauter abre smar damander"
+   ]
+  ],
+  [
+   "here",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "orerciopier shintrere here",
+    "boger kumplebende kale here"
+   ]
+  ],
+  [
+   "faen",
+   16,
+   [
+    "no"
+   ],
+   [
+    "faen blogbende ridt canced",
+    "faen aero totter eftertatrioen"
+   ]
+  ],
+  [
+   "puto",
+   16,
+   [
+    "pt"
+   ],
+   [
+    "forvelsnisse puto andremet",
+    "puto kester kludfornens udder"
+   ]
+  ],
+  [
+   "satan",
+   15,
+   [
+    "no",
+    "sv"
+   ],
+   [
+    "hvab satanfarter kardbolt",
+    "abes satanke juing sensakrer"
+   ]
+  ],
+  [
+   "abort",
+   15,
+   [
+    "be",
+    "bg",
+    "da",
+    "et",
+    "hy",
+    "mt",
+    "ru",
+    "sq",
+    "sv",
+    "uk"
+   ],
+   [
+    "siog abortshjade skik hjede",
+    "sato svaenskinte abortmaede"
+   ]
+  ]
+ ],
+ "samples": [
+  "svekken kvos amon hjespejre",
+  "kaas gulvas afledt svifus",
+  "glimar findes terens heen",
+  "alan elgekage mais frisser",
+  "florandad enchrarban tres",
+  "jakkehutius oming fennigger",
+  "genopgalises trutvende knat",
+  "amarraet snan lammel seerne",
+  "koing elnehelt hededruens",
+  "joer tilsteret opstid erikon",
+  "trimon pudstror tore beer",
+  "gudlulighed kola repansurel"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "da"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

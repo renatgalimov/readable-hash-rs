@@ -1,0 +1,246 @@
+{
+ "name": "rn",
+ "corpus_words": 16863,
+ "relaxed_rows": 135,
+ "relaxed_examples": [
+  "co",
+  "be",
+  "mo",
+  "me",
+  "av",
+  "ce",
+  "so",
+  "fa",
+  "al",
+  "de",
+  "le",
+  "no"
+ ],
+ "segmented_words": 13575,
+ "skipped_words": 3288,
+ "middle_attested_fraction": 0.197021484375,
+ "end32_attested_fraction": 0.203369140625,
+ "end16_attested_fraction": 0.363037109375,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.13,
+ "max_chars": 36,
+ "consonant_runs_pct": 3.274,
+ "vowel_runs_pct": 13.192,
+ "english_words_pct": 0.669,
+ "own_words_pct": 16.297,
+ "offensive_whole_pct": 1.27,
+ "offensive_whole_english_list_pct": 0.14,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.76,
+ "offensive_severe_en_pct": 0.1,
+ "offensive_inside5_pct": 4.39,
+ "offensive_inside4_pct": 17.81,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "kunda",
+   209,
+   [
+    "cs"
+   ],
+   [
+    "vyosanga izifahavanga ifmukunda",
+    "konkunda ayaye leabendanya uruzi"
+   ]
+  ],
+  [
+   "tanga",
+   111,
+   [
+    "fil"
+   ],
+   [
+    "utangabije ivyuzi nohumbure",
+    "kona atunarudi bashizotangana"
+   ]
+  ],
+  [
+   "shits",
+   81,
+   [
+    "cs",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "gd",
+    "lt",
+    "lv",
+    "ml",
+    "mr",
+    "mt",
+    "sq",
+    "sv",
+    "th",
+    "uk",
+    "uz",
+    "zu"
+   ],
+   [
+    "ugifmumenya nyegukira mwashitse",
+    "urye amwidandama yetishitse"
+   ]
+  ],
+  [
+   "kurwa",
+   53,
+   [
+    "pl"
+   ],
+   [
+    "yokurwa honyera gukwinjhava",
+    "vyemera rekurwa regishwa akri"
+   ]
+  ],
+  [
+   "igazi",
+   40,
+   [
+    "zu"
+   ],
+   [
+    "usumuga sinkuhigazi beabwo",
+    "mizi yigazi avamwo arikunga"
+   ]
+  ],
+  [
+   "ubera",
+   33,
+   [
+    "la"
+   ],
+   [
+    "wongayitse ubera ivyatagora",
+    "ikuringa zine umubera hahingwa"
+   ]
+  ],
+  [
+   "shabi",
+   23,
+   [
+    "zh"
+   ],
+   [
+    "afasha shabitize nzurize kimaze",
+    "tese ivukikugwije cishabizo"
+   ]
+  ],
+  [
+   "bonze",
+   19,
+   [
+    "de"
+   ],
+   [
+    "wibonze soana zuye famegikira",
+    "cuka akibabikunda bwifashe bonze"
+   ]
+  ],
+  [
+   "damba",
+   19,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "bisi adambahandiko yice ngaha",
+    "zoshashe adambasore nzije diko"
+   ]
+  ],
+  [
+   "mabi",
+   19,
+   [
+    "zh"
+   ],
+   [
+    "mabi mpiterumbaye kokinanyeza",
+    "iyaza shamuhore suagirizwa mabi"
+   ]
+  ],
+  [
+   "rakun",
+   19,
+   [
+    "hr"
+   ],
+   [
+    "wateri barakunda bwonahambaza",
+    "mugerakungu horo unanya tweka"
+   ]
+  ],
+  [
+   "hora",
+   18,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "hora myiwe dukunduritoya riva",
+    "reba hirwa hora tubibiciye"
+   ]
+  ],
+  [
+   "mama",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "uwantambaye unara mama nini",
+    "sangoye uwibura mama twibwo"
+   ]
+  ],
+  [
+   "bobo",
+   17,
+   [
+    "fil"
+   ],
+   [
+    "ciera mperekeje pasubitoke bobo",
+    "sese bobo akekonekera akes"
+   ]
+  ],
+  [
+   "nima",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "nima gituduha kaziki usora",
+    "nima idicahumenya nyanya katse"
+   ]
+  ]
+ ],
+ "samples": [
+  "wibonze soana zuye famegikira",
+  "aboba hobonye amafaba wimunga",
+  "zonyena nsinya gizoja igeye",
+  "siko uzihorera yabo zakoma",
+  "yumiturwa uhegumaraye wawe",
+  "iyicorogetsi usanye himiratora",
+  "ugutekunera wagejijwe udire",
+  "zuonitura pana zirekanye niko",
+  "arurwa uzamaciro igarayihinzwe",
+  "weba dukeza buriyo heruro",
+  "wamenyezi rereshimye itewe biwe",
+  "hohentari areye kugusaheba"
+ ],
+ "seconds": 9.3,
+ "languages": [
+  "rn"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

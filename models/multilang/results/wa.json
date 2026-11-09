@@ -1,0 +1,230 @@
+{
+ "name": "wa",
+ "corpus_words": 15168,
+ "relaxed_rows": 118,
+ "relaxed_examples": [
+  "tc",
+  "es",
+  "as",
+  "ras",
+  "cw",
+  "res",
+  "su",
+  "dju",
+  "mu",
+  "pu",
+  "du",
+  "cu"
+ ],
+ "segmented_words": 10819,
+ "skipped_words": 4349,
+ "middle_attested_fraction": 0.17045084635416666,
+ "end32_attested_fraction": 0.19287109375,
+ "end16_attested_fraction": 0.3603515625,
+ "begin_attested": 128,
+ "chars": 27.38,
+ "max_chars": 37,
+ "consonant_runs_pct": 11.966,
+ "vowel_runs_pct": 13.295,
+ "english_words_pct": 2.353,
+ "own_words_pct": 16.275,
+ "offensive_whole_pct": 1.47,
+ "offensive_whole_english_list_pct": 0.065,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.66,
+ "offensive_severe_en_pct": 0.075,
+ "offensive_inside5_pct": 2.69,
+ "offensive_inside4_pct": 16.11,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "etchi",
+   54,
+   [
+    "ja"
+   ],
+   [
+    "tchaetchi hailexhoeli rognant",
+    "petchijhopia emaedje rceus froye"
+   ]
+  ],
+  [
+   "jhant",
+   50,
+   [
+    "hi"
+   ],
+   [
+    "schayes frijhant gule brolos",
+    "wace heyacrijhant depinceu"
+   ]
+  ],
+  [
+   "coles",
+   34,
+   [
+    "la"
+   ],
+   [
+    "termeve fanut starcoles bunt",
+    "lusteut micoles rmexhoicune"
+   ]
+  ],
+  [
+   "pisse",
+   30,
+   [
+    "fr"
+   ],
+   [
+    "splignea tipisses culatrele",
+    "admeloujis gunt pisse etot"
+   ]
+  ],
+  [
+   "asses",
+   19,
+   [
+    "en",
+    "mr",
+    "pt",
+    "sr",
+    "te"
+   ],
+   [
+    "vongnasses eles baxhagmans",
+    "evou cwasses rlocivent mesesse"
+   ]
+  ],
+  [
+   "maca",
+   19,
+   [
+    "hr"
+   ],
+   [
+    "eroyribaneye pliylaire maca",
+    "maca elandrafint heant dunt"
+   ]
+  ],
+  [
+   "linda",
+   19,
+   [
+    "zu"
+   ],
+   [
+    "cayin lodilindant male apes",
+    "alindaedje evijhes fikimint sheus"
+   ]
+  ],
+  [
+   "hoer",
+   18,
+   [
+    "nl"
+   ],
+   [
+    "xhent hoer mire havidjheyaedje",
+    "hoer sipote aberaedje langes"
+   ]
+  ],
+  [
+   "pute",
+   18,
+   [
+    "fr"
+   ],
+   [
+    "pute frecrant erlirmazlete",
+    "wier pute bulong drolardji"
+   ]
+  ],
+  [
+   "pede",
+   18,
+   [
+    "fr"
+   ],
+   [
+    "roispleye pede lateme sues",
+    "rmin serotiyous pede pure"
+   ]
+  ],
+  [
+   "bits",
+   16,
+   [
+    "mr"
+   ],
+   [
+    "gatret bits dmet guiydjeyes",
+    "eschafouzer bits cenut apaedje"
+   ]
+  ],
+  [
+   "pupe",
+   15,
+   [
+    "sq"
+   ],
+   [
+    "finte pupe tchaminsaire racion",
+    "brimiywence chute dueye pupe"
+   ]
+  ],
+  [
+   "manda",
+   15,
+   [
+    "ru"
+   ],
+   [
+    "felmandavet araeyogne cina",
+    "temossopit trimandaedjes cwaent"
+   ]
+  ],
+  [
+   "tate",
+   15,
+   [
+    "ro"
+   ],
+   [
+    "aminda sons gamicove tate",
+    "gaeccion agajpesse tate scris"
+   ]
+  ],
+  [
+   "bite",
+   14,
+   [
+    "fr"
+   ],
+   [
+    "barcambe bite dmiyaedje dmeure",
+    "schte estutaiteve laer bite"
+   ]
+  ]
+ ],
+ "samples": [
+  "plumit dmike keute afrurite",
+  "cadje golemint royamint plilin",
+  "scrimas kidrike derdowes amit",
+  "aneye entocote mars dotale",
+  "daronaeye edocindracion mete",
+  "otropinape cepe eclouminne",
+  "abatolimwe meyornance dvis",
+  "keuzgnant flaedje viteur etike",
+  "badje encacare amoictezit",
+  "muis lignas moxhnut herisse",
+  "merlos cmincoyance vent rate",
+  "govroveur bane diridjaloeye"
+ ],
+ "seconds": 8.4,
+ "languages": [
+  "wa"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,217 @@
+{
+ "name": "az",
+ "corpus_words": 80000,
+ "relaxed_rows": 3,
+ "relaxed_examples": [
+  "yy",
+  "iyy",
+  "ug"
+ ],
+ "segmented_words": 48290,
+ "skipped_words": 31710,
+ "middle_attested_fraction": 0.4207356770833333,
+ "end32_attested_fraction": 0.2794596354166667,
+ "end16_attested_fraction": 0.50146484375,
+ "begin_attested": 128,
+ "chars": 27.32,
+ "max_chars": 38,
+ "consonant_runs_pct": 5.797,
+ "vowel_runs_pct": 9.769,
+ "english_words_pct": 1.041,
+ "own_words_pct": 17.774,
+ "offensive_whole_pct": 2.94,
+ "offensive_whole_english_list_pct": 0.14,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.645,
+ "offensive_severe_en_pct": 0.075,
+ "offensive_inside5_pct": 3.565,
+ "offensive_inside4_pct": 16.85,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "asini",
+   195,
+   [
+    "it"
+   ],
+   [
+    "oxodunun abib itvandasinin oyaq",
+    "ayrasinin adli leqeberi elti"
+   ]
+  ],
+  [
+   "linda",
+   129,
+   [
+    "zu"
+   ],
+   [
+    "qora lindasni gundesliqenin",
+    "xelinda ilen muketlerinde gosi"
+   ]
+  ],
+  [
+   "amlar",
+   38,
+   [
+    "tr"
+   ],
+   [
+    "qumlekun elme paramsamlarla",
+    "amlar buan alse esiklesrlerle"
+   ]
+  ],
+  [
+   "baka",
+   24,
+   [
+    "ja"
+   ],
+   [
+    "akim irem erimutonuna baka",
+    "baka culudur otagrama hiden"
+   ]
+  ],
+  [
+   "bunda",
+   22,
+   [
+    "pt"
+   ],
+   [
+    "dadlezyide eset labundana",
+    "mominse bunda ehlar uclusdeki"
+   ]
+  ],
+  [
+   "kunda",
+   21,
+   [
+    "cs"
+   ],
+   [
+    "irse nuriumuzlu fima kunda",
+    "usetimtinda neda kunda lasa"
+   ]
+  ],
+  [
+   "sait",
+   21,
+   [
+    "kn"
+   ],
+   [
+    "alli edbeddon sait hurter",
+    "apreksdume sait ictarlidir"
+   ]
+  ],
+  [
+   "kale",
+   21,
+   [
+    "lt"
+   ],
+   [
+    "receddin akulun irdir kale",
+    "assaraq faberdin kale niler"
+   ]
+  ],
+  [
+   "manda",
+   19,
+   [
+    "ru"
+   ],
+   [
+    "ilxitin felada kemandan irem",
+    "kuye qasimlindan hekatomandan"
+   ]
+  ],
+  [
+   "pede",
+   18,
+   [
+    "fr"
+   ],
+   [
+    "plada pede yena isedlesbiti",
+    "pede yatada felalarin emiman"
+   ]
+  ],
+  [
+   "krik",
+   17,
+   [
+    "cs"
+   ],
+   [
+    "oykari sumaq krik qermacinin",
+    "namuel adonunda krik akculi"
+   ]
+  ],
+  [
+   "kaka",
+   17,
+   [
+    "eu"
+   ],
+   [
+    "edvasminde kaka enlikir sean",
+    "qayizindan ileri kaka barmasi"
+   ]
+  ],
+  [
+   "koli",
+   17,
+   [
+    "kn"
+   ],
+   [
+    "koli sece fabeede qirdural",
+    "fakulenine yeltam yene koli"
+   ]
+  ],
+  [
+   "mose",
+   17,
+   [
+    "de"
+   ],
+   [
+    "mose hemire qusi zengenada",
+    "planturerek mose yelenmesi cenin"
+   ]
+  ],
+  [
+   "nima",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "rotlamin leonomrurler nima",
+    "meta quya idizbancdir nima"
+   ]
+  ]
+ ],
+ "samples": [
+  "fazilari ehik oxler nunlugler",
+  "daga stimov canliliq farean",
+  "idrama tunirdi sustde arisi",
+  "gole giatelidir muya vadine",
+  "qusunsiq usklatxarda hena",
+  "krasrlecir enan axiduriya",
+  "feallastava hepatonlar itsi",
+  "oxlasetler evna hararaq elme",
+  "kaim gibeldigi argetedine",
+  "apde cildlik sarati rostov",
+  "heyreli akadnaga oydir maler",
+  "stasididir kadin mexalankalar"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "az"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

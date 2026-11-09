@@ -1,0 +1,253 @@
+{
+ "name": "cmn",
+ "corpus_words": 58102,
+ "relaxed_rows": 245,
+ "relaxed_examples": [
+  "fe",
+  "yo",
+  "go",
+  "to",
+  "do",
+  "zo",
+  "co",
+  "ko",
+  "so",
+  "no",
+  "pr",
+  "fo"
+ ],
+ "segmented_words": 47160,
+ "skipped_words": 10942,
+ "middle_attested_fraction": 0.3347574869791667,
+ "end32_attested_fraction": 0.3465983072916667,
+ "end16_attested_fraction": 0.4991861979166667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.19,
+ "max_chars": 35,
+ "consonant_runs_pct": 9.805,
+ "vowel_runs_pct": 17.564,
+ "english_words_pct": 1.092,
+ "own_words_pct": 28.795,
+ "offensive_whole_pct": 1.34,
+ "offensive_whole_english_list_pct": 0.105,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.605,
+ "offensive_severe_en_pct": 0.025,
+ "offensive_inside5_pct": 1.685,
+ "offensive_inside4_pct": 23.15,
+ "offensive_across_words_pct": 0.02,
+ "top_hits": [
+  [
+   "nazi",
+   20,
+   [
+    "ca",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "eu",
+    "fr",
+    "gd",
+    "gl",
+    "hy",
+    "id",
+    "is",
+    "la",
+    "mn",
+    "ms",
+    "mt",
+    "nl",
+    "pl",
+    "sr",
+    "tr",
+    "uz",
+    "vi",
+    "zu"
+   ],
+   [
+    "nazi kuse prigiyehhe hafu",
+    "nizi ciainamezhuang fling nazi"
+   ]
+  ],
+  [
+   "chishi",
+   18,
+   [
+    "zh"
+   ],
+   [
+    "foiwiao cali haizucui chishi",
+    "yeshihounsile chishi nibao yaren"
+   ]
+  ],
+  [
+   "shihu",
+   18,
+   [
+    "zh"
+   ],
+   [
+    "sigeshishihua dahou colin kalu",
+    "huajutesile meifui ceshihua"
+   ]
+  ],
+  [
+   "ttong",
+   17,
+   [
+    "ko"
+   ],
+   [
+    "exhou seren xialedettong fubu",
+    "kuni googiao meikettong beta"
+   ]
+  ],
+  [
+   "zizi",
+   16,
+   [
+    "fr"
+   ],
+   [
+    "exchanusugong zizi soon ruhou",
+    "tousiji aihao jieyigesi zizi"
+   ]
+  ],
+  [
+   "zuie",
+   16,
+   [
+    "ja"
+   ],
+   [
+    "enhao yoou zuie junfizanzeng",
+    "huacitifhou zuie walun vishang"
+   ]
+  ],
+  [
+   "kalu",
+   15,
+   [
+    "fi"
+   ],
+   [
+    "sigeshishihua dahou colin kalu",
+    "kalu louzunuzan quwei exiao"
+   ]
+  ],
+  [
+   "buzi",
+   14,
+   [
+    "hu"
+   ],
+   [
+    "koutecilei tawei buzi aiwei",
+    "renping ouediao brtaren buzi"
+   ]
+  ],
+  [
+   "nima",
+   14,
+   [
+    "zh"
+   ],
+   [
+    "binxao baimigen endu nima",
+    "nima menqie liyi duisushu"
+   ]
+  ],
+  [
+   "chie",
+   13,
+   [
+    "fr"
+   ],
+   [
+    "chie aliran ewuo oriyizuan",
+    "zigoui lawei gencebiao chie"
+   ]
+  ],
+  [
+   "nasi",
+   13,
+   [
+    "ml",
+    "th"
+   ],
+   [
+    "nasi azugshi ewigilei plou",
+    "kendalukuo ejun nasi keren"
+   ]
+  ],
+  [
+   "piru",
+   13,
+   [
+    "fi"
+   ],
+   [
+    "luren chai molamaozang piru",
+    "leirobei piru axozhu huqi"
+   ]
+  ],
+  [
+   "pusi",
+   13,
+   [
+    "kn"
+   ],
+   [
+    "pusi nangguo mukuan gaizhou",
+    "tale jiagui pusi liuluzai"
+   ]
+  ],
+  [
+   "kusi",
+   13,
+   [
+    "et",
+    "fi"
+   ],
+   [
+    "kusi ehimong pubiye anzazhong",
+    "ehan kusi menmnjue haobei"
+   ]
+  ],
+  [
+   "zazhong",
+   12,
+   [
+    "zh"
+   ],
+   [
+    "yashi huozhe zazhong feiqnjue",
+    "meshuo cinbiwodou ruian zazhong"
+   ]
+  ]
+ ],
+ "samples": [
+  "zesushu brshi esan afuzimen",
+  "chushi risili duimuo zedewu",
+  "stibun muzhuma laindang kashang",
+  "zihe aonticai jili erjidui",
+  "antuictong nuohizenxian dean",
+  "abitikicou cuiao robitisheng",
+  "tuangtezushi debuwuzhi ashou",
+  "esedacai senwei baoxuan sushi",
+  "daju aonierman kaizichoshao",
+  "exuan questa qishixing editiji",
+  "deshengyin amazikian zuhe shao",
+  "rinlizeshi dade xinyifandaixing"
+ ],
+ "seconds": 10.3,
+ "languages": [
+  "cmn"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

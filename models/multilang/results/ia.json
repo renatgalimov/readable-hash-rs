@@ -1,0 +1,237 @@
+{
+ "name": "ia",
+ "corpus_words": 26377,
+ "relaxed_rows": 76,
+ "relaxed_examples": [
+  "sy",
+  "af",
+  "eq",
+  "hy",
+  "vu",
+  "of",
+  "my",
+  "cy",
+  "ae",
+  "ty",
+  "we",
+  "py"
+ ],
+ "segmented_words": 18802,
+ "skipped_words": 7575,
+ "middle_attested_fraction": 0.2502034505208333,
+ "end32_attested_fraction": 0.239013671875,
+ "end16_attested_fraction": 0.41015625,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.04,
+ "max_chars": 39,
+ "consonant_runs_pct": 6.257,
+ "vowel_runs_pct": 1.087,
+ "english_words_pct": 2.476,
+ "own_words_pct": 12.362,
+ "offensive_whole_pct": 2.91,
+ "offensive_whole_english_list_pct": 0.07,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.765,
+ "offensive_severe_en_pct": 0.13,
+ "offensive_inside5_pct": 3.77,
+ "offensive_inside4_pct": 40.49,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "semen",
+   74,
+   [
+    "ca",
+    "cy",
+    "en",
+    "es",
+    "eu",
+    "gl",
+    "mt",
+    "pt",
+    "sr",
+    "uz"
+   ],
+   [
+    "ruta pipinsemente basatava raes",
+    "fonsemente teguente mensificorante"
+   ]
+  ],
+  [
+   "samen",
+   27,
+   [
+    "de"
+   ],
+   [
+    "lucopiar bonascarante samente",
+    "enva bollomic samente senata"
+   ]
+  ],
+  [
+   "fente",
+   25,
+   [
+    "fr"
+   ],
+   [
+    "rilegone pupide coperfente",
+    "gagariculio voscarmente fente"
+   ]
+  ],
+  [
+   "culos",
+   23,
+   [
+    "es"
+   ],
+   [
+    "emic isas ferracculos meto",
+    "huava menscoic illa inculos"
+   ]
+  ],
+  [
+   "rind",
+   22,
+   [
+    "et"
+   ],
+   [
+    "nine rind hogrovio aguine",
+    "rivacision ninsificinentia rind"
+   ]
+  ],
+  [
+   "anita",
+   21,
+   [
+    "nl"
+   ],
+   [
+    "fianitate loconia diligitiva",
+    "belituite fianitate acas obite"
+   ]
+  ],
+  [
+   "pute",
+   21,
+   [
+    "fr"
+   ],
+   [
+    "dima tonitas benidiction pute",
+    "convegante glutrivenite pute"
+   ]
+  ],
+  [
+   "rota",
+   20,
+   [
+    "ja"
+   ],
+   [
+    "vamigroura rota lios sues",
+    "ascania faia orcorantia rota"
+   ]
+  ],
+  [
+   "ases",
+   18,
+   [
+    "cy"
+   ],
+   [
+    "roar pustificcose ases gaia",
+    "trabile palatio ases schivita"
+   ]
+  ],
+  [
+   "recte",
+   18,
+   [
+    "ca"
+   ],
+   [
+    "gunillomer recte edeva ligo",
+    "crecte frutedos nuta viation"
+   ]
+  ],
+  [
+   "gote",
+   17,
+   [
+    "tr"
+   ],
+   [
+    "stratedados ofte plia gote",
+    "gote hana cantotente theano"
+   ]
+  ],
+  [
+   "site",
+   17,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "iducate mite site tuliviate",
+    "lulegarrus lepacalmente site"
+   ]
+  ],
+  [
+   "fela",
+   16,
+   [
+    "cs"
+   ],
+   [
+    "huante vibrie fela chorologante",
+    "binsuerpes jure afemente fela"
+   ]
+  ],
+  [
+   "muna",
+   16,
+   [
+    "fi"
+   ],
+   [
+    "septor nuscentia muna duplente",
+    "muna lontator quente pessemia"
+   ]
+  ],
+  [
+   "trio",
+   16,
+   [
+    "es"
+   ],
+   [
+    "rege parctic trio entibismo",
+    "acadminal trio sepeas amator"
+   ]
+  ]
+ ],
+ "samples": [
+  "cumben nual goto rullender",
+  "dear lontite alcotiones cuscibile",
+  "tibeas eldiente abruto cramento",
+  "nate durtination ination lentir",
+  "gasoncra tatastinar asia",
+  "borempatus flon ocringal",
+  "socipenentia asoptose daitate",
+  "goncelation bier polentia gena",
+  "sures duspigente croccuscava",
+  "agava lacenas mandate oflian",
+  "astarar sympride fona rete",
+  "loinacide sual pretuavenite"
+ ],
+ "seconds": 9.7,
+ "languages": [
+  "ia"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

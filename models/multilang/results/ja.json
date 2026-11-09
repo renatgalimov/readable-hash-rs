@@ -1,0 +1,256 @@
+{
+ "name": "ja",
+ "corpus_words": 49846,
+ "relaxed_rows": 94,
+ "relaxed_examples": [
+  "fe",
+  "we",
+  "la",
+  "zo",
+  "oc",
+  "oj",
+  "oq",
+  "ox",
+  "of",
+  "lo",
+  "ol",
+  "wo"
+ ],
+ "segmented_words": 35324,
+ "skipped_words": 14522,
+ "middle_attested_fraction": 0.2930908203125,
+ "end32_attested_fraction": 0.2758382161458333,
+ "end16_attested_fraction": 0.4326985677083333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.45,
+ "max_chars": 45,
+ "consonant_runs_pct": 5.485,
+ "vowel_runs_pct": 13.031,
+ "english_words_pct": 0.247,
+ "own_words_pct": 27.245,
+ "offensive_whole_pct": 2.015,
+ "offensive_whole_english_list_pct": 0.065,
+ "offensive_whole_own_list_pct": 0.515,
+ "offensive_whole_major_lists_pct": 1.265,
+ "offensive_severe_en_pct": 0.015,
+ "offensive_inside5_pct": 2.655,
+ "offensive_inside4_pct": 31.215,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "shite",
+   43,
+   [
+    "cs",
+    "da",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "gl",
+    "hi",
+    "hu",
+    "id",
+    "it",
+    "ja",
+    "lt",
+    "lv",
+    "mn",
+    "mr",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pt",
+    "sq",
+    "sv",
+    "th",
+    "uk",
+    "uz",
+    "vi",
+    "zu"
+   ],
+   [
+    "guixan nizu tung omingshite",
+    "lichishite zoshita mene ofdezi"
+   ]
+  ],
+  [
+   "sudas",
+   42,
+   [
+    "lt"
+   ],
+   [
+    "otte amazilibao hoki tsudasai",
+    "oyizerubai dina tsudasai akeru"
+   ]
+  ],
+  [
+   "chich",
+   41,
+   [
+    "vi"
+   ],
+   [
+    "adokiru bean hoiru chichimon",
+    "kiui okichichilun turu niai"
+   ]
+  ],
+  [
+   "otaku",
+   22,
+   [
+    "ja"
+   ],
+   [
+    "amadesarenai juga qichina otaku",
+    "ozubaru motake songsing otaku"
+   ]
+  ],
+  [
+   "sifu",
+   22,
+   [
+    "zh"
+   ],
+   [
+    "looridarure ofmifusi sifu",
+    "nukochi sifu tebueteru aizi"
+   ]
+  ],
+  [
+   "hewu",
+   20,
+   [
+    "zu"
+   ],
+   [
+    "dawu enakatta zijijineru hewu",
+    "enashita fuyufumu chuyumi hewu"
+   ]
+  ],
+  [
+   "chishi",
+   19,
+   [
+    "zh"
+   ],
+   [
+    "lichishite zoshita mene ofdezi",
+    "baro mokensemasu michishiaore"
+   ]
+  ],
+  [
+   "zazhong",
+   19,
+   [
+    "zh"
+   ],
+   [
+    "kihoure boko zazhong irixiyai",
+    "zazhong fase riyute gexinbiru"
+   ]
+  ],
+  [
+   "retto",
+   18,
+   [
+    "it"
+   ],
+   [
+    "tininarareke xueshiraretto zoshita",
+    "lukonkumi oliwuretto ohitaru"
+   ]
+  ],
+  [
+   "charu",
+   18,
+   [
+    "ja"
+   ],
+   [
+    "handaru charu agan hitkiwat",
+    "charu teirekudasai ofashita tachie"
+   ]
+  ],
+  [
+   "here",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "monienke bingzai here yuwu",
+    "zhongfuhaka here tedensong"
+   ]
+  ],
+  [
+   "noki",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "odigifisei noki heirando",
+    "noki dinjetto odoseshita rihe"
+   ]
+  ],
+  [
+   "yuchi",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "yinjmintasu yousuan yuchiqi",
+    "rimire duotpu yuchihaitei"
+   ]
+  ],
+  [
+   "piru",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "piru roaku agasuru otkonsemasu",
+    "ankori kuatsu inekudasai piru"
+   ]
+  ],
+  [
+   "sega",
+   16,
+   [
+    "it"
+   ],
+   [
+    "sega nozi tarubauitian lasu",
+    "sezuai taun oinkisui sega"
+   ]
+  ]
+ ],
+ "samples": [
+  "okekuan yequ olng amagabiri",
+  "xiimasen borete durutsu okihing",
+  "ohirei patero kuwasa anga",
+  "aran atiwanakatan jike rinina",
+  "teincheshita oyiligiyan fashi",
+  "asannekaia cito aidobato",
+  "mokakakouan fabeshase peki",
+  "oloruting omou youlie dere",
+  "liyan atichieke ankakoitong",
+  "letadesu tansuru yintuan adarasenai",
+  "fadare kemiguda gouru zhai",
+  "bonbulumi lizi chutagaridai"
+ ],
+ "seconds": 10.6,
+ "languages": [
+  "ja"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

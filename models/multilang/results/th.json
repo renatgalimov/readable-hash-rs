@@ -1,0 +1,228 @@
+{
+ "name": "th",
+ "corpus_words": 68632,
+ "relaxed_rows": 29,
+ "relaxed_examples": [
+  "sc",
+  "ex",
+  "ja",
+  "au",
+  "va",
+  "vo",
+  "je",
+  "ju",
+  "qu",
+  "cu",
+  "ve",
+  "ev"
+ ],
+ "segmented_words": 41094,
+ "skipped_words": 27538,
+ "middle_attested_fraction": 0.6582438151041666,
+ "end32_attested_fraction": 0.2838134765625,
+ "end16_attested_fraction": 0.4788411458333333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.99,
+ "max_chars": 38,
+ "consonant_runs_pct": 33.41,
+ "vowel_runs_pct": 16.279,
+ "english_words_pct": 0.816,
+ "own_words_pct": 16.814,
+ "offensive_whole_pct": 2.07,
+ "offensive_whole_english_list_pct": 0.125,
+ "offensive_whole_own_list_pct": 0.19,
+ "offensive_whole_major_lists_pct": 0.745,
+ "offensive_severe_en_pct": 0.015,
+ "offensive_inside5_pct": 2.345,
+ "offensive_inside4_pct": 13.72,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "hlang",
+   70,
+   [
+    "th"
+   ],
+   [
+    "mathamtaru epan hlanghna prthi",
+    "ochlang bodaimnan luong kuha"
+   ]
+  ],
+  [
+   "chati",
+   35,
+   [
+    "te"
+   ],
+   [
+    "mehokhsach lies ehoa chati",
+    "hmayrachati yungerweoy oisi"
+   ]
+  ],
+  [
+   "okrth",
+   27,
+   [
+    "th"
+   ],
+   [
+    "sana ochiokrth snsi loabaich",
+    "ekni onhodi okrthkon ochaeka"
+   ]
+  ],
+  [
+   "hamma",
+   26,
+   [
+    "sv"
+   ],
+   [
+    "ouong ethngchring kooaair shidthamman",
+    "sraich tinkamthamman phoy hrkha"
+   ]
+  ],
+  [
+   "eshi",
+   21,
+   [
+    "hy"
+   ],
+   [
+    "hrnephrin susi eshi tutail",
+    "rthoruwani eshi olni kuely"
+   ]
+  ],
+  [
+   "chani",
+   21,
+   [
+    "zh"
+   ],
+   [
+    "efkhrab kuychani krok olrani",
+    "baan todwy otaeya tiwanechani"
+   ]
+  ],
+  [
+   "tanga",
+   20,
+   [
+    "fil"
+   ],
+   [
+    "lumphatangaing sboaair kethankhongchan",
+    "stangaeriyely nguana saphueon"
+   ]
+  ],
+  [
+   "cona",
+   19,
+   [
+    "pt"
+   ],
+   [
+    "onwaeraid cona yinkabriks",
+    "ebendinoaelw kukhrab cona noan"
+   ]
+  ],
+  [
+   "rass",
+   19,
+   [
+    "is"
+   ],
+   [
+    "wami rass hlyakrtokan ruyang",
+    "ngepnmaaihng paaelw rass aith"
+   ]
+  ],
+  [
+   "nasi",
+   18,
+   [
+    "ml",
+    "th"
+   ],
+   [
+    "nasi ruwa sphakphaan sbphuely",
+    "onyaeknan sein nasi punnth"
+   ]
+  ],
+  [
+   "kapi",
+   18,
+   [
+    "th"
+   ],
+   [
+    "doaimdihrsi kapi baan kwaihm",
+    "wiehro otaimhrok tangaeror kapi"
+   ]
+  ],
+  [
+   "rini",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "rini klibng foretor kephaan",
+    "wanmhwkari rini rina etan"
+   ]
+  ],
+  [
+   "echiy",
+   17,
+   [
+    "th"
+   ],
+   [
+    "edkekikan erwkechiyaithy opkhun",
+    "nowa dwishi lioy echiyethla"
+   ]
+  ],
+  [
+   "kaka",
+   17,
+   [
+    "eu"
+   ],
+   [
+    "kaka yaaihyaephely hlaelw sbaelw",
+    "samers khwamthrin kaka lnkhun"
+   ]
+  ],
+  [
+   "prsi",
+   17,
+   [
+    "sl"
+   ],
+   [
+    "prsi tidkinda ewan phumkan",
+    "seruhrok hrruwaman prsi kwni"
+   ]
+  ]
+ ],
+ "samples": [
+  "yiwkoy oldi fuely kehlwnmak",
+  "thas buchun radata yiroaid",
+  "dooroaair yueling ehnpun hlma",
+  "pling tiaimmietho phom hyanehro",
+  "bokrkhaaid ebunnachuti oochan",
+  "huengklaming ouehro mhitibaelw",
+  "fanginamti ooktknak hien",
+  "fukhwamoyna onng echkhud klas",
+  "erkan tinesndi hloeliechit",
+  "spkhrab emsakhr ethsnthi kdehay",
+  "oobakh kunsaban rukha chna",
+  "buktklud erely aimchabpiaelw"
+ ],
+ "seconds": 11.6,
+ "languages": [
+  "th"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

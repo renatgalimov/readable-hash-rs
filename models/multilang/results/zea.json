@@ -1,0 +1,231 @@
+{
+ "name": "zea",
+ "corpus_words": 7541,
+ "relaxed_rows": 322,
+ "relaxed_examples": [
+  "sc",
+  "wi",
+  "da",
+  "du",
+  "sp",
+  "bes",
+  "no",
+  "op",
+  "ov",
+  "bl",
+  "uu",
+  "vi"
+ ],
+ "segmented_words": 5112,
+ "skipped_words": 2429,
+ "middle_attested_fraction": 0.11283365885416667,
+ "end32_attested_fraction": 0.11165364583333333,
+ "end16_attested_fraction": 0.22176106770833334,
+ "begin_attested": 128,
+ "chars": 26.46,
+ "max_chars": 34,
+ "consonant_runs_pct": 21.433,
+ "vowel_runs_pct": 6.844,
+ "english_words_pct": 1.75,
+ "own_words_pct": 11.638,
+ "offensive_whole_pct": 2.365,
+ "offensive_whole_english_list_pct": 0.25,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.355,
+ "offensive_severe_en_pct": 0.09,
+ "offensive_inside5_pct": 4.6,
+ "offensive_inside4_pct": 18.01,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "ische",
+   486,
+   [
+    "de"
+   ],
+   [
+    "wionische niekkemaenig dewete",
+    "gedalisische frlonind inen"
+   ]
+  ],
+  [
+   "raeven",
+   56,
+   [
+    "no"
+   ],
+   [
+    "ient afnt acte courspraeven",
+    "wiemde cacht diraeven zeunne"
+   ]
+  ],
+  [
+   "veres",
+   32,
+   [
+    "hu"
+   ],
+   [
+    "mert ieemaoremee esooveres",
+    "kankoloken allwettte veres"
+   ]
+  ],
+  [
+   "arsch",
+   27,
+   [
+    "de"
+   ],
+   [
+    "aftitikein arschaenge biie",
+    "daarschtte latadaorte omje"
+   ]
+  ],
+  [
+   "pene",
+   22,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "pene inseeman verandeurije",
+    "feliejen ermart pene chdije"
+   ]
+  ],
+  [
+   "dust",
+   20,
+   [
+    "hi"
+   ],
+   [
+    "zuberoennia dust zouwe rees",
+    "naddnd haest vluiaert dust"
+   ]
+  ],
+  [
+   "kuje",
+   20,
+   [
+    "hr"
+   ],
+   [
+    "emooverpe kuje oorrhevise",
+    "zwden ente zuoolormse kuje"
+   ]
+  ],
+  [
+   "zinne",
+   19,
+   [
+    "it"
+   ],
+   [
+    "broaderwese dran diel zinne",
+    "stal meig harrtiezse zinne"
+   ]
+  ],
+  [
+   "dike",
+   19,
+   [
+    "eu",
+    "sr"
+   ],
+   [
+    "neme dike kenkontste drot",
+    "uutnaodaore duie dike heer"
+   ]
+  ],
+  [
+   "esel",
+   18,
+   [
+    "de"
+   ],
+   [
+    "wiie esel endeel ebhenkte",
+    "ankosleden esel ooden aediel"
+   ]
+  ],
+  [
+   "dige",
+   17,
+   [
+    "da",
+    "sq"
+   ],
+   [
+    "dige arke laer kibeeeloekt",
+    "emte sten frwerootden dige"
+   ]
+  ],
+  [
+   "sike",
+   17,
+   [
+    "tr"
+   ],
+   [
+    "evie sten lomiehderke sike",
+    "else zeie ofderwikkcht sike"
+   ]
+  ],
+  [
+   "kusse",
+   16,
+   [
+    "da"
+   ],
+   [
+    "chorzinnle kussen wiziloeg",
+    "kussen stel troase jaemstina"
+   ]
+  ],
+  [
+   "bite",
+   16,
+   [
+    "fr"
+   ],
+   [
+    "wast aorlweuned line bite",
+    "bite sataeges woltes deke"
+   ]
+  ],
+  [
+   "dian",
+   16,
+   [
+    "zh"
+   ],
+   [
+    "saaeroel dian tuldwesched",
+    "eswetuer heneemolle dian"
+   ]
+  ]
+ ],
+ "samples": [
+  "enweege kund juel muwerine",
+  "wegt hronaar dinest eneving",
+  "tinind groolek horler kene",
+  "krege amnigsel bels toestes",
+  "jolichiem trasmeentschap naer",
+  "zwrotorkee buing errisses",
+  "eigemediven nadseese chnde",
+  "juwetatie oaen stevende pren",
+  "reig ambekkie keroderolte",
+  "noden brones meestre firoek",
+  "naeput allemistje drel geen",
+  "hrostaloal reek heschiemaenel"
+ ],
+ "seconds": 8.2,
+ "languages": [
+  "zea"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

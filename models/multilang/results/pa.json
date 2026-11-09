@@ -1,0 +1,229 @@
+{
+ "name": "pa",
+ "corpus_words": 56592,
+ "relaxed_rows": 1,
+ "relaxed_examples": [
+  "iy"
+ ],
+ "segmented_words": 31913,
+ "skipped_words": 24679,
+ "middle_attested_fraction": 0.3960367838541667,
+ "end32_attested_fraction": 0.5029703776041666,
+ "end16_attested_fraction": 0.72802734375,
+ "begin_attested": 128,
+ "chars": 25.32,
+ "max_chars": 31,
+ "consonant_runs_pct": 31.323,
+ "vowel_runs_pct": 2.956,
+ "english_words_pct": 0.241,
+ "own_words_pct": 39.398,
+ "offensive_whole_pct": 2.98,
+ "offensive_whole_english_list_pct": 0.335,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.465,
+ "offensive_severe_en_pct": 0.14,
+ "offensive_inside5_pct": 1.295,
+ "offensive_inside4_pct": 14.355,
+ "offensive_across_words_pct": 0.2,
+ "top_hits": [
+  [
+   "vadia",
+   39,
+   [
+    "pt"
+   ],
+   [
+    "huka intrvadiam hrmimg kaia",
+    "kmdiata limi ghatvadiam husn"
+   ]
+  ],
+  [
+   "hure",
+   21,
+   [
+    "de"
+   ],
+   [
+    "imprsn bres hure stumikimg",
+    "hure lijamane mesain agik"
+   ]
+  ],
+  [
+   "phan",
+   21,
+   [
+    "vi"
+   ],
+   [
+    "jaicadam blgaram ketn phan",
+    "kubrik gopuasna phan isde"
+   ]
+  ],
+  [
+   "giat",
+   19,
+   [
+    "vi"
+   ],
+   [
+    "klakmagard amis giat saiam",
+    "ikviauvahi deskthli giat"
+   ]
+  ],
+  [
+   "mama",
+   18,
+   [
+    "pt"
+   ],
+   [
+    "mohrst rihmri labiha mama",
+    "mama kathbhar aiksar jonam"
+   ]
+  ],
+  [
+   "vamg",
+   17,
+   [
+    "kn",
+    "mr",
+    "te"
+   ],
+   [
+    "sistpheriam vamg hedhimki",
+    "mlomti mura vamg tiagviam"
+   ]
+  ],
+  [
+   "rota",
+   17,
+   [
+    "ja"
+   ],
+   [
+    "rota hemlni aurgrota aske",
+    "rota vripovic lekaram bune"
+   ]
+  ],
+  [
+   "bldi",
+   16,
+   [
+    "te"
+   ],
+   [
+    "prolithgaia bldi simputar",
+    "bldi kele skulropiai khte"
+   ]
+  ],
+  [
+   "bits",
+   16,
+   [
+    "mr"
+   ],
+   [
+    "dala stauharvad bits peli",
+    "ikhidhuvala cmti abiam bits"
+   ]
+  ],
+  [
+   "tama",
+   15,
+   [
+    "pl",
+    "zh"
+   ],
+   [
+    "tama jmalojist gidaik mosi",
+    "tama godakaram ikom bairam"
+   ]
+  ],
+  [
+   "slet",
+   15,
+   [
+    "nl"
+   ],
+   [
+    "slet smbhamamita hana mola",
+    "toiam vriprpti homiks slet"
+   ]
+  ],
+  [
+   "shit",
+   15,
+   [
+    "da",
+    "en",
+    "gd",
+    "hy",
+    "mt",
+    "my",
+    "nl",
+    "no",
+    "sk",
+    "uz",
+    "zu"
+   ],
+   [
+    "jotronvaisi shit iltimtiam",
+    "udra arcikhopur kesr shit"
+   ]
+  ],
+  [
+   "kusi",
+   15,
+   [
+    "et",
+    "fi"
+   ],
+   [
+    "insivist kusi carudi upimg",
+    "kusi blovram lems karjapam"
+   ]
+  ],
+  [
+   "made",
+   14,
+   [
+    "zh"
+   ],
+   [
+    "udghram biar made julmoloar",
+    "gruris made hram vicalkam"
+   ]
+  ],
+  [
+   "dada",
+   14,
+   [
+    "id"
+   ],
+   [
+    "amtoma jilham dada ikamta",
+    "ilajirtara cuhe dada hota"
+   ]
+  ]
+ ],
+ "samples": [
+  "gotain mmam ikle slirodam",
+  "viji cubare muthimg gorjmt",
+  "hemastr akumdr pimnum kiur",
+  "grik dolvathn susi romgla",
+  "sohrnina mnolvaimth taiam",
+  "avmtligemg mesn adivrmge",
+  "gailvarpimg taktastik upimg",
+  "iksaupia pediam naujnam gura",
+  "phti domdrvin kistrksaia",
+  "jmir kovail bhaina bmdomda",
+  "taumia blauamga andi kaia",
+  "cursinare phes smravegrdi"
+ ],
+ "seconds": 8.2,
+ "languages": [
+  "pa"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

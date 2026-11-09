@@ -1,0 +1,229 @@
+{
+ "name": "als",
+ "corpus_words": 80000,
+ "relaxed_rows": 9,
+ "relaxed_examples": [
+  "shq",
+  "zg",
+  "gjy",
+  "mj",
+  "tj",
+  "hj",
+  "eq",
+  "sj",
+  "aq"
+ ],
+ "segmented_words": 53178,
+ "skipped_words": 26822,
+ "middle_attested_fraction": 0.4796142578125,
+ "end32_attested_fraction": 0.444091796875,
+ "end16_attested_fraction": 0.6783854166666666,
+ "begin_attested": 128,
+ "chars": 26.65,
+ "max_chars": 34,
+ "consonant_runs_pct": 12.271,
+ "vowel_runs_pct": 0.477,
+ "english_words_pct": 1.51,
+ "own_words_pct": 26.621,
+ "offensive_whole_pct": 2.935,
+ "offensive_whole_english_list_pct": 0.095,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.205,
+ "offensive_severe_en_pct": 0.125,
+ "offensive_inside5_pct": 2.325,
+ "offensive_inside4_pct": 17.26,
+ "offensive_across_words_pct": 0.04,
+ "top_hits": [
+  [
+   "apara",
+   60,
+   [
+    "fi"
+   ],
+   [
+    "suvamapara tavoni lobujetuar",
+    "cantidin cardadnapara rojme"
+   ]
+  ],
+  [
+   "lort",
+   24,
+   [
+    "da"
+   ],
+   [
+    "rize zharrorate lort elikimi",
+    "adrova lort akujat turroi"
+   ]
+  ],
+  [
+   "seit",
+   24,
+   [
+    "te"
+   ],
+   [
+    "elemeteve rosi seit laptojme",
+    "fuan agonjtja seit impozuara"
+   ]
+  ],
+  [
+   "anale",
+   21,
+   [
+    "it"
+   ],
+   [
+    "jurizmin muhain hiti anale",
+    "anja anale prillrabimi miri"
+   ]
+  ],
+  [
+   "hora",
+   18,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "gjojne hora linte madrottale",
+    "feel pijme emllafelur hora"
+   ]
+  ],
+  [
+   "buzi",
+   18,
+   [
+    "hu"
+   ],
+   [
+    "rrta buzi zgjasionim bamist",
+    "sparelave buzi abojne rokasi"
+   ]
+  ],
+  [
+   "gote",
+   18,
+   [
+    "tr"
+   ],
+   [
+    "vokrotet autotrik krur gote",
+    "zese thoja kercolisur gote"
+   ]
+  ],
+  [
+   "koli",
+   17,
+   [
+    "kn"
+   ],
+   [
+    "takillojne koli endrojme paje",
+    "digjepat dure koli kartoje"
+   ]
+  ],
+  [
+   "sise",
+   17,
+   [
+    "hr"
+   ],
+   [
+    "fustrizova eric fani sise",
+    "fees pleqja sise madrevave"
+   ]
+  ],
+  [
+   "cena",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "cena soluam torudini fual",
+    "cena amelionet goroje drim"
+   ]
+  ],
+  [
+   "bite",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "dubrrtezave tomorane bite",
+    "moit gerbullekur arsh bite"
+   ]
+  ],
+  [
+   "perse",
+   17,
+   [
+    "et",
+    "fi"
+   ],
+   [
+    "propersen kikime proza maes",
+    "agjitari perse tije klease"
+   ]
+  ],
+  [
+   "pina",
+   16,
+   [
+    "hu"
+   ],
+   [
+    "kies citalin pina qemarjal",
+    "fela pina fenovojimit door"
+   ]
+  ],
+  [
+   "puta",
+   16,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "proza foinidhroni kire puta",
+    "puta trazionat raftifikaten"
+   ]
+  ],
+  [
+   "pute",
+   16,
+   [
+    "fr"
+   ],
+   [
+    "pute dake anne shanistaken",
+    "elon leet hukonspoor pute"
+   ]
+  ]
+ ],
+ "samples": [
+  "catite plore tina xhehtonte",
+  "arie kistra teorise cakesve",
+  "sonant prengton kesare bica",
+  "heat ekrokash rese celese",
+  "adulgjonte pilikollat doen",
+  "confokullet enit lodrokon",
+  "grupromila doceskat dyli",
+  "timbyejne orve veriti sija",
+  "koet eklediti biciumtorin",
+  "notuar burren mallon narrohen",
+  "dosteve zbationojne bola peres",
+  "kielloci kosi dedidaroni"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "als"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

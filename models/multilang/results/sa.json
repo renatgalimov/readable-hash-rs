@@ -1,0 +1,220 @@
+{
+ "name": "sa",
+ "corpus_words": 59001,
+ "relaxed_rows": 3,
+ "relaxed_examples": [
+  "sb",
+  "bu",
+  "eb"
+ ],
+ "segmented_words": 39806,
+ "skipped_words": 19195,
+ "middle_attested_fraction": 0.470458984375,
+ "end32_attested_fraction": 0.4666341145833333,
+ "end16_attested_fraction": 0.6802571614583334,
+ "begin_attested": 128,
+ "chars": 27.46,
+ "max_chars": 38,
+ "consonant_runs_pct": 41.645,
+ "vowel_runs_pct": 6.289,
+ "english_words_pct": 0.143,
+ "own_words_pct": 29.669,
+ "offensive_whole_pct": 1.37,
+ "offensive_whole_english_list_pct": 0.065,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.66,
+ "offensive_severe_en_pct": 0.095,
+ "offensive_inside5_pct": 1.635,
+ "offensive_inside4_pct": 16.235,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "rayam",
+   77,
+   [
+    "th"
+   ],
+   [
+    "tiprayam cith lipipriym mute",
+    "nvanktha guhyrayam tayvakrh"
+   ]
+  ],
+  [
+   "skan",
+   25,
+   [
+    "ml",
+    "uk"
+   ],
+   [
+    "isvrhitm klaptm skan pukm",
+    "skan tute kecitadrtyam udnh"
+   ]
+  ],
+  [
+   "vana",
+   22,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "jiven vana golkrnirat pncabhyam",
+    "phanam vana mdharopuraih sivm"
+   ]
+  ],
+  [
+   "cham",
+   20,
+   [
+    "vi"
+   ],
+   [
+    "kamrti vasirajanam cham kuph",
+    "vsaran buyoh cham mhapurskat"
+   ]
+  ],
+  [
+   "klam",
+   17,
+   [
+    "is"
+   ],
+   [
+    "klam atyasu tdditm vrnuyat",
+    "kiym klam smuh hrhysukrtvan"
+   ]
+  ],
+  [
+   "inat",
+   17,
+   [
+    "sq"
+   ],
+   [
+    "gntute inat kesrnm knodhsy",
+    "runtivarte sitm dasm inat"
+   ]
+  ],
+  [
+   "ayam",
+   16,
+   [
+    "id"
+   ],
+   [
+    "ayam yanayai runtmanen rasim",
+    "tnirev jnyimhebhyh ayam vray"
+   ]
+  ],
+  [
+   "chani",
+   16,
+   [
+    "zh"
+   ],
+   [
+    "chani kikayam nidm nragvikm",
+    "chani mnna upsmgren gorksnm"
+   ]
+  ],
+  [
+   "site",
+   15,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "site atyh ajgrhnm grikbhage",
+    "rtusjaih klindoh site knti"
+   ]
+  ],
+  [
+   "pranam",
+   14,
+   [
+    "th"
+   ],
+   [
+    "udnam devdrtren jalstu pranam",
+    "udhh pranam khsabhyam sdsykteh"
+   ]
+  ],
+  [
+   "rota",
+   14,
+   [
+    "ja"
+   ],
+   [
+    "rota tntrantmassy spaih brhmna",
+    "ptih skunmanh gnaryh rota"
+   ]
+  ],
+  [
+   "pansy",
+   14,
+   [
+    "en"
+   ],
+   [
+    "pansy buya mdharbdam shitan",
+    "tddessy disu gopritesu pansy"
+   ]
+  ],
+  [
+   "seksy",
+   13,
+   [
+    "hy"
+   ],
+   [
+    "svviseksy sonm nare brhmikesu",
+    "mule yukasu aste kthurseksy"
+   ]
+  ],
+  [
+   "phani",
+   13,
+   [
+    "ml"
+   ],
+   [
+    "spalunay smhitabhih phani rsyoh",
+    "pdah asvsagpulh pncah phani"
+   ]
+  ],
+  [
+   "gote",
+   13,
+   [
+    "tr"
+   ],
+   [
+    "atti gote nvodghay saksam",
+    "lomev punjntau gote calniym"
+   ]
+  ]
+ ],
+ "samples": [
+  "utkhaih pinam rtesu plavijne",
+  "bhuh cndnasu simayam utrtanam",
+  "yogsyh abhuday trjyet jnaih",
+  "gunm jystritm viya tdnuyat",
+  "brhmnihilm hirtivarah adsy",
+  "mthynyptibhyh sorm kiynsasnm",
+  "durgcchmaren adassthayam ssyte",
+  "rtarvmsti acya vamnah mudm",
+  "aseh jysaitan jnyiminvye",
+  "buat agcchanam saurat sbdyat",
+  "adanani tntuglabhyam ptanam smsy",
+  "cndisilisu asnsy svamithyah"
+ ],
+ "seconds": 8.8,
+ "languages": [
+  "sa"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

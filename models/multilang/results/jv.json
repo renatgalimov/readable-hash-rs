@@ -1,0 +1,230 @@
+{
+ "name": "jv",
+ "corpus_words": 48676,
+ "relaxed_rows": 2,
+ "relaxed_examples": [
+  "av",
+  "iv"
+ ],
+ "segmented_words": 30623,
+ "skipped_words": 18053,
+ "middle_attested_fraction": 0.473388671875,
+ "end32_attested_fraction": 0.396240234375,
+ "end16_attested_fraction": 0.6289876302083334,
+ "begin_attested": 128,
+ "chars": 26.07,
+ "max_chars": 34,
+ "consonant_runs_pct": 7.604,
+ "vowel_runs_pct": 2.902,
+ "english_words_pct": 1.507,
+ "own_words_pct": 27.54,
+ "offensive_whole_pct": 3.365,
+ "offensive_whole_english_list_pct": 0.16,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.49,
+ "offensive_severe_en_pct": 0.18,
+ "offensive_inside5_pct": 2.81,
+ "offensive_inside4_pct": 20.685,
+ "offensive_across_words_pct": 0.035,
+ "top_hits": [
+  [
+   "yarak",
+   28,
+   [
+    "tr"
+   ],
+   [
+    "imat bukamayaraken hans cina",
+    "scasi mambat penyit asyaraken"
+   ]
+  ],
+  [
+   "tusan",
+   27,
+   [
+    "sv"
+   ],
+   [
+    "siaran nututusan bomadi brir",
+    "huat houlfipun apiahatusan"
+   ]
+  ],
+  [
+   "sere",
+   24,
+   [
+    "hr",
+    "sk"
+   ],
+   [
+    "sere padehinipun palapan mbika",
+    "sere gumumpeming woopitake"
+   ]
+  ],
+  [
+   "stake",
+   22,
+   [
+    "sv"
+   ],
+   [
+    "elesidul kias kuruda stake",
+    "draselok stake atsiargepi"
+   ]
+  ],
+  [
+   "site",
+   21,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "unletakan site bikaan kode",
+    "palajesi filtiggepe site"
+   ]
+  ],
+  [
+   "chim",
+   21,
+   [
+    "th"
+   ],
+   [
+    "chim matinjian yaku vatral",
+    "adhentsaan bedhawor chim"
+   ]
+  ],
+  [
+   "pene",
+   19,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "hueskagers shat spra pene",
+    "pene potapuri cuat browen"
+   ]
+  ],
+  [
+   "sega",
+   19,
+   [
+    "it"
+   ],
+   [
+    "scroli pulukan criyer sega",
+    "kebencing sega gimbul dika"
+   ]
+  ],
+  [
+   "rini",
+   18,
+   [
+    "zh"
+   ],
+   [
+    "koot rini wewane hurambal",
+    "garifion rini dhra stacana"
+   ]
+  ],
+  [
+   "semen",
+   18,
+   [
+    "ca",
+    "cy",
+    "en",
+    "es",
+    "eu",
+    "gl",
+    "mt",
+    "pt",
+    "sr",
+    "uz"
+   ],
+   [
+    "albuke fossemenan pigujegi",
+    "khusadani lisemen suet mull"
+   ]
+  ],
+  [
+   "seni",
+   18,
+   [
+    "it"
+   ],
+   [
+    "pompat seni rohe adhishal",
+    "seni dukampul imer tuwahan"
+   ]
+  ],
+  [
+   "muna",
+   18,
+   [
+    "fi"
+   ],
+   [
+    "drikoloan muna eksplit pata",
+    "teman immileki muna prusen"
+   ]
+  ],
+  [
+   "inat",
+   18,
+   [
+    "sq"
+   ],
+   [
+    "layaran spipun shressia inat",
+    "elba noan seputhagian inat"
+   ]
+  ],
+  [
+   "giat",
+   17,
+   [
+    "vi"
+   ],
+   [
+    "hirmuwudasi giat priopelan",
+    "giat dehimbung himpuan kias"
+   ]
+  ],
+  [
+   "trio",
+   17,
+   [
+    "es"
+   ],
+   [
+    "lemplistulis imer trio dory",
+    "krikke jiajagati trio mobah"
+   ]
+  ]
+ ],
+ "samples": [
+  "wekasikan mruk jonge emliyana",
+  "paik plesna namaru wessil",
+  "unmaru gronake nyugal puake",
+  "boal klaparang saus kilona",
+  "duwuksing heemagmatan gear",
+  "frakasreni ciar shollosa",
+  "constramos gemimbar spipun",
+  "jontlangan noir sidani mbika",
+  "sues kloslone punjetnase",
+  "else tuturi nglasan crister",
+  "getinipun virgayana more kane",
+  "pliostai suji seduwunyar"
+ ],
+ "seconds": 8.3,
+ "languages": [
+  "jv"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,250 @@
+{
+ "name": "smi",
+ "corpus_words": 8704,
+ "relaxed_rows": 155,
+ "relaxed_examples": [
+  "fi",
+  "cu",
+  "fa",
+  "pr",
+  "po",
+  "oh",
+  "fy",
+  "hu",
+  "kr",
+  "ho",
+  "fu",
+  "fr"
+ ],
+ "segmented_words": 6470,
+ "skipped_words": 2234,
+ "middle_attested_fraction": 0.15702311197916666,
+ "end32_attested_fraction": 0.1129150390625,
+ "end16_attested_fraction": 0.219482421875,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.92,
+ "max_chars": 39,
+ "consonant_runs_pct": 13.37,
+ "vowel_runs_pct": 4.602,
+ "english_words_pct": 0.585,
+ "own_words_pct": 4.528,
+ "offensive_whole_pct": 3.115,
+ "offensive_whole_english_list_pct": 0.29,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.685,
+ "offensive_severe_en_pct": 0.085,
+ "offensive_inside5_pct": 2.18,
+ "offensive_inside4_pct": 14.02,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "vacca",
+   91,
+   [
+    "it"
+   ],
+   [
+    "giiterre klehku slegevaccat",
+    "klit hein unis hagovdavaccat"
+   ]
+  ],
+  [
+   "gadit",
+   68,
+   [
+    "ru"
+   ],
+   [
+    "gadit ressiid vazzosta avdit",
+    "agerejeaddji godit hoahku gadit"
+   ]
+  ],
+  [
+   "skit",
+   20,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "amogrussa brusgovaid skit",
+    "sloddertii skit asmuha evin"
+   ]
+  ],
+  [
+   "smut",
+   20,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "en",
+    "eu",
+    "gd",
+    "gl",
+    "is",
+    "la",
+    "lt",
+    "lv",
+    "ms",
+    "mt",
+    "my",
+    "sl",
+    "sr",
+    "sv",
+    "zu"
+   ],
+   [
+    "eada smut tundis ivilarai",
+    "paga smut vastat ilivdnin"
+   ]
+  ],
+  [
+   "cait",
+   20,
+   [
+    "gd"
+   ],
+   [
+    "cait ipen nain susirdindit",
+    "norsegat dudastodjit cait"
+   ]
+  ],
+  [
+   "akki",
+   19,
+   [
+    "et"
+   ],
+   [
+    "mega jieanus akki turrahkuid",
+    "juomearalas akki oseheasoasu"
+   ]
+  ],
+  [
+   "sait",
+   17,
+   [
+    "kn"
+   ],
+   [
+    "sait imis atrgggovet koas",
+    "fuen ameanemealis soat sait"
+   ]
+  ],
+  [
+   "faen",
+   17,
+   [
+    "no"
+   ],
+   [
+    "faen reat nostan orahallai",
+    "amelat okalaccin faen gevdit"
+   ]
+  ],
+  [
+   "guda",
+   17,
+   [
+    "hi",
+    "mr"
+   ],
+   [
+    "eintuvadjan guda nona osiid",
+    "pahttat bieaddji bangazat guda"
+   ]
+  ],
+  [
+   "kadit",
+   16,
+   [
+    "cs"
+   ],
+   [
+    "okadit ekahceguojit ansistan",
+    "ahceakadit kirereta eannus"
+   ]
+  ],
+  [
+   "made",
+   16,
+   [
+    "zh"
+   ],
+   [
+    "jahpuin made fraheami seresa",
+    "ciekttiid luha made suoiai"
+   ]
+  ],
+  [
+   "figa",
+   16,
+   [
+    "it",
+    "ru"
+   ],
+   [
+    "ipgodat figa sivina pljana",
+    "vilisseanis cies figa stit"
+   ]
+  ],
+  [
+   "nude",
+   16,
+   [
+    "en"
+   ],
+   [
+    "nude tergelii jagidan jean",
+    "adolaga nude prerejuvvon gulat"
+   ]
+  ],
+  [
+   "trut",
+   16,
+   [
+    "ru"
+   ],
+   [
+    "trut joar pessehit fugimait",
+    "latnii justahuvvui trut slan"
+   ]
+  ],
+  [
+   "pene",
+   15,
+   [
+    "es",
+    "gl",
+    "it",
+    "mt"
+   ],
+   [
+    "ringilmmodaga pene bevddahtat",
+    "jutnealii pene rievui rejit"
+   ]
+  ]
+ ],
+ "samples": [
+  "kagoat oita ivas kiikkordaga",
+  "gamiid elavat sturos kailen",
+  "teddui oddjis njimmiin fida",
+  "skal akaddavai sana nussis",
+  "orjalegi cessolihkat siri",
+  "torgimiera pade inadeaddui",
+  "faganimmeapmi siivazii iddit",
+  "ivojasteaddji evai alariin koan",
+  "late akagiikkiid fielaraskii",
+  "slut hattes guorii ihabeami",
+  "sirgui amanbealas seta vaga",
+  "elojabmin lajit gironalevat"
+ ],
+ "seconds": 8.9,
+ "languages": [
+  "smi"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

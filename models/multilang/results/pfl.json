@@ -1,0 +1,229 @@
+{
+ "name": "pfl",
+ "corpus_words": 9702,
+ "relaxed_rows": 301,
+ "relaxed_examples": [
+  "sc",
+  "ko",
+  "ve",
+  "uf",
+  "vo",
+  "iw",
+  "zu",
+  "bu",
+  "st",
+  "gl",
+  "ku",
+  "zw"
+ ],
+ "segmented_words": 6287,
+ "skipped_words": 3415,
+ "middle_attested_fraction": 0.14823404947916666,
+ "end32_attested_fraction": 0.12312825520833333,
+ "end16_attested_fraction": 0.23876953125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.14,
+ "max_chars": 37,
+ "consonant_runs_pct": 35.018,
+ "vowel_runs_pct": 2.589,
+ "english_words_pct": 1.476,
+ "own_words_pct": 11.976,
+ "offensive_whole_pct": 2.53,
+ "offensive_whole_english_list_pct": 0.335,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.095,
+ "offensive_severe_en_pct": 0.145,
+ "offensive_inside5_pct": 9.015,
+ "offensive_inside4_pct": 19.34,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "ische",
+   1218,
+   [
+    "de"
+   ],
+   [
+    "hier gfzirigg berch aarische",
+    "rinahrnische fliaminischer nare"
+   ]
+  ],
+  [
+   "arsch",
+   278,
+   [
+    "de"
+   ],
+   [
+    "sermschilsre adloor harschner",
+    "larschiche wuaschd gfsse umschlem"
+   ]
+  ],
+  [
+   "chich",
+   80,
+   [
+    "vi"
+   ],
+   [
+    "larschiche wuaschd gfsse umschlem",
+    "gamarschiche bsne heddma scer"
+   ]
+  ],
+  [
+   "chier",
+   64,
+   [
+    "fr"
+   ],
+   [
+    "tron ziewurch aggleorschiert",
+    "zweerschiert kleneibrich enge"
+   ]
+  ],
+  [
+   "ghat",
+   19,
+   [
+    "mr"
+   ],
+   [
+    "harzhafd ghat veung muzieflond",
+    "foristem ghat eifagschude"
+   ]
+  ],
+  [
+   "hane",
+   18,
+   [
+    "da"
+   ],
+   [
+    "lehral anasisch dename hane",
+    "hane gesahadd grendt muld"
+   ]
+  ],
+  [
+   "grud",
+   18,
+   [
+    "ru"
+   ],
+   [
+    "seje fremhrstus geht grud",
+    "gwsigodise grud jase fede"
+   ]
+  ],
+  [
+   "elle",
+   17,
+   [
+    "lv"
+   ],
+   [
+    "veloiwch elle zeildung wore",
+    "elle oren mendnisadz elld"
+   ]
+  ],
+  [
+   "here",
+   17,
+   [
+    "hu"
+   ],
+   [
+    "here ghen heagschnschd unehad",
+    "voen here flan giinsgnsung"
+   ]
+  ],
+  [
+   "lund",
+   17,
+   [
+    "hi"
+   ],
+   [
+    "lund suem rhraum jenudamm",
+    "zins lund zaddes adeirschnd"
+   ]
+  ],
+  [
+   "vang",
+   17,
+   [
+    "mk",
+    "sr",
+    "uz"
+   ],
+   [
+    "vang gsaad mare garohnewam",
+    "folann vang funarn donare"
+   ]
+  ],
+  [
+   "hure",
+   16,
+   [
+    "de"
+   ],
+   [
+    "sclambll zerrabahall hure",
+    "hure aihrstgger ausdinga"
+   ]
+  ],
+  [
+   "sise",
+   16,
+   [
+    "hr"
+   ],
+   [
+    "zins porozinge ortsach sise",
+    "krafd tigene sise koithrung"
+   ]
+  ],
+  [
+   "dran",
+   16,
+   [
+    "pl"
+   ],
+   [
+    "dran inginn arch fodaandisch",
+    "zuaide dran laid inaumeschd"
+   ]
+  ],
+  [
+   "sait",
+   16,
+   [
+    "kn"
+   ],
+   [
+    "sischbad drigschaffd sait valisch",
+    "osindt sait bschdamere jaad"
+   ]
+  ]
+ ],
+ "samples": [
+  "kimide earn esisch ehehrach",
+  "warn orrije medaaft kirles",
+  "elsede klonse breflond iwes",
+  "hier gfzirigg berch aarische",
+  "rinahrnische fliaminischer nare",
+  "eiwaasigal kure umfarone",
+  "diallimasche narimeld peld",
+  "esehaane foung dannem kees",
+  "rege gffoggle iwddluaser",
+  "ghne fasslisch vabire giesssse",
+  "narwre jaahmole vode geld",
+  "ormelall rend weibulggde"
+ ],
+ "seconds": 9.2,
+ "languages": [
+  "pfl"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

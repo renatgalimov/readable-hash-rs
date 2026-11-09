@@ -1,0 +1,240 @@
+{
+ "name": "izh",
+ "corpus_words": 80000,
+ "relaxed_rows": 21,
+ "relaxed_examples": [
+  "jy",
+  "cu",
+  "fu",
+  "be",
+  "de",
+  "fl",
+  "fe",
+  "eg",
+  "eu",
+  "iy",
+  "by",
+  "cl"
+ ],
+ "segmented_words": 67692,
+ "skipped_words": 12308,
+ "middle_attested_fraction": 0.20133463541666666,
+ "end32_attested_fraction": 0.3960774739583333,
+ "end16_attested_fraction": 0.552001953125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 29.89,
+ "max_chars": 41,
+ "consonant_runs_pct": 3.281,
+ "vowel_runs_pct": 5.15,
+ "english_words_pct": 1.531,
+ "own_words_pct": 12.09,
+ "offensive_whole_pct": 1.24,
+ "offensive_whole_english_list_pct": 0.165,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.905,
+ "offensive_severe_en_pct": 0.215,
+ "offensive_inside5_pct": 4.585,
+ "offensive_inside4_pct": 26.345,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "tetta",
+   353,
+   [
+    "it"
+   ],
+   [
+    "antettais bohtamast keltaks fuks",
+    "koloja jaotettaist klulahahimma"
+   ]
+  ],
+  [
+   "panna",
+   78,
+   [
+    "fi"
+   ],
+   [
+    "mimailt ihelanjaisiit dvpanna",
+    "kirvompanna amees grees blan"
+   ]
+  ],
+  [
+   "kutta",
+   44,
+   [
+    "hi"
+   ],
+   [
+    "hanhorees evijokuttava clta",
+    "hoilt hielle akille iekkuttaastane"
+   ]
+  ],
+  [
+   "palle",
+   35,
+   [
+    "it"
+   ],
+   [
+    "kiilt jyrratahynt iilapalle",
+    "agast kret hepalle aduimiloilt"
+   ]
+  ],
+  [
+   "somas",
+   35,
+   [
+    "lv"
+   ],
+   [
+    "matiturana iesomast glihmast",
+    "aseta ignt getuuisomast iyint"
+   ]
+  ],
+  [
+   "kukko",
+   34,
+   [
+    "fi"
+   ],
+   [
+    "ivokuskuloilt bakukkoisenna flilt",
+    "israhtamista irkukkont igtiist"
+   ]
+  ],
+  [
+   "aarik",
+   33,
+   [
+    "et"
+   ],
+   [
+    "gaariks erojevniis duumiin",
+    "gaariks ijuisit grint impaat"
+   ]
+  ],
+  [
+   "teta",
+   24,
+   [
+    "es"
+   ],
+   [
+    "teta aftistaa penaeiniis",
+    "vesotukiloiks flia teta djaks"
+   ]
+  ],
+  [
+   "balle",
+   21,
+   [
+    "de",
+    "it"
+   ],
+   [
+    "hyviil jyraballe apiis djautta",
+    "ekskolemmiin evajottannoo balle"
+   ]
+  ],
+  [
+   "holle",
+   20,
+   [
+    "de"
+   ],
+   [
+    "jeleille cinaen astelemma holle",
+    "holle hakkasaal keskaisin gist"
+   ]
+  ],
+  [
+   "hamma",
+   17,
+   [
+    "sv"
+   ],
+   [
+    "amunkippaist caan ahamma adat",
+    "ahamma dorvahti atoin iasiva"
+   ]
+  ],
+  [
+   "kunt",
+   17,
+   [
+    "en"
+   ],
+   [
+    "gulittatoloint vooist kunt aata",
+    "auille kunt eetiloille sottaroon"
+   ]
+  ],
+  [
+   "mees",
+   16,
+   [
+    "nl"
+   ],
+   [
+    "voille mees osnatuen jotioin",
+    "djelt mees kikoilt mometeltu"
+   ]
+  ],
+  [
+   "folle",
+   16,
+   [
+    "fr"
+   ],
+   [
+    "hylaisenna arpanna folle igjalt",
+    "iariloinna folle giammeint kuiks"
+   ]
+  ],
+  [
+   "cunt",
+   16,
+   [
+    "cs",
+    "cy",
+    "en",
+    "eu",
+    "gd",
+    "is",
+    "la",
+    "lv",
+    "mn",
+    "mt",
+    "my",
+    "pl",
+    "zu"
+   ],
+   [
+    "ehukominyt cunt baist arelle",
+    "mulauttu palija cunt mailt"
+   ]
+  ]
+ ],
+ "samples": [
+  "doijat sanna tiinna simerren",
+  "hieta fioksent ahkeoille dorjon",
+  "ieteltii certiks hynoille atta",
+  "gaist beliaisees koloille iatilt",
+  "ijavomees ekotelekilt inist",
+  "sokukuskisimma gemast diritamia",
+  "epassokskioist inertanut lata",
+  "tikeppinna claa jutelen ikiks",
+  "heloja beomonnemma attuimijoille",
+  "coan ammeeks kiusii osaraks",
+  "inkkaast igkamiloilt caille haist",
+  "fiijulelle heisivat jatkuuerille"
+ ],
+ "seconds": 11.4,
+ "languages": [
+  "izh"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

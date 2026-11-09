@@ -1,0 +1,238 @@
+{
+ "name": "arz",
+ "corpus_words": 45999,
+ "relaxed_rows": 19,
+ "relaxed_examples": [
+  "lg",
+  "mj",
+  "sp",
+  "ov",
+  "av",
+  "nc",
+  "ev",
+  "iv",
+  "ug",
+  "sp",
+  "og",
+  "lg"
+ ],
+ "segmented_words": 22031,
+ "skipped_words": 23968,
+ "middle_attested_fraction": 0.3108723958333333,
+ "end32_attested_fraction": 0.376708984375,
+ "end16_attested_fraction": 0.600830078125,
+ "begin_attested": 128,
+ "chars": 25.44,
+ "max_chars": 30,
+ "consonant_runs_pct": 41.157,
+ "vowel_runs_pct": 2.74,
+ "english_words_pct": 0.281,
+ "own_words_pct": 29.4,
+ "offensive_whole_pct": 1.0,
+ "offensive_whole_english_list_pct": 0.175,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.27,
+ "offensive_severe_en_pct": 0.09,
+ "offensive_inside5_pct": 1.19,
+ "offensive_inside4_pct": 8.6,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "ablah",
+   39,
+   [
+    "uz"
+   ],
+   [
+    "sbbistah khablah itwadyyn",
+    "jihryn jrablah twliyl tylh"
+   ]
+  ],
+  [
+   "cona",
+   19,
+   [
+    "pt"
+   ],
+   [
+    "iskn drhiyr cona miharyth",
+    "cona yidaqtstyh rynyh btar"
+   ]
+  ],
+  [
+   "shit",
+   18,
+   [
+    "da",
+    "en",
+    "gd",
+    "hy",
+    "mt",
+    "my",
+    "nl",
+    "no",
+    "sk",
+    "uz",
+    "zu"
+   ],
+   [
+    "shit hywsal ltuhsand lghwa",
+    "hmayhiyl blyr wtlylh shit"
+   ]
+  ],
+  [
+   "pano",
+   18,
+   [
+    "fi"
+   ],
+   [
+    "pano nawr yasistyn pannon",
+    "dwlibah dayr pano pendisiyn"
+   ]
+  ],
+  [
+   "ashy",
+   17,
+   [
+    "kn"
+   ],
+   [
+    "ashy katorah yshylh mlhuwh",
+    "mitqtindsa ashy asil lhaq"
+   ]
+  ],
+  [
+   "damn",
+   17,
+   [
+    "cy",
+    "en",
+    "gd"
+   ],
+   [
+    "lkuwmisah twym damn ywamar",
+    "damn dhaliy tynh fwzystyk"
+   ]
+  ],
+  [
+   "hmar",
+   15,
+   [
+    "mt"
+   ],
+   [
+    "hmar tuwk yintyn drabrshn",
+    "stiy arnormwn hmar slovrah"
+   ]
+  ],
+  [
+   "marah",
+   15,
+   [
+    "ms"
+   ],
+   [
+    "marah kisiyn wrishiyah subh",
+    "lsabbiyl hmsyrswjns marah"
+   ]
+  ],
+  [
+   "kisa",
+   13,
+   [
+    "is"
+   ],
+   [
+    "twtydywfyyn ghniy bynh kisa",
+    "yiston tuth kisa morfnyyn"
+   ]
+  ],
+  [
+   "muna",
+   12,
+   [
+    "fi"
+   ],
+   [
+    "laysytryh muna ljhilyhtyh",
+    "wtna lqirntskit lkla muna"
+   ]
+  ],
+  [
+   "hard",
+   12,
+   [
+    "sv"
+   ],
+   [
+    "hard triyabab lqatiyhdwd",
+    "skliyl hard hitmakah rwyl"
+   ]
+  ],
+  [
+   "qiyah",
+   11,
+   [
+    "tlh"
+   ],
+   [
+    "suwdsariyf lkna lbalqiyah",
+    "lghwra lihqiyah bwmintyr mwsa"
+   ]
+  ],
+  [
+   "cait",
+   11,
+   [
+    "gd"
+   ],
+   [
+    "lkadhjhdwn cait arhtanab",
+    "ashtryfwdah cait wlah tuwl"
+   ]
+  ],
+  [
+   "qarn",
+   10,
+   [
+    "mt"
+   ],
+   [
+    "kwaftiy yakhadiyn qarn ltyn",
+    "qarn twamis chevdilah ljlah"
+   ]
+  ],
+  [
+   "pele",
+   9,
+   [
+    "hu"
+   ],
+   [
+    "pele lzar slwatriyn bensaa",
+    "iniy ltamuralit pele mhyd"
+   ]
+  ]
+ ],
+ "samples": [
+  "dywsht patiy tury mlnicino",
+  "shid nwhidah lnashwn dyalam",
+  "dragir jrakil lrajih nawn",
+  "swyn hrsister lsdah raqabd",
+  "jywnaryah klafryjwna kwyt",
+  "fwdihdnsib mhiy hwadiska",
+  "trynstorar kwfyanaa skar",
+  "tulbriyh tylh tabart kawn",
+  "lkta hrnihyla nafinduwqah",
+  "berh wlyrka lhadir ntwynw",
+  "kwaftiy yakhadiyn qarn ltyn",
+  "nwaqsuhr lkyh titfwrhyyn"
+ ],
+ "seconds": 7.9,
+ "languages": [
+  "arz"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

@@ -1,0 +1,259 @@
+{
+ "name": "af",
+ "corpus_words": 80000,
+ "relaxed_rows": 30,
+ "relaxed_examples": [
+  "sc",
+  "my",
+  "sj",
+  "vy",
+  "wh",
+  "az",
+  "fy",
+  "ov",
+  "qu",
+  "bh",
+  "mc",
+  "aj"
+ ],
+ "segmented_words": 54745,
+ "skipped_words": 25255,
+ "middle_attested_fraction": 0.6203206380208334,
+ "end32_attested_fraction": 0.3330078125,
+ "end16_attested_fraction": 0.5467936197916666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.11,
+ "max_chars": 36,
+ "consonant_runs_pct": 12.576,
+ "vowel_runs_pct": 5.27,
+ "english_words_pct": 2.582,
+ "own_words_pct": 19.815,
+ "offensive_whole_pct": 2.1,
+ "offensive_whole_english_list_pct": 0.43,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.16,
+ "offensive_severe_en_pct": 0.315,
+ "offensive_inside5_pct": 2.61,
+ "offensive_inside4_pct": 17.73,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "anale",
+   28,
+   [
+    "it"
+   ],
+   [
+    "alanale chies atag normlede",
+    "tasse meedae dana wildanale"
+   ]
+  ],
+  [
+   "anaal",
+   25,
+   [
+    "nl"
+   ],
+   [
+    "joanaal lote minieuning flaal",
+    "afroidre lawe baanaal uine"
+   ]
+  ],
+  [
+   "bile",
+   20,
+   [
+    "ro"
+   ],
+   [
+    "amasvlodde eede eerder bile",
+    "applys vrentotting bile eleer"
+   ]
+  ],
+  [
+   "veres",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "taveres arroen asgaste oring",
+    "omkediveres daanskuur elig"
+   ]
+  ],
+  [
+   "ases",
+   18,
+   [
+    "cy"
+   ],
+   [
+    "duroidmaas ases mase wytjie",
+    "doding witgre opgewiese ases"
+   ]
+  ],
+  [
+   "sise",
+   17,
+   [
+    "hr"
+   ],
+   [
+    "aspade sise oong byvorsste",
+    "wytoetaal kommansvelle sise"
+   ]
+  ],
+  [
+   "hure",
+   17,
+   [
+    "de"
+   ],
+   [
+    "prat kide hure monningsmanne",
+    "arie woekplys hure plilige"
+   ]
+  ],
+  [
+   "bite",
+   17,
+   [
+    "fr"
+   ],
+   [
+    "bite hoet reik aterokanraging",
+    "bydrale bite flouler boeste"
+   ]
+  ],
+  [
+   "kike",
+   17,
+   [
+    "en"
+   ],
+   [
+    "setel tekskasie booring kike",
+    "kike grysies sambia koffens"
+   ]
+  ],
+  [
+   "fode",
+   17,
+   [
+    "gl",
+    "pt"
+   ],
+   [
+    "asel bikoning fode kemporeer",
+    "sakie fode onuitmoene moordings"
+   ]
+  ],
+  [
+   "pekel",
+   16,
+   [
+    "sl"
+   ],
+   [
+    "ekne foutbeamens pekel hark",
+    "naweegende pekel tiemaak bone"
+   ]
+  ],
+  [
+   "pisse",
+   16,
+   [
+    "fr"
+   ],
+   [
+    "ruisne grinklikhede pissese",
+    "freelbeer inkopisseers wake"
+   ]
+  ],
+  [
+   "hore",
+   16,
+   [
+    "be",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "hr",
+    "hu",
+    "id",
+    "is",
+    "it",
+    "la",
+    "lv",
+    "mr",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk"
+   ],
+   [
+    "hore snare eenvruering goewese",
+    "omverdine hore amheid fikosse"
+   ]
+  ],
+  [
+   "flis",
+   16,
+   [
+    "da"
+   ],
+   [
+    "velle luskeuneer flis alke",
+    "flis opheeping oombia grak"
+   ]
+  ],
+  [
+   "tate",
+   16,
+   [
+    "ro"
+   ],
+   [
+    "tate swaai tokkarlakte kros",
+    "tartman tonder johaemming tate"
+   ]
+  ]
+ ],
+ "samples": [
+  "poppot rias nues coolligte",
+  "bart vlampie vollewe posvring",
+  "duimig kubaas teepers prad",
+  "bres gasdaard gelike ligstig",
+  "dangskis susaarmaal mese",
+  "tukkateleer kieer omdromes",
+  "middrahage meenhang foring",
+  "nuspersende byke aghond sers",
+  "koon garaelium progbedons",
+  "rues toonere bittis knaltjie",
+  "mengbaar charnand naak after",
+  "vlasslarm koot aannehikels"
+ ],
+ "seconds": 11.1,
+ "languages": [
+  "af"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

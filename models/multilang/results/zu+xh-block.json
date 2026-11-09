@@ -1,0 +1,232 @@
+{
+ "name": "zu+xh-block",
+ "corpus_words": 58258,
+ "relaxed_rows": 9,
+ "relaxed_examples": [
+  "au",
+  "sc",
+  "nh",
+  "ju",
+  "ua",
+  "vo",
+  "ru",
+  "cu",
+  "nh"
+ ],
+ "banned_pairs": 2399,
+ "segmented_words": 45577,
+ "skipped_words": 12681,
+ "middle_attested_fraction": 0.4214680989583333,
+ "end32_attested_fraction": 0.30712890625,
+ "end16_attested_fraction": 0.5152994791666666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "three_token_rounds": [
+  572,
+  328,
+  188,
+  94
+ ],
+ "chars": 28.64,
+ "max_chars": 36,
+ "consonant_runs_pct": 6.878,
+ "vowel_runs_pct": 10.949,
+ "english_words_pct": 0.365,
+ "own_words_pct": 18.014,
+ "offensive_whole_pct": 0.39,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 1.33,
+ "offensive_inside4_pct": 18.905,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "ezeli",
+   32,
+   [
+    "lv"
+   ],
+   [
+    "acimka uyente ahubenzezeli",
+    "amka ufezeli ayethayo anolile"
+   ]
+  ],
+  [
+   "pheni",
+   26,
+   [
+    "mr"
+   ],
+   [
+    "imthuholo imeka kwepheni elle",
+    "ulle amsa yamukela ecashipheni"
+   ]
+  ],
+  [
+   "hlang",
+   20,
+   [
+    "th"
+   ],
+   [
+    "thwahlangatha woyise ehombisa",
+    "umhlangu ateka lufumeya ilaka"
+   ]
+  ],
+  [
+   "olla",
+   19,
+   [
+    "sv"
+   ],
+   [
+    "koni ezobuthe etingise olla",
+    "olla phincenqala sozi bekwazi"
+   ]
+  ],
+  [
+   "bulal",
+   17,
+   [
+    "ko"
+   ],
+   [
+    "eficutheke ifiso upenemibulala",
+    "udile iviwe ufinyoseni kubulala"
+   ]
+  ],
+  [
+   "elle",
+   15,
+   [
+    "lv"
+   ],
+   [
+    "imthuholo imeka kwepheni elle",
+    "benabuye elle obekise obho"
+   ]
+  ],
+  [
+   "seme",
+   14,
+   [
+    "sl"
+   ],
+   [
+    "seme sizigizimni uvimodini",
+    "ntaka usebenzebane seme salawe"
+   ]
+  ],
+  [
+   "kale",
+   13,
+   [
+    "lt"
+   ],
+   [
+    "kale aqhiwa otonzane ozeni",
+    "uzwesadize oqela kale uzelwe"
+   ]
+  ],
+  [
+   "dambi",
+   11,
+   [
+    "uk"
+   ],
+   [
+    "ufudambithi uqashushali koka",
+    "alela mbibishwe bendudambisana"
+   ]
+  ],
+  [
+   "tanga",
+   11,
+   [
+    "fil"
+   ],
+   [
+    "avotiko uyiqali wumtanga saye",
+    "ukele ayenzunayo oyimicetanga"
+   ]
+  ],
+  [
+   "kaka",
+   10,
+   [
+    "eu"
+   ],
+   [
+    "liqhiswa kaka enayo ecaphomelo",
+    "iqela akaviviswa kaka odemali"
+   ]
+  ],
+  [
+   "kanen",
+   9,
+   [
+    "nl"
+   ],
+   [
+    "lwabeengazi elinwa kanenqobo",
+    "eqhutyelele ekaneni avane sami"
+   ]
+  ],
+  [
+   "khokh",
+   8,
+   [
+    "mn"
+   ],
+   [
+    "ifama opapikhokha iibo alle",
+    "nenjiwe okufenza acemikhokha"
+   ]
+  ],
+  [
+   "hanen",
+   8,
+   [
+    "nl"
+   ],
+   [
+    "isiko sibhanendlela uxeli yaye",
+    "ecile ulililo iide ihanenkela"
+   ]
+  ],
+  [
+   "balen",
+   7,
+   [
+    "nl"
+   ],
+   [
+    "lwabaleni anwa wombethu acalo",
+    "yikusa ulabaleni izokozobise"
+   ]
+  ]
+ ],
+ "samples": [
+  "ikwila efeli mbatha opotyika",
+  "kweka athandane yomkala ikuhenza",
+  "ecaphiswa buhanda iseshwa zeke",
+  "asele ahaphazeka ukayo ongoza",
+  "upapesielwa iyizenzokuze emele",
+  "uqhomnyinge ilile equkahlela",
+  "ebonwatshayo emafesizwe wuha",
+  "mbetokuze khisa umange akenzi",
+  "wahe ahuphantla zenhlukokuka",
+  "idana lenkani sikhetho nkweneni",
+  "emphulo awakiyeli oletha kuwe",
+  "atabhekeli wada bathemsebenzini"
+ ],
+ "seconds": 304.4,
+ "languages": [
+  "zu",
+  "xh"
+ ],
+ "no_english": false,
+ "blocklist": true
+}

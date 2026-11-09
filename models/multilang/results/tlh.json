@@ -1,0 +1,268 @@
+{
+ "name": "tlh",
+ "corpus_words": 8716,
+ "relaxed_rows": 457,
+ "relaxed_examples": [
+  "qo",
+  "tl",
+  "qu",
+  "me",
+  "lo",
+  "mi",
+  "pe",
+  "ni",
+  "si",
+  "pu",
+  "ve",
+  "se"
+ ],
+ "segmented_words": 5849,
+ "skipped_words": 2867,
+ "middle_attested_fraction": 0.06620279947916667,
+ "end32_attested_fraction": 0.12312825520833333,
+ "end16_attested_fraction": 0.23885091145833334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.88,
+ "max_chars": 38,
+ "consonant_runs_pct": 36.287,
+ "vowel_runs_pct": 2.894,
+ "english_words_pct": 0.283,
+ "own_words_pct": 14.709,
+ "offensive_whole_pct": 0.295,
+ "offensive_whole_english_list_pct": 0.065,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.115,
+ "offensive_severe_en_pct": 0.025,
+ "offensive_inside5_pct": 0.73,
+ "offensive_inside4_pct": 7.515,
+ "offensive_across_words_pct": 0.035,
+ "top_hits": [
+  [
+   "chich",
+   15,
+   [
+    "vi"
+   ],
+   [
+    "obelslitlhlah iqvam qehqu chich",
+    "chich hiri enqalmpu oqonob"
+   ]
+  ],
+  [
+   "monta",
+   13,
+   [
+    "it"
+   ],
+   [
+    "duho aghnes yuaj lismonta",
+    "entlh meslsmonta iwij betah"
+   ]
+  ],
+  [
+   "wang",
+   12,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "gd",
+    "gl",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "ko",
+    "la",
+    "lt",
+    "lv",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "zu"
+   ],
+   [
+    "wang jeamvad iqdaq qujmsdmeh",
+    "wandovitlhvam oqmoh tequ wang"
+   ]
+  ],
+  [
+   "cham",
+   12,
+   [
+    "vi"
+   ],
+   [
+    "cham iqinuvah ecgh imovlu",
+    "roma mutotah cham nengaqmtah"
+   ]
+  ],
+  [
+   "jebe",
+   11,
+   [
+    "sl"
+   ],
+   [
+    "jebe ebqalah bosmij eqslgh",
+    "jebe ojpu wenejatlhqa utyang"
+   ]
+  ],
+  [
+   "marha",
+   11,
+   [
+    "hu"
+   ],
+   [
+    "obadchu heldmeh dillomarha",
+    "aqrajtah lostineh wulmarha"
+   ]
+  ],
+  [
+   "marah",
+   10,
+   [
+    "ms"
+   ],
+   [
+    "tihujbe wihejmarah perghqa",
+    "qenthbe armmarah beqaslnis"
+   ]
+  ],
+  [
+   "jiba",
+   10,
+   [
+    "zh"
+   ],
+   [
+    "jiba jaqwenovbogh toij joqtah",
+    "tera moqtmohbogh ebuqdaj jiba"
+   ]
+  ],
+  [
+   "ablah",
+   6,
+   [
+    "uz"
+   ],
+   [
+    "mohbogh opyablah urdaq tosmwi",
+    "omuqivontlh jeqmlah yablah"
+   ]
+  ],
+  [
+   "bosta",
+   6,
+   [
+    "pt"
+   ],
+   [
+    "divuamaw aduqalqu bostan",
+    "adabostah ropbe obqayivoqpu"
+   ]
+  ],
+  [
+   "palli",
+   5,
+   [
+    "fi"
+   ],
+   [
+    "vidisopchu tamdaq epallij onch",
+    "jojmsopallij anteslav astah"
+   ]
+  ],
+  [
+   "helah",
+   5,
+   [
+    "ms"
+   ],
+   [
+    "emitlhelah lijlah tomoaleghta",
+    "ugitlhelah ohomomwi mirinis"
+   ]
+  ],
+  [
+   "bamba",
+   4,
+   [
+    "zu"
+   ],
+   [
+    "ameqlu endaq bambarij najtah",
+    "epuqutlhbe ogalngan bambalqu"
+   ]
+  ],
+  [
+   "polla",
+   4,
+   [
+    "ca",
+    "es"
+   ],
+   [
+    "uradaj chap imsich pollaw",
+    "ngheghjaj pollah qotlh ghurwi"
+   ]
+  ],
+  [
+   "domme",
+   4,
+   [
+    "en"
+   ],
+   [
+    "utjatlhipwi eqwi adommeh meli",
+    "otomambe hingmey edommeylah"
+   ]
+  ]
+ ],
+ "samples": [
+  "linobij eptlh odtah asriosmoh",
+  "luhlah ecqahbe dujlwi linltlh",
+  "utaddaq woojlahbe qeptqu hejpu",
+  "dehbe joamalwi bihlaw yanlqu",
+  "irslarng ruamaswahnis pargh",
+  "aqobsmabqu yuha ijjmosov",
+  "ratlhpaqdlu palegarha ogaj",
+  "odqlslav alij qubmoh tivbe",
+  "mujdaq jolmmmajdaq hestojomdaj",
+  "eqnis hatlhlu qavoah iwqameh",
+  "paldbe itjatlhanaj puvbe chaj",
+  "ecarovey mujbe viqoqarlan"
+ ],
+ "seconds": 9.3,
+ "languages": [
+  "tlh"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

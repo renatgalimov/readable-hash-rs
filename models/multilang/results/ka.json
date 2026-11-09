@@ -1,0 +1,247 @@
+{
+ "name": "ka",
+ "corpus_words": 80000,
+ "relaxed_rows": 13,
+ "relaxed_examples": [
+  "mk",
+  "ac",
+  "sg",
+  "zg",
+  "ju",
+  "mm",
+  "jg",
+  "oj",
+  "uj",
+  "uc",
+  "rc",
+  "zg"
+ ],
+ "segmented_words": 53380,
+ "skipped_words": 26620,
+ "middle_attested_fraction": 0.4433186848958333,
+ "end32_attested_fraction": 0.3939208984375,
+ "end16_attested_fraction": 0.5824381510416666,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.32,
+ "max_chars": 38,
+ "consonant_runs_pct": 25.032,
+ "vowel_runs_pct": 2.763,
+ "english_words_pct": 0.425,
+ "own_words_pct": 18.637,
+ "offensive_whole_pct": 1.52,
+ "offensive_whole_english_list_pct": 0.085,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.555,
+ "offensive_severe_en_pct": 0.1,
+ "offensive_inside5_pct": 1.585,
+ "offensive_inside4_pct": 15.525,
+ "offensive_across_words_pct": 0.06,
+ "top_hits": [
+  [
+   "anita",
+   27,
+   [
+    "nl"
+   ],
+   [
+    "anita alumblebs almasisa gema",
+    "anita niobinagtm puakheneba"
+   ]
+  ],
+  [
+   "nima",
+   22,
+   [
+    "zh"
+   ],
+   [
+    "ghmelma osobdnen nima mkloeba",
+    "pirdilni nima idsa tenastan"
+   ]
+  ],
+  [
+   "alla",
+   22,
+   [
+    "mt"
+   ],
+   [
+    "abes alla ideubris oradebs",
+    "aidashi hambrebit alla eams"
+   ]
+  ],
+  [
+   "shits",
+   19,
+   [
+    "cs",
+    "el",
+    "en",
+    "et",
+    "eu",
+    "fa",
+    "gd",
+    "lt",
+    "lv",
+    "ml",
+    "mr",
+    "mt",
+    "sq",
+    "sv",
+    "th",
+    "uk",
+    "uz",
+    "zu"
+   ],
+   [
+    "umskhvelebis msakhshits empidan",
+    "melia mremaze vegeshits pilis"
+   ]
+  ],
+  [
+   "dada",
+   18,
+   [
+    "id"
+   ],
+   [
+    "riis ybaeelebtan dada skoves",
+    "mizaba mzebze dada ganssisebr"
+   ]
+  ],
+  [
+   "kunt",
+   16,
+   [
+    "en"
+   ],
+   [
+    "ybls kunt raet sighvndzos",
+    "vels yrgvelebs skovda kunt"
+   ]
+  ],
+  [
+   "grdi",
+   16,
+   [
+    "bg"
+   ],
+   [
+    "gols grdi umdilebmeba alit",
+    "grdi isurgiuri vilsia kalt"
+   ]
+  ],
+  [
+   "rima",
+   16,
+   [
+    "la"
+   ],
+   [
+    "rima shebs ermoeblad malasa",
+    "utraelburi soga idia rima"
+   ]
+  ],
+  [
+   "sait",
+   15,
+   [
+    "kn"
+   ],
+   [
+    "dzaghanit tedashi usra sait",
+    "hanghi mani sait ghlebamoidan"
+   ]
+  ],
+  [
+   "kusi",
+   14,
+   [
+    "et",
+    "fi"
+   ],
+   [
+    "urebs rublursa kusi abelit",
+    "dozhlyma mreli itskhlit kusi"
+   ]
+  ],
+  [
+   "pisi",
+   13,
+   [
+    "hu"
+   ],
+   [
+    "evlita pisi khalsats pead",
+    "nalis demedrones pisi esta"
+   ]
+  ],
+  [
+   "sega",
+   13,
+   [
+    "it"
+   ],
+   [
+    "suprinad maimebtan imli sega",
+    "oynvda esauskhit sega iaro"
+   ]
+  ],
+  [
+   "hora",
+   12,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "khevia osny evnvnaze hora",
+    "hora kalt gvadzshvilia khmare"
+   ]
+  ],
+  [
+   "hori",
+   12,
+   [
+    "ms"
+   ],
+   [
+    "dozhisbovi hesi nena hori",
+    "abrevemare psebs barv hori"
+   ]
+  ],
+  [
+   "galo",
+   12,
+   [
+    "gl",
+    "pt"
+   ],
+   [
+    "galo lolebgashi olze ikhuas",
+    "aeny akvistvis galo kveidzit"
+   ]
+  ]
+ ],
+ "samples": [
+  "soprara ures zars kuskhebia",
+  "alni oligebis apalidan solzeba",
+  "gloridan grosadmi mtshvilit piit",
+  "gvra elmonistvis amzh mdziit",
+  "enisaazno tvagreshebi kani",
+  "etsadiatsidan mkes nebdnelta",
+  "suralebrerma kansalshi atni",
+  "zaidzata aves mitsma gema",
+  "akaze ellebgaar piziloanaa",
+  "ruze ghoneli samsistvis nvinda",
+  "kantzh ajigulebtan dios gaia",
+  "oldusuet akma andzghvelebs"
+ ],
+ "seconds": 10.8,
+ "languages": [
+  "ka"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

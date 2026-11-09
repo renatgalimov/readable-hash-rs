@@ -1,0 +1,229 @@
+{
+ "name": "fi-noen",
+ "corpus_words": 80000,
+ "relaxed_rows": 29,
+ "relaxed_examples": [
+  "mc",
+  "sc",
+  "wo",
+  "fu",
+  "za",
+  "ze",
+  "fy",
+  "wh",
+  "cu",
+  "tw",
+  "kn",
+  "sw"
+ ],
+ "segmented_words": 62608,
+ "skipped_words": 17392,
+ "middle_attested_fraction": 0.415283203125,
+ "end32_attested_fraction": 0.4408772786458333,
+ "end16_attested_fraction": 0.62939453125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.21,
+ "max_chars": 37,
+ "consonant_runs_pct": 1.969,
+ "vowel_runs_pct": 4.864,
+ "english_words_pct": 0.426,
+ "own_words_pct": 20.709,
+ "offensive_whole_pct": 1.895,
+ "offensive_whole_english_list_pct": 0.145,
+ "offensive_whole_own_list_pct": 0.095,
+ "offensive_whole_major_lists_pct": 0.845,
+ "offensive_severe_en_pct": 0.105,
+ "offensive_inside5_pct": 4.18,
+ "offensive_inside4_pct": 24.295,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "pissa",
+   112,
+   [
+    "is"
+   ],
+   [
+    "vediopissa auoksesta ykissa usin",
+    "erolavit halvelee omapissa"
+   ]
+  ],
+  [
+   "kusta",
+   103,
+   [
+    "fi"
+   ],
+   [
+    "tutkustamiit piitsykaa brin",
+    "uhlomme berkusta ehtyraudin"
+   ]
+  ],
+  [
+   "lusta",
+   71,
+   [
+    "sv"
+   ],
+   [
+    "lokahtoon solusta huat hysi",
+    "tiheksytys akytkaan kulusta"
+   ]
+  ],
+  [
+   "tetta",
+   43,
+   [
+    "it"
+   ],
+   [
+    "ikasi damootettava anko vulla",
+    "lyhdostettamme vuimoksesta vosta"
+   ]
+  ],
+  [
+   "kimme",
+   42,
+   [
+    "de"
+   ],
+   [
+    "appineen nikimme lukkoon veasi",
+    "lippavien rekimme univoinen"
+   ]
+  ],
+  [
+   "sikin",
+   25,
+   [
+    "tr"
+   ],
+   [
+    "pettunne ilsi brasikin hittinen",
+    "yrsi halvien vialla timeisikin"
+   ]
+  ],
+  [
+   "kutta",
+   21,
+   [
+    "hi"
+   ],
+   [
+    "orsi ikkuudaisten ulikuttava",
+    "mennasta aulkuttava tuemme irkaa"
+   ]
+  ],
+  [
+   "tatte",
+   20,
+   [
+    "hi"
+   ],
+   [
+    "elaampun britatte ikansa pyasta",
+    "beirtatte huan stonkin haasi"
+   ]
+  ],
+  [
+   "mutta",
+   19,
+   [
+    "sv"
+   ],
+   [
+    "mutta prilla ehon propaiktosta",
+    "kiiriomissa opiin mutta aron"
+   ]
+  ],
+  [
+   "pusi",
+   19,
+   [
+    "kn"
+   ],
+   [
+    "pusi tylysta ykystiaan ryna",
+    "autkaa luimme pusi ylhakohan"
+   ]
+  ],
+  [
+   "balle",
+   18,
+   [
+    "de",
+    "it"
+   ],
+   [
+    "uuriin dein ymalallia balle",
+    "sinakin upomat etanneet balle"
+   ]
+  ],
+  [
+   "kekse",
+   17,
+   [
+    "lt"
+   ],
+   [
+    "totutessalla ymille metkeksen",
+    "untutte neuverot kekselaista"
+   ]
+  ],
+  [
+   "chut",
+   17,
+   [
+    "hi"
+   ],
+   [
+    "derajaan ymiopimiesta chut",
+    "taalla nusi apoirangien chut"
+   ]
+  ],
+  [
+   "pipi",
+   17,
+   [
+    "fr",
+    "it"
+   ],
+   [
+    "pipi irit kuulia vokerini",
+    "untuttamista avivat soinan pipi"
+   ]
+  ],
+  [
+   "potta",
+   17,
+   [
+    "it"
+   ],
+   [
+    "taan aktuvat potta eristehia",
+    "selippasi beatamme potta hyna"
+   ]
+  ]
+ ],
+ "samples": [
+  "etanille rykaa lyla darkeihin",
+  "hakaa otsikalla munanne etotteko",
+  "appineen nikimme lukkoon veasi",
+  "olan oiskipun pato roolit",
+  "nuijudesti iharlimessa mian",
+  "ehikeisuen iton epidelaamaan",
+  "osoittuutimme mikseulle ysja",
+  "lytolossa edat puuhetta syita",
+  "raasta oirtlannyt veroksenkin",
+  "yrasi loistossa tuleista deittiko",
+  "miamaa protestilla kyista kain",
+  "otoitysti ravaa tahdetolista"
+ ],
+ "seconds": 10.7,
+ "languages": [
+  "fi"
+ ],
+ "no_english": true,
+ "blocklist": false
+}

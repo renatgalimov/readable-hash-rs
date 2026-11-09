@@ -1,0 +1,229 @@
+{
+ "name": "dv",
+ "corpus_words": 80000,
+ "relaxed_rows": 49,
+ "relaxed_examples": [
+  "jo",
+  "ec",
+  "vu",
+  "zo",
+  "qu",
+  "pu",
+  "eo",
+  "aq",
+  "eq",
+  "iq",
+  "eu",
+  "qi"
+ ],
+ "segmented_words": 58246,
+ "skipped_words": 21754,
+ "middle_attested_fraction": 0.4253336588541667,
+ "end32_attested_fraction": 0.3258056640625,
+ "end16_attested_fraction": 0.5152180989583334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 30.3,
+ "max_chars": 42,
+ "consonant_runs_pct": 5.877,
+ "vowel_runs_pct": 16.155,
+ "english_words_pct": 0.517,
+ "own_words_pct": 15.203,
+ "offensive_whole_pct": 0.405,
+ "offensive_whole_english_list_pct": 0.005,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.18,
+ "offensive_severe_en_pct": 0.01,
+ "offensive_inside5_pct": 2.85,
+ "offensive_inside4_pct": 14.88,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "kakas",
+   94,
+   [
+    "hu"
+   ],
+   [
+    "evairetainves efash isluthakakash",
+    "belufukoshan akakash edey tetha"
+   ]
+  ],
+  [
+   "rakun",
+   57,
+   [
+    "hr"
+   ],
+   [
+    "boafegai qaakee etarakun lafaege",
+    "peskuvenun biakash hemuarakun"
+   ]
+  ],
+  [
+   "okama",
+   42,
+   [
+    "ja"
+   ],
+   [
+    "rovugai pokamash ivakash joathuvumakee",
+    "peerisahaigen nokamash bayanmaage"
+   ]
+  ],
+  [
+   "stake",
+   37,
+   [
+    "sv"
+   ],
+   [
+    "deygikame ulhevin hear stakee",
+    "aziyaane bumun amsage eestakee"
+   ]
+  ],
+  [
+   "kukur",
+   34,
+   [
+    "is"
+   ],
+   [
+    "haha otee skukursareyne sithi",
+    "qaumakee akukurumaai ofun saudhiyaamun"
+   ]
+  ],
+  [
+   "nakun",
+   26,
+   [
+    "sq"
+   ],
+   [
+    "aagai echtaraash badhukoshnakun",
+    "fieve noanhaafaeve isnakun kofaeve"
+   ]
+  ],
+  [
+   "taeve",
+   22,
+   [
+    "da"
+   ],
+   [
+    "zaun roagbahataeve buma atege",
+    "taeve gumeynugai lokan badieve"
+   ]
+  ],
+  [
+   "anaal",
+   21,
+   [
+    "nl"
+   ],
+   [
+    "azuge vein anaalthin zubegai",
+    "pamun ruvaaneeve muhanaalugai amey"
+   ]
+  ],
+  [
+   "saala",
+   20,
+   [
+    "hi"
+   ],
+   [
+    "unsaalamaaeve elegoa vonives",
+    "aiemumuge voasaalaane vieve esun"
+   ]
+  ],
+  [
+   "dian",
+   18,
+   [
+    "zh"
+   ],
+   [
+    "ivulifiyaa dian anniaa sial",
+    "klahan qaazugai ebuney dian"
+   ]
+  ],
+  [
+   "kurat",
+   15,
+   [
+    "et"
+   ],
+   [
+    "edukurathakun netayaadheeneve ufun",
+    "qaasthaa agukoshkurathugai onoonee"
+   ]
+  ],
+  [
+   "skan",
+   15,
+   [
+    "ml",
+    "uk"
+   ],
+   [
+    "insasge stalookaa skan belge",
+    "evin ihaanestaku skan ginteve"
+   ]
+  ],
+  [
+   "nian",
+   15,
+   [
+    "zh"
+   ],
+   [
+    "unyakash nian klilin aarakee",
+    "huvantmaaeku nian onnuaseve"
+   ]
+  ],
+  [
+   "dige",
+   14,
+   [
+    "da",
+    "sq"
+   ],
+   [
+    "leakash dige akge voarlandakee",
+    "vetivathu dige rihaaalavure"
+   ]
+  ],
+  [
+   "anaru",
+   11,
+   [
+    "ja"
+   ],
+   [
+    "akuraaeku yanarunnash edmihunee",
+    "foaeve anarulevegen avakee faeve"
+   ]
+  ]
+ ],
+ "samples": [
+  "rovugai pokamash ivakash joathuvumakee",
+  "thge yaagakee aajehee robaas",
+  "esisuge qastuge ekaanama keege",
+  "ehey unnudhee haaru envare",
+  "etesitumuge itiketarege javee",
+  "yumaabinumun soamun egenuvumugai",
+  "gulhiaakuakash jailvaalaafai agumuge",
+  "ivulifiyaa dian anniaa sial",
+  "hiekeve unbadukan keneluhoth",
+  "pramun bondakee kanken azulaai",
+  "jayamun aboodiru amakash baee",
+  "yaatholfaivaa hiuge masthuvagash"
+ ],
+ "seconds": 11.8,
+ "languages": [
+  "dv"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

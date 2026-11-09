@@ -1,0 +1,247 @@
+{
+ "name": "gsw",
+ "corpus_words": 66505,
+ "relaxed_rows": 4,
+ "relaxed_examples": [
+  "ex",
+  "uc",
+  "ruc",
+  "yc"
+ ],
+ "segmented_words": 42255,
+ "skipped_words": 24250,
+ "middle_attested_fraction": 0.6261800130208334,
+ "end32_attested_fraction": 0.3692220052083333,
+ "end16_attested_fraction": 0.5979817708333334,
+ "begin_attested": 128,
+ "chars": 26.47,
+ "max_chars": 36,
+ "consonant_runs_pct": 24.794,
+ "vowel_runs_pct": 2.652,
+ "english_words_pct": 1.979,
+ "own_words_pct": 25.056,
+ "offensive_whole_pct": 2.625,
+ "offensive_whole_english_list_pct": 0.235,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.11,
+ "offensive_severe_en_pct": 0.12,
+ "offensive_inside5_pct": 6.75,
+ "offensive_inside4_pct": 19.365,
+ "offensive_across_words_pct": 0.015,
+ "top_hits": [
+  [
+   "ische",
+   811,
+   [
+    "de"
+   ],
+   [
+    "user gonedische schaa parand",
+    "agosion eischeides farillem"
+   ]
+  ],
+  [
+   "arsch",
+   50,
+   [
+    "de"
+   ],
+   [
+    "uussedarm uusli warschiert rader",
+    "usmarschturm zile elsavada"
+   ]
+  ],
+  [
+   "chich",
+   44,
+   [
+    "vi"
+   ],
+   [
+    "dailte reschicht silbansischi",
+    "wann lischlockel schich sote"
+   ]
+  ],
+  [
+   "ubera",
+   33,
+   [
+    "la"
+   ],
+   [
+    "durbed fred uberarloge dari",
+    "uberal pfit aasehster saiter"
+   ]
+  ],
+  [
+   "tanga",
+   19,
+   [
+    "fil"
+   ],
+   [
+    "duisiere ghit tanga hawanzung",
+    "sprarmee tanga redi habisch"
+   ]
+  ],
+  [
+   "dritt",
+   19,
+   [
+    "no"
+   ],
+   [
+    "gheeum ufstag dritten agne",
+    "dritteret gottid cone tempion"
+   ]
+  ],
+  [
+   "ases",
+   18,
+   [
+    "cy"
+   ],
+   [
+    "nitt teck ases pontssimana",
+    "wurugg fise ases tomatene"
+   ]
+  ],
+  [
+   "niger",
+   17,
+   [
+    "hy"
+   ],
+   [
+    "entainiger grad baastische beer",
+    "posuach saistig nigerschaft bits"
+   ]
+  ],
+  [
+   "anus",
+   17,
+   [
+    "be",
+    "bg",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "eu",
+    "fa",
+    "fr",
+    "gd",
+    "is",
+    "mk",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sl",
+    "sq",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "flum anus ungliese suschtand",
+    "muskorid junite auli anus"
+   ]
+  ],
+  [
+   "hani",
+   17,
+   [
+    "is"
+   ],
+   [
+    "aurielang hani lute terrim",
+    "pantum glarrhus hani sagt"
+   ]
+  ],
+  [
+   "neger",
+   16,
+   [
+    "de",
+    "hu",
+    "nl",
+    "sk",
+    "sv"
+   ],
+   [
+    "neger katation entin huggebach",
+    "neger uusie duck blamthemischi"
+   ]
+  ],
+  [
+   "bola",
+   16,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "cool abglung bola doktwiel",
+    "tetuetfascht zure tuel bola"
+   ]
+  ],
+  [
+   "here",
+   16,
+   [
+    "hu"
+   ],
+   [
+    "aadrater zwot trauer here",
+    "kardwirtach krin sent here"
+   ]
+  ],
+  [
+   "nasi",
+   16,
+   [
+    "ml",
+    "th"
+   ],
+   [
+    "nasi durcha ufet tentwiti",
+    "koopft nasi hati dummandel"
+   ]
+  ],
+  [
+   "spol",
+   16,
+   [
+    "sl"
+   ],
+   [
+    "reni spol voigt entermahain",
+    "ussens tonne ludenzone spol"
+   ]
+  ]
+ ],
+ "samples": [
+  "wolblig guse cape ibureggt",
+  "waid blattig direme worzone",
+  "kissor hildle hohlung miad",
+  "user gonedische schaa parand",
+  "hutissee orniorgarte sali",
+  "zenswinkal auli bsonhole",
+  "sunnefdial sartstei flil",
+  "cavidande teti insehe dael",
+  "mest gonnifft minisarabach",
+  "lola ganded realli toteni",
+  "saugal zahlebei fecher verge",
+  "bludderel meig erlottmatt"
+ ],
+ "seconds": 8.7,
+ "languages": [
+  "gsw"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

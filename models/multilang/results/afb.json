@@ -1,0 +1,230 @@
+{
+ "name": "afb",
+ "corpus_words": 21989,
+ "relaxed_rows": 100,
+ "relaxed_examples": [
+  "tg",
+  "tj",
+  "lj",
+  "lg",
+  "tz",
+  "yf",
+  "ll",
+  "yg",
+  "du",
+  "yj",
+  "ig",
+  "su"
+ ],
+ "segmented_words": 14665,
+ "skipped_words": 7324,
+ "middle_attested_fraction": 0.11181640625,
+ "end32_attested_fraction": 0.2313232421875,
+ "end16_attested_fraction": 0.394287109375,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.32,
+ "max_chars": 36,
+ "consonant_runs_pct": 34.992,
+ "vowel_runs_pct": 2.869,
+ "english_words_pct": 0.059,
+ "own_words_pct": 19.779,
+ "offensive_whole_pct": 0.35,
+ "offensive_whole_english_list_pct": 0.05,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.15,
+ "offensive_severe_en_pct": 0.05,
+ "offensive_inside5_pct": 0.935,
+ "offensive_inside4_pct": 8.685,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "qiyah",
+   33,
+   [
+    "tlh"
+   ],
+   [
+    "ysrkndmalaw qatiy qaqaqiyah",
+    "syiktiqiyah tbayhduwn tfis"
+   ]
+  ],
+  [
+   "marah",
+   25,
+   [
+    "ms"
+   ],
+   [
+    "hdry srih itakhmarah akhiquwn",
+    "nrawmarah dihltarakat imat"
+   ]
+  ],
+  [
+   "shabi",
+   24,
+   [
+    "zh"
+   ],
+   [
+    "ansah ytrykh risiy iqashabil",
+    "araqabaw tbhtiyn yshabinaa"
+   ]
+  ],
+  [
+   "labiy",
+   21,
+   [
+    "ml"
+   ],
+   [
+    "isdiyh labiy ybaliq abashriyn",
+    "dwinajnwaa ifdah labiy ihir"
+   ]
+  ],
+  [
+   "srat",
+   19,
+   [
+    "cs",
+    "ru"
+   ],
+   [
+    "ifajtabyn itdylihwaa srat",
+    "lbtiy fardyiqaw sihryn srat"
+   ]
+  ],
+  [
+   "inat",
+   12,
+   [
+    "sq"
+   ],
+   [
+    "tnsib abtardhiy inat nkhiyl",
+    "syir ynashuwn inat ylhaladiy"
+   ]
+  ],
+  [
+   "damn",
+   10,
+   [
+    "cy",
+    "en",
+    "gd"
+   ],
+   [
+    "ttyanhyataw hiliy damn tlyq",
+    "damn ndwantah jaruwn nkhlitiy"
+   ]
+  ],
+  [
+   "qarn",
+   10,
+   [
+    "mt"
+   ],
+   [
+    "qarn fihbuwn suwladruwn tdyq",
+    "qarn trib qarynhaa adwaytaw"
+   ]
+  ],
+  [
+   "manda",
+   9,
+   [
+    "ru"
+   ],
+   [
+    "lhib kizamandaq kulitaqruwn",
+    "ldriyn qiriy lhmandamil ywly"
+   ]
+  ],
+  [
+   "skata",
+   9,
+   [
+    "el"
+   ],
+   [
+    "mskatarad lstaw kuhiriyn niluwn",
+    "athabiq ymiskatat yihmsalaw"
+   ]
+  ],
+  [
+   "ablah",
+   6,
+   [
+    "uz"
+   ],
+   [
+    "asid ihuwn tmiyidiyn ablahmid",
+    "shalhmablah zift khatisbaw"
+   ]
+  ],
+  [
+   "tikar",
+   5,
+   [
+    "sv"
+   ],
+   [
+    "twaw tmntikaraw hidyadhbaw",
+    "lbhtikarn qahfhabis tkahab"
+   ]
+  ],
+  [
+   "tasak",
+   4,
+   [
+    "tr"
+   ],
+   [
+    "sawd thiqtasaktuwn tdyt anit",
+    "lgamis thsir suuwn ttasakiz"
+   ]
+  ],
+  [
+   "hanar",
+   4,
+   [
+    "is"
+   ],
+   [
+    "ymhakhrbiqiy nkhanar fuwbyn",
+    "draytiy atfajrhanar trib msah"
+   ]
+  ],
+  [
+   "skita",
+   4,
+   [
+    "sv"
+   ],
+   [
+    "hayrah wariy iskitakah lhah",
+    "nskitaw msly yjwbwn yirshaw"
+   ]
+  ]
+ ],
+ "samples": [
+  "ndshalaw ilaa sdis yjakthyh",
+  "isiy aghtad dayaqn ndmtash",
+  "imadhir qihbyh ikhwruwn jayh",
+  "tnsib abtardhiy inat nkhiyl",
+  "nhakhshm bihmhrtayt watiy",
+  "arahiskabiy idyt igaswalt",
+  "aharjindyh wasthraw jihl",
+  "sdhtantah ygtiy rakhuwn tbiq",
+  "mibh absiqilaw jabaritakaytaw",
+  "ldar ttanaytaw halabaw lisamn",
+  "wahsyh ywaftaqid hidh yibuwn",
+  "agayqamat mihuwn khankhhayt"
+ ],
+ "seconds": 8.9,
+ "languages": [
+  "afb"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

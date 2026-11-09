@@ -1,0 +1,231 @@
+{
+ "name": "non",
+ "corpus_words": 45145,
+ "relaxed_rows": 70,
+ "relaxed_examples": [
+  "bl",
+  "fy",
+  "fj",
+  "my",
+  "bj",
+  "lj",
+  "hj",
+  "dj",
+  "sj",
+  "gj",
+  "mj",
+  "kj"
+ ],
+ "segmented_words": 35342,
+ "skipped_words": 9803,
+ "middle_attested_fraction": 0.15104166666666666,
+ "end32_attested_fraction": 0.3025716145833333,
+ "end16_attested_fraction": 0.4513346354166667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.32,
+ "max_chars": 38,
+ "consonant_runs_pct": 20.662,
+ "vowel_runs_pct": 0.56,
+ "english_words_pct": 0.669,
+ "own_words_pct": 22.478,
+ "offensive_whole_pct": 1.16,
+ "offensive_whole_english_list_pct": 0.05,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.67,
+ "offensive_severe_en_pct": 0.03,
+ "offensive_inside5_pct": 2.77,
+ "offensive_inside4_pct": 14.98,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "randi",
+   110,
+   [
+    "hi"
+   ],
+   [
+    "kjkazk skreykkr prandisk gidizk",
+    "yfirlafnim hyrjorstusk drandisk"
+   ]
+  ],
+  [
+   "gasti",
+   88,
+   [
+    "hi"
+   ],
+   [
+    "trurid ellardondum svigasti",
+    "smelgrinum vodir etakaligasti"
+   ]
+  ],
+  [
+   "panna",
+   65,
+   [
+    "fi"
+   ],
+   [
+    "gerfleikunni aurnar gyrtakupanna",
+    "fjupanna kjsins buda nordalinum"
+   ]
+  ],
+  [
+   "gadid",
+   27,
+   [
+    "te"
+   ],
+   [
+    "arum svopit ljum vegngadid",
+    "faingadid aslattanna aerurdum"
+   ]
+  ],
+  [
+   "dada",
+   22,
+   [
+    "id"
+   ],
+   [
+    "hvattunum oleddizk dada hurstr",
+    "meirigastri dada kerinn sengizk"
+   ]
+  ],
+  [
+   "bola",
+   18,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "alit jallvaldir bola gisins",
+    "fadizk sandum bola terdamri"
+   ]
+  ],
+  [
+   "mona",
+   17,
+   [
+    "it"
+   ],
+   [
+    "mona rekr gusins tefisarfisk",
+    "eidilinn lizk duttaedid mona"
+   ]
+  ],
+  [
+   "vana",
+   17,
+   [
+    "be",
+    "ru"
+   ],
+   [
+    "hogs verjvaettuzk snina vana",
+    "aetum vana alleikunum kegrettisk"
+   ]
+  ],
+  [
+   "alla",
+   17,
+   [
+    "mt"
+   ],
+   [
+    "suda alla blandutunum jarsinn",
+    "antrkomsk olra alla karkina"
+   ]
+  ],
+  [
+   "guda",
+   14,
+   [
+    "hi",
+    "mr"
+   ],
+   [
+    "lena guda lidr fongslstuna",
+    "snemadra rotunum guda lagina"
+   ]
+  ],
+  [
+   "vitt",
+   13,
+   [
+    "et"
+   ],
+   [
+    "myygarzk reggjunum vitt snir",
+    "gittaudum eljada lanum vitt"
+   ]
+  ],
+  [
+   "grud",
+   13,
+   [
+    "ru"
+   ],
+   [
+    "grud tiunum aurkjavaid ljinn",
+    "grud aukljolfar hrinum anum"
+   ]
+  ],
+  [
+   "gaand",
+   13,
+   [
+    "hi"
+   ],
+   [
+    "geruzk gaandisk kofulgir gudum",
+    "hnim leggutinn gaandisk knefumk"
+   ]
+  ],
+  [
+   "hora",
+   13,
+   [
+    "is",
+    "sv"
+   ],
+   [
+    "oegarsamdir vesk args hora",
+    "fiskedgils einir hida hora"
+   ]
+  ],
+  [
+   "kaka",
+   13,
+   [
+    "eu"
+   ],
+   [
+    "aussask kaka glugin kidjanna",
+    "drelldizk fein hrakizk kaka"
+   ]
+  ]
+ ],
+ "samples": [
+  "rossask knit efir ufrulgumk",
+  "grdisk eykjunni feginnum rorfasti",
+  "ofsidr slugsk baliga mernar",
+  "bysk oettrgir hrum hnotnum",
+  "girfruinn filtrserim boinn",
+  "hylirrogduzk humsk bjadorra",
+  "smidlinadit boguslid sinir",
+  "efukvana ljna veldizk moar",
+  "blnna oestoedum meinglukar",
+  "fusins hvoturum brynir rumdinn",
+  "boglinn kistitusk gets skizk",
+  "eyrfkausk blizk stelparrid"
+ ],
+ "seconds": 10.0,
+ "languages": [
+  "non"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

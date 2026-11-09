@@ -1,0 +1,230 @@
+{
+ "name": "mi",
+ "corpus_words": 17948,
+ "relaxed_rows": 113,
+ "relaxed_examples": [
+  "ca",
+  "wi",
+  "su",
+  "ba",
+  "da",
+  "fa",
+  "bu",
+  "jo",
+  "so",
+  "do",
+  "fo",
+  "mc"
+ ],
+ "segmented_words": 13023,
+ "skipped_words": 4925,
+ "middle_attested_fraction": 0.1624755859375,
+ "end32_attested_fraction": 0.2305908203125,
+ "end16_attested_fraction": 0.3797200520833333,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 28.25,
+ "max_chars": 39,
+ "consonant_runs_pct": 1.359,
+ "vowel_runs_pct": 8.387,
+ "english_words_pct": 1.296,
+ "own_words_pct": 17.793,
+ "offensive_whole_pct": 1.59,
+ "offensive_whole_english_list_pct": 0.065,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.75,
+ "offensive_severe_en_pct": 0.115,
+ "offensive_inside5_pct": 23.67,
+ "offensive_inside4_pct": 36.84,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "tanga",
+   4772,
+   [
+    "fil"
+   ],
+   [
+    "ekuhitanga leette teleton ananga",
+    "tiheitanga lansitutoro gaipai"
+   ]
+  ],
+  [
+   "apara",
+   72,
+   [
+    "fi"
+   ],
+   [
+    "exirupua viatia ngapara awenga",
+    "aranga rihapara diau miokiri"
+   ]
+  ],
+  [
+   "irata",
+   43,
+   [
+    "la"
+   ],
+   [
+    "suttepana placki aapirata",
+    "aanoaki suiratanga omuiahekaro"
+   ]
+  ],
+  [
+   "stanga",
+   39,
+   [
+    "sv"
+   ],
+   [
+    "diane veka memurua dellastanga",
+    "temi awatia acastanga aaipiwara"
+   ]
+  ],
+  [
+   "satan",
+   29,
+   [
+    "no",
+    "sv"
+   ],
+   [
+    "veti caakara initetanga elisatanga",
+    "aitanga memoho satanga beautungia"
+   ]
+  ],
+  [
+   "ititi",
+   29,
+   [
+    "uz"
+   ],
+   [
+    "futanga onia natiititia erorangi",
+    "hutuurenga ititia porinui sure"
+   ]
+  ],
+  [
+   "sere",
+   21,
+   [
+    "hr",
+    "sk"
+   ],
+   [
+    "sere tureeraki suna sooratanga",
+    "enukokaanui hinoreni sere"
+   ]
+  ],
+  [
+   "rima",
+   19,
+   [
+    "la"
+   ],
+   [
+    "huireangia diotui dice rima",
+    "paerikuku rima aimawhiritia"
+   ]
+  ],
+  [
+   "aarik",
+   19,
+   [
+    "et"
+   ],
+   [
+    "kariarara aiotanga aiki shaariki",
+    "awanui okaariki poll cupiotutia"
+   ]
+  ],
+  [
+   "long",
+   18,
+   [
+    "vi"
+   ],
+   [
+    "elara long roniruikuku ekenga",
+    "tohuereke long bearonui saro"
+   ]
+  ],
+  [
+   "baka",
+   18,
+   [
+    "ja"
+   ],
+   [
+    "suirunoa unuhua orewa baka",
+    "veki graereni whearau baka"
+   ]
+  ],
+  [
+   "cono",
+   17,
+   [
+    "es",
+    "gl"
+   ],
+   [
+    "aciest truminganga tuiri cono",
+    "save cono duncwhakakeke iwea"
+   ]
+  ],
+  [
+   "noki",
+   17,
+   [
+    "fi"
+   ],
+   [
+    "shawhenikitanga apanga diatanga noki",
+    "noki runals enomataua kane"
+   ]
+  ],
+  [
+   "batang",
+   17,
+   [
+    "ms"
+   ],
+   [
+    "batanga iplaikara iwahaki omanga",
+    "batanga monerahu utia ainumi"
+   ]
+  ],
+  [
+   "hani",
+   17,
+   [
+    "is"
+   ],
+   [
+    "hani fitakuwhewai priwaretanga",
+    "pligau prosuraru kingi hani"
+   ]
+  ]
+ ],
+ "samples": [
+  "deapoto elenga exka quihouroa",
+  "paenga filice humama detapau",
+  "ekuhitanga leette teleton ananga",
+  "china aldelance kate aoniko",
+  "saimpiatia crepiwaninga mena",
+  "acatuummire feki thappohia",
+  "iramurtote meapomia juke",
+  "exirupua viatia ngapara awenga",
+  "powa alateekau announunia",
+  "grai invera hapaku uipotu",
+  "meeneke ikeitarei uria tana",
+  "fielicoro post maungungakoka"
+ ],
+ "seconds": 9.6,
+ "languages": [
+  "mi"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

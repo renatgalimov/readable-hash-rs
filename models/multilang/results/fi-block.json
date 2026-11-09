@@ -1,0 +1,234 @@
+{
+ "name": "fi-block",
+ "corpus_words": 80000,
+ "relaxed_rows": 33,
+ "relaxed_examples": [
+  "mc",
+  "fo",
+  "sc",
+  "wo",
+  "fu",
+  "cu",
+  "ze",
+  "za",
+  "fy",
+  "sw",
+  "tw",
+  "ex"
+ ],
+ "banned_pairs": 4540,
+ "segmented_words": 61149,
+ "skipped_words": 18851,
+ "middle_attested_fraction": 0.407958984375,
+ "end32_attested_fraction": 0.4283040364583333,
+ "end16_attested_fraction": 0.627197265625,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "three_token_rounds": [
+  870,
+  609,
+  399,
+  218
+ ],
+ "chars": 28.21,
+ "max_chars": 37,
+ "consonant_runs_pct": 3.157,
+ "vowel_runs_pct": 4.931,
+ "english_words_pct": 1.404,
+ "own_words_pct": 20.521,
+ "offensive_whole_pct": 0.905,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.005,
+ "offensive_inside5_pct": 1.655,
+ "offensive_inside4_pct": 21.57,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "pissa",
+   79,
+   [
+    "is"
+   ],
+   [
+    "benttyjen grammapissa nujesi",
+    "unkamme onleipissa harromia"
+   ]
+  ],
+  [
+   "lusta",
+   41,
+   [
+    "sv"
+   ],
+   [
+    "mehuakoissaan orsori kulusta",
+    "ansta derenkelusta apulausten"
+   ]
+  ],
+  [
+   "pusi",
+   19,
+   [
+    "kn"
+   ],
+   [
+    "pusi lonnon ykapumit ehamme",
+    "niutua luimme pusi ankkupan"
+   ]
+  ],
+  [
+   "inat",
+   18,
+   [
+    "sq"
+   ],
+   [
+    "inat ymamme alakteysia tossa",
+    "prilla episen inat laulajentaa"
+   ]
+  ],
+  [
+   "mutta",
+   17,
+   [
+    "sv"
+   ],
+   [
+    "kutsuvovasi strinkisi mutta",
+    "limuttakaa chaan nusta muinnut"
+   ]
+  ],
+  [
+   "filla",
+   15,
+   [
+    "gl"
+   ],
+   [
+    "filla miketille bartamaan peja",
+    "filla senkin itpaamme corkokas"
+   ]
+  ],
+  [
+   "dain",
+   15,
+   [
+    "ml"
+   ],
+   [
+    "neytokin virukongosta dain",
+    "amita ajauhdyn dain ruutamme"
+   ]
+  ],
+  [
+   "sait",
+   15,
+   [
+    "kn"
+   ],
+   [
+    "pidemiomat nasta aaia sait",
+    "sait tuien sytyna urtivahan"
+   ]
+  ],
+  [
+   "kale",
+   14,
+   [
+    "lt"
+   ],
+   [
+    "unlahoseesi kale bret tiemme",
+    "kale tysta lynekaaron latin"
+   ]
+  ],
+  [
+   "urin",
+   13,
+   [
+    "sl"
+   ],
+   [
+    "leat soan urin aidatotain",
+    "bertui nisassa urin vastunut"
+   ]
+  ],
+  [
+   "pesi",
+   13,
+   [
+    "mr"
+   ],
+   [
+    "pesi alin amerkin veljastavat",
+    "open pesi itlevituin vuat"
+   ]
+  ],
+  [
+   "pula",
+   12,
+   [
+    "ro"
+   ],
+   [
+    "loikulta pikata mien pula",
+    "inen pula molimiljassa tyit"
+   ]
+  ],
+  [
+   "kuja",
+   11,
+   [
+    "hr"
+   ],
+   [
+    "kuja troloittuvat coissa peti",
+    "hyksi ottaihdossa lyasi kuja"
+   ]
+  ],
+  [
+   "anaal",
+   11,
+   [
+    "nl"
+   ],
+   [
+    "unoiminko anaalan luukuuksia",
+    "summalle hoat anaaltuvat ilsa"
+   ]
+  ],
+  [
+   "hani",
+   11,
+   [
+    "is"
+   ],
+   [
+    "eheron koskyisten olkia hani",
+    "lojarisuhissa omivat hani epet"
+   ]
+  ]
+ ],
+ "samples": [
+  "repetti ehasta shea uulipata",
+  "halle inditaan jakaisi reppivat",
+  "betonne auditaan luvulle juissa",
+  "ruton oikuuhaa paita nortoa",
+  "nukeukseit usoksuhtaisi mian",
+  "kritylolisen amasta epanlaamaan",
+  "osoittamurainen miliumaan ysko",
+  "shikereita onia pullosta leia",
+  "ravat oiskidon juttelulkussa",
+  "oden aluksekseni tuleista filivat",
+  "mikenut protuoto kyan kain",
+  "inkenteat raaja tahdutauksen"
+ ],
+ "seconds": 315.3,
+ "languages": [
+  "fi"
+ ],
+ "no_english": false,
+ "blocklist": true
+}

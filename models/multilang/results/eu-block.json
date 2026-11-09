@@ -1,0 +1,220 @@
+{
+ "name": "eu-block",
+ "corpus_words": 80000,
+ "relaxed_rows": 0,
+ "relaxed_examples": [],
+ "banned_pairs": 4498,
+ "segmented_words": 57414,
+ "skipped_words": 22586,
+ "middle_attested_fraction": 0.4766031901041667,
+ "end32_attested_fraction": 0.4003092447916667,
+ "end16_attested_fraction": 0.6223958333333334,
+ "begin_attested": 128,
+ "three_token_rounds": [
+  858,
+  629,
+  408,
+  270
+ ],
+ "chars": 28.49,
+ "max_chars": 40,
+ "consonant_runs_pct": 4.692,
+ "vowel_runs_pct": 6.474,
+ "english_words_pct": 0.655,
+ "own_words_pct": 18.116,
+ "offensive_whole_pct": 0.42,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 1.435,
+ "offensive_inside4_pct": 13.07,
+ "offensive_across_words_pct": 0.0,
+ "top_hits": [
+  [
+   "sung",
+   18,
+   [
+    "vi"
+   ],
+   [
+    "sung ahoaduan osoaren kera",
+    "bitarria ratsemoa sung tien"
+   ]
+  ],
+  [
+   "griet",
+   16,
+   [
+    "nl"
+   ],
+   [
+    "fetan grietitua azpanelloren",
+    "griette fira nori vidismak"
+   ]
+  ],
+  [
+   "pula",
+   15,
+   [
+    "ro"
+   ],
+   [
+    "izenagizera kortruan pula",
+    "pula emako ekrobalaka esez"
+   ]
+  ],
+  [
+   "kurat",
+   15,
+   [
+    "et"
+   ],
+   [
+    "stragitza ikuratzen fatxiete",
+    "egidila neskuratu girlaseko"
+   ]
+  ],
+  [
+   "ases",
+   15,
+   [
+    "cy"
+   ],
+   [
+    "ases daltxara jada sortak",
+    "irei ases orakioan naiztu"
+   ]
+  ],
+  [
+   "apara",
+   13,
+   [
+    "fi"
+   ],
+   [
+    "moran aparaen paren kresesak",
+    "shusen aparana naguro jena"
+   ]
+  ],
+  [
+   "kran",
+   13,
+   [
+    "be"
+   ],
+   [
+    "mugamara emaidiak kran emanik",
+    "noldua lentar arbuki kran"
+   ]
+  ],
+  [
+   "tate",
+   12,
+   [
+    "ro"
+   ],
+   [
+    "elgean apoarentzat ekoirik tate",
+    "jerik aterik tate stoneonestu"
+   ]
+  ],
+  [
+   "zakar",
+   10,
+   [
+    "ms"
+   ],
+   [
+    "erik tolearekin irritzeko zakarka",
+    "amanok zakarbonata pintza"
+   ]
+  ],
+  [
+   "fuen",
+   8,
+   [
+    "th"
+   ],
+   [
+    "lautaziarekin fuen hilena molaren",
+    "fuen hereinhoon saari shako"
+   ]
+  ],
+  [
+   "tikar",
+   8,
+   [
+    "sv"
+   ],
+   [
+    "atartikara ahak kraz azuska",
+    "estimatikarako aburak antsok"
+   ]
+  ],
+  [
+   "ititi",
+   8,
+   [
+    "uz"
+   ],
+   [
+    "zitesititik boon shekoira",
+    "niresimoaz ititia justetako"
+   ]
+  ],
+  [
+   "serat",
+   7,
+   [
+    "bg"
+   ],
+   [
+    "itolari taka treseratzen aletan",
+    "letralitatuko eseratzea apopeak"
+   ]
+  ],
+  [
+   "manda",
+   6,
+   [
+    "ru"
+   ],
+   [
+    "emandalitzen biei stalindruaren",
+    "emandauarekin erdietako foroileak"
+   ]
+  ],
+  [
+   "burat",
+   5,
+   [
+    "fil"
+   ],
+   [
+    "zabolieak abliaburatu diaz",
+    "aingoetan adiburatzen eguzibatu"
+   ]
+  ]
+ ],
+ "samples": [
+  "aierarekin tiean fuek klilitazioa",
+  "zienean edariari narrano aihoari",
+  "igurtzea jotzailen zekarren ataren",
+  "oren sieraska arta amilen",
+  "apusuzitzen torritsiaren kola",
+  "eginkesneatu nizako frektoretik",
+  "izenagizera kortruan pula",
+  "fuskilla ilko gatatzen liatzen",
+  "deei sieniman atonesparik",
+  "feen higitzen alabeen vibetan",
+  "kokoari emaztetian suek dien",
+  "edicarruko dearen lauspezatzen"
+ ],
+ "seconds": 233.4,
+ "languages": [
+  "eu"
+ ],
+ "no_english": false,
+ "blocklist": true
+}

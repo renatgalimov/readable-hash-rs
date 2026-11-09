@@ -1,0 +1,217 @@
+{
+ "name": "cy",
+ "corpus_words": 46695,
+ "relaxed_rows": 3,
+ "relaxed_examples": [
+  "pw",
+  "wc",
+  "av"
+ ],
+ "segmented_words": 29137,
+ "skipped_words": 17558,
+ "middle_attested_fraction": 0.4128011067708333,
+ "end32_attested_fraction": 0.3822021484375,
+ "end16_attested_fraction": 0.5675455729166666,
+ "begin_attested": 128,
+ "chars": 26.6,
+ "max_chars": 34,
+ "consonant_runs_pct": 17.221,
+ "vowel_runs_pct": 6.38,
+ "english_words_pct": 1.579,
+ "own_words_pct": 22.24,
+ "offensive_whole_pct": 1.68,
+ "offensive_whole_english_list_pct": 0.405,
+ "offensive_whole_own_list_pct": 0.345,
+ "offensive_whole_major_lists_pct": 0.755,
+ "offensive_severe_en_pct": 0.26,
+ "offensive_inside5_pct": 1.46,
+ "offensive_inside4_pct": 12.305,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "orau",
+   23,
+   [
+    "cy"
+   ],
+   [
+    "orau pydygol sunt gaethelin",
+    "dehofair orau swloedd boro"
+   ]
+  ],
+  [
+   "cena",
+   20,
+   [
+    "zh"
+   ],
+   [
+    "mess wrtalau yselmond cena",
+    "holostwr drechordant cena"
+   ]
+  ],
+  [
+   "poon",
+   18,
+   [
+    "en"
+   ],
+   [
+    "tier poon sabachfaen reau",
+    "eliau sollties glwyau poon"
+   ]
+  ],
+  [
+   "hoer",
+   17,
+   [
+    "nl"
+   ],
+   [
+    "hoer cutiodd campio carran",
+    "tardreirod hoer passacas"
+   ]
+  ],
+  [
+   "elle",
+   17,
+   [
+    "lv"
+   ],
+   [
+    "enan elle rhostiodd neesin",
+    "hynosawyd flol elle seimid"
+   ]
+  ],
+  [
+   "drol",
+   16,
+   [
+    "nl"
+   ],
+   [
+    "delyned drol eiddaf fyrhen",
+    "bittoerydio seth drol hess"
+   ]
+  ],
+  [
+   "sedd",
+   15,
+   [
+    "cy"
+   ],
+   [
+    "sudeange ddylodarodd sedd",
+    "arderfynt gyffrir redwyd sedd"
+   ]
+  ],
+  [
+   "mail",
+   14,
+   [
+    "hi"
+   ],
+   [
+    "grus norn mail laweithelle",
+    "isofwyd ganiaceir mail enion"
+   ]
+  ],
+  [
+   "tate",
+   14,
+   [
+    "ro"
+   ],
+   [
+    "tate dorach guad dylltrol",
+    "teeth tate ranstanton blol"
+   ]
+  ],
+  [
+   "asas",
+   13,
+   [
+    "gl"
+   ],
+   [
+    "lido lettle closynnol asas",
+    "asas swlesglogi cywarain"
+   ]
+  ],
+  [
+   "dran",
+   13,
+   [
+    "pl"
+   ],
+   [
+    "durch dran manuroid tiriwr",
+    "dran anelolion eleach sanau"
+   ]
+  ],
+  [
+   "hell",
+   13,
+   [
+    "en"
+   ],
+   [
+    "inen hell esfiant swnosanu",
+    "hurdyn hell parhebedd rise"
+   ]
+  ],
+  [
+   "nian",
+   12,
+   [
+    "zh"
+   ],
+   [
+    "stiad nian eicolltrydd buasent",
+    "allafathrwn nian routliaf"
+   ]
+  ],
+  [
+   "cham",
+   12,
+   [
+    "vi"
+   ],
+   [
+    "peli cham arna ragyblyleg",
+    "cham thurdeb hinteuasant priau"
+   ]
+  ],
+  [
+   "bits",
+   11,
+   [
+    "mr"
+   ],
+   [
+    "herwyr bits mweban clarth",
+    "bits anen brynswyf lotein"
+   ]
+  ]
+ ],
+ "samples": [
+  "bwlyau byne lyra achimiaeth",
+  "denau plesia amhaoch bwlwyer",
+  "hieraed oranon ferles ceaf",
+  "ween fysariaid yman realiadau",
+  "sgwiglid niffylfrol goon",
+  "wybrylwiant raion nghroatws",
+  "atalinnena gonefelyn gymus",
+  "lycasiodd cwir malaidd praidd",
+  "rhiodd fyrbrwyd cerdolstig",
+  "nans adnard llwynodd duoliadau",
+  "gomeron pietlene said aron",
+  "plentwerdd rhau caliogymwyd"
+ ],
+ "seconds": 8.4,
+ "languages": [
+  "cy"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

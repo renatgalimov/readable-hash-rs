@@ -1,0 +1,259 @@
+{
+ "name": "bjn",
+ "corpus_words": 7622,
+ "relaxed_rows": 307,
+ "relaxed_examples": [
+  "pr",
+  "re",
+  "ge",
+  "gu",
+  "po",
+  "so",
+  "tr",
+  "mo",
+  "wi",
+  "bo",
+  "he",
+  "cu"
+ ],
+ "segmented_words": 5190,
+ "skipped_words": 2432,
+ "middle_attested_fraction": 0.09619140625,
+ "end32_attested_fraction": 0.10909016927083333,
+ "end16_attested_fraction": 0.2099609375,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 27.04,
+ "max_chars": 36,
+ "consonant_runs_pct": 14.771,
+ "vowel_runs_pct": 2.782,
+ "english_words_pct": 1.036,
+ "own_words_pct": 9.824,
+ "offensive_whole_pct": 2.32,
+ "offensive_whole_english_list_pct": 0.135,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.145,
+ "offensive_severe_en_pct": 0.02,
+ "offensive_inside5_pct": 2.68,
+ "offensive_inside4_pct": 21.235,
+ "offensive_across_words_pct": 0.025,
+ "top_hits": [
+  [
+   "tusan",
+   36,
+   [
+    "sv"
+   ],
+   [
+    "sidung kukan skmbalah brtusan",
+    "tatusan terskan mersal usung"
+   ]
+  ],
+  [
+   "semen",
+   24,
+   [
+    "ca",
+    "cy",
+    "en",
+    "es",
+    "eu",
+    "gl",
+    "mt",
+    "pt",
+    "sr",
+    "uz"
+   ],
+   [
+    "isemesemen atkasnya cinjung",
+    "risemen apah piri akedkian"
+   ]
+  ],
+  [
+   "tanga",
+   23,
+   [
+    "fil"
+   ],
+   [
+    "walama kinean sutangan usin",
+    "tryatakan bendesudu tangatuhi"
+   ]
+  ],
+  [
+   "kunda",
+   22,
+   [
+    "cs"
+   ],
+   [
+    "kundal yaat jinter dowanya",
+    "cesi ilunakundang pesa awar"
+   ]
+  ],
+  [
+   "anali",
+   21,
+   [
+    "mt"
+   ],
+   [
+    "ansestuntuh adian analintur",
+    "analikuknya tuhunan grri merah"
+   ]
+  ],
+  [
+   "bamba",
+   21,
+   [
+    "zu"
+   ],
+   [
+    "embambah killet belah tuti",
+    "ekokar itrodi bambang nginat"
+   ]
+  ],
+  [
+   "dalan",
+   21,
+   [
+    "mn"
+   ],
+   [
+    "adalanang mutan batumbatan siang",
+    "adalanulai imat cuma dagasi"
+   ]
+  ],
+  [
+   "fing",
+   19,
+   [
+    "hu"
+   ],
+   [
+    "satusi fing biak aytertawan",
+    "fembuksi fing viduneteis"
+   ]
+  ],
+  [
+   "dian",
+   19,
+   [
+    "zh"
+   ],
+   [
+    "splibiasnya fera dian irat",
+    "enterutnya cejarbmpiran dian"
+   ]
+  ],
+  [
+   "hani",
+   18,
+   [
+    "is"
+   ],
+   [
+    "hani sekutan naungan amesesan",
+    "risekan khtupi hani jinung"
+   ]
+  ],
+  [
+   "muda",
+   18,
+   [
+    "ru"
+   ],
+   [
+    "berjmpariat muda bitan isal",
+    "muda motenya moar untombangan"
+   ]
+  ],
+  [
+   "anus",
+   18,
+   [
+    "be",
+    "bg",
+    "ca",
+    "da",
+    "de",
+    "en",
+    "eu",
+    "fa",
+    "fr",
+    "gd",
+    "is",
+    "mk",
+    "ms",
+    "mt",
+    "nl",
+    "pt",
+    "ro",
+    "ru",
+    "sl",
+    "sq",
+    "sv",
+    "tr",
+    "uk",
+    "uz"
+   ],
+   [
+    "timbar jakisanakan anus uraan",
+    "lincnjaduan anus menyerak"
+   ]
+  ],
+  [
+   "pula",
+   18,
+   [
+    "ro"
+   ],
+   [
+    "pula relunjuknya hain agat",
+    "sesentara meda pula trbahan"
+   ]
+  ],
+  [
+   "zakar",
+   17,
+   [
+    "ms"
+   ],
+   [
+    "malangganakan zakar akai lesa",
+    "amajng zakar thjari brmbangnya"
+   ]
+  ],
+  [
+   "peter",
+   16,
+   [
+    "fr"
+   ],
+   [
+    "peter ngausi gampas hellus",
+    "tipahati hasan pljaya peter"
+   ]
+  ]
+ ],
+ "samples": [
+  "ngkalat elut yakan nurnmbat",
+  "kanya agntal damaakan ngakuti",
+  "mombal jimuli inosng juri",
+  "song ulicmpat pagat celiki",
+  "lepuntada donunurunan nata",
+  "vimbancyatan khra lobamaika",
+  "istiadicaan narsbaya nyra",
+  "yahistan fear rampuan arang",
+  "bebah ulancpilan jumpopduki",
+  "fiakan minyng menden ahpasi",
+  "nartal normtulang hulat diam",
+  "agduncannya beni bajakstahari"
+ ],
+ "seconds": 9.1,
+ "languages": [
+  "bjn"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

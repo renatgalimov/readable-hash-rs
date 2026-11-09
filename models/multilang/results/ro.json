@@ -1,0 +1,231 @@
+{
+ "name": "ro",
+ "corpus_words": 80000,
+ "relaxed_rows": 3,
+ "relaxed_examples": [
+  "mc",
+  "ii",
+  "tii"
+ ],
+ "segmented_words": 53132,
+ "skipped_words": 26868,
+ "middle_attested_fraction": 0.468994140625,
+ "end32_attested_fraction": 0.4605712890625,
+ "end16_attested_fraction": 0.6865234375,
+ "begin_attested": 128,
+ "chars": 26.43,
+ "max_chars": 35,
+ "consonant_runs_pct": 5.062,
+ "vowel_runs_pct": 5.103,
+ "english_words_pct": 1.816,
+ "own_words_pct": 28.839,
+ "offensive_whole_pct": 3.495,
+ "offensive_whole_english_list_pct": 0.505,
+ "offensive_whole_own_list_pct": 0.2,
+ "offensive_whole_major_lists_pct": 1.695,
+ "offensive_severe_en_pct": 0.29,
+ "offensive_inside5_pct": 2.735,
+ "offensive_inside4_pct": 18.84,
+ "offensive_across_words_pct": 0.055,
+ "top_hits": [
+  [
+   "curat",
+   44,
+   [
+    "cs"
+   ],
+   [
+    "curatonclele priasca pise gita",
+    "ircurat avusunzi neant hoam"
+   ]
+  ],
+  [
+   "anita",
+   30,
+   [
+    "nl"
+   ],
+   [
+    "vanital veseildiul arheaza",
+    "probacilor junta pong panita"
+   ]
+  ],
+  [
+   "unchi",
+   22,
+   [
+    "ja"
+   ],
+   [
+    "rossibesc meseumesti unchios",
+    "assounchizi joshem colene"
+   ]
+  ],
+  [
+   "cuci",
+   21,
+   [
+    "hi"
+   ],
+   [
+    "lactonez sale cuci godrian",
+    "agatoscurat cuci eser voda"
+   ]
+  ],
+  [
+   "cena",
+   21,
+   [
+    "zh"
+   ],
+   [
+    "cena proemasei kaal glidam",
+    "groaniclale digeroarea cena"
+   ]
+  ],
+  [
+   "shit",
+   20,
+   [
+    "da",
+    "en",
+    "gd",
+    "hy",
+    "mt",
+    "my",
+    "nl",
+    "no",
+    "sk",
+    "uz",
+    "zu"
+   ],
+   [
+    "fooschlice shit sfie voti",
+    "shit bizambam heti oproza"
+   ]
+  ],
+  [
+   "mona",
+   19,
+   [
+    "it"
+   ],
+   [
+    "agisem niro chirlite mona",
+    "imbelit napamand seon mona"
+   ]
+  ],
+  [
+   "name",
+   19,
+   [
+    "ja"
+   ],
+   [
+    "emailuliul ciit name pice",
+    "afasem jasmosilor name natie"
+   ]
+  ],
+  [
+   "dran",
+   18,
+   [
+    "pl"
+   ],
+   [
+    "imparaia ghlonul dran tunusa",
+    "prefecustat aren prick dran"
+   ]
+  ],
+  [
+   "nima",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "loiaza nima genota femate",
+    "juguenunge alei sisi nima"
+   ]
+  ],
+  [
+   "inat",
+   17,
+   [
+    "sq"
+   ],
+   [
+    "inat maleta flintifat anca",
+    "obolemimie ruie shea inat"
+   ]
+  ],
+  [
+   "anali",
+   17,
+   [
+    "mt"
+   ],
+   [
+    "priza brolteasca analizare haga",
+    "bistigri analizoara agmezi"
+   ]
+  ],
+  [
+   "scat",
+   17,
+   [
+    "en"
+   ],
+   [
+    "jubizibitul afilicatoare scat",
+    "mosul feelnegonul deon scat"
+   ]
+  ],
+  [
+   "puta",
+   16,
+   [
+    "ca",
+    "es",
+    "eu",
+    "gl",
+    "pt"
+   ],
+   [
+    "orbinomul jegola brii puta",
+    "breteaza arsi juctonare puta"
+   ]
+  ],
+  [
+   "sung",
+   16,
+   [
+    "vi"
+   ],
+   [
+    "umplegiu peante pori sung",
+    "antistam sung andominabile"
+   ]
+  ]
+ ],
+ "samples": [
+  "freera esit herd ecascioasa",
+  "deda avarire aliante frapus",
+  "blindei hansez tahini scez",
+  "tite drointiat caile topine",
+  "brigadman clutacterne fare",
+  "auroscasim priti tubuinde",
+  "aprobagire fatirare opilor",
+  "heavorare obre mirant dora",
+  "poilor drolnteze scorgaunere",
+  "imbia adunte marisa jessau",
+  "fabini volumintelor fiti neta",
+  "avasluth poor inmuziarile"
+ ],
+ "seconds": 8.5,
+ "languages": [
+  "ro"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

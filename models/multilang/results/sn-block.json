@@ -1,0 +1,236 @@
+{
+ "name": "sn-block",
+ "corpus_words": 65224,
+ "relaxed_rows": 28,
+ "relaxed_examples": [
+  "je",
+  "ju",
+  "ce",
+  "sc",
+  "lu",
+  "ae",
+  "ex",
+  "fl",
+  "zu",
+  "ao",
+  "cu",
+  "sy"
+ ],
+ "banned_pairs": 3367,
+ "segmented_words": 52249,
+ "skipped_words": 12975,
+ "middle_attested_fraction": 0.3787027994791667,
+ "end32_attested_fraction": 0.3394368489583333,
+ "end16_attested_fraction": 0.5452473958333334,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "three_token_rounds": [
+  673,
+  440,
+  240,
+  127
+ ],
+ "chars": 28.96,
+ "max_chars": 37,
+ "consonant_runs_pct": 4.262,
+ "vowel_runs_pct": 4.561,
+ "english_words_pct": 0.887,
+ "own_words_pct": 21.579,
+ "offensive_whole_pct": 0.49,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.0,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 3.68,
+ "offensive_inside4_pct": 18.37,
+ "offensive_across_words_pct": 0.01,
+ "top_hits": [
+  [
+   "tanga",
+   328,
+   [
+    "fil"
+   ],
+   [
+    "yayo kepetotanga atototshoma",
+    "kunda apomokutanga idungira agira"
+   ]
+  ],
+  [
+   "chipa",
+   43,
+   [
+    "uz"
+   ],
+   [
+    "agnene nyota irasikana idichipa",
+    "idavanediidza dema ugobichipa"
+   ]
+  ],
+  [
+   "chich",
+   33,
+   [
+    "vi"
+   ],
+   [
+    "chichikoho vokura betsvarura",
+    "chichaunza nasara inhimutedzwa"
+   ]
+  ],
+  [
+   "dambi",
+   30,
+   [
+    "uk"
+   ],
+   [
+    "payaro aidambidzanga dhimira",
+    "keminga awozofichinzi idambisa"
+   ]
+  ],
+  [
+   "kurwa",
+   24,
+   [
+    "pl"
+   ],
+   [
+    "kurwa gobhodomho ndiro mune",
+    "vokwenera auye kurwa avaiti"
+   ]
+  ],
+  [
+   "here",
+   23,
+   [
+    "hu"
+   ],
+   [
+    "ukirwa yenyazova here edichiedza",
+    "ngiswa here pfichibhidya avita"
+   ]
+  ],
+  [
+   "tsipa",
+   21,
+   [
+    "sr"
+   ],
+   [
+    "hotsipatsira yaba nditonhwange",
+    "noise negutsipa dunoita neina"
+   ]
+  ],
+  [
+   "dombo",
+   21,
+   [
+    "nl"
+   ],
+   [
+    "predza dombonoviswa afushames",
+    "nachema vozoisa chiya domboni"
+   ]
+  ],
+  [
+   "zakar",
+   20,
+   [
+    "ms"
+   ],
+   [
+    "dzakare ezirwa shoromira edawo",
+    "asendeswa tsapwe zakarirwamuwana"
+   ]
+  ],
+  [
+   "kunda",
+   15,
+   [
+    "cs"
+   ],
+   [
+    "kunda apomokutanga idungira agira",
+    "rwechiti kunda kunyoro hwehita"
+   ]
+  ],
+  [
+   "michin",
+   15,
+   [
+    "ko"
+   ],
+   [
+    "gwavika difuguri ezumichina",
+    "imichinyira rume shizheekuimba"
+   ]
+  ],
+  [
+   "mocha",
+   14,
+   [
+    "mk",
+    "uk"
+   ],
+   [
+    "seaschinyirwa mochasarura gomo",
+    "mochaweva eninoshandisa sichiona"
+   ]
+  ],
+  [
+   "matir",
+   13,
+   [
+    "uk"
+   ],
+   [
+    "weimba pfiswa chinodya nhematira",
+    "agangazve kwetezvi ematiri"
+   ]
+  ],
+  [
+   "satan",
+   12,
+   [
+    "no",
+    "sv"
+   ],
+   [
+    "wamuda aburai komisatano",
+    "pfira dukise rwenana satango"
+   ]
+  ],
+  [
+   "pina",
+   12,
+   [
+    "hu"
+   ],
+   [
+    "denyasikana pina saora dzasangana",
+    "demeatainge epora marwa pina"
+   ]
+  ]
+ ],
+ "samples": [
+  "apopia soura dunhu fupetuma",
+  "zvera hotema acomoka apumbo",
+  "beputwa guinoitwa hwerwo atidza",
+  "isiri keichifadza neno tsamere",
+  "bhemalse gwingoitakapihwa aiisa",
+  "ezekuvertezo daika podishore",
+  "urikubvokuramba aisinzerwa faka",
+  "dudimbuka aara haaiita ucera",
+  "yayo kepetotanga atototshoma",
+  "zano ngwene pandeka onyati",
+  "aishana evadzisari toona kuisa",
+  "hotsipatsira yaba nditonhwange"
+ ],
+ "seconds": 308.0,
+ "languages": [
+  "sn"
+ ],
+ "no_english": false,
+ "blocklist": true
+}

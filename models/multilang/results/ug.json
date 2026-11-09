@@ -1,0 +1,227 @@
+{
+ "name": "ug",
+ "corpus_words": 42559,
+ "relaxed_rows": 145,
+ "relaxed_examples": [
+  "so",
+  "qo",
+  "to",
+  "bi",
+  "bo",
+  "ho",
+  "is",
+  "yi",
+  "yo",
+  "nw",
+  "bg",
+  "dv"
+ ],
+ "segmented_words": 27151,
+ "skipped_words": 15408,
+ "middle_attested_fraction": 0.21736653645833334,
+ "end32_attested_fraction": 0.18754069010416666,
+ "end16_attested_fraction": 0.3353678385416667,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 29.55,
+ "max_chars": 44,
+ "consonant_runs_pct": 42.163,
+ "vowel_runs_pct": 4.027,
+ "english_words_pct": 0.359,
+ "own_words_pct": 9.299,
+ "offensive_whole_pct": 0.975,
+ "offensive_whole_english_list_pct": 0.0,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 0.655,
+ "offensive_severe_en_pct": 0.0,
+ "offensive_inside5_pct": 1.92,
+ "offensive_inside4_pct": 14.63,
+ "offensive_across_words_pct": 0.03,
+ "top_hits": [
+  [
+   "tatti",
+   34,
+   [
+    "hi"
+   ],
+   [
+    "nwlurlara sulak ewagh nawatatti",
+    "bgidi dayewatatti pemu lelidaka"
+   ]
+  ],
+  [
+   "amlar",
+   23,
+   [
+    "tr"
+   ],
+   [
+    "qtqanmiz koranang zedaka besamlara",
+    "icidi dotlpamlara praq yidan"
+   ]
+  ],
+  [
+   "pede",
+   22,
+   [
+    "fr"
+   ],
+   [
+    "dalmigenllha pede bylaqldum",
+    "kelara pede oxllensen bzreye"
+   ]
+  ],
+  [
+   "zamen",
+   19,
+   [
+    "ja"
+   ],
+   [
+    "zamen mteghlmu makhra qiinglar",
+    "zamen acde yiinglar tlushmighanayade"
+   ]
+  ],
+  [
+   "muna",
+   19,
+   [
+    "fi"
+   ],
+   [
+    "mwshlalianang muna buler mquymen",
+    "muna qnaghn hoidi juptashchadaka"
+   ]
+  ],
+  [
+   "samen",
+   18,
+   [
+    "de"
+   ],
+   [
+    "samen testwnqlydaghn hlqarmydu",
+    "vqdan ywqursng samen qlydadan"
+   ]
+  ],
+  [
+   "hlang",
+   16,
+   [
+    "th"
+   ],
+   [
+    "netlrdan qysurulda tamen hlang",
+    "komen khlangdaka quna pekhlaq"
+   ]
+  ],
+  [
+   "pute",
+   15,
+   [
+    "fr"
+   ],
+   [
+    "pute qirmlr yogh dopartana",
+    "ywna treyttadaka pute tmurisiz"
+   ]
+  ],
+  [
+   "tanga",
+   15,
+   [
+    "fil"
+   ],
+   [
+    "bietangagh tsadan ywqumu tpsen",
+    "ywtashqasna jumiz epetangazna"
+   ]
+  ],
+  [
+   "neng",
+   15,
+   [
+    "zh"
+   ],
+   [
+    "neng swdadan yide ackhtamu",
+    "syaq hwladu tmshabakasen neng"
+   ]
+  ],
+  [
+   "kutta",
+   14,
+   [
+    "hi"
+   ],
+   [
+    "koltlrna mqta kutta tsanastluq",
+    "oqap lalr qrleynleydaghn kutta"
+   ]
+  ],
+  [
+   "xana",
+   14,
+   [
+    "pt"
+   ],
+   [
+    "qilghndu daymang padu xana",
+    "qntnang samsushamaz chavlr xana"
+   ]
+  ],
+  [
+   "bunda",
+   14,
+   [
+    "pt"
+   ],
+   [
+    "buyadaghn pynsnang olchadaka bundan",
+    "bralrnang bundan zehlymnd mwshna"
+   ]
+  ],
+  [
+   "epsh",
+   14,
+   [
+    "sq"
+   ],
+   [
+    "dwmen khrede epsh napalesen",
+    "khemgh ballnang epsh oyushtan"
+   ]
+  ],
+  [
+   "yasa",
+   13,
+   [
+    "ko"
+   ],
+   [
+    "twghargeydan yrtta yasa qashna",
+    "twmaqchina bhansta qlmalr yasa"
+   ]
+  ]
+ ],
+ "samples": [
+  "qyayadaka almen bhagh epqlansen",
+  "beghn oqtlrgh sezger qygagh",
+  "ryushamu gumlada hekagh page",
+  "qtlaq nmunaladu qasen zamash",
+  "tiyarmadu kilukchunnang sudan",
+  "snakekursen uclaq ewzalasen",
+  "yighralmdu suzalmydu nundan",
+  "bhshlalumna slagh twlada biinglar",
+  "taqq nmylmlrna parqlsmigensh",
+  "mqche qrladur teshkage vstumen",
+  "sunglak mslashyamaz oymen keke",
+  "oqigenrllak tasa yemekurylana"
+ ],
+ "seconds": 10.4,
+ "languages": [
+  "ug"
+ ],
+ "no_english": false,
+ "blocklist": false
+}

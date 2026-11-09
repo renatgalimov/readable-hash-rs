@@ -1,0 +1,272 @@
+{
+ "name": "ha",
+ "corpus_words": 17854,
+ "relaxed_rows": 189,
+ "relaxed_examples": [
+  "kw",
+  "ke",
+  "ky",
+  "so",
+  "be",
+  "me",
+  "ro",
+  "co",
+  "de",
+  "ne",
+  "je",
+  "to"
+ ],
+ "segmented_words": 12782,
+ "skipped_words": 5072,
+ "middle_attested_fraction": 0.12801106770833334,
+ "end32_attested_fraction": 0.20035807291666666,
+ "end16_attested_fraction": 0.352783203125,
+ "begin_attested": 128,
+ "beginning_fallback": true,
+ "chars": 26.36,
+ "max_chars": 32,
+ "consonant_runs_pct": 3.154,
+ "vowel_runs_pct": 11.58,
+ "english_words_pct": 0.81,
+ "own_words_pct": 19.837,
+ "offensive_whole_pct": 2.62,
+ "offensive_whole_english_list_pct": 0.245,
+ "offensive_whole_own_list_pct": 0.0,
+ "offensive_whole_major_lists_pct": 1.76,
+ "offensive_severe_en_pct": 0.135,
+ "offensive_inside5_pct": 2.91,
+ "offensive_inside4_pct": 20.245,
+ "offensive_across_words_pct": 0.005,
+ "top_hits": [
+  [
+   "tikar",
+   35,
+   [
+    "sv"
+   ],
+   [
+    "lonnubashi noka cefinmu tikar",
+    "tikar azarta yokulaccabi hauwa"
+   ]
+  ],
+  [
+   "monta",
+   22,
+   [
+    "it"
+   ],
+   [
+    "ikauta yerkasa domonta gadu",
+    "bottattekarmu simonta inkinsa"
+   ]
+  ],
+  [
+   "furi",
+   22,
+   [
+    "ja"
+   ],
+   [
+    "yennumirina getuduka furi",
+    "ikorta furi ayouiriya iden"
+   ]
+  ],
+  [
+   "teta",
+   22,
+   [
+    "es"
+   ],
+   [
+    "yomi teta bedulumai irmunka",
+    "tengamura yohibunnai teta"
+   ]
+  ],
+  [
+   "skata",
+   21,
+   [
+    "el"
+   ],
+   [
+    "gwatiskata lamansu runa rako",
+    "awau afkumoshi akagamiskata"
+   ]
+  ],
+  [
+   "kisa",
+   18,
+   [
+    "is"
+   ],
+   [
+    "kisa wunnafukun kubar umci",
+    "wakokaben shiyya kisa aradiyya"
+   ]
+  ],
+  [
+   "loda",
+   17,
+   [
+    "hi"
+   ],
+   [
+    "pasajirkata loda keke arwa",
+    "jula sankakabai fitar loda"
+   ]
+  ],
+  [
+   "kuce",
+   17,
+   [
+    "lv"
+   ],
+   [
+    "kuce cimbikisra gitan joan",
+    "kwakinsa matsulewa kuce unai"
+   ]
+  ],
+  [
+   "nian",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "jefi lalazara nian gwiwta",
+    "lici pargen ubutelai nian"
+   ]
+  ],
+  [
+   "tama",
+   17,
+   [
+    "pl",
+    "zh"
+   ],
+   [
+    "haura guddumaciya tama arwa",
+    "adinsa tama kibuto aidumushe"
+   ]
+  ],
+  [
+   "nima",
+   17,
+   [
+    "zh"
+   ],
+   [
+    "layuon canyiwya nima ainta",
+    "nima dulurbon usta arrinsa"
+   ]
+  ],
+  [
+   "koli",
+   16,
+   [
+    "kn"
+   ],
+   [
+    "chen koli dehimmumci ibai",
+    "idabawa gyin koli addanninta"
+   ]
+  ],
+  [
+   "bola",
+   16,
+   [
+    "id",
+    "ms"
+   ],
+   [
+    "insiru saki bola ilminyin",
+    "zaitin atajawa likosa bola"
+   ]
+  ],
+  [
+   "wang",
+   16,
+   [
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fi",
+    "fr",
+    "gd",
+    "gl",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "ko",
+    "la",
+    "lt",
+    "lv",
+    "ms",
+    "mt",
+    "my",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sq",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "zu"
+   ],
+   [
+    "zarugansa wang roin hamanta",
+    "wang ilorutamiki abia kike"
+   ]
+  ],
+  [
+   "naji",
+   16,
+   [
+    "hi",
+    "kn",
+    "my",
+    "te"
+   ],
+   [
+    "naji hiye gamagama tibuwa",
+    "irwa farmetata naji rirkita"
+   ]
+  ]
+ ],
+ "samples": [
+  "junyun cema imen nonnabai",
+  "habe umaffi zargiya jurcnta",
+  "itafen azaruwarsa amfunsu gili",
+  "goya rernimar tasu iyimata",
+  "ayattazsa jeuraleken rura",
+  "atusudiliya lota idokausan",
+  "canjibikuka rukorowa fera",
+  "imorugin near ragarsa dinsu",
+  "tsis remeirun ginarwkota",
+  "irya sigage sharra fohayi",
+  "rusunci yiwurgawa asia kain",
+  "umumagarka tsal sabadafaye"
+ ],
+ "seconds": 9.1,
+ "languages": [
+  "ha"
+ ],
+ "no_english": false,
+ "blocklist": false
+}
