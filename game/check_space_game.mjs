@@ -253,8 +253,8 @@ console.log("random:", await evaluate(`document.getElementById('formula').textCo
 const marks = await evaluate(`(() => {
   const o = origins();
   if (!o) return { error: "origins not loaded" };
-  let checked = 0, original = 0;
-  const bad = [], samples = [];
+  let checked = 0, original = 0, otherScript = 0;
+  const bad = [], samples = [], badLatin = [], scriptSamples = [];
   const check = (packed, token, kind, before) => {
     const u = unpackOrigin(packed);
     for (const g of (u ? u.groups : []).filter((g) => g.word)) {
@@ -268,10 +268,19 @@ const marks = await evaluate(`(() => {
       checked += 1;
       if (!/^[a-z]+$/.test(g.word)) { original += 1; if (samples.length < 4 && kind === "c") samples.push(html); }
       if (!ok && bad.length < 5) bad.push([g.word, token, kind, bold]);
+      // A word in another script also shows its a-z form, with exactly the token in bold.
+      const latin = latinWord(g.word, token, kind, before);
+      if (OTHER_SCRIPT.test(g.word)) {
+        otherScript += 1;
+        const plain = [...g.word].map((ch) => o.FOLD[ch] ?? ch).join("");
+        const latinBold = (latin.match(/<b>(.*)<\\/b>/) || [])[1];
+        if ((latinBold !== token || latin.replace(/<[^>]*>/g, "") !== plain) && badLatin.length < 5) badLatin.push([g.word, token, latin]);
+        if (scriptSamples.length < 6 && !scriptSamples.some((x) => x[0] === [...g.word][0])) scriptSamples.push([[...g.word][0], html + " (" + latin + ")"]);
+      } else if (latin && badLatin.length < 5) badLatin.push([g.word, token, "Latin word with an a-z form"]);
     }
   };
   for (const [id, packed] of Object.entries(o.BEGIN)) check(packed, TABLE_TOKENS[id], "b");
-  let turkishSentence = null;  // what the page says for an example written onların
+  let turkishSentence = null, scriptSentence = null;  // what the page says for onların, and for a Greek word
   for (const [previous, row] of Object.entries(o.FOLLOW)) {
     const r = rowOf(Number(previous));
     row.split(" ").forEach((packed, slot) => {
@@ -283,14 +292,32 @@ const marks = await evaluate(`(() => {
         turkishSentence = originSentence({ id, t: TABLE_TOKENS[id] }, kind, { id: Number(previous), t: TABLE_TOKENS[previous] })
           .replace(/<a [^>]*>|<\\/a>/g, "");
       }
+      if (!scriptSentence && u && u.groups.some((g) => g.word && /\\p{Script=Greek}/u.test(g.word))) {
+        scriptSentence = originSentence({ id, t: TABLE_TOKENS[id] }, kind, { id: Number(previous), t: TABLE_TOKENS[previous] })
+          .replace(/<a [^>]*>|<\\/a>/g, "");
+      }
     });
   }
-  return { checked, original, bad, samples, turkishSentence, onlarin: o.EXAMPLES.split(" ").filter((w) => /^onlar/.test(w)) };
+  return { checked, original, bad, samples, turkishSentence, otherScript, badLatin, scriptSamples: scriptSamples.map((x) => x[1]),
+    scriptSentence, onlarin: o.EXAMPLES.split(" ").filter((w) => /^onlar/.test(w)) };
 })()`);
 console.log("original spellings:", JSON.stringify(marks));
 expect(!marks.error && marks.checked > 10000 && marks.bad.length === 0, "every example's bold letters fold to its token");
 expect(marks.original > 1000, "examples keep their original spelling (diacritics, other scripts)");
 expect(!(marks.onlarin || []).includes("onlarin"), "Turkish words keep their letters (onların, not onlarin)");
+expect(marks.otherScript > 100 && marks.badLatin.length === 0, "words in other scripts show their a-z form, the token in bold");
+// How these sentences look on the page: shown at the top, in the page's own fonts.
+await evaluate(`(() => {
+  const box = document.createElement("p");
+  box.className = "check-sample";
+  box.innerHTML = ${JSON.stringify([marks.scriptSentence, marks.turkishSentence].join("<br>"))};
+  document.body.prepend(box);
+  window.scrollTo(0, 0);
+})()`);
+await send("Emulation.setDeviceMetricsOverride", { width: 760, height: 260, deviceScaleFactor: 1, mobile: false });
+const fullPage = await send("Page.captureScreenshot", { format: "png", clip: { x: 0, y: 0, width: 760, height: 260, scale: 1 } });
+writeFileSync(path.join(OUT, "14-other-scripts.png"), Buffer.from(fullPage.result.data, "base64"));
+console.log("screenshot", path.join(OUT, "14-other-scripts.png"));
 console.log("errors", JSON.stringify(errors));
 expect(errors.length === 0, "no JS errors");
 ws.close();

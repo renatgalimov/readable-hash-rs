@@ -348,6 +348,16 @@ function unpackOrigin(packed) {
 // written as its language writes it (onların); tokens are ASCII (in), so the letters are folded one by one (FOLD)
 // to find the token, and the original letters it came from are marked.
 function markWord(word, token, kind, before) {
+  const { letters, folded, from, at } = findToken(word, token, kind, before);
+  if (at < 0) return `<i>${word}</i>`;
+  const fold = origins().FOLD || {};
+  const start = from[at];
+  let end = from[at + token.length - 1] + 1;
+  while (end < letters.length && (fold[letters[end]] ?? letters[end]) === "") end += 1;  // keep combining marks
+  return `<i>${letters.slice(0, start).join("")}<b>${letters.slice(start, end).join("")}</b>${letters.slice(end).join("")}</i>`;
+}
+// Where the token is in the word folded to a-z (onların -> onlarin): at = its index there, or -1.
+function findToken(word, token, kind, before) {
   const fold = origins().FOLD || {};
   const letters = [...word];
   let folded = "";
@@ -356,19 +366,31 @@ function markWord(word, token, kind, before) {
   let at = kind === "b" ? 0 : kind === "e" ? folded.length - token.length : folded.indexOf(before + token, 1);
   if (at < 0) at = folded.indexOf(token, 1);
   else if (kind === "c") at += before.length;
-  if (at < 0 || at + token.length > folded.length) return `<i>${word}</i>`;
-  const start = from[at];
-  let end = from[at + token.length - 1] + 1;
-  while (end < letters.length && (fold[letters[end]] ?? letters[end]) === "") end += 1;  // keep combining marks
-  return `<i>${letters.slice(0, start).join("")}<b>${letters.slice(start, end).join("")}</b>${letters.slice(end).join("")}</i>`;
+  if (at + token.length > folded.length) at = -1;
+  return { letters, folded, from, at };
+}
+// A letter of another script than the Latin one (Greek, Cyrillic, Thaana...); marks and ʻ-like signs don't count.
+const OTHER_SCRIPT = /(?![\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}])\p{L}/u;
+// The a-z form of a word written in another script, with the token in bold (αδελφή -> adel<b>fi</b>); "" for
+// Latin-script words, whose a-z form a reader can see (onların).
+function latinWord(word, token, kind, before) {
+  if (!OTHER_SCRIPT.test(word)) return "";
+  const { folded, at } = findToken(word, token, kind, before);
+  if (at < 0) return `<i>${folded}</i>`;
+  return `<i>${folded.slice(0, at)}<b>${folded.slice(at, at + token.length)}</b>${folded.slice(at + token.length)}</i>`;
 }
 const andList = (items) => orList(items).replace(/ or ([^,]*)$/, " and $1");
 // "26 languages, like realizar (Spanish, Portuguese, Asturian and 2 more); also Occitan and Venetian", or with
-// different spellings: "like mára (Hungarian) or mara (Swahili, Somali and 14 more)"
+// different spellings: "like mára (Hungarian) or mara (Swahili, Somali and 14 more)". Words in another script
+// come with their a-z form: "like αδελφή (adelfi; Greek)".
 function originPhrase(o, token, kind, before) {
   const spellings = o.groups.filter((g) => g.word);
   const also = o.groups.filter((g) => !g.word).flatMap((g) => g.langs);
-  const shown = spellings.map((g) => `${markWord(g.word, token, kind, before)} (${andList(g.more ? [...g.langs, `${g.more} more`] : g.langs)})`);
+  const shown = spellings.map((g) => {
+    const latin = latinWord(g.word, token, kind, before);
+    const langs = andList(g.more ? [...g.langs, `${g.more} more`] : g.langs);
+    return `${markWord(g.word, token, kind, before)} (${latin ? `${latin}; ` : ""}${langs})`;
+  });
   return `${o.n === origins().LANG_NAMES.length ? `all ${o.n} languages` : plural(o.n, "language")}, `
     + `like ${orList(shown)}` + (also.length ? `; also ${andList(also)}` : "");
 }
@@ -427,6 +449,7 @@ function beginningPage(slot) {
       + `so every word picks from the same list.` : `<b>Where the ${BEGIN.length} come from.</b> They are the most common ways a word starts, `
       + `in a word list made of the common words of ${LANGUAGES} languages, most of them easy to say. `
       + `Tokens use only the letters a to z, so the words are read that way: onların as onlarin, Straße as strasse. `
+      + `Words in other scripts show that form next to them: μάθει (mathei). `
       + `No beginning may start another one: with both <b>${short}</b> and <b>${long}</b>, a reader seeing “${long}…” couldn’t tell `
       + `where the beginning ends. So the ${BEGIN_PAGE.length} candidates are word starts that don’t start one another, `
       + `the more common one kept each time. Word starts on an offensive-word list are never candidates, however common. `
