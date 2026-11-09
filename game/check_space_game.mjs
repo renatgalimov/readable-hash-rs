@@ -155,8 +155,10 @@ const cases = [
   { name: "middle after re (3+3+5)", path: ["3 tokens", "3 tokens", "5 tokens"], first: "re", kind: "c", size: 32 },
   { name: "32-ending after re (2+4+5)", path: ["2 tokens", "4 tokens", "5 tokens"], first: "re", kind: "e", size: 32 },
   { name: "16-ending after st (2+3+3+3)", path: ["2 tokens", "3 tokens", "3 tokens"], first: "st", kind: "e", size: 16 },
-  // After za, tokens starting with aa would put a three times in a row (the reported word was za+na+ss+sa).
-  { name: "middle after za (3+3+5)", path: ["3 tokens", "3 tokens", "5 tokens"], first: "za", kind: "c", size: 32 },
+  // The same letter three times in a row: the beginning with the most such tokens, chosen by the mirror below
+  // (tables change, so a fixed beginning may drop out; the reported word was za+na+ss+sa).
+  { name: "middle after the beginning with the most tripled letters (3+3+5)", path: ["3 tokens", "3 tokens", "5 tokens"],
+    first: null, most: "triple", kind: "c", size: 32 },
 ];
 const mirror = spawnSync("python3", ["-c", `
 import json, sys
@@ -167,13 +169,16 @@ text = [game.phrase.text_of(t) for t in model["tokens"]]
 cases = json.loads(sys.argv[1])
 out = []
 for c in cases:
+    if c.get("most"):  # the chosen beginning with the most tokens out for this reason
+        c["first"] = text[max(sorted(model["begin"], key=lambda b: text[b]),
+                              key=lambda b: len(game.follow_groups(model, b, c["kind"], c["size"])[c["most"]]))]
     previous = text.index(c["first"]) if "then" not in c else next(i for i in range(512, 1024) if text[i] == c["then"])
     groups = game.follow_groups(model, previous, c["kind"], c["size"])
-    out.append({"pick": len(groups.pop("pick")), "groups": {k: len(v) for k, v in groups.items() if v}})
+    out.append({"first": c["first"], "pick": len(groups.pop("pick")), "groups": {k: len(v) for k, v in groups.items() if v}})
 print(json.dumps(out))
 `, JSON.stringify(cases)], { encoding: "utf8" });
 expect(mirror.status === 0, "python mirror of the page rules runs: " + mirror.stderr.trim().slice(-300));
-JSON.parse(mirror.stdout || "[]").forEach((e, i) => { cases[i].expect = e; });
+JSON.parse(mirror.stdout || "[]").forEach(({ first, ...e }, i) => { cases[i].first = first; cases[i].expect = e; });
 let n = 8;
 for (const c of cases) {
   console.log(await clickPath(c.path), await pickToken(c.first), c.then ? await pickToken(c.then) : "");

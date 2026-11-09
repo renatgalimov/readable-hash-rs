@@ -325,8 +325,13 @@ const binary = (index, width) => index.toString(2).padStart(width, "0");
 
 // ---- Where a token comes from, and why a banned one is out. ----
 // A language name linked to its English Wikipedia article (opens a new tab; the game is embedded in the post).
-const langLink = (name, article) => (article
-  ? `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(article)}" target="_blank" rel="noopener">${name}</a>` : name);
+// An article may name a section ("Languages_constructed_by_Tolkien#Rohirric"); only the parts are escaped.
+const langLink = (name, article) => {
+  if (!article) return name;
+  const [title, section] = article.split("#");
+  const href = `https://en.wikipedia.org/wiki/${encodeURIComponent(title)}${section ? `#${encodeURIComponent(section)}` : ""}`;
+  return `<a href="${href}" target="_blank" rel="noopener">${name}</a>`;
+};
 function unpackOrigin(packed) {
   if (!packed) return null;
   EXAMPLES = EXAMPLES || origins().EXAMPLES.split(" ");
@@ -408,7 +413,7 @@ function beginningPage(slot) {
       + `so it stores log₂ ${BEGIN.length} = ${bitWord(Math.log2(BEGIN.length))}.`,
     note: slot.w > 0 ? `<b>The same ${BEGIN.length} as for the first word.</b> A beginning doesn’t depend on the word before it, `
       + `so every word picks from the same list.` : `<b>Where the ${BEGIN.length} come from.</b> They are the most common ways a word starts, `
-      + `in a word list made of the common words of ${LANGUAGES} languages that are easy to say. `
+      + `in a word list made of the common words of ${LANGUAGES} languages, most of them easy to say. `
       + `No beginning may start another one: with both <b>${short}</b> and <b>${long}</b>, a reader seeing “${long}…” couldn’t tell `
       + `where the beginning ends. So the ${BEGIN_PAGE.length} candidates are word starts that don’t start one another, `
       + `the more common one kept each time. Word starts on an offensive-word list are never candidates, however common. `

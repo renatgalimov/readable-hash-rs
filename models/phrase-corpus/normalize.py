@@ -9,7 +9,12 @@ they are 2+ letters a-z. words/languages.json summarizes each language: name, so
 it was originally Latin script.
 
     .venv/bin/python normalize.py            # all sources found under raw/
+    .venv/bin/python normalize.py --only tatoeba,eldamo   # re-read some sources; merge into the existing words/
+
+Most languages need 2,000+ words to be written; constructed languages (CONSTRUCTED) are kept from 20 words, so
+small ones from books (Láadan, Tolkien's Khuzdul) still reach the word list.
 """
+import argparse
 import collections
 import csv
 import io
@@ -29,12 +34,30 @@ RAW, WORDS = DATA / "raw", DATA / "words"
 WORD = re.compile(r"\w+", re.UNICODE)
 ASCII_WORD = re.compile(r"[a-z]{2,}")
 NO_SPACES = {"zh", "ja", "th", "lo", "km", "my", "bo", "yue", "wuu"}  # scripts without spaces between words
+# Constructed languages: kept however few words they have. Codes the language library doesn't know yet (tok) or that
+# have no ISO code (Tolkien's smaller languages, "x-...") are named here.
+CONSTRUCTED = {"eo": None, "io": None, "ia": None, "ie": None, "lfn": None, "jbo": None, "vo": None, "avk": None,
+               "tlh": None, "tok": "Toki Pona", "bzt": None, "nov": None, "tzl": None, "afh": None, "ldn": None,
+               "dws": None, "igs": None, "qya": None, "sjn": None, "x-gnomish": "Gnomish", "x-telerin": "Telerin",
+               "x-adunaic": "Adûnaic", "x-ilkorin": "Ilkorin", "x-khuzdul": "Khuzdul", "x-blackspeech": "Black Speech",
+               "x-westron": "Westron", "x-rohirric": "Rohirric", "x-nandorin": "Nandorin", "x-valarin": "Valarin"}
+# Eldamo (Tolkien's languages, CC BY 4.0): its language ids -> our codes. Tolkien's own words only: the fan-made
+# Neo-Eldarin lists and the reconstructed primitive roots are left out. Earlier stages count as the later language
+# (Early and Middle Quenya are Quenya; Noldorin, Tolkien's earlier conception of Sindarin, is Sindarin).
+ELDAMO = {"q": "qya", "mq": "qya", "eq": "qya", "aq": "qya", "maq": "qya", "van": "qya",
+          "s": "sjn", "n": "sjn", "en": "sjn", "on": "sjn", "os": "sjn", "norths": "sjn",
+          "g": "x-gnomish", "t": "x-telerin", "mt": "x-telerin", "et": "x-telerin", "at": "x-telerin",
+          "ad": "x-adunaic", "pad": "x-adunaic", "ilk": "x-ilkorin", "eilk": "x-ilkorin", "kh": "x-khuzdul",
+          "khx": "x-khuzdul", "bs": "x-blackspeech", "wes": "x-westron", "roh": "x-rohirric", "nan": "x-nandorin",
+          "dan": "x-nandorin", "val": "x-valarin"}
 csv.field_size_limit(sys.maxsize)
 
 
 def code_of(raw):
     """Normalize a code or a language name to a short tag ('zul' -> 'zu', 'Zulu' -> 'zu'); None if unknown."""
     raw = raw.replace("_", "-")
+    if raw in CONSTRUCTED:
+        return raw
     try:
         tag = langcodes.get(raw) if raw[:1].islower() else langcodes.find(raw)
     except (LookupError, ValueError, langcodes.tag_parser.LanguageTagError):
@@ -166,28 +189,56 @@ def kaikki_file(path):
                         LANGS[code].add(part, dictionary=True, source="kaikki")
 
 
+def eldamo():
+    """Tolkien's languages from Eldamo's XML: every word and its inflected forms, as dictionary words."""
+    import xml.etree.ElementTree as ElementTree
+    path = RAW / "eldamo" / "eldamo-data.xml.xz"
+    if not path.exists():
+        return
+    with lzma.open(path) as data:
+        root = ElementTree.parse(data).getroot()
+    for word in root.iter("word"):
+        code = ELDAMO.get(word.get("l"))
+        if not code:
+            continue
+        forms = [word.get("v") or ""] + [inflect.get("v") or "" for inflect in word.iter("inflect")]
+        for form in forms:
+            if form and not re.search(r"[\s\-\[\]()¹²³?*]", form):  # skip phrases, affixes and marked forms
+                LANGS[code].add(form, dictionary=True, source="eldamo")
+
+
+SOURCES = {"subtitles": subtitles, "leipzig": leipzig, "tatoeba": tatoeba, "unimorph": unimorph, "kaikki": kaikki,
+           "eldamo": eldamo}
+
+
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--only", help="comma-separated sources to re-read; other languages' files are kept")
+    args = parser.parse_args()
+    only = args.only.split(",") if args.only else list(SOURCES)
     WORDS.mkdir(parents=True, exist_ok=True)
-    for source in (subtitles, leipzig, tatoeba, unimorph, kaikki):
+    for source in (SOURCES[name] for name in only):
         print("reading", source.__name__, flush=True)
         try:
             source()
         except (EOFError, lzma.LZMAError, tarfile.TarError, OSError) as error:
             # a file still being downloaded or compressed by fetch.py; the next run picks it up
             print("  skipped the rest of", source.__name__, "after", repr(error)[:120], flush=True)
-    summary = {}
+    summary = json.loads((WORDS / "languages.json").read_text()) if args.only else {}
     for code, lang in sorted(LANGS.items()):
         words = set(lang.count) | lang.dictionary
-        if len(words) < 2000:
+        if len(words) < (20 if code in CONSTRUCTED else 2000):
             continue
+        if args.only and code in summary and not set(summary[code]["sources"]) <= set(only):
+            continue  # this language also has sources that weren't re-read: keep its full file
         with lzma.open(WORDS / f"{code}.tsv.xz", "wt", encoding="utf-8") as out:
             for word in sorted(words, key=lambda w: (-lang.count.get(w, 0), w)):
                 out.write(f"{word}\t{lang.count.get(word, 0)}\t{int(word in lang.dictionary)}\n")
-        summary[code] = {"name": langcodes.get(code).display_name(), "words": len(words),
+        summary[code] = {"name": CONSTRUCTED.get(code) or langcodes.get(code).display_name(), "words": len(words),
                          "text_words": len(lang.count), "dictionary_words": len(lang.dictionary),
                          "sources": sorted(lang.sources), "latin_share": round(lang.latin / max(lang.total, 1), 3)}
     (WORDS / "languages.json").write_text(json.dumps(summary, indent=1))
-    print(f"{len(summary)} languages with 2000+ words")
+    print(f"{len(summary)} languages (2,000+ words, or constructed)")
 
 
 if __name__ == "__main__":

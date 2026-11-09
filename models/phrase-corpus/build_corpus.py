@@ -7,8 +7,10 @@ and writes, under models/training-data/:
 - phrase-words.txt.xz: the words the phrase tables are built from. Every language with at least
   WORDS_PER_LANGUAGE words of 4+ letters that isn't consonant-heavy contributes its WORDS_PER_LANGUAGE most frequent
   ones, so each language counts equally. A language is consonant-heavy if more than MAX_CONSONANT_RUNS percent of its
-  common words have three or more consonants in a row (English: 13.7 %, so English is out). Zulu and Xhosa, the
-  languages of "ubuntu", are always in (Zulu: 10.2 %, Xhosa: 12.2 %).
+  common words have three or more consonants in a row. The languages in ALWAYS are in whatever their size or
+  consonants (chosen by hand: Zulu and Xhosa for "ubuntu"; English, Old English and Old Norse; every constructed
+  language we have words for, from Esperanto to Tolkien's Quenya and Klingon). For those, words seen once count too:
+  Tatoeba's sentences are curated, and many constructed languages have little other text.
 - blocklist.txt.xz: offensive words from every downloaded list, in every language, folded to a-z (`term<TAB>lists`).
   Entries from the English list with severities (dsojevic) are named `dsojevic-en-<severity 1-4>`, plus
   `dsojevic-en-racial` for racial slurs.
@@ -32,7 +34,11 @@ from anyascii import anyascii
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "models" / "training-data"
 WORDS_PER_LANGUAGE = 2_500   # a language's most frequent words of 4+ letters that go into the mix (it needs this many)
-ALWAYS = {"zu": "ubuntu's languages, requested", "xh": "ubuntu's languages, requested"}
+UBUNTU, CHOSEN, CONSTRUCTED = "ubuntu's languages", "chosen", "constructed language"
+ALWAYS = {"zu": UBUNTU, "xh": UBUNTU, "en": CHOSEN, "ang": CHOSEN, "non": CHOSEN,
+          **{code: CONSTRUCTED for code in ("eo io ia ie lfn jbo vo avk tlh tok bzt nov tzl afh ldn dws igs qya sjn "
+                                            "x-gnomish x-telerin x-adunaic x-ilkorin x-khuzdul x-blackspeech x-westron "
+                                            "x-rohirric x-nandorin x-valarin").split()}}
 SAMPLE = 5_000               # common words used to measure consonant runs
 MAX_CONSONANT_RUNS = 10.0    # percent of common words with 3+ consonants in a row
 RUN = re.compile(r"[^aeiouy]{3,}")
@@ -49,14 +55,14 @@ def read_words(path):
             yield word, int(count), in_dictionary == "1"
 
 
-def ranked_words(paths):
+def ranked_words(paths, min_count=2):
     """A language's words of 4+ letters: by text frequency, then dictionary-only words in a stable shuffled order."""
     counted, dictionary_only = {}, set()
     for path in paths:
         for word, count, in_dictionary in read_words(path):
             if len(word) < 4:
                 continue
-            if count >= 2:
+            if count >= min_count:
                 counted[word] = counted.get(word, 0) + count
             elif in_dictionary:
                 dictionary_only.add(word)
@@ -102,12 +108,12 @@ def main():
     chosen, skipped, words, by_language = {}, {}, set(), {}
     for code, members in sorted(groups.items()):
         total = sum(languages[m]["words"] for m in members)
-        ranked = ranked_words([args.data / "words" / f"{m}.tsv.xz" for m in members])
+        ranked = ranked_words([args.data / "words" / f"{m}.tsv.xz" for m in members], 1 if code in ALWAYS else 2)
         sample = ranked[:SAMPLE]
         rate = round(100 * sum(bool(RUN.search(w)) for w in sample) / max(len(sample), 1), 2)
         info = {"name": languages[members[0]]["name"], "codes": members, "words": total, "consonant_runs_pct": rate,
                 "sources": sorted({s for m in members for s in languages[m]["sources"]})}
-        if len(ranked) < WORDS_PER_LANGUAGE:
+        if code not in ALWAYS and len(ranked) < WORDS_PER_LANGUAGE:
             skipped[code] = {**info, "reason": "too few words"}
         elif rate > MAX_CONSONANT_RUNS and code not in ALWAYS:
             skipped[code] = {**info, "reason": "consonant-heavy"}

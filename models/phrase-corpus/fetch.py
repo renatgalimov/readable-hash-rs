@@ -165,7 +165,16 @@ def kaikki():
         fetch("kaikki", name, url, RAW / "kaikki" / f"{name}.jsonl", compress=True)
 
 
-SOURCES = {"profanity": profanity, "subtitles": subtitles, "leipzig": leipzig, "tatoeba": tatoeba,
+def eldamo():
+    """Tolkien's languages (Quenya, Sindarin and smaller ones): Paul Strack's Eldamo lexicon, CC BY 4.0.
+
+    eldamo.org blocks scripted downloads, so the XML comes from the project's repository.
+    """
+    fetch("eldamo", "qya", "https://raw.githubusercontent.com/pfstrack/eldamo/master/src/data/eldamo-data.xml",
+          RAW / "eldamo" / "eldamo-data.xml", compress=True)  # saved as eldamo-data.xml.xz
+
+
+SOURCES = {"eldamo": eldamo, "profanity": profanity, "subtitles": subtitles, "leipzig": leipzig, "tatoeba": tatoeba,
            "unimorph": unimorph, "kaikki": kaikki}
 
 if __name__ == "__main__":

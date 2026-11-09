@@ -11,8 +11,9 @@ Format (see src/phrase.rs):
 - Each middle/ending row depends on the previous token (its context).
 
 Table rules:
-- The corpus is a word list from 100 languages (training-data/phrase-words.txt.xz, made by
-  phrase-corpus/build_corpus.py): each language that isn't consonant-heavy contributes its 2,500 most frequent words.
+- The corpus is a word list from 126 languages (training-data/phrase-words.txt.xz, made by
+  phrase-corpus/build_corpus.py): each language that isn't consonant-heavy contributes its 2,500 most frequent
+  words, and so do hand-picked ones (English, Old English, Old Norse, Zulu, Xhosa, constructed languages).
 - No token is shorter than 2 letters. The corpus is re-tokenized with a vocabulary of 2+ letter pieces.
 - The 256 beginning candidates are prefix-free: the most common word starts, skipping any that starts another
   one already taken. (In many languages the most common starts chain, like co/con/cont.)
@@ -371,7 +372,7 @@ def violations(model, terms):
     return found
 
 
-def compile_model(max_rounds=60):
+def compile_model(max_rounds=100):
     global TEXT
     words = corpus_words()
     start_terms, anywhere_terms = blocklist()
