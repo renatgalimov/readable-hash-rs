@@ -115,11 +115,12 @@ const TABLE_BANNED = __TABLE_BANNED__;
 const TABLE_RELAXED = __TABLE_RELAXED__;
 const LANGUAGES = __LANGUAGES__;  // the word list is the common words of this many languages
 // Where tokens come from (see Origins in build_space_game.py) arrives in a separate deferred script, which sets
-// window.SPACE_GAME_ORIGINS = { LANG_NAMES, LANG_LINKS (English Wikipedia articles), EXAMPLES, BEGIN (beginning id),
+// window.SPACE_GAME_ORIGINS = { LANG_NAMES, LANG_LINKS (English Wikipedia articles), EXAMPLES (words as their languages
+// write them: onların, Verfügung, þing), FOLD (letter -> the ASCII letters the tokens use: ı -> i, ß -> ss), BEGIN (beginning id),
 // FOLLOW (previous token id -> its 32
 // middles + 32 endings, space-separated), TOKEN (middle or ending id -> where it is common overall, for fillers) }.
-// Each entry is packed "n|word:lang,lang|:lang" in base 36: n languages have words with this token there; up to 3
-// are named, the first ones with an example word. The game works without it.
+// Each entry is packed "n|word:lang,lang|word:lang|:lang" in base 36: n languages have words with this token there;
+// up to 3 are named with an example word, one group per spelling, then up to 2 more without. The game works without it.
 let EXAMPLES = null;
 const origins = () => window.SPACE_GAME_ORIGINS || null;
 // Offensive words: TERMS[i] = [term, list languages (indices into LIST_NAMES)]. BAN_TERMS[previous id] lists, in the
@@ -343,22 +344,33 @@ function unpackOrigin(packed) {
       langs: langs.split(",").map((l) => langLink(origins().LANG_NAMES[parseInt(l, 36)], origins().LANG_LINKS[parseInt(l, 36)])) };
   }) };
 }
-// An example word with the token in bold: after `before` (the previous token's letters) when given.
+// An example word with the token in bold: after `before` (the previous token's letters) when given. The word is
+// written as its language writes it (onların); tokens are ASCII (in), so the letters are folded one by one (FOLD)
+// to find the token, and the original letters it came from are marked.
 function markWord(word, token, kind, before) {
-  let at = kind === "b" ? 0 : kind === "e" ? word.length - token.length : word.indexOf(before + token, 1);
-  if (at < 0) at = word.indexOf(token, 1);
+  const fold = origins().FOLD || {};
+  const letters = [...word];
+  let folded = "";
+  const from = [];  // from[i]: the original letter folded letter i comes from
+  letters.forEach((ch, i) => { for (const a of fold[ch] ?? ch) { folded += a; from.push(i); } });
+  let at = kind === "b" ? 0 : kind === "e" ? folded.length - token.length : folded.indexOf(before + token, 1);
+  if (at < 0) at = folded.indexOf(token, 1);
   else if (kind === "c") at += before.length;
-  if (at < 0) return `<i>${word}</i>`;
-  return `<i>${word.slice(0, at)}<b>${word.slice(at, at + token.length)}</b>${word.slice(at + token.length)}</i>`;
+  if (at < 0 || at + token.length > folded.length) return `<i>${word}</i>`;
+  const start = from[at];
+  let end = from[at + token.length - 1] + 1;
+  while (end < letters.length && (fold[letters[end]] ?? letters[end]) === "") end += 1;  // keep combining marks
+  return `<i>${letters.slice(0, start).join("")}<b>${letters.slice(start, end).join("")}</b>${letters.slice(end).join("")}</i>`;
 }
 const andList = (items) => orList(items).replace(/ or ([^,]*)$/, " and $1");
-// "26 languages, like realizar (Spanish, Portuguese, Asturian and 2 more); also Occitan and Venetian"
+// "26 languages, like realizar (Spanish, Portuguese, Asturian and 2 more); also Occitan and Venetian", or with
+// different spellings: "like mára (Hungarian) or mara (Swahili, Somali and 14 more)"
 function originPhrase(o, token, kind, before) {
-  const [first, ...rest] = o.groups;
-  const also = rest.flatMap((g) => g.langs);
-  const names = first.more ? [...first.langs, `${first.more} more`] : first.langs;
+  const spellings = o.groups.filter((g) => g.word);
+  const also = o.groups.filter((g) => !g.word).flatMap((g) => g.langs);
+  const shown = spellings.map((g) => `${markWord(g.word, token, kind, before)} (${andList(g.more ? [...g.langs, `${g.more} more`] : g.langs)})`);
   return `${o.n === origins().LANG_NAMES.length ? `all ${o.n} languages` : plural(o.n, "language")}, `
-    + `like ${markWord(first.word, token, kind, before)} (${andList(names)})` + (also.length ? `; also ${andList(also)}` : "");
+    + `like ${orList(shown)}` + (also.length ? `; also ${andList(also)}` : "");
 }
 // One sentence on where the token picked (or pointed at) comes from.
 function originSentence(e, kind, previous) {
@@ -414,6 +426,7 @@ function beginningPage(slot) {
     note: slot.w > 0 ? `<b>The same ${BEGIN.length} as for the first word.</b> A beginning doesn’t depend on the word before it, `
       + `so every word picks from the same list.` : `<b>Where the ${BEGIN.length} come from.</b> They are the most common ways a word starts, `
       + `in a word list made of the common words of ${LANGUAGES} languages, most of them easy to say. `
+      + `Tokens use only the letters a to z, so the words are read that way: onların as onlarin, Straße as strasse. `
       + `No beginning may start another one: with both <b>${short}</b> and <b>${long}</b>, a reader seeing “${long}…” couldn’t tell `
       + `where the beginning ends. So the ${BEGIN_PAGE.length} candidates are word starts that don’t start one another, `
       + `the more common one kept each time. Word starts on an offensive-word list are never candidates, however common. `

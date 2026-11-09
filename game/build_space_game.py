@@ -20,6 +20,8 @@ import compile_phrase as phrase  # noqa: E402
 MODEL = HERE.parent / "models/phrase_model.json"
 LANGUAGES = HERE.parent / "models/training-data/phrase-words.json"
 LANGUAGE_WORDS = HERE.parent / "models/training-data/phrase-languages.txt.xz"
+# How each language writes the words (onlarin -> onların), and a table folding each letter of those spellings.
+ORIGINALS = HERE.parent / "models/training-data/phrase-originals.txt.xz"
 WIKIPEDIA = HERE.parent / "models/phrase-corpus/language-wikipedia.json"  # code -> English Wikipedia article
 
 
@@ -108,9 +110,10 @@ class Origins:
 
     The example word is the one shared by most languages among the top languages' own most common examples;
     every language whose list has it is named with it (largest corpus first, up to SAME, then a count), and up to
-    ALSO other top languages follow. Packed entry: "n|word:lang,lang;more|:lang,lang" (base 36; n = number of languages,
-    more = how many further languages have the word), "" when there is none. One word per entry keeps the file at
-    about 600 KB instead of 850 KB.
+    ALSO other top languages follow. The word is shown as each named language writes it (onların in Turkish, not
+    the folded onlarin): one group per spelling. Packed entry: "n|word:lang,lang|word:lang;more|:lang,lang" (base 36;
+    n = number of languages, words index EXAMPLES, more = how many further languages have the word, after the last
+    spelling), "" when there is none. One word per entry keeps the file at about 600 KB instead of 850 KB.
     """
 
     CANDIDATES, SAME, ALSO = 5, 3, 2
@@ -126,6 +129,14 @@ class Origins:
         wikipedia = json.loads(WIKIPEDIA.read_text())
         self.links = [wikipedia[code] for code in self.codes]
         language = {code: i for i, code in enumerate(self.codes)}
+        self.fold, self.original = {}, {}  # letter -> its ASCII letters; language index -> {folded word: original}
+        for line in lzma.decompress(ORIGINALS.read_bytes()).decode().splitlines():
+            code, pairs = line.split("\t")
+            entries = dict(pair.split("=", 1) for pair in pairs.split())
+            if code == "*":
+                self.fold = entries
+            elif code in language:
+                self.original[language[code]] = entries
         begin_ids = {text[i]: i for i in range(phrase.NUM_BEGIN)}
         end_ids = {text[i]: i for i in range(phrase.NUM_BEGIN, phrase.NUM_BEGIN + phrase.NUM_END)}
         middle_ids = {text[i]: i for i in range(phrase.NUM_BEGIN + phrase.NUM_END, 1024)}
@@ -148,7 +159,7 @@ class Origins:
                     entry[0] += 1
                     if rank < entry[2]:
                         entry[1], entry[2] = word, rank
-        self.words, self.word_index = [], {}
+        self.words, self.folds, self.word_index = [], [], {}  # shown spellings, their folded words, spelling -> index
 
     def pack(self, key):
         found = self.seen.get(key)
@@ -160,13 +171,21 @@ class Origins:
         word = max(candidates, key=lambda w: (len(self.has[w] & found.keys()), -candidates.index(w)))
         same = sorted(self.has[word] & found.keys())  # by corpus size: the best-known languages first
         also = [lang for lang in ranked if lang not in self.has[word]][:self.ALSO]
-        if word not in self.word_index:
-            self.word_index[word] = len(self.words)
-            self.words.append(word)
-        first = b36(self.word_index[word]) + ":" + ",".join(b36(lang) for lang in same[:self.SAME])
-        if len(same) > self.SAME:
-            first += ";" + b36(len(same) - self.SAME)
-        parts = [b36(len(found)), first] + ([":" + ",".join(b36(lang) for lang in also)] if also else [])
+        spellings = {}  # how the named languages write the word -> those languages, in the order they're named
+        for lang in same[:self.SAME]:
+            spellings.setdefault(self.original.get(lang, {}).get(word, word), []).append(lang)
+        parts = [b36(len(found))]
+        for i, (shown, langs) in enumerate(spellings.items()):
+            if shown not in self.word_index:
+                self.word_index[shown] = len(self.words)
+                self.words.append(shown)
+                self.folds.append(word)
+            part = b36(self.word_index[shown]) + ":" + ",".join(b36(lang) for lang in langs)
+            if i == len(spellings) - 1 and len(same) > self.SAME:
+                part += ";" + b36(len(same) - self.SAME)
+            parts.append(part)
+        if also:
+            parts.append(":" + ",".join(b36(lang) for lang in also))
         return "|".join(parts)
 
 
@@ -287,7 +306,7 @@ def main():
         row = phrase.context(ctx)
         for t, entry in zip(model["middle"][row] + model["end32"][row], packed.split(" ")):
             for group in entry.split("|")[1:2]:
-                word = origins.words[int(group.split(":")[0], 36)]
+                word = origins.folds[int(group.split(":")[0], 36)]
                 pair = text[ctx] + text[t]
                 assert (word.endswith(pair) if t < phrase.NUM_BEGIN + phrase.NUM_END else pair in word[:-2]) and \
                     (ctx >= phrase.NUM_BEGIN or word.startswith(text[ctx])), (text[ctx], text[t], word)
@@ -320,7 +339,11 @@ def main():
         html = html.replace(f"__{name}__", json.dumps(value, separators=(",", ":")))
     assert "__" not in "".join(part for part in html.split("\n") if "const " in part and "= __" in part), "unfilled placeholder"
     out.write_text(html)
-    data = {"LANG_NAMES": origins.names, "LANG_LINKS": origins.links, "EXAMPLES": " ".join(origins.words), "BEGIN": begin_origin,
+    for shown, folded in zip(origins.words, origins.folds):  # the page folds letter by letter to find the token
+        assert "".join(origins.fold.get(ch, ch) for ch in shown) == folded, (shown, folded)
+    used = {ch for shown in origins.words for ch in shown}
+    data = {"LANG_NAMES": origins.names, "LANG_LINKS": origins.links, "EXAMPLES": " ".join(origins.words),
+            "FOLD": {ch: ascii for ch, ascii in origins.fold.items() if ch in used}, "BEGIN": begin_origin,
             "FOLLOW": follow_origin, "TOKEN": token_origin}
     script = ("// Generated by game/build_space_game.py: where each token of the phrase tables comes from.\n"
               f"window.SPACE_GAME_ORIGINS = {json.dumps(data, separators=(',', ':'))};\n"

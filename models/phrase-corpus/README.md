@@ -12,6 +12,10 @@ The phrase tables (`models/compile_phrase.py`) are built from two files in `mode
   sources, and every language that was left out and why.
 - **`phrase-languages.txt.xz`**: the same words by language, most common first. Only the explainer game
   (`game/`) uses it, to show which languages a token comes from.
+- **`phrase-originals.txt.xz`**: how each language writes those words, where that differs from the a–z form
+  (`onlarin=onların`, `verfugung=Verfügung`, `thing=þing`): the most common spelling over all sources, with
+  its capitalization from the sources that keep case. The tokens stay a–z; the game shows the original
+  spelling. Its first line folds each letter used (`ı=i ß=ss þ=th`).
 - **`blocklist.txt.xz`**: 5,789 offensive words from 61 languages' lists, folded to a–z, with the
   lists each came from. The compiler bans terms of 5+ letters anywhere in a word and 4-letter terms at the
   start of a word. Strong English terms (severity 2–4 or racial slurs on the dsojevic list) are banned
@@ -29,9 +33,11 @@ The raw downloads are about 5 GB and are not in the repository.
 ```sh
 python3 -m venv ~/data/phrase-langs/.venv
 ~/data/phrase-langs/.venv/bin/pip install langcodes anyascii
-python3 models/phrase-corpus/fetch.py subtitles leipzig tatoeba unimorph profanity kaikki   # ~/data/phrase-langs/raw
+python3 models/phrase-corpus/fetch.py subtitles leipzig tatoeba unimorph profanity kaikki eldamo   # ~/data/phrase-langs/raw
 ~/data/phrase-langs/.venv/bin/python models/phrase-corpus/normalize.py                     # ~/data/phrase-langs/words
 ~/data/phrase-langs/.venv/bin/python models/phrase-corpus/build_corpus.py                  # models/training-data
+~/data/phrase-langs/.venv/bin/python models/phrase-corpus/originals.py                     # phrase-originals.txt.xz
+python3 models/phrase-corpus/language_wikipedia.py                                   # language-wikipedia.json
 python3 models/compile_phrase.py                                                     # src/phrase_data.rs
 ```
 
