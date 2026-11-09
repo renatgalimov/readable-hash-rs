@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compile the phrase tables (format phrase-v5): 11 tokens, 32 layouts, context tables that decode by letters alone.
+"""Compile the phrase tables (format phrase-v6): 11 tokens, 32 layouts, context tables that decode by letters alone.
 
 Format (see src/phrase.rs):
 - A phrase is 3 or 4 words, 11 tokens in all; each word is 2-5 tokens: a beginning, 0-3 middles, an ending.
@@ -11,26 +11,43 @@ Format (see src/phrase.rs):
 - Each middle/ending row depends on the previous token (its context).
 
 Table rules:
+- The corpus is a word list from 100 languages (training-data/phrase-words.txt.xz, made by
+  phrase-corpus/build_corpus.py): each language that isn't consonant-heavy contributes its 2,500 most frequent words.
 - No token is shorter than 2 letters. The corpus is re-tokenized with a vocabulary of 2+ letter pieces.
+- The 256 beginning candidates are prefix-free: the most common word starts, skipping any that starts another
+  one already taken. (In many languages the most common starts chain, like co/con/cont.)
 - In every context, the 32 middles and the 32 endings together are prefix-free. So at each point at
   most one token matches the letters, and the decoder finds where a word ends without knowing its
   length. Rows that are prefix-free only separately would be ambiguous (ab+ou+s = ab+ous).
 - Every token in a row joins plausibly to its context: each 3-letter sequence across the join occurs in
   some corpus word. This keeps fillers (tokens never seen after the context) from making words like
   bl+ness.
+  A row that can't be filled this way (some languages allow few letters after certain pairs) is filled
+  without the join rule; such contexts are listed in the model's "relaxed".
 - Every word has a vowel (a, e, i, o, u or y): after a beginning without one, every middle and ending
   has one. Words have at least 2 tokens, so that is enough.
+- No word the tables can produce contains an offensive word from any language's list
+  (training-data/blocklist.txt.xz): no word contains a listed term of 5+ letters, and no word starts with a
+  listed 4-letter term. Strong English terms (severity 2-4 on the dsojevic list, or racial slurs) are stricter,
+  because English is what most readers will read into a phrase: no word contains one of 4 letters, and no word
+  starts with one of 3. Other 3-letter terms aren't checked (words have 4+ letters, and banning 3 letters
+  inside words removes too much). Tokens that would
+  complete a term after the previous token are left out of that context's row. Then an automaton of all the
+  terms walks every word the tables can produce; each place a term completes bans that token after that
+  context, and the rows are rebuilt until no word contains a term. validate() repeats that walk.
 """
 import argparse
 import itertools
 import json
+import lzma
 import math
 import re
-from collections import Counter, defaultdict
+from collections import Counter, defaultdict, deque
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-CORPUS = ROOT / "training-data" / "english-lowercase.txt"
+CORPUS = ROOT / "training-data" / "phrase-words.txt.xz"
+BLOCKLIST = ROOT / "training-data" / "blocklist.txt.xz"
 MODEL_PATH = ROOT / "phrase_model.json"
 REPORT_PATH = ROOT / "phrase_report.json"
 RUST_PATH = ROOT.parent / "src" / "phrase_data.rs"
@@ -44,12 +61,41 @@ TOTAL_TOKENS, MAX_WORDS, MIN_WORD, MAX_WORD = 11, 4, 2, 5
 
 # ---------------------------------------------------------------- vocabulary and corpus counts
 
+def read_text(path):
+    return lzma.decompress(path.read_bytes()).decode() if path.suffix == ".xz" else path.read_text(encoding="utf-8")
+
+
 def corpus_words():
-    return re.findall(r"[a-z]+", CORPUS.read_text(encoding="utf-8").lower())
+    return re.findall(r"[a-z]+", read_text(CORPUS).lower())
 
 
-def build_vocabulary(words):
-    """Top n-grams of 2-6 letters by position: ids 0-255 beginnings, 256-511 endings, 512-1023 middles."""
+STRONG = {"dsojevic-en-2", "dsojevic-en-3", "dsojevic-en-4", "dsojevic-en-racial"}
+
+
+def blocklist():
+    """Offensive terms from every language's list, folded to a-z: (terms banned at a word's start, anywhere)."""
+    start, anywhere = set(), set()
+    for line in read_text(BLOCKLIST).splitlines():
+        term, sources = line.split("\t")
+        strong = bool(STRONG & set(sources.split(",")))
+        if len(term) >= 5 or (len(term) == 4 and strong):
+            anywhere.add(term)
+        elif len(term) == 4 or (len(term) == 3 and strong):
+            start.add(term)
+    return sorted(start), sorted(anywhere)
+
+
+def offensive_token(text, starts_word, start_terms, anywhere_terms):
+    """A token that is offensive on its own: it contains a term, or starts a word with one."""
+    return any(t in text for t in anywhere_terms) or (starts_word and text.startswith(tuple(start_terms)))
+
+
+def build_vocabulary(words, start_terms=(), anywhere_terms=()):
+    """Top n-grams of 2-6 letters by position: ids 0-255 beginnings, 256-511 endings, 512-1023 middles.
+
+    Beginnings are prefix-free (the most common starts first, skipping any that starts another one already taken).
+    Tokens that are offensive on their own are left out.
+    """
     begin, end, middle = Counter(), Counter(), Counter()
     for word in words:
         for length in range(MIN_TOKEN, min(MAX_TOKEN, len(word)) + 1):
@@ -61,9 +107,17 @@ def build_vocabulary(words):
                     middle[word[start:start + length]] += 1
     tokens = []
     for counts, size, kind in ((begin, NUM_BEGIN, "^"), (end, NUM_END, "$"), (middle, NUM_MIDDLE, "")):
-        top = sorted(counts.items(), key=lambda item: (-item[1], item[0]))[:size]
+        top = []
+        for text, _ in sorted(counts.items(), key=lambda item: (-item[1], item[0])):
+            if offensive_token(text, kind == "^", start_terms, anywhere_terms):
+                continue
+            if kind == "^" and any(conflicts(text, other) for other in top):
+                continue
+            top.append(text)
+            if len(top) == size:
+                break
         assert len(top) == size, (kind, len(top))
-        tokens += [("^" + text) if kind == "^" else (text + "$") if kind == "$" else text for text, _ in top]
+        tokens += [("^" + text) if kind == "^" else (text + "$") if kind == "$" else text for text in top]
     return tokens
 
 
@@ -172,6 +226,8 @@ def joins_well(previous_text, token_text, trigrams):
     Tokens are 2+ letters, so the last 2 letters before the join and the first 2 after it cover every
     sequence that crosses it. A token seen after this context in the corpus always passes.
     """
+    if trigrams is None:  # a relaxed row: no join rule
+        return True
     joined = previous_text[-2:] + token_text[:2]
     return all(joined[i:i + 3] in trigrams for i in range(len(joined) - 2))
 
@@ -221,50 +277,159 @@ def choose_row(previous_text, local_middle, local_end, global_middle, global_end
 TEXT = []
 
 
-def compile_model():
+class Terms:
+    """An Aho-Corasick automaton over the banned terms; a word is read as "^" + its letters."""
+
+    def __init__(self, start_terms, anywhere_terms):
+        patterns = ["^" + t for t in start_terms] + list(anywhere_terms)
+        self.goto, self.fail, self.out = [{}], [0], [False]
+        for pattern in patterns:
+            node = 0
+            for ch in pattern:
+                if ch not in self.goto[node]:
+                    self.goto.append({})
+                    self.fail.append(0)
+                    self.out.append(False)
+                    self.goto[node][ch] = len(self.goto) - 1
+                node = self.goto[node][ch]
+            self.out[node] = True
+        queue = deque(self.goto[0].values())
+        while queue:
+            node = queue.popleft()
+            for ch, child in self.goto[node].items():
+                queue.append(child)
+                fallback = self.fail[node]
+                while fallback and ch not in self.goto[fallback]:
+                    fallback = self.fail[fallback]
+                self.fail[child] = self.goto[fallback].get(ch, 0) if self.goto[fallback].get(ch, 0) != child else 0
+                self.out[child] = self.out[child] or self.out[self.fail[child]]
+        self.memo = {}
+
+    def step(self, node, ch):
+        key = (node, ch)
+        if key not in self.memo:
+            state = node
+            while state and ch not in self.goto[state]:
+                state = self.fail[state]
+            self.memo[key] = self.goto[state].get(ch, 0)
+        return self.memo[key]
+
+    def feed(self, node, text):
+        """The state after reading text, and whether a term completed on the way."""
+        hit = False
+        for ch in text:
+            node = self.step(node, ch)
+            hit = hit or self.out[node]
+        return node, hit
+
+
+def violations(model, terms):
+    """Every (context, token) pair where some word the tables can produce completes a banned term.
+
+    Walks all words: a beginning, up to 3 middles, an ending (END16 is a prefix of END32), carrying the
+    automaton's state, so it sees terms that span any number of tokens.
+    """
+    text = [text_of(t) for t in model["tokens"]]
+    start, _ = terms.feed(0, "^")
+    found = set()
+    stack, seen = [], set()
+    for token in model["begin"]:
+        state, hit = terms.feed(start, text[token])
+        assert not hit, f"beginning {text[token]!r} is offensive"
+        stack.append((token, state, 0))
+    while stack:
+        item = stack.pop()
+        if item in seen:
+            continue
+        seen.add(item)
+        token, state, middles = item
+        row = context(token)
+        for ending in model["end32"][row]:
+            if terms.feed(state, text[ending])[1]:
+                found.add((token, ending))
+        if middles < MAX_WORD - 2:
+            for middle in model["middle"][row]:
+                following, hit = terms.feed(state, text[middle])
+                if hit:
+                    found.add((token, middle))
+                else:
+                    stack.append((middle, following, middles + 1))
+    return found
+
+
+def compile_model(max_rounds=60):
     global TEXT
     words = corpus_words()
-    tokens = build_vocabulary(words)
+    start_terms, anywhere_terms = blocklist()
+    tokens = build_vocabulary(words, start_terms, anywhere_terms)
     TEXT = [text_of(t) for t in tokens]
     assert all(len(t) >= MIN_TOKEN for t in TEXT)
     counts = count_transitions(words, tokens)
     trigrams = letter_trigrams(words)
-    middle_pool = list(range(512, 1024))
-    end_pool = list(range(256, 512))
+    terms = Terms(start_terms, anywhere_terms)
     global_middle = Counter()
     global_end = Counter()
     for row in counts["middle"].values():
         global_middle.update(row)
     for row in counts["end"].values():
         global_end.update(row)
-    middle, end32, end16 = [], [], []
-    cache = {}
-    for ctx in CONTEXTS:
-        local_middle = counts["middle"].get(ctx, Counter())
-        local_end = counts["end"].get(ctx, Counter())
-        # Every word needs a vowel: words have 2+ tokens, so a beginning without one must be followed by one.
-        needs_vowel = ctx < NUM_BEGIN and not has_vowel(TEXT[ctx])
-        key = (TEXT[ctx][-2:], needs_vowel, tuple(sorted(local_middle.items())), tuple(sorted(local_end.items())))
-        if key not in cache:
-            cache[key] = choose_row(TEXT[ctx], local_middle, local_end, global_middle, global_end,
-                                    middle_pool, end_pool, trigrams, needs_vowel)
-        m, e, e16 = cache[key]
-        middle.append(m)
-        end32.append(e)
-        end16.append(e16)
     begin_candidates = {TEXT[i]: (counts["begin"].get(i, 0), 0) for i in range(NUM_BEGIN)}
     begin_texts = choose_prefix_free(begin_candidates, BEGIN_SIZE)
     begin_index = {TEXT[i]: i for i in range(NUM_BEGIN)}
     begin = [begin_index[t] for t in begin_texts]
-    model = {"version": "phrase-v5", "tokens": tokens, "contexts": CONTEXTS, "begin": begin,
-             "middle": middle, "end32": end32, "end16": end16}
+
+    def direct_ban(ctx, token):
+        """The previous token and this one already spell a term (the walk finds longer spans)."""
+        return terms.feed(terms.feed(0, "^")[0] if ctx < NUM_BEGIN else 0, TEXT[ctx] + TEXT[token])[1]
+
+    banned = {ctx: {t for t in range(NUM_BEGIN, 1024) if direct_ban(ctx, t)} for ctx in CONTEXTS}
+    rounds = []
+    for _ in range(max_rounds):
+        middle, end32, end16, relaxed = [], [], [], []
+        for ctx in CONTEXTS:
+            local_middle = counts["middle"].get(ctx, Counter())
+            local_end = counts["end"].get(ctx, Counter())
+            # Every word needs a vowel: words have 2+ tokens, so a beginning without one must be followed by one.
+            needs_vowel = ctx < NUM_BEGIN and not has_vowel(TEXT[ctx])
+            middle_pool = [t for t in range(512, 1024) if t not in banned[ctx]]
+            end_pool = [t for t in range(256, 512) if t not in banned[ctx]]
+            try:
+                m, e, e16 = choose_row(TEXT[ctx], local_middle, local_end, global_middle, global_end,
+                                       middle_pool, end_pool, trigrams, needs_vowel)
+            except ValueError:
+                relaxed.append(ctx)
+                m, e, e16 = choose_row(TEXT[ctx], local_middle, local_end, global_middle, global_end,
+                                       middle_pool, end_pool, None, needs_vowel)
+            middle.append(m)
+            end32.append(e)
+            end16.append(e16)
+        model = {"version": "phrase-v6", "tokens": tokens, "contexts": CONTEXTS, "begin": begin,
+                 "middle": middle, "end32": end32, "end16": end16, "relaxed": relaxed}
+        found = violations(model, terms)
+        rounds.append(len(found))
+        if not found:
+            break
+        for ctx, token in found:
+            banned[ctx].add(token)
+    else:
+        raise ValueError(f"offensive words still reachable after {max_rounds} rounds: {rounds}")
+    # The tokens left out after each context because they would spell a term (directly or across tokens).
+    model["banned"] = {str(ctx): sorted(b) for ctx, b in banned.items() if b}
     validate(model)
-    return model, report(model, counts)
+    statistics = report(model, counts)
+    statistics["statistics"].update({
+        "blocklist_terms_checked": len(start_terms) + len(anywhere_terms),
+        "banned_pairs": sum(len(b) for b in banned.values()),
+        "ban_rounds": rounds,
+        "relaxed_contexts": len(relaxed),
+    })
+    return model, statistics
 
 
 def validate(model):
     text = [text_of(t) for t in model["tokens"]]
     trigrams = letter_trigrams(corpus_words())
+    relaxed = set(model["relaxed"])
     assert all(len(t) >= MIN_TOKEN and t.isascii() and t.isalpha() and t.islower() for t in text)
     begin = [text[i] for i in model["begin"]]
     assert len(begin) == BEGIN_SIZE and all(i < 256 for i in model["begin"])
@@ -277,9 +442,15 @@ def validate(model):
         union = [text[i] for i in m + e]
         assert all(not conflicts(a, b) for a, b in itertools.combinations(union, 2)), f"context {index} not prefix-free"
         previous = text[CONTEXTS[index]]
-        assert all(joins_well(previous, piece, trigrams) for piece in union), f"context {index} has an implausible join"
+        if CONTEXTS[index] not in relaxed:
+            assert all(joins_well(previous, piece, trigrams) for piece in union), f"context {index} has an implausible join"
         if CONTEXTS[index] < NUM_BEGIN and not has_vowel(previous):
             assert all(has_vowel(piece) for piece in union), f"beginning {previous!r} allows a word with no vowel"
+    found = violations(model, Terms(*blocklist()))
+    assert not found, f"{len(found)} places still spell an offensive word, e.g. {sorted(found)[:3]}"
+    for ctx, tokens in model.get("banned", {}).items():
+        row = context(int(ctx))
+        assert not set(tokens) & set(model["middle"][row] + model["end32"][row]), f"context {ctx} uses a banned token"
 
 
 def report(model, counts):

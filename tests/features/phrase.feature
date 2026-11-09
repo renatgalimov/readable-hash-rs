@@ -1,5 +1,5 @@
 Feature: Reversible phrases
-  Any 64-bit number becomes an English-like phrase, and the phrase decodes back to the number.
+  Any 64-bit number becomes a pronounceable phrase, and the phrase decodes back to the number.
 
   Scenario Outline: Known numbers have known phrases
     Given the number "<number>"
@@ -8,22 +8,22 @@ Feature: Reversible phrases
     And the phrase should decode to the number
 
     Examples:
-      | number             | phrase                           |
-      | 0x0                | redes redes redes reversitation  |
-      | 0x2a               | unable reversitation redes redes |
-      | 0x75bcd15          | tumenald unable redes reverted   |
-      | 0x243f6a8885a308d3 | dalmse prospicity cindrable      |
-      | 0xdeadbeefcafebabe | ceiloparms atkits taboes         |
-      | 0xffffffffffffffff | jabaltiddes jabaltous jaic       |
+      | number             | phrase                     |
+      | 0x0                | maas maas maas manggunaki  |
+      | 0x2a               | kaan manggunaki maas maas  |
+      | 0x75bcd15          | spingenga kaan maas mangwa |
+      | 0x243f6a8885a308d3 | bongere siuninut nuraamus  |
+      | 0xdeadbeefcafebabe | aileivirda fraash keergi   |
+      | 0xffffffffffffffff | lubobafaen lubobaja luar   |
 
   Scenario Outline: Text that is not a canonical phrase is rejected
     Given the phrase "<text>"
     Then the phrase should not decode
 
     Examples:
-      | text                          |
-      | Dalmse prospicity cindrable   |
-      | dalmse  prospicity cindrable  |
-      | dalmse prospicity             |
-      | dalmse prospicity cindrablex  |
-      | hello world again             |
+      | text                       |
+      | Bongere siuninut nuraamus  |
+      | bongere  siuninut nuraamus |
+      | bongere siuninut           |
+      | bongere siuninut nuraamusx |
+      | hello world again          |

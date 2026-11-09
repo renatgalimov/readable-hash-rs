@@ -1,0 +1,4089 @@
+{
+ "words_per_language": 2500,
+ "always_included": {
+  "zu": "ubuntu's languages, requested",
+  "xh": "ubuntu's languages, requested"
+ },
+ "max_consonant_runs_pct": 10.0,
+ "distinct_words": 187020,
+ "blocklist_terms": 5789,
+ "languages": {
+  "aa": {
+   "name": "Afar",
+   "codes": [
+    "aa"
+   ],
+   "words": 26520,
+   "consonant_runs_pct": 0.48,
+   "sources": [
+    "kaikki",
+    "leipzig"
+   ],
+   "taken": 2500
+  },
+  "ace": {
+   "name": "Acehnese",
+   "codes": [
+    "ace"
+   ],
+   "words": 8958,
+   "consonant_runs_pct": 6.08,
+   "sources": [
+    "kaikki",
+    "leipzig"
+   ],
+   "taken": 2500
+  },
+  "an": {
+   "name": "Aragonese",
+   "codes": [
+    "an"
+   ],
+   "words": 57934,
+   "consonant_runs_pct": 8.7,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "anw": {
+   "name": "Anaang",
+   "codes": [
+    "anw"
+   ],
+   "words": 46592,
+   "consonant_runs_pct": 7.96,
+   "sources": [
+    "leipzig"
+   ],
+   "taken": 2500
+  },
+  "ast": {
+   "name": "Asturian",
+   "codes": [
+    "ast"
+   ],
+   "words": 260874,
+   "consonant_runs_pct": 6.08,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "az": {
+   "name": "Azerbaijani",
+   "codes": [
+    "az",
+    "azj"
+   ],
+   "words": 1297074,
+   "consonant_runs_pct": 2.48,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "bcl": {
+   "name": "Central Bikol",
+   "codes": [
+    "bcl"
+   ],
+   "words": 27250,
+   "consonant_runs_pct": 6.4,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "ber": {
+   "name": "Berber languages",
+   "codes": [
+    "ber"
+   ],
+   "words": 75661,
+   "consonant_runs_pct": 6.88,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "bjn": {
+   "name": "Banjar",
+   "codes": [
+    "bjn"
+   ],
+   "words": 17169,
+   "consonant_runs_pct": 6.84,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "bm": {
+   "name": "Bambara",
+   "codes": [
+    "bm"
+   ],
+   "words": 11250,
+   "consonant_runs_pct": 0.96,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "br": {
+   "name": "Breton",
+   "codes": [
+    "br"
+   ],
+   "words": 93905,
+   "consonant_runs_pct": 8.42,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "bs": {
+   "name": "Bosnian",
+   "codes": [
+    "bs"
+   ],
+   "words": 897566,
+   "consonant_runs_pct": 8.46,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "ca": {
+   "name": "Catalan",
+   "codes": [
+    "ca"
+   ],
+   "words": 243147,
+   "consonant_runs_pct": 9.08,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "cbk": {
+   "name": "Chavacano",
+   "codes": [
+    "cbk"
+   ],
+   "words": 3604,
+   "consonant_runs_pct": 4.41,
+   "sources": [
+    "kaikki",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "cni": {
+   "name": "Asháninka",
+   "codes": [
+    "cni"
+   ],
+   "words": 10090,
+   "consonant_runs_pct": 6.96,
+   "sources": [
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "diq": {
+   "name": "Dimli (individual language)",
+   "codes": [
+    "diq"
+   ],
+   "words": 46308,
+   "consonant_runs_pct": 1.76,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "dtp": {
+   "name": "Central Dusun",
+   "codes": [
+    "dtp"
+   ],
+   "words": 7876,
+   "consonant_runs_pct": 4.33,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "dv": {
+   "name": "Divehi",
+   "codes": [
+    "dv"
+   ],
+   "words": 286169,
+   "consonant_runs_pct": 7.92,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "ee": {
+   "name": "Ewe",
+   "codes": [
+    "ee"
+   ],
+   "words": 11046,
+   "consonant_runs_pct": 7.78,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "el": {
+   "name": "Greek",
+   "codes": [
+    "el"
+   ],
+   "words": 1057310,
+   "consonant_runs_pct": 9.04,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "eo": {
+   "name": "Esperanto",
+   "codes": [
+    "eo"
+   ],
+   "words": 394790,
+   "consonant_runs_pct": 6.9,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "es": {
+   "name": "Spanish",
+   "codes": [
+    "es"
+   ],
+   "words": 1493142,
+   "consonant_runs_pct": 5.36,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "et": {
+   "name": "Standard Estonian",
+   "codes": [
+    "ekk",
+    "et"
+   ],
+   "words": 1638156,
+   "consonant_runs_pct": 3.7,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "eu": {
+   "name": "Basque",
+   "codes": [
+    "eu"
+   ],
+   "words": 418270,
+   "consonant_runs_pct": 7.32,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "ext": {
+   "name": "Extremaduran",
+   "codes": [
+    "ext"
+   ],
+   "words": 28026,
+   "consonant_runs_pct": 6.0,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "fax": {
+   "name": "Fala",
+   "codes": [
+    "fax"
+   ],
+   "words": 5357,
+   "consonant_runs_pct": 4.58,
+   "sources": [
+    "kaikki"
+   ],
+   "taken": 2500
+  },
+  "ff": {
+   "name": "Fula",
+   "codes": [
+    "ff"
+   ],
+   "words": 7353,
+   "consonant_runs_pct": 7.47,
+   "sources": [
+    "kaikki",
+    "leipzig"
+   ],
+   "taken": 2500
+  },
+  "fi": {
+   "name": "Finnish",
+   "codes": [
+    "fi"
+   ],
+   "words": 2334675,
+   "consonant_runs_pct": 1.58,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "fil": {
+   "name": "Filipino",
+   "codes": [
+    "fil"
+   ],
+   "words": 115223,
+   "consonant_runs_pct": 6.0,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "fr": {
+   "name": "French",
+   "codes": [
+    "fr"
+   ],
+   "words": 778279,
+   "consonant_runs_pct": 8.68,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "fur": {
+   "name": "Friulian",
+   "codes": [
+    "fur"
+   ],
+   "words": 8241,
+   "consonant_runs_pct": 9.58,
+   "sources": [
+    "kaikki",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "gag": {
+   "name": "Gagauz",
+   "codes": [
+    "gag"
+   ],
+   "words": 4230,
+   "consonant_runs_pct": 1.76,
+   "sources": [
+    "kaikki",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "gal": {
+   "name": "Galolen",
+   "codes": [
+    "gal"
+   ],
+   "words": 24170,
+   "consonant_runs_pct": 7.94,
+   "sources": [
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "gl": {
+   "name": "Galician",
+   "codes": [
+    "gl"
+   ],
+   "words": 329611,
+   "consonant_runs_pct": 5.76,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "gn": {
+   "name": "Guarani",
+   "codes": [
+    "gn"
+   ],
+   "words": 25197,
+   "consonant_runs_pct": 1.76,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "goh": {
+   "name": "Old High German",
+   "codes": [
+    "goh"
+   ],
+   "words": 5195,
+   "consonant_runs_pct": 8.48,
+   "sources": [
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "ha": {
+   "name": "Hausa",
+   "codes": [
+    "ha"
+   ],
+   "words": 32709,
+   "consonant_runs_pct": 1.42,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "hr": {
+   "name": "Croatian",
+   "codes": [
+    "hr"
+   ],
+   "words": 1293884,
+   "consonant_runs_pct": 9.1,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "ht": {
+   "name": "Haitian Creole",
+   "codes": [
+    "ht"
+   ],
+   "words": 16901,
+   "consonant_runs_pct": 7.92,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "hu": {
+   "name": "Hungarian",
+   "codes": [
+    "hu"
+   ],
+   "words": 3036579,
+   "consonant_runs_pct": 9.1,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "ia": {
+   "name": "Interlingua",
+   "codes": [
+    "ia"
+   ],
+   "words": 49504,
+   "consonant_runs_pct": 8.82,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "id": {
+   "name": "Indonesian",
+   "codes": [
+    "id"
+   ],
+   "words": 317794,
+   "consonant_runs_pct": 6.76,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "ie": {
+   "name": "Interlingue",
+   "codes": [
+    "ie"
+   ],
+   "words": 18313,
+   "consonant_runs_pct": 9.8,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "ig": {
+   "name": "Igbo",
+   "codes": [
+    "ig"
+   ],
+   "words": 8415,
+   "consonant_runs_pct": 6.6,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "ilo": {
+   "name": "Iloko",
+   "codes": [
+    "ilo"
+   ],
+   "words": 38446,
+   "consonant_runs_pct": 8.04,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "io": {
+   "name": "Ido",
+   "codes": [
+    "io"
+   ],
+   "words": 110480,
+   "consonant_runs_pct": 7.54,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "it": {
+   "name": "Italian",
+   "codes": [
+    "it"
+   ],
+   "words": 893369,
+   "consonant_runs_pct": 6.54,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "izh": {
+   "name": "Ingrian",
+   "codes": [
+    "izh"
+   ],
+   "words": 234687,
+   "consonant_runs_pct": 4.4,
+   "sources": [
+    "kaikki",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "jbo": {
+   "name": "Lojban",
+   "codes": [
+    "jbo"
+   ],
+   "words": 6294,
+   "consonant_runs_pct": 9.14,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "jv": {
+   "name": "Javanese",
+   "codes": [
+    "jv"
+   ],
+   "words": 105424,
+   "consonant_runs_pct": 9.18,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "kbp": {
+   "name": "Kabiyè",
+   "codes": [
+    "kbp"
+   ],
+   "words": 18066,
+   "consonant_runs_pct": 9.58,
+   "sources": [
+    "leipzig"
+   ],
+   "taken": 2500
+  },
+  "kl": {
+   "name": "Kalaallisut",
+   "codes": [
+    "kl"
+   ],
+   "words": 107475,
+   "consonant_runs_pct": 5.94,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "kmr": {
+   "name": "Northern Kurdish",
+   "codes": [
+    "kmr"
+   ],
+   "words": 195574,
+   "consonant_runs_pct": 3.62,
+   "sources": [
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "knc": {
+   "name": "Central Kanuri",
+   "codes": [
+    "knc"
+   ],
+   "words": 9707,
+   "consonant_runs_pct": 1.58,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "la": {
+   "name": "Latin",
+   "codes": [
+    "la"
+   ],
+   "words": 560562,
+   "consonant_runs_pct": 6.44,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "lad": {
+   "name": "Ladino",
+   "codes": [
+    "lad"
+   ],
+   "words": 25842,
+   "consonant_runs_pct": 7.22,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "lfn": {
+   "name": "Lingua Franca Nova",
+   "codes": [
+    "lfn"
+   ],
+   "words": 11631,
+   "consonant_runs_pct": 5.42,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "lg": {
+   "name": "Ganda",
+   "codes": [
+    "lg"
+   ],
+   "words": 287074,
+   "consonant_runs_pct": 2.36,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "lij": {
+   "name": "Ligurian",
+   "codes": [
+    "lij"
+   ],
+   "words": 26973,
+   "consonant_runs_pct": 7.8,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "lld": {
+   "name": "Ladin",
+   "codes": [
+    "lld"
+   ],
+   "words": 4987,
+   "consonant_runs_pct": 6.81,
+   "sources": [
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "lmo": {
+   "name": "Lombard",
+   "codes": [
+    "lmo"
+   ],
+   "words": 48293,
+   "consonant_runs_pct": 6.24,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "ln": {
+   "name": "Lingala",
+   "codes": [
+    "ln"
+   ],
+   "words": 10416,
+   "consonant_runs_pct": 2.2,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "lt": {
+   "name": "Lithuanian",
+   "codes": [
+    "lt"
+   ],
+   "words": 389025,
+   "consonant_runs_pct": 5.42,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "lup": {
+   "name": "Lumbu",
+   "codes": [
+    "lup"
+   ],
+   "words": 13648,
+   "consonant_runs_pct": 3.68,
+   "sources": [
+    "leipzig"
+   ],
+   "taken": 2500
+  },
+  "mg": {
+   "name": "Malagasy",
+   "codes": [
+    "mg",
+    "plt"
+   ],
+   "words": 69240,
+   "consonant_runs_pct": 8.84,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "mi": {
+   "name": "Māori",
+   "codes": [
+    "mi"
+   ],
+   "words": 33137,
+   "consonant_runs_pct": 2.62,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "min": {
+   "name": "Minangkabau",
+   "codes": [
+    "min"
+   ],
+   "words": 76381,
+   "consonant_runs_pct": 8.98,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "ms": {
+   "name": "Malay",
+   "codes": [
+    "ms",
+    "zsm"
+   ],
+   "words": 161643,
+   "consonant_runs_pct": 6.64,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "mwl": {
+   "name": "Mirandese",
+   "codes": [
+    "mwl"
+   ],
+   "words": 50431,
+   "consonant_runs_pct": 6.58,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "ng": {
+   "name": "Ndonga",
+   "codes": [
+    "ng"
+   ],
+   "words": 33000,
+   "consonant_runs_pct": 6.66,
+   "sources": [
+    "leipzig"
+   ],
+   "taken": 2500
+  },
+  "nnb": {
+   "name": "Nande",
+   "codes": [
+    "nnb"
+   ],
+   "words": 41930,
+   "consonant_runs_pct": 1.8,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "ny": {
+   "name": "Nyanja",
+   "codes": [
+    "ny"
+   ],
+   "words": 8407,
+   "consonant_runs_pct": 9.44,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "oc": {
+   "name": "Occitan",
+   "codes": [
+    "oc"
+   ],
+   "words": 122952,
+   "consonant_runs_pct": 8.68,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "pam": {
+   "name": "Pampanga",
+   "codes": [
+    "pam"
+   ],
+   "words": 30235,
+   "consonant_runs_pct": 6.72,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "pap": {
+   "name": "Papiamento",
+   "codes": [
+    "pap"
+   ],
+   "words": 31124,
+   "consonant_runs_pct": 8.5,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "pms": {
+   "name": "Piedmontese",
+   "codes": [
+    "pms"
+   ],
+   "words": 33887,
+   "consonant_runs_pct": 8.34,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "pt": {
+   "name": "Portuguese",
+   "codes": [
+    "pt"
+   ],
+   "words": 1044305,
+   "consonant_runs_pct": 4.88,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "qu": {
+   "name": "Quechua",
+   "codes": [
+    "qu"
+   ],
+   "words": 148651,
+   "consonant_runs_pct": 9.04,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "rhg": {
+   "name": "Rohingya",
+   "codes": [
+    "rhg"
+   ],
+   "words": 7448,
+   "consonant_runs_pct": 4.33,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "rn": {
+   "name": "Rundi",
+   "codes": [
+    "rn"
+   ],
+   "words": 42798,
+   "consonant_runs_pct": 3.76,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "ro": {
+   "name": "Romanian",
+   "codes": [
+    "ro"
+   ],
+   "words": 809526,
+   "consonant_runs_pct": 6.66,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "roa": {
+   "name": "Romance languages",
+   "codes": [
+    "roa"
+   ],
+   "words": 2928,
+   "consonant_runs_pct": 6.72,
+   "sources": [
+    "kaikki"
+   ],
+   "taken": 2500
+  },
+  "rw": {
+   "name": "Kinyarwanda",
+   "codes": [
+    "rw"
+   ],
+   "words": 68330,
+   "consonant_runs_pct": 3.18,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "sc": {
+   "name": "Sardinian",
+   "codes": [
+    "sc"
+   ],
+   "words": 30569,
+   "consonant_runs_pct": 8.72,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "scn": {
+   "name": "Sicilian",
+   "codes": [
+    "scn"
+   ],
+   "words": 55202,
+   "consonant_runs_pct": 9.14,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "sgs": {
+   "name": "Samogitian",
+   "codes": [
+    "sgs"
+   ],
+   "words": 29034,
+   "consonant_runs_pct": 9.36,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "shp": {
+   "name": "Shipibo-Conibo",
+   "codes": [
+    "shp"
+   ],
+   "words": 7704,
+   "consonant_runs_pct": 5.34,
+   "sources": [
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "sn": {
+   "name": "Shona",
+   "codes": [
+    "sn"
+   ],
+   "words": 164241,
+   "consonant_runs_pct": 3.98,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "so": {
+   "name": "Somali",
+   "codes": [
+    "so"
+   ],
+   "words": 123113,
+   "consonant_runs_pct": 2.82,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "sr": {
+   "name": "Serbian",
+   "codes": [
+    "sr"
+   ],
+   "words": 1896454,
+   "consonant_runs_pct": 8.28,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "su": {
+   "name": "Sundanese",
+   "codes": [
+    "su"
+   ],
+   "words": 124849,
+   "consonant_runs_pct": 7.78,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "sw": {
+   "name": "Swahili",
+   "codes": [
+    "sw",
+    "swh"
+   ],
+   "words": 179580,
+   "consonant_runs_pct": 3.42,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "tk": {
+   "name": "Turkmen",
+   "codes": [
+    "tk"
+   ],
+   "words": 76922,
+   "consonant_runs_pct": 3.82,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "tr": {
+   "name": "Turkish",
+   "codes": [
+    "tr"
+   ],
+   "words": 1834760,
+   "consonant_runs_pct": 0.96,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "vec": {
+   "name": "Venetian",
+   "codes": [
+    "vec"
+   ],
+   "words": 82869,
+   "consonant_runs_pct": 8.7,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "vro": {
+   "name": "Võro",
+   "codes": [
+    "vro"
+   ],
+   "words": 29050,
+   "consonant_runs_pct": 6.98,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "wo": {
+   "name": "Wolof",
+   "codes": [
+    "wo"
+   ],
+   "words": 14593,
+   "consonant_runs_pct": 2.04,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "xh": {
+   "name": "Xhosa",
+   "codes": [
+    "xh"
+   ],
+   "words": 74366,
+   "consonant_runs_pct": 12.18,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500,
+   "included_because": "ubuntu's languages, requested"
+  },
+  "yo": {
+   "name": "Yoruba",
+   "codes": [
+    "yo"
+   ],
+   "words": 13750,
+   "consonant_runs_pct": 3.22,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "zu": {
+   "name": "Zulu",
+   "codes": [
+    "zu"
+   ],
+   "words": 360809,
+   "consonant_runs_pct": 10.22,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500,
+   "included_because": "ubuntu's languages, requested"
+  }
+ },
+ "skipped": {
+  "ab": {
+   "name": "Abkhazian",
+   "codes": [
+    "ab"
+   ],
+   "words": 3552,
+   "consonant_runs_pct": 53.6,
+   "sources": [
+    "kaikki",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ady": {
+   "name": "Adyghe",
+   "codes": [
+    "ady"
+   ],
+   "words": 6857,
+   "consonant_runs_pct": 47.18,
+   "sources": [
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "af": {
+   "name": "Afrikaans",
+   "codes": [
+    "af"
+   ],
+   "words": 329016,
+   "consonant_runs_pct": 14.26,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "afb": {
+   "name": "Gulf Arabic",
+   "codes": [
+    "afb"
+   ],
+   "words": 22085,
+   "consonant_runs_pct": 34.52,
+   "sources": [
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ain": {
+   "name": "Ainu",
+   "codes": [
+    "ain"
+   ],
+   "words": 2689,
+   "consonant_runs_pct": 2.69,
+   "sources": [
+    "kaikki",
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "ak": {
+   "name": "Akan",
+   "codes": [
+    "ak"
+   ],
+   "words": 6650,
+   "consonant_runs_pct": 24.03,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "als": {
+   "name": "Tosk Albanian",
+   "codes": [
+    "als"
+   ],
+   "words": 191448,
+   "consonant_runs_pct": 18.34,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "alt": {
+   "name": "Southern Altai",
+   "codes": [
+    "alt"
+   ],
+   "words": 2121,
+   "consonant_runs_pct": 8.51,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "am": {
+   "name": "Amharic",
+   "codes": [
+    "am"
+   ],
+   "words": 81118,
+   "consonant_runs_pct": 16.26,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ang": {
+   "name": "Old English",
+   "codes": [
+    "ang"
+   ],
+   "words": 64457,
+   "consonant_runs_pct": 26.1,
+   "sources": [
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ar": {
+   "name": "Arabic",
+   "codes": [
+    "ar"
+   ],
+   "words": 942134,
+   "consonant_runs_pct": 85.56,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "arq": {
+   "name": "Algerian Arabic",
+   "codes": [
+    "arq"
+   ],
+   "words": 2920,
+   "consonant_runs_pct": 72.19,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "arz": {
+   "name": "Egyptian Arabic",
+   "codes": [
+    "arz"
+   ],
+   "words": 90616,
+   "consonant_runs_pct": 59.9,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "as": {
+   "name": "Assamese",
+   "codes": [
+    "as"
+   ],
+   "words": 175894,
+   "consonant_runs_pct": 43.34,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "av": {
+   "name": "Avaric",
+   "codes": [
+    "av"
+   ],
+   "words": 3085,
+   "consonant_runs_pct": 30.03,
+   "sources": [
+    "kaikki",
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "avk": {
+   "name": "Kotava",
+   "codes": [
+    "avk"
+   ],
+   "words": 5667,
+   "consonant_runs_pct": 1.01,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "ay": {
+   "name": "Aymara",
+   "codes": [
+    "ay"
+   ],
+   "words": 239964,
+   "consonant_runs_pct": 13.62,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ba": {
+   "name": "Bashkir",
+   "codes": [
+    "ba"
+   ],
+   "words": 198141,
+   "consonant_runs_pct": 13.32,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ban": {
+   "name": "Balinese",
+   "codes": [
+    "ban"
+   ],
+   "words": 2291,
+   "consonant_runs_pct": 8.28,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "bar": {
+   "name": "Bavarian",
+   "codes": [
+    "bar"
+   ],
+   "words": 191894,
+   "consonant_runs_pct": 34.2,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "be": {
+   "name": "Belarusian",
+   "codes": [
+    "be"
+   ],
+   "words": 310081,
+   "consonant_runs_pct": 25.04,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "bg": {
+   "name": "Bulgarian",
+   "codes": [
+    "bg"
+   ],
+   "words": 922731,
+   "consonant_runs_pct": 18.0,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "bn": {
+   "name": "Bangla",
+   "codes": [
+    "bn"
+   ],
+   "words": 192696,
+   "consonant_runs_pct": 30.62,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "bpy": {
+   "name": "Bishnupriya",
+   "codes": [
+    "bpy"
+   ],
+   "words": 14831,
+   "consonant_runs_pct": 30.65,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "bua": {
+   "name": "Buriat",
+   "codes": [
+    "bua"
+   ],
+   "words": 30018,
+   "consonant_runs_pct": 14.72,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ce": {
+   "name": "Chechen",
+   "codes": [
+    "ce"
+   ],
+   "words": 62060,
+   "consonant_runs_pct": 27.64,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ceb": {
+   "name": "Cebuano",
+   "codes": [
+    "ceb"
+   ],
+   "words": 205163,
+   "consonant_runs_pct": 10.82,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "chg": {
+   "name": "Chagatai",
+   "codes": [
+    "chg"
+   ],
+   "words": 10097,
+   "consonant_runs_pct": 88.6,
+   "sources": [
+    "kaikki",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "chr": {
+   "name": "Cherokee",
+   "codes": [
+    "chr"
+   ],
+   "words": 2183,
+   "consonant_runs_pct": 25.11,
+   "sources": [
+    "kaikki",
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "cic": {
+   "name": "Chickasaw",
+   "codes": [
+    "cic"
+   ],
+   "words": 2524,
+   "consonant_runs_pct": 26.83,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "too few words"
+  },
+  "cim": {
+   "name": "Cimbrian",
+   "codes": [
+    "cim"
+   ],
+   "words": 7797,
+   "consonant_runs_pct": 26.48,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ckb": {
+   "name": "Central Kurdish",
+   "codes": [
+    "ckb"
+   ],
+   "words": 138847,
+   "consonant_runs_pct": 48.42,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "co": {
+   "name": "Corsican",
+   "codes": [
+    "co"
+   ],
+   "words": 27230,
+   "consonant_runs_pct": 12.02,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "cop": {
+   "name": "Coptic",
+   "codes": [
+    "cop"
+   ],
+   "words": 166383,
+   "consonant_runs_pct": 36.98,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "crh": {
+   "name": "Crimean Tatar",
+   "codes": [
+    "crh"
+   ],
+   "words": 8808,
+   "consonant_runs_pct": 13.08,
+   "sources": [
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "cs": {
+   "name": "Czech",
+   "codes": [
+    "cs"
+   ],
+   "words": 1614268,
+   "consonant_runs_pct": 10.14,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "csb": {
+   "name": "Kashubian",
+   "codes": [
+    "csb"
+   ],
+   "words": 32487,
+   "consonant_runs_pct": 24.42,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "cv": {
+   "name": "Chuvash",
+   "codes": [
+    "cv"
+   ],
+   "words": 78579,
+   "consonant_runs_pct": 21.86,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "cy": {
+   "name": "Welsh",
+   "codes": [
+    "cy"
+   ],
+   "words": 94306,
+   "consonant_runs_pct": 23.56,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "da": {
+   "name": "Danish",
+   "codes": [
+    "da"
+   ],
+   "words": 662736,
+   "consonant_runs_pct": 12.48,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "dak": {
+   "name": "Dakota",
+   "codes": [
+    "dak"
+   ],
+   "words": 3272,
+   "consonant_runs_pct": 35.64,
+   "sources": [
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "dar": {
+   "name": "Dargwa",
+   "codes": [
+    "dar"
+   ],
+   "words": 2124,
+   "consonant_runs_pct": 31.46,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "de": {
+   "name": "German",
+   "codes": [
+    "de"
+   ],
+   "words": 1056845,
+   "consonant_runs_pct": 27.94,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "dlm": {
+   "name": "Dalmatian",
+   "codes": [
+    "dlm"
+   ],
+   "words": 2014,
+   "consonant_runs_pct": 7.78,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "too few words"
+  },
+  "dsb": {
+   "name": "Lower Sorbian",
+   "codes": [
+    "dsb"
+   ],
+   "words": 38512,
+   "consonant_runs_pct": 17.4,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "egl": {
+   "name": "Emilian",
+   "codes": [
+    "egl"
+   ],
+   "words": 10294,
+   "consonant_runs_pct": 18.32,
+   "sources": [
+    "kaikki",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "egy": {
+   "name": "Ancient Egyptian",
+   "codes": [
+    "egy"
+   ],
+   "words": 5161,
+   "consonant_runs_pct": 94.87,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "en": {
+   "name": "English",
+   "codes": [
+    "en"
+   ],
+   "words": 1473131,
+   "consonant_runs_pct": 13.68,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "evn": {
+   "name": "Evenki",
+   "codes": [
+    "evn"
+   ],
+   "words": 8149,
+   "consonant_runs_pct": 18.68,
+   "sources": [
+    "kaikki",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "fa": {
+   "name": "Persian",
+   "codes": [
+    "fa",
+    "pes"
+   ],
+   "words": 381869,
+   "consonant_runs_pct": 83.82,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "fo": {
+   "name": "Faroese",
+   "codes": [
+    "fo"
+   ],
+   "words": 228925,
+   "consonant_runs_pct": 15.6,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "frm": {
+   "name": "Middle French",
+   "codes": [
+    "frm"
+   ],
+   "words": 26734,
+   "consonant_runs_pct": 17.36,
+   "sources": [
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "fro": {
+   "name": "Old French",
+   "codes": [
+    "fro"
+   ],
+   "words": 93558,
+   "consonant_runs_pct": 18.9,
+   "sources": [
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "frr": {
+   "name": "Northern Frisian",
+   "codes": [
+    "frr"
+   ],
+   "words": 19937,
+   "consonant_runs_pct": 21.08,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "fy": {
+   "name": "Western Frisian",
+   "codes": [
+    "fy"
+   ],
+   "words": 113590,
+   "consonant_runs_pct": 22.04,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ga": {
+   "name": "Irish",
+   "codes": [
+    "ga"
+   ],
+   "words": 247798,
+   "consonant_runs_pct": 22.84,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "gan": {
+   "name": "Gan Chinese",
+   "codes": [
+    "gan"
+   ],
+   "words": 4756,
+   "consonant_runs_pct": 48.5,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "gho": {
+   "name": "Ghomara",
+   "codes": [
+    "gho"
+   ],
+   "words": 5411,
+   "consonant_runs_pct": 18.02,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "glk": {
+   "name": "Gilaki",
+   "codes": [
+    "glk"
+   ],
+   "words": 229138,
+   "consonant_runs_pct": 84.42,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "gom": {
+   "name": "Goan Konkani",
+   "codes": [
+    "gom"
+   ],
+   "words": 50744,
+   "consonant_runs_pct": 20.46,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "gos": {
+   "name": "Gronings",
+   "codes": [
+    "gos"
+   ],
+   "words": 7944,
+   "consonant_runs_pct": 19.19,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "got": {
+   "name": "Gothic",
+   "codes": [
+    "got"
+   ],
+   "words": 80685,
+   "consonant_runs_pct": 28.16,
+   "sources": [
+    "kaikki",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "grc": {
+   "name": "Ancient Greek",
+   "codes": [
+    "grc"
+   ],
+   "words": 24278,
+   "consonant_runs_pct": 11.04,
+   "sources": [
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "gsw": {
+   "name": "Swiss German",
+   "codes": [
+    "gsw"
+   ],
+   "words": 191135,
+   "consonant_runs_pct": 32.12,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "gu": {
+   "name": "Gujarati",
+   "codes": [
+    "gu"
+   ],
+   "words": 227455,
+   "consonant_runs_pct": 36.34,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "gv": {
+   "name": "Manx",
+   "codes": [
+    "gv"
+   ],
+   "words": 15916,
+   "consonant_runs_pct": 16.3,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "he": {
+   "name": "Hebrew",
+   "codes": [
+    "he"
+   ],
+   "words": 690613,
+   "consonant_runs_pct": 84.86,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "hi": {
+   "name": "Hindi",
+   "codes": [
+    "hi"
+   ],
+   "words": 133844,
+   "consonant_runs_pct": 32.74,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "hif": {
+   "name": "Fiji Hindi",
+   "codes": [
+    "hif"
+   ],
+   "words": 18087,
+   "consonant_runs_pct": 11.4,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "hil": {
+   "name": "Hiligaynon",
+   "codes": [
+    "hil"
+   ],
+   "words": 2464,
+   "consonant_runs_pct": 4.72,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "too few words"
+  },
+  "hit": {
+   "name": "Hittite",
+   "codes": [
+    "hit"
+   ],
+   "words": 7160,
+   "consonant_runs_pct": 20.06,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "hoc": {
+   "name": "Ho",
+   "codes": [
+    "hoc"
+   ],
+   "words": 3312,
+   "consonant_runs_pct": 2.39,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "hrx": {
+   "name": "Hunsrik",
+   "codes": [
+    "hrx"
+   ],
+   "words": 5019,
+   "consonant_runs_pct": 36.96,
+   "sources": [
+    "kaikki",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "hsb": {
+   "name": "Upper Sorbian",
+   "codes": [
+    "hsb"
+   ],
+   "words": 246553,
+   "consonant_runs_pct": 16.82,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "hy": {
+   "name": "Armenian",
+   "codes": [
+    "hy"
+   ],
+   "words": 407326,
+   "consonant_runs_pct": 29.44,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "is": {
+   "name": "Icelandic",
+   "codes": [
+    "is"
+   ],
+   "words": 461719,
+   "consonant_runs_pct": 16.26,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "itl": {
+   "name": "Itelmen",
+   "codes": [
+    "itl"
+   ],
+   "words": 2363,
+   "consonant_runs_pct": 37.25,
+   "sources": [
+    "unimorph"
+   ],
+   "reason": "too few words"
+  },
+  "ja": {
+   "name": "Japanese",
+   "codes": [
+    "ja"
+   ],
+   "words": 71430,
+   "consonant_runs_pct": 17.94,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ka": {
+   "name": "Georgian",
+   "codes": [
+    "ka"
+   ],
+   "words": 359905,
+   "consonant_runs_pct": 43.1,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "kab": {
+   "name": "Kabyle",
+   "codes": [
+    "kab"
+   ],
+   "words": 95542,
+   "consonant_runs_pct": 10.2,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "kbd": {
+   "name": "Kabardian",
+   "codes": [
+    "kbd"
+   ],
+   "words": 16587,
+   "consonant_runs_pct": 38.34,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "kca": {
+   "name": "Khanty",
+   "codes": [
+    "kca"
+   ],
+   "words": 2042,
+   "consonant_runs_pct": 17.51,
+   "sources": [
+    "unimorph"
+   ],
+   "reason": "too few words"
+  },
+  "ki": {
+   "name": "Kikuyu",
+   "codes": [
+    "ki"
+   ],
+   "words": 2682,
+   "consonant_runs_pct": 1.66,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "too few words"
+  },
+  "kk": {
+   "name": "Kazakh",
+   "codes": [
+    "kk"
+   ],
+   "words": 146255,
+   "consonant_runs_pct": 12.2,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "klr": {
+   "name": "Khaling",
+   "codes": [
+    "klr"
+   ],
+   "words": 32711,
+   "consonant_runs_pct": 20.1,
+   "sources": [
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "km": {
+   "name": "Khmer",
+   "codes": [
+    "km"
+   ],
+   "words": 6386,
+   "consonant_runs_pct": 62.43,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "too few words"
+  },
+  "kn": {
+   "name": "Kannada",
+   "codes": [
+    "kn"
+   ],
+   "words": 466815,
+   "consonant_runs_pct": 50.14,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "knn": {
+   "name": "Konkani (individual language)",
+   "codes": [
+    "knn"
+   ],
+   "words": 26363,
+   "consonant_runs_pct": 75.66,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ko": {
+   "name": "Korean",
+   "codes": [
+    "ko"
+   ],
+   "words": 997364,
+   "consonant_runs_pct": 17.08,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "koi": {
+   "name": "Komi-Permyak",
+   "codes": [
+    "koi"
+   ],
+   "words": 15079,
+   "consonant_runs_pct": 17.22,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "krc": {
+   "name": "Karachay-Balkar",
+   "codes": [
+    "krc"
+   ],
+   "words": 20766,
+   "consonant_runs_pct": 25.36,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ks": {
+   "name": "Kashmiri",
+   "codes": [
+    "ks"
+   ],
+   "words": 2164,
+   "consonant_runs_pct": 31.98,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "ksh": {
+   "name": "Colognian",
+   "codes": [
+    "ksh"
+   ],
+   "words": 25559,
+   "consonant_runs_pct": 27.56,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ku": {
+   "name": "Kurdish",
+   "codes": [
+    "ku"
+   ],
+   "words": 87652,
+   "consonant_runs_pct": 60.54,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "kv": {
+   "name": "Komi",
+   "codes": [
+    "kv"
+   ],
+   "words": 14868,
+   "consonant_runs_pct": 17.82,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ky": {
+   "name": "Kyrgyz",
+   "codes": [
+    "ky"
+   ],
+   "words": 244404,
+   "consonant_runs_pct": 13.28,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "lb": {
+   "name": "Luxembourgish",
+   "codes": [
+    "lb"
+   ],
+   "words": 161316,
+   "consonant_runs_pct": 26.38,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "li": {
+   "name": "Limburgish",
+   "codes": [
+    "li"
+   ],
+   "words": 199724,
+   "consonant_runs_pct": 15.94,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "liv": {
+   "name": "Livonian",
+   "codes": [
+    "liv"
+   ],
+   "words": 3067,
+   "consonant_runs_pct": 20.8,
+   "sources": [
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "lo": {
+   "name": "Lao",
+   "codes": [
+    "lo"
+   ],
+   "words": 29127,
+   "consonant_runs_pct": 49.82,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "lus": {
+   "name": "Mizo",
+   "codes": [
+    "lus"
+   ],
+   "words": 25028,
+   "consonant_runs_pct": 21.52,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "lv": {
+   "name": "Latvian",
+   "codes": [
+    "lv",
+    "lvs"
+   ],
+   "words": 484624,
+   "consonant_runs_pct": 10.42,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "lzh": {
+   "name": "Literary Chinese",
+   "codes": [
+    "lzh"
+   ],
+   "words": 5359,
+   "consonant_runs_pct": 29.41,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "mai": {
+   "name": "Maithili",
+   "codes": [
+    "mai"
+   ],
+   "words": 22409,
+   "consonant_runs_pct": 43.56,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "mhr": {
+   "name": "Eastern Mari",
+   "codes": [
+    "mhr"
+   ],
+   "words": 38040,
+   "consonant_runs_pct": 25.76,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "mk": {
+   "name": "Macedonian",
+   "codes": [
+    "mk"
+   ],
+   "words": 420979,
+   "consonant_runs_pct": 16.28,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "mkw": {
+   "name": "Kituba (Congo)",
+   "codes": [
+    "mkw"
+   ],
+   "words": 156500,
+   "consonant_runs_pct": 22.44,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ml": {
+   "name": "Malayalam",
+   "codes": [
+    "ml"
+   ],
+   "words": 421664,
+   "consonant_runs_pct": 45.06,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "mn": {
+   "name": "Halh Mongolian",
+   "codes": [
+    "khk",
+    "mn"
+   ],
+   "words": 160743,
+   "consonant_runs_pct": 25.24,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "mr": {
+   "name": "Marathi",
+   "codes": [
+    "mr"
+   ],
+   "words": 276177,
+   "consonant_runs_pct": 39.9,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "mrj": {
+   "name": "Western Mari",
+   "codes": [
+    "mrj"
+   ],
+   "words": 18337,
+   "consonant_runs_pct": 29.96,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "mt": {
+   "name": "Maltese",
+   "codes": [
+    "mt"
+   ],
+   "words": 119453,
+   "consonant_runs_pct": 18.68,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "my": {
+   "name": "Burmese",
+   "codes": [
+    "my"
+   ],
+   "words": 36586,
+   "consonant_runs_pct": 63.66,
+   "sources": [
+    "kaikki",
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "myv": {
+   "name": "Erzya",
+   "codes": [
+    "myv"
+   ],
+   "words": 16482,
+   "consonant_runs_pct": 24.64,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "mzn": {
+   "name": "Mazanderani",
+   "codes": [
+    "mzn"
+   ],
+   "words": 24643,
+   "consonant_runs_pct": 80.92,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "nan": {
+   "name": "Min Nan Chinese",
+   "codes": [
+    "nan"
+   ],
+   "words": 61655,
+   "consonant_runs_pct": 19.8,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "nap": {
+   "name": "Neapolitan",
+   "codes": [
+    "nap"
+   ],
+   "words": 25144,
+   "consonant_runs_pct": 10.5,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "nds": {
+   "name": "Low German",
+   "codes": [
+    "nds"
+   ],
+   "words": 127670,
+   "consonant_runs_pct": 27.78,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ne": {
+   "name": "Nepali",
+   "codes": [
+    "ne"
+   ],
+   "words": 354874,
+   "consonant_runs_pct": 41.6,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "new": {
+   "name": "Newari",
+   "codes": [
+    "new"
+   ],
+   "words": 38969,
+   "consonant_runs_pct": 38.78,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "nl": {
+   "name": "Dutch",
+   "codes": [
+    "nl"
+   ],
+   "words": 1019354,
+   "consonant_runs_pct": 17.3,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "nn": {
+   "name": "Norwegian Nynorsk",
+   "codes": [
+    "nn"
+   ],
+   "words": 269921,
+   "consonant_runs_pct": 19.66,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "no": {
+   "name": "Norwegian Bokmål",
+   "codes": [
+    "nb",
+    "no"
+   ],
+   "words": 663045,
+   "consonant_runs_pct": 13.12,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "non": {
+   "name": "Old Norse",
+   "codes": [
+    "non"
+   ],
+   "words": 45328,
+   "consonant_runs_pct": 25.5,
+   "sources": [
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "nr": {
+   "name": "South Ndebele",
+   "codes": [
+    "nr"
+   ],
+   "words": 2403,
+   "consonant_runs_pct": 15.72,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "too few words"
+  },
+  "nso": {
+   "name": "Northern Sotho",
+   "codes": [
+    "nso"
+   ],
+   "words": 19405,
+   "consonant_runs_pct": 14.96,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "nv": {
+   "name": "Navajo",
+   "codes": [
+    "nv"
+   ],
+   "words": 9190,
+   "consonant_runs_pct": 24.44,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "om": {
+   "name": "Oromo",
+   "codes": [
+    "om"
+   ],
+   "words": 11301,
+   "consonant_runs_pct": 12.77,
+   "sources": [
+    "leipzig",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "or": {
+   "name": "Odia",
+   "codes": [
+    "or"
+   ],
+   "words": 106928,
+   "consonant_runs_pct": 43.36,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "os": {
+   "name": "Ossetic",
+   "codes": [
+    "os"
+   ],
+   "words": 24714,
+   "consonant_runs_pct": 21.56,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "osx": {
+   "name": "Old Saxon",
+   "codes": [
+    "osx"
+   ],
+   "words": 11818,
+   "consonant_runs_pct": 10.04,
+   "sources": [
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ota": {
+   "name": "Ottoman Turkish",
+   "codes": [
+    "ota"
+   ],
+   "words": 9745,
+   "consonant_runs_pct": 14.99,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "pa": {
+   "name": "Punjabi",
+   "codes": [
+    "pa"
+   ],
+   "words": 131410,
+   "consonant_runs_pct": 32.86,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "pag": {
+   "name": "Pangasinan",
+   "codes": [
+    "pag"
+   ],
+   "words": 8277,
+   "consonant_runs_pct": 5.85,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "pcm": {
+   "name": "Nigerian Pidgin",
+   "codes": [
+    "pcm"
+   ],
+   "words": 6532,
+   "consonant_runs_pct": 14.27,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "too few words"
+  },
+  "pfl": {
+   "name": "Palatine German",
+   "codes": [
+    "pfl"
+   ],
+   "words": 33063,
+   "consonant_runs_pct": 38.68,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "pl": {
+   "name": "Polish",
+   "codes": [
+    "pl"
+   ],
+   "words": 1251835,
+   "consonant_runs_pct": 18.9,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "pnb": {
+   "name": "Western Panjabi",
+   "codes": [
+    "pnb"
+   ],
+   "words": 105137,
+   "consonant_runs_pct": 81.42,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "pnt": {
+   "name": "Pontic",
+   "codes": [
+    "pnt"
+   ],
+   "words": 4573,
+   "consonant_runs_pct": 10.69,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "too few words"
+  },
+  "prg": {
+   "name": "Prussian",
+   "codes": [
+    "prg"
+   ],
+   "words": 5863,
+   "consonant_runs_pct": 9.09,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "ps": {
+   "name": "Pashto",
+   "codes": [
+    "ps"
+   ],
+   "words": 46682,
+   "consonant_runs_pct": 83.72,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "rif": {
+   "name": "Riffian",
+   "codes": [
+    "rif"
+   ],
+   "words": 3855,
+   "consonant_runs_pct": 10.52,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "rm": {
+   "name": "Romansh",
+   "codes": [
+    "rm"
+   ],
+   "words": 68220,
+   "consonant_runs_pct": 18.4,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "rom": {
+   "name": "Romany",
+   "codes": [
+    "rom"
+   ],
+   "words": 6148,
+   "consonant_runs_pct": 9.51,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "ru": {
+   "name": "Russian",
+   "codes": [
+    "ru"
+   ],
+   "words": 1100820,
+   "consonant_runs_pct": 19.24,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "rue": {
+   "name": "Rusyn",
+   "codes": [
+    "rue"
+   ],
+   "words": 34386,
+   "consonant_runs_pct": 22.86,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "rup": {
+   "name": "Aromanian",
+   "codes": [
+    "rup"
+   ],
+   "words": 13742,
+   "consonant_runs_pct": 20.88,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "sa": {
+   "name": "Sanskrit",
+   "codes": [
+    "sa"
+   ],
+   "words": 198459,
+   "consonant_runs_pct": 53.66,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "sah": {
+   "name": "Yakut",
+   "codes": [
+    "sah"
+   ],
+   "words": 545153,
+   "consonant_runs_pct": 11.58,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "sat": {
+   "name": "Santali",
+   "codes": [
+    "sat"
+   ],
+   "words": 2734,
+   "consonant_runs_pct": 2.74,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "sco": {
+   "name": "Scots",
+   "codes": [
+    "sco"
+   ],
+   "words": 93216,
+   "consonant_runs_pct": 15.2,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "sd": {
+   "name": "Sindhi",
+   "codes": [
+    "sd"
+   ],
+   "words": 46744,
+   "consonant_runs_pct": 80.3,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "se": {
+   "name": "Northern Sami",
+   "codes": [
+    "se"
+   ],
+   "words": 72975,
+   "consonant_runs_pct": 24.66,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "shi": {
+   "name": "Tachelhit",
+   "codes": [
+    "shi"
+   ],
+   "words": 11388,
+   "consonant_runs_pct": 45.82,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "si": {
+   "name": "Sinhala",
+   "codes": [
+    "si"
+   ],
+   "words": 142467,
+   "consonant_runs_pct": 35.82,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "sjo": {
+   "name": "Xibe",
+   "codes": [
+    "sjo"
+   ],
+   "words": 3144,
+   "consonant_runs_pct": 10.13,
+   "sources": [
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "sk": {
+   "name": "Slovak",
+   "codes": [
+    "sk"
+   ],
+   "words": 678030,
+   "consonant_runs_pct": 10.68,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "sl": {
+   "name": "Slovenian",
+   "codes": [
+    "sl"
+   ],
+   "words": 815183,
+   "consonant_runs_pct": 12.44,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "smi": {
+   "name": "Sami languages",
+   "codes": [
+    "smi"
+   ],
+   "words": 21745,
+   "consonant_runs_pct": 26.82,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "sq": {
+   "name": "Albanian",
+   "codes": [
+    "sq"
+   ],
+   "words": 330697,
+   "consonant_runs_pct": 17.46,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ss": {
+   "name": "Swati",
+   "codes": [
+    "ss"
+   ],
+   "words": 2930,
+   "consonant_runs_pct": 20.44,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "st": {
+   "name": "Southern Sotho",
+   "codes": [
+    "st"
+   ],
+   "words": 21827,
+   "consonant_runs_pct": 15.7,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "sv": {
+   "name": "Swedish",
+   "codes": [
+    "sv"
+   ],
+   "words": 836163,
+   "consonant_runs_pct": 15.66,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "swg": {
+   "name": "Swabian",
+   "codes": [
+    "swg"
+   ],
+   "words": 4347,
+   "consonant_runs_pct": 32.2,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "syc": {
+   "name": "Classical Syriac",
+   "codes": [
+    "syc"
+   ],
+   "words": 11510,
+   "consonant_runs_pct": 59.0,
+   "sources": [
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "szl": {
+   "name": "Silesian",
+   "codes": [
+    "szl"
+   ],
+   "words": 47644,
+   "consonant_runs_pct": 18.56,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ta": {
+   "name": "Tamil",
+   "codes": [
+    "ta"
+   ],
+   "words": 206162,
+   "consonant_runs_pct": 41.96,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "tcy": {
+   "name": "Tulu",
+   "codes": [
+    "tcy"
+   ],
+   "words": 28726,
+   "consonant_runs_pct": 36.18,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "te": {
+   "name": "Telugu",
+   "codes": [
+    "te"
+   ],
+   "words": 172329,
+   "consonant_runs_pct": 40.24,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "tg": {
+   "name": "Tajik",
+   "codes": [
+    "tg"
+   ],
+   "words": 194689,
+   "consonant_runs_pct": 10.92,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "th": {
+   "name": "Thai",
+   "codes": [
+    "th"
+   ],
+   "words": 216699,
+   "consonant_runs_pct": 41.72,
+   "sources": [
+    "leipzig",
+    "subtitles"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ti": {
+   "name": "Tigrinya",
+   "codes": [
+    "ti"
+   ],
+   "words": 6702,
+   "consonant_runs_pct": 27.7,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "tig": {
+   "name": "Tigre",
+   "codes": [
+    "tig"
+   ],
+   "words": 17306,
+   "consonant_runs_pct": 15.52,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "tlh": {
+   "name": "Klingon",
+   "codes": [
+    "tlh"
+   ],
+   "words": 19809,
+   "consonant_runs_pct": 24.24,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "tn": {
+   "name": "Tswana",
+   "codes": [
+    "tn"
+   ],
+   "words": 27981,
+   "consonant_runs_pct": 19.72,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ts": {
+   "name": "Tsonga",
+   "codes": [
+    "ts"
+   ],
+   "words": 24417,
+   "consonant_runs_pct": 18.22,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "tt": {
+   "name": "Tatar",
+   "codes": [
+    "tt"
+   ],
+   "words": 223718,
+   "consonant_runs_pct": 14.36,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "tum": {
+   "name": "Tumbuka",
+   "codes": [
+    "tum"
+   ],
+   "words": 2014,
+   "consonant_runs_pct": 9.25,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "tyv": {
+   "name": "Tuvinian",
+   "codes": [
+    "tyv"
+   ],
+   "words": 496877,
+   "consonant_runs_pct": 16.62,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "udm": {
+   "name": "Udmurt",
+   "codes": [
+    "udm"
+   ],
+   "words": 15936,
+   "consonant_runs_pct": 17.98,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ug": {
+   "name": "Uyghur",
+   "codes": [
+    "ug"
+   ],
+   "words": 89167,
+   "consonant_runs_pct": 40.62,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "uk": {
+   "name": "Ukrainian",
+   "codes": [
+    "uk"
+   ],
+   "words": 276707,
+   "consonant_runs_pct": 17.5,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ur": {
+   "name": "Urdu",
+   "codes": [
+    "ur"
+   ],
+   "words": 53712,
+   "consonant_runs_pct": 82.42,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "uz": {
+   "name": "Uzbek",
+   "codes": [
+    "uz",
+    "uzn"
+   ],
+   "words": 400789,
+   "consonant_runs_pct": 14.76,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ve": {
+   "name": "Venda",
+   "codes": [
+    "ve"
+   ],
+   "words": 10672,
+   "consonant_runs_pct": 16.08,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "vi": {
+   "name": "Vietnamese",
+   "codes": [
+    "vi"
+   ],
+   "words": 73562,
+   "consonant_runs_pct": 10.02,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "vls": {
+   "name": "West Flemish",
+   "codes": [
+    "vls"
+   ],
+   "words": 57186,
+   "consonant_runs_pct": 24.86,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "vo": {
+   "name": "Volapük",
+   "codes": [
+    "vo"
+   ],
+   "words": 42946,
+   "consonant_runs_pct": 11.7,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "wa": {
+   "name": "Walloon",
+   "codes": [
+    "wa"
+   ],
+   "words": 34477,
+   "consonant_runs_pct": 13.46,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "war": {
+   "name": "Waray",
+   "codes": [
+    "war"
+   ],
+   "words": 183228,
+   "consonant_runs_pct": 15.64,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "wmt": {
+   "name": "Walmajarri",
+   "codes": [
+    "wmt"
+   ],
+   "words": 7491,
+   "consonant_runs_pct": 42.36,
+   "sources": [
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "wuu": {
+   "name": "Wu Chinese",
+   "codes": [
+    "wuu"
+   ],
+   "words": 128275,
+   "consonant_runs_pct": 21.3,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "xal": {
+   "name": "Kalmyk",
+   "codes": [
+    "xal"
+   ],
+   "words": 2030,
+   "consonant_runs_pct": 36.27,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
+  "xcl": {
+   "name": "Classical Armenian",
+   "codes": [
+    "xcl"
+   ],
+   "words": 17711,
+   "consonant_runs_pct": 33.08,
+   "sources": [
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "xmf": {
+   "name": "Mingrelian",
+   "codes": [
+    "xmf"
+   ],
+   "words": 41676,
+   "consonant_runs_pct": 20.14,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ydd": {
+   "name": "Eastern Yiddish",
+   "codes": [
+    "ydd"
+   ],
+   "words": 4912,
+   "consonant_runs_pct": 64.44,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "too few words"
+  },
+  "yi": {
+   "name": "Yiddish",
+   "codes": [
+    "yi"
+   ],
+   "words": 10341,
+   "consonant_runs_pct": 63.83,
+   "sources": [
+    "leipzig",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "za": {
+   "name": "Zhuang",
+   "codes": [
+    "za"
+   ],
+   "words": 3648,
+   "consonant_runs_pct": 39.8,
+   "sources": [
+    "leipzig"
+   ],
+   "reason": "too few words"
+  },
+  "zea": {
+   "name": "Zeelandic",
+   "codes": [
+    "zea"
+   ],
+   "words": 21929,
+   "consonant_runs_pct": 16.86,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "zgh": {
+   "name": "Standard Moroccan Tamazight",
+   "codes": [
+    "zgh"
+   ],
+   "words": 12364,
+   "consonant_runs_pct": 50.46,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "zh": {
+   "name": "Mandarin Chinese",
+   "codes": [
+    "cmn",
+    "zh"
+   ],
+   "words": 1008695,
+   "consonant_runs_pct": 18.12,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "zza": {
+   "name": "Zaza",
+   "codes": [
+    "zza"
+   ],
+   "words": 2412,
+   "consonant_runs_pct": 0.58,
+   "sources": [
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  }
+ }
+}

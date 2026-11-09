@@ -22,10 +22,10 @@
   .bit { aspect-ratio: 1; border: 1px solid var(--line); border-radius: 2px; background: var(--box); transition: background .25s; }
   .bit.on { border-color: transparent; }
   .bit.missing { border: 1.5px dashed var(--accent); }
-  .spare { display: none; align-items: center; gap: 2px; font: 11px var(--mono); color: var(--accent); white-space: nowrap; }
-  .spare.show { display: flex; }
-  .spare .bit { width: 10px; border-style: dashed; border-color: var(--accent); }
-  .spare b { margin-left: 6px; font-weight: 600; }
+  #spare { display: none; align-items: center; gap: 2px; font: 11px var(--mono); color: var(--accent); white-space: nowrap; }
+  #spare.show { display: flex; }
+  #spare .bit { width: 10px; border-style: dashed; border-color: var(--accent); }
+  #spare b { margin-left: 6px; font-weight: 600; }
   .key { display: grid; grid-template-columns: 10px repeat(4, auto) 1fr; gap: 3px 14px; align-items: center; margin-top: 10px; font: 11px var(--mono); color: var(--muted); }
   .key i { width: 10px; height: 10px; border-radius: 2px; }
   .key b { font-weight: 500; color: var(--ink); }
@@ -99,18 +99,24 @@
 </div>
 <script>
 "use strict";
-// The real phrase_v5 tables: token texts (ids 0-255 beginnings, 256-511 endings, 512-1023 middles) and, for
-// each previous token, its 32 middles and 32 endings (the 16-ending list is the first 16 of the 32).
-const V5_TOKENS = __V5_TOKENS__;
-const V5_MIDDLE = __V5_MIDDLE__;
-const V5_END32 = __V5_END32__;
-const TRIGRAMS = __TRIGRAMS__;  // 3-letter sequences found in at least MIN_TRIGRAM_WORDS English words
+// The real phrase tables: token texts (ids 0-255 beginnings, 256-511 endings, 512-1023 middles) and, for
+// each previous token, its 32 middles and 32 endings (the 16-ending list is the first 16 of the 32), the tokens
+// left out after it because a word could then contain an offensive word, and the few previous tokens whose
+// lists skip the join rule (too few letters can follow them).
+const TABLE_TOKENS = __TABLE_TOKENS__;
+const TABLE_MIDDLE = __TABLE_MIDDLE__;
+const TABLE_END32 = __TABLE_END32__;
+const TABLE_BANNED = __TABLE_BANNED__;
+const TABLE_RELAXED = __TABLE_RELAXED__;
+const LANGUAGES = __LANGUAGES__;  // the word list is the common words of this many languages
+const TRIGRAMS = __TRIGRAMS__;  // 3-letter sequences found in at least MIN_TRIGRAM_WORDS words of the word list
 const BEGIN = __BEGIN__;  // the 128 beginnings, in table order
 // Every row has the same size, so any row gives the number of middle and ending choices.
-const MIDDLE = V5_MIDDLE[0];
-const END = V5_END32[0];
-// Every beginning candidate: { t, id, words, i (index in BEGIN) | clash (the beginning it clashes with) | less: true }.
+const MIDDLE = TABLE_MIDDLE[0];
+const END = TABLE_END32[0];
+// Every beginning candidate: { t, id, words, i (index in BEGIN) | less: true }.
 const BEGIN_PAGE = __BEGIN_PAGE__;
+const BEGIN_EXAMPLE = __BEGIN_EXAMPLE__;  // a chosen beginning and a longer word start that would clash with it
 const BEGIN_LAST = __BEGIN_LAST__;  // corpus words started by the least common beginning on the list
 const MIN_TRIGRAM_WORDS = __MIN_TRIGRAM_WORDS__;
 
@@ -132,6 +138,7 @@ const TOKENS = {
 const LENGTH_COLOR = "var(--accent)";
 // Why a token can't be picked. Each reason has its own muted colour; the token pages show a key.
 const REASONS = {
+  blocked: { color: "#b06a4a", name: "would spell an offensive word", key: "could spell an offensive word" },
   clash: { color: "#8f7fbf", name: "clashes", key: "clashes with a chosen token" },
   less: { color: "#bf9a5a", name: "less common here", key: "less common here" },
   join: { color: "#4f9a94", name: "letters don’t fit", key: "letters don’t fit together" },
@@ -149,7 +156,7 @@ const tokenBits = (k) => Math.log2(TOKENS[k].pool.length);
 const kindAt = (n, j) => (j === 0 ? "b" : j === n - 1 ? "e" : "c");
 const wordKinds = (n) => Array.from({ length: n }, (_, j) => kindAt(n, j));
 // Endings: the full list has 32, but each ending uses only the 16 most natural ones (4 bits), so words sound
-// more like English. A 3-word phrase has one ending fewer, so there the first word's ending keeps all 32.
+// more natural. A 3-word phrase has one ending fewer, so there the first word's ending keeps all 32.
 // That makes every layout exactly 64 bits. Only the first word's ending depends on the layout, and only
 // once the layout is complete do we know it has 3 words; until then it counts as 4 bits.
 const END_SMALL = 16;
@@ -275,12 +282,12 @@ function nextStep() {
   };
 }
 
-// ---- Token pages: one page per token, left to right, using the real phrase_v5 tables. ----
+// ---- Token pages: one page per token, left to right, using the real phrase tables. ----
 const TRIGRAM_SET = new Set(TRIGRAMS.split(" "));
 const hasVowel = (text) => /[aeiouy]/.test(text);
 const conflicts = (a, b) => a.startsWith(b) || b.startsWith(a);
 const rowOf = (token) => (token < 256 ? token : token - 256);  // tables are indexed by the previous token
-// The first 3-letter sequence across the join that's in fewer than MIN_TRIGRAM_WORDS English words, if any.
+// The first 3-letter sequence across the join that's in fewer than MIN_TRIGRAM_WORDS words of the list, if any.
 function badJoin(previous, token) {
   const joined = previous.slice(-2) + token.slice(0, 2);
   for (let i = 0; i + 3 <= joined.length; i++) if (!TRIGRAM_SET.has(joined.slice(i, i + 3))) return joined.slice(i, i + 3);
@@ -309,59 +316,60 @@ function tokenStep() {
 
 function beginningPage(slot) {
   const pick = BEGIN_PAGE.filter((e) => e.i !== undefined).sort((a, b) => a.t.localeCompare(b.t));
-  const clash = BEGIN_PAGE.filter((e) => e.clash).sort((a, b) => a.clash.localeCompare(b.clash) || a.t.localeCompare(b.t));
   const less = BEGIN_PAGE.filter((e) => e.less).sort((a, b) => b.words - a.words || a.t.localeCompare(b.t));
-  const example = clash.find((e) => e.t.startsWith(e.clash)) || clash[0];
+  const [short, long] = BEGIN_EXAMPLE;
   return {
     slot, size: BEGIN.length, width: Math.log2(BEGIN.length), pick,
     pickTip: (e) => `number ${e.i} of ${BEGIN.length} · starts ${e.words} words`,
     prompt: `${slot.w === 0 ? "Now the tokens. " : ""}The <b>${ORDINALS[slot.w]} word</b> starts with a <b>beginning</b>: one of ${BEGIN.length}, `
       + `so it stores log₂ ${BEGIN.length} = ${bitWord(Math.log2(BEGIN.length))}.`,
     note: slot.w > 0 ? `<b>The same ${BEGIN.length} as for the first word.</b> A beginning doesn’t depend on the word before it, `
-      + `so every word picks from the same list.` : `<b>Where the ${BEGIN.length} come from.</b> They are the most common ways an English word starts, `
-      + `out of the ${BEGIN_PAGE.length} most common candidates. No beginning may start another one: `
-      + `with both <b>${example.clash}</b> and <b>${example.t}</b>, a reader seeing “${example.t}…” couldn’t tell `
-      + `where the beginning ends. So the more common one stays and the other is out. `
+      + `so every word picks from the same list.` : `<b>Where the ${BEGIN.length} come from.</b> They are the most common ways a word starts, `
+      + `in a word list made of the common words of ${LANGUAGES} languages that are easy to say. `
+      + `No beginning may start another one: with both <b>${short}</b> and <b>${long}</b>, a reader seeing “${long}…” couldn’t tell `
+      + `where the beginning ends. So the ${BEGIN_PAGE.length} candidates are word starts that don’t start one another, `
+      + `the more common one kept each time, and none is an offensive word. `
       + `Once ${BEGIN.length} are chosen the list is full; the rest start ${BEGIN_LAST} words or fewer.`,
     groups: [
-      { reason: "clash", items: clash, title: `Clashes with a chosen beginning: ${plural(clash.length, "token")}`,
-        why: "one starts the other, so the reader couldn’t tell where the beginning ends",
-        chip: (e) => e.clash, tip: (e) => `clashes with ${e.clash}: ${e.t.startsWith(e.clash) ? `${e.t} starts with ${e.clash}` : `${e.clash} starts with ${e.t}`}` },
       { reason: "less", items: less, title: `Less common here: ${plural(less.length, "token")}`,
         why: `the list already had its ${BEGIN.length}; each of these starts at most ${BEGIN_LAST} words`,
         chip: (e) => String(e.words), tip: (e) => `less common here: starts ${e.words} words; the list was full` },
-    ],
+    ].filter((g) => g.items.length),
   };
 }
 
 // A middle or an ending: its list depends on the token before it. Reasons are checked in the order the
-// v5 table compiler applies its rules: no vowel, letters that don't fit, a clash, then a full list.
+// table compiler applies its rules: banned after this token, no vowel, letters that don't fit, a clash, then a
+// full list.
 function followPage(slot, previous) {
   const prev = previous.t;
   const row = rowOf(previous.id);
-  const middles = V5_MIDDLE[row], endings = V5_END32[row];
+  const middles = TABLE_MIDDLE[row], endings = TABLE_END32[row];
+  const banned = new Set(TABLE_BANNED[String(previous.id)] || []);
+  const relaxed = TABLE_RELAXED.includes(previous.id);
   const list = slot.k === "c" ? middles : endings;
   const size = 2 ** slot.bits;  // 32 middles; 32 or 16 endings
   const needsVowel = previous.id < 256 && !hasVowel(prev);
   const union = [...middles, ...endings];
   const ids = slot.k === "c" ? [...Array(512).keys()].map((x) => x + 512) : [...Array(256).keys()].map((x) => x + 256);
-  const pick = [], groups = { spare: [], vowel: [], join: [], clash: [], less: [] };
+  const pick = [], groups = { spare: [], blocked: [], vowel: [], join: [], clash: [], less: [] };
   for (const id of ids) {
-    const e = { id, t: V5_TOKENS[id] };
+    const e = { id, t: TABLE_TOKENS[id] };
     const index = list.indexOf(id);
     if (index >= 0 && index < size) pick.push({ ...e, i: index });
     else if (index >= 0) groups.spare.push({ ...e, i: index });
+    else if (banned.has(id)) groups.blocked.push(e);
     else if (needsVowel && !hasVowel(e.t)) groups.vowel.push(e);
-    else if ((e.bad = badJoin(prev, e.t))) groups.join.push(e);
-    else if ((e.partner = union.find((u) => conflicts(V5_TOKENS[u], e.t))) !== undefined) {
-      e.with = V5_TOKENS[e.partner];
+    else if (!relaxed && (e.bad = badJoin(prev, e.t))) groups.join.push(e);
+    else if ((e.partner = union.find((u) => conflicts(TABLE_TOKENS[u], e.t))) !== undefined) {
+      e.with = TABLE_TOKENS[e.partner];
       e.withKind = middles.includes(e.partner) ? "middle" : "ending";
       groups.clash.push(e);
     }
     else groups.less.push(e);
   }
   pick.sort((a, b) => a.t.localeCompare(b.t));
-  for (const k of ["vowel", "join", "less"]) groups[k].sort((a, b) => a.t.localeCompare(b.t));
+  for (const k of ["blocked", "vowel", "join", "less"]) groups[k].sort((a, b) => a.t.localeCompare(b.t));
   groups.clash.sort((a, b) => a.with.localeCompare(b.with) || a.t.localeCompare(b.t));
   groups.spare.sort((a, b) => a.i - b.i);
   const role = slot.k === "c" ? "middle" : "ending";
@@ -372,22 +380,27 @@ function followPage(slot, previous) {
     pickTip: (e) => `number ${e.i} of ${size} after ${prev}`,
     prompt: `The ${slotName(slot)} is ${slot.k === "c" ? "a" : "an"} <b>${role}</b>. Its list depends on the token before it, `
       + `<b>${prev}</b>: one of ${size}, so it stores log₂ ${size} = ${bitWord(slot.bits)}.`,
-    note: `<b>Where these ${size} come from.</b> First come the ${roles} that follow <b>${prev}</b> in English words, most common first. `
+    note: `<b>Where these ${size} come from.</b> First come the ${roles} that follow <b>${prev}</b> in the word list, most common first. `
       + `If there aren’t enough, the list is topped up with the most common ${roles} overall. `
-      + `A ${role} is out if ${needsVowel ? `it has no vowel (${prev} has none, and every word needs one), if ` : ""}`
-      + `its letters don’t fit after ${prev}, or if it clashes with a middle or ending already on ${prev}’s lists. `
+      + `A ${role} is out if a word could then contain an offensive word, `
+      + `${needsVowel ? `if it has no vowel (${prev} has none, and every word needs one), ` : ""}`
+      + `${relaxed ? "" : `if its letters don’t fit after ${prev}, `}or if it clashes with a middle or ending already on ${prev}’s lists. `
+      + `${relaxed ? `Few letters can follow ${prev}, so here the letters-fit rule is skipped. ` : ""}`
       + `${groups.spare.length ? `This layout already has its 64 bits, so this ending uses only the first ${size} of the ${list.length}. ` : ""}`
       + `The rest didn’t make the list.`,
     groups: [
       { reason: "spare", items: groups.spare, title: `Not needed: ${plural(groups.spare.length, "token")}`,
         why: `this layout already has its 64 bits, so this ending uses only the first ${size} of ${list.length}`,
         chip: (e) => `#${e.i}`, tip: (e) => `number ${e.i} of ${list.length}: not needed, this layout already has its 64 bits` },
+      { reason: "blocked", items: groups.blocked, title: `Could spell an offensive word: ${plural(groups.blocked.length, "token")}`,
+        why: `after ${prev}, some word would then contain a word from the offensive-word lists of about 60 languages`,
+        chip: () => "", tip: () => `left out: after ${prev}, a word could contain a word from an offensive-word list` },
       { reason: "vowel", items: groups.vowel, title: `No vowel: ${plural(groups.vowel.length, "token")}`,
         why: `${prev} has no vowel, so the next token must have one, or the word would have none`,
         chip: () => "", tip: (e) => `no vowel: ${prev}${e.t} would have none` },
       { reason: "join", items: groups.join, title: `Letters don’t fit together: ${plural(groups.join.length, "token")}`,
-        why: joinExample ? `some 3 letters across the join, like “${joinExample.bad}” in ${prev}${joinExample.t}, are in fewer than ${MIN_TRIGRAM_WORDS} English words` : "",
-        chip: (e) => e.bad, tip: (e) => `letters don’t fit together: “${e.bad}” is in fewer than ${MIN_TRIGRAM_WORDS} English words` },
+        why: joinExample ? `some 3 letters across the join, like “${joinExample.bad}” in ${prev}${joinExample.t}, are in fewer than ${MIN_TRIGRAM_WORDS} words of the list` : "",
+        chip: (e) => e.bad, tip: (e) => `letters don’t fit together: “${e.bad}” is in fewer than ${MIN_TRIGRAM_WORDS} words of the list` },
       { reason: "clash", items: groups.clash, title: `Clashes with a token on ${prev}’s lists: ${plural(groups.clash.length, "token")}`,
         why: "one starts the other, so the reader couldn’t tell where this token ends",
         chip: (e) => e.with, tip: (e) => `clashes with the ${e.withKind} ${e.with}: `
@@ -416,7 +429,7 @@ function wordText(w) {
   return tokenSlots().map((s, i) => (s.w === w && i < state.tokens.length ? state.tokens[i].t : "")).join("");
 }
 
-// The layout's number among the 32: phrase_v5 sorts the layouts (lists of word lengths) like tuples.
+// The layout's number among the 32: the encoder sorts the layouts (lists of word lengths) like tuples.
 const LAYOUT_LIST = (() => {
   const out = [];
   const grow = (prefix, rest) => {
@@ -429,7 +442,7 @@ const LAYOUT_LIST = (() => {
   return out.sort(cmp);
 })();
 
-// The finished phrase as phrase_v5 stores it: the layout in the lowest 5 bits, then each token's number,
+// The finished phrase as the encoder stores it: the layout in the lowest 5 bits, then each token's number,
 // left to right, each above the one before.
 function phraseNumber() {
   const lengths = layout();

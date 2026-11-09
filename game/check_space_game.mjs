@@ -117,15 +117,28 @@ await evaluate(`document.querySelectorAll('#panel details.group').forEach(d => d
 await shot("06-beginning-page.png");
 const pickToken = (text) => evaluate(`(() => { const b = [...document.querySelectorAll('#panel .tokens button')].find(x => x.textContent === ${JSON.stringify(text)}); if (!b) return 'missing ${text}'; b.click(); return 'ok'; })()`);
 const summarize = (pg) => ({ pick: pg.pick.length, groups: Object.fromEntries(pg.groups.map(g => [g.cls.replace("group ", ""), g.chips])) });
-// Expected counts come from the Python v5 compiler's rules (same order: vowel, join, clash, less).
+// Expected counts come from the Python mirror of the compiler's rules (build_space_game.follow_groups: same
+// order: on the list, banned, no vowel, join, clash, less). The 16-ending after st shows all six reasons.
 const cases = [
-  { name: "middle after re (3+3+5)", path: ["3 tokens", "3 tokens", "5 tokens"], first: "re",
-    expect: { pick: 32, groups: { join: 20, clash: 137, less: 323 } } },
-  { name: "32-ending after re (2+4+5)", path: ["2 tokens", "4 tokens", "5 tokens"], first: "re",
-    expect: { pick: 32, groups: { join: 11, clash: 90, less: 123 } } },
-  { name: "16-ending after bl (2+3+3+3)", path: ["2 tokens", "3 tokens", "3 tokens"], first: "bl",
-    expect: { pick: 16, groups: { spare: 16, vowel: 32, join: 112, clash: 78, less: 2 } } },
+  { name: "middle after re (3+3+5)", path: ["3 tokens", "3 tokens", "5 tokens"], first: "re", kind: "c", size: 32 },
+  { name: "32-ending after re (2+4+5)", path: ["2 tokens", "4 tokens", "5 tokens"], first: "re", kind: "e", size: 32 },
+  { name: "16-ending after st (2+3+3+3)", path: ["2 tokens", "3 tokens", "3 tokens"], first: "st", kind: "e", size: 16 },
 ];
+const mirror = spawnSync("python3", ["-c", `
+import json, sys
+sys.path.insert(0, ${JSON.stringify(HERE)})
+import build_space_game as game
+model = json.load(open(${JSON.stringify(path.join(HERE, "..", "models", "phrase_model.json"))}))
+text = [game.phrase.text_of(t) for t in model["tokens"]]
+cases = json.loads(sys.argv[1])
+out = []
+for c in cases:
+    groups = game.follow_groups(model, text.index(c["first"]), c["kind"], c["size"])
+    out.append({"pick": len(groups.pop("pick")), "groups": {k: len(v) for k, v in groups.items() if v}})
+print(json.dumps(out))
+`, JSON.stringify(cases)], { encoding: "utf8" });
+expect(mirror.status === 0, "python mirror of the page rules runs: " + mirror.stderr.trim().slice(-300));
+JSON.parse(mirror.stdout || "[]").forEach((e, i) => { cases[i].expect = e; });
 let n = 8;
 for (const c of cases) {
   console.log(await clickPath(c.path), await pickToken(c.first));
@@ -149,8 +162,8 @@ for (const c of cases) {
   n++;
 }
 await evaluate(`document.querySelectorAll('#panel details.group').forEach(d => d.open = true)`);
-await shot("11-bl-open.png");
-// Whole phrases: drive step() to the end many times; Python checks each phrase against phrase_v5's encoder.
+await shot("11-st-open.png");
+// Whole phrases: drive step() to the end many times; Python checks each phrase against the reference encoder.
 const runs = await evaluate(`(() => { const out = [];
   for (let r = 0; r < 200; r++) { document.getElementById('reset').click(); while (step()); render();
     const v = phraseNumber(); out.push({ phrase: layout().map((_, w) => wordText(w)).join(' '), value: v.value.toString(), bits: v.offset,

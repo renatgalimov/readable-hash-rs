@@ -12,7 +12,7 @@
 //!
 //! # Reversible phrases
 //!
-//! [`encode_u64`] and [`decode_u64`] turn any 64-bit value into an English-like phrase and back,
+//! [`encode_u64`] and [`decode_u64`] turn any 64-bit value into a pronounceable phrase and back,
 //! exactly. See [`phrase`] for the format.
 //!
 //! ```
