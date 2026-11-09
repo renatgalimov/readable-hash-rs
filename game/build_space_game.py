@@ -6,6 +6,7 @@ with a deferred script and works without it). The blog embeds them as diagrams/s
 
     python3 game/build_space_game.py [OUT]   # default: game/space-game.html (+ game/space-game-origins.js)
 """
+import argparse
 import json
 import lzma
 import re
@@ -55,11 +56,10 @@ def clash_example(model, text, words):
     return [first, longer.most_common(1)[0][0]]
 
 
-def follow_groups(model, previous, kind, size):
+def follow_groups(model, previous, kind):
     """The token page after `previous` (a token id), as the game sorts it: picked ids and each reason's ids.
 
-    The same rules in the same order as the game page (and the compiler): on the list (picked, or spare when
-    only `size` are used), banned after this token, no vowel, a letter three times in a row, letters that don't
+    The same rules in the same order as the game page (and the compiler): on the list, banned after this token, no vowel, a letter three times in a row, letters that don't
     fit (at this context's minimum), a clash, less common.
     """
     text = [phrase.text_of(t) for t in model["tokens"]]
@@ -70,10 +70,10 @@ def follow_groups(model, previous, kind, size):
     listed = middles if kind == "c" else endings
     banned = set(model["banned"].get(str(previous), []))
     needs_vowel = previous < phrase.NUM_BEGIN and not phrase.has_vowel(text[previous])
-    out = {"pick": [], "spare": [], "blocked": [], "vowel": [], "triple": [], "join": [], "clash": [], "less": []}
+    out = {"pick": [], "blocked": [], "vowel": [], "triple": [], "join": [], "clash": [], "less": []}
     for token in range(512, 1024) if kind == "c" else range(256, 512):
         if token in listed:
-            out["pick" if listed.index(token) < size else "spare"].append(token)
+            out["pick"].append(token)
         elif token in banned:
             out["blocked"].append(token)
         elif needs_vowel and not phrase.has_vowel(text[token]):
@@ -288,12 +288,14 @@ def ban_reasons(model, text):
 
 
 def main():
-    out = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / "space-game.html"
+    parser = argparse.ArgumentParser()
+    parser.add_argument("out", nargs="?", type=Path)
+    args = parser.parse_args()
+    out = args.out or HERE / "space-game.html"
     model = json.loads(MODEL.read_text())
     phrase.validate(model)
     text = [phrase.text_of(t) for t in model["tokens"]]
     phrase.TEXT = text
-    assert all(model["end16"][i] == model["end32"][i][:phrase.END_SMALL] for i in range(len(model["end32"])))
     page, last = beginning_page(model, text)
     origins = Origins(model, text)
     begin_origin = {t: origins.pack(("begin", t)) for t in model["begin"]}
@@ -312,6 +314,9 @@ def main():
                     (ctx >= phrase.NUM_BEGIN or word.startswith(text[ctx])), (text[ctx], text[t], word)
     terms, list_names, list_links, ban_terms, dropped = ban_reasons(model, text)
     values = {
+        # The phrase format: tokens per phrase, most words, word lengths.
+        "FORMAT": {"TOTAL_TOKENS": phrase.TOTAL_TOKENS, "MAX_WORDS": phrase.MAX_WORDS,
+                   "LENGTHS": list(range(phrase.MIN_WORD, phrase.MAX_WORD + 1))},
         "BEGIN": [text[t] for t in model["begin"]],
         "BEGIN_PAGE": page,
         "BEGIN_LAST": last,

@@ -52,7 +52,7 @@ use readable_hash::{decode_u64, encode_u64};
 
 fn main() {
     let phrase = encode_u64(0x243f6a8885a308d3);
-    assert_eq!(phrase, "gungwe antabaka yeeljila");
+    assert_eq!(phrase, "inon nekera esam weenza");
     assert_eq!(decode_u64(&phrase), Some(0x243f6a8885a308d3));
 }
 ```
@@ -60,16 +60,16 @@ fn main() {
 More examples (`cargo run --example phrase`):
 
 ```text
-0x0000000000000000  mana mana mana matambiamo
-0x000000000000002a  kaan matambiamo mana mana
-0x00000000075bcd15  frifarkan kaan mana matara
-0xdeadbeefcafebabe  louvilupya brages keltet
+0x0000000000000000  maan maan maan matambar
+0x000000000000002a  parton matara matambar
+0x00000000075bcd15  imia quientar maan maan
+0xdeadbeefcafebabe  kibilmia umshela todans
 ```
 
-How it works: a phrase is always 11 tokens (pieces of 2 to 6 letters) in 3 or 4 words of 2 to 5
-tokens each. There are exactly 32 ways to split 11 tokens like that, so where the spaces fall
-stores 5 bits. The tokens store the other 59: a word's beginning is one of 128 (7 bits), a middle
-one of 32 (5 bits), an ending one of 16 or 32 (4 or 5 bits). Each list depends on the token before
+How it works: a phrase is always 10 tokens (pieces of 2 to 6 letters) in 3 or 4 words of 2 to 4
+tokens each. There are exactly 16 ways to split 10 tokens like that, so where the spaces fall
+stores 4 bits. The tokens store the other 60: a word's beginning is one of 128 (7 bits), a middle
+one of 64 (6 bits), an ending one of 32 (5 bits). Each list depends on the token before
 it and comes from the common words of 127 languages, so the result is easy to say but belongs to no
 language in particular. No token in a list starts another, so the decoder can find every token, and
 the spaces, from the letters alone.

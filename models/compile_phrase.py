@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
-"""Compile the phrase tables (format phrase-v6): 11 tokens, 32 layouts, context tables that decode by letters alone.
+"""Compile the phrase tables (format phrase-v7): 10 tokens, 16 layouts, context tables that decode by letters alone.
+
+    python3 models/compile_phrase.py [--check]
 
 Format (see src/phrase.rs):
-- A phrase is 3 or 4 words, 11 tokens in all; each word is 2-5 tokens: a beginning, 0-3 middles, an ending.
-  That gives 32 layouts, so the layout takes the low 5 bits.
-- Beginning: 7 bits (128, prefix-free). Middle: 5 bits (32). Ending: 5 bits (32) or 4 bits (16).
-  3-word layouts hold 61 token bits and 4-word layouts 63, but only 59 are needed, so the endings of
-  words 2 and 3 (3-word layouts) or of every word (4-word layouts) use 16 choices. Every layout is
-  then exactly 64 bits.
+- A phrase is 3 or 4 words, 10 tokens in all; each word is 2-4 tokens: a beginning, 0-2 middles, an ending.
+  That gives 16 layouts, so the layout takes the low 4 bits. Allowing 5-token words would give 23 layouts
+  (5+5 among them), and 4 bits can still tell only 16 apart, so they would add nothing.
+- Beginning: 7 bits (128, prefix-free). Middle: 6 bits (64). Ending: 5 bits (32). Every layout is exactly
+  64 bits: 4 + 3*7 + 4*6 + 3*5 (3 words) and 4 + 4*7 + 2*6 + 4*5 (4 words). With 32 middles a phrase would hold
+  only 60 or 62 bits; doubling the beginnings or the endings instead would leave the 3-word layouts at 63.
+- Why 10 tokens: 9 reach 64 bits only with all 256 beginning candidates (rare word starts), 64 endings and a
+  layout code of 2-4 bits; 11 make phrases about 2 letters longer (25.0 against 23.1 on average).
 - Each middle/ending row depends on the previous token (its context).
 
 Table rules:
@@ -18,7 +22,7 @@ Table rules:
 - No token is shorter than 2 letters. The corpus is re-tokenized with a vocabulary of 2+ letter pieces.
 - The 256 beginning candidates are prefix-free: the most common word starts, skipping any that starts another
   one already taken. (In many languages the most common starts chain, like co/con/cont.)
-- In every context, the 32 middles and the 32 endings together are prefix-free. So at each point at
+- In every context, the 64 middles and the 32 endings together are prefix-free. So at each point at
   most one token matches the letters, and the decoder finds where a word ends without knowing its
   length. Rows that are prefix-free only separately would be ambiguous (ab+ou+s = ab+ous).
 - Every token in a row joins plausibly to its context: each 3-letter sequence across the join occurs in
@@ -69,8 +73,9 @@ RUST_PATH = ROOT.parent / "src" / "phrase_data.rs"
 MIN_TOKEN = 2
 MAX_TOKEN = 6
 NUM_BEGIN, NUM_END, NUM_MIDDLE = 256, 256, 512
-BEGIN_SIZE, MIDDLE_SIZE, END_SIZE, END_SMALL = 128, 32, 32, 16
-TOTAL_TOKENS, MAX_WORDS, MIN_WORD, MAX_WORD = 11, 4, 2, 5
+BEGIN_SIZE, MIDDLE_SIZE, END_SIZE = 128, 64, 32
+TOTAL_TOKENS, MAX_WORDS, MIN_WORD, MAX_WORD = 10, 4, 2, 4
+VERSION = "phrase-v7"
 
 
 # ---------------------------------------------------------------- vocabulary and corpus counts
@@ -260,7 +265,7 @@ def has_vowel(text):
 
 def choose_row(previous_text, local_middle, local_end, global_middle, global_end, middle_pool, end_pool, trigrams,
                needs_vowel=False):
-    """32 middles + 32 endings, prefix-free together, each joining plausibly to the previous token.
+    """MIDDLE_SIZE middles + END_SIZE endings, prefix-free together, each joining plausibly to the previous token.
 
     Attested tokens first (by local count, either kind); then filler endings, then filler middles.
     Endings go first among fillers because their pool is half the size. A few tight contexts
@@ -292,8 +297,7 @@ def choose_row(previous_text, local_middle, local_end, global_middle, global_end
             rows[kind].append(token)
             chosen_texts.append(piece)
             if len(rows["m"]) == MIDDLE_SIZE and len(rows["e"]) == END_SIZE:
-                # The 16-ending row is the first 16 endings in this preference order (a subset stays prefix-free).
-                return rows["m"], rows["e"], rows["e"][:END_SMALL]
+                return rows["m"], rows["e"]
     raise ValueError(f"row too small after {previous_text!r}")
 
 
@@ -366,8 +370,8 @@ def violations(model, terms, causes=None):
     the part is Terms.parts_before; the token is one that led to the context on a path spelling that part (None
     if the term starts inside the context, or the context is a beginning).
 
-    Walks all words: a beginning, up to 3 middles, an ending (END16 is a prefix of END32), carrying the
-    automaton's state, so it sees terms that span any number of tokens.
+    Walks all words: a beginning, up to MAX_WORD - 2 middles, an ending, carrying the automaton's state, so it
+    sees terms that span any number of tokens.
     """
     text = [text_of(t) for t in model["tokens"]]
     start, _ = terms.feed(0, "^")
@@ -471,7 +475,7 @@ def compile_model(max_rounds=100):
     unreachable = set()  # middles whose own row needs a lower join minimum: never offered
     rounds = []
     for _ in range(max_rounds):
-        middle, end32, end16, relaxed = [], [], [], {}
+        middle, end32, relaxed = [], [], {}
         for ctx in CONTEXTS:
             local_middle = counts["middle"].get(ctx, Counter())
             local_end = counts["end"].get(ctx, Counter())
@@ -481,7 +485,7 @@ def compile_model(max_rounds=100):
             end_pool = [t for t in range(256, 512) if t not in banned[ctx]]
             for minimum in range(MIN_TRIGRAM_WORDS, 0, -1):
                 try:
-                    m, e, e16 = choose_row(TEXT[ctx], local_middle, local_end, global_middle, global_end,
+                    m, e = choose_row(TEXT[ctx], local_middle, local_end, global_middle, global_end,
                                            middle_pool, end_pool, trigrams[minimum], needs_vowel)
                     break
                 except ValueError:
@@ -491,9 +495,8 @@ def compile_model(max_rounds=100):
                 relaxed[str(ctx)] = minimum
             middle.append(m)
             end32.append(e)
-            end16.append(e16)
-        model = {"version": "phrase-v6", "tokens": tokens, "contexts": CONTEXTS, "begin": begin,
-                 "middle": middle, "end32": end32, "end16": end16, "relaxed": relaxed}
+        model = {"version": VERSION, "tokens": tokens, "contexts": CONTEXTS, "begin": begin,
+                 "middle": middle, "end32": end32, "relaxed": relaxed}
         causes = defaultdict(set)
         found = violations(model, terms, causes)
         rounds.append(len(found))
@@ -547,10 +550,9 @@ def validate(model):
     assert len(begin) == BEGIN_SIZE and all(i < 256 for i in model["begin"])
     assert all(not conflicts(a, b) for a, b in itertools.combinations(begin, 2)), "beginnings must be prefix-free"
     for index in range(len(CONTEXTS)):
-        m, e, e16 = model["middle"][index], model["end32"][index], model["end16"][index]
+        m, e = model["middle"][index], model["end32"][index]
         assert len(m) == MIDDLE_SIZE and all(512 <= i < 1024 for i in m)
         assert len(e) == END_SIZE and all(256 <= i < 512 for i in e)
-        assert e16 == e[:END_SMALL]
         union = [text[i] for i in m + e]
         assert all(not conflicts(a, b) for a, b in itertools.combinations(union, 2)), f"context {index} not prefix-free"
         previous = text[CONTEXTS[index]]
@@ -572,7 +574,7 @@ def report(model, counts):
     """How much of each row was seen after its context in the corpus (higher reads more naturally)."""
     stats = {"corpus_words": counts["segmented"] + counts["skipped"], "segmented_words": counts["segmented"],
              "skipped_words": counts["skipped"]}
-    for label, kind in (("middle", "middle"), ("end32", "end"), ("end16", "end")):
+    for label, kind in (("middle", "middle"), ("end32", "end")):
         attested = total = 0
         for index, ctx in enumerate(CONTEXTS):
             local = counts[kind].get(ctx, {})
@@ -593,40 +595,34 @@ def layouts():
             if sum(lengths) == TOTAL_TOKENS:
                 result.append(lengths)
     result.sort()
-    assert len(result) == 32
+    assert len(result) & (len(result) - 1) == 0, f"{len(result)} layouts: not a power of two"
     return result
 
 
-def ending_width(word_count, position):
-    if word_count == 4:
-        return 4
-    return 5 if position == 0 else 4
+def layout_bits():
+    return len(layouts()).bit_length() - 1
 
 
 def encode(model, value):
+    """The layout's index in the low bits, then each word's tokens left to right, each above the one before."""
     text = [text_of(t) for t in model["tokens"]]
-    lengths = layouts()[value & 31]
-    value >>= 5
+    table = layouts()
+    lengths = table[value & (len(table) - 1)]
+    value >>= layout_bits()
     words = []
-    for position, length in enumerate(lengths):
-        token = model["begin"][value & 127]
-        value >>= 7
+    for length in lengths:
+        token = model["begin"][value % BEGIN_SIZE]
+        value //= BEGIN_SIZE
         word = text[token]
         for _ in range(length - 2):
-            token = model["middle"][context_index(token)][value & 31]
-            value >>= 5
+            token = model["middle"][context(token)][value % MIDDLE_SIZE]
+            value //= MIDDLE_SIZE
             word += text[token]
-        width = ending_width(len(lengths), position)
-        row = model["end32"] if width == 5 else model["end16"]
-        token = row[context_index(token)][value & ((1 << width) - 1)]
-        value >>= width
+        token = model["end32"][context(token)][value % END_SIZE]
+        value //= END_SIZE
         words.append(word + text[token])
     assert value == 0
     return " ".join(words)
-
-
-def context_index(token):
-    return context(token)
 
 
 def main():
@@ -654,7 +650,6 @@ def rust_source(model):
     out += f"#[rustfmt::skip]\npub static BEGIN: [u16; {BEGIN_SIZE}] = " + json.dumps(model["begin"]) + ";\n"
     out += f"#[rustfmt::skip]\npub static MIDDLE: [[u16; {MIDDLE_SIZE}]; 768] = " + json.dumps(model["middle"]) + ";\n"
     out += f"#[rustfmt::skip]\npub static END32: [[u16; {END_SIZE}]; 768] = " + json.dumps(model["end32"]) + ";\n"
-    out += f"#[rustfmt::skip]\npub static END16: [[u16; {END_SMALL}]; 768] = " + json.dumps(model["end16"]) + ";\n"
     return out
 
 

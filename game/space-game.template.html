@@ -105,8 +105,7 @@
 <script>
 "use strict";
 // The real phrase tables: token texts (ids 0-255 beginnings, 256-511 endings, 512-1023 middles) and, for
-// each previous token, its 32 middles and 32 endings (the 16-ending list is the first 16 of the 32), the tokens
-// left out after it because a word could then contain an offensive word, and the few previous tokens whose
+// each previous token, its 64 middles and 32 endings, the tokens left out after it because a word could then contain an offensive word, and the few previous tokens whose
 // lists use a lower join minimum (too few letters can follow them): { previous id: minimum }.
 const TABLE_TOKENS = __TABLE_TOKENS__;
 const TABLE_MIDDLE = __TABLE_MIDDLE__;
@@ -117,8 +116,8 @@ const LANGUAGES = __LANGUAGES__;  // the word list is the common words of this m
 // Where tokens come from (see Origins in build_space_game.py) arrives in a separate deferred script, which sets
 // window.SPACE_GAME_ORIGINS = { LANG_NAMES, LANG_LINKS (English Wikipedia articles), EXAMPLES (words as their languages
 // write them: onların, Verfügung, þing), FOLD (letter -> the ASCII letters the tokens use: ı -> i, ß -> ss), BEGIN (beginning id),
-// FOLLOW (previous token id -> its 32
-// middles + 32 endings, space-separated), TOKEN (middle or ending id -> where it is common overall, for fillers) }.
+// FOLLOW (previous token id -> its
+// middles + endings, space-separated), TOKEN (middle or ending id -> where it is common overall, for fillers) }.
 // Each entry is packed "n|word:lang,lang|word:lang|:lang" in base 36: n languages have words with this token there;
 // up to 3 are named with an example word, one group per spelling, then up to 2 more without. The game works without it.
 let EXAMPLES = null;
@@ -142,13 +141,13 @@ const BEGIN_EXAMPLE = __BEGIN_EXAMPLE__;  // a chosen beginning and a longer wor
 const BEGIN_LAST = __BEGIN_LAST__;  // corpus words started by the least common beginning on the list
 const MIN_TRIGRAM_WORDS = __MIN_TRIGRAM_WORDS__;
 
-// The phrase: eleven tokens in up to four words of 2 to 5 tokens each. That allows 32 layouts, so the
-// layout stores exactly log2 32 = 5 bits. The player picks it one word length at a time; an option is
-// worth log2(layouts possible before / layouts it leaves), so every path adds up to the same 5 bits.
-// A page with one option left is skipped.
-const TOTAL_TOKENS = 11;
-const MAX_WORDS = 4;
-const LENGTHS = [2, 3, 4, 5];
+// The phrase: ten tokens in up to four words of 2 to 4 tokens each (phrase-v7). That allows 16 layouts, so
+// the layout stores exactly log2 16 = 4 bits. The player picks it one word length at a time; an option is worth log2(layouts possible before / layouts it
+// leaves), so every path adds up to the same number of bits. A page with one option left is skipped.
+const FORMAT = __FORMAT__;  // { TOTAL_TOKENS, MAX_WORDS, LENGTHS }
+const TOTAL_TOKENS = FORMAT.TOTAL_TOKENS;
+const MAX_WORDS = FORMAT.MAX_WORDS;
+const LENGTHS = FORMAT.LENGTHS;
 const ORDINALS = ["first", "second", "third", "fourth"];
 
 // Every token is a choice from a pool; it takes log2(pool size) bits.
@@ -167,7 +166,6 @@ const REASONS = {
   join: { color: "#4f9a94", name: "letters don’t fit", key: "letters don’t fit together" },
   vowel: { color: "#c0708a", name: "no vowel", key: "no vowel" },
   triple: { color: "#5b7fa6", name: "three in a row", key: "same letter three times in a row" },
-  spare: { color: "#8c8c8c", name: "not needed", key: "not needed: 64 bits reached" },
 };
 const pale = (color) => `color-mix(in srgb, ${color} 55%, white)`;
 
@@ -179,16 +177,7 @@ const bitWord = (x) => `${fmt(x)} bit${round(x) === 1 ? "" : "s"}`;
 const tokenBits = (k) => Math.log2(TOKENS[k].pool.length);
 const kindAt = (n, j) => (j === 0 ? "b" : j === n - 1 ? "e" : "c");
 const wordKinds = (n) => Array.from({ length: n }, (_, j) => kindAt(n, j));
-// Endings: the full list has 32, but each ending uses only the 16 most natural ones (4 bits), so words sound
-// more natural. A 3-word phrase has one ending fewer, so there the first word's ending keeps all 32.
-// That makes every layout exactly 64 bits. Only the first word's ending depends on the layout, and only
-// once the layout is complete do we know it has 3 words; until then it counts as 4 bits.
-const END_SMALL = 16;
-const smallEndBits = () => Math.log2(END_SMALL);
-const fullEnding = (lengths, w) => w === 0 && lengths.length === 3 && used(lengths) >= TOTAL_TOKENS;
-const endingBits = (lengths, w) => (fullEnding(lengths, w) ? tokenBits("e") : smallEndBits());
-const bitsAt = (lengths, w, k) => (k === "e" ? endingBits(lengths, w) : tokenBits(k));
-const wordBits = (lengths, w) => wordKinds(lengths[w]).reduce((sum, k) => sum + bitsAt(lengths, w, k), 0);
+const wordBits = (lengths, w) => wordKinds(lengths[w]).reduce((sum, k) => sum + tokenBits(k), 0);
 const orList = (items) => (items.length < 2 ? items.join("") : items.slice(0, -1).join(", ") + " or " + items[items.length - 1]);
 const plural = (count, word) => `${count} ${word}${count === 1 ? "" : "s"}`;
 
@@ -198,10 +187,7 @@ function describeWord(lengths, w) {
   const parts = [`a beginning (${bitWord(tokenBits("b"))})`];
   if (middles === 1) parts.push(`1 middle (${bitWord(tokenBits("c"))})`);
   if (middles > 1) parts.push(`${middles} middles (${bitWord(tokenBits("c"))} each)`);
-  const unsure = w === 0 && used(lengths) < TOTAL_TOKENS;
-  const ending = fullEnding(lengths, w) ? `${bitWord(tokenBits("e"))}: all ${END.length}, since this phrase has only 3 words`
-    : `${bitWord(smallEndBits())}: one of the ${END_SMALL} most natural${unsure ? `; ${bitWord(tokenBits("e"))} if the phrase ends up with 3 words` : ""}`;
-  parts.push(`an ending (${ending})`);
+  parts.push(`an ending (${bitWord(tokenBits("e"))})`);
   const list = parts.slice(0, -1).join(", ") + " and " + parts[parts.length - 1];
   return `${n} tokens: ${list}. Together that’s ${bitWord(wordBits(lengths, w))}`;
 }
@@ -236,7 +222,7 @@ function lengthOptions(lengths) {
     if (rest < 0) dropped.push({ n, why: `${n} is more than the ${left} tokens left` });
     else if (rest > 0 && words + 1 >= MAX_WORDS) dropped.push({ n, why: `${n} would leave ${rest} tokens with no word left to hold them` });
     else if (rest === 1) dropped.push({ n, why: `${n} would leave a single token, and every word needs at least 2` });
-    else if (!leaves && words + 2 === MAX_WORDS) dropped.push({ n, why: `${n} would leave ${rest} tokens for the last word, which holds at most 5` });
+    else if (!leaves && words + 2 === MAX_WORDS) dropped.push({ n, why: `${n} would leave ${rest} tokens for the last word, which holds at most ${LENGTHS.at(-1)}` });
     else if (!leaves) dropped.push({ n, why: `${n} would leave ${rest} tokens that can’t make legal words` });
     else options.push({ value: n, leaves, bits: Math.log2(possible / leaves) });
   }
@@ -255,19 +241,65 @@ function layout() {
 }
 const forcedFrom = () => chosen().length;  // words at or after this index were forced
 
-// Why 11 and not 10: one token fewer loses that token's bits and a whole bit of layout.
-function whyElevenTokens() {
+// The most token bits any layout of `total` tokens can hold with these pools (every ending at full size).
+function bestTokenBits(total, lengths = LENGTHS) {
+  let best = 0;
+  const grow = (words, rest) => {
+    if (rest === 0) {
+      best = Math.max(best, words.reduce((s, n) => s + tokenBits("b") + (n - 2) * tokenBits("c") + tokenBits("e"), 0));
+      return;
+    }
+    if (words.length === MAX_WORDS) return;
+    for (const n of lengths) if (n <= rest) grow([...words, n], rest - n);
+  };
+  grow([], total);
+  return best;
+}
+// How many layouts `total` tokens make with these word lengths.
+function countLayouts(total, lengths) {
+  const count = (rest, words) => (rest === 0 ? 1 : rest < 0 || words >= MAX_WORDS ? 0
+    : lengths.reduce((s, n) => s + count(rest - n, words + 1), 0));
+  return count(total, 0);
+}
+// Why 10 and not 9: one token fewer loses that token's bits and a whole bit of layout.
+function whyTokenCount() {
   const fewer = TOTAL_TOKENS - 1;
   const fewerLayouts = layoutCount(fewer, 0);
   const fewerBits = Math.floor(Math.log2(fewerLayouts));  // a binary index can use only a power-of-two share
   const layoutBits = Math.log2(ALL_LAYOUTS);
-  const best = fewerBits + fewer * tokenBits("c") + MAX_WORDS * (tokenBits("b") - tokenBits("c"));
+  const best = fewerBits + bestTokenBits(fewer);
   return `<b>Why ${TOTAL_TOKENS} tokens?</b> With ${fewer}, only ${fewerLayouts} layouts fit, and a binary number can use just `
     + `${2 ** fewerBits} of them: ${bitWord(fewerBits)} of layout instead of ${bitWord(layoutBits)}. `
     + `The phrase would hold at most ${bitWord(best)}, short of 64. The only fix would be bigger pools, `
     + `and bigger pools mean rarer tokens and words that don’t sound normal. `
     + `So the ${TOTAL_TOKENS}th token pays for itself: ${bitWord(tokenBits("c"))} of its own, `
-    + `plus ${bitWord(layoutBits - fewerBits)} of layout because the words can be split in more ways.`;
+    + `plus ${bitWord(layoutBits - fewerBits)} of layout because the words can be split in more ways.`
+    + " " + whyShortWords();
+}
+// Words have at most 4 tokens: a 5th would add layouts, but not a whole bit of them.
+function whyShortWords() {
+  const max = LENGTHS.at(-1);
+  const more = countLayouts(TOTAL_TOKENS, [...LENGTHS, max + 1]);
+  const usable = 2 ** Math.floor(Math.log2(more));
+  if (usable !== ALL_LAYOUTS) return "";
+  return `<b>Why at most ${max} tokens a word?</b> Allowing ${max + 1} would make ${more} layouts, and a binary number `
+    + `can use only ${usable} of them: still ${bitWord(Math.log2(usable))}. So longer words would add nothing, and short words are easier to read.`;
+}
+// 64 middles: with 32, no layout reaches 64 bits. Doubling the middles makes every layout exactly 64 bits;
+// doubling the beginnings or the endings instead leaves 3-word phrases short.
+function whyMiddles() {
+  const counts = [...new Set(LAYOUT_LIST.map((l) => l.length))].sort();
+  const layoutBits = Math.log2(ALL_LAYOUTS);
+  const total = (w, b, c, e) => layoutBits + w * b + (TOTAL_TOKENS - 2 * w) * c + w * e;
+  const [B, C, E] = ["b", "c", "e"].map(tokenBits);
+  const sums = counts.map((w) => `${fmt(layoutBits)} + ${w}×${B} + ${TOTAL_TOKENS - 2 * w}×${C} + ${w}×${E} (${w} words)`);
+  const list = (f) => andList(counts.map((w) => `${fmt(f(w))} bits with ${w} words`));
+  return `<b>Why ${MIDDLE.length} middles?</b> With ${2 ** (C - 1)}, a phrase would hold ${list((w) => total(w, B, C - 1, E))}. `
+    + `${MIDDLE.length} middles make every layout exactly 64 bits: ${sums.join(", and ")}. `
+    + (list((w) => total(w, B + 1, C - 1, E)) === list((w) => total(w, B, C - 1, E + 1))
+      ? `Doubling the beginnings or the endings instead gives ${list((w) => total(w, B + 1, C - 1, E))}.`
+      : `Doubling the beginnings instead gives ${list((w) => total(w, B + 1, C - 1, E))}; `
+        + `doubling the endings gives ${list((w) => total(w, B, C - 1, E + 1))}.`);
 }
 
 function nextStep() {
@@ -277,7 +309,7 @@ function nextStep() {
   const w = lengths.length;
   const parts = [];
   if (w === 0) {
-    parts.push(`The phrase has ${TOTAL_TOKENS} tokens in up to ${MAX_WORDS} words of 2 to 5 tokens each. `
+    parts.push(`The phrase has ${TOTAL_TOKENS} tokens in up to ${MAX_WORDS} words of ${LENGTHS[0]} to ${LENGTHS.at(-1)} tokens each. `
       + `That allows ${ALL_LAYOUTS} layouts, so the layout stores log₂ ${ALL_LAYOUTS} = ${bitWord(Math.log2(ALL_LAYOUTS))}, picked one word length at a time.`);
   } else {
     parts.push(`The ${ORDINALS[w - 1]} word is ${describeWord(lengths, w - 1)}.`);
@@ -296,7 +328,7 @@ function nextStep() {
     + `the fewer it keeps, the more it tells, so it’s worth log₂(${info.possible} ÷ layouts kept).`);
   return {
     prompt: parts.join(" "),
-    note: w === 0 ? whyElevenTokens() : "",
+    note: w === 0 ? whyTokenCount() : "",
     options: info.options.map((o) => ({
       ...o,
       label: `${o.value} tokens`,
@@ -402,7 +434,7 @@ function originSentence(e, kind, previous) {
     return o ? `Words start with <b>${e.t}</b> in ${originPhrase(o, e.t, "b")}.` : "";
   }
   const row = rowOf(previous.id);
-  const slot = (kind === "c" ? TABLE_MIDDLE[row] : TABLE_END32[row]).indexOf(e.id) + (kind === "c" ? 0 : 32);
+  const slot = (kind === "c" ? TABLE_MIDDLE[row] : TABLE_END32[row]).indexOf(e.id) + (kind === "c" ? 0 : MIDDLE.length);
   const o = unpackOrigin((origins().FOLLOW[String(previous.id)] || "").split(" ")[slot]);
   if (o) return `<b>${previous.t}</b> is followed by <b>${e.t}</b> in words of ${originPhrase(o, e.t, kind, previous.t)}.`;
   const g = unpackOrigin(origins().TOKEN[e.id]);
@@ -419,7 +451,7 @@ const termOf = (i) => (i >= 0 ? { term: TERMS[i][0], lists: TERMS[i][1].map((l) 
 function tokenSlots() {
   const lengths = layout();
   const out = [];
-  lengths.forEach((n, w) => wordKinds(n).forEach((k, j) => out.push({ w, j, n, k, bits: bitsAt(lengths, w, k) })));
+  lengths.forEach((n, w) => wordKinds(n).forEach((k, j) => out.push({ w, j, n, k, bits: tokenBits(k) })));
   return out;
 }
 const slotName = (s) => `${s.j === 0 ? "first" : s.k === "e" ? "last" : ORDINALS[s.j]} token of the ${ORDINALS[s.w]} word`;
@@ -479,16 +511,16 @@ function followPage(slot, previous) {
   const minimum = TABLE_RELAXED[String(previous.id)] || MIN_TRIGRAM_WORDS;
   const relaxed = minimum < MIN_TRIGRAM_WORDS;
   const list = slot.k === "c" ? middles : endings;
-  const size = 2 ** slot.bits;  // 32 middles; 32 or 16 endings
+  const size = list.length;
+  const firstMiddle = slot.k === "c" && state.tokens.length === tokenSlots().findIndex((s) => s.k === "c");
   const needsVowel = previous.id < 256 && !hasVowel(prev);
   const union = [...middles, ...endings];
   const ids = slot.k === "c" ? [...Array(512).keys()].map((x) => x + 512) : [...Array(256).keys()].map((x) => x + 256);
-  const pick = [], groups = { spare: [], blocked: [], vowel: [], triple: [], join: [], clash: [], less: [] };
+  const pick = [], groups = { blocked: [], vowel: [], triple: [], join: [], clash: [], less: [] };
   for (const id of ids) {
     const e = { id, t: TABLE_TOKENS[id] };
     const index = list.indexOf(id);
-    if (index >= 0 && index < size) pick.push({ ...e, i: index });
-    else if (index >= 0) groups.spare.push({ ...e, i: index });
+    if (index >= 0) pick.push({ ...e, i: index });
     else if (banned.has(id)) {
       const found = termOf(banTerms[bannedList.indexOf(id)]);
       Object.assign(e, found || { term: null, lists: [], link: "" });
@@ -507,7 +539,6 @@ function followPage(slot, previous) {
   pick.sort((a, b) => a.t.localeCompare(b.t));
   for (const k of ["blocked", "vowel", "triple", "join", "less"]) groups[k].sort((a, b) => a.t.localeCompare(b.t));
   groups.clash.sort((a, b) => a.with.localeCompare(b.with) || a.t.localeCompare(b.t));
-  groups.spare.sort((a, b) => a.i - b.i);
   const role = slot.k === "c" ? "middle" : "ending";
   const roles = slot.k === "c" ? "middles" : "endings";
   const joinExample = groups.join[0];
@@ -524,12 +555,9 @@ function followPage(slot, previous) {
       + `${groups.triple.length ? "if the same letter would appear three times in a row, " : ""}`
       + `if its letters don’t fit after ${prev}, or if it clashes with a middle or ending already on ${prev}’s lists. `
       + `${relaxed ? `Few letters can follow ${prev}, so here letters fit if they are in at least ${plural(minimum, "word")} of the list, not ${MIN_TRIGRAM_WORDS}. ` : ""}`
-      + `${groups.spare.length ? `This layout already has its 64 bits, so this ending uses only the first ${size} of the ${list.length}. ` : ""}`
-      + `The rest didn’t make the list.`,
+      + `The rest didn’t make the list.`
+      + (firstMiddle ? `<br><br>${whyMiddles()}` : ""),
     groups: [
-      { reason: "spare", items: groups.spare, title: `Not needed: ${plural(groups.spare.length, "token")}`,
-        why: `this layout already has its 64 bits, so this ending uses only the first ${size} of ${list.length}`,
-        chip: (e) => `#${e.i}`, tip: (e) => `number ${e.i} of ${list.length}: not needed, this layout already has its 64 bits` },
       { reason: "blocked", items: groups.blocked, title: `Could spell an offensive word: ${plural(groups.blocked.length, "token")}`,
         why: `after ${prev}, some word would then contain a word from the offensive-word lists of ${LIST_NAMES.length} languages`,
         chip: (e) => e.link, tip: (e) => !e.term
@@ -573,7 +601,7 @@ function wordText(w) {
   return tokenSlots().map((s, i) => (s.w === w && i < state.tokens.length ? state.tokens[i].t : "")).join("");
 }
 
-// The layout's number among the 32: the encoder sorts the layouts (lists of word lengths) like tuples.
+// The layout's number among them all: the encoder sorts the layouts (lists of word lengths) like tuples.
 const LAYOUT_LIST = (() => {
   const out = [];
   const grow = (prefix, rest) => {
@@ -586,13 +614,14 @@ const LAYOUT_LIST = (() => {
   return out.sort(cmp);
 })();
 
-// The finished phrase as the encoder stores it: the layout in the lowest 5 bits, then each token's number,
-// left to right, each above the one before.
+// The finished phrase as the encoder stores it: the layout in the lowest 4 bits, then each
+// token's number, left to right, each above the one before.
+const LAYOUT_BITS = Math.log2(LAYOUT_LIST.length);
 function phraseNumber() {
   const lengths = layout();
   const index = LAYOUT_LIST.findIndex((l) => l.join() === lengths.join());
-  const parts = [{ label: "layout", bits: binary(index, 5) }];
-  let value = BigInt(index), offset = 5;
+  const parts = [{ label: "layout", bits: binary(index, LAYOUT_BITS) }];
+  let value = BigInt(index), offset = LAYOUT_BITS;
   for (const e of state.tokens) {
     value |= BigInt(e.index) << BigInt(offset);
     offset += e.width;
@@ -606,7 +635,7 @@ function finalSummary() {
   const { value, offset, index, parts } = phraseNumber();
   const hex = "0x" + value.toString(16).padStart(16, "0");
   return `The phrase is done: <b class="final">${words.join(" ")}</b>. `
-    + `The layout ${layout().join(" + ")} is number ${index} of ${ALL_LAYOUTS}, the lowest 5 bits. `
+    + `The layout ${layout().join(" + ")} is number ${index} of ${ALL_LAYOUTS}, the lowest ${LAYOUT_BITS} bits. `
     + `Then each token’s number, left to right: ${parts.map((p) => `${p.label} <b>${p.bits}</b>`).join(", ")}. `
     + `That’s ${offset} bits, the number <b class="value">${hex}</b> (${value}). `
     + `<code>readable_hash::encode_u64</code> turns this number into exactly this phrase, and <code>decode_u64</code> turns the phrase back into the number.`;
@@ -625,16 +654,15 @@ function renderKey() {
   row(LENGTH_COLOR, "Orange", "word lengths", `${ALL_LAYOUTS} layouts`, `${bitWord(Math.log2(ALL_LAYOUTS))} in all`);
   for (const k of Object.keys(TOKENS)) {
     const t = TOKENS[k];
-    if (k === "e") row(t.color, t.name, t.role, `${END_SMALL} or ${t.pool.length} choices`, `${fmt(smallEndBits())} or ${bitWord(tokenBits(k))}`);
-    else row(t.color, t.name, t.role, `${t.pool.length} choices`, bitWord(tokenBits(k)));
+    row(t.color, t.name, t.role, `${t.pool.length} choices`, bitWord(tokenBits(k)));
   }
   const paleSwatch = el("i");
   paleSwatch.style.background = pale(TOKENS.b.color);
   key.append(paleSwatch, el("span", "note", "Pale: bits a word will take once its tokens are picked."));
-  const endSwatch = el("i");
-  endSwatch.style.background = TOKENS.e.color;
-  key.append(endSwatch, el("span", "note", `Endings use the ${END_SMALL} most natural of ${END.length} (${bitWord(smallEndBits())}). `
-    + `A 3-word phrase has one ending fewer, so its first ending gets all ${END.length} (${bitWord(tokenBits("e"))}). Every layout is exactly 64 bits.`));
+  const middleSwatch = el("i");
+  middleSwatch.style.background = TOKENS.c.color;
+  key.append(middleSwatch, el("span", "note", `A beginning and an ending take ${bitWord(tokenBits("b") + tokenBits("e"))} together, `
+    + `as much as 2 middles, so every layout is exactly 64 bits.`));
 }
 
 function paint(box, i, ranges, total) {
@@ -664,9 +692,9 @@ function renderGauge() {
     const kinds = wordKinds(n);
     kinds.forEach((k) => {
       const picked = position++ < state.tokens.length;
-      segs.push({ c: picked ? TOKENS[k].color : pale(TOKENS[k].color), bits: bitsAt(lengths, w, k) });
+      segs.push({ c: picked ? TOKENS[k].color : pale(TOKENS[k].color), bits: tokenBits(k) });
     });
-    const parts = kinds.map((k) => fmt(bitsAt(lengths, w, k)));
+    const parts = kinds.map((k) => fmt(tokenBits(k)));
     terms.push(parts.length > 1 ? `(${parts.join(" + ")})` : parts[0]);
   });
   let pos = 0;
@@ -744,9 +772,10 @@ function layoutSummary(total) {
     });
     const lengthBits = state.history.map((e) => fmt(e.bits));
     parts.push(`The layout is ${lengths.join(" + ")}, one of ${ALL_LAYOUTS}: its length choices add up to ${lengthBits.join(" + ")} = ${bitWord(Math.log2(ALL_LAYOUTS))}, whichever way you got here.`);
-    parts.push(lengths.length === 3
-      ? `With 3 words there are 3 endings: the first word’s uses all ${END.length} (${bitWord(tokenBits("e"))}), the other two the ${END_SMALL} most natural (${bitWord(smallEndBits())} each).`
-      : `With 4 words there are 4 endings, each one of the ${END_SMALL} most natural (${bitWord(smallEndBits())}).`);
+    const words = lengths.length, middles = TOTAL_TOKENS - 2 * words;
+    const [B, C, E] = ["b", "c", "e"].map(tokenBits);
+    parts.push(`With ${words} words there are ${words} beginnings, ${plural(middles, "middle")} and ${words} endings: `
+      + `${words}×${B} + ${middles}×${C} + ${words}×${E} = ${bitWord(words * B + middles * C + words * E)}, plus ${bitWord(Math.log2(ALL_LAYOUTS))} of layout.`);
     parts.push(verdict);
     return parts.join(" ");
   }
