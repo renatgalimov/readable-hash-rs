@@ -4,6 +4,7 @@
   "zu": "ubuntu's languages",
   "xh": "ubuntu's languages",
   "en": "chosen",
+  "de": "chosen",
   "ang": "chosen",
   "non": "chosen",
   "eo": "constructed language",
@@ -37,7 +38,7 @@
   "x-valarin": "constructed language"
  },
  "max_consonant_runs_pct": 10.0,
- "distinct_words": 209667,
+ "distinct_words": 211647,
  "blocklist_terms": 5789,
  "list_languages": {
   "ar": "Arabic",
@@ -361,6 +362,22 @@
     "unimorph"
    ],
    "taken": 2500
+  },
+  "de": {
+   "name": "German",
+   "codes": [
+    "de"
+   ],
+   "words": 1056845,
+   "consonant_runs_pct": 27.94,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500,
+   "included_because": "chosen"
   },
   "diq": {
    "name": "Dimli (individual language)",
@@ -1318,8 +1335,8 @@
    "codes": [
     "qya"
    ],
-   "words": 7131,
-   "consonant_runs_pct": 1.52,
+   "words": 7975,
+   "consonant_runs_pct": 1.42,
    "sources": [
     "eldamo",
     "tatoeba"
@@ -1448,8 +1465,8 @@
    "codes": [
     "sjn"
    ],
-   "words": 4185,
-   "consonant_runs_pct": 14.28,
+   "words": 4282,
+   "consonant_runs_pct": 14.03,
    "sources": [
     "eldamo",
     "tatoeba"
@@ -1655,12 +1672,12 @@
    "codes": [
     "x-adunaic"
    ],
-   "words": 277,
-   "consonant_runs_pct": 5.76,
+   "words": 288,
+   "consonant_runs_pct": 3.92,
    "sources": [
     "eldamo"
    ],
-   "taken": 243,
+   "taken": 255,
    "included_because": "constructed language"
   },
   "x-blackspeech": {
@@ -1668,12 +1685,12 @@
    "codes": [
     "x-blackspeech"
    ],
-   "words": 47,
-   "consonant_runs_pct": 9.76,
+   "words": 49,
+   "consonant_runs_pct": 11.11,
    "sources": [
     "eldamo"
    ],
-   "taken": 41,
+   "taken": 45,
    "included_because": "constructed language"
   },
   "x-gnomish": {
@@ -1681,12 +1698,12 @@
    "codes": [
     "x-gnomish"
    ],
-   "words": 2842,
-   "consonant_runs_pct": 22.3,
+   "words": 2874,
+   "consonant_runs_pct": 22.26,
    "sources": [
     "eldamo"
    ],
-   "taken": 2498,
+   "taken": 2500,
    "included_because": "constructed language"
   },
   "x-ilkorin": {
@@ -1694,12 +1711,12 @@
    "codes": [
     "x-ilkorin"
    ],
-   "words": 280,
-   "consonant_runs_pct": 12.55,
+   "words": 270,
+   "consonant_runs_pct": 10.86,
    "sources": [
     "eldamo"
    ],
-   "taken": 231,
+   "taken": 221,
    "included_because": "constructed language"
   },
   "x-khuzdul": {
@@ -1707,12 +1724,12 @@
    "codes": [
     "x-khuzdul"
    ],
-   "words": 98,
-   "consonant_runs_pct": 7.95,
+   "words": 99,
+   "consonant_runs_pct": 7.87,
    "sources": [
     "eldamo"
    ],
-   "taken": 88,
+   "taken": 89,
    "included_because": "constructed language"
   },
   "x-nandorin": {
@@ -1720,12 +1737,12 @@
    "codes": [
     "x-nandorin"
    ],
-   "words": 54,
-   "consonant_runs_pct": 8.0,
+   "words": 47,
+   "consonant_runs_pct": 4.65,
    "sources": [
     "eldamo"
    ],
-   "taken": 50,
+   "taken": 43,
    "included_because": "constructed language"
   },
   "x-rohirric": {
@@ -1733,12 +1750,12 @@
    "codes": [
     "x-rohirric"
    ],
-   "words": 117,
-   "consonant_runs_pct": 19.83,
+   "words": 119,
+   "consonant_runs_pct": 20.51,
    "sources": [
     "eldamo"
    ],
-   "taken": 116,
+   "taken": 117,
    "included_because": "constructed language"
   },
   "x-telerin": {
@@ -1746,12 +1763,12 @@
    "codes": [
     "x-telerin"
    ],
-   "words": 298,
-   "consonant_runs_pct": 1.14,
+   "words": 301,
+   "consonant_runs_pct": 1.13,
    "sources": [
     "eldamo"
    ],
-   "taken": 263,
+   "taken": 265,
    "included_because": "constructed language"
   },
   "x-valarin": {
@@ -1759,12 +1776,12 @@
    "codes": [
     "x-valarin"
    ],
-   "words": 27,
-   "consonant_runs_pct": 3.7,
+   "words": 26,
+   "consonant_runs_pct": 3.85,
    "sources": [
     "eldamo"
    ],
-   "taken": 27,
+   "taken": 26,
    "included_because": "constructed language"
   },
   "x-westron": {
@@ -1772,12 +1789,12 @@
    "codes": [
     "x-westron"
    ],
-   "words": 99,
-   "consonant_runs_pct": 4.6,
+   "words": 95,
+   "consonant_runs_pct": 4.76,
    "sources": [
     "eldamo"
    ],
-   "taken": 87,
+   "taken": 84,
    "included_because": "constructed language"
   },
   "xh": {
@@ -2371,21 +2388,6 @@
     "tatoeba"
    ],
    "reason": "too few words"
-  },
-  "de": {
-   "name": "German",
-   "codes": [
-    "de"
-   ],
-   "words": 1056845,
-   "consonant_runs_pct": 27.94,
-   "sources": [
-    "leipzig",
-    "subtitles",
-    "tatoeba",
-    "unimorph"
-   ],
-   "reason": "consonant-heavy"
   },
   "dlm": {
    "name": "Dalmatian",
