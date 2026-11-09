@@ -51,5 +51,9 @@ committed files are what the tables are built from.
 | [washyourmouthoutwithsoap](https://github.com/thisandagain/washyourmouthoutwithsoap) | offensive words, 54 languages | CC BY 4.0 |
 | [dsojevic/profanity-list](https://github.com/dsojevic/profanity-list) | English offensive words with severity | MIT |
 
+`language-wikipedia.json` maps each language code the game names to its English Wikipedia article, for links.
+`language_wikipedia.py` builds it from Wikidata's ISO 639 codes (`vro` is set by hand: Wikidata also gives the wider
+South Estonian group).
+
 Words are transliterated with [anyascii](https://github.com/anyascii/anyascii), so non-Latin scripts become
 plain a–z (Привет → privet).

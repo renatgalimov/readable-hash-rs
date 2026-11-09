@@ -118,7 +118,7 @@ sys.path.insert(0, ${JSON.stringify(HERE)})
 import build_space_game as game
 model = json.load(open(${JSON.stringify(path.join(HERE, "..", "models", "phrase_model.json"))}))
 text = [game.phrase.text_of(t) for t in model["tokens"]]
-print(json.dumps([d[0] for d in game.ban_reasons(model, text)[3]]))
+print(json.dumps([d[0] for d in game.ban_reasons(model, text)[4]]))
 `], { encoding: "utf8" });
 const droppedBegin = JSON.parse(dropped.stdout || "null");
 const bannedGroup = before.groups.find((g) => g.cls === "group banned");
@@ -132,6 +132,17 @@ const hover = async (text) => evaluate(`(() => { const b = [...document.querySel
 const hoverBegin = await hover("ma");
 console.log("hover ma:", hoverBegin);
 expect(/^Words start with ma in (all )?\d+ languages, like /.test(hoverBegin), "pointing at a beginning shows its languages");
+const links = await evaluate(`(() => ({
+  origin: [...document.querySelectorAll('#panel .origin a')].map(a => [a.textContent, a.href, a.target]),
+  banned: [...document.querySelectorAll('#panel details.banned .chip small a')].map(a => [a.textContent, a.href]),
+  afterLeave: (() => { document.querySelector('#panel .tokens button').dispatchEvent(new MouseEvent('mouseleave'));
+    return document.querySelectorAll('#panel .origin a').length; })() }))()`);
+console.log("wikipedia links:", JSON.stringify(links.origin.slice(0, 3)), JSON.stringify(links.banned.slice(0, 2)), "after leaving:", links.afterLeave);
+const wiki = (l) => /^https:\/\/en\.wikipedia\.org\/wiki\/\S+$/.test(l[1]);
+expect(links.origin.length >= 1 && links.origin.every(wiki) && links.origin.every((l) => l[2] === "_blank"),
+  "languages in the origin line link to Wikipedia in a new tab");
+expect(links.banned.length === droppedBegin.length && links.banned.every(wiki), "the lists' languages on banned chips link to Wikipedia");
+expect(links.afterLeave === links.origin.length, "the origin line stays after the pointer leaves, so its links can be clicked");
 await evaluate(`document.querySelectorAll('#panel details.group').forEach(d => d.open = true)`);
 await shot("05-beginning-page-open.png");
 await evaluate(`document.querySelectorAll('#panel details.group').forEach(d => d.open = false)`);

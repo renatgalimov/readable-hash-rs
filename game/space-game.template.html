@@ -63,6 +63,8 @@
   /* Token pages: pickable tokens are buttons; unavailable ones are muted chips, one colour per reason. */
   .origin { min-height: 2.6em; margin: 8px 0 4px; font-size: 14px; color: var(--muted, #555); }
   .origin i b { color: var(--ink); }
+  .origin a, #msg a, .chip small a { color: inherit; text-decoration: underline dotted; text-underline-offset: 2px; }
+  .origin a:hover, #msg a:hover, .chip small a:hover { color: var(--accent); }
   .tokens { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 12px; }
   .tokens button { min-width: 44px; padding: 5px 8px; border: 1.2px solid var(--ink); border-radius: 4px; background: var(--box); color: var(--ink); cursor: pointer; font: 500 14px var(--mono); }
   .tokens button:hover, .tokens button:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
@@ -113,7 +115,8 @@ const TABLE_BANNED = __TABLE_BANNED__;
 const TABLE_RELAXED = __TABLE_RELAXED__;
 const LANGUAGES = __LANGUAGES__;  // the word list is the common words of this many languages
 // Where tokens come from (see Origins in build_space_game.py) arrives in a separate deferred script, which sets
-// window.SPACE_GAME_ORIGINS = { LANG_NAMES, EXAMPLES, BEGIN (beginning id), FOLLOW (previous token id -> its 32
+// window.SPACE_GAME_ORIGINS = { LANG_NAMES, LANG_LINKS (English Wikipedia articles), EXAMPLES, BEGIN (beginning id),
+// FOLLOW (previous token id -> its 32
 // middles + 32 endings, space-separated), TOKEN (middle or ending id -> where it is common overall, for fillers) }.
 // Each entry is packed "n|word:lang,lang|:lang" in base 36: n languages have words with this token there; up to 3
 // are named, the first ones with an example word. The game works without it.
@@ -123,6 +126,7 @@ const origins = () => window.SPACE_GAME_ORIGINS || null;
 // order of TABLE_BANNED, 1 + the term each banned token would spell (0: found in an earlier draft of the tables).
 const TERMS = __TERMS__;
 const LIST_NAMES = __LIST_NAMES__;
+const LIST_LINKS = __LIST_LINKS__;  // their English Wikipedia articles
 const BAN_TERMS = __BAN_TERMS__;
 const BANNED_BEGIN = __BANNED_BEGIN__;  // [text, words it starts, term index]: word starts dropped as offensive
 const TRIGRAMS = __TRIGRAMS__;  // 3-letter sequences found in at least MIN_TRIGRAM_WORDS words of the word list
@@ -320,6 +324,9 @@ const tripleRun = (previous, token) => ((previous.slice(-2) + token).match(/(.)\
 const binary = (index, width) => index.toString(2).padStart(width, "0");
 
 // ---- Where a token comes from, and why a banned one is out. ----
+// A language name linked to its English Wikipedia article (opens a new tab; the game is embedded in the post).
+const langLink = (name, article) => (article
+  ? `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(article)}" target="_blank" rel="noopener">${name}</a>` : name);
 function unpackOrigin(packed) {
   if (!packed) return null;
   EXAMPLES = EXAMPLES || origins().EXAMPLES.split(" ");
@@ -328,7 +335,7 @@ function unpackOrigin(packed) {
     const [w, rest] = g.split(":");
     const [langs, more] = rest.split(";");
     return { word: w ? EXAMPLES[parseInt(w, 36)] : null, more: more ? parseInt(more, 36) : 0,
-      langs: langs.split(",").map((l) => origins().LANG_NAMES[parseInt(l, 36)]) };
+      langs: langs.split(",").map((l) => langLink(origins().LANG_NAMES[parseInt(l, 36)], origins().LANG_LINKS[parseInt(l, 36)])) };
   }) };
 }
 // An example word with the token in bold: after `before` (the previous token's letters) when given.
@@ -365,7 +372,9 @@ function originSentence(e, kind, previous) {
 }
 const listsText = (langs) => `on the ${andList(langs.length > 3 ? [...langs.slice(0, 2), `${langs.length - 2} more`] : langs)} `
   + `offensive-word list${langs.length > 1 ? "s" : ""}`;
-const termOf = (i) => (i >= 0 ? { term: TERMS[i][0], lists: TERMS[i][1].map((l) => LIST_NAMES[l]) } : null);
+// lists: plain names (for tooltips, which can't hold links); link: the first list's language, linked.
+const termOf = (i) => (i >= 0 ? { term: TERMS[i][0], lists: TERMS[i][1].map((l) => LIST_NAMES[l]),
+  link: langLink(LIST_NAMES[TERMS[i][1][0]], LIST_LINKS[TERMS[i][1][0]]) } : null);
 
 // Every token slot of the layout: word, position in the word, kind and bits.
 function tokenSlots() {
@@ -407,7 +416,7 @@ function beginningPage(slot) {
     groups: [
       { reason: "banned", items: banned, title: `On an offensive-word list: ${plural(banned.length, "word start")}`,
         why: "these are dropped before the candidates are chosen, however many words they start",
-        chip: (e) => e.lists[0], tip: (e) => `${e.t === e.term ? `${e.t} is` : `${e.t} starts with “${e.term}”,`} `
+        chip: (e) => e.link, tip: (e) => `${e.t === e.term ? `${e.t} is` : `${e.t} starts with “${e.term}”,`} `
           + `${listsText(e.lists)}; it starts ${e.words} words` },
       { reason: "less", items: less, title: `Less common here: ${plural(less.length, "token")}`,
         why: `the list already had its ${BEGIN.length}; each of these starts at most ${BEGIN_LAST} words`,
@@ -441,7 +450,7 @@ function followPage(slot, previous) {
     else if (index >= 0) groups.spare.push({ ...e, i: index });
     else if (banned.has(id)) {
       const found = termOf(banTerms[bannedList.indexOf(id)]);
-      Object.assign(e, found || { term: null, lists: [] });
+      Object.assign(e, found || { term: null, lists: [], link: "" });
       groups.blocked.push(e);
     }
     else if (needsVowel && !hasVowel(e.t)) groups.vowel.push(e);
@@ -482,7 +491,7 @@ function followPage(slot, previous) {
         chip: (e) => `#${e.i}`, tip: (e) => `number ${e.i} of ${list.length}: not needed, this layout already has its 64 bits` },
       { reason: "blocked", items: groups.blocked, title: `Could spell an offensive word: ${plural(groups.blocked.length, "token")}`,
         why: `after ${prev}, some word would then contain a word from the offensive-word lists of ${LIST_NAMES.length} languages`,
-        chip: (e) => e.lists[0] || "", tip: (e) => !e.term
+        chip: (e) => e.link, tip: (e) => !e.term
           ? `left out: with the tokens before ${prev}, ${e.t} could finish an offensive word (found in an earlier draft of the lists)`
           : (prev + e.t).includes(e.term) ? `left out: ${prev} + ${e.t} spells “${e.term}”, ${listsText(e.lists)}`
           : `left out: ${e.t} would finish “${e.term}”, which starts in the tokens before ${prev}; ${listsText(e.lists)}` },
@@ -736,7 +745,8 @@ function renderTokenPanel(total) {
     const show = () => { state.tokenPreview = e.t; renderPhrase(); origin.innerHTML = page.origin(e); };
     btn.addEventListener("mouseenter", show);
     btn.addEventListener("focus", show);
-    btn.addEventListener("mouseleave", () => { state.tokenPreview = null; renderPhrase(); origin.innerHTML = originHint(); });
+    // The origin line keeps the last token pointed at, so the reader can move to it and click a language.
+    btn.addEventListener("mouseleave", () => { state.tokenPreview = null; renderPhrase(); });
     grid.append(btn);
   }
   const origin = el("p", "origin");
@@ -751,7 +761,7 @@ function renderTokenPanel(total) {
     for (const e of g.items) {
       const chip = el("span", "chip", e.t);
       const note = g.chip(e);
-      if (note) chip.append(el("small", null, note));
+      if (note) { const small = el("small"); small.innerHTML = note; chip.append(small); }  // may hold a link
       chip.title = g.tip(e);
       chips.append(chip);
     }
