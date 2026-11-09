@@ -6,6 +6,7 @@ with a deferred script and works without it). The blog embeds them as diagrams/s
 
     python3 game/build_space_game.py [OUT]   # default: game/space-game.html (+ game/space-game-origins.js)
     python3 game/build_space_game.py --tokens 10 [OUT]   # the 10-token prototype: game/space-game-10.html
+    python3 game/build_space_game.py --tokens 9 [OUT]   # the 9-token prototype: game/space-game-9.html
 """
 import argparse
 import json
@@ -280,6 +281,8 @@ def ban_reasons(model, text):
         if phrase.offensive_token(piece, True, start_terms, anywhere_terms):
             dropped.append([piece, count, term_in("^" + piece, len(piece))])
             continue
+        if piece in model.get("skipped_begin", {}):  # phrase-9: replaced, see SKIPPED_BEGIN
+            continue
         if not any(phrase.conflicts(piece, other) for other in taken):
             taken.append(piece)
             if len(taken) == phrase.NUM_BEGIN:
@@ -324,7 +327,12 @@ def main():
         # whether it is a prototype (no Rust codec yet; the page then explains how it differs from 11 tokens).
         "FORMAT": {"TOTAL_TOKENS": phrase.TOTAL_TOKENS, "MAX_WORDS": phrase.MAX_WORDS,
                    "LENGTHS": list(range(phrase.MIN_WORD, phrase.MAX_WORD + 1)), "END_SMALL": phrase.END_SMALL,
-                   "VERSION": phrase.VERSION, "PROTOTYPE": phrase.RUST_PATH is None},
+                   "VERSION": phrase.VERSION, "PROTOTYPE": phrase.RUST_PATH is None,
+                   # phrase-9: each layout's prefix code (lowest bits first) and how many of its first endings
+                   # use END_SMALL. None for the fixed-width layout numbers of 11 and 10 tokens.
+                   "LAYOUT_CODES": [{"lengths": list(lengths), "bits": bits, "code": code,
+                                     "small": phrase.small_endings(lengths)}
+                                    for lengths, bits, code in phrase.layout_table()] if phrase.PREFIX_LAYOUTS else None},
         "BEGIN": [text[t] for t in model["begin"]],
         "BEGIN_PAGE": page,
         "BEGIN_LAST": last,
@@ -340,6 +348,10 @@ def main():
         "LIST_NAMES": list_names,
         "LIST_LINKS": list_links,
         "BANNED_BEGIN": dropped,
+        # phrase-9 uses every beginning; word starts whose lists couldn't be filled at the usual join minimum were
+        # replaced by the next ones: [text, words it starts, the minimum its lists would need].
+        "SKIPPED_BEGIN": [[t, sum(w.startswith(t) for w in phrase.corpus_words()), minimum]
+                          for t, minimum in model.get("skipped_begin", {}).items()],
         "LANGUAGES": len(json.loads(LANGUAGES.read_text())["languages"]),
         "TRIGRAMS": " ".join(sorted(phrase.letter_trigrams(phrase.corpus_words()))),
         # Sequences in 1-4 words, for the contexts whose join minimum is lower (model["relaxed"]).

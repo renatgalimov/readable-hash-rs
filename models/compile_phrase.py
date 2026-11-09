@@ -12,6 +12,17 @@ exactly 64 bits: 4 + 3*7 + 4*6 + 3*5 (3 words) and 4 + 4*7 + 2*6 + 4*5 (4 words)
 endings instead would leave the 3-word layouts at 63. The table rules below are the same, with rows of 64
 middles + 32 endings, prefix-free together.
 
+    python3 models/compile_phrase.py --tokens 9   # the 9-token prototype (phrase-9): phrase9_model.json
+
+phrase-9 (prototype): 9 tokens in 3 or 4 words of 2-4 tokens, 11 layouts. 9 tokens must hold about 7.1 bits each,
+so a list has to double again. Doubling the beginnings is the only way whose lists can all be filled: with 128
+middles 34 of 640 contexts can't fill a row (pr, fr, br, wh...), with 128 endings 56. So all 256 beginnings are
+used (8 bits), with 64 middles and 64 endings (6 bits each). A 3-word layout's tokens then hold 60 bits and a
+4-word one's 62, so the layout takes what is left: a prefix code of 4 bits for each 3-word layout and 2, 3, 3 or 4
+bits for the 4-word ones (layout_table). Where a code is longer than 64 minus the token bits, the first endings use
+only the 32 most natural of their 64, one bit less each. Words of 5 tokens would add 5 layouts that aren't needed
+to reach 64 bits; short words are easier to read.
+
 Format (see src/phrase.rs):
 - A phrase is 3 or 4 words, 11 tokens in all; each word is 2-5 tokens: a beginning, 0-3 middles, an ending.
   That gives 32 layouts, so the layout takes the low 5 bits.
@@ -63,6 +74,7 @@ Table rules:
 """
 import argparse
 import itertools
+from fractions import Fraction
 import json
 import lzma
 import math
@@ -85,11 +97,22 @@ TOTAL_TOKENS, MAX_WORDS, MIN_WORD, MAX_WORD = 11, 4, 2, 5
 VERSION = "phrase-v6"
 # Formats by phrase length in tokens (see the docstring). use_format() switches the module to one of them.
 FORMATS = {
-    11: dict(VERSION="phrase-v6", TOTAL_TOKENS=11, MAX_WORD=5, MIDDLE_SIZE=32, END_SIZE=32, END_SMALL=16,
-             MODEL_PATH=MODEL_PATH, REPORT_PATH=REPORT_PATH, RUST_PATH=RUST_PATH),
-    10: dict(VERSION="phrase-v7", TOTAL_TOKENS=10, MAX_WORD=4, MIDDLE_SIZE=64, END_SIZE=32, END_SMALL=32,
-             MODEL_PATH=ROOT / "phrase10_model.json", REPORT_PATH=ROOT / "phrase10_report.json", RUST_PATH=None),
+    11: dict(VERSION="phrase-v6", TOTAL_TOKENS=11, MAX_WORD=5, BEGIN_SIZE=128, MIDDLE_SIZE=32, END_SIZE=32,
+             END_SMALL=16, PREFIX_LAYOUTS=False, MODEL_PATH=MODEL_PATH, REPORT_PATH=REPORT_PATH, RUST_PATH=RUST_PATH,
+             RELAXED_BEGIN_MIN=None),
+    10: dict(VERSION="phrase-v7", TOTAL_TOKENS=10, MAX_WORD=4, BEGIN_SIZE=128, MIDDLE_SIZE=64, END_SIZE=32,
+             END_SMALL=32, PREFIX_LAYOUTS=False, MODEL_PATH=ROOT / "phrase10_model.json",
+             REPORT_PATH=ROOT / "phrase10_report.json", RUST_PATH=None, RELAXED_BEGIN_MIN=None),
+    9: dict(VERSION="phrase-9", TOTAL_TOKENS=9, MAX_WORD=4, BEGIN_SIZE=256, MIDDLE_SIZE=64, END_SIZE=64,
+            END_SMALL=32, PREFIX_LAYOUTS=True, MODEL_PATH=ROOT / "phrase9_model.json",
+            REPORT_PATH=ROOT / "phrase9_report.json", RUST_PATH=None, RELAXED_BEGIN_MIN=2),
 }
+# The lowest join minimum a chosen beginning's lists may use. phrase-v6 and v7 choose 128 of 256 beginnings, so a
+# beginning whose lists need a lower one is simply not chosen. phrase-9 uses all 256: after bans, common starts like
+# wh, bl, fl and cl need 2-4, and replacing them brings in rarer starts (oq, bw) that are worse. So their lists may
+# use joins found in 2 words; a join found in a single word can come from one odd word (bitblt), so 1 is never used.
+RELAXED_BEGIN_MIN = None  # None: MIN_TRIGRAM_WORDS (no relaxed beginning)
+PREFIX_LAYOUTS = False
 
 
 def use_format(tokens):
@@ -127,11 +150,12 @@ def offensive_token(text, starts_word, start_terms, anywhere_terms):
     return any(t in text for t in anywhere_terms) or (starts_word and text.startswith(tuple(start_terms)))
 
 
-def build_vocabulary(words, start_terms=(), anywhere_terms=()):
+def build_vocabulary(words, start_terms=(), anywhere_terms=(), skip_begin=()):
     """Top n-grams of 2-6 letters by position: ids 0-255 beginnings, 256-511 endings, 512-1023 middles.
 
     Beginnings are prefix-free (the most common starts first, skipping any that starts another one already taken).
-    Tokens that are offensive on their own are left out.
+    Tokens that are offensive on their own are left out, and so are the word starts in `skip_begin` (phrase-9 uses
+    every beginning, so one whose lists can't be filled at the usual join minimum is replaced by the next start).
     """
     begin, end, middle = Counter(), Counter(), Counter()
     for word in words:
@@ -147,6 +171,8 @@ def build_vocabulary(words, start_terms=(), anywhere_terms=()):
         top = []
         for text, _ in sorted(counts.items(), key=lambda item: (-item[1], item[0])):
             if offensive_token(text, kind == "^", start_terms, anywhere_terms):
+                continue
+            if kind == "^" and text in skip_begin:
                 continue
             if kind == "^" and any(conflicts(text, other) for other in top):
                 continue
@@ -461,11 +487,34 @@ def stale_bans(model, terms, banned):
     return {(ctx, t) for ctx in reached for t in banned[ctx] if (ctx, t) not in needed}
 
 
+class RelaxedBeginnings(Exception):
+    """Chosen beginnings whose lists need a join minimum below RELAXED_BEGIN_MIN: {text: minimum, 0 if none fills}."""
+
+
 def compile_model(max_rounds=100):
+    """The tables. When every beginning is used (phrase-9), a beginning whose lists need a join minimum below
+    RELAXED_BEGIN_MIN can't be left out like a rare one; it is replaced by the next word start, and the tables are
+    built again. The replaced ones are kept in the model ("skipped_begin") so the game can show them."""
+    skipped = {}
+    while True:
+        try:
+            model, statistics = compile_tables(max_rounds, skipped)
+        except RelaxedBeginnings as error:
+            assert BEGIN_SIZE == NUM_BEGIN, error.args[0]
+            skipped.update(error.args[0])
+            print(f"replacing beginnings whose lists need a lower join minimum: {error.args[0]}", flush=True)
+            continue
+        if skipped:
+            model["skipped_begin"] = dict(sorted(skipped.items()))
+            statistics["statistics"]["skipped_beginnings"] = len(skipped)
+        return model, statistics
+
+
+def compile_tables(max_rounds, skip_begin):
     global TEXT
     words = corpus_words()
     start_terms, anywhere_terms = blocklist()
-    tokens = build_vocabulary(words, start_terms, anywhere_terms)
+    tokens = build_vocabulary(words, start_terms, anywhere_terms, skip_begin)
     TEXT = [text_of(t) for t in tokens]
     assert all(len(t) >= MIN_TOKEN for t in TEXT)
     counts = count_transitions(words, tokens)
@@ -495,6 +544,7 @@ def compile_model(max_rounds=100):
     rounds = []
     for _ in range(max_rounds):
         middle, end32, end16, relaxed = [], [], [], {}
+        weak = {}  # phrase-9: chosen beginnings whose lists need a join minimum below RELAXED_BEGIN_MIN (0: none fills)
         for ctx in CONTEXTS:
             local_middle = counts["middle"].get(ctx, Counter())
             local_end = counts["end"].get(ctx, Counter())
@@ -508,13 +558,20 @@ def compile_model(max_rounds=100):
                                            middle_pool, end_pool, trigrams[minimum], needs_vowel)
                     break
                 except ValueError:
-                    if minimum == 1:
+                    if minimum == 1 and BEGIN_SIZE == NUM_BEGIN and ctx < NUM_BEGIN:
+                        m = e = e16 = None
+                        minimum = 0
+                    elif minimum == 1:
                         raise
             if minimum < MIN_TRIGRAM_WORDS:
                 relaxed[str(ctx)] = minimum
+            if BEGIN_SIZE == NUM_BEGIN and ctx < NUM_BEGIN and minimum < (RELAXED_BEGIN_MIN or MIN_TRIGRAM_WORDS):
+                weak[TEXT[ctx]] = minimum
             middle.append(m)
             end32.append(e)
             end16.append(e16)
+        if weak:
+            raise RelaxedBeginnings(weak)
         model = {"version": VERSION, "tokens": tokens, "contexts": CONTEXTS, "begin": begin,
                  "middle": middle, "end32": end32, "end16": end16, "relaxed": relaxed}
         if END_SMALL == END_SIZE:  # every ending uses the whole row
@@ -546,7 +603,8 @@ def compile_model(max_rounds=100):
                 banned[ctx].add(token)
     else:
         raise ValueError(f"offensive words still reachable after {max_rounds} rounds: {rounds}")
-    assert not set(begin) & {int(ctx) for ctx in relaxed}, "a chosen beginning needs a lower join minimum"
+    assert all(minimum >= (RELAXED_BEGIN_MIN or MIN_TRIGRAM_WORDS) for ctx, minimum in relaxed.items() if int(ctx) in set(begin)), \
+        "a chosen beginning needs a lower join minimum"
     # The tokens left out after each context because they would spell a term (directly or across tokens).
     model["banned"] = {str(ctx): sorted(b) for ctx, b in banned.items() if b}
     validate(model)
@@ -588,7 +646,8 @@ def validate(model):
         assert not {str(t) for t in model["middle"][index]} & model["relaxed"].keys(), f"context {index} offers a relaxed middle"
         if CONTEXTS[index] < NUM_BEGIN and not has_vowel(previous):
             assert all(has_vowel(piece) for piece in union), f"beginning {previous!r} allows a word with no vowel"
-    assert not {str(t) for t in model["begin"]} & model["relaxed"].keys(), "a chosen beginning has a relaxed row"
+    assert all(model["relaxed"].get(str(t), MIN_TRIGRAM_WORDS) >= (RELAXED_BEGIN_MIN or MIN_TRIGRAM_WORDS) for t in model["begin"]), \
+        "a chosen beginning has a relaxed row"
     found = violations(model, Terms(*blocklist()))
     assert not found, f"{len(found)} places still spell an offensive word, e.g. {sorted(found)[:3]}"
     for ctx, tokens in model.get("banned", {}).items():
@@ -623,20 +682,78 @@ def layouts():
             if sum(lengths) == TOTAL_TOKENS:
                 result.append(lengths)
     result.sort()
-    assert len(result) & (len(result) - 1) == 0, f"{len(result)} layouts: not a power of two"
+    assert PREFIX_LAYOUTS or len(result) & (len(result) - 1) == 0, f"{len(result)} layouts: not a power of two"
     return result
+
+
+def token_bits(lengths):
+    """The bits a layout's tokens hold with every list at full size."""
+    b, m, e = (size.bit_length() - 1 for size in (BEGIN_SIZE, MIDDLE_SIZE, END_SIZE))
+    return sum(b + (n - 2) * m + e for n in lengths)
+
+
+def code_lengths():
+    """With PREFIX_LAYOUTS: each layout's code length in bits.
+
+    A layout needs at least 64 minus its token bits. The shortest codes would cover more than every number (Kraft
+    sum above 1), so codes grow one bit at a time until they cover each number exactly once: always the shortest
+    code that may still grow (later layouts first), and only by an amount that doesn't overshoot. Each extra bit
+    makes one ending use END_SMALL instead of END_SIZE (small_endings).
+    """
+    entries = layouts()
+    least = {lengths: 64 - token_bits(lengths) for lengths in entries}
+    assert END_SIZE == 2 * END_SMALL, "a small ending must give up exactly one bit"
+    bits = dict(least)
+    excess = sum(Fraction(1, 2 ** b) for b in bits.values()) - 1
+    assert excess >= 0, "the layouts can't reach 64 bits"
+    while excess:
+        grow = [lengths for lengths in entries
+                if bits[lengths] - least[lengths] < len(lengths) and Fraction(1, 2 ** (bits[lengths] + 1)) <= excess]
+        assert grow, "no layout code can grow without leaving numbers uncovered"
+        lengths = min(grow, key=lambda l: (bits[l], -entries.index(l)))
+        bits[lengths] += 1
+        excess -= Fraction(1, 2 ** bits[lengths])
+    return bits
+
+
+def small_endings(lengths):
+    """How many of this layout's endings use END_SMALL: the first ones (phrase-9; v6 decides in ending_width)."""
+    return code_lengths()[tuple(lengths)] - (64 - token_bits(lengths)) if PREFIX_LAYOUTS else None
+
+
+def layout_table():
+    """[(lengths, code bits, code)]: the layout is read from the lowest bits of the number.
+
+    phrase-v6 and v7 number the layouts 0..N-1 in sorted order, layout_bits() each. With PREFIX_LAYOUTS each layout
+    gets a code of code_lengths() bits: a canonical prefix code, shortest first, then in layout order, its first bit
+    the lowest bit of the number.
+    """
+    if not PREFIX_LAYOUTS:
+        return [(lengths, layout_bits(), i) for i, lengths in enumerate(layouts())]
+    order = sorted((bits, lengths) for lengths, bits in code_lengths().items())
+    assert sum(Fraction(1, 2 ** bits) for bits, _ in order) == 1, "layout codes must cover every number once"
+    table, code, previous = [], 0, order[0][0]
+    for bits, lengths in order:
+        code <<= bits - previous
+        previous = bits
+        table.append((lengths, bits, int(format(code, f"0{bits}b")[::-1], 2)))  # first code bit = lowest bit
+        code += 1
+    return table
 
 
 def layout_bits():
     return len(layouts()).bit_length() - 1
 
 
-def ending_width(word_count, position):
+def ending_width(word_count, position, lengths=None):
     """Bits of word `position`'s ending in a layout of `word_count` words. Endings use END_SMALL choices; the first
     ones use all END_SIZE where the layout needs the bits to reach exactly 64 (phrase-v6: the first word of a
-    3-word layout). In phrase-v7 every ending uses all 32."""
-    need = 64 - layout_bits() - word_count * (BEGIN_SIZE.bit_length() - 1) - (TOTAL_TOKENS - 2 * word_count) * (MIDDLE_SIZE.bit_length() - 1)
+    3-word layout). In phrase-v7 every ending uses all 32. In phrase-9 (pass `lengths`) the first
+    small_endings(lengths) endings use 32 of the 64, the others all 64."""
     small, full = END_SMALL.bit_length() - 1, END_SIZE.bit_length() - 1
+    if PREFIX_LAYOUTS:
+        return small if position < small_endings(lengths) else full
+    need = 64 - layout_bits() - word_count * (BEGIN_SIZE.bit_length() - 1) - (TOTAL_TOKENS - 2 * word_count) * (MIDDLE_SIZE.bit_length() - 1)
     extra = need - word_count * small
     assert 0 <= extra <= (word_count if full > small else 0), (word_count, need)
     return full if position < extra else small
@@ -644,20 +761,19 @@ def ending_width(word_count, position):
 
 def encode(model, value):
     text = [text_of(t) for t in model["tokens"]]
-    table = layouts()
-    lengths = table[value & (len(table) - 1)]
-    value >>= layout_bits()
-    middle_bits = MIDDLE_SIZE.bit_length() - 1
+    lengths, bits, _ = next(entry for entry in layout_table() if value & ((1 << entry[1]) - 1) == entry[2])
+    value >>= bits
+    middle_bits, begin_bits = MIDDLE_SIZE.bit_length() - 1, BEGIN_SIZE.bit_length() - 1
     words = []
     for position, length in enumerate(lengths):
-        token = model["begin"][value & 127]
-        value >>= 7
+        token = model["begin"][value & (BEGIN_SIZE - 1)]
+        value >>= begin_bits
         word = text[token]
         for _ in range(length - 2):
             token = model["middle"][context_index(token)][value & (MIDDLE_SIZE - 1)]
             value >>= middle_bits
             word += text[token]
-        width = ending_width(len(lengths), position)
+        width = ending_width(len(lengths), position, lengths)
         row = model["end32"] if width == END_SIZE.bit_length() - 1 else model["end16"]
         token = row[context_index(token)][value & ((1 << width) - 1)]
         value >>= width

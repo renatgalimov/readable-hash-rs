@@ -1,0 +1,33 @@
+{
+ "statistics": {
+  "ban_rounds": [
+   5313,
+   1810,
+   1238,
+   330,
+   139,
+   17,
+   20,
+   6,
+   0,
+   139,
+   15,
+   13,
+   1,
+   0
+  ],
+  "banned_pairs": 9959,
+  "begin_attested": 256,
+  "blocklist_terms_checked": 5588,
+  "corpus_words": 211647,
+  "end16_attested_fraction": 0.7896321614583334,
+  "end32_attested_fraction": 0.5054728190104166,
+  "middle_attested_fraction": 0.5418294270833334,
+  "relaxed_contexts": 15,
+  "segmented_words": 118649,
+  "skipped_beginnings": 1,
+  "skipped_words": 92998,
+  "stale_bans_lifted": 6116,
+  "unreachable_middles": 9
+ }
+}

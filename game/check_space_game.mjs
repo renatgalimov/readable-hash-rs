@@ -18,6 +18,11 @@ const F = {
   10: { page: "space-game-10.html", model: "phrase10_model.json", layouts: 16,
     shots: [["4 tokens"], ["2 tokens", "2 tokens"]], layout: ["2 tokens", "4 tokens", "4 tokens"],
     middle: ["3 tokens", "3 tokens", "4 tokens"], middleSize: 64 },
+  // 9 tokens: 2+3+4 has full endings; 2+2+3(+2) has a 3-bit code, so its first ending uses 32 of the 64.
+  9: { page: "space-game-9.html", model: "phrase9_model.json", layouts: 11,
+    shots: [["3 tokens"], ["2 tokens", "2 tokens"]], layout: ["2 tokens", "3 tokens", "4 tokens"],
+    middle: ["3 tokens", "2 tokens", "4 tokens"], middleSize: 64, endSize: 64,
+    small: { path: ["2 tokens", "2 tokens", "3 tokens"], size: 32 } },
 }[TOKENS];
 const MODEL = path.join(HERE, "..", "models", F.model);
 const URL_ = process.env.GAME_URL || pathToFileURL(path.join(HERE, F.page)).href;
@@ -166,8 +171,9 @@ const summarize = (pg) => ({ pick: pg.pick.length, groups: Object.fromEntries(pg
 // order: on the list, banned, no vowel, join, clash, less). The 16-ending after st shows all six reasons.
 const cases = [
   { name: `middle after re (${pathName(F.middle)})`, path: F.middle, first: "re", kind: "c", size: F.middleSize },
-  { name: `32-ending after re (${pathName(F.layout)})`, path: F.layout, first: "re", kind: "e", size: 32 },
+  { name: `${F.endSize || 32}-ending after re (${pathName(F.layout)})`, path: F.layout, first: "re", kind: "e", size: F.endSize || 32 },
   ...(TOKENS === 11 ? [{ name: "16-ending after st (2+3+3+3)", path: ["2 tokens", "3 tokens", "3 tokens"], first: "st", kind: "e", size: 16 }] : []),
+  ...(F.small ? [{ name: `${F.small.size}-ending after st (${pathName(F.small.path)})`, path: F.small.path, first: "st", kind: "e", size: F.small.size }] : []),
   // The same letter three times in a row: the beginning with the most such tokens, chosen by the mirror below
   // (tables change, so a fixed beginning may drop out; the reported word was za+na+ss+sa).
   { name: `middle after the beginning with the most tripled letters (${pathName(F.middle)})`, path: F.middle,
@@ -239,7 +245,9 @@ phrase.use_format(${TOKENS})
 model = json.load(open(${JSON.stringify(MODEL)}))
 runs = json.load(open(${JSON.stringify(path.join(OUT, "phrases.json"))}))
 bad = [r for r in runs if phrase.encode(model, int(r["value"])) != r["phrase"]]
-print(len(runs) - len(bad), len({int(r["value"]) & (len(phrase.layouts()) - 1) for r in runs}), json.dumps(bad[:2]))
+table = phrase.layout_table()
+which = lambda v: next(lengths for lengths, bits, code in table if v & ((1 << bits) - 1) == code)
+print(len(runs) - len(bad), len({which(int(r["value"])) for r in runs}), json.dumps(bad[:2]))
 `], { encoding: "utf8" });
 const [same, layouts] = verify.stdout.trim().split(" ").map(Number);
 console.log("python encoder agrees:", same, "of", runs.length, "| layouts covered:", layouts, verify.stderr.trim());
