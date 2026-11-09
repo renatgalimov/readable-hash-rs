@@ -9,21 +9,21 @@ Feature: Reversible phrases
 
     Examples:
       | number             | phrase                    |
-      | 0x0                | maas maas maas manggunaki |
-      | 0x2a               | kaan manggunaki maas maas |
-      | 0x75bcd15          | spinquos kaan maas mangwa |
-      | 0x243f6a8885a308d3 | bongere siuninut nuunamus |
-      | 0xdeadbeefcafebabe | aileivirda fraash kesavo  |
-      | 0xffffffffffffffff | luboaleuia luboaldo luar  |
+      | 0x0                | maan maan maan mangkawana |
+      | 0x2a               | kaan mangkawana maan maan |
+      | 0x75bcd15          | humpotle kaan maan mangwa |
+      | 0x243f6a8885a308d3 | bomoke ankadatu embukiki  |
+      | 0xdeadbeefcafebabe | foliqununda thains keltam |
+      | 0xffffffffffffffff | avayliqusi avaylihan avee |
 
   Scenario Outline: Text that is not a canonical phrase is rejected
     Given the phrase "<text>"
     Then the phrase should not decode
 
     Examples:
-      | text                       |
-      | Bongere siuninut nuunamus  |
-      | bongere  siuninut nuunamus |
-      | bongere siuninut           |
-      | bongere siuninut nuunamusx |
-      | hello world again          |
+      | text                      |
+      | Bomoke ankadatu embukiki  |
+      | bomoke  ankadatu embukiki |
+      | bomoke ankadatu           |
+      | bomoke ankadatu embukikix |
+      | hello world again         |

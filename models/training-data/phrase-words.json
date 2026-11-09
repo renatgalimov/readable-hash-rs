@@ -1,11 +1,43 @@
 {
  "words_per_language": 2500,
  "always_included": {
-  "zu": "ubuntu's languages, requested",
-  "xh": "ubuntu's languages, requested"
+  "zu": "ubuntu's languages",
+  "xh": "ubuntu's languages",
+  "en": "chosen",
+  "ang": "chosen",
+  "non": "chosen",
+  "eo": "constructed language",
+  "io": "constructed language",
+  "ia": "constructed language",
+  "ie": "constructed language",
+  "lfn": "constructed language",
+  "jbo": "constructed language",
+  "vo": "constructed language",
+  "avk": "constructed language",
+  "tlh": "constructed language",
+  "tok": "constructed language",
+  "bzt": "constructed language",
+  "nov": "constructed language",
+  "tzl": "constructed language",
+  "afh": "constructed language",
+  "ldn": "constructed language",
+  "dws": "constructed language",
+  "igs": "constructed language",
+  "qya": "constructed language",
+  "sjn": "constructed language",
+  "x-gnomish": "constructed language",
+  "x-telerin": "constructed language",
+  "x-adunaic": "constructed language",
+  "x-ilkorin": "constructed language",
+  "x-khuzdul": "constructed language",
+  "x-blackspeech": "constructed language",
+  "x-westron": "constructed language",
+  "x-rohirric": "constructed language",
+  "x-nandorin": "constructed language",
+  "x-valarin": "constructed language"
  },
  "max_consonant_runs_pct": 10.0,
- "distinct_words": 187020,
+ "distinct_words": 209667,
  "blocklist_terms": 5789,
  "list_languages": {
   "ar": "Arabic",
@@ -97,6 +129,19 @@
    ],
    "taken": 2500
   },
+  "afh": {
+   "name": "Afrihili",
+   "codes": [
+    "afh"
+   ],
+   "words": 356,
+   "consonant_runs_pct": 0.0,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 296,
+   "included_because": "constructed language"
+  },
   "an": {
    "name": "Aragonese",
    "codes": [
@@ -110,6 +155,20 @@
     "tatoeba"
    ],
    "taken": 2500
+  },
+  "ang": {
+   "name": "Old English",
+   "codes": [
+    "ang"
+   ],
+   "words": 64457,
+   "consonant_runs_pct": 24.14,
+   "sources": [
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500,
+   "included_because": "chosen"
   },
   "anw": {
    "name": "Anaang",
@@ -137,6 +196,19 @@
     "unimorph"
    ],
    "taken": 2500
+  },
+  "avk": {
+   "name": "Kotava",
+   "codes": [
+    "avk"
+   ],
+   "words": 5667,
+   "consonant_runs_pct": 1.78,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 2500,
+   "included_because": "constructed language"
   },
   "az": {
    "name": "Azerbaijani",
@@ -236,6 +308,19 @@
    ],
    "taken": 2500
   },
+  "bzt": {
+   "name": "Brithenig",
+   "codes": [
+    "bzt"
+   ],
+   "words": 1228,
+   "consonant_runs_pct": 17.41,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 1034,
+   "included_because": "constructed language"
+  },
   "ca": {
    "name": "Catalan",
    "codes": [
@@ -316,6 +401,19 @@
    ],
    "taken": 2500
   },
+  "dws": {
+   "name": "Dutton World Speedwords",
+   "codes": [
+    "dws"
+   ],
+   "words": 153,
+   "consonant_runs_pct": 6.9,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 58,
+   "included_because": "constructed language"
+  },
   "ee": {
    "name": "Ewe",
    "codes": [
@@ -346,6 +444,22 @@
    ],
    "taken": 2500
   },
+  "en": {
+   "name": "English",
+   "codes": [
+    "en"
+   ],
+   "words": 1473131,
+   "consonant_runs_pct": 13.68,
+   "sources": [
+    "leipzig",
+    "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500,
+   "included_because": "chosen"
+  },
   "eo": {
    "name": "Esperanto",
    "codes": [
@@ -359,7 +473,8 @@
     "subtitles",
     "tatoeba"
    ],
-   "taken": 2500
+   "taken": 2500,
+   "included_because": "constructed language"
   },
   "es": {
    "name": "Spanish",
@@ -638,7 +753,8 @@
     "leipzig",
     "tatoeba"
    ],
-   "taken": 2500
+   "taken": 2500,
+   "included_because": "constructed language"
   },
   "id": {
    "name": "Indonesian",
@@ -667,7 +783,8 @@
     "leipzig",
     "tatoeba"
    ],
-   "taken": 2500
+   "taken": 2500,
+   "included_because": "constructed language"
   },
   "ig": {
    "name": "Igbo",
@@ -681,6 +798,19 @@
     "tatoeba"
    ],
    "taken": 2500
+  },
+  "igs": {
+   "name": "Interglossa",
+   "codes": [
+    "igs"
+   ],
+   "words": 55,
+   "consonant_runs_pct": 5.0,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 40,
+   "included_because": "constructed language"
   },
   "ilo": {
    "name": "Iloko",
@@ -708,7 +838,8 @@
     "leipzig",
     "tatoeba"
    ],
-   "taken": 2500
+   "taken": 2500,
+   "included_because": "constructed language"
   },
   "it": {
    "name": "Italian",
@@ -745,11 +876,12 @@
     "jbo"
    ],
    "words": 6294,
-   "consonant_runs_pct": 9.14,
+   "consonant_runs_pct": 13.66,
    "sources": [
     "tatoeba"
    ],
-   "taken": 2500
+   "taken": 2500,
+   "included_because": "constructed language"
   },
   "jv": {
    "name": "Javanese",
@@ -843,6 +975,19 @@
    ],
    "taken": 2500
   },
+  "ldn": {
+   "name": "Láadan",
+   "codes": [
+    "ldn"
+   ],
+   "words": 255,
+   "consonant_runs_pct": 0.5,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 202,
+   "included_because": "constructed language"
+  },
   "lfn": {
    "name": "Lingua Franca Nova",
    "codes": [
@@ -853,7 +998,8 @@
    "sources": [
     "tatoeba"
    ],
-   "taken": 2500
+   "taken": 2500,
+   "included_because": "constructed language"
   },
   "lg": {
    "name": "Ganda",
@@ -1043,6 +1189,33 @@
    ],
    "taken": 2500
   },
+  "non": {
+   "name": "Old Norse",
+   "codes": [
+    "non"
+   ],
+   "words": 45328,
+   "consonant_runs_pct": 24.74,
+   "sources": [
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500,
+   "included_because": "chosen"
+  },
+  "nov": {
+   "name": "Novial",
+   "codes": [
+    "nov"
+   ],
+   "words": 1009,
+   "consonant_runs_pct": 4.97,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 885,
+   "included_because": "constructed language"
+  },
   "ny": {
    "name": "Nyanja",
    "codes": [
@@ -1139,6 +1312,20 @@
     "unimorph"
    ],
    "taken": 2500
+  },
+  "qya": {
+   "name": "Quenya",
+   "codes": [
+    "qya"
+   ],
+   "words": 7131,
+   "consonant_runs_pct": 1.52,
+   "sources": [
+    "eldamo",
+    "tatoeba"
+   ],
+   "taken": 2500,
+   "included_because": "constructed language"
   },
   "rhg": {
    "name": "Rohingya",
@@ -1256,6 +1443,20 @@
    ],
    "taken": 2500
   },
+  "sjn": {
+   "name": "Sindarin",
+   "codes": [
+    "sjn"
+   ],
+   "words": 4185,
+   "consonant_runs_pct": 14.28,
+   "sources": [
+    "eldamo",
+    "tatoeba"
+   ],
+   "taken": 2500,
+   "included_because": "constructed language"
+  },
   "sn": {
    "name": "Shona",
    "codes": [
@@ -1340,6 +1541,32 @@
    ],
    "taken": 2500
   },
+  "tlh": {
+   "name": "Klingon",
+   "codes": [
+    "tlh"
+   ],
+   "words": 19809,
+   "consonant_runs_pct": 24.24,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 2500,
+   "included_because": "constructed language"
+  },
+  "tok": {
+   "name": "Toki Pona",
+   "codes": [
+    "tok"
+   ],
+   "words": 2248,
+   "consonant_runs_pct": 0.43,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 2074,
+   "included_because": "constructed language"
+  },
   "tr": {
    "name": "Turkish",
    "codes": [
@@ -1355,6 +1582,19 @@
    ],
    "taken": 2500
   },
+  "tzl": {
+   "name": "Talossan",
+   "codes": [
+    "tzl"
+   ],
+   "words": 434,
+   "consonant_runs_pct": 16.48,
+   "sources": [
+    "tatoeba"
+   ],
+   "taken": 364,
+   "included_because": "constructed language"
+  },
   "vec": {
    "name": "Venetian",
    "codes": [
@@ -1368,6 +1608,20 @@
     "unimorph"
    ],
    "taken": 2500
+  },
+  "vo": {
+   "name": "Volapük",
+   "codes": [
+    "vo"
+   ],
+   "words": 42946,
+   "consonant_runs_pct": 11.7,
+   "sources": [
+    "leipzig",
+    "tatoeba"
+   ],
+   "taken": 2500,
+   "included_because": "constructed language"
   },
   "vro": {
    "name": "Võro",
@@ -1396,6 +1650,136 @@
    ],
    "taken": 2500
   },
+  "x-adunaic": {
+   "name": "Adûnaic",
+   "codes": [
+    "x-adunaic"
+   ],
+   "words": 277,
+   "consonant_runs_pct": 5.76,
+   "sources": [
+    "eldamo"
+   ],
+   "taken": 243,
+   "included_because": "constructed language"
+  },
+  "x-blackspeech": {
+   "name": "Black Speech",
+   "codes": [
+    "x-blackspeech"
+   ],
+   "words": 47,
+   "consonant_runs_pct": 9.76,
+   "sources": [
+    "eldamo"
+   ],
+   "taken": 41,
+   "included_because": "constructed language"
+  },
+  "x-gnomish": {
+   "name": "Gnomish",
+   "codes": [
+    "x-gnomish"
+   ],
+   "words": 2842,
+   "consonant_runs_pct": 22.3,
+   "sources": [
+    "eldamo"
+   ],
+   "taken": 2498,
+   "included_because": "constructed language"
+  },
+  "x-ilkorin": {
+   "name": "Ilkorin",
+   "codes": [
+    "x-ilkorin"
+   ],
+   "words": 280,
+   "consonant_runs_pct": 12.55,
+   "sources": [
+    "eldamo"
+   ],
+   "taken": 231,
+   "included_because": "constructed language"
+  },
+  "x-khuzdul": {
+   "name": "Khuzdul",
+   "codes": [
+    "x-khuzdul"
+   ],
+   "words": 98,
+   "consonant_runs_pct": 7.95,
+   "sources": [
+    "eldamo"
+   ],
+   "taken": 88,
+   "included_because": "constructed language"
+  },
+  "x-nandorin": {
+   "name": "Nandorin",
+   "codes": [
+    "x-nandorin"
+   ],
+   "words": 54,
+   "consonant_runs_pct": 8.0,
+   "sources": [
+    "eldamo"
+   ],
+   "taken": 50,
+   "included_because": "constructed language"
+  },
+  "x-rohirric": {
+   "name": "Rohirric",
+   "codes": [
+    "x-rohirric"
+   ],
+   "words": 117,
+   "consonant_runs_pct": 19.83,
+   "sources": [
+    "eldamo"
+   ],
+   "taken": 116,
+   "included_because": "constructed language"
+  },
+  "x-telerin": {
+   "name": "Telerin",
+   "codes": [
+    "x-telerin"
+   ],
+   "words": 298,
+   "consonant_runs_pct": 1.14,
+   "sources": [
+    "eldamo"
+   ],
+   "taken": 263,
+   "included_because": "constructed language"
+  },
+  "x-valarin": {
+   "name": "Valarin",
+   "codes": [
+    "x-valarin"
+   ],
+   "words": 27,
+   "consonant_runs_pct": 3.7,
+   "sources": [
+    "eldamo"
+   ],
+   "taken": 27,
+   "included_because": "constructed language"
+  },
+  "x-westron": {
+   "name": "Westron",
+   "codes": [
+    "x-westron"
+   ],
+   "words": 99,
+   "consonant_runs_pct": 4.6,
+   "sources": [
+    "eldamo"
+   ],
+   "taken": 87,
+   "included_because": "constructed language"
+  },
   "xh": {
    "name": "Xhosa",
    "codes": [
@@ -1408,7 +1792,7 @@
     "tatoeba"
    ],
    "taken": 2500,
-   "included_because": "ubuntu's languages, requested"
+   "included_because": "ubuntu's languages"
   },
   "yo": {
    "name": "Yoruba",
@@ -1436,7 +1820,7 @@
     "unimorph"
    ],
    "taken": 2500,
-   "included_because": "ubuntu's languages, requested"
+   "included_because": "ubuntu's languages"
   }
  },
  "skipped": {
@@ -1561,19 +1945,6 @@
    ],
    "reason": "consonant-heavy"
   },
-  "ang": {
-   "name": "Old English",
-   "codes": [
-    "ang"
-   ],
-   "words": 64457,
-   "consonant_runs_pct": 26.1,
-   "sources": [
-    "tatoeba",
-    "unimorph"
-   ],
-   "reason": "consonant-heavy"
-  },
   "ar": {
    "name": "Arabic",
    "codes": [
@@ -1639,18 +2010,6 @@
    "consonant_runs_pct": 30.03,
    "sources": [
     "kaikki",
-    "tatoeba"
-   ],
-   "reason": "too few words"
-  },
-  "avk": {
-   "name": "Kotava",
-   "codes": [
-    "avk"
-   ],
-   "words": 5667,
-   "consonant_runs_pct": 1.01,
-   "sources": [
     "tatoeba"
    ],
    "reason": "too few words"
@@ -2076,21 +2435,6 @@
    "consonant_runs_pct": 94.87,
    "sources": [
     "kaikki"
-   ],
-   "reason": "consonant-heavy"
-  },
-  "en": {
-   "name": "English",
-   "codes": [
-    "en"
-   ],
-   "words": 1473131,
-   "consonant_runs_pct": 13.68,
-   "sources": [
-    "leipzig",
-    "subtitles",
-    "tatoeba",
-    "unimorph"
    ],
    "reason": "consonant-heavy"
   },
@@ -3111,19 +3455,6 @@
    ],
    "reason": "consonant-heavy"
   },
-  "non": {
-   "name": "Old Norse",
-   "codes": [
-    "non"
-   ],
-   "words": 45328,
-   "consonant_runs_pct": 25.5,
-   "sources": [
-    "tatoeba",
-    "unimorph"
-   ],
-   "reason": "consonant-heavy"
-  },
   "nr": {
    "name": "South Ndebele",
    "codes": [
@@ -3769,18 +4100,6 @@
    ],
    "reason": "consonant-heavy"
   },
-  "tlh": {
-   "name": "Klingon",
-   "codes": [
-    "tlh"
-   ],
-   "words": 19809,
-   "consonant_runs_pct": 24.24,
-   "sources": [
-    "tatoeba"
-   ],
-   "reason": "consonant-heavy"
-  },
   "tn": {
    "name": "Tswana",
    "codes": [
@@ -3955,19 +4274,6 @@
    "consonant_runs_pct": 24.86,
    "sources": [
     "leipzig"
-   ],
-   "reason": "consonant-heavy"
-  },
-  "vo": {
-   "name": "Volapük",
-   "codes": [
-    "vo"
-   ],
-   "words": 42946,
-   "consonant_runs_pct": 11.7,
-   "sources": [
-    "leipzig",
-    "tatoeba"
    ],
    "reason": "consonant-heavy"
   },

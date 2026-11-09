@@ -2,21 +2,23 @@
 
 The phrase tables (`models/compile_phrase.py`) are built from two files in `models/training-data/`:
 
-- **`phrase-words.txt.xz`**: 187,020 words, the 2,500 most common words of 4+ letters from each of 100
-  languages. A language is left out if more than 10 % of its common words have three or more consonants in a
-  row (English has 13.7 %, so English is out), or if it has fewer than 2,500 such words. Zulu and Xhosa, the
-  languages of *ubuntu*, are always in. `phrase-words.json` lists the languages, their measurements and
+- **`phrase-words.txt.xz`**: 209,667 words, up to 2,500 of the most common words of 4+ letters from each of
+  126 languages. A language is left out if more than 10 % of its common words have three or more consonants in
+  a row, or if it has fewer than 2,500 such words. Some are always in, whatever their size or consonants:
+  Zulu and Xhosa (the languages of *ubuntu*); English (13.7 %), Old English and Old Norse; and every
+  constructed language we have words for (29), from Esperanto, Toki Pona and Klingon to Tolkien's Quenya,
+  Sindarin and his smaller languages. `phrase-words.json` lists the languages, their measurements and
   sources, and every language that was left out and why.
 - **`phrase-languages.txt.xz`**: the same words by language, most common first. Only the explainer game
   (`game/`) uses it, to show which languages a token comes from.
-- **`blocklist.txt.xz`**: 5,789 offensive words from about 60 languages' lists, folded to a–z, with the
+- **`blocklist.txt.xz`**: 5,789 offensive words from 61 languages' lists, folded to a–z, with the
   lists each came from. The compiler bans terms of 5+ letters anywhere in a word and 4-letter terms at the
   start of a word. Strong English terms (severity 2–4 or racial slurs on the dsojevic list) are banned
   anywhere at 4 letters and at the start at 3. The compiler checks every word the tables can produce.
 
 Why a mix of languages: with English tables, 21.9 % of the words in phrases are real English words, so
-phrases form accidental meanings and insults that no list can catch. This mix gives 0.5 %. Phrases are also
-shorter (25.0 characters on average against 27.3) and easier to say (7.9 % of words have 3+ consonants in a
+phrases form accidental meanings and insults that no list can catch. This mix gives 0.6 %. Phrases are also
+shorter (25.0 characters on average against 27.3) and easier to say (7.2 % of words have 3+ consonants in a
 row, against 13.6 %). These numbers come from encoding the same 20,000 random values.
 
 ## Rebuilding
@@ -47,6 +49,7 @@ committed files are what the tables are built from.
 | [FrequencyWords](https://github.com/hermitdave/FrequencyWords) (OpenSubtitles 2018) | word frequencies, 61 languages | content CC BY-SA 4.0 |
 | [UniMorph](https://unimorph.github.io/) | inflected forms (dictionary words) | per language, mostly CC BY-SA |
 | [Wiktionary via kaikki.org](https://kaikki.org/) | dictionary words | CC BY-SA 4.0 / GFDL |
+| [Eldamo](https://eldamo.org/) (Paul Strack) | Tolkien's languages: Quenya, Sindarin and 10 smaller ones | CC BY 4.0 |
 | [LDNOOBW](https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words) | offensive words, 28 languages | CC BY 4.0 |
 | [washyourmouthoutwithsoap](https://github.com/thisandagain/washyourmouthoutwithsoap) | offensive words, 54 languages | CC BY 4.0 |
 | [dsojevic/profanity-list](https://github.com/dsojevic/profanity-list) | English offensive words with severity | MIT |

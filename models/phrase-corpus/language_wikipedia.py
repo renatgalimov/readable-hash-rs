@@ -17,7 +17,14 @@ HERE = Path(__file__).resolve().parent
 WORDS = HERE.parent / "training-data" / "phrase-words.json"
 OUT = HERE / "language-wikipedia.json"
 # Codes whose Wikidata answer is missing or ambiguous (a code shared by a macrolanguage and a member, etc.).
-OVERRIDES = {"vro": "Võro_language"}  # Wikidata also maps vro to South_Estonian, the wider group
+OVERRIDES = {"vro": "Võro_language",  # Wikidata also maps vro to South_Estonian, the wider group
+             # Tolkien's smaller languages have no ISO code; some only have a section in a broader article.
+             "x-gnomish": "Languages_constructed_by_Tolkien#Elvish_languages",
+             "x-telerin": "Elvish_languages_of_Middle-earth#Internal_history",
+             "x-nandorin": "Elvish_languages_of_Middle-earth#Internal_history",
+             "x-ilkorin": "Elvish_languages_of_Middle-earth", "x-adunaic": "Adûnaic", "x-khuzdul": "Khuzdul",
+             "x-blackspeech": "Black_Speech", "x-westron": "Westron", "x-valarin": "Valarin",
+             "x-rohirric": "Languages_constructed_by_Tolkien#Rohirric"}
 
 
 def sparql(query):

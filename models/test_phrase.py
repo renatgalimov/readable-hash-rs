@@ -81,7 +81,7 @@ class PhraseTests(unittest.TestCase):
             phrase = v5.encode(self.model, state)
             self.assertEqual(decode(self.model, phrase), state, phrase)
             self.assertTrue(all(v5.has_vowel(word) for word in phrase.split()), phrase)
-        self.assertEqual(v5.encode(self.model, 0x243F6A8885A308D3), "bongere siuninut nuunamus")
+        self.assertEqual(v5.encode(self.model, 0x243F6A8885A308D3), "bomoke ankadatu embukiki")
 
 
 if __name__ == "__main__":
