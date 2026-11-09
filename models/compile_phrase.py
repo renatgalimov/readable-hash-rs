@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
 """Compile the phrase tables (format phrase-v6): 11 tokens, 32 layouts, context tables that decode by letters alone.
 
+    python3 models/compile_phrase.py [--check]   # phrase-v6, the library's format
+    python3 models/compile_phrase.py --tokens 10   # the 10-token prototype (phrase-v7): phrase10_model.json
+
+phrase-v7 (prototype, no Rust codec yet): 10 tokens in 3 or 4 words of 2-4 tokens. That gives 16 layouts (4 bits);
+allowing 5-token words would give 23 (5+5 among them), and a binary number can use only 16 of them, so they would
+add nothing. The
+128 beginnings stay; the middles grow to 64 (6 bits), and every ending uses all 32 (5 bits). Every layout is then
+exactly 64 bits: 4 + 3*7 + 4*6 + 3*5 (3 words) and 4 + 4*7 + 2*6 + 4*5 (4 words). Doubling the beginnings or the
+endings instead would leave the 3-word layouts at 63. The table rules below are the same, with rows of 64
+middles + 32 endings, prefix-free together.
+
 Format (see src/phrase.rs):
 - A phrase is 3 or 4 words, 11 tokens in all; each word is 2-5 tokens: a beginning, 0-3 middles, an ending.
   That gives 32 layouts, so the layout takes the low 5 bits.
@@ -71,6 +82,18 @@ MAX_TOKEN = 6
 NUM_BEGIN, NUM_END, NUM_MIDDLE = 256, 256, 512
 BEGIN_SIZE, MIDDLE_SIZE, END_SIZE, END_SMALL = 128, 32, 32, 16
 TOTAL_TOKENS, MAX_WORDS, MIN_WORD, MAX_WORD = 11, 4, 2, 5
+VERSION = "phrase-v6"
+# Formats by phrase length in tokens (see the docstring). use_format() switches the module to one of them.
+FORMATS = {
+    11: dict(VERSION="phrase-v6", TOTAL_TOKENS=11, MAX_WORD=5, MIDDLE_SIZE=32, END_SIZE=32, END_SMALL=16,
+             MODEL_PATH=MODEL_PATH, REPORT_PATH=REPORT_PATH, RUST_PATH=RUST_PATH),
+    10: dict(VERSION="phrase-v7", TOTAL_TOKENS=10, MAX_WORD=4, MIDDLE_SIZE=64, END_SIZE=32, END_SMALL=32,
+             MODEL_PATH=ROOT / "phrase10_model.json", REPORT_PATH=ROOT / "phrase10_report.json", RUST_PATH=None),
+}
+
+
+def use_format(tokens):
+    globals().update(FORMATS[tokens])
 
 
 # ---------------------------------------------------------------- vocabulary and corpus counts
@@ -260,7 +283,7 @@ def has_vowel(text):
 
 def choose_row(previous_text, local_middle, local_end, global_middle, global_end, middle_pool, end_pool, trigrams,
                needs_vowel=False):
-    """32 middles + 32 endings, prefix-free together, each joining plausibly to the previous token.
+    """MIDDLE_SIZE middles + 32 endings, prefix-free together, each joining plausibly to the previous token.
 
     Attested tokens first (by local count, either kind); then filler endings, then filler middles.
     Endings go first among fillers because their pool is half the size. A few tight contexts
@@ -492,8 +515,10 @@ def compile_model(max_rounds=100):
             middle.append(m)
             end32.append(e)
             end16.append(e16)
-        model = {"version": "phrase-v6", "tokens": tokens, "contexts": CONTEXTS, "begin": begin,
+        model = {"version": VERSION, "tokens": tokens, "contexts": CONTEXTS, "begin": begin,
                  "middle": middle, "end32": end32, "end16": end16, "relaxed": relaxed}
+        if END_SMALL == END_SIZE:  # every ending uses the whole row
+            del model["end16"]
         causes = defaultdict(set)
         found = violations(model, terms, causes)
         rounds.append(len(found))
@@ -547,10 +572,13 @@ def validate(model):
     assert len(begin) == BEGIN_SIZE and all(i < 256 for i in model["begin"])
     assert all(not conflicts(a, b) for a, b in itertools.combinations(begin, 2)), "beginnings must be prefix-free"
     for index in range(len(CONTEXTS)):
-        m, e, e16 = model["middle"][index], model["end32"][index], model["end16"][index]
+        m, e = model["middle"][index], model["end32"][index]
         assert len(m) == MIDDLE_SIZE and all(512 <= i < 1024 for i in m)
         assert len(e) == END_SIZE and all(256 <= i < 512 for i in e)
-        assert e16 == e[:END_SMALL]
+        if "end16" in model:
+            assert model["end16"][index] == e[:END_SMALL]
+        else:
+            assert END_SMALL == END_SIZE
         union = [text[i] for i in m + e]
         assert all(not conflicts(a, b) for a, b in itertools.combinations(union, 2)), f"context {index} not prefix-free"
         previous = text[CONTEXTS[index]]
@@ -573,6 +601,8 @@ def report(model, counts):
     stats = {"corpus_words": counts["segmented"] + counts["skipped"], "segmented_words": counts["segmented"],
              "skipped_words": counts["skipped"]}
     for label, kind in (("middle", "middle"), ("end32", "end"), ("end16", "end")):
+        if label not in model:
+            continue
         attested = total = 0
         for index, ctx in enumerate(CONTEXTS):
             local = counts[kind].get(ctx, {})
@@ -593,31 +623,42 @@ def layouts():
             if sum(lengths) == TOTAL_TOKENS:
                 result.append(lengths)
     result.sort()
-    assert len(result) == 32
+    assert len(result) & (len(result) - 1) == 0, f"{len(result)} layouts: not a power of two"
     return result
 
 
+def layout_bits():
+    return len(layouts()).bit_length() - 1
+
+
 def ending_width(word_count, position):
-    if word_count == 4:
-        return 4
-    return 5 if position == 0 else 4
+    """Bits of word `position`'s ending in a layout of `word_count` words. Endings use END_SMALL choices; the first
+    ones use all END_SIZE where the layout needs the bits to reach exactly 64 (phrase-v6: the first word of a
+    3-word layout). In phrase-v7 every ending uses all 32."""
+    need = 64 - layout_bits() - word_count * (BEGIN_SIZE.bit_length() - 1) - (TOTAL_TOKENS - 2 * word_count) * (MIDDLE_SIZE.bit_length() - 1)
+    small, full = END_SMALL.bit_length() - 1, END_SIZE.bit_length() - 1
+    extra = need - word_count * small
+    assert 0 <= extra <= (word_count if full > small else 0), (word_count, need)
+    return full if position < extra else small
 
 
 def encode(model, value):
     text = [text_of(t) for t in model["tokens"]]
-    lengths = layouts()[value & 31]
-    value >>= 5
+    table = layouts()
+    lengths = table[value & (len(table) - 1)]
+    value >>= layout_bits()
+    middle_bits = MIDDLE_SIZE.bit_length() - 1
     words = []
     for position, length in enumerate(lengths):
         token = model["begin"][value & 127]
         value >>= 7
         word = text[token]
         for _ in range(length - 2):
-            token = model["middle"][context_index(token)][value & 31]
-            value >>= 5
+            token = model["middle"][context_index(token)][value & (MIDDLE_SIZE - 1)]
+            value >>= middle_bits
             word += text[token]
         width = ending_width(len(lengths), position)
-        row = model["end32"] if width == 5 else model["end16"]
+        row = model["end32"] if width == END_SIZE.bit_length() - 1 else model["end16"]
         token = row[context_index(token)][value & ((1 << width) - 1)]
         value >>= width
         words.append(word + text[token])
@@ -632,13 +673,16 @@ def context_index(token):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true", help="fail if generated files would change")
+    parser.add_argument("--tokens", type=int, default=11, choices=sorted(FORMATS), help="phrase length (format)")
     args = parser.parse_args()
+    use_format(args.tokens)
     model, rep = compile_model()
     outputs = {
         MODEL_PATH: json.dumps(model, sort_keys=True, separators=(",", ":")) + "\n",
         REPORT_PATH: json.dumps(rep, sort_keys=True, indent=1) + "\n",
-        RUST_PATH: rust_source(model),
     }
+    if RUST_PATH:  # the prototype has no Rust codec yet
+        outputs[RUST_PATH] = rust_source(model)
     for path, content in outputs.items():
         if args.check:
             if path.read_text() != content:

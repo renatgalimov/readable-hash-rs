@@ -9,7 +9,18 @@ const OUT = process.env.OUT_DIR || path.join(process.env.TMPDIR || tmpdir(), "sp
 mkdirSync(OUT, { recursive: true });
 // Build first (python3 game/build_space_game.py), or point GAME_URL at a served copy.
 const HERE = path.dirname(fileURLToPath(import.meta.url));
-const URL_ = process.env.GAME_URL || pathToFileURL(path.join(HERE, "space-game.html")).href;
+// TOKENS=10 checks the 10-token prototype (space-game-10.html, models/phrase10_model.json); the default is 11.
+const TOKENS = Number(process.env.TOKENS || 11);
+const F = {
+  11: { page: "space-game.html", model: "phrase_model.json", layouts: 32,
+    shots: [["5 tokens"], ["3 tokens", "4 tokens"]], layout: ["2 tokens", "4 tokens", "5 tokens"],
+    middle: ["3 tokens", "3 tokens", "5 tokens"], middleSize: 32 },
+  10: { page: "space-game-10.html", model: "phrase10_model.json", layouts: 16,
+    shots: [["4 tokens"], ["2 tokens", "2 tokens"]], layout: ["2 tokens", "4 tokens", "4 tokens"],
+    middle: ["3 tokens", "3 tokens", "4 tokens"], middleSize: 64 },
+}[TOKENS];
+const MODEL = path.join(HERE, "..", "models", F.model);
+const URL_ = process.env.GAME_URL || pathToFileURL(path.join(HERE, F.page)).href;
 const failures = [];
 const expect = (ok, what) => { if (!ok) failures.push(what); };
 const PORT = 9333;
@@ -83,19 +94,20 @@ const walk = await evaluate(`(() => {
 })()`);
 writeFileSync(path.join(OUT, "walk.json"), JSON.stringify(walk, null, 1));
 console.log("end states", walk.out.length, "pages", walk.pages.length);
-expect(walk.out.length === 32, `32 layouts, got ${walk.out.length}`);
+expect(walk.out.length === F.layouts, `${F.layouts} layouts, got ${walk.out.length}`);
 expect(walk.out.every((o) => o.count === "64" && !o.spare && !o.missing), "every layout is exactly 64 bits");
 
 // Screenshots: start, a page with a dropped option, a forced-tail summary.
 await shot("01-start.png");
 const clickPath = async (labels) => evaluate(`(() => { document.getElementById('reset').click();
   for (const l of ${JSON.stringify(labels)}) { const b = [...document.querySelectorAll('#panel .choices button')].find(x => x.textContent.startsWith(l)); if (!b) return 'missing ' + l; b.click(); } return 'ok'; })()`);
-console.log(await clickPath(["5 tokens"]));
-await shot("02-after-5.png");
-console.log(await clickPath(["3 tokens", "4 tokens"]));
-await shot("03-after-3-4.png");
-console.log(await clickPath(["2 tokens", "4 tokens", "5 tokens"]));
-await shot("04-summary-2-4-5.png");
+const pathName = (labels) => labels.map((l) => l[0]).join("-");
+console.log(await clickPath(F.shots[0]));
+await shot(`02-after-${pathName(F.shots[0])}.png`);
+console.log(await clickPath(F.shots[1]));
+await shot(`03-after-${pathName(F.shots[1])}.png`);
+console.log(await clickPath(F.layout));
+await shot(`04-summary-${pathName(F.layout)}.png`);
 // The beginning page (after the layout 2-4-5): pickable buttons, muted groups, the key.
 const tokenPage = () => evaluate(`(() => {
   const q = (s) => [...document.querySelectorAll(s)];
@@ -107,7 +119,7 @@ const tokenPage = () => evaluate(`(() => {
     slots: q('#phrase .slot').map(s => s.textContent), undo: document.getElementById('undo').disabled,
     random: document.getElementById('random').disabled };
 })()`);
-console.log(await clickPath(["2 tokens", "4 tokens", "5 tokens"]));
+console.log(await clickPath(F.layout));
 const before = await tokenPage();
 writeFileSync(path.join(OUT, "token-page.json"), JSON.stringify(before, null, 1));
 console.log("beginning page: pick", before.pick.length, "groups", before.groups.map(g => `${g.cls}:${g.chips}`).join(" "),
@@ -116,7 +128,8 @@ const dropped = spawnSync("python3", ["-c", `
 import json, sys
 sys.path.insert(0, ${JSON.stringify(HERE)})
 import build_space_game as game
-model = json.load(open(${JSON.stringify(path.join(HERE, "..", "models", "phrase_model.json"))}))
+game.phrase.use_format(${TOKENS})
+model = json.load(open(${JSON.stringify(MODEL)}))
 text = [game.phrase.text_of(t) for t in model["tokens"]]
 print(json.dumps([d[0] for d in game.ban_reasons(model, text)[4]]))
 `], { encoding: "utf8" });
@@ -152,19 +165,20 @@ const summarize = (pg) => ({ pick: pg.pick.length, groups: Object.fromEntries(pg
 // Expected counts come from the Python mirror of the compiler's rules (build_space_game.follow_groups: same
 // order: on the list, banned, no vowel, join, clash, less). The 16-ending after st shows all six reasons.
 const cases = [
-  { name: "middle after re (3+3+5)", path: ["3 tokens", "3 tokens", "5 tokens"], first: "re", kind: "c", size: 32 },
-  { name: "32-ending after re (2+4+5)", path: ["2 tokens", "4 tokens", "5 tokens"], first: "re", kind: "e", size: 32 },
-  { name: "16-ending after st (2+3+3+3)", path: ["2 tokens", "3 tokens", "3 tokens"], first: "st", kind: "e", size: 16 },
+  { name: `middle after re (${pathName(F.middle)})`, path: F.middle, first: "re", kind: "c", size: F.middleSize },
+  { name: `32-ending after re (${pathName(F.layout)})`, path: F.layout, first: "re", kind: "e", size: 32 },
+  ...(TOKENS === 11 ? [{ name: "16-ending after st (2+3+3+3)", path: ["2 tokens", "3 tokens", "3 tokens"], first: "st", kind: "e", size: 16 }] : []),
   // The same letter three times in a row: the beginning with the most such tokens, chosen by the mirror below
   // (tables change, so a fixed beginning may drop out; the reported word was za+na+ss+sa).
-  { name: "middle after the beginning with the most tripled letters (3+3+5)", path: ["3 tokens", "3 tokens", "5 tokens"],
-    first: null, most: "triple", kind: "c", size: 32 },
+  { name: `middle after the beginning with the most tripled letters (${pathName(F.middle)})`, path: F.middle,
+    first: null, most: "triple", kind: "c", size: F.middleSize },
 ];
 const mirror = spawnSync("python3", ["-c", `
 import json, sys
 sys.path.insert(0, ${JSON.stringify(HERE)})
 import build_space_game as game
-model = json.load(open(${JSON.stringify(path.join(HERE, "..", "models", "phrase_model.json"))}))
+game.phrase.use_format(${TOKENS})
+model = json.load(open(${JSON.stringify(MODEL)}))
 text = [game.phrase.text_of(t) for t in model["tokens"]]
 cases = json.loads(sys.argv[1])
 out = []
@@ -221,19 +235,21 @@ const verify = spawnSync("python3", ["-c", `
 import json, sys
 sys.path.insert(0, ${JSON.stringify(path.join(HERE, "..", "models"))})
 import compile_phrase as phrase
-model = json.load(open(${JSON.stringify(path.join(HERE, "..", "models", "phrase_model.json"))}))
+phrase.use_format(${TOKENS})
+model = json.load(open(${JSON.stringify(MODEL)}))
 runs = json.load(open(${JSON.stringify(path.join(OUT, "phrases.json"))}))
 bad = [r for r in runs if phrase.encode(model, int(r["value"])) != r["phrase"]]
-print(len(runs) - len(bad), len({int(r["value"]) & 31 for r in runs}), json.dumps(bad[:2]))
+print(len(runs) - len(bad), len({int(r["value"]) & (len(phrase.layouts()) - 1) for r in runs}), json.dumps(bad[:2]))
 `], { encoding: "utf8" });
 const [same, layouts] = verify.stdout.trim().split(" ").map(Number);
 console.log("python encoder agrees:", same, "of", runs.length, "| layouts covered:", layouts, verify.stderr.trim());
 expect(same === runs.length, "every game phrase equals the reference encoder's phrase for its number");
 expect(runs.every((r) => r.bits === 64 && r.shown === r.phrase), "every full phrase is 64 bits and shown as built");
 console.log("full phrases", runs.length, "all 64 bits:", runs.every(r => r.bits === 64), "shown == built:", runs.every(r => r.shown === r.phrase), "examples:", JSON.stringify(runs.slice(0, 4).map(r => r.phrase)));
-// Click through one phrase by hand: 2+4+5, first pickable token each time; shoot the second word's beginning and the end.
-console.log(await clickPath(["2 tokens", "4 tokens", "5 tokens"]));
-for (let i = 0; i < 11; i++) {
+// Click through one phrase by hand (2+4+5, or 2+4+4), a different pickable token each time; shoot the second
+// word's beginning and the end.
+console.log(await clickPath(F.layout));
+for (let i = 0; i < TOKENS; i++) {
   const pg = await tokenPage();
   if (i === 2) { console.log("word 2 beginning page:", pg.msg.slice(0, 260), "| why:", pg.why); await shot("12-word2-beginning.png"); }
   if (!pg.pick.length) break;
@@ -284,8 +300,8 @@ const marks = await evaluate(`(() => {
   for (const [previous, row] of Object.entries(o.FOLLOW)) {
     const r = rowOf(Number(previous));
     row.split(" ").forEach((packed, slot) => {
-      const id = slot < 32 ? TABLE_MIDDLE[r][slot] : TABLE_END32[r][slot - 32];
-      const kind = slot < 32 ? "c" : "e";
+      const id = slot < MIDDLE.length ? TABLE_MIDDLE[r][slot] : TABLE_END32[r][slot - MIDDLE.length];
+      const kind = slot < MIDDLE.length ? "c" : "e";
       check(packed, TABLE_TOKENS[id], kind, TABLE_TOKENS[previous]);
       const u = unpackOrigin(packed);
       if (!turkishSentence && u && u.groups.some((g) => g.word === "onların")) {

@@ -5,7 +5,9 @@ plus <name>-origins.js next to it: which languages each token comes from (about 
 with a deferred script and works without it). The blog embeds them as diagrams/space-game.html.
 
     python3 game/build_space_game.py [OUT]   # default: game/space-game.html (+ game/space-game-origins.js)
+    python3 game/build_space_game.py --tokens 10 [OUT]   # the 10-token prototype: game/space-game-10.html
 """
+import argparse
 import json
 import lzma
 import re
@@ -288,12 +290,18 @@ def ban_reasons(model, text):
 
 
 def main():
-    out = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / "space-game.html"
-    model = json.loads(MODEL.read_text())
+    parser = argparse.ArgumentParser()
+    parser.add_argument("out", nargs="?", type=Path)
+    parser.add_argument("--tokens", type=int, default=11, choices=sorted(phrase.FORMATS), help="phrase length (format)")
+    args = parser.parse_args()
+    phrase.use_format(args.tokens)
+    out = args.out or HERE / ("space-game.html" if args.tokens == 11 else f"space-game-{args.tokens}.html")
+    model = json.loads(phrase.MODEL_PATH.read_text())
     phrase.validate(model)
     text = [phrase.text_of(t) for t in model["tokens"]]
     phrase.TEXT = text
-    assert all(model["end16"][i] == model["end32"][i][:phrase.END_SMALL] for i in range(len(model["end32"])))
+    if "end16" in model:
+        assert all(model["end16"][i] == model["end32"][i][:phrase.END_SMALL] for i in range(len(model["end32"])))
     page, last = beginning_page(model, text)
     origins = Origins(model, text)
     begin_origin = {t: origins.pack(("begin", t)) for t in model["begin"]}
@@ -312,6 +320,11 @@ def main():
                     (ctx >= phrase.NUM_BEGIN or word.startswith(text[ctx])), (text[ctx], text[t], word)
     terms, list_names, list_links, ban_terms, dropped = ban_reasons(model, text)
     values = {
+        # The phrase format: tokens per phrase, word lengths, endings used where a layout needs fewer bits, and
+        # whether it is a prototype (no Rust codec yet; the page then explains how it differs from 11 tokens).
+        "FORMAT": {"TOTAL_TOKENS": phrase.TOTAL_TOKENS, "MAX_WORDS": phrase.MAX_WORDS,
+                   "LENGTHS": list(range(phrase.MIN_WORD, phrase.MAX_WORD + 1)), "END_SMALL": phrase.END_SMALL,
+                   "VERSION": phrase.VERSION, "PROTOTYPE": phrase.RUST_PATH is None},
         "BEGIN": [text[t] for t in model["begin"]],
         "BEGIN_PAGE": page,
         "BEGIN_LAST": last,

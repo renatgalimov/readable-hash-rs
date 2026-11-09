@@ -27,3 +27,5 @@ fuzz/corpus/
 # Built by game/build_space_game.py
 /game/space-game.html
 /game/space-game-origins.js
+/game/space-game-10.html
+/game/space-game-10-origins.js
