@@ -8,13 +8,13 @@ Feature: Reversible phrases
     And the phrase should decode to the number
 
     Examples:
-      | number             | phrase                     |
-      | 0x0                | maas maas maas manggunaki  |
-      | 0x2a               | kaan manggunaki maas maas  |
-      | 0x75bcd15          | spingenga kaan maas mangwa |
-      | 0x243f6a8885a308d3 | bongere siuninut nuraamus  |
-      | 0xdeadbeefcafebabe | aileivirda fraash keergi   |
-      | 0xffffffffffffffff | lubobafaen lubobaja luar   |
+      | number             | phrase                    |
+      | 0x0                | maas maas maas manggunaki |
+      | 0x2a               | kaan manggunaki maas maas |
+      | 0x75bcd15          | spinquos kaan maas mangwa |
+      | 0x243f6a8885a308d3 | bongere siuninut nuunamus |
+      | 0xdeadbeefcafebabe | aileivirda fraash kesavo  |
+      | 0xffffffffffffffff | luboaleuia luboaldo luar  |
 
   Scenario Outline: Text that is not a canonical phrase is rejected
     Given the phrase "<text>"
@@ -22,8 +22,8 @@ Feature: Reversible phrases
 
     Examples:
       | text                       |
-      | Bongere siuninut nuraamus  |
-      | bongere  siuninut nuraamus |
+      | Bongere siuninut nuunamus  |
+      | bongere  siuninut nuunamus |
       | bongere siuninut           |
-      | bongere siuninut nuraamusx |
+      | bongere siuninut nuunamusx |
       | hello world again          |
