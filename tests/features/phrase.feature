@@ -8,13 +8,13 @@ Feature: Reversible phrases
     And the phrase should decode to the number
 
     Examples:
-      | number             | phrase                  |
-      | 0x0                | maan maan maan matambar |
-      | 0x2a               | parton matara matambar  |
-      | 0x75bcd15          | imia quientar maan maan |
-      | 0x243f6a8885a308d3 | inon nekera esam weenza |
-      | 0xdeadbeefcafebabe | kibilmia umshela todans |
-      | 0xffffffffffffffff | jehopalo jehopalo jeis  |
+      | number             | phrase                   |
+      | 0x0                | maan maan maan makatara  |
+      | 0x2a               | partes makana makatara   |
+      | 0x75bcd15          | adom aguerege maan maan  |
+      | 0x243f6a8885a308d3 | sain aralin suus umadde  |
+      | 0xdeadbeefcafebabe | chavicho sheplo ganyay   |
+      | 0xffffffffffffffff | dhatechts dhatechts dhiz |
 
   Scenario Outline: Text that is not a canonical phrase is rejected
     Given the phrase "<text>"
@@ -22,9 +22,9 @@ Feature: Reversible phrases
 
     Examples:
       | text                                |
-      | Inon nekera esam weenza             |
-      | inon  nekera esam weenza            |
-      | inon nekera esam                    |
-      | inon nekera esam weenzax            |
-      | matambar matambar matambar matambar |
+      | Sain aralin suus umadde             |
+      | sain  aralin suus umadde            |
+      | sain aralin suus                    |
+      | sain aralin suus umaddex            |
+      | makatara makatara makatara makatara |
       | hello world again                   |

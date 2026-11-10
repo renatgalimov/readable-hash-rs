@@ -38,7 +38,7 @@
   "x-valarin": "constructed language"
  },
  "max_consonant_runs_pct": 10.0,
- "distinct_words": 211647,
+ "distinct_words": 240771,
  "blocklist_terms": 5789,
  "list_languages": {
   "ar": "Arabic",
@@ -598,9 +598,10 @@
    "codes": [
     "fil"
    ],
-   "words": 115223,
+   "words": 226675,
    "consonant_runs_pct": 6.0,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba",
@@ -905,9 +906,10 @@
    "codes": [
     "jv"
    ],
-   "words": 105424,
+   "words": 107758,
    "consonant_runs_pct": 9.18,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -921,6 +923,19 @@
    "words": 18066,
    "consonant_runs_pct": 9.58,
    "sources": [
+    "leipzig"
+   ],
+   "taken": 2500
+  },
+  "ki": {
+   "name": "Kikuyu",
+   "codes": [
+    "ki"
+   ],
+   "words": 4762,
+   "consonant_runs_pct": 0.91,
+   "sources": [
+    "kaikki",
     "leipzig"
    ],
    "taken": 2500
@@ -965,6 +980,20 @@
    ],
    "taken": 2500
   },
+  "krl": {
+   "name": "Karelian",
+   "codes": [
+    "krl"
+   ],
+   "words": 18150,
+   "consonant_runs_pct": 1.16,
+   "sources": [
+    "kaikki",
+    "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
   "la": {
    "name": "Latin",
    "codes": [
@@ -984,9 +1013,10 @@
    "codes": [
     "lad"
    ],
-   "words": 25842,
+   "words": 30572,
    "consonant_runs_pct": 7.22,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -1037,9 +1067,10 @@
    "codes": [
     "lij"
    ],
-   "words": 26973,
+   "words": 28853,
    "consonant_runs_pct": 7.8,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -1050,9 +1081,10 @@
    "codes": [
     "lld"
    ],
-   "words": 4987,
-   "consonant_runs_pct": 6.81,
+   "words": 8096,
+   "consonant_runs_pct": 7.34,
    "sources": [
+    "kaikki",
     "tatoeba",
     "unimorph"
    ],
@@ -1063,9 +1095,10 @@
    "codes": [
     "lmo"
    ],
-   "words": 48293,
+   "words": 49985,
    "consonant_runs_pct": 6.24,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -1076,9 +1109,10 @@
    "codes": [
     "ln"
    ],
-   "words": 10416,
-   "consonant_runs_pct": 2.2,
+   "words": 11114,
+   "consonant_runs_pct": 2.06,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -1090,13 +1124,39 @@
    "codes": [
     "lt"
    ],
-   "words": 389025,
+   "words": 501302,
    "consonant_runs_pct": 5.42,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba",
     "unimorph"
+   ],
+   "taken": 2500
+  },
+  "ltg": {
+   "name": "Latgalian",
+   "codes": [
+    "ltg"
+   ],
+   "words": 5717,
+   "consonant_runs_pct": 5.0,
+   "sources": [
+    "kaikki",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "lud": {
+   "name": "Ludian",
+   "codes": [
+    "lud"
+   ],
+   "words": 13760,
+   "consonant_runs_pct": 4.04,
+   "sources": [
+    "kaikki"
    ],
    "taken": 2500
   },
@@ -1118,9 +1178,10 @@
     "mg",
     "plt"
    ],
-   "words": 69240,
+   "words": 71198,
    "consonant_runs_pct": 8.84,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -1132,9 +1193,10 @@
    "codes": [
     "mi"
    ],
-   "words": 33137,
+   "words": 33617,
    "consonant_runs_pct": 2.62,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -1160,9 +1222,10 @@
     "ms",
     "zsm"
    ],
-   "words": 161643,
+   "words": 169637,
    "consonant_runs_pct": 6.64,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba"
@@ -1174,9 +1237,10 @@
    "codes": [
     "mwl"
    ],
-   "words": 50431,
+   "words": 53396,
    "consonant_runs_pct": 6.58,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -1253,11 +1317,51 @@
    "codes": [
     "oc"
    ],
-   "words": 122952,
+   "words": 159415,
    "consonant_runs_pct": 8.68,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
+  "oj": {
+   "name": "Ojibwa",
+   "codes": [
+    "oj"
+   ],
+   "words": 6975,
+   "consonant_runs_pct": 9.02,
+   "sources": [
+    "kaikki",
+    "tatoeba"
+   ],
+   "taken": 2500
+  },
+  "olo": {
+   "name": "Livvi",
+   "codes": [
+    "olo"
+   ],
+   "words": 5051,
+   "consonant_runs_pct": 1.16,
+   "sources": [
+    "kaikki"
+   ],
+   "taken": 2500
+  },
+  "om": {
+   "name": "Oromo",
+   "codes": [
+    "om"
+   ],
+   "words": 12670,
+   "consonant_runs_pct": 7.9,
+   "sources": [
+    "kaikki",
+    "leipzig",
     "unimorph"
    ],
    "taken": 2500
@@ -1267,9 +1371,10 @@
    "codes": [
     "pam"
    ],
-   "words": 30235,
+   "words": 31101,
    "consonant_runs_pct": 6.72,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -1280,9 +1385,10 @@
    "codes": [
     "pap"
    ],
-   "words": 31124,
+   "words": 31468,
    "consonant_runs_pct": 8.5,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -1293,9 +1399,10 @@
    "codes": [
     "pms"
    ],
-   "words": 33887,
+   "words": 34420,
    "consonant_runs_pct": 8.34,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -1321,9 +1428,10 @@
    "codes": [
     "qu"
    ],
-   "words": 148651,
+   "words": 266457,
    "consonant_runs_pct": 9.04,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -1389,10 +1497,24 @@
    "codes": [
     "roa"
    ],
-   "words": 2928,
-   "consonant_runs_pct": 6.72,
+   "words": 4107,
+   "consonant_runs_pct": 9.98,
    "sources": [
     "kaikki"
+   ],
+   "taken": 2500
+  },
+  "rom": {
+   "name": "Romany",
+   "codes": [
+    "rom"
+   ],
+   "words": 7154,
+   "consonant_runs_pct": 8.5,
+   "sources": [
+    "kaikki",
+    "leipzig",
+    "tatoeba"
    ],
    "taken": 2500
   },
@@ -1414,9 +1536,10 @@
    "codes": [
     "sc"
    ],
-   "words": 30569,
+   "words": 33246,
    "consonant_runs_pct": 8.72,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -1427,9 +1550,10 @@
    "codes": [
     "scn"
    ],
-   "words": 55202,
+   "words": 60485,
    "consonant_runs_pct": 9.14,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -1474,14 +1598,27 @@
    "taken": 2500,
    "included_because": "constructed language"
   },
+  "slr": {
+   "name": "Salar",
+   "codes": [
+    "slr"
+   ],
+   "words": 31199,
+   "consonant_runs_pct": 0.18,
+   "sources": [
+    "kaikki"
+   ],
+   "taken": 2500
+  },
   "sn": {
    "name": "Shona",
    "codes": [
     "sn"
    ],
-   "words": 164241,
+   "words": 164544,
    "consonant_runs_pct": 3.98,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -1493,9 +1630,10 @@
    "codes": [
     "so"
    ],
-   "words": 123113,
+   "words": 124259,
    "consonant_runs_pct": 2.82,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -1521,9 +1659,10 @@
    "codes": [
     "su"
    ],
-   "words": 124849,
+   "words": 127409,
    "consonant_runs_pct": 7.78,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -1535,12 +1674,25 @@
     "sw",
     "swh"
    ],
-   "words": 179580,
+   "words": 284393,
    "consonant_runs_pct": 3.42,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
+   ],
+   "taken": 2500
+  },
+  "tft": {
+   "name": "Ternate",
+   "codes": [
+    "tft"
+   ],
+   "words": 6130,
+   "consonant_runs_pct": 1.96,
+   "sources": [
+    "kaikki"
    ],
    "taken": 2500
   },
@@ -1549,9 +1701,10 @@
    "codes": [
     "tk"
    ],
-   "words": 76922,
+   "words": 89140,
    "consonant_runs_pct": 3.82,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -1599,6 +1752,18 @@
    ],
    "taken": 2500
   },
+  "ttj": {
+   "name": "Tooro",
+   "codes": [
+    "ttj"
+   ],
+   "words": 56754,
+   "consonant_runs_pct": 0.7,
+   "sources": [
+    "kaikki"
+   ],
+   "taken": 2500
+  },
   "tzl": {
    "name": "Talossan",
    "codes": [
@@ -1617,12 +1782,26 @@
    "codes": [
     "vec"
    ],
-   "words": 82869,
+   "words": 86662,
    "consonant_runs_pct": 8.7,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
+   ],
+   "taken": 2500
+  },
+  "vep": {
+   "name": "Veps",
+   "codes": [
+    "vep"
+   ],
+   "words": 72789,
+   "consonant_runs_pct": 7.82,
+   "sources": [
+    "kaikki",
+    "tatoeba"
    ],
    "taken": 2500
   },
@@ -1631,23 +1810,38 @@
    "codes": [
     "vo"
    ],
-   "words": 42946,
+   "words": 170934,
    "consonant_runs_pct": 11.7,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
    "taken": 2500,
    "included_because": "constructed language"
   },
+  "vot": {
+   "name": "Votic",
+   "codes": [
+    "vot"
+   ],
+   "words": 57403,
+   "consonant_runs_pct": 3.8,
+   "sources": [
+    "kaikki",
+    "unimorph"
+   ],
+   "taken": 2500
+  },
   "vro": {
    "name": "Võro",
    "codes": [
     "vro"
    ],
-   "words": 29050,
+   "words": 34792,
    "consonant_runs_pct": 6.98,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -1659,9 +1853,10 @@
    "codes": [
     "wo"
    ],
-   "words": 14593,
+   "words": 14821,
    "consonant_runs_pct": 2.04,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -1802,9 +1997,10 @@
    "codes": [
     "xh"
    ],
-   "words": 74366,
+   "words": 85918,
    "consonant_runs_pct": 12.18,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -1816,9 +2012,10 @@
    "codes": [
     "yo"
    ],
-   "words": 13750,
+   "words": 16597,
    "consonant_runs_pct": 3.22,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -1829,9 +2026,10 @@
    "codes": [
     "zu"
    ],
-   "words": 360809,
+   "words": 671203,
    "consonant_runs_pct": 10.22,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -1972,6 +2170,20 @@
    "sources": [
     "leipzig",
     "subtitles",
+    "tatoeba",
+    "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "arn": {
+   "name": "Mapuche",
+   "codes": [
+    "arn"
+   ],
+   "words": 4649,
+   "consonant_runs_pct": 38.06,
+   "sources": [
+    "kaikki",
     "tatoeba",
     "unimorph"
    ],
@@ -2133,6 +2345,31 @@
     "unimorph"
    ],
    "reason": "consonant-heavy"
+  },
+  "bnt": {
+   "name": "Bantu languages",
+   "codes": [
+    "bnt"
+   ],
+   "words": 2420,
+   "consonant_runs_pct": 16.69,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "too few words"
+  },
+  "bo": {
+   "name": "Tibetan",
+   "codes": [
+    "bo"
+   ],
+   "words": 2816,
+   "consonant_runs_pct": 37.9,
+   "sources": [
+    "kaikki",
+    "leipzig"
+   ],
+   "reason": "too few words"
   },
   "bpy": {
    "name": "Bishnupriya",
@@ -2312,9 +2549,10 @@
    "codes": [
     "csb"
    ],
-   "words": 32487,
+   "words": 38431,
    "consonant_runs_pct": 24.42,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -2340,9 +2578,10 @@
    "codes": [
     "cy"
    ],
-   "words": 94306,
+   "words": 185660,
    "consonant_runs_pct": 23.56,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -2460,9 +2699,10 @@
     "fa",
     "pes"
    ],
-   "words": 381869,
+   "words": 412714,
    "consonant_runs_pct": 83.82,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba",
@@ -2677,9 +2917,10 @@
    "codes": [
     "gv"
    ],
-   "words": 15916,
+   "words": 20013,
    "consonant_runs_pct": 16.3,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -2855,6 +3096,18 @@
    ],
    "reason": "consonant-heavy"
   },
+  "jje": {
+   "name": "Jejueo",
+   "codes": [
+    "jje"
+   ],
+   "words": 2265,
+   "consonant_runs_pct": 23.0,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "too few words"
+  },
   "ka": {
    "name": "Georgian",
    "codes": [
@@ -2910,15 +3163,30 @@
    ],
    "reason": "too few words"
   },
-  "ki": {
-   "name": "Kikuyu",
+  "ket": {
+   "name": "Ket",
    "codes": [
-    "ki"
+    "ket"
    ],
-   "words": 2682,
-   "consonant_runs_pct": 1.66,
+   "words": 2028,
+   "consonant_runs_pct": 16.27,
    "sources": [
-    "leipzig"
+    "kaikki",
+    "unimorph"
+   ],
+   "reason": "too few words"
+  },
+  "kjh": {
+   "name": "Khakas",
+   "codes": [
+    "kjh"
+   ],
+   "words": 2352,
+   "consonant_runs_pct": 26.46,
+   "sources": [
+    "kaikki",
+    "tatoeba",
+    "unimorph"
    ],
    "reason": "too few words"
   },
@@ -2927,13 +3195,27 @@
    "codes": [
     "kk"
    ],
-   "words": 146255,
+   "words": 229393,
    "consonant_runs_pct": 12.2,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba",
     "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "klj": {
+   "name": "Khalaj",
+   "codes": [
+    "klj"
+   ],
+   "words": 31430,
+   "consonant_runs_pct": 24.44,
+   "sources": [
+    "kaikki",
+    "tatoeba"
    ],
    "reason": "consonant-heavy"
   },
@@ -2954,21 +3236,23 @@
    "codes": [
     "km"
    ],
-   "words": 6386,
-   "consonant_runs_pct": 62.43,
+   "words": 20291,
+   "consonant_runs_pct": 48.74,
    "sources": [
+    "kaikki",
     "leipzig"
    ],
-   "reason": "too few words"
+   "reason": "consonant-heavy"
   },
   "kn": {
    "name": "Kannada",
    "codes": [
     "kn"
    ],
-   "words": 466815,
+   "words": 478922,
    "consonant_runs_pct": 50.14,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -2992,9 +3276,10 @@
    "codes": [
     "ko"
    ],
-   "words": 997364,
+   "words": 1170651,
    "consonant_runs_pct": 17.08,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba",
@@ -3012,6 +3297,18 @@
    "sources": [
     "leipzig",
     "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "kok": {
+   "name": "Konkani",
+   "codes": [
+    "kok"
+   ],
+   "words": 4273,
+   "consonant_runs_pct": 19.72,
+   "sources": [
+    "kaikki"
    ],
    "reason": "consonant-heavy"
   },
@@ -3033,13 +3330,14 @@
    "codes": [
     "ks"
    ],
-   "words": 2164,
-   "consonant_runs_pct": 31.98,
+   "words": 5041,
+   "consonant_runs_pct": 20.09,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
-   "reason": "too few words"
+   "reason": "consonant-heavy"
   },
   "ksh": {
    "name": "Colognian",
@@ -3097,9 +3395,10 @@
    "codes": [
     "lb"
    ],
-   "words": 161316,
+   "words": 168186,
    "consonant_runs_pct": 26.38,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -3110,9 +3409,10 @@
    "codes": [
     "li"
    ],
-   "words": 199724,
+   "words": 203534,
    "consonant_runs_pct": 15.94,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -3136,9 +3436,10 @@
    "codes": [
     "lo"
    ],
-   "words": 29127,
+   "words": 30993,
    "consonant_runs_pct": 49.82,
    "sources": [
+    "kaikki",
     "leipzig"
    ],
    "reason": "consonant-heavy"
@@ -3148,9 +3449,10 @@
    "codes": [
     "lus"
    ],
-   "words": 25028,
+   "words": 25116,
    "consonant_runs_pct": 21.52,
    "sources": [
+    "kaikki",
     "leipzig"
    ],
    "reason": "consonant-heavy"
@@ -3161,9 +3463,10 @@
     "lv",
     "lvs"
    ],
-   "words": 484624,
+   "words": 534520,
    "consonant_runs_pct": 10.42,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba",
@@ -3183,6 +3486,32 @@
    ],
    "reason": "too few words"
   },
+  "lzz": {
+   "name": "Laz",
+   "codes": [
+    "lzz"
+   ],
+   "words": 11874,
+   "consonant_runs_pct": 23.24,
+   "sources": [
+    "kaikki",
+    "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "mag": {
+   "name": "Magahi",
+   "codes": [
+    "mag"
+   ],
+   "words": 2412,
+   "consonant_runs_pct": 29.29,
+   "sources": [
+    "kaikki",
+    "unimorph"
+   ],
+   "reason": "too few words"
+  },
   "mai": {
    "name": "Maithili",
    "codes": [
@@ -3193,6 +3522,18 @@
    "sources": [
     "leipzig",
     "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "mak": {
+   "name": "Makasar",
+   "codes": [
+    "mak"
+   ],
+   "words": 5741,
+   "consonant_runs_pct": 12.0,
+   "sources": [
+    "kaikki"
    ],
    "reason": "consonant-heavy"
   },
@@ -3224,6 +3565,18 @@
    ],
    "reason": "consonant-heavy"
   },
+  "mkj": {
+   "name": "Mokilese",
+   "codes": [
+    "mkj"
+   ],
+   "words": 2356,
+   "consonant_runs_pct": 17.87,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "too few words"
+  },
   "mkw": {
    "name": "Kituba (Congo)",
    "codes": [
@@ -3241,9 +3594,10 @@
    "codes": [
     "ml"
    ],
-   "words": 421664,
+   "words": 438180,
    "consonant_runs_pct": 45.06,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba"
@@ -3256,12 +3610,26 @@
     "khk",
     "mn"
    ],
-   "words": 160743,
+   "words": 178272,
    "consonant_runs_pct": 25.24,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "mnc": {
+   "name": "Manchu",
+   "codes": [
+    "mnc"
+   ],
+   "words": 5090,
+   "consonant_runs_pct": 12.45,
+   "sources": [
+    "kaikki",
+    "tatoeba"
    ],
    "reason": "consonant-heavy"
   },
@@ -3270,9 +3638,10 @@
    "codes": [
     "mr"
    ],
-   "words": 276177,
+   "words": 321180,
    "consonant_runs_pct": 39.9,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -3296,12 +3665,25 @@
    "codes": [
     "mt"
    ],
-   "words": 119453,
+   "words": 186760,
    "consonant_runs_pct": 18.68,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "mul": {
+   "name": "Multiple languages",
+   "codes": [
+    "mul"
+   ],
+   "words": 38123,
+   "consonant_runs_pct": 17.44,
+   "sources": [
+    "kaikki"
    ],
    "reason": "consonant-heavy"
   },
@@ -3337,9 +3719,10 @@
    "codes": [
     "mzn"
    ],
-   "words": 24643,
+   "words": 26560,
    "consonant_runs_pct": 80.92,
    "sources": [
+    "kaikki",
     "leipzig"
    ],
    "reason": "consonant-heavy"
@@ -3363,9 +3746,10 @@
    "codes": [
     "nap"
    ],
-   "words": 25144,
+   "words": 27453,
    "consonant_runs_pct": 10.5,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -3391,9 +3775,10 @@
    "codes": [
     "ne"
    ],
-   "words": 354874,
+   "words": 422471,
    "consonant_runs_pct": 41.6,
    "sources": [
+    "kaikki",
     "leipzig"
    ],
    "reason": "consonant-heavy"
@@ -3447,9 +3832,10 @@
     "nb",
     "no"
    ],
-   "words": 663045,
+   "words": 663453,
    "consonant_runs_pct": 13.12,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba",
@@ -3469,6 +3855,18 @@
    ],
    "reason": "too few words"
   },
+  "nrf": {
+   "name": "Jèrriais",
+   "codes": [
+    "nrf"
+   ],
+   "words": 14316,
+   "consonant_runs_pct": 15.78,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "consonant-heavy"
+  },
   "nso": {
    "name": "Northern Sotho",
    "codes": [
@@ -3486,24 +3884,12 @@
    "codes": [
     "nv"
    ],
-   "words": 9190,
-   "consonant_runs_pct": 24.44,
+   "words": 18609,
+   "consonant_runs_pct": 21.76,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
-    "unimorph"
-   ],
-   "reason": "consonant-heavy"
-  },
-  "om": {
-   "name": "Oromo",
-   "codes": [
-    "om"
-   ],
-   "words": 11301,
-   "consonant_runs_pct": 12.77,
-   "sources": [
-    "leipzig",
     "unimorph"
    ],
    "reason": "consonant-heavy"
@@ -3513,9 +3899,10 @@
    "codes": [
     "or"
    ],
-   "words": 106928,
+   "words": 108417,
    "consonant_runs_pct": 43.36,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -3526,9 +3913,10 @@
    "codes": [
     "os"
    ],
-   "words": 24714,
+   "words": 25553,
    "consonant_runs_pct": 21.56,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -3564,9 +3952,10 @@
    "codes": [
     "pa"
    ],
-   "words": 131410,
+   "words": 162984,
    "consonant_runs_pct": 32.86,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -3597,6 +3986,18 @@
    ],
    "reason": "too few words"
   },
+  "pdt": {
+   "name": "Plautdietsch",
+   "codes": [
+    "pdt"
+   ],
+   "words": 7511,
+   "consonant_runs_pct": 46.78,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "consonant-heavy"
+  },
   "pfl": {
    "name": "Palatine German",
    "codes": [
@@ -3607,6 +4008,18 @@
    "sources": [
     "leipzig",
     "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "phl": {
+   "name": "Phalura",
+   "codes": [
+    "phl"
+   ],
+   "words": 10133,
+   "consonant_runs_pct": 13.1,
+   "sources": [
+    "kaikki"
    ],
    "reason": "consonant-heavy"
   },
@@ -3650,6 +4063,30 @@
    ],
    "reason": "too few words"
   },
+  "pot": {
+   "name": "Potawatomi",
+   "codes": [
+    "pot"
+   ],
+   "words": 2460,
+   "consonant_runs_pct": 23.91,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "too few words"
+  },
+  "pra": {
+   "name": "Prakrit languages",
+   "codes": [
+    "pra"
+   ],
+   "words": 15206,
+   "consonant_runs_pct": 45.34,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "consonant-heavy"
+  },
   "prg": {
    "name": "Prussian",
    "codes": [
@@ -3681,38 +4118,27 @@
    "codes": [
     "rif"
    ],
-   "words": 3855,
-   "consonant_runs_pct": 10.52,
+   "words": 25038,
+   "consonant_runs_pct": 19.42,
    "sources": [
+    "kaikki",
     "tatoeba"
    ],
-   "reason": "too few words"
+   "reason": "consonant-heavy"
   },
   "rm": {
    "name": "Romansh",
    "codes": [
     "rm"
    ],
-   "words": 68220,
+   "words": 69981,
    "consonant_runs_pct": 18.4,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
    "reason": "consonant-heavy"
-  },
-  "rom": {
-   "name": "Romany",
-   "codes": [
-    "rom"
-   ],
-   "words": 6148,
-   "consonant_runs_pct": 9.51,
-   "sources": [
-    "leipzig",
-    "tatoeba"
-   ],
-   "reason": "too few words"
   },
   "ru": {
    "name": "Russian",
@@ -3759,9 +4185,10 @@
    "codes": [
     "sa"
    ],
-   "words": 198459,
+   "words": 366961,
    "consonant_runs_pct": 53.66,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -3773,9 +4200,10 @@
    "codes": [
     "sah"
    ],
-   "words": 545153,
+   "words": 547935,
    "consonant_runs_pct": 11.58,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -3787,21 +4215,23 @@
    "codes": [
     "sat"
    ],
-   "words": 2734,
-   "consonant_runs_pct": 2.74,
+   "words": 6655,
+   "consonant_runs_pct": 14.44,
    "sources": [
+    "kaikki",
     "tatoeba"
    ],
-   "reason": "too few words"
+   "reason": "consonant-heavy"
   },
   "sco": {
    "name": "Scots",
    "codes": [
     "sco"
    ],
-   "words": 93216,
+   "words": 98599,
    "consonant_runs_pct": 15.2,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -3812,9 +4242,10 @@
    "codes": [
     "sd"
    ],
-   "words": 46744,
+   "words": 49542,
    "consonant_runs_pct": 80.3,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -3839,10 +4270,23 @@
    "codes": [
     "shi"
    ],
-   "words": 11388,
+   "words": 15053,
    "consonant_runs_pct": 45.82,
    "sources": [
+    "kaikki",
     "tatoeba"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "shn": {
+   "name": "Shan",
+   "codes": [
+    "shn"
+   ],
+   "words": 3117,
+   "consonant_runs_pct": 45.87,
+   "sources": [
+    "kaikki"
    ],
    "reason": "consonant-heavy"
   },
@@ -3851,9 +4295,10 @@
    "codes": [
     "si"
    ],
-   "words": 142467,
+   "words": 143602,
    "consonant_runs_pct": 35.82,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba"
@@ -3877,9 +4322,10 @@
    "codes": [
     "sk"
    ],
-   "words": 678030,
+   "words": 742156,
    "consonant_runs_pct": 10.68,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba"
@@ -3891,9 +4337,10 @@
    "codes": [
     "sl"
    ],
-   "words": 815183,
+   "words": 823508,
    "consonant_runs_pct": 12.44,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba",
@@ -3934,22 +4381,24 @@
    "codes": [
     "ss"
    ],
-   "words": 2930,
-   "consonant_runs_pct": 20.44,
+   "words": 6274,
+   "consonant_runs_pct": 21.32,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
-   "reason": "too few words"
+   "reason": "consonant-heavy"
   },
   "st": {
    "name": "Southern Sotho",
    "codes": [
     "st"
    ],
-   "words": 21827,
+   "words": 22023,
    "consonant_runs_pct": 15.7,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -3996,14 +4445,28 @@
    ],
    "reason": "consonant-heavy"
   },
+  "syl": {
+   "name": "Sylheti",
+   "codes": [
+    "syl"
+   ],
+   "words": 2251,
+   "consonant_runs_pct": 23.0,
+   "sources": [
+    "kaikki",
+    "tatoeba"
+   ],
+   "reason": "too few words"
+  },
   "szl": {
    "name": "Silesian",
    "codes": [
     "szl"
    ],
-   "words": 47644,
+   "words": 62988,
    "consonant_runs_pct": 18.56,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -4014,9 +4477,10 @@
    "codes": [
     "ta"
    ],
-   "words": 206162,
+   "words": 444678,
    "consonant_runs_pct": 41.96,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba"
@@ -4040,9 +4504,10 @@
    "codes": [
     "te"
    ],
-   "words": 172329,
+   "words": 204433,
    "consonant_runs_pct": 40.24,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba",
@@ -4055,9 +4520,10 @@
    "codes": [
     "tg"
    ],
-   "words": 194689,
+   "words": 202369,
    "consonant_runs_pct": 10.92,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -4069,9 +4535,10 @@
    "codes": [
     "th"
    ],
-   "words": 216699,
+   "words": 231895,
    "consonant_runs_pct": 41.72,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles"
    ],
@@ -4082,13 +4549,14 @@
    "codes": [
     "ti"
    ],
-   "words": 6702,
-   "consonant_runs_pct": 27.7,
+   "words": 8965,
+   "consonant_runs_pct": 26.71,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
-   "reason": "too few words"
+   "reason": "consonant-heavy"
   },
   "tig": {
    "name": "Tigre",
@@ -4133,9 +4601,10 @@
    "codes": [
     "tt"
    ],
-   "words": 223718,
+   "words": 234556,
    "consonant_runs_pct": 14.36,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -4147,9 +4616,10 @@
    "codes": [
     "tum"
    ],
-   "words": 2014,
-   "consonant_runs_pct": 9.25,
+   "words": 2700,
+   "consonant_runs_pct": 7.29,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -4160,9 +4630,10 @@
    "codes": [
     "tyv"
    ],
-   "words": 496877,
+   "words": 498615,
    "consonant_runs_pct": 16.62,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -4174,9 +4645,10 @@
    "codes": [
     "udm"
    ],
-   "words": 15936,
+   "words": 25609,
    "consonant_runs_pct": 17.98,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -4187,9 +4659,10 @@
    "codes": [
     "ug"
    ],
-   "words": 89167,
+   "words": 201397,
    "consonant_runs_pct": 40.62,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -4211,18 +4684,43 @@
    ],
    "reason": "consonant-heavy"
   },
+  "unm": {
+   "name": "Unami",
+   "codes": [
+    "unm"
+   ],
+   "words": 5204,
+   "consonant_runs_pct": 26.56,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "consonant-heavy"
+  },
   "ur": {
    "name": "Urdu",
    "codes": [
     "ur"
    ],
-   "words": 53712,
+   "words": 75139,
    "consonant_runs_pct": 82.42,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba",
     "unimorph"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ush": {
+   "name": "Ushojo",
+   "codes": [
+    "ush"
+   ],
+   "words": 4987,
+   "consonant_runs_pct": 29.33,
+   "sources": [
+    "kaikki"
    ],
    "reason": "consonant-heavy"
   },
@@ -4232,9 +4730,10 @@
     "uz",
     "uzn"
    ],
-   "words": 400789,
+   "words": 531243,
    "consonant_runs_pct": 14.76,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
@@ -4258,9 +4757,10 @@
    "codes": [
     "vi"
    ],
-   "words": 73562,
+   "words": 80304,
    "consonant_runs_pct": 10.02,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba"
@@ -4284,9 +4784,10 @@
    "codes": [
     "wa"
    ],
-   "words": 34477,
+   "words": 38157,
    "consonant_runs_pct": 13.46,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -4334,9 +4835,10 @@
    "codes": [
     "xal"
    ],
-   "words": 2030,
-   "consonant_runs_pct": 36.27,
+   "words": 2642,
+   "consonant_runs_pct": 39.0,
    "sources": [
+    "kaikki",
     "tatoeba"
    ],
    "reason": "too few words"
@@ -4358,9 +4860,10 @@
    "codes": [
     "xmf"
    ],
-   "words": 41676,
+   "words": 42689,
    "consonant_runs_pct": 20.14,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba"
    ],
@@ -4383,26 +4886,52 @@
    "codes": [
     "yi"
    ],
-   "words": 10341,
-   "consonant_runs_pct": 63.83,
+   "words": 27223,
+   "consonant_runs_pct": 59.8,
    "sources": [
+    "kaikki",
     "leipzig",
     "tatoeba",
     "unimorph"
    ],
    "reason": "consonant-heavy"
   },
+  "yol": {
+   "name": "Yola",
+   "codes": [
+    "yol"
+   ],
+   "words": 2803,
+   "consonant_runs_pct": 13.84,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "consonant-heavy"
+  },
+  "ysr": {
+   "name": "Sirenik Yupik",
+   "codes": [
+    "ysr"
+   ],
+   "words": 2504,
+   "consonant_runs_pct": 22.55,
+   "sources": [
+    "kaikki"
+   ],
+   "reason": "too few words"
+  },
   "za": {
    "name": "Zhuang",
    "codes": [
     "za"
    ],
-   "words": 3648,
-   "consonant_runs_pct": 39.8,
+   "words": 5738,
+   "consonant_runs_pct": 39.62,
    "sources": [
+    "kaikki",
     "leipzig"
    ],
-   "reason": "too few words"
+   "reason": "consonant-heavy"
   },
   "zea": {
    "name": "Zeelandic",
@@ -4435,9 +4964,10 @@
     "cmn",
     "zh"
    ],
-   "words": 1008695,
+   "words": 1025600,
    "consonant_runs_pct": 18.12,
    "sources": [
+    "kaikki",
     "leipzig",
     "subtitles",
     "tatoeba"
@@ -4449,9 +4979,10 @@
    "codes": [
     "zza"
    ],
-   "words": 2412,
-   "consonant_runs_pct": 0.58,
+   "words": 3333,
+   "consonant_runs_pct": 0.98,
    "sources": [
+    "kaikki",
     "tatoeba"
    ],
    "reason": "too few words"

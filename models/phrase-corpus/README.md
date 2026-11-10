@@ -2,8 +2,8 @@
 
 The phrase tables (`models/compile_phrase.py`) are built from two files in `models/training-data/`:
 
-- **`phrase-words.txt.xz`**: 211,647 words, up to 2,500 of the most common words of 4+ letters from each of
-  127 languages. A language is left out if more than 10 % of its common words have three or more consonants in
+- **`phrase-words.txt.xz`**: 240,771 words, up to 2,500 of the most common words of 4+ letters from each of
+  140 languages. A language is left out if more than 10 % of its common words have three or more consonants in
   a row, or if it has fewer than 2,500 such words. Some are always in, whatever their size or consonants:
   Zulu and Xhosa (the languages of *ubuntu*); English (13.7 %), German (27.9 %), Old English and Old Norse;
   and every
@@ -23,7 +23,7 @@ The phrase tables (`models/compile_phrase.py`) are built from two files in `mode
 
 Why a mix of languages: with English tables, 21.9 % of the words in phrases are real English words, so
 phrases form accidental meanings and insults that no list can catch. This mix gives 0.8 %. Phrases are also
-shorter (25.0 characters on average against 27.3) and easier to say (4.8 % of words have 3+ consonants in a
+shorter (23.1 characters on average against 27.3) and easier to say (5.7 % of words have 3+ consonants in a
 row, against 13.6 %). These numbers come from encoding the same 20,000 random values.
 
 ## Rebuilding

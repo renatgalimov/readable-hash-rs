@@ -80,7 +80,7 @@ class PhraseTests(unittest.TestCase):
             text = phrase.encode(self.model, state)
             self.assertEqual(decode(self.model, text), state, text)
             self.assertTrue(all(phrase.has_vowel(word) for word in text.split()), text)
-        self.assertEqual(phrase.encode(self.model, 0x243F6A8885A308D3), "inon nekera esam weenza")
+        self.assertEqual(phrase.encode(self.model, 0x243F6A8885A308D3), "sain aralin suus umadde")
 
 
 if __name__ == "__main__":

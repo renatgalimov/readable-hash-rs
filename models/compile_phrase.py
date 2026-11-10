@@ -15,7 +15,7 @@ Format (see src/phrase.rs):
 - Each middle/ending row depends on the previous token (its context).
 
 Table rules:
-- The corpus is a word list from 127 languages (training-data/phrase-words.txt.xz, made by
+- The corpus is a word list from 140 languages (training-data/phrase-words.txt.xz, made by
   phrase-corpus/build_corpus.py): each language that isn't consonant-heavy contributes its 2,500 most frequent
   words, and so do hand-picked ones (English, German, Old English, Old Norse, Zulu, Xhosa, constructed
   languages).
