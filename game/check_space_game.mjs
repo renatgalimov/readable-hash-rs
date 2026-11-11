@@ -1,7 +1,7 @@
 // Headless check of the spaces game: walk every branch, collect end states, take screenshots.
 import { spawn, spawnSync } from "node:child_process";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { mkdirSync, mkdtempSync, writeFileSync } from "node:fs";
+import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 
@@ -22,7 +22,14 @@ const profile = mkdtempSync(path.join(process.env.TMPDIR || tmpdir(), "chr-"));
 const chrome = spawn("chromium", [
   "--headless=new", `--remote-debugging-port=${PORT}`, "--remote-debugging-address=127.0.0.1",
   `--user-data-dir=${profile}`, "--no-proxy-server", "--window-size=900,1100", "about:blank",
-], { stdio: "ignore" });
+], { stdio: "ignore", detached: true });
+// However the run ends (a check that throws included), kill the browser with its helper processes and delete its
+// profile: a browser left on the port would be driven by the next run.
+chrome.unref();
+process.on("exit", () => {
+  try { process.kill(-chrome.pid, "SIGKILL"); } catch {}
+  rmSync(profile, { recursive: true, force: true, maxRetries: 5 });
+});
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 let targets;
@@ -57,6 +64,7 @@ const shot = async (name) => {
 
 await send("Runtime.enable");
 await send("Page.enable");
+await send("Emulation.setFocusEmulationEnabled", { enabled: true });  // focus and blur fire as in a focused window
 await send("Emulation.setDeviceMetricsOverride", { width: 760, height: 900, deviceScaleFactor: 1, mobile: false });
 await send("Page.navigate", { url: URL_ });
 await sleep(1500);
@@ -75,7 +83,6 @@ const walk = await evaluate(`(() => {
     if (!bs.length) {
       out.push({ path: p, phrase: [...document.querySelectorAll('#phrase .word')].map(w => w.children.length).join('+'),
         count: $('count').textContent, formula: $('formula').textContent, msg: $('msg').textContent,
-        spare: $('spare').textContent, missing: document.querySelectorAll('.bit.missing').length,
         randomDisabled: $('random').disabled });
       return;
     }
@@ -89,7 +96,14 @@ const walk = await evaluate(`(() => {
 writeFileSync(path.join(OUT, "walk.json"), JSON.stringify(walk, null, 1));
 console.log("end states", walk.out.length, "pages", walk.pages.length);
 expect(walk.out.length === F.layouts, `${F.layouts} layouts, got ${walk.out.length}`);
-expect(walk.out.every((o) => o.count === "64" && !o.spare && !o.missing), "every layout is exactly 64 bits");
+expect(walk.out.every((o) => o.count === "64"), "every layout is exactly 64 bits");
+// The printed bits add up: every formula, and the length choices in each summary ("add up to 1.193 + 1.222 + 1.585 = 4").
+const sumsUp = (line) => { const [terms, total] = line.split(" = ");
+  return Math.abs((terms.match(/\d+(\.\d+)?/g) || []).reduce((s, x) => s + Number(x), 0) - parseFloat(total)) < 1e-9; };
+const sums = [...walk.out, ...walk.pages].flatMap((o) => [o.formula, ...(o.msg.match(/add up to [^=]+ = [\d.]+/g) || [])
+  .map((s) => s.slice("add up to ".length))]).filter(Boolean);
+console.log("printed sums:", sums.length, "e.g.", sums.find((s) => s.includes(".")));
+expect(sums.length > walk.out.length && sums.every(sumsUp), "the printed bits add up: " + sums.filter((s) => !sumsUp(s)).slice(0, 3).join(" | "));
 
 // Screenshots: start, a page with a dropped option, a forced-tail summary.
 await shot("01-start.png");
@@ -102,7 +116,7 @@ console.log(await clickPath(F.shots[1]));
 await shot(`03-after-${pathName(F.shots[1])}.png`);
 console.log(await clickPath(F.layout));
 await shot(`04-summary-${pathName(F.layout)}.png`);
-// The beginning page (after the layout 2-4-5): pickable buttons, muted groups, the key.
+// The beginning page (after the layout 2-4-4): pickable buttons, muted groups, the key.
 const tokenPage = () => evaluate(`(() => {
   const q = (s) => [...document.querySelectorAll(s)];
   return { pick: q('#panel .tokens button').map(b => b.textContent),
@@ -180,7 +194,7 @@ for c in cases:
     if c.get("most"):  # the chosen beginning with the most tokens out for this reason
         c["first"] = text[max(sorted(model["begin"], key=lambda b: text[b]),
                               key=lambda b: len(game.follow_groups(model, b, c["kind"])[c["most"]]))]
-    previous = text.index(c["first"]) if "then" not in c else next(i for i in range(512, 1024) if text[i] == c["then"])
+    previous = text.index(c["first"])
     groups = game.follow_groups(model, previous, c["kind"])
     out.append({"first": c["first"], "pick": len(groups.pop("pick")), "groups": {k: len(v) for k, v in groups.items() if v}})
 print(json.dumps(out))
@@ -189,7 +203,7 @@ expect(mirror.status === 0, "python mirror of the page rules runs: " + mirror.st
 JSON.parse(mirror.stdout || "[]").forEach(({ first, ...e }, i) => { cases[i].first = first; cases[i].expect = e; });
 let n = 8;
 for (const c of cases) {
-  console.log(await clickPath(c.path), await pickToken(c.first), c.then ? await pickToken(c.then) : "");
+  console.log(await clickPath(c.path), await pickToken(c.first));
   const pg = await tokenPage();
   const got = summarize(pg);
   const ok = JSON.stringify(got) === JSON.stringify(c.expect) || (got.pick === c.expect.pick && Object.keys(c.expect.groups).every(k => got.groups[k] === c.expect.groups[k]) && Object.keys(got.groups).length === Object.keys(c.expect.groups).length);
@@ -202,8 +216,6 @@ for (const c of cases) {
   console.log("  chips:", JSON.stringify(pg.groups.map(g => g.first)));
   await shot(`${String(n).padStart(2, "0")}-${c.first}-${c.path.map(x => x[0]).join("")}.png`);
   const second = pg.pick[0];
-  const blocked = pg.groups.find((g) => g.cls === "group blocked");
-  if (blocked) expect(blocked.first.every((c) => /left out: .*(spells|finish)/.test(c)), `${c.name}: banned tokens say why`);
   const hoverText = await hover(second);
   console.log("  hover", second + ":", hoverText);
   await shot(`${String(n).padStart(2, "0")}-${c.first}-hover-${second}.png`);
@@ -218,12 +230,65 @@ for (const c of cases) {
 }
 await evaluate(`document.querySelectorAll('#panel details.group').forEach(d => d.open = true)`);
 await shot("11-last-case-open.png");
+// Every banned token's tooltip, on every page, must be true of the letters: "spells" and "would finish" name a term
+// that ends inside this token; "the token after it" needs a token on this token's own lists that ends the term.
+const bans = await evaluate(`(() => {
+  const counts = {}, bad = [];
+  const ids = [...BEGIN.map((t) => TABLE_TOKENS.indexOf(t)), ...Array.from({ length: 512 }, (_, i) => 512 + i)];
+  for (const id of ids) for (const k of ["c", "e"]) {
+    const prev = TABLE_TOKENS[id];
+    const group = followPage({ k, w: 0, j: 1, n: 4, bits: tokenBits(k) }, { id, t: prev }).groups.find((g) => g.reason === "blocked");
+    for (const e of group ? group.items : []) {
+      const tip = group.tip(e), next = /token after it/.test(tip);
+      const kind = !e.term ? "unknown" : next ? "next" : /spells/.test(tip) ? "spells" : "finish";
+      counts[kind] = (counts[kind] || 0) + 1;
+      const after = next && e.id >= 512 ? [...TABLE_MIDDLE[rowOf(e.id)], ...TABLE_END32[rowOf(e.id)]].map((u) => TABLE_TOKENS[u]) : [""];
+      // The letters up to each place the term may end: in this token, or in a token after it.
+      const ends = after.flatMap((u) => [...(next ? u : e.t)].map((_, i) => prev + (next ? e.t + u.slice(0, i + 1) : e.t.slice(0, i + 1))));
+      const ok = !e.term || (/starts in the tokens before/.test(tip)
+        ? ends.some((s) => e.term.endsWith(s) && e.term.length > s.length) : ends.some((s) => s.endsWith(e.term)));
+      if (!ok && bad.length < 5) bad.push([prev, e.t, e.term, tip]);
+    }
+  }
+  return { counts, bad, total: Object.values(TABLE_BANNED).reduce((s, l) => s + l.length, 0) };
+})()`);
+console.log("ban tooltips:", JSON.stringify(bans));
+expect(bans.bad.length === 0 && bans.counts.next > 0 && Object.values(bans.counts).reduce((s, x) => s + x, 0) === bans.total,
+  "every ban's tooltip is true of its letters, on every page");
+// Keyboard previews: focusing an option shows a faded token; it must go when focus leaves, and on Undo.
+const previews = await evaluate(`(() => {
+  const $ = (i) => document.getElementById(i), n = () => document.querySelectorAll('#phrase .slot.preview').length;
+  const focusThen = (selector, act) => { const b = document.querySelector(selector); b.focus(); const shown = n(); act(b); return [shown, n()]; };
+  $('reset').click();
+  const option = focusThen('#panel .choices button', (b) => b.blur());
+  for (const l of ${JSON.stringify(F.layout)}) [...document.querySelectorAll('#panel .choices button')].find((x) => x.textContent.startsWith(l)).click();
+  const token = focusThen('#panel .tokens button', (b) => b.blur());
+  const undo = focusThen('#panel .tokens button', () => $('undo').click());
+  return { option, token, undo };
+})()`);
+console.log("previews [shown, after]:", JSON.stringify(previews));
+expect(Object.values(previews).every(([shown, after]) => shown > 0 && after === 0), "keyboard previews go away on blur and on Undo");
+// 15: Fill randomly animates a step every 260 ms. Wait until its timer stops, then check the end state; its
+// phrase joins the encoder check below.
+await evaluate(`document.getElementById('reset').click(); document.getElementById('random').click();`);
+const busy = await evaluate(`['random', 'undo'].map((b) => document.getElementById(b).disabled)`);
+for (let i = 0; i < 150 && await evaluate(`state.timer !== null`); i++) await sleep(100);
+const filled = await evaluate(`(() => { const v = phraseNumber(), $ = (i) => document.getElementById(i);
+  return { phrase: layout().map((_, w) => wordText(w)).join(' '), value: v.value.toString(), bits: v.offset,
+    shown: document.querySelector('#msg b.final')?.textContent, slots: [...document.querySelectorAll('#phrase .slot')].map(s => s.textContent).join('|'),
+    stopped: state.timer === null, random: $('random').disabled, undo: $('undo').disabled, count: $('count').textContent }; })()`);
+console.log("fill randomly:", JSON.stringify(filled), "| while filling, random and undo disabled:", JSON.stringify(busy));
+expect(busy.every(Boolean), "while Fill randomly runs, it and Undo are disabled");
+expect(filled.stopped && filled.random && !filled.undo && filled.count === "64", "Fill randomly ends at 64 bits, with itself off and Undo on");
+expect(filled.slots.split("|").length === TOKENS && filled.slots.split("|").join("") === filled.phrase.replaceAll(" ", ""),
+  `Fill randomly fills all ${TOKENS} slots with its phrase`);
 // Whole phrases: drive step() to the end many times; Python checks each phrase against the reference encoder.
 const runs = await evaluate(`(() => { const out = [];
   for (let r = 0; r < 200; r++) { document.getElementById('reset').click(); while (step()); render();
     const v = phraseNumber(); out.push({ phrase: layout().map((_, w) => wordText(w)).join(' '), value: v.value.toString(), bits: v.offset,
       shown: document.querySelector('#msg b.final')?.textContent, slots: [...document.querySelectorAll('#phrase .slot')].map(s => s.textContent).join('|') }); }
   return out; })()`);
+runs.push(filled);
 writeFileSync(path.join(OUT, "phrases.json"), JSON.stringify(runs, null, 1));
 const verify = spawnSync("python3", ["-c", `
 import json, sys
@@ -251,11 +316,6 @@ for (let i = 0; i < TOKENS; i++) {
 const fin = await tokenPage();
 console.log("final:", fin.msg.slice(-700), "| buttons left:", fin.pick.length, "random disabled:", fin.random);
 await shot("13-final.png");
-// Fill randomly runs to completion (through the beginning page)
-await evaluate(`document.getElementById('reset').click(); document.getElementById('random').click();`);
-await sleep(3000);
-console.log("random:", await evaluate(`document.getElementById('formula').textContent`),
-  JSON.stringify((await tokenPage()).slots), (await tokenPage()).random);
 // Example words are shown as their languages write them (onların, not onlarin). In every example on the page, the
 // bold letters must fold back to the token's letters. A token can start or end inside one original letter (mæt:
 // æ is "ae", the ending is "et"); then that whole letter is bold, so extra folded letters may come only from it.
@@ -272,7 +332,11 @@ const marks = await evaluate(`(() => {
       const boldLetters = [...(bold ?? "")].map((ch) => o.FOLD[ch] ?? ch);
       const folded = boldLetters.join("");
       const at = folded.indexOf(token);
-      const ok = at >= 0 && at < Math.max(1, (boldLetters[0] || "").length)
+      // A middle follows the previous token: right after a beginning ("^ta"), at letter 2 or later after a middle.
+      const pre = [...((html.match(/<i>(.*?)<b>/) || [])[1] ?? "")].map((ch) => o.FOLD[ch] ?? ch).join("") + folded.slice(0, at);
+      const placed = kind !== "c" || !before
+        || (before.startsWith("^") ? pre === before.slice(1) : pre.endsWith(before) && pre.length >= before.length + 2);
+      const ok = at >= 0 && at < Math.max(1, (boldLetters[0] || "").length) && placed
         && folded.length - at - token.length < Math.max(1, (boldLetters.filter((l) => l).at(-1) || "").length);
       checked += 1;
       if (!/^[a-z]+$/.test(g.word)) { original += 1; if (samples.length < 4 && kind === "c") samples.push(html); }
@@ -289,15 +353,15 @@ const marks = await evaluate(`(() => {
     }
   };
   for (const [id, packed] of Object.entries(o.BEGIN)) check(packed, TABLE_TOKENS[id], "b");
-  let turkishSentence = null, scriptSentence = null;  // what the page says for onların, and for a Greek word
+  let turkishSentence = null, scriptSentence = null;  // what the page says for a word with ı, and for a Greek word
   for (const [previous, row] of Object.entries(o.FOLLOW)) {
     const r = rowOf(Number(previous));
     row.split(" ").forEach((packed, slot) => {
       const id = slot < MIDDLE.length ? TABLE_MIDDLE[r][slot] : TABLE_END32[r][slot - MIDDLE.length];
       const kind = slot < MIDDLE.length ? "c" : "e";
-      check(packed, TABLE_TOKENS[id], kind, TABLE_TOKENS[previous]);
+      check(packed, TABLE_TOKENS[id], kind, (Number(previous) < 256 ? "^" : "") + TABLE_TOKENS[previous]);
       const u = unpackOrigin(packed);
-      if (!turkishSentence && u && u.groups.some((g) => g.word === "onların")) {
+      if (!turkishSentence && u && u.groups.some((g) => g.word && g.word.includes("ı"))) {
         turkishSentence = originSentence({ id, t: TABLE_TOKENS[id] }, kind, { id: Number(previous), t: TABLE_TOKENS[previous] })
           .replace(/<a [^>]*>|<\\/a>/g, "");
       }
@@ -308,12 +372,12 @@ const marks = await evaluate(`(() => {
     });
   }
   return { checked, original, bad, samples, turkishSentence, otherScript, badLatin, scriptSamples: scriptSamples.map((x) => x[1]),
-    scriptSentence, onlarin: o.EXAMPLES.split(" ").filter((w) => /^onlar/.test(w)) };
+    scriptSentence, dotless: o.EXAMPLES.split(" ").filter((w) => w.includes("ı")).length };
 })()`);
 console.log("original spellings:", JSON.stringify(marks));
 expect(!marks.error && marks.checked > 10000 && marks.bad.length === 0, "every example's bold letters fold to its token");
 expect(marks.original > 1000, "examples keep their original spelling (diacritics, other scripts)");
-expect(!(marks.onlarin || []).includes("onlarin"), "Turkish words keep their letters (onların, not onlarin)");
+expect(marks.dotless > 0 && /ı/.test(marks.turkishSentence || ""), "Turkish words keep their letters (ı, not i)");
 expect(marks.otherScript > 100 && marks.badLatin.length === 0, "words in other scripts show their a-z form, the token in bold");
 // How these sentences look on the page: shown at the top, in the page's own fonts.
 await evaluate(`(() => {
@@ -330,5 +394,4 @@ console.log("screenshot", path.join(OUT, "14-other-scripts.png"));
 console.log("errors", JSON.stringify(errors));
 expect(errors.length === 0, "no JS errors");
 ws.close();
-chrome.kill();
 if (failures.length) { console.error("FAILED:\n- " + failures.join("\n- ")); process.exitCode = 1; } else console.log("ALL CHECKS PASSED");

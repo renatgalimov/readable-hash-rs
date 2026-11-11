@@ -1,12 +1,13 @@
 """Build the spaces game: a page that walks through encoding one phrase, token by token.
 
 Reads game/space-game.template.html and the phrase tables (models/phrase_model.json) and writes the page,
-plus <name>-origins.js next to it: which languages each token comes from (about 600 KB, so the page loads it
+plus <name>-origins.js next to it: which languages each token comes from (over 1 MB, so the page loads it
 with a deferred script and works without it). The blog embeds them as diagrams/space-game.html.
 
     python3 game/build_space_game.py [OUT]   # default: game/space-game.html (+ game/space-game-origins.js)
 """
 import argparse
+import functools
 import json
 import lzma
 import re
@@ -56,15 +57,20 @@ def clash_example(model, text, words):
     return [first, longer.most_common(1)[0][0]]
 
 
+@functools.cache
+def join_trigrams():
+    """The 3-letter sequences the join rule allows. Counted once: the checker asks for hundreds of pages."""
+    return phrase.letter_trigrams(phrase.corpus_words())
+
+
 def follow_groups(model, previous, kind):
     """The token page after `previous` (a token id), as the game sorts it: picked ids and each reason's ids.
 
-    The same rules in the same order as the game page (and the compiler): on the list, banned after this token, no vowel, a letter or three vowels in a row, letters that don't
-    fit (at this context's minimum), a clash, less common.
+    The same rules in the same order as the game page (and the compiler): on the list, banned after this token, no
+    vowel, a letter or three vowels in a row, letters that don't fit, a clash, less common.
     """
     text = [phrase.text_of(t) for t in model["tokens"]]
-    minimum = model["relaxed"].get(str(previous), phrase.MIN_TRIGRAM_WORDS)
-    trigrams = phrase.letter_trigrams(phrase.corpus_words(), minimum)
+    trigrams = join_trigrams()
     row = phrase.context(model, previous)
     middles, endings = model["middle"][row], model["end32"][row]
     listed = middles if kind == "c" else endings
@@ -113,7 +119,7 @@ class Origins:
     ALSO other top languages follow. The word is shown as each named language writes it (onların in Turkish, not
     the folded onlarin): one group per spelling. Packed entry: "n|word:lang,lang|word:lang;more|:lang,lang" (base 36;
     n = number of languages, words index EXAMPLES, more = how many further languages have the word, after the last
-    spelling), "" when there is none. One word per entry keeps the file at about 600 KB instead of 850 KB.
+    spelling), "" when there is none. One example word per entry keeps the file at about 1 MB.
     """
 
     CANDIDATES, SAME, ALSO = 5, 3, 2
@@ -292,6 +298,8 @@ def main():
     out = args.out or HERE / "space-game.html"
     model = json.loads(MODEL.read_text())
     phrase.validate(model)
+    # The page applies one join minimum: a rebuild that relaxes a row needs the relaxed rule back in the page.
+    assert not model["relaxed"], "relaxed rows: the page would give them the wrong join rule"
     text = [phrase.text_of(t) for t in model["tokens"]]
     page, last = beginning_page(model, text)
     origins = Origins(model, text)
@@ -321,7 +329,6 @@ def main():
         "TABLE_MIDDLE": model["middle"],
         "TABLE_END32": model["end32"],
         "TABLE_BANNED": model["banned"],
-        "TABLE_RELAXED": model["relaxed"],
         "ORIGINS_FILE": out.with_name(out.stem + "-origins.js").name,
         "BAN_TERMS": ban_terms,
         "TERMS": terms,
@@ -329,16 +336,13 @@ def main():
         "LIST_LINKS": list_links,
         "BANNED_BEGIN": dropped,
         "LANGUAGES": len(json.loads(LANGUAGES.read_text())["languages"]),
-        "TRIGRAMS": " ".join(sorted(phrase.letter_trigrams(phrase.corpus_words()))),
-        # Sequences in 1-4 words, for the contexts whose join minimum is lower (model["relaxed"]).
-        "RARE_TRIGRAMS": " ".join(f"{t}:{n}" for t, n in sorted(phrase.trigram_counts(phrase.corpus_words()).items())
-                                  if n < phrase.MIN_TRIGRAM_WORDS),
+        "TRIGRAMS": " ".join(sorted(join_trigrams())),
         "MIN_TRIGRAM_WORDS": phrase.MIN_TRIGRAM_WORDS,
     }
     html = (HERE / "space-game.template.html").read_text()
     for name, value in values.items():
         html = html.replace(f"__{name}__", json.dumps(value, separators=(",", ":")))
-    assert "__" not in "".join(part for part in html.split("\n") if "const " in part and "= __" in part), "unfilled placeholder"
+    assert not re.search(r"__[A-Z0-9_]+__", html), "unfilled placeholder"
     out.write_text(html)
     for shown, folded in zip(origins.words, origins.folds):  # the page folds letter by letter to find the token
         assert "".join(origins.fold.get(ch, ch) for ch in shown) == folded, (shown, folded)

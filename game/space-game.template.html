@@ -7,7 +7,7 @@
 <style>
   :root {
     --paper: #f5f5f5; --box: #ffffff; --ink: #2d3142; --muted: #4f5d75;
-    --accent: #eb6c36; --word: #2f7f73; --cont: #b3bac8; --end: #6c7893; --line: #c9ccd4;
+    --accent: #eb6c36; --cont: #b3bac8; --end: #6c7893; --line: #c9ccd4;
     --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
     --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   }
@@ -21,11 +21,6 @@
   .gauge { flex: 1; display: grid; grid-template-columns: repeat(64, 1fr); gap: 2px; }
   .bit { aspect-ratio: 1; border: 1px solid var(--line); border-radius: 2px; background: var(--box); transition: background .25s; }
   .bit.on { border-color: transparent; }
-  .bit.missing { border: 1.5px dashed var(--accent); }
-  #spare { display: none; align-items: center; gap: 2px; font: 11px var(--mono); color: var(--accent); white-space: nowrap; }
-  #spare.show { display: flex; }
-  #spare .bit { width: 10px; border-style: dashed; border-color: var(--accent); }
-  #spare b { margin-left: 6px; font-weight: 600; }
   .key { display: grid; grid-template-columns: 10px repeat(4, auto) 1fr; gap: 3px 14px; align-items: center; margin-top: 10px; font: 11px var(--mono); color: var(--muted); }
   .key i { width: 10px; height: 10px; border-radius: 2px; }
   .key b { font-weight: 500; color: var(--ink); }
@@ -34,7 +29,6 @@
   .phrase { display: flex; flex-wrap: wrap; align-items: center; row-gap: 8px; margin: 18px 0 4px; min-height: 40px; }
   .word { display: flex; gap: 3px; }
   .slot { min-width: 36px; height: 36px; padding: 0 6px; display: grid; place-items: center; border: 1.2px dashed var(--line); border-radius: 4px; font: 500 15px var(--mono); color: var(--ink); }
-  .slot.w { border-color: var(--word); }
   .slot.b { border-color: var(--ink); }
   .slot.e { border-color: var(--end); }
   .slot.unknown { color: var(--muted); }
@@ -52,7 +46,6 @@
   .choices button b.detail { font-weight: 600; color: var(--accent); }
   .mini { display: flex; align-items: center; }
   .mini i { width: 9px; height: 9px; border-radius: 2px; margin-right: 2px; border: 1px solid var(--cont); }
-  .mini i.w { background: var(--word); border-color: var(--word); }
   .mini i.b { background: var(--ink); border-color: var(--ink); }
   .mini i.e { background: var(--end); border-color: var(--end); }
   .actions { display: flex; gap: 8px; margin-top: 14px; }
@@ -88,7 +81,6 @@
   <div class="count"><span id="count">0</span> <small>/ 64 bits</small></div>
   <div class="meter">
     <div class="gauge" id="gauge" role="meter" aria-label="Bits stored" aria-valuemin="0" aria-valuemax="64" aria-valuenow="0"></div>
-    <div class="spare" id="spare"></div>
   </div>
   <div class="key" id="key"></div>
   <div class="formula" id="formula"></div>
@@ -105,13 +97,12 @@
 <script>
 "use strict";
 // The real phrase tables: token texts (ids 0-255 beginnings, 256-511 endings, 512-1023 middles) and, for
-// each previous token (rows: the 128 beginnings in table order, then the 512 middles), its 64 middles and 32 endings, the tokens left out after it because a word could then contain an offensive word, and the few previous tokens whose
-// lists use a lower join minimum (too few letters can follow them): { previous id: minimum }.
+// each previous token (rows: the 128 beginnings in table order, then the 512 middles), its 64 middles and 32
+// endings, and the tokens left out after it because a word could then contain an offensive word.
 const TABLE_TOKENS = __TABLE_TOKENS__;
 const TABLE_MIDDLE = __TABLE_MIDDLE__;
 const TABLE_END32 = __TABLE_END32__;
 const TABLE_BANNED = __TABLE_BANNED__;
-const TABLE_RELAXED = __TABLE_RELAXED__;
 const LANGUAGES = __LANGUAGES__;  // the word list is the common words of this many languages
 // Where tokens come from (see Origins in build_space_game.py) arrives in a separate deferred script, which sets
 // window.SPACE_GAME_ORIGINS = { LANG_NAMES, LANG_LINKS (English Wikipedia articles), EXAMPLES (words as their languages
@@ -130,7 +121,6 @@ const LIST_LINKS = __LIST_LINKS__;  // their English Wikipedia articles
 const BAN_TERMS = __BAN_TERMS__;
 const BANNED_BEGIN = __BANNED_BEGIN__;  // [text, words it starts, term index]: word starts dropped as offensive
 const TRIGRAMS = __TRIGRAMS__;  // 3-letter sequences found in at least MIN_TRIGRAM_WORDS words of the word list
-const RARE_TRIGRAMS = new Map(__RARE_TRIGRAMS__.split(" ").map((x) => [x.slice(0, 3), Number(x.slice(4))]));  // in fewer
 const BEGIN = __BEGIN__;  // the 128 beginnings, in table order
 // Every row has the same size, so any row gives the number of middle and ending choices.
 const MIDDLE = TABLE_MIDDLE[0];
@@ -172,7 +162,8 @@ const pale = (color) => `color-mix(in srgb, ${color} 55%, white)`;
 const $ = (id) => document.getElementById(id);
 const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
 const round = (x) => Math.round(x * 1e6) / 1e6;  // log2 sums like 1.42 + 3.58 should print as 5
-const fmt = (x) => (Number.isInteger(round(x)) ? String(round(x)) : x.toFixed(2));
+// 3 decimals, so printed terms add up to the printed sum (with 2, three layouts show 1.19 + 1.22 + 1.58 = 4).
+const fmt = (x) => (Number.isInteger(round(x)) ? String(round(x)) : x.toFixed(3));
 const bitWord = (x) => `${fmt(x)} bit${round(x) === 1 ? "" : "s"}`;
 const tokenBits = (k) => Math.log2(TOKENS[k].pool.length);
 const kindAt = (n, j) => (j === 0 ? "b" : j === n - 1 ? "e" : "c");
@@ -198,16 +189,17 @@ const state = { history: [], preview: null, timer: null, tokens: [], tokenPrevie
 const chosen = () => state.history.map((e) => e.value);
 const used = (lengths) => lengths.reduce((sum, n) => sum + n, 0);
 
-// How many layouts can `rest` tokens still become, when `words` words already exist?
-const layoutCache = new Map();
-function layoutCount(rest, words) {
-  if (rest === 0) return 1;
-  if (rest < 0 || words >= MAX_WORDS) return 0;
-  const key = `${rest}/${words}`;
-  if (!layoutCache.has(key)) layoutCache.set(key, LENGTHS.reduce((sum, n) => sum + layoutCount(rest - n, words + 1), 0));
-  return layoutCache.get(key);
+// Every layout (the word lengths) of `total` tokens in at most `words` words. Trying the shorter lengths first
+// finds them sorted like tuples, the order the encoder numbers them in.
+function layoutsOf(total, lengths = LENGTHS, words = MAX_WORDS) {
+  if (total === 0) return [[]];
+  if (words <= 0) return [];
+  return lengths.filter((n) => n <= total).flatMap((n) => layoutsOf(total - n, lengths, words - 1).map((l) => [n, ...l]));
 }
-const ALL_LAYOUTS = layoutCount(TOTAL_TOKENS, 0);
+const LAYOUT_LIST = layoutsOf(TOTAL_TOKENS);
+const ALL_LAYOUTS = LAYOUT_LIST.length;
+// How many layouts can `rest` tokens still become, when `words` words already exist?
+const layoutCount = (rest, words) => layoutsOf(rest, LENGTHS, MAX_WORDS - words).length;
 
 // The options for the next word (each with the layouts it leaves and its bits), plus why any are missing.
 function lengthOptions(lengths) {
@@ -241,26 +233,9 @@ function layout() {
 }
 const forcedFrom = () => chosen().length;  // words at or after this index were forced
 
-// The most token bits any layout of `total` tokens can hold with these pools (every ending at full size).
-function bestTokenBits(total, lengths = LENGTHS) {
-  let best = 0;
-  const grow = (words, rest) => {
-    if (rest === 0) {
-      best = Math.max(best, words.reduce((s, n) => s + tokenBits("b") + (n - 2) * tokenBits("c") + tokenBits("e"), 0));
-      return;
-    }
-    if (words.length === MAX_WORDS) return;
-    for (const n of lengths) if (n <= rest) grow([...words, n], rest - n);
-  };
-  grow([], total);
-  return best;
-}
-// How many layouts `total` tokens make with these word lengths.
-function countLayouts(total, lengths) {
-  const count = (rest, words) => (rest === 0 ? 1 : rest < 0 || words >= MAX_WORDS ? 0
-    : lengths.reduce((s, n) => s + count(rest - n, words + 1), 0));
-  return count(total, 0);
-}
+// The most token bits any layout of `total` tokens can hold with these pools.
+const bestTokenBits = (total) => Math.max(...layoutsOf(total).map((l) =>
+  l.reduce((s, n) => s + tokenBits("b") + (n - 2) * tokenBits("c") + tokenBits("e"), 0)));
 // Why 10 and not 9: one token fewer loses that token's bits and a whole bit of layout.
 function whyTokenCount() {
   const fewer = TOTAL_TOKENS - 1;
@@ -279,7 +254,7 @@ function whyTokenCount() {
 // Words have at most 4 tokens: a 5th would add layouts, but not a whole bit of them.
 function whyShortWords() {
   const max = LENGTHS.at(-1);
-  const more = countLayouts(TOTAL_TOKENS, [...LENGTHS, max + 1]);
+  const more = layoutsOf(TOTAL_TOKENS, [...LENGTHS, max + 1]).length;
   const usable = 2 ** Math.floor(Math.log2(more));
   if (usable !== ALL_LAYOUTS) return "";
   return `<b>Why at most ${max} tokens a word?</b> Allowing ${max + 1} would make ${more} layouts, and a binary number `
@@ -344,12 +319,12 @@ const hasVowel = (text) => /[aeiouy]/.test(text);
 const conflicts = (a, b) => a.startsWith(b) || b.startsWith(a);
 // Tables are indexed by the previous token: a beginning's row is its place in BEGIN, a middle's comes after them.
 const rowOf = (token) => (token < 256 ? BEGIN.indexOf(TABLE_TOKENS[token]) : BEGIN.length + token - 512);
-// The first 3-letter sequence across the join that's in fewer than `minimum` words of the list, if any.
-function badJoin(previous, token, minimum) {
+// The first 3-letter sequence across the join that's in fewer than MIN_TRIGRAM_WORDS words of the list, if any.
+function badJoin(previous, token) {
   const joined = previous.slice(-2) + token.slice(0, 2);
   for (let i = 0; i + 3 <= joined.length; i++) {
     const t = joined.slice(i, i + 3);
-    if (!TRIGRAM_SET.has(t) && (RARE_TRIGRAMS.get(t) || 0) < minimum) return t;
+    if (!TRIGRAM_SET.has(t)) return t;
   }
   return null;
 }
@@ -389,16 +364,20 @@ function markWord(word, token, kind, before) {
   while (end < letters.length && (fold[letters[end]] ?? letters[end]) === "") end += 1;  // keep combining marks
   return `<i>${letters.slice(0, start).join("")}<b>${letters.slice(start, end).join("")}</b>${letters.slice(end).join("")}</i>`;
 }
-// Where the token is in the word folded to a-z (onların -> onlarin): at = its index there, or -1.
-function findToken(word, token, kind, before) {
+// Where the token is in the word folded to a-z (onların -> onlarin): at = its index there, or -1. A middle comes
+// right after `before`; "^" in front marks a beginning, so the pair must start the word (ta+ke in taketake is at
+// 0, not 4). After a middle the pair is further in, past the beginning's 2+ letters.
+function findToken(word, token, kind, before = "") {
   const fold = origins().FOLD || {};
   const letters = [...word];
   let folded = "";
   const from = [];  // from[i]: the original letter folded letter i comes from
   letters.forEach((ch, i) => { for (const a of fold[ch] ?? ch) { folded += a; from.push(i); } });
-  let at = kind === "b" ? 0 : kind === "e" ? folded.length - token.length : folded.indexOf(before + token, 1);
+  const previous = before.replace("^", "");
+  let at = kind === "b" ? 0 : kind === "e" ? folded.length - token.length
+    : before.startsWith("^") ? (folded.startsWith(previous + token) ? 0 : -1) : folded.indexOf(previous + token, 2);
   if (at < 0) at = folded.indexOf(token, 1);
-  else if (kind === "c") at += before.length;
+  else if (kind === "c") at += previous.length;
   if (at + token.length > folded.length) at = -1;
   return { letters, folded, from, at };
 }
@@ -437,7 +416,7 @@ function originSentence(e, kind, previous) {
   const row = rowOf(previous.id);
   const slot = (kind === "c" ? TABLE_MIDDLE[row] : TABLE_END32[row]).indexOf(e.id) + (kind === "c" ? 0 : MIDDLE.length);
   const o = unpackOrigin((origins().FOLLOW[String(previous.id)] || "").split(" ")[slot]);
-  if (o) return `<b>${previous.t}</b> is followed by <b>${e.t}</b> in words of ${originPhrase(o, e.t, kind, previous.t)}.`;
+  if (o) return `<b>${previous.t}</b> is followed by <b>${e.t}</b> in words of ${originPhrase(o, e.t, kind, (previous.id < 256 ? "^" : "") + previous.t)}.`;
   const g = unpackOrigin(origins().TOKEN[e.id]);
   return `No word in the list has <b>${e.t}</b> right after <b>${previous.t}</b>; it fills the list because it is a common `
     + `${kind === "c" ? "middle" : "ending"} overall${g ? `, in words of ${originPhrase(g, e.t, kind, "")}` : ""}.`;
@@ -447,6 +426,20 @@ const listsText = (langs) => `on the ${andList(langs.length > 3 ? [...langs.slic
 // lists: plain names (for tooltips, which can't hold links); link: the first list's language, linked.
 const termOf = (i) => (i >= 0 ? { term: TERMS[i][0], lists: TERMS[i][1].map((l) => LIST_NAMES[l]),
   link: langLink(LIST_NAMES[TERMS[i][1][0]], LIST_LINKS[TERMS[i][1][0]]) } : null);
+// Why a banned token is out, from where its term's letters are: ending in the token (with or without letters from
+// before prev), or going on into the token after it (es + ak + ra spells “sakra”: after es, ak is out).
+function banTip(prev, e) {
+  if (!e.term) return `left out: with the tokens before ${prev}, ${e.t} could finish an offensive word (found in an earlier draft of the lists)`;
+  const lists = listsText(e.lists);
+  const upTo = [...e.t].map((_, i) => prev + e.t.slice(0, i + 1));  // the letters up to each place in the token
+  if (upTo.some((s) => s.endsWith(e.term))) return `left out: ${prev} + ${e.t} spells “${e.term}”, ${lists}`;
+  if (upTo.some((s) => e.term.endsWith(s))) return `left out: ${e.t} would finish “${e.term}”, which starts in the tokens before ${prev}; ${lists}`;
+  // The term holds the whole token and starts inside prev; letters alone can mislead (calice is c + al + ic + e,
+  // ganggan is g + ang + ga + n: both start before prev).
+  return [...prev].some((_, i) => e.term.startsWith(prev.slice(i) + e.t))
+    ? `left out: ${prev} + ${e.t} + the token after it could spell “${e.term}”, ${lists}`
+    : `left out: ${e.t} and the token after it could finish “${e.term}”, which starts in the tokens before ${prev}; ${lists}`;
+}
 
 // Every token slot of the layout: word, position in the word, kind and bits.
 function tokenSlots() {
@@ -500,8 +493,8 @@ function beginningPage(slot) {
 }
 
 // A middle or an ending: its list depends on the token before it. Reasons are checked in the order the
-// table compiler applies its rules: banned after this token, no vowel, letters that don't fit, a clash, then a
-// full list.
+// table compiler applies its rules: banned after this token, no vowel, three in a row, letters that don't fit, a
+// clash, then a full list.
 function followPage(slot, previous) {
   const prev = previous.t;
   const row = rowOf(previous.id);
@@ -509,8 +502,6 @@ function followPage(slot, previous) {
   const bannedList = TABLE_BANNED[String(previous.id)] || [];
   const banned = new Set(bannedList);
   const banTerms = (BAN_TERMS[String(previous.id)] || "").split(" ").map((x) => parseInt(x, 36) - 1);
-  const minimum = TABLE_RELAXED[String(previous.id)] || MIN_TRIGRAM_WORDS;
-  const relaxed = minimum < MIN_TRIGRAM_WORDS;
   const list = slot.k === "c" ? middles : endings;
   const size = list.length;
   const firstMiddle = slot.k === "c" && state.tokens.length === tokenSlots().findIndex((s) => s.k === "c");
@@ -529,7 +520,7 @@ function followPage(slot, previous) {
     }
     else if (needsVowel && !hasVowel(e.t)) groups.vowel.push(e);
     else if ((e.run = tripleRun(prev, e.t))) groups.triple.push(e);
-    else if ((e.bad = badJoin(prev, e.t, minimum))) groups.join.push(e);
+    else if ((e.bad = badJoin(prev, e.t))) groups.join.push(e);
     else if ((e.partner = union.find((u) => conflicts(TABLE_TOKENS[u], e.t))) !== undefined) {
       e.with = TABLE_TOKENS[e.partner];
       e.withKind = middles.includes(e.partner) ? "middle" : "ending";
@@ -555,16 +546,12 @@ function followPage(slot, previous) {
       + `${needsVowel ? `if it has no vowel (${prev} has none, and every word needs one), ` : ""}`
       + `${groups.triple.length ? "if the same letter, or three vowels, would appear in a row, " : ""}`
       + `if its letters don’t fit after ${prev}, or if it clashes with a middle or ending already on ${prev}’s lists. `
-      + `${relaxed ? `Few letters can follow ${prev}, so here letters fit if they are in at least ${plural(minimum, "word")} of the list, not ${MIN_TRIGRAM_WORDS}. ` : ""}`
       + `The rest didn’t make the list.`
       + (firstMiddle ? `<br><br>${whyMiddles()}` : ""),
     groups: [
       { reason: "blocked", items: groups.blocked, title: `Could spell an offensive word: ${plural(groups.blocked.length, "token")}`,
         why: `after ${prev}, some word would then contain a word from the offensive-word lists of ${LIST_NAMES.length} languages`,
-        chip: (e) => e.link, tip: (e) => !e.term
-          ? `left out: with the tokens before ${prev}, ${e.t} could finish an offensive word (found in an earlier draft of the lists)`
-          : (prev + e.t).includes(e.term) ? `left out: ${prev} + ${e.t} spells “${e.term}”, ${listsText(e.lists)}`
-          : `left out: ${e.t} would finish “${e.term}”, which starts in the tokens before ${prev}; ${listsText(e.lists)}` },
+        chip: (e) => e.link, tip: (e) => banTip(prev, e) },
       { reason: "vowel", items: groups.vowel, title: `No vowel: ${plural(groups.vowel.length, "token")}`,
         why: `${prev} has no vowel, so the next token must have one, or the word would have none`,
         chip: () => "", tip: (e) => `no vowel: ${prev}${e.t} would have none` },
@@ -572,8 +559,8 @@ function followPage(slot, previous) {
         why: `after ${prev}, the same letter or three vowels would appear in a row (no word is all vowels)`,
         chip: (e) => e.run, tip: (e) => `three in a row: ${prev}${e.t} has “${e.run}”` },
       { reason: "join", items: groups.join, title: `Letters don’t fit together: ${plural(groups.join.length, "token")}`,
-        why: joinExample ? `some 3 letters across the join, like “${joinExample.bad}” in ${prev}${joinExample.t}, are in fewer than ${plural(minimum, "word")} of the list` : "",
-        chip: (e) => e.bad, tip: (e) => `letters don’t fit together: “${e.bad}” is in fewer than ${plural(minimum, "word")} of the list` },
+        why: joinExample ? `some 3 letters across the join, like “${joinExample.bad}” in ${prev}${joinExample.t}, are in fewer than ${plural(MIN_TRIGRAM_WORDS, "word")} of the list` : "",
+        chip: (e) => e.bad, tip: (e) => `letters don’t fit together: “${e.bad}” is in fewer than ${plural(MIN_TRIGRAM_WORDS, "word")} of the list` },
       { reason: "clash", items: groups.clash, title: `Clashes with a token on ${prev}’s lists: ${plural(groups.clash.length, "token")}`,
         why: "one starts the other, so the reader couldn’t tell where this token ends",
         chip: (e) => e.with, tip: (e) => `clashes with the ${e.withKind} ${e.with}: `
@@ -602,20 +589,7 @@ function wordText(w) {
   return tokenSlots().map((s, i) => (s.w === w && i < state.tokens.length ? state.tokens[i].t : "")).join("");
 }
 
-// The layout's number among them all: the encoder sorts the layouts (lists of word lengths) like tuples.
-const LAYOUT_LIST = (() => {
-  const out = [];
-  const grow = (prefix, rest) => {
-    if (rest === 0) { out.push(prefix); return; }
-    if (prefix.length === MAX_WORDS) return;
-    for (const n of LENGTHS) if (n <= rest) grow([...prefix, n], rest - n);
-  };
-  grow([], TOTAL_TOKENS);
-  const cmp = (a, b) => { for (let i = 0; i < Math.min(a.length, b.length); i++) if (a[i] !== b[i]) return a[i] - b[i]; return a.length - b.length; };
-  return out.sort(cmp);
-})();
-
-// The finished phrase as the encoder stores it: the layout in the lowest 4 bits, then each
+// The finished phrase as the encoder stores it: the layout (its number in LAYOUT_LIST) in the lowest 4 bits, then each
 // token's number, left to right, each above the one before.
 const LAYOUT_BITS = Math.log2(LAYOUT_LIST.length);
 function phraseNumber() {
@@ -702,19 +676,9 @@ function renderGauge() {
   const ranges = segs.map((s) => { const r = { c: s.c, a: pos, b: pos + s.bits }; pos = r.b; return r; });
   pos = round(pos);
   bits.forEach((box, i) => paint(box, i, ranges, pos));
-  const done = used(layout()) >= TOTAL_TOKENS;
-  bits.forEach((box, i) => box.classList.toggle("missing", done && i >= pos));
-  const spare = $("spare");
-  spare.replaceChildren();
-  if (pos > 64) {
-    for (let i = 64; i < Math.ceil(pos); i++) { const b = el("div", "bit"); paint(b, i, ranges, pos); spare.append(b); }
-    spare.append(el("b", null, "+" + fmt(pos - 64) + " spare"));
-  }
-  spare.classList.toggle("show", pos > 64);
   $("count").textContent = fmt(pos);
-  $("gauge").setAttribute("aria-valuenow", Math.min(64, pos).toFixed(2));
+  $("gauge").setAttribute("aria-valuenow", pos.toFixed(2));
   $("formula").textContent = terms.length ? terms.join(" + ") + " = " + fmt(pos) + " bits" : "";
-  return pos;
 }
 
 function renderPhrase() {
@@ -746,50 +710,45 @@ function renderPhrase() {
   });
 }
 
-function renderPanel(total) {
+function renderPanel() {
   const panel = $("panel");
   panel.replaceChildren();
   const step = nextStep();
   if (!step) {
-    renderTokenPanel(total);
+    renderTokenPanel();
     return;
   }
   renderLayoutPanel(step);
 }
 
 // The layout summary, shown on the token pages once all word lengths are known.
-function layoutSummary(total) {
-  {
-    const lengths = layout();
-    const verdict = total < 64
-      ? `<b>${fmt(total)} bits: ${bitWord(64 - total)} short of 64.</b>`
-      : total === 64 ? "<b>Exactly 64 bits.</b>" : `<b>${fmt(total)} bits: ${bitWord(total - 64)} to spare.</b>`;
-    const parts = [];
-    const lastChosen = forcedFrom() - 1;
-    if (lastChosen >= 0) parts.push(`The ${ORDINALS[lastChosen]} word is ${describeWord(lengths, lastChosen)}.`);
-    lengths.slice(forcedFrom()).forEach((n, i) => {
-      const w = forcedFrom() + i;
-      parts.push(`The ${ORDINALS[w]} word takes the remaining ${n} tokens. Only one layout was left, so its length adds 0 bits; its tokens add ${bitWord(wordBits(lengths, w))}.`);
-    });
-    const lengthBits = state.history.map((e) => fmt(e.bits));
-    parts.push(`The layout is ${lengths.join(" + ")}, one of ${ALL_LAYOUTS}: its length choices add up to ${lengthBits.join(" + ")} = ${bitWord(Math.log2(ALL_LAYOUTS))}, whichever way you got here.`);
-    const words = lengths.length, middles = TOTAL_TOKENS - 2 * words;
-    const [B, C, E] = ["b", "c", "e"].map(tokenBits);
-    parts.push(`With ${words} words there are ${words} beginnings, ${plural(middles, "middle")} and ${words} endings: `
-      + `${words}×${B} + ${middles}×${C} + ${words}×${E} = ${bitWord(words * B + middles * C + words * E)}, plus ${bitWord(Math.log2(ALL_LAYOUTS))} of layout.`);
-    parts.push(verdict);
-    return parts.join(" ");
-  }
+function layoutSummary() {
+  const lengths = layout();
+  const parts = [];
+  const lastChosen = forcedFrom() - 1;
+  if (lastChosen >= 0) parts.push(`The ${ORDINALS[lastChosen]} word is ${describeWord(lengths, lastChosen)}.`);
+  lengths.slice(forcedFrom()).forEach((n, i) => {
+    const w = forcedFrom() + i;
+    parts.push(`The ${ORDINALS[w]} word takes the remaining ${n} tokens. Only one layout was left, so its length adds 0 bits; its tokens add ${bitWord(wordBits(lengths, w))}.`);
+  });
+  const lengthBits = state.history.map((e) => fmt(e.bits));
+  parts.push(`The layout is ${lengths.join(" + ")}, one of ${ALL_LAYOUTS}: its length choices add up to ${lengthBits.join(" + ")} = ${bitWord(Math.log2(ALL_LAYOUTS))}, whichever way you got here.`);
+  const words = lengths.length, middles = TOTAL_TOKENS - 2 * words;
+  const [B, C, E] = ["b", "c", "e"].map(tokenBits);
+  parts.push(`With ${words} words there are ${words} beginnings, ${plural(middles, "middle")} and ${words} endings: `
+    + `${words}×${B} + ${middles}×${C} + ${words}×${E} = ${bitWord(words * B + middles * C + words * E)}, plus ${bitWord(Math.log2(ALL_LAYOUTS))} of layout.`);
+  parts.push("<b>Exactly 64 bits.</b>");
+  return parts.join(" ");
 }
 
 const originHint = () => (origins() ? "Point at a token to see which languages’ words it comes from."
   : "Loading which languages each token comes from…");
 // When the language data arrives after a token page is shown, update its hint line.
 window.onSpaceGameOrigins = () => { for (const p of document.querySelectorAll(".origin")) p.innerHTML = originHint(); };
-function renderTokenPanel(total) {
+function renderTokenPanel() {
   const panel = $("panel");
   const page = tokenStep();
-  const before = state.tokens.length ? pickedSentence() : layoutSummary(total);
+  const before = state.tokens.length ? pickedSentence() : layoutSummary();
   if (!page) {
     $("msg").innerHTML = `${before} ${finalSummary()}`;
     return;
@@ -817,7 +776,9 @@ function renderTokenPanel(total) {
     btn.addEventListener("mouseenter", show);
     btn.addEventListener("focus", show);
     // The origin line keeps the last token pointed at, so the reader can move to it and click a language.
-    btn.addEventListener("mouseleave", () => { state.tokenPreview = null; renderPhrase(); });
+    const hide = () => { state.tokenPreview = null; renderPhrase(); };
+    btn.addEventListener("mouseleave", hide);
+    btn.addEventListener("blur", hide);
     grid.append(btn);
   }
   const origin = el("p", "origin");
@@ -859,16 +820,18 @@ function renderLayoutPanel(step) {
     btn.addEventListener("click", () => choose(step, option));
     btn.addEventListener("mouseenter", () => { state.preview = option.value; renderPhrase(); });
     btn.addEventListener("focus", () => { state.preview = option.value; renderPhrase(); });
-    btn.addEventListener("mouseleave", () => { state.preview = null; renderPhrase(); });
+    const hide = () => { state.preview = null; renderPhrase(); };
+    btn.addEventListener("mouseleave", hide);
+    btn.addEventListener("blur", hide);
     grid.append(btn);
   });
   panel.append(grid);
 }
 
 function render() {
-  const total = renderGauge();
+  renderGauge();
   renderPhrase();
-  renderPanel(total);
+  renderPanel();
   $("random").disabled = (!nextStep() && !tokenStep()) || state.timer !== null;
   $("undo").disabled = state.timer !== null || (state.history.length === 0 && state.tokens.length === 0);
 }
@@ -893,7 +856,7 @@ function step() {
     chooseToken(page, page.pick[Math.floor(Math.random() * page.pick.length)]);
     return tokenStep() !== null;
   }
-  // Weight each option by the layouts it keeps, so every layout is equally likely, as with a random 5-bit number.
+  // Weight each option by the layouts it keeps, so every layout is equally likely, as with a random 4-bit number.
   let ticket = Math.random() * s.options.reduce((sum, o) => sum + o.leaves, 0);
   choose(s, s.options.find((o) => (ticket -= o.leaves) < 0) || s.options[s.options.length - 1]);
   return nextStep() !== null || tokenStep() !== null;
@@ -905,7 +868,11 @@ function fillRandomly() {
   render();
 }
 $("random").addEventListener("click", fillRandomly);
-$("undo").addEventListener("click", () => { if (state.tokens.length) state.tokens.pop(); else state.history.pop(); render(); });
+$("undo").addEventListener("click", () => {
+  if (state.tokens.length) state.tokens.pop(); else state.history.pop();
+  state.preview = state.tokenPreview = null;  // a keyboard preview would stay in a slot nobody points at
+  render();
+});
 $("reset").addEventListener("click", () => { stop(); state.history = []; state.tokens = []; state.preview = null; state.tokenPreview = null; render(); });
 renderKey();
 render();
