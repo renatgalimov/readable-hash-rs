@@ -13,6 +13,9 @@ it was originally Latin script.
 
 Most languages need 2,000+ words to be written; constructed languages (CONSTRUCTED) are kept from 20 words, so
 small ones from books (Láadan, Tolkien's Khuzdul) still reach the word list.
+
+Run it after fetch.py has finished without failures. A file that can't be read stops the run: reading half of it
+would silently change the word lists.
 """
 import argparse
 import collections
@@ -31,12 +34,17 @@ from anyascii import anyascii
 
 DATA = Path.home() / "data" / "phrase-langs"
 RAW, WORDS = DATA / "raw", DATA / "words"
-WORD = re.compile(r"\w+", re.UNICODE)
+# Python's \w leaves out combining marks, which would split ọ̀rọ̀ into ọ + rọ and हिंदी into ह + द.
+MARKS = "".join(chr(c) for c in range(0x300, 0x110000) if unicodedata.category(chr(c)).startswith("M"))
+WORD = re.compile(f"[\\w{re.escape(MARKS)}]+")
 # A word after one of these starts a sentence or quoted speech (Er sagte: „Nein!"), so its first letter may be
 # capitalized for that reason alone.
 SENTENCE_BREAK = set(".!?:;\"“”„«»‹›‘’'¡¿—–-([…")
 ASCII_WORD = re.compile(r"[a-z]{2,}")
-NO_SPACES = {"zh", "ja", "th", "lo", "km", "my", "bo", "yue", "wuu"}  # scripts without spaces between words
+# Scripts written without spaces between words (Chinese, Japanese, Thai, Lao, Khmer, Burmese, Tibetan): a sentence in
+# one isn't a list of words. Checked by script, since Tatoeba has more codes for them than any list would name.
+NO_SPACES = re.compile("[\u0e00-\u0eff\u0f00-\u0fff\u1000-\u109f\u1780-\u17ff\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]")
+PICKS = Path(__file__).resolve().parent / "leipzig_pick.json"
 # Constructed languages: kept however few words they have. Codes the language library doesn't know yet (tok) or that
 # have no ISO code (Tolkien's smaller languages, "x-...") are named here.
 CONSTRUCTED = {"eo": None, "io": None, "ia": None, "ie": None, "lfn": None, "jbo": None, "vo": None, "avk": None,
@@ -55,12 +63,17 @@ ELDAMO = {"q": "qya", "mq": "qya", "eq": "qya", "aq": "qya", "maq": "qya", "van"
           "dan": "x-nandorin", "val": "x-valarin"}
 csv.field_size_limit(sys.maxsize)
 WANTED = None  # set of codes to read (originals.py); None reads every language
+NAMES = {}  # Wiktionary's English names for its own codes (roa-brg: Bourguignon)
 
 
 def code_of(raw):
-    """Normalize a code or a language name to a short tag ('zul' -> 'zu', 'Zulu' -> 'zu'); None if unknown."""
+    """Normalize a code or a language name to a short tag ('zul' -> 'zu', 'Zulu' -> 'zu'); None if unknown.
+
+    Wiktionary's own codes for languages without an ISO code (roa-brg Bourguignon, roa-tar Tarantino) stay as they
+    are: the language library would fold them into their family (roa, "Romance languages").
+    """
     raw = raw.replace("_", "-")
-    if raw in CONSTRUCTED:
+    if raw in CONSTRUCTED or re.fullmatch(r"[a-z]{2,3}-[a-z]{3}", raw):
         return raw
     try:
         tag = langcodes.get(raw) if raw[:1].islower() else langcodes.find(raw)
@@ -116,21 +129,19 @@ def subtitles():
 
 
 def leipzig():
-    for path in sorted((RAW / "leipzig").glob("*.tar.gz")):
-        code = code_of(path.name.split("_")[0].split("-")[0])
+    # Only the picked corpora: raw/leipzig may also hold others from earlier runs (deu_news_2010_100K).
+    for name in sorted(json.loads(PICKS.read_text()).values()):
+        code = code_of(name.split("_")[0].split("-")[0])
         if not code or (WANTED is not None and code not in WANTED):
             continue
-        try:
-            with tarfile.open(path) as archive:
-                member = next((m for m in archive.getmembers() if m.name.endswith("-words.txt")), None)
-                if member is None:
-                    continue
-                for line in io.TextIOWrapper(archive.extractfile(member), encoding="utf-8", errors="replace"):
-                    parts = line.rstrip("\n").split("\t")
-                    if len(parts) >= 3 and parts[-1].isdigit():
-                        LANGS[code].add(parts[1], int(parts[-1]), source="leipzig")
-        except (EOFError, tarfile.TarError, OSError) as error:
-            print("  skipped", path.name, repr(error)[:80], flush=True)
+        with tarfile.open(RAW / "leipzig" / f"{name}.tar.gz") as archive:
+            member = next((m for m in archive.getmembers() if m.name.endswith("-words.txt")), None)
+            if member is None:
+                continue
+            for line in io.TextIOWrapper(archive.extractfile(member), encoding="utf-8", errors="replace"):
+                parts = line.rstrip("\n").split("\t")
+                if len(parts) >= 3 and parts[-1].isdigit():
+                    LANGS[code].add(parts[1], int(parts[-1]), source="leipzig")
 
 
 def tatoeba():
@@ -147,7 +158,7 @@ def tatoeba():
             if row[1] not in cache:
                 cache[row[1]] = code_of(row[1]) if row[1] != "\\N" else None
             code = cache[row[1]]
-            if not code or code in NO_SPACES:
+            if not code or NO_SPACES.search(row[2]):
                 continue
             last = 0
             for match in WORD.finditer(row[2]):  # originals.py takes case from inside sentences
@@ -161,29 +172,17 @@ def unimorph():
         code = code_of(path.name.split(".")[0])
         if not code or (WANTED is not None and code not in WANTED):
             continue
-        try:
-            with lzma.open(path, "rt", encoding="utf-8", errors="replace") as lines:
-                for line in lines:
-                    parts = line.rstrip("\n").split("\t")
-                    for field in parts[:2]:
-                        for word in field.split():
-                            LANGS[code].add(word, dictionary=True, source="unimorph")
-        except (EOFError, lzma.LZMAError, OSError) as error:
-            print("  skipped", path.name, repr(error)[:80], flush=True)
+        with lzma.open(path, "rt", encoding="utf-8", errors="replace") as lines:
+            for line in lines:
+                parts = line.rstrip("\n").split("\t")
+                for field in parts[:2]:
+                    for word in field.split():
+                        LANGS[code].add(word, dictionary=True, source="unimorph")
 
 
 def kaikki():
+    # Every file: the language codes inside decide (a file's English name doesn't always map to them).
     for path in sorted((RAW / "kaikki").glob("*.jsonl.xz")):
-        if WANTED is not None and code_of(path.name.split(".")[0].replace("_", " ")) not in WANTED:
-            continue  # one language per file, named in English ("Old_Norse.jsonl.xz")
-        try:
-            kaikki_file(path)
-        except (EOFError, lzma.LZMAError, OSError) as error:
-            print("  skipped", path.name, repr(error)[:80], flush=True)
-
-
-def kaikki_file(path):
-    if True:
         with lzma.open(path, "rt", encoding="utf-8", errors="replace") as lines:
             for line in lines:
                 try:
@@ -193,6 +192,8 @@ def kaikki_file(path):
                 code = code_of(entry.get("lang_code", "") or entry.get("lang", ""))
                 if not code:
                     continue
+                if "-" in code:
+                    NAMES[code] = entry.get("lang") or code
                 for word in [entry.get("word", "")] + [form.get("form", "") for form in entry.get("forms", [])]:
                     for part in word.split():
                         LANGS[code].add(part, dictionary=True, source="kaikki")
@@ -237,11 +238,7 @@ def main():
     WORDS.mkdir(parents=True, exist_ok=True)
     for source in (SOURCES[name] for name in only):
         print("reading", source.__name__, flush=True)
-        try:
-            source()
-        except (EOFError, lzma.LZMAError, tarfile.TarError, OSError) as error:
-            # a file still being downloaded or compressed by fetch.py; the next run picks it up
-            print("  skipped the rest of", source.__name__, "after", repr(error)[:120], flush=True)
+        source()
     summary = json.loads((WORDS / "languages.json").read_text()) if args.only else {}
     for code, lang in sorted(LANGS.items()):
         words = set(lang.count) | lang.dictionary
@@ -252,7 +249,8 @@ def main():
         with lzma.open(WORDS / f"{code}.tsv.xz", "wt", encoding="utf-8") as out:
             for word in sorted(words, key=lambda w: (-lang.count.get(w, 0), w)):
                 out.write(f"{word}\t{lang.count.get(word, 0)}\t{int(word in lang.dictionary)}\n")
-        summary[code] = {"name": CONSTRUCTED.get(code) or langcodes.get(code).display_name(), "words": len(words),
+        name = CONSTRUCTED.get(code) or NAMES.get(code) or langcodes.get(code).display_name()
+        summary[code] = {"name": name, "words": len(words),
                          "text_words": len(lang.count), "dictionary_words": len(lang.dictionary),
                          "sources": sorted(lang.sources), "latin_share": round(lang.latin / max(lang.total, 1), 3)}
     (WORDS / "languages.json").write_text(json.dumps(summary, indent=1))

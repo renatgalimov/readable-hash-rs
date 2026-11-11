@@ -43,8 +43,8 @@ class Spellings:
 
     def add(self, word, count=1, dictionary=False, source="", sentence_start=False):
         folded = normalize.fold(word)
-        if folded not in self.wanted:
-            return
+        if folded not in self.wanted or any("\ue000" <= ch <= "\uf8ff" for ch in word):
+            return  # private-use characters: an old font's encoding (some Yoruba text), not letters
         if dictionary or (source == "tatoeba" and not sentence_start):
             self.inside[folded][word] += 1
         weight = 1 if dictionary else max(count, 1)

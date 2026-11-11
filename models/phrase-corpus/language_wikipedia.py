@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Find the English Wikipedia article for each language the explainer game names.
 
-Asks Wikidata which item has each ISO 639 code (639-1, 639-3, then 639-2 and 639-5 for groups like "roa") and
+Asks Wikidata which item has each ISO 639 code (639-1, 639-3, then 639-2 and 639-5 for groups like "ber") and
 takes its English Wikipedia article. Writes models/phrase-corpus/language-wikipedia.json ({code: article title}),
 which game/build_space_game.py turns into links. Codes Wikidata can't place are listed for a manual entry in
 OVERRIDES.
@@ -18,6 +18,9 @@ WORDS = HERE.parent / "training-data" / "phrase-words.json"
 OUT = HERE / "language-wikipedia.json"
 # Codes whose Wikidata answer is missing or ambiguous (a code shared by a macrolanguage and a member, etc.).
 OVERRIDES = {"vro": "Võro_language",  # Wikidata also maps vro to South_Estonian, the wider group
+             # Wiktionary's own codes (no ISO code to look up).
+             "roa-brg": "Burgundian_language_(Oïl)", "roa-opt": "Galician–Portuguese",
+             "sla-pro": "Proto-Slavic_language",
              # Tolkien's smaller languages have no ISO code; some only have a section in a broader article.
              "x-gnomish": "Languages_constructed_by_Tolkien#Elvish_languages",
              "x-telerin": "Elvish_languages_of_Middle-earth#Internal_history",

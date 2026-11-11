@@ -81,7 +81,7 @@ class PhraseTests(unittest.TestCase):
             self.assertEqual(decode(self.model, text), state, text)
             self.assertTrue(all(phrase.has_vowel(word) for word in text.split()), text)
             self.assertTrue(all(phrase.triple_free("", word) for word in text.split()), text)
-        self.assertEqual(phrase.encode(self.model, 0x243F6A8885A308D3), "sain aralin suit umadde")
+        self.assertEqual(phrase.encode(self.model, 0x243F6A8885A308D3), "mung kiroot niun yeekwa")
 
 
 if __name__ == "__main__":

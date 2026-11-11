@@ -9,12 +9,12 @@ Feature: Reversible phrases
 
     Examples:
       | number             | phrase                   |
-      | 0x0                | maan maan maan makatara  |
-      | 0x2a               | partes makana makatara   |
-      | 0x75bcd15          | adom aguerege maan maan  |
-      | 0x243f6a8885a308d3 | sain aralin suit umadde  |
-      | 0xdeadbeefcafebabe | chavicho sheplo ganyay   |
-      | 0xffffffffffffffff | dhateguit dhateguit dhiz |
+      | 0x0                | maan maan maan mataizin  |
+      | 0x2a               | partas matara mataizin   |
+      | 0x75bcd15          | heim erkerege maan maan  |
+      | 0x243f6a8885a308d3 | mung kiroot niun yeekwa  |
+      | 0xdeadbeefcafebabe | vajaerna ilmiut garuzi   |
+      | 0xffffffffffffffff | iteahuika iteahuika itde |
 
   Scenario Outline: Text that is not a canonical phrase is rejected
     Given the phrase "<text>"
@@ -22,9 +22,9 @@ Feature: Reversible phrases
 
     Examples:
       | text                                |
-      | Sain aralin suit umadde             |
-      | sain  aralin suit umadde            |
-      | sain aralin suit                    |
-      | sain aralin suit umaddex            |
-      | makatara makatara makatara makatara |
+      | Mung kiroot niun yeekwa             |
+      | mung  kiroot niun yeekwa            |
+      | mung kiroot niun                    |
+      | mung kiroot niun yeekwax            |
+      | mataizin mataizin mataizin mataizin |
       | hello world again                   |

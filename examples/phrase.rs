@@ -2,7 +2,7 @@
 //!
 //! `cargo run --example phrase` prints a few fixed values;
 //! `cargo run --example phrase -- 12345 0xdeadbeef` encodes your own (decimal or 0x-hex);
-//! `cargo run --example phrase -- "sain aralin suit umadde"` decodes a phrase.
+//! `cargo run --example phrase -- "mung kiroot niun yeekwa"` decodes a phrase.
 use readable_hash::{decode_u64, encode_u64};
 
 fn parse(argument: &str) -> Option<u64> {

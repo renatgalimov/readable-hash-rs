@@ -123,8 +123,8 @@ class Origins:
         lists = lzma.decompress(LANGUAGE_WORDS.read_bytes()).decode().splitlines()
         by_language = {code: words.split() for code, words in (line.split("\t") for line in lists)}
         self.codes = sorted(by_language, key=lambda code: -info[code]["words"])  # index 0 = largest corpus
-        # Display names: drop qualifiers ("Dimli (individual language)"); name the two group codes and Estonian plainly.
-        plain = {"ber": "Berber", "roa": "Romance", "et": "Estonian"}
+        # Display names: drop qualifiers ("Dimli (individual language)"); name the group code and Estonian plainly.
+        plain = {"ber": "Berber", "et": "Estonian"}
         self.names = [plain.get(code) or re.sub(r"\s*\(.*\)", "", info[code]["name"]) for code in self.codes]
         wikipedia = json.loads(WIKIPEDIA.read_text())
         self.links = [wikipedia[code] for code in self.codes]
@@ -137,6 +137,8 @@ class Origins:
                 self.fold = entries
             elif code in language:
                 self.original[language[code]] = entries
+        assert not any("\ue000" <= ch <= "\uf8ff" for entries in self.original.values() for word in entries.values()
+                       for ch in word), "an original spelling has private-use characters"
         begin_ids = {text[i]: i for i in range(phrase.NUM_BEGIN)}
         end_ids = {text[i]: i for i in range(phrase.NUM_BEGIN, phrase.NUM_BEGIN + phrase.NUM_END)}
         middle_ids = {text[i]: i for i in range(phrase.NUM_BEGIN + phrase.NUM_END, 1024)}

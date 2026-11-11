@@ -3,16 +3,19 @@
 
 Everything lands compressed under ~/data/phrase-langs/raw/<source>/ (already-compressed archives are kept as they
 are; plain text is xz-compressed). The script is resumable: finished files are skipped, partial downloads resume.
+A file appears under its final name only once it is complete, so normalize.py never reads half a file. If any
+download failed, the script says which and exits with status 1: run it again before normalizing.
 A manifest (raw/manifest.jsonl) records every file: source, language, URL, bytes, status.
 
     python3 models/phrase-corpus/fetch.py [source ...]   # sources: subtitles leipzig tatoeba unimorph profanity kaikki
 """
 import json
 import lzma
-import os
+import re
 import subprocess
 import sys
 import time
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -38,10 +41,14 @@ def done_urls():
 
 
 DONE = set()
+FAILED = []  # what failed in this run; any of it makes the exit status 1
 
 
-def fetch(source, lang, url, dest, compress=False):
-    """Download url to dest (resuming); xz-compress plain text when asked. Returns the final path or None."""
+def fetch(source, lang, url, dest, compress=False, optional=False):
+    """Download url to dest (resuming); xz-compress plain text when asked. Returns the final path or None.
+
+    An optional file (a probe with a fallback) may be missing without failing the run.
+    """
     final = dest.with_name(dest.name + ".xz") if compress else dest
     if url in DONE and final.exists():
         return final
@@ -52,13 +59,16 @@ def fetch(source, lang, url, dest, compress=False):
     if result.returncode != 0:
         record(source=source, lang=lang, url=url, status="failed", error=result.stderr.strip()[-200:])
         log("FAIL", source, lang, url, result.stderr.strip()[-120:])
-        part.unlink(missing_ok=True)
+        if not optional:  # the .part stays, so the next run resumes it
+            FAILED.append(url)
         return None
     if compress:
-        with part.open("rb") as raw, lzma.open(final, "wb", preset=6) as packed:
+        packing = final.with_name(final.name + ".part")
+        with part.open("rb") as raw, lzma.open(packing, "wb", preset=6) as packed:
             while chunk := raw.read(1 << 20):
                 packed.write(chunk)
         part.unlink()
+        packing.rename(final)
     else:
         part.rename(final)
     size = final.stat().st_size
@@ -69,10 +79,14 @@ def fetch(source, lang, url, dest, compress=False):
     return final
 
 
-def get_json(url):
+def get(url):
     request = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(request, timeout=60) as response:
-        return json.load(response)
+        return response.read()
+
+
+def get_json(url):
+    return json.loads(get(url))
 
 
 def subtitles():
@@ -80,7 +94,8 @@ def subtitles():
     langs = [entry["name"] for entry in get_json("https://api.github.com/repos/hermitdave/FrequencyWords/contents/content/2018")]
     for lang in langs:
         base = f"https://raw.githubusercontent.com/hermitdave/FrequencyWords/master/content/2018/{lang}/{lang}"
-        if not fetch("subtitles", lang, f"{base}_full.txt", RAW / "subtitles" / f"{lang}_full.txt", compress=True):
+        if not fetch("subtitles", lang, f"{base}_full.txt", RAW / "subtitles" / f"{lang}_full.txt", compress=True,
+                     optional=True):
             fetch("subtitles", lang, f"{base}_50k.txt", RAW / "subtitles" / f"{lang}_50k.txt", compress=True)
 
 
@@ -89,21 +104,9 @@ def leipzig():
 
     leipzig_pick.json (made from the per-language download pages, which list the real file names) holds the
     choice: the largest corpus of at most 300K sentences, or 100K where OpenSubtitles already covers the language.
-    Without it, fall back to the API's (partial, partly stale) corpus list.
     """
     picks = Path(__file__).resolve().parent / "leipzig_pick.json"
-    if picks.exists():
-        for lang, name in sorted(json.loads(picks.read_text()).items()):
-            fetch("leipzig", lang, f"https://downloads.wortschatz-leipzig.de/corpora/{name}.tar.gz", RAW / "leipzig" / f"{name}.tar.gz")
-        return
-    corpora = get_json("https://api.wortschatz-leipzig.de/ws/corpora/availableCorpora?limit=2000")
-    best = {}
-    for corpus in corpora:
-        lang = corpus["corpusName"].split("_")[0].split("-")[0]
-        size = corpus["numberOfSentences"] or 0
-        if size <= 300_000 and size > best.get(lang, ("", 0))[1]:
-            best[lang] = (corpus["corpusName"], size)
-    for lang, (name, _) in sorted(best.items()):
+    for lang, name in sorted(json.loads(picks.read_text()).items()):
         fetch("leipzig", lang, f"https://downloads.wortschatz-leipzig.de/corpora/{name}.tar.gz", RAW / "leipzig" / f"{name}.tar.gz")
 
 
@@ -126,8 +129,10 @@ def unimorph():
         if len(name) != 3 or not name.isalpha():
             continue  # language repos are named by ISO 639-3 code
         branch = repo.get("default_branch", "master")
+        # shortcut: repos that split their data (fin.1, vep-*, slk.xz) or have none are skipped; list a repo's
+        # files to take them too.
         fetch("unimorph", name, f"https://raw.githubusercontent.com/unimorph/{name}/{branch}/{name}",
-              RAW / "unimorph" / f"{name}.tsv", compress=True)
+              RAW / "unimorph" / f"{name}.tsv", compress=True, optional=True)
 
 
 def profanity():
@@ -139,25 +144,26 @@ def profanity():
     fetch("profanity", "multi", "https://raw.githubusercontent.com/thisandagain/washyourmouthoutwithsoap/develop/data/build.json",
           RAW / "profanity" / "washyourmouthoutwithsoap.json")
     fetch("profanity", "en", "https://raw.githubusercontent.com/dsojevic/profanity-list/main/en.json", RAW / "profanity" / "dsojevic_en.json")
-    for branch in ("main", "master"):
-        if fetch("profanity", "en", f"https://raw.githubusercontent.com/surge-ai/profanity/{branch}/profanity_en.csv",
-                 RAW / "profanity" / "surge_en.csv"):
-            break
 
 
 def kaikki():
-    """Wiktionary word lists (kaikki.org): one JSONL per language; only languages whose file is under ~300 MB."""
-    try:
-        index = urllib.request.urlopen(urllib.request.Request("https://kaikki.org/dictionary/", headers={"User-Agent": UA}),
-                                       timeout=60).read().decode()
-    except Exception as error:  # noqa: BLE001
-        record(source="kaikki", lang="all", url="https://kaikki.org/dictionary/", status="failed", error=str(error)[:200])
-        log("FAIL kaikki index", error)
-        return
-    import re
-    for path, lang in sorted(set(re.findall(r'href="(([A-Z][A-Za-z%0-9-]+)/index\.html)"', index))):
+    """Wiktionary word lists (kaikki.org): one JSONL per language; only languages whose file is under ~300 MB.
+
+    The link comes from each language's page: file names drop spaces and punctuation (Old English ->
+    kaikki.org-dictionary-OldEnglish.jsonl, K'iche' -> ...-Kiche.jsonl).
+    """
+    index = get("https://kaikki.org/dictionary/").decode()
+    for lang in sorted(set(re.findall(r'href="([A-Z][^"/]*)/index\.html"', index))):
         name = urllib.parse.unquote(lang)
-        url = f"https://kaikki.org/dictionary/{lang}/kaikki.org-dictionary-{lang}.jsonl"
+        if "/" in name:
+            continue  # it names the file under raw/kaikki
+        page = f"https://kaikki.org/dictionary/{lang}/index.html"
+        links = re.findall(r'href="([^"]+\.jsonl)"', get(page).decode())
+        if not links:
+            log("FAIL kaikki: no download link on", page)
+            FAILED.append(page)
+            continue
+        url = urllib.parse.urljoin(page, links[0])
         head = subprocess.run(["curl", "-sI", "-L", "-m", "60", "-A", UA, url], capture_output=True, text=True).stdout
         sizes = [int(line.split(":")[1]) for line in head.lower().splitlines() if line.startswith("content-length")]
         if not sizes or sizes[-1] > 300_000_000:
@@ -178,7 +184,6 @@ SOURCES = {"eldamo": eldamo, "profanity": profanity, "subtitles": subtitles, "le
            "unimorph": unimorph, "kaikki": kaikki}
 
 if __name__ == "__main__":
-    import urllib.parse  # noqa: F401  (used by kaikki)
     RAW.mkdir(parents=True, exist_ok=True)
     DONE.update(done_urls())
     for name in sys.argv[1:] or list(SOURCES):
@@ -188,5 +193,9 @@ if __name__ == "__main__":
         except Exception as error:  # noqa: BLE001  keep going with the other sources
             log("SOURCE FAILED", name, repr(error))
             record(source=name, lang="-", url=name, status="failed", error=repr(error)[:300])
+            FAILED.append(name)
     total = sum(f.stat().st_size for f in RAW.rglob("*") if f.is_file())
-    log(f"== all done: {total / 1e9:.2f} GB under {RAW}")
+    log(f"== done: {total / 1e9:.2f} GB under {RAW}")
+    if FAILED:
+        log(f"== {len(FAILED)} failed, so the data is incomplete; run again to retry:", *FAILED)
+        sys.exit(1)

@@ -2,10 +2,10 @@
 
 The phrase tables (`models/compile_phrase.py`) are built from two files in `models/training-data/`:
 
-- **`phrase-words.txt.xz`**: 240,771 words, up to 2,500 of the most common words of 4+ letters from each of
-  140 languages. A language is left out if more than 10 % of its common words have three or more consonants in
+- **`phrase-words.txt.xz`**: 269,509 words, up to 2,500 of the most common words of 4+ letters from each of
+  153 languages. A language is left out if more than 10 % of its common words have three or more consonants in
   a row, or if it has fewer than 2,500 such words. Some are always in, whatever their size or consonants:
-  Zulu and Xhosa (the languages of *ubuntu*); English (13.7 %), German (27.9 %), Old English and Old Norse;
+  Zulu and Xhosa (the languages of *ubuntu*); English (13.7 %), German (27.9 %), Old English, Old Norse and Old High German;
   and every
   constructed language we have words for (29), from Esperanto, Toki Pona and Klingon to Tolkien's Quenya,
   Sindarin and his smaller languages. `phrase-words.json` lists the languages, their measurements and
@@ -23,7 +23,7 @@ The phrase tables (`models/compile_phrase.py`) are built from two files in `mode
 
 Why a mix of languages: with English tables, 21.9 % of the words in phrases are real English words, so
 phrases form accidental meanings and insults that no list can catch. This mix gives 0.8 %. Phrases are also
-shorter (23.1 characters on average against 27.3) and easier to say (5.7 % of words have 3+ consonants in a
+shorter (23.1 characters on average against 27.3) and easier to say (5.1 % of words have 3+ consonants in a
 row, against 13.6 %). These numbers come from encoding the same 20,000 random values.
 
 ## Rebuilding
@@ -41,9 +41,12 @@ python3 models/phrase-corpus/language_wikipedia.py                              
 python3 models/compile_phrase.py                                                     # src/phrase_data.rs
 ```
 
-`fetch.py` resumes partial downloads and records every file in `raw/manifest.jsonl`. `leipzig_pick.json`
-names the Leipzig corpus taken for each language: the largest of at most 300K sentences, or 100K where a
-subtitle word list exists. The names come from the per-language download pages; the API's list is partial.
+`fetch.py` resumes partial downloads and records every file in `raw/manifest.jsonl`. A file gets its final
+name only when complete, and `fetch.py` exits with status 1 if anything failed: run it again until it
+succeeds before `normalize.py`, which stops at any file it can't read. `leipzig_pick.json` names the Leipzig
+corpus taken for each language: the largest of at most 300K sentences, or 100K where a subtitle word list
+exists. The names come from the per-language download pages; the API's list is partial. `normalize.py` reads
+only those corpora.
 Sources change over time, so a rebuild may give different words, and with them different phrases. The
 committed files are what the tables are built from.
 

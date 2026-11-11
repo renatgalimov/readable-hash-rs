@@ -8,7 +8,8 @@ and writes, under models/training-data/:
   WORDS_PER_LANGUAGE words of 4+ letters that isn't consonant-heavy contributes its WORDS_PER_LANGUAGE most frequent
   ones, so each language counts equally. A language is consonant-heavy if more than MAX_CONSONANT_RUNS percent of its
   common words have three or more consonants in a row. The languages in ALWAYS are in whatever their size or
-  consonants (chosen by hand: Zulu and Xhosa for "ubuntu"; English, German, Old English and Old Norse; every constructed
+  consonants (chosen by hand: Zulu and Xhosa for "ubuntu"; English, German, Old English, Old Norse and Old High German
+  (10.1 % with its Wiktionary words, just over the limit); every constructed
   language we have words for, from Esperanto to Tolkien's Quenya and Klingon). For those, words seen once count too:
   Tatoeba's sentences are curated, and many constructed languages have little other text.
 - blocklist.txt.xz: offensive words from every downloaded list, in every language, folded to a-z (`term<TAB>lists`).
@@ -35,7 +36,7 @@ ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "models" / "training-data"
 WORDS_PER_LANGUAGE = 2_500   # a language's most frequent words of 4+ letters that go into the mix (it needs this many)
 UBUNTU, CHOSEN, CONSTRUCTED = "ubuntu's languages", "chosen", "constructed language"
-ALWAYS = {"zu": UBUNTU, "xh": UBUNTU, "en": CHOSEN, "de": CHOSEN, "ang": CHOSEN, "non": CHOSEN,
+ALWAYS = {"zu": UBUNTU, "xh": UBUNTU, "en": CHOSEN, "de": CHOSEN, "ang": CHOSEN, "non": CHOSEN, "goh": CHOSEN,
           **{code: CONSTRUCTED for code in ("eo io ia ie lfn jbo vo avk tlh tok bzt nov tzl afh ldn dws igs qya sjn "
                                             "x-gnomish x-telerin x-adunaic x-ilkorin x-khuzdul x-blackspeech x-westron "
                                             "x-rohirric x-nandorin x-valarin").split()}}
@@ -56,16 +57,19 @@ def read_words(path):
 
 
 def ranked_words(paths, min_count=2):
-    """A language's words of 4+ letters: by text frequency, then dictionary-only words in a stable shuffled order."""
-    counted, dictionary_only = {}, set()
+    """A language's words of 4+ letters: by text frequency, then dictionary-only words in a stable shuffled order.
+
+    The codes of one language add up their counts before min_count applies.
+    """
+    counts, dictionary = {}, set()
     for path in paths:
         for word, count, in_dictionary in read_words(path):
-            if len(word) < 4:
-                continue
-            if count >= min_count:
-                counted[word] = counted.get(word, 0) + count
-            elif in_dictionary:
-                dictionary_only.add(word)
+            if len(word) >= 4:
+                counts[word] = counts.get(word, 0) + count
+                if in_dictionary:
+                    dictionary.add(word)
+    counted = {word: count for word, count in counts.items() if count >= min_count}
+    dictionary_only = dictionary - counted.keys()
     shuffled = sorted(dictionary_only - counted.keys(), key=lambda w: hashlib.sha256(w.encode()).digest())
     return sorted(counted, key=lambda w: (-counted[w], w)) + shuffled
 
