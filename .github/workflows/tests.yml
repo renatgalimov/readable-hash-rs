@@ -18,3 +18,14 @@ jobs:
           override: true
       - name: Run tests
         run: cargo test --verbose
+
+  phrase-tables:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.14"
+      # The tables match the compiler, and no word they can produce contains an offensive word.
+      - name: Check the phrase tables
+        run: cd models && python3 -m unittest test_phrase

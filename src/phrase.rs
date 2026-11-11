@@ -65,12 +65,10 @@ fn text(token: u16) -> &'static str {
         .trim_end_matches('$')
 }
 
-fn context(token: u16) -> usize {
-    if token < 256 {
-        token as usize
-    } else {
-        token as usize - 256
-    }
+/// The row after a middle. Rows 0-127 follow the beginnings (by their index in `BEGIN`), rows
+/// 128-639 follow the middles 512-1023.
+fn middle_row(token: u16) -> usize {
+    data::BEGIN.len() + token as usize - 512
 }
 
 fn word_count(layout: &[u8; 4]) -> usize {
@@ -120,7 +118,8 @@ fn validate() {
                 .iter()
                 .all(|&token| triple_free("", text(token)))
         );
-        for row in 0..768 {
+        assert_eq!(data::MIDDLE.len(), data::BEGIN.len() + 512);
+        for row in 0..data::MIDDLE.len() {
             let (middles, endings) = (&data::MIDDLE[row], &data::END32[row]);
             assert!(middles.iter().all(|&token| (512..1024).contains(&token)));
             assert!(endings.iter().all(|&token| (256..512).contains(&token)));
@@ -134,19 +133,18 @@ fn validate() {
                 prefix_free(&union),
                 "context {row}: middles and endings overlap"
             );
-            // Every word needs a vowel: after a beginning without one (rows 0-255 follow beginnings),
-            // every middle and ending has one.
-            if row < 256 && !has_vowel(text(row as u16)) {
+            let beginning = row < data::BEGIN.len();
+            let previous = text(if beginning {
+                data::BEGIN[row]
+            } else {
+                (row - data::BEGIN.len() + 512) as u16
+            });
+            // Every word needs a vowel: after a beginning without one, every middle and ending has one.
+            if beginning && !has_vowel(previous) {
                 assert!(union.iter().all(|piece| has_vowel(piece)), "context {row}");
             }
             // No letter, and no vowel, three times in a row: tokens have 2+ letters, so such a run
             // spans at most one join.
-            // Rows 0-255 follow beginnings 0-255, rows 256-767 follow middles 512-1023.
-            let previous = text(if row < 256 {
-                row as u16
-            } else {
-                row as u16 + 256
-            });
             assert!(
                 union.iter().all(|piece| triple_free(previous, piece)),
                 "context {row}: three in a row"
@@ -171,14 +169,14 @@ pub fn encode_u64(mut value: u64) -> String {
         if position != 0 {
             phrase.push(' ');
         }
-        let mut token = data::BEGIN[take(&mut value, BEGIN_BITS)];
-        phrase.push_str(text(token));
+        let mut row = take(&mut value, BEGIN_BITS);
+        phrase.push_str(text(data::BEGIN[row]));
         for _ in 2..length {
-            token = data::MIDDLE[context(token)][take(&mut value, MIDDLE_BITS)];
+            let token = data::MIDDLE[row][take(&mut value, MIDDLE_BITS)];
             phrase.push_str(text(token));
+            row = middle_row(token);
         }
-        token = data::END32[context(token)][take(&mut value, END_BITS)];
-        phrase.push_str(text(token));
+        phrase.push_str(text(data::END32[row][take(&mut value, END_BITS)]));
     }
     debug_assert_eq!(value, 0);
     phrase
@@ -215,21 +213,22 @@ pub fn decode_u64(phrase: &str) -> Option<u64> {
     };
     for (position, word) in words.iter().enumerate() {
         let mut remaining = *word;
-        let (digit, mut token) = parse(&mut remaining, &data::BEGIN)?;
+        let (digit, _) = parse(&mut remaining, &data::BEGIN)?;
         push(digit, BEGIN_BITS)?;
+        let mut row = digit as usize;
         let mut middles = 0;
         // Middles and endings are prefix-free together, so at most one of them matches here.
         loop {
-            if let Some((digit, _)) = parse(&mut remaining, &data::END32[context(token)]) {
+            if let Some((digit, _)) = parse(&mut remaining, &data::END32[row]) {
                 push(digit, END_BITS)?;
                 break;
             }
             if middles == MAX_MIDDLES {
                 return None;
             }
-            let (digit, next) = parse(&mut remaining, &data::MIDDLE[context(token)])?;
+            let (digit, token) = parse(&mut remaining, &data::MIDDLE[row])?;
             push(digit, MIDDLE_BITS)?;
-            token = next;
+            row = middle_row(token);
             middles += 1;
         }
         if !remaining.is_empty() {

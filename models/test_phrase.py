@@ -28,13 +28,13 @@ def decode(model, phrase_text):
         rest, middles = word[len(text[token]):], 0
         value, offset = value | digit << offset, offset + phrase.BEGIN_SIZE.bit_length() - 1
         while True:
-            found = take(rest, model["end32"][phrase.context(token)])
+            found = take(rest, model["end32"][phrase.context(model, token)])
             if found:
                 digit, end = found
                 rest = rest[len(text[end]):]
                 value, offset = value | digit << offset, offset + phrase.END_SIZE.bit_length() - 1
                 break
-            found = take(rest, model["middle"][phrase.context(token)]) if middles < phrase.MAX_WORD - 2 else None
+            found = take(rest, model["middle"][phrase.context(model, token)]) if middles < phrase.MAX_WORD - 2 else None
             if not found:
                 return None
             digit, token = found
@@ -62,6 +62,19 @@ class PhraseTests(unittest.TestCase):
 
     def test_tables_have_no_single_letters_and_decode_by_letters(self):
         phrase.validate(self.model)  # 2+ letters, beginnings prefix-free, middles + endings prefix-free per context
+
+    def test_the_walk_finds_a_term_spanning_four_tokens(self):
+        # ba + dw + or + ds spells "badwords": "adword" starts in the first token and ends in the last. "badwordz"
+        # puts the automaton on a longer path, so it reports "adword" only through its fail links.
+        tokens = [f"t{i}" for i in range(1024)]
+        tokens[0], tokens[256], tokens[512], tokens[513] = "^ba", "ds$", "dw", "or"
+        rows = phrase.contexts([0])
+        model = {"tokens": tokens, "begin": [0], "middle": [[] for _ in rows], "end32": [[] for _ in rows]}
+        model["middle"][phrase.context(model, 0)] = [512]
+        model["middle"][phrase.context(model, 512)] = [513]
+        model["end32"][phrase.context(model, 513)] = [256]
+        self.assertEqual(phrase.violations(model, phrase.Terms([], ["adword", "badwordz"])), {(513, 256)})
+        self.assertEqual(phrase.violations(model, phrase.Terms([], ["adwordx"])), set())
 
     def test_every_layout_is_64_bits(self):
         layouts = phrase.layouts()

@@ -105,7 +105,7 @@
 <script>
 "use strict";
 // The real phrase tables: token texts (ids 0-255 beginnings, 256-511 endings, 512-1023 middles) and, for
-// each previous token, its 64 middles and 32 endings, the tokens left out after it because a word could then contain an offensive word, and the few previous tokens whose
+// each previous token (rows: the 128 beginnings in table order, then the 512 middles), its 64 middles and 32 endings, the tokens left out after it because a word could then contain an offensive word, and the few previous tokens whose
 // lists use a lower join minimum (too few letters can follow them): { previous id: minimum }.
 const TABLE_TOKENS = __TABLE_TOKENS__;
 const TABLE_MIDDLE = __TABLE_MIDDLE__;
@@ -342,7 +342,8 @@ function nextStep() {
 const TRIGRAM_SET = new Set(TRIGRAMS.split(" "));
 const hasVowel = (text) => /[aeiouy]/.test(text);
 const conflicts = (a, b) => a.startsWith(b) || b.startsWith(a);
-const rowOf = (token) => (token < 256 ? token : token - 256);  // tables are indexed by the previous token
+// Tables are indexed by the previous token: a beginning's row is its place in BEGIN, a middle's comes after them.
+const rowOf = (token) => (token < 256 ? BEGIN.indexOf(TABLE_TOKENS[token]) : BEGIN.length + token - 512);
 // The first 3-letter sequence across the join that's in fewer than `minimum` words of the list, if any.
 function badJoin(previous, token, minimum) {
   const joined = previous.slice(-2) + token.slice(0, 2);

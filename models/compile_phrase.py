@@ -12,7 +12,8 @@ Format (see src/phrase.rs):
   only 60 or 62 bits; doubling the beginnings or the endings instead would leave the 3-word layouts at 63.
 - Why 10 tokens: 9 reach 64 bits only with all 256 beginning candidates (rare word starts), 64 endings and a
   layout code of 2-4 bits; 11 make phrases about 2 letters longer (25.0 against 23.1 on average).
-- Each middle/ending row depends on the previous token (its context).
+- Each middle/ending row depends on the previous token (its context). Rows 0-127 follow the 128 beginnings in
+  table order, rows 128-639 the 512 middles; the beginning candidates that weren't chosen get no row.
 
 Table rules:
 - The corpus is a word list from 153 languages (training-data/phrase-words.txt.xz, made by
@@ -183,20 +184,23 @@ def segment(word, begin_ids, middle_ids, end_ids, frequency):
     return None if result is None else list(result[2])
 
 
-def count_transitions(words, tokens):
+def splitter(tokens):
+    """word -> its token ids (a beginning, middles, an ending), or None; the game splits words the same way."""
     begin_ids = {text_of(t): i for i, t in enumerate(tokens[:NUM_BEGIN])}
     end_ids = {text_of(t): NUM_BEGIN + i for i, t in enumerate(tokens[NUM_BEGIN:NUM_BEGIN + NUM_END])}
     middle_ids = {t: NUM_BEGIN + NUM_END + i for i, t in enumerate(tokens[NUM_BEGIN + NUM_END:])}
     # Tie-break between equally short splits: prefer pieces ranked higher in their vocabulary block
     # (blocks are sorted by corpus count), using rank as a stand-in for frequency.
     frequency = {i: 1024 - i % 512 for i in range(1024)}
+    return lambda word: segment(word, begin_ids, middle_ids, end_ids, frequency) if len(word) >= 2 * MIN_TOKEN else None
+
+
+def count_transitions(words, tokens):
+    split = splitter(tokens)
     begin, middle, ending = Counter(), defaultdict(Counter), defaultdict(Counter)
     segmented = skipped = 0
-    cache = {}
-    for word in words:
-        if word not in cache:
-            cache[word] = segment(word, begin_ids, middle_ids, end_ids, frequency) if len(word) >= 2 * MIN_TOKEN else None
-        ids = cache[word]
+    for word in words:  # corpus words are distinct, so each is split once
+        ids = split(word)
         if ids is None:
             skipped += 1
             continue
@@ -209,26 +213,18 @@ def count_transitions(words, tokens):
 
 # ---------------------------------------------------------------- table selection
 
-def context(token):
-    return token if token < 256 else token - 256
+def contexts(begin):
+    """The token each row follows: the chosen beginnings in table order, then every middle."""
+    return begin + list(range(NUM_BEGIN + NUM_END, 1024))
 
 
-CONTEXTS = list(range(256)) + list(range(512, 1024))  # beginnings and middles can be followed by a token
+def context(model, token):
+    """The row that follows a token (a chosen beginning or a middle)."""
+    return model["begin"].index(token) if token < NUM_BEGIN else BEGIN_SIZE + token - NUM_BEGIN - NUM_END
 
 
 def conflicts(a, b):
     return a.startswith(b) or b.startswith(a)
-
-
-def choose_prefix_free(candidates, size):
-    """Greedy: highest (local, global) weight first, skipping any token that is a prefix of a chosen one or vice versa."""
-    chosen = []
-    for text, _ in sorted(candidates.items(), key=lambda item: (-item[1][0], -item[1][1], item[0])):
-        if all(not conflicts(text, other) for other in chosen):
-            chosen.append(text)
-            if len(chosen) == size:
-                return chosen
-    raise ValueError("not enough prefix-free tokens")
 
 
 VOWELS = set("aeiouy")
@@ -267,7 +263,7 @@ def has_vowel(text):
 
 
 def choose_row(previous_text, local_middle, local_end, global_middle, global_end, middle_pool, end_pool, trigrams,
-               needs_vowel=False):
+               text, needs_vowel=False):
     """MIDDLE_SIZE middles + END_SIZE endings, prefix-free together, each joining plausibly to the previous token.
 
     Attested tokens first (by local count, either kind); then filler endings, then filler middles.
@@ -277,8 +273,8 @@ def choose_row(previous_text, local_middle, local_end, global_middle, global_end
     until both rows fill.
     """
     def allowed(token):
-        return (joins_well(previous_text, TEXT[token], trigrams) and triple_free(previous_text, TEXT[token])
-                and (has_vowel(TEXT[token]) or not needs_vowel))
+        return (joins_well(previous_text, text[token], trigrams) and triple_free(previous_text, text[token])
+                and (has_vowel(text[token]) or not needs_vowel))
 
     middles = [(local_middle.get(t, 0), global_middle[t], "m", t) for t in middle_pool if allowed(t)]
     endings = [(local_end.get(t, 0), global_end[t], "e", t) for t in end_pool if allowed(t)]
@@ -294,7 +290,7 @@ def choose_row(previous_text, local_middle, local_end, global_middle, global_end
         for _, _, kind, token in sorted(middles + endings, key=order):
             if len(rows[kind]) == limits[kind]:
                 continue
-            piece = TEXT[token]
+            piece = text[token]
             if any(conflicts(piece, other) for other in chosen_texts):
                 continue
             rows[kind].append(token)
@@ -302,9 +298,6 @@ def choose_row(previous_text, local_middle, local_end, global_middle, global_end
             if len(rows["m"]) == MIDDLE_SIZE and len(rows["e"]) == END_SIZE:
                 return rows["m"], rows["e"]
     raise ValueError(f"row too small after {previous_text!r}")
-
-
-TEXT = []
 
 
 class Terms:
@@ -391,7 +384,7 @@ def violations(model, terms, causes=None):
             continue
         seen.add(item)
         token, state, middles = item
-        row = context(token)
+        row = context(model, token)
         for ending in model["end32"][row]:
             if terms.feed(state, text[ending])[1]:
                 found.add((token, ending))
@@ -433,12 +426,12 @@ def stale_bans(model, terms, banned):
                 continue
             after, hit = terms.feed(state, text[banned_token])
             if not hit and banned_token >= NUM_BEGIN + NUM_END and middles < MAX_WORD - 2:
-                row = context(banned_token)
+                row = context(model, banned_token)
                 hit = any(terms.feed(after, text[t])[1] for t in model["middle"][row] + model["end32"][row])
             if hit:
                 needed.add((token, banned_token))
         if middles < MAX_WORD - 2:
-            for middle in model["middle"][context(token)]:
+            for middle in model["middle"][context(model, token)]:
                 following, hit = terms.feed(state, text[middle])
                 if not hit:
                     stack.append((middle, following, middles + 1))
@@ -446,12 +439,11 @@ def stale_bans(model, terms, banned):
 
 
 def compile_model(max_rounds=100):
-    global TEXT
     words = corpus_words()
     start_terms, anywhere_terms = blocklist()
     tokens = build_vocabulary(words, start_terms, anywhere_terms)
-    TEXT = [text_of(t) for t in tokens]
-    assert all(len(t) >= MIN_TOKEN for t in TEXT)
+    text = [text_of(t) for t in tokens]
+    assert all(len(t) >= MIN_TOKEN for t in text)
     counts = count_transitions(words, tokens)
     seen = trigram_counts(words)
     trigrams = {minimum: letter_trigrams(words, minimum, seen) for minimum in range(1, MIN_TRIGRAM_WORDS + 1)}
@@ -462,16 +454,15 @@ def compile_model(max_rounds=100):
         global_middle.update(row)
     for row in counts["end"].values():
         global_end.update(row)
-    begin_candidates = {TEXT[i]: (counts["begin"].get(i, 0), 0) for i in range(NUM_BEGIN)}
-    begin_texts = choose_prefix_free(begin_candidates, BEGIN_SIZE)
-    begin_index = {TEXT[i]: i for i in range(NUM_BEGIN)}
-    begin = [begin_index[t] for t in begin_texts]
+    # The candidates are already prefix-free (build_vocabulary), so the most common ones are the beginnings.
+    begin = sorted(range(NUM_BEGIN), key=lambda i: (-counts["begin"].get(i, 0), text[i]))[:BEGIN_SIZE]
+    rows = contexts(begin)
 
     def direct_ban(ctx, token):
         """The previous token and this one already spell a term (the walk finds longer spans)."""
-        return terms.feed(terms.feed(0, "^")[0] if ctx < NUM_BEGIN else 0, TEXT[ctx] + TEXT[token])[1]
+        return terms.feed(terms.feed(0, "^")[0] if ctx < NUM_BEGIN else 0, text[ctx] + text[token])[1]
 
-    banned = {ctx: {t for t in range(NUM_BEGIN, 1024) if direct_ban(ctx, t)} for ctx in CONTEXTS}
+    banned = {ctx: {t for t in range(NUM_BEGIN, 1024) if direct_ban(ctx, t)} for ctx in rows}
 
     families = defaultdict(set)  # context -> parts of terms before it that already got a token banned after it
     lifted = None  # the stale bans lifted once the walk first finds nothing
@@ -479,17 +470,17 @@ def compile_model(max_rounds=100):
     rounds = []
     for _ in range(max_rounds):
         middle, end32, relaxed = [], [], {}
-        for ctx in CONTEXTS:
+        for ctx in rows:
             local_middle = counts["middle"].get(ctx, Counter())
             local_end = counts["end"].get(ctx, Counter())
             # Every word needs a vowel: words have 2+ tokens, so a beginning without one must be followed by one.
-            needs_vowel = ctx < NUM_BEGIN and not has_vowel(TEXT[ctx])
+            needs_vowel = ctx < NUM_BEGIN and not has_vowel(text[ctx])
             middle_pool = [t for t in range(512, 1024) if t not in banned[ctx] and t not in unreachable]
             end_pool = [t for t in range(256, 512) if t not in banned[ctx]]
             for minimum in range(MIN_TRIGRAM_WORDS, 0, -1):
                 try:
-                    m, e = choose_row(TEXT[ctx], local_middle, local_end, global_middle, global_end,
-                                           middle_pool, end_pool, trigrams[minimum], needs_vowel)
+                    m, e = choose_row(text[ctx], local_middle, local_end, global_middle, global_end,
+                                      middle_pool, end_pool, trigrams[minimum], text, needs_vowel)
                     break
                 except ValueError:
                     if minimum == 1:
@@ -498,7 +489,7 @@ def compile_model(max_rounds=100):
                 relaxed[str(ctx)] = minimum
             middle.append(m)
             end32.append(e)
-        model = {"version": VERSION, "tokens": tokens, "contexts": CONTEXTS, "begin": begin,
+        model = {"version": VERSION, "tokens": tokens, "contexts": rows, "begin": begin,
                  "middle": middle, "end32": end32, "relaxed": relaxed}
         causes = defaultdict(set)
         found = violations(model, terms, causes)
@@ -544,6 +535,8 @@ def compile_model(max_rounds=100):
 
 
 def validate(model):
+    if not __debug__:
+        raise RuntimeError("validate() is all asserts: run it without -O")
     text = [text_of(t) for t in model["tokens"]]
     seen = trigram_counts(corpus_words())
     trigrams = {minimum: letter_trigrams(None, minimum, seen) for minimum in range(1, MIN_TRIGRAM_WORDS + 1)}
@@ -553,24 +546,26 @@ def validate(model):
     assert len(begin) == BEGIN_SIZE and all(i < 256 for i in model["begin"])
     assert all(not conflicts(a, b) for a, b in itertools.combinations(begin, 2)), "beginnings must be prefix-free"
     assert all(triple_free("", b) for b in begin), "a beginning has three in a row"
-    for index in range(len(CONTEXTS)):
+    assert model["contexts"] == contexts(model["begin"]), "rows must follow the beginnings, then the middles"
+    assert len(model["middle"]) == len(model["end32"]) == len(model["contexts"])
+    for index, ctx in enumerate(model["contexts"]):
         m, e = model["middle"][index], model["end32"][index]
         assert len(m) == MIDDLE_SIZE and all(512 <= i < 1024 for i in m)
         assert len(e) == END_SIZE and all(256 <= i < 512 for i in e)
         union = [text[i] for i in m + e]
         assert all(not conflicts(a, b) for a, b in itertools.combinations(union, 2)), f"context {index} not prefix-free"
-        previous = text[CONTEXTS[index]]
-        minimum = model["relaxed"].get(str(CONTEXTS[index]), MIN_TRIGRAM_WORDS)
+        previous = text[ctx]
+        minimum = model["relaxed"].get(str(ctx), MIN_TRIGRAM_WORDS)
         assert all(joins_well(previous, piece, trigrams[minimum]) for piece in union), f"context {index} has an implausible join"
         assert all(triple_free(previous, piece) for piece in union), f"context {index}: three in a row"
         assert not {str(t) for t in model["middle"][index]} & model["relaxed"].keys(), f"context {index} offers a relaxed middle"
-        if CONTEXTS[index] < NUM_BEGIN and not has_vowel(previous):
+        if ctx < NUM_BEGIN and not has_vowel(previous):
             assert all(has_vowel(piece) for piece in union), f"beginning {previous!r} allows a word with no vowel"
     assert not {str(t) for t in model["begin"]} & model["relaxed"].keys(), "a chosen beginning has a relaxed row"
     found = violations(model, Terms(*blocklist()))
     assert not found, f"{len(found)} places still spell an offensive word, e.g. {sorted(found)[:3]}"
     for ctx, tokens in model.get("banned", {}).items():
-        row = context(int(ctx))
+        row = context(model, int(ctx))
         assert not set(tokens) & set(model["middle"][row] + model["end32"][row]), f"context {ctx} uses a banned token"
 
 
@@ -580,7 +575,7 @@ def report(model, counts):
              "skipped_words": counts["skipped"]}
     for label, kind in (("middle", "middle"), ("end32", "end")):
         attested = total = 0
-        for index, ctx in enumerate(CONTEXTS):
+        for index, ctx in enumerate(model["contexts"]):
             local = counts[kind].get(ctx, {})
             row = model[label][index]
             attested += sum(1 for t in row if t in local)
@@ -619,10 +614,10 @@ def encode(model, value):
         value //= BEGIN_SIZE
         word = text[token]
         for _ in range(length - 2):
-            token = model["middle"][context(token)][value % MIDDLE_SIZE]
+            token = model["middle"][context(model, token)][value % MIDDLE_SIZE]
             value //= MIDDLE_SIZE
             word += text[token]
-        token = model["end32"][context(token)][value % END_SIZE]
+        token = model["end32"][context(model, token)][value % END_SIZE]
         value //= END_SIZE
         words.append(word + text[token])
     assert value == 0
@@ -652,8 +647,9 @@ def rust_source(model):
     out = "// Generated by models/compile_phrase.py; do not edit.\n#![allow(clippy::unreadable_literal)]\n"
     out += "#[rustfmt::skip]\npub static TOKENS: [&str; 1024] = " + json.dumps(model["tokens"]) + ";\n"
     out += f"#[rustfmt::skip]\npub static BEGIN: [u16; {BEGIN_SIZE}] = " + json.dumps(model["begin"]) + ";\n"
-    out += f"#[rustfmt::skip]\npub static MIDDLE: [[u16; {MIDDLE_SIZE}]; 768] = " + json.dumps(model["middle"]) + ";\n"
-    out += f"#[rustfmt::skip]\npub static END32: [[u16; {END_SIZE}]; 768] = " + json.dumps(model["end32"]) + ";\n"
+    rows = len(model["contexts"])
+    out += f"#[rustfmt::skip]\npub static MIDDLE: [[u16; {MIDDLE_SIZE}]; {rows}] = " + json.dumps(model["middle"]) + ";\n"
+    out += f"#[rustfmt::skip]\npub static END32: [[u16; {END_SIZE}]; {rows}] = " + json.dumps(model["end32"]) + ";\n"
     return out
 
 

@@ -65,7 +65,7 @@ def follow_groups(model, previous, kind):
     text = [phrase.text_of(t) for t in model["tokens"]]
     minimum = model["relaxed"].get(str(previous), phrase.MIN_TRIGRAM_WORDS)
     trigrams = phrase.letter_trigrams(phrase.corpus_words(), minimum)
-    row = phrase.context(previous)
+    row = phrase.context(model, previous)
     middles, endings = model["middle"][row], model["end32"][row]
     listed = middles if kind == "c" else endings
     banned = set(model["banned"].get(str(previous), []))
@@ -139,10 +139,7 @@ class Origins:
                 self.original[language[code]] = entries
         assert not any("\ue000" <= ch <= "\uf8ff" for entries in self.original.values() for word in entries.values()
                        for ch in word), "an original spelling has private-use characters"
-        begin_ids = {text[i]: i for i in range(phrase.NUM_BEGIN)}
-        end_ids = {text[i]: i for i in range(phrase.NUM_BEGIN, phrase.NUM_BEGIN + phrase.NUM_END)}
-        middle_ids = {text[i]: i for i in range(phrase.NUM_BEGIN + phrase.NUM_END, 1024)}
-        frequency = {i: 1024 - i % 512 for i in range(1024)}  # the compiler's tie-break
+        splitter = phrase.splitter(model["tokens"])
         split = {}
         self.has = defaultdict(set)  # word -> indices of the languages whose lists have it
         self.seen = defaultdict(dict)  # key -> language index -> [words, example, rank]
@@ -150,8 +147,7 @@ class Origins:
             for rank, word in enumerate(words):
                 self.has[word].add(language[code])
                 if word not in split:
-                    split[word] = (phrase.segment(word, begin_ids, middle_ids, end_ids, frequency)
-                                   if len(word) >= 2 * phrase.MIN_TOKEN else None)
+                    split[word] = splitter(word)
                 ids = split[word]
                 if not ids:
                     continue
@@ -257,7 +253,7 @@ def ban_reasons(model, text):
                 # A ban at the join before a middle (bi+ch, when bi+ch+a... spells "bicha"): the term completes in
                 # a token of the middle's own row.
                 after = machine.feed(state, text[following])[0]
-                row = phrase.context(following)
+                row = phrase.context(model, following)
                 for next_token in model["middle"][row] + model["end32"][row]:
                     if machine.feed(after, text[next_token])[1]:
                         known[(token, following)] = term_in(spelled + text[following] + text[next_token],
@@ -265,7 +261,7 @@ def ban_reasons(model, text):
                         wanted[token].discard(following)
                         break
         if middles < phrase.MAX_WORD - 2:
-            for middle in model["middle"][phrase.context(token)]:
+            for middle in model["middle"][phrase.context(model, token)]:
                 state_after, hit = machine.feed(state, text[middle])
                 if not hit:
                     stack.append((middle, state_after, middles + 1, spelled + text[middle]))
@@ -297,17 +293,15 @@ def main():
     model = json.loads(MODEL.read_text())
     phrase.validate(model)
     text = [phrase.text_of(t) for t in model["tokens"]]
-    phrase.TEXT = text
     page, last = beginning_page(model, text)
     origins = Origins(model, text)
     begin_origin = {t: origins.pack(("begin", t)) for t in model["begin"]}
     follow_origin = {}
-    for ctx in model["begin"] + list(range(phrase.NUM_BEGIN + phrase.NUM_END, 1024)):
-        row = phrase.context(ctx)
+    for row, ctx in enumerate(model["contexts"]):
         follow_origin[ctx] = " ".join(origins.pack((ctx, t)) for t in model["middle"][row] + model["end32"][row])
     token_origin = {t: origins.pack(("token", t)) for t in range(phrase.NUM_BEGIN, 1024)}
     for ctx, packed in follow_origin.items():  # sanity: every example word has the previous token, then this one
-        row = phrase.context(ctx)
+        row = phrase.context(model, ctx)
         for t, entry in zip(model["middle"][row] + model["end32"][row], packed.split(" ")):
             for group in entry.split("|")[1:2]:
                 word = origins.folds[int(group.split(":")[0], 36)]
