@@ -59,7 +59,7 @@ def clash_example(model, text, words):
 def follow_groups(model, previous, kind):
     """The token page after `previous` (a token id), as the game sorts it: picked ids and each reason's ids.
 
-    The same rules in the same order as the game page (and the compiler): on the list, banned after this token, no vowel, a letter three times in a row, letters that don't
+    The same rules in the same order as the game page (and the compiler): on the list, banned after this token, no vowel, a letter or three vowels in a row, letters that don't
     fit (at this context's minimum), a clash, less common.
     """
     text = [phrase.text_of(t) for t in model["tokens"]]

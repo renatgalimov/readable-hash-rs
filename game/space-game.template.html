@@ -165,7 +165,7 @@ const REASONS = {
   less: { color: "#bf9a5a", name: "less common here", key: "less common here" },
   join: { color: "#4f9a94", name: "letters don’t fit", key: "letters don’t fit together" },
   vowel: { color: "#c0708a", name: "no vowel", key: "no vowel" },
-  triple: { color: "#5b7fa6", name: "three in a row", key: "same letter three times in a row" },
+  triple: { color: "#5b7fa6", name: "three in a row", key: "same letter or three vowels in a row" },
 };
 const pale = (color) => `color-mix(in srgb, ${color} 55%, white)`;
 
@@ -352,8 +352,8 @@ function badJoin(previous, token, minimum) {
   }
   return null;
 }
-// The run of one letter three times across the join, if any ("sss" in ss + sa).
-const tripleRun = (previous, token) => ((previous.slice(-2) + token).match(/(.)\1\1/) || [null])[0];
+// The run of one letter, or of three vowels, across the join, if any ("sss" in ss + sa, "iai" in ai + ia).
+const tripleRun = (previous, token) => ((previous.slice(-2) + token).match(/(.)\1\1|[aeiou]{3}/) || [null])[0];
 const binary = (index, width) => index.toString(2).padStart(width, "0");
 
 // ---- Where a token comes from, and why a banned one is out. ----
@@ -552,7 +552,7 @@ function followPage(slot, previous) {
       + `If there aren’t enough, the list is topped up with the most common ${roles} overall. `
       + `A ${role} is out if a word could then contain an offensive word, `
       + `${needsVowel ? `if it has no vowel (${prev} has none, and every word needs one), ` : ""}`
-      + `${groups.triple.length ? "if the same letter would appear three times in a row, " : ""}`
+      + `${groups.triple.length ? "if the same letter, or three vowels, would appear in a row, " : ""}`
       + `if its letters don’t fit after ${prev}, or if it clashes with a middle or ending already on ${prev}’s lists. `
       + `${relaxed ? `Few letters can follow ${prev}, so here letters fit if they are in at least ${plural(minimum, "word")} of the list, not ${MIN_TRIGRAM_WORDS}. ` : ""}`
       + `The rest didn’t make the list.`
@@ -567,9 +567,9 @@ function followPage(slot, previous) {
       { reason: "vowel", items: groups.vowel, title: `No vowel: ${plural(groups.vowel.length, "token")}`,
         why: `${prev} has no vowel, so the next token must have one, or the word would have none`,
         chip: () => "", tip: (e) => `no vowel: ${prev}${e.t} would have none` },
-      { reason: "triple", items: groups.triple, title: `Same letter three times: ${plural(groups.triple.length, "token")}`,
-        why: `after ${prev}, the same letter would appear three times in a row`,
-        chip: (e) => e.run, tip: (e) => `same letter three times: ${prev}${e.t} has “${e.run}”` },
+      { reason: "triple", items: groups.triple, title: `Three in a row: ${plural(groups.triple.length, "token")}`,
+        why: `after ${prev}, the same letter or three vowels would appear in a row (no word is all vowels)`,
+        chip: (e) => e.run, tip: (e) => `three in a row: ${prev}${e.t} has “${e.run}”` },
       { reason: "join", items: groups.join, title: `Letters don’t fit together: ${plural(groups.join.length, "token")}`,
         why: joinExample ? `some 3 letters across the join, like “${joinExample.bad}” in ${prev}${joinExample.t}, are in fewer than ${plural(minimum, "word")} of the list` : "",
         chip: (e) => e.bad, tip: (e) => `letters don’t fit together: “${e.bad}” is in fewer than ${plural(minimum, "word")} of the list` },

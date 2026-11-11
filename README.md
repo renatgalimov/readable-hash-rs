@@ -52,7 +52,7 @@ use readable_hash::{decode_u64, encode_u64};
 
 fn main() {
     let phrase = encode_u64(0x243f6a8885a308d3);
-    assert_eq!(phrase, "sain aralin suus umadde");
+    assert_eq!(phrase, "sain aralin suit umadde");
     assert_eq!(decode_u64(&phrase), Some(0x243f6a8885a308d3));
 }
 ```
@@ -77,6 +77,8 @@ the spaces, from the letters alone.
 - Every value has exactly one phrase, and `decode_u64` accepts only that phrase (lowercase, single
   spaces). Anything else returns `None`.
 - It is an encoding, not a hash or encryption: anyone can decode it.
+- No word has three vowels in a row (`aaee`, `oieieiaa`) or the same letter three times, so no word is
+  all vowels. The compiler and `validate()` check every pair of neighbouring tokens.
 - No word in any phrase contains an offensive word from the offensive-word lists of 61
   languages: no listed term of 5+ letters anywhere in a word, and no listed 4-letter term at the start
   of one. The compiler proves this by walking every word the tables can produce. The lists are not

@@ -33,8 +33,11 @@ Table rules:
   minimum. The rule is never dropped. Such rows are made unreachable: a middle whose own row needs a lower
   minimum is never offered after any token (with "ss" reachable, 9 % of phrases had words like "tassde").
   validate() checks that no chosen beginning and no offered middle has a relaxed row.
-- No letter appears three times in a row ("zanasssa"). Tokens have 2+ letters, so such a run always spans one
-  join, and checking each previous token + token is enough.
+- No letter appears three times in a row ("zanasssa"), and no three vowels (a, e, i, o, u) follow each other
+  ("aaee", "oieieiaa"). Before this rule, 2.3 % of words had such a vowel run and some words had no consonant at
+  all. Y doesn't count: between vowels it is read as a consonant (maya, ayudar), and counting it would rule out
+  5.2 % of corpus words instead of 1.3 %. Tokens have 2+ letters, so either run always spans at most one join,
+  and checking each previous token + token is enough.
 - Every word has a vowel (a, e, i, o, u or y): after a beginning without one, every middle and ending
   has one. Words have at least 2 tokens, so that is enough.
 - No word the tables can produce contains an offensive word from any language's list
@@ -245,8 +248,8 @@ def letter_trigrams(words, minimum=None, counts=None):
 
 
 def triple_free(previous_text, token_text):
-    """No letter three times in a row across the join (or inside the token)."""
-    return not re.search(r"(.)\1\1", previous_text[-2:] + token_text)
+    """No letter three times in a row, and no three vowels in a row, across the join (or inside the token)."""
+    return not re.search(r"(.)\1\1|[aeiou]{3}", previous_text[-2:] + token_text)
 
 
 def joins_well(previous_text, token_text, trigrams):
@@ -549,6 +552,7 @@ def validate(model):
     begin = [text[i] for i in model["begin"]]
     assert len(begin) == BEGIN_SIZE and all(i < 256 for i in model["begin"])
     assert all(not conflicts(a, b) for a, b in itertools.combinations(begin, 2)), "beginnings must be prefix-free"
+    assert all(triple_free("", b) for b in begin), "a beginning has three in a row"
     for index in range(len(CONTEXTS)):
         m, e = model["middle"][index], model["end32"][index]
         assert len(m) == MIDDLE_SIZE and all(512 <= i < 1024 for i in m)
@@ -558,7 +562,7 @@ def validate(model):
         previous = text[CONTEXTS[index]]
         minimum = model["relaxed"].get(str(CONTEXTS[index]), MIN_TRIGRAM_WORDS)
         assert all(joins_well(previous, piece, trigrams[minimum]) for piece in union), f"context {index} has an implausible join"
-        assert all(triple_free(previous, piece) for piece in union), f"context {index}: a letter three times in a row"
+        assert all(triple_free(previous, piece) for piece in union), f"context {index}: three in a row"
         assert not {str(t) for t in model["middle"][index]} & model["relaxed"].keys(), f"context {index} offers a relaxed middle"
         if CONTEXTS[index] < NUM_BEGIN and not has_vowel(previous):
             assert all(has_vowel(piece) for piece in union), f"beginning {previous!r} allows a word with no vowel"
