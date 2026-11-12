@@ -17,9 +17,9 @@ Format (see src/phrase.rs):
 
 Table rules:
 - The corpus is a word list from 153 languages (training-data/phrase-words.txt.xz, made by
-  phrase-corpus/build_corpus.py): each language that isn't consonant-heavy contributes its 2,500 most frequent
-  words, and so do hand-picked ones (English, German, Old English, Old Norse, Old High German, Zulu, Xhosa, constructed
-  languages).
+  phrase-corpus/build_corpus.py): each language that isn't consonant-heavy contributes 2,500 words (its most
+  frequent in text, then dictionary forms where text has too few), and so do hand-picked ones (English, German,
+  Old English, Old Norse, Old High German, Zulu, Xhosa, constructed languages).
 - No token is shorter than 2 letters. The corpus is re-tokenized with a vocabulary of 2+ letter pieces.
 - The 256 beginning candidates are prefix-free: the most common word starts, skipping any that starts another
   one already taken. (In many languages the most common starts chain, like co/con/cont.)
@@ -27,8 +27,8 @@ Table rules:
   most one token matches the letters, and the decoder finds where a word ends without knowing its
   length. Rows that are prefix-free only separately would be ambiguous (ab+ou+s = ab+ous).
 - Every token in a row joins plausibly to its context: each 3-letter sequence across the join occurs in
-  some corpus word. This keeps fillers (tokens never seen after the context) from making words like
-  bl+ness.
+  at least MIN_TRIGRAM_WORDS (5) corpus words. This keeps fillers (tokens never seen after the context) from
+  making words like bl+ness.
   A row that can't be filled this way (few letters can follow some pairs, like "ss" or "oq") lowers the
   minimum one word at a time (4, 3, 2, 1) until it fills; the model's "relaxed" lists those contexts with their
   minimum. The rule is never dropped. Such rows are made unreachable: a middle whose own row needs a lower
@@ -228,7 +228,7 @@ def conflicts(a, b):
 
 
 VOWELS = set("aeiouy")
-MIN_TRIGRAM_WORDS = 5  # a 3-letter sequence counts as English if at least this many corpus words contain it
+MIN_TRIGRAM_WORDS = 5  # a 3-letter sequence is plausible if at least this many corpus words contain it
 
 
 def trigram_counts(words):
@@ -249,10 +249,14 @@ def triple_free(previous_text, token_text):
 
 
 def joins_well(previous_text, token_text, trigrams):
-    """Every 3-letter sequence across the join must occur in some corpus word (rules out bl+ness: "bln").
+    """Every 3-letter sequence across the join must be in `trigrams` (rules out bl+ness: "bln").
+
+    `trigrams` holds the sequences found in at least MIN_TRIGRAM_WORDS corpus words (letter_trigrams), so a join
+    seen in only one word fails: one odd word like "bitblt" isn't enough.
 
     Tokens are 2+ letters, so the last 2 letters before the join and the first 2 after it cover every
-    sequence that crosses it. A token seen after this context in the corpus always passes.
+    sequence that crosses it. A token seen after this context in the corpus can still fail, if too few words
+    have its join.
     """
     joined = previous_text[-2:] + token_text[:2]
     return all(joined[i:i + 3] in trigrams for i in range(len(joined) - 2))

@@ -17,7 +17,7 @@ original differs from the folded form. Its first line, `*<TAB>ö=o ß=ss ı=i ..
 use, so the game can mark a token's letters inside the original spelling (folding letter by letter gives the
 folded word; this is checked).
 
-    .venv/bin/python models/phrase-corpus/originals.py     # after build_corpus.py; reads ~/data/phrase-langs/raw
+    ~/data/phrase-langs/.venv/bin/python models/phrase-corpus/originals.py     # after build_corpus.py; reads ~/data/phrase-langs/raw
 """
 import collections
 import json

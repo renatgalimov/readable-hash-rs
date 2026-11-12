@@ -3,13 +3,15 @@
 
 For each language (normalized code, e.g. "zu"), words/<code>.tsv.xz holds `word<TAB>count<TAB>in_dictionary`:
 - count sums real-text frequencies (OpenSubtitles lists, Leipzig word lists, words in Tatoeba sentences);
-- in_dictionary is 1 if a dictionary source (UniMorph forms, Wiktionary/kaikki entries and forms) has the word.
+- in_dictionary is 1 if a dictionary source (UniMorph forms, Wiktionary/kaikki entries and forms, Eldamo) has
+  the word.
 Words are transliterated to ASCII with anyascii (Привет -> privet, çğış -> cgis), lowercased, and kept only if
 they are 2+ letters a-z. words/languages.json summarizes each language: name, sources, word counts and how much of
 it was originally Latin script.
 
-    .venv/bin/python normalize.py            # all sources found under raw/
-    .venv/bin/python normalize.py --only tatoeba,eldamo   # re-read some sources; merge into the existing words/
+    ~/data/phrase-langs/.venv/bin/python models/phrase-corpus/normalize.py   # all sources found under raw/
+    # re-read some sources and merge them into the existing words/:
+    ~/data/phrase-langs/.venv/bin/python models/phrase-corpus/normalize.py --only tatoeba,eldamo
 
 Most languages need 2,000+ words to be written; constructed languages (CONSTRUCTED) are kept from 20 words, so
 small ones from books (Láadan, Tolkien's Khuzdul) still reach the word list.

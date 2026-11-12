@@ -2,14 +2,18 @@
 
 The phrase tables (`models/compile_phrase.py`) are built from two files in `models/training-data/`:
 
-- **`phrase-words.txt.xz`**: 269,509 words, up to 2,500 of the most common words of 4+ letters from each of
-  153 languages. A language is left out if more than 10 % of its common words have three or more consonants in
-  a row, or if it has fewer than 2,500 such words. Some are always in, whatever their size or consonants:
-  Zulu and Xhosa (the languages of *ubuntu*); English (13.7 %), German (27.9 %), Old English, Old Norse and Old High German;
-  and every
-  constructed language we have words for (29), from Esperanto, Toki Pona and Klingon to Tolkien's Quenya,
-  Sindarin and his smaller languages. `phrase-words.json` lists the languages, their measurements and
-  sources, and every language that was left out and why.
+- **`phrase-words.txt.xz`**: 269,509 words: up to 2,500 words of 4+ letters from each of 153 languages.
+  A language's words seen most often in text come first. Where text gives fewer than 2,500, dictionary
+  forms (Wiktionary, UniMorph, Eldamo) fill the rest, in a fixed pseudo-random order. 53 languages need
+  them, and for 51 they are most of the list (Old English, Old Norse, Quenya, ...); 32 have only
+  dictionary forms (Old High German, Proto-Slavic, Tolkien's smaller languages, ...). Overall 29 % of the
+  words taken are dictionary forms.
+  A language is left out if more than 10 % of its first 5,000 words in that order have three or more
+  consonants in a row, or if it has fewer than 2,500 words. Some are always in, whatever their size or
+  consonants: Zulu and Xhosa (the languages of *ubuntu*); English (13.7 %), German (27.9 %), Old English,
+  Old Norse and Old High German; and every constructed language we have words for (29), from Esperanto,
+  Toki Pona and Klingon to Tolkien's Quenya, Sindarin and his smaller languages. `phrase-words.json` lists
+  the languages, their measurements and sources, and every language that was left out and why.
 - **`phrase-languages.txt.xz`**: the same words by language, most common first. Only the explainer game
   (`game/`) uses it, to show which languages a token comes from.
 - **`phrase-originals.txt.xz`**: how each language writes those words, where that differs from the a–z form
@@ -61,8 +65,26 @@ committed files are what the tables are built from.
 | [Wiktionary via kaikki.org](https://kaikki.org/) | dictionary words | CC BY-SA 4.0 / GFDL |
 | [Eldamo](https://eldamo.org/) (Paul Strack) | Tolkien's languages: Quenya, Sindarin and 10 smaller ones (words, their inflections, and the words of attested phrases such as the Ring inscription) | CC BY 4.0 |
 | [LDNOOBW](https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words) | offensive words, 28 languages | CC BY 4.0 |
-| [washyourmouthoutwithsoap](https://github.com/thisandagain/washyourmouthoutwithsoap) | offensive words, 54 languages | CC BY 4.0 |
+| [washyourmouthoutwithsoap](https://github.com/thisandagain/washyourmouthoutwithsoap) | offensive words, 54 languages | MIT |
 | [dsojevic/profanity-list](https://github.com/dsojevic/profanity-list) | English offensive words with severity | MIT |
+
+`blocklist.txt.xz` contains terms from the two MIT-licensed lists, so it comes with their notices:
+
+- washyourmouthoutwithsoap: Copyright (c) 2018 Andrew Sliwinski.
+- dsojevic/profanity-list: Copyright (c) 2021 David Sojevic.
+
+> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+> documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
+> rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+> permit persons to whom the Software is furnished to do so, subject to the following conditions:
+>
+> The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+> Software.
+>
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+> WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+> COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+> OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 `language-wikipedia.json` maps each language code the game names to its English Wikipedia article, for links.
 `language_wikipedia.py` builds it from Wikidata's ISO 639 codes (`vro` is set by hand: Wikidata also gives the wider

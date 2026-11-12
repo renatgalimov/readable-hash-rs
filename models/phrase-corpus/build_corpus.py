@@ -5,13 +5,14 @@ Reads the per-language word lists made by normalize.py (~/data/phrase-langs/word
 and writes, under models/training-data/:
 
 - phrase-words.txt.xz: the words the phrase tables are built from. Every language with at least
-  WORDS_PER_LANGUAGE words of 4+ letters that isn't consonant-heavy contributes its WORDS_PER_LANGUAGE most frequent
-  ones, so each language counts equally. A language is consonant-heavy if more than MAX_CONSONANT_RUNS percent of its
-  common words have three or more consonants in a row. The languages in ALWAYS are in whatever their size or
-  consonants (chosen by hand: Zulu and Xhosa for "ubuntu"; English, German, Old English, Old Norse and Old High German
-  (10.1 % with its Wiktionary words, just over the limit); every constructed
-  language we have words for, from Esperanto to Tolkien's Quenya and Klingon). For those, words seen once count too:
-  Tatoeba's sentences are curated, and many constructed languages have little other text.
+  WORDS_PER_LANGUAGE words of 4+ letters that isn't consonant-heavy contributes its first WORDS_PER_LANGUAGE in
+  ranked_words() order (the most frequent in text, then dictionary forms), so each language counts equally. A
+  language is consonant-heavy if more than MAX_CONSONANT_RUNS percent of its first SAMPLE words have three or more
+  consonants in a row. The languages in ALWAYS are in whatever their size or consonants (chosen by hand: Zulu and
+  Xhosa for "ubuntu"; English, German, Old English, Old Norse and Old High German (10.1 % with its Wiktionary words,
+  just over the limit); every constructed language we have words for, from Esperanto to Tolkien's Quenya and
+  Klingon). For those, words seen once count too: Tatoeba's sentences are curated, and many constructed languages
+  have little other text.
 - blocklist.txt.xz: offensive words from every downloaded list, in every language, folded to a-z (`term<TAB>lists`).
   Entries from the English list with severities (dsojevic) are named `dsojevic-en-<severity 1-4>`, plus
   `dsojevic-en-racial` for racial slurs.
@@ -20,7 +21,9 @@ and writes, under models/training-data/:
 - phrase-words.json: what went in: languages, their measurements, sources and counts, plus the names of the
   languages the offensive-word lists cover (`list_languages`).
 
-    python3 models/phrase-corpus/build_corpus.py [--data ~/data/phrase-langs]
+    ~/data/phrase-langs/.venv/bin/python models/phrase-corpus/build_corpus.py [--data ~/data/phrase-langs]
+
+It needs the venv from README.md (langcodes, anyascii).
 """
 import argparse
 import hashlib
@@ -32,15 +35,15 @@ from pathlib import Path
 
 from anyascii import anyascii
 
+import normalize  # its CONSTRUCTED: one list of constructed languages for both steps
+
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "models" / "training-data"
-WORDS_PER_LANGUAGE = 2_500   # a language's most frequent words of 4+ letters that go into the mix (it needs this many)
+WORDS_PER_LANGUAGE = 2_500   # a language's first words of 4+ letters (ranked_words) in the mix; it needs this many
 UBUNTU, CHOSEN, CONSTRUCTED = "ubuntu's languages", "chosen", "constructed language"
 ALWAYS = {"zu": UBUNTU, "xh": UBUNTU, "en": CHOSEN, "de": CHOSEN, "ang": CHOSEN, "non": CHOSEN, "goh": CHOSEN,
-          **{code: CONSTRUCTED for code in ("eo io ia ie lfn jbo vo avk tlh tok bzt nov tzl afh ldn dws igs qya sjn "
-                                            "x-gnomish x-telerin x-adunaic x-ilkorin x-khuzdul x-blackspeech x-westron "
-                                            "x-rohirric x-nandorin x-valarin").split()}}
-SAMPLE = 5_000               # common words used to measure consonant runs
+          **{code: CONSTRUCTED for code in normalize.CONSTRUCTED}}
+SAMPLE = 5_000               # first words (ranked_words) used to measure consonant runs
 MAX_CONSONANT_RUNS = 10.0    # percent of common words with 3+ consonants in a row
 RUN = re.compile(r"[^aeiouy]{3,}")
 # Codes that name the same language: individual language -> its usual code.
@@ -70,7 +73,7 @@ def ranked_words(paths, min_count=2):
                     dictionary.add(word)
     counted = {word: count for word, count in counts.items() if count >= min_count}
     dictionary_only = dictionary - counted.keys()
-    shuffled = sorted(dictionary_only - counted.keys(), key=lambda w: hashlib.sha256(w.encode()).digest())
+    shuffled = sorted(dictionary_only, key=lambda w: hashlib.sha256(w.encode()).digest())
     return sorted(counted, key=lambda w: (-counted[w], w)) + shuffled
 
 

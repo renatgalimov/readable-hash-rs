@@ -7,7 +7,7 @@ A file appears under its final name only once it is complete, so normalize.py ne
 download failed, the script says which and exits with status 1: run it again before normalizing.
 A manifest (raw/manifest.jsonl) records every file: source, language, URL, bytes, status.
 
-    python3 models/phrase-corpus/fetch.py [source ...]   # sources: subtitles leipzig tatoeba unimorph profanity kaikki
+    python3 models/phrase-corpus/fetch.py [source ...]   # sources: subtitles leipzig tatoeba unimorph profanity kaikki eldamo
 """
 import json
 import lzma
