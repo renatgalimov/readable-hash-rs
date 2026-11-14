@@ -24,3 +24,6 @@ __pycache__
 fuzz/artifacts/
 fuzz/corpus/
 /models/training-data/*.txt
+# Built by game/build_space_game.py
+/game/space-game.html
+/game/space-game-origins.js

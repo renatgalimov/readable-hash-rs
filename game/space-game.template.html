@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fill 64 bits: the spaces game</title>
+<style>
+  :root {
+    --paper: #f5f5f5; --box: #ffffff; --ink: #2d3142; --muted: #4f5d75;
+    --accent: #eb6c36; --cont: #b3bac8; --end: #6c7893; --line: #c9ccd4;
+    --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--sans); background: var(--paper); color: var(--ink); padding: 24px 20px 28px; }
+  .frame { max-width: 720px; margin: 0 auto; }
+  .eyebrow { font: 500 10px var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+  .count { margin: 6px 0 12px; font: 600 22px var(--mono); font-variant-numeric: tabular-nums; }
+  .count small { font-size: 13px; font-weight: 400; color: var(--muted); }
+  .meter { display: flex; align-items: center; gap: 10px; }
+  .gauge { flex: 1; display: grid; grid-template-columns: repeat(64, 1fr); gap: 2px; }
+  .bit { aspect-ratio: 1; border: 1px solid var(--line); border-radius: 2px; background: var(--box); transition: background .25s; }
+  .bit.on { border-color: transparent; }
+  .key { display: grid; grid-template-columns: 10px repeat(4, auto) 1fr; gap: 3px 14px; align-items: center; margin-top: 10px; font: 11px var(--mono); color: var(--muted); }
+  .key i { width: 10px; height: 10px; border-radius: 2px; }
+  .key b { font-weight: 500; color: var(--ink); }
+  .key .note { grid-column: 2 / -1; }
+  .formula { margin-top: 10px; min-height: 1.5em; font: 12px var(--mono); color: var(--muted); overflow-wrap: anywhere; }
+  .phrase { display: flex; flex-wrap: wrap; align-items: center; row-gap: 8px; margin: 18px 0 4px; min-height: 40px; }
+  .word { display: flex; gap: 3px; }
+  .slot { min-width: 36px; height: 36px; padding: 0 6px; display: grid; place-items: center; border: 1.2px dashed var(--line); border-radius: 4px; font: 500 15px var(--mono); color: var(--ink); }
+  .slot.b { border-color: var(--ink); }
+  .slot.e { border-color: var(--end); }
+  .slot.unknown { color: var(--muted); }
+  .slot.preview { opacity: .55; }
+  .space { width: 26px; height: 36px; display: grid; place-items: center; color: var(--accent); font: 600 18px var(--mono); }
+  .msg { margin: 14px 0 12px; min-height: 2.8em; font-size: 14.5px; line-height: 1.45; text-wrap: pretty; }
+  .msg b { font-weight: 600; }
+  .why { margin: 0 0 12px; padding: 8px 12px; border-left: 3px solid var(--accent); background: var(--box); font-size: 13px; line-height: 1.45; color: var(--muted); text-wrap: pretty; }
+  .why b { color: var(--ink); font-weight: 600; }
+  .choices { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+  .choices button { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--box); cursor: pointer; font: 12px var(--mono); color: var(--muted); }
+  .choices button:hover, .choices button:focus-visible { border-color: var(--accent); outline: none; color: var(--ink); }
+  .choices button { text-align: left; }
+  .choices button .detail { margin-top: -4px; font-size: 11px; color: var(--muted); }
+  .choices button b.detail { font-weight: 600; color: var(--accent); }
+  .mini { display: flex; align-items: center; }
+  .mini i { width: 9px; height: 9px; border-radius: 2px; margin-right: 2px; border: 1px solid var(--cont); }
+  .mini i.b { background: var(--ink); border-color: var(--ink); }
+  .mini i.e { background: var(--end); border-color: var(--end); }
+  .actions { display: flex; gap: 8px; margin-top: 14px; }
+  .actions button { font: 13px var(--sans); padding: 7px 14px; border-radius: 6px; border: 1px solid var(--line); background: var(--box); color: var(--ink); cursor: pointer; }
+  .actions button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .actions button:disabled { opacity: .4; cursor: default; }
+  .actions button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* Token pages: pickable tokens are buttons; unavailable ones are muted chips, one colour per reason. */
+  .origin { min-height: 2.6em; margin: 8px 0 4px; font-size: 14px; color: var(--muted, #555); }
+  .origin i b { color: var(--ink); }
+  .origin a, #msg a, .chip small a { color: inherit; text-decoration: underline dotted; text-underline-offset: 2px; }
+  .origin a:hover, #msg a:hover, .chip small a:hover { color: var(--accent); }
+  .tokens { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 12px; }
+  .tokens button { min-width: 44px; padding: 5px 8px; border: 1.2px solid var(--ink); border-radius: 4px; background: var(--box); color: var(--ink); cursor: pointer; font: 500 14px var(--mono); }
+  .tokens button:hover, .tokens button:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+  .tkey { display: grid; grid-template-columns: 12px auto auto 1fr; gap: 4px 12px; align-items: center; margin: 0 0 12px; font: 11px var(--mono); color: var(--muted); }
+  .tkey i { width: 12px; height: 12px; border-radius: 3px; border: 1.2px solid var(--c); background: color-mix(in srgb, var(--c) 18%, white); }
+  .tkey b { font-weight: 500; color: var(--ink); }
+  .group { margin: 0 0 8px; border-left: 3px solid var(--c); padding: 4px 0 4px 10px; }
+  .group summary { cursor: pointer; font-size: 13px; color: var(--ink); line-height: 1.45; }
+  .group summary b { font-weight: 600; color: var(--c); filter: brightness(.75); }
+  .group .chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+  .chip { padding: 3px 6px; border: 1px solid var(--c); border-radius: 4px; background: color-mix(in srgb, var(--c) 18%, white); color: color-mix(in srgb, var(--c) 55%, var(--muted)); font: 13px var(--mono); cursor: help; }
+  .chip small { margin-left: 4px; font-size: 10px; opacity: .85; }
+  .slot.preview.text { opacity: .5; }
+  @media (max-width: 560px) { .gauge { grid-template-columns: repeat(32, 1fr); } .key { grid-template-columns: 10px repeat(4, auto); } }
+  @media (prefers-reduced-motion: reduce) { .bit { transition: none; } }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="eyebrow">Fill 64 bits</div>
+  <div class="count"><span id="count">0</span> <small>/ 64 bits</small></div>
+  <div class="meter">
+    <div class="gauge" id="gauge" role="meter" aria-label="Bits stored" aria-valuemin="0" aria-valuemax="64" aria-valuenow="0"></div>
+  </div>
+  <div class="key" id="key"></div>
+  <div class="formula" id="formula"></div>
+  <div class="phrase" id="phrase" aria-live="polite"></div>
+  <p class="msg" id="msg"></p>
+  <div id="panel"></div>
+  <div class="actions">
+    <button type="button" class="primary" id="random">Fill randomly</button>
+    <button type="button" id="undo">Undo</button>
+    <button type="button" id="reset">Start over</button>
+  </div>
+</div>
+<script src=__ORIGINS_FILE__ defer></script>
+<script>
+"use strict";
+// The real phrase tables: token texts (ids 0-255 beginnings, 256-511 endings, 512-1023 middles) and, for
+// each previous token (rows: the 128 beginnings in table order, then the 512 middles), its 64 middles and 32
+// endings, and the tokens left out after it because a word could then contain an offensive word.
+const TABLE_TOKENS = __TABLE_TOKENS__;
+const TABLE_MIDDLE = __TABLE_MIDDLE__;
+const TABLE_END32 = __TABLE_END32__;
+const TABLE_BANNED = __TABLE_BANNED__;
+const LANGUAGES = __LANGUAGES__;  // the word list is the common words of this many languages
+// Where tokens come from (see Origins in build_space_game.py) arrives in a separate deferred script, which sets
+// window.SPACE_GAME_ORIGINS = { LANG_NAMES, LANG_LINKS (English Wikipedia articles), EXAMPLES (words as their languages
+// write them: onların, Verfügung, þing), FOLD (letter -> the ASCII letters the tokens use: ı -> i, ß -> ss), BEGIN (beginning id),
+// FOLLOW (previous token id -> its
+// middles + endings, space-separated), TOKEN (middle or ending id -> where it is common overall, for fillers) }.
+// Each entry is packed "n|word:lang,lang|word:lang|:lang" in base 36: n languages have words with this token there;
+// up to 3 are named with an example word, one group per spelling, then up to 2 more without. The game works without it.
+let EXAMPLES = null;
+const origins = () => window.SPACE_GAME_ORIGINS || null;
+// Offensive words: TERMS[i] = [term, list languages (indices into LIST_NAMES)]. BAN_TERMS[previous id] lists, in the
+// order of TABLE_BANNED, 1 + the term each banned token would spell (0: found in an earlier draft of the tables).
+const TERMS = __TERMS__;
+const LIST_NAMES = __LIST_NAMES__;
+const LIST_LINKS = __LIST_LINKS__;  // their English Wikipedia articles
+const BAN_TERMS = __BAN_TERMS__;
+const BANNED_BEGIN = __BANNED_BEGIN__;  // [text, words it starts, term index]: word starts dropped as offensive
+const TRIGRAMS = __TRIGRAMS__;  // 3-letter sequences found in at least MIN_TRIGRAM_WORDS words of the word list
+const BEGIN = __BEGIN__;  // the 128 beginnings, in table order
+// Every row has the same size, so any row gives the number of middle and ending choices.
+const MIDDLE = TABLE_MIDDLE[0];
+const END = TABLE_END32[0];
+// Every beginning candidate: { t, id, words, i (index in BEGIN) | less: true }.
+const BEGIN_PAGE = __BEGIN_PAGE__;
+const BEGIN_EXAMPLE = __BEGIN_EXAMPLE__;  // a chosen beginning and a longer word start that would clash with it
+const BEGIN_LAST = __BEGIN_LAST__;  // corpus words started by the least common beginning on the list
+const MIN_TRIGRAM_WORDS = __MIN_TRIGRAM_WORDS__;
+
+// The phrase: ten tokens in up to four words of 2 to 4 tokens each (phrase-v7). That allows 16 layouts, so
+// the layout stores exactly log2 16 = 4 bits. The player picks it one word length at a time; an option is worth log2(layouts possible before / layouts it
+// leaves), so every path adds up to the same number of bits. A page with one option left is skipped.
+const FORMAT = __FORMAT__;  // { TOTAL_TOKENS, MAX_WORDS, LENGTHS }
+const TOTAL_TOKENS = FORMAT.TOTAL_TOKENS;
+const MAX_WORDS = FORMAT.MAX_WORDS;
+const LENGTHS = FORMAT.LENGTHS;
+const ORDINALS = ["first", "second", "third", "fourth"];
+
+// Every token is a choice from a pool; it takes log2(pool size) bits.
+const TOKENS = {
+  b: { color: "var(--ink)", name: "Black", role: "beginning", pool: BEGIN },
+  c: { color: "var(--cont)", name: "Light grey", role: "middle", pool: MIDDLE },
+  e: { color: "var(--end)", name: "Dark grey", role: "ending", pool: END },
+};
+const LENGTH_COLOR = "var(--accent)";
+// Why a token can't be picked. Each reason has its own muted colour; the token pages show a key.
+const REASONS = {
+  banned: { color: "#b06a4a", name: "offensive word start", key: "on an offensive-word list" },
+  blocked: { color: "#b06a4a", name: "would spell an offensive word", key: "could spell an offensive word" },
+  clash: { color: "#8f7fbf", name: "clashes", key: "clashes with a chosen token" },
+  less: { color: "#bf9a5a", name: "less common here", key: "less common here" },
+  join: { color: "#4f9a94", name: "letters don’t fit", key: "letters don’t fit together" },
+  vowel: { color: "#c0708a", name: "no vowel", key: "no vowel" },
+  triple: { color: "#5b7fa6", name: "three in a row", key: "same letter or three vowels in a row" },
+};
+const pale = (color) => `color-mix(in srgb, ${color} 55%, white)`;
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+const round = (x) => Math.round(x * 1e6) / 1e6;  // log2 sums like 1.42 + 3.58 should print as 5
+// 3 decimals, so printed terms add up to the printed sum (with 2, three layouts show 1.19 + 1.22 + 1.58 = 4).
+const fmt = (x) => (Number.isInteger(round(x)) ? String(round(x)) : x.toFixed(3));
+const bitWord = (x) => `${fmt(x)} bit${round(x) === 1 ? "" : "s"}`;
+const tokenBits = (k) => Math.log2(TOKENS[k].pool.length);
+const kindAt = (n, j) => (j === 0 ? "b" : j === n - 1 ? "e" : "c");
+const wordKinds = (n) => Array.from({ length: n }, (_, j) => kindAt(n, j));
+const wordBits = (lengths, w) => wordKinds(lengths[w]).reduce((sum, k) => sum + tokenBits(k), 0);
+const orList = (items) => (items.length < 2 ? items.join("") : items.slice(0, -1).join(", ") + " or " + items[items.length - 1]);
+const plural = (count, word) => `${count} ${word}${count === 1 ? "" : "s"}`;
+
+function describeWord(lengths, w) {
+  const n = lengths[w];
+  const middles = n - 2;
+  const parts = [`a beginning (${bitWord(tokenBits("b"))})`];
+  if (middles === 1) parts.push(`1 middle (${bitWord(tokenBits("c"))})`);
+  if (middles > 1) parts.push(`${middles} middles (${bitWord(tokenBits("c"))} each)`);
+  parts.push(`an ending (${bitWord(tokenBits("e"))})`);
+  const list = parts.slice(0, -1).join(", ") + " and " + parts[parts.length - 1];
+  return `${n} tokens: ${list}. Together that’s ${bitWord(wordBits(lengths, w))}`;
+}
+
+// history: one entry per length the player chose: { value, bits }
+const state = { history: [], preview: null, timer: null, tokens: [], tokenPreview: null };
+// tokens: the picked tokens, left to right: { id, t (text), index (on its list), size (of the list), width (bits) }.
+const chosen = () => state.history.map((e) => e.value);
+const used = (lengths) => lengths.reduce((sum, n) => sum + n, 0);
+
+// Every layout (the word lengths) of `total` tokens in at most `words` words. Trying the shorter lengths first
+// finds them sorted like tuples, the order the encoder numbers them in.
+function layoutsOf(total, lengths = LENGTHS, words = MAX_WORDS) {
+  if (total === 0) return [[]];
+  if (words <= 0) return [];
+  return lengths.filter((n) => n <= total).flatMap((n) => layoutsOf(total - n, lengths, words - 1).map((l) => [n, ...l]));
+}
+const LAYOUT_LIST = layoutsOf(TOTAL_TOKENS);
+const ALL_LAYOUTS = LAYOUT_LIST.length;
+// How many layouts can `rest` tokens still become, when `words` words already exist?
+const layoutCount = (rest, words) => layoutsOf(rest, LENGTHS, MAX_WORDS - words).length;
+
+// The options for the next word (each with the layouts it leaves and its bits), plus why any are missing.
+function lengthOptions(lengths) {
+  const left = TOTAL_TOKENS - used(lengths);
+  const words = lengths.length;
+  const possible = layoutCount(left, words);
+  const options = [];
+  const dropped = [];
+  for (const n of LENGTHS) {
+    const rest = left - n;
+    const leaves = layoutCount(rest, words + 1);
+    if (rest < 0) dropped.push({ n, why: `${n} is more than the ${left} tokens left` });
+    else if (rest > 0 && words + 1 >= MAX_WORDS) dropped.push({ n, why: `${n} would leave ${rest} tokens with no word left to hold them` });
+    else if (rest === 1) dropped.push({ n, why: `${n} would leave a single token, and every word needs at least 2` });
+    else if (!leaves && words + 2 === MAX_WORDS) dropped.push({ n, why: `${n} would leave ${rest} tokens for the last word, which holds at most ${LENGTHS.at(-1)}` });
+    else if (!leaves) dropped.push({ n, why: `${n} would leave ${rest} tokens that can’t make legal words` });
+    else options.push({ value: n, leaves, bits: Math.log2(possible / leaves) });
+  }
+  return { left, possible, options, dropped };
+}
+
+// All word lengths known so far: the chosen ones, then any that are forced (one option left).
+function layout() {
+  const lengths = chosen();
+  while (used(lengths) < TOTAL_TOKENS) {
+    const { options } = lengthOptions(lengths);
+    if (options.length !== 1) break;
+    lengths.push(options[0].value);
+  }
+  return lengths;
+}
+const forcedFrom = () => chosen().length;  // words at or after this index were forced
+
+// The most token bits any layout of `total` tokens can hold with these pools.
+const bestTokenBits = (total) => Math.max(...layoutsOf(total).map((l) =>
+  l.reduce((s, n) => s + tokenBits("b") + (n - 2) * tokenBits("c") + tokenBits("e"), 0)));
+// Why 10 and not 9: one token fewer loses that token's bits and a whole bit of layout.
+function whyTokenCount() {
+  const fewer = TOTAL_TOKENS - 1;
+  const fewerLayouts = layoutCount(fewer, 0);
+  const fewerBits = Math.floor(Math.log2(fewerLayouts));  // a binary index can use only a power-of-two share
+  const layoutBits = Math.log2(ALL_LAYOUTS);
+  const best = fewerBits + bestTokenBits(fewer);
+  return `<b>Why ${TOTAL_TOKENS} tokens?</b> With ${fewer}, only ${fewerLayouts} layouts fit, and a binary number can use just `
+    + `${2 ** fewerBits} of them: ${bitWord(fewerBits)} of layout instead of ${bitWord(layoutBits)}. `
+    + `The phrase would hold at most ${bitWord(best)}, short of 64. The only fix would be bigger pools, `
+    + `and bigger pools mean rarer tokens and words that don’t sound normal. `
+    + `So the ${TOTAL_TOKENS}th token pays for itself: ${bitWord(tokenBits("c"))} of its own, `
+    + `plus ${bitWord(layoutBits - fewerBits)} of layout because the words can be split in more ways.`
+    + " " + whyShortWords();
+}
+// Words have at most 4 tokens: a 5th would add layouts, but not a whole bit of them.
+function whyShortWords() {
+  const max = LENGTHS.at(-1);
+  const more = layoutsOf(TOTAL_TOKENS, [...LENGTHS, max + 1]).length;
+  const usable = 2 ** Math.floor(Math.log2(more));
+  if (usable !== ALL_LAYOUTS) return "";
+  return `<b>Why at most ${max} tokens a word?</b> Allowing ${max + 1} would make ${more} layouts, and a binary number `
+    + `can use only ${usable} of them: still ${bitWord(Math.log2(usable))}. So longer words would add nothing, and short words are easier to read.`;
+}
+// 64 middles: with 32, no layout reaches 64 bits. Doubling the middles makes every layout exactly 64 bits;
+// doubling the beginnings or the endings instead leaves 3-word phrases short.
+function whyMiddles() {
+  const counts = [...new Set(LAYOUT_LIST.map((l) => l.length))].sort();
+  const layoutBits = Math.log2(ALL_LAYOUTS);
+  const total = (w, b, c, e) => layoutBits + w * b + (TOTAL_TOKENS - 2 * w) * c + w * e;
+  const [B, C, E] = ["b", "c", "e"].map(tokenBits);
+  const sums = counts.map((w) => `${fmt(layoutBits)} + ${w}×${B} + ${TOTAL_TOKENS - 2 * w}×${C} + ${w}×${E} (${w} words)`);
+  const list = (f) => andList(counts.map((w) => `${fmt(f(w))} bits with ${w} words`));
+  return `<b>Why ${MIDDLE.length} middles?</b> With ${2 ** (C - 1)}, a phrase would hold ${list((w) => total(w, B, C - 1, E))}. `
+    + `${MIDDLE.length} middles make every layout exactly 64 bits: ${sums.join(", and ")}. `
+    + (list((w) => total(w, B + 1, C - 1, E)) === list((w) => total(w, B, C - 1, E + 1))
+      ? `Doubling the beginnings or the endings instead gives ${list((w) => total(w, B + 1, C - 1, E))}.`
+      : `Doubling the beginnings instead gives ${list((w) => total(w, B + 1, C - 1, E))}; `
+        + `doubling the endings gives ${list((w) => total(w, B, C - 1, E + 1))}.`);
+}
+
+function nextStep() {
+  const lengths = layout();
+  if (used(lengths) >= TOTAL_TOKENS) return null;
+  const info = lengthOptions(lengths);
+  const w = lengths.length;
+  const parts = [];
+  if (w === 0) {
+    parts.push(`The phrase has ${TOTAL_TOKENS} tokens in up to ${MAX_WORDS} words of ${LENGTHS[0]} to ${LENGTHS.at(-1)} tokens each. `
+      + `That allows ${ALL_LAYOUTS} layouts, so the layout stores log₂ ${ALL_LAYOUTS} = ${bitWord(Math.log2(ALL_LAYOUTS))}, picked one word length at a time.`);
+  } else {
+    parts.push(`The ${ORDINALS[w - 1]} word is ${describeWord(lengths, w - 1)}.`);
+    parts.push(`That leaves ${info.left} tokens for at most ${plural(MAX_WORDS - w, "more word")}: ${plural(info.possible, "layout")} ${info.possible === 1 ? "is" : "are"} still possible.`);
+  }
+  const reasons = info.dropped;
+  if (reasons.length) {
+    // Merge the "too long" reasons into one: "4 and 5 are more than the 3 tokens left".
+    const tooLong = reasons.filter((d) => d.n > info.left).map((d) => String(d.n));
+    const whys = reasons.filter((d) => d.n <= info.left).map((d) => d.why);
+    if (tooLong.length === 1) whys.push(`${tooLong[0]} is more than the ${info.left} tokens left`);
+    if (tooLong.length > 1) whys.push(`${tooLong.slice(0, -1).join(", ")} and ${tooLong[tooLong.length - 1]} are more than the ${info.left} tokens left`);
+    parts.push(`Not ${orList(reasons.map((d) => String(d.n)))}: ${whys.join("; ")}.`);
+  }
+  parts.push(`How long is the <b>${ORDINALS[w]} word</b>? Each option keeps some of the ${info.possible} layouts; `
+    + `the fewer it keeps, the more it tells, so it’s worth log₂(${info.possible} ÷ layouts kept).`);
+  return {
+    prompt: parts.join(" "),
+    note: w === 0 ? whyTokenCount() : "",
+    options: info.options.map((o) => ({
+      ...o,
+      label: `${o.value} tokens`,
+      keeps: `keeps ${o.leaves} of ${info.possible}`,
+      mini: wordKinds(o.value),
+    })),
+  };
+}
+
+// ---- Token pages: one page per token, left to right, using the real phrase tables. ----
+const TRIGRAM_SET = new Set(TRIGRAMS.split(" "));
+const hasVowel = (text) => /[aeiouy]/.test(text);
+const conflicts = (a, b) => a.startsWith(b) || b.startsWith(a);
+// Tables are indexed by the previous token: a beginning's row is its place in BEGIN, a middle's comes after them.
+const rowOf = (token) => (token < 256 ? BEGIN.indexOf(TABLE_TOKENS[token]) : BEGIN.length + token - 512);
+// The first 3-letter sequence across the join that's in fewer than MIN_TRIGRAM_WORDS words of the list, if any.
+function badJoin(previous, token) {
+  const joined = previous.slice(-2) + token.slice(0, 2);
+  for (let i = 0; i + 3 <= joined.length; i++) {
+    const t = joined.slice(i, i + 3);
+    if (!TRIGRAM_SET.has(t)) return t;
+  }
+  return null;
+}
+// The run of one letter, or of three vowels, across the join, if any ("sss" in ss + sa, "iai" in ai + ia).
+const tripleRun = (previous, token) => ((previous.slice(-2) + token).match(/(.)\1\1|[aeiou]{3}/) || [null])[0];
+const binary = (index, width) => index.toString(2).padStart(width, "0");
+
+// ---- Where a token comes from, and why a banned one is out. ----
+// A language name linked to its English Wikipedia article (opens a new tab; the game is embedded in the post).
+// An article may name a section ("Languages_constructed_by_Tolkien#Rohirric"); only the parts are escaped.
+const langLink = (name, article) => {
+  if (!article) return name;
+  const [title, section] = article.split("#");
+  const href = `https://en.wikipedia.org/wiki/${encodeURIComponent(title)}${section ? `#${encodeURIComponent(section)}` : ""}`;
+  return `<a href="${href}" target="_blank" rel="noopener">${name}</a>`;
+};
+function unpackOrigin(packed) {
+  if (!packed) return null;
+  EXAMPLES = EXAMPLES || origins().EXAMPLES.split(" ");
+  const [n, ...groups] = packed.split("|");
+  return { n: parseInt(n, 36), groups: groups.map((g) => {
+    const [w, rest] = g.split(":");
+    const [langs, more] = rest.split(";");
+    return { word: w ? EXAMPLES[parseInt(w, 36)] : null, more: more ? parseInt(more, 36) : 0,
+      langs: langs.split(",").map((l) => langLink(origins().LANG_NAMES[parseInt(l, 36)], origins().LANG_LINKS[parseInt(l, 36)])) };
+  }) };
+}
+// An example word with the token in bold: after `before` (the previous token's letters) when given. The word is
+// written as its language writes it (onların); tokens are ASCII (in), so the letters are folded one by one (FOLD)
+// to find the token, and the original letters it came from are marked.
+function markWord(word, token, kind, before) {
+  const { letters, folded, from, at } = findToken(word, token, kind, before);
+  if (at < 0) return `<i>${word}</i>`;
+  const fold = origins().FOLD || {};
+  const start = from[at];
+  let end = from[at + token.length - 1] + 1;
+  while (end < letters.length && (fold[letters[end]] ?? letters[end]) === "") end += 1;  // keep combining marks
+  return `<i>${letters.slice(0, start).join("")}<b>${letters.slice(start, end).join("")}</b>${letters.slice(end).join("")}</i>`;
+}
+// Where the token is in the word folded to a-z (onların -> onlarin): at = its index there, or -1. A middle comes
+// right after `before`; "^" in front marks a beginning, so the pair must start the word (ta+ke in taketake is at
+// 0, not 4). After a middle the pair is further in, past the beginning's 2+ letters.
+function findToken(word, token, kind, before = "") {
+  const fold = origins().FOLD || {};
+  const letters = [...word];
+  let folded = "";
+  const from = [];  // from[i]: the original letter folded letter i comes from
+  letters.forEach((ch, i) => { for (const a of fold[ch] ?? ch) { folded += a; from.push(i); } });
+  const previous = before.replace("^", "");
+  let at = kind === "b" ? 0 : kind === "e" ? folded.length - token.length
+    : before.startsWith("^") ? (folded.startsWith(previous + token) ? 0 : -1) : folded.indexOf(previous + token, 2);
+  if (at < 0) at = folded.indexOf(token, 1);
+  else if (kind === "c") at += previous.length;
+  if (at + token.length > folded.length) at = -1;
+  return { letters, folded, from, at };
+}
+// A letter of another script than the Latin one (Greek, Cyrillic, Thaana...); marks and ʻ-like signs don't count.
+const OTHER_SCRIPT = /(?![\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}])\p{L}/u;
+// The a-z form of a word written in another script, with the token in bold (αδελφή -> adel<b>fi</b>); "" for
+// Latin-script words, whose a-z form a reader can see (onların).
+function latinWord(word, token, kind, before) {
+  if (!OTHER_SCRIPT.test(word)) return "";
+  const { folded, at } = findToken(word, token, kind, before);
+  if (at < 0) return `<i>${folded}</i>`;
+  return `<i>${folded.slice(0, at)}<b>${folded.slice(at, at + token.length)}</b>${folded.slice(at + token.length)}</i>`;
+}
+const andList = (items) => orList(items).replace(/ or ([^,]*)$/, " and $1");
+// "26 languages, like realizar (Spanish, Portuguese, Asturian and 2 more); also Occitan and Venetian", or with
+// different spellings: "like mára (Hungarian) or mara (Swahili, Somali and 14 more)". Words in another script
+// come with their a-z form: "like αδελφή (adelfi; Greek)".
+function originPhrase(o, token, kind, before) {
+  const spellings = o.groups.filter((g) => g.word);
+  const also = o.groups.filter((g) => !g.word).flatMap((g) => g.langs);
+  const shown = spellings.map((g) => {
+    const latin = latinWord(g.word, token, kind, before);
+    const langs = andList(g.more ? [...g.langs, `${g.more} more`] : g.langs);
+    return `${markWord(g.word, token, kind, before)} (${latin ? `${latin}; ` : ""}${langs})`;
+  });
+  return `${o.n === origins().LANG_NAMES.length ? `all ${o.n} languages` : plural(o.n, "language")}, `
+    + `like ${orList(shown)}` + (also.length ? `; also ${andList(also)}` : "");
+}
+// One sentence on where the token picked (or pointed at) comes from.
+function originSentence(e, kind, previous) {
+  if (!origins()) return "";
+  if (kind === "b") {
+    const o = unpackOrigin(origins().BEGIN[e.id]);
+    return o ? `Words start with <b>${e.t}</b> in ${originPhrase(o, e.t, "b")}.` : "";
+  }
+  const row = rowOf(previous.id);
+  const slot = (kind === "c" ? TABLE_MIDDLE[row] : TABLE_END32[row]).indexOf(e.id) + (kind === "c" ? 0 : MIDDLE.length);
+  const o = unpackOrigin((origins().FOLLOW[String(previous.id)] || "").split(" ")[slot]);
+  if (o) return `<b>${previous.t}</b> is followed by <b>${e.t}</b> in words of ${originPhrase(o, e.t, kind, (previous.id < 256 ? "^" : "") + previous.t)}.`;
+  const g = unpackOrigin(origins().TOKEN[e.id]);
+  return `No word in the list has <b>${e.t}</b> right after <b>${previous.t}</b>; it fills the list because it is a common `
+    + `${kind === "c" ? "middle" : "ending"} overall${g ? `, in words of ${originPhrase(g, e.t, kind, "")}` : ""}.`;
+}
+const listsText = (langs) => `on the ${andList(langs.length > 3 ? [...langs.slice(0, 2), `${langs.length - 2} more`] : langs)} `
+  + `offensive-word list${langs.length > 1 ? "s" : ""}`;
+// lists: plain names (for tooltips, which can't hold links); link: the first list's language, linked.
+const termOf = (i) => (i >= 0 ? { term: TERMS[i][0], lists: TERMS[i][1].map((l) => LIST_NAMES[l]),
+  link: langLink(LIST_NAMES[TERMS[i][1][0]], LIST_LINKS[TERMS[i][1][0]]) } : null);
+// Why a banned token is out, from where its term's letters are: ending in the token (with or without letters from
+// before prev), or going on into the token after it (es + ak + ra spells “sakra”: after es, ak is out).
+function banTip(prev, e) {
+  if (!e.term) return `left out: with the tokens before ${prev}, ${e.t} could finish an offensive word (found in an earlier draft of the lists)`;
+  const lists = listsText(e.lists);
+  const upTo = [...e.t].map((_, i) => prev + e.t.slice(0, i + 1));  // the letters up to each place in the token
+  if (upTo.some((s) => s.endsWith(e.term))) return `left out: ${prev} + ${e.t} spells “${e.term}”, ${lists}`;
+  if (upTo.some((s) => e.term.endsWith(s))) return `left out: ${e.t} would finish “${e.term}”, which starts in the tokens before ${prev}; ${lists}`;
+  // The term holds the whole token and starts inside prev; letters alone can mislead (calice is c + al + ic + e,
+  // ganggan is g + ang + ga + n: both start before prev).
+  return [...prev].some((_, i) => e.term.startsWith(prev.slice(i) + e.t))
+    ? `left out: ${prev} + ${e.t} + the token after it could spell “${e.term}”, ${lists}`
+    : `left out: ${e.t} and the token after it could finish “${e.term}”, which starts in the tokens before ${prev}; ${lists}`;
+}
+
+// Every token slot of the layout: word, position in the word, kind and bits.
+function tokenSlots() {
+  const lengths = layout();
+  const out = [];
+  lengths.forEach((n, w) => wordKinds(n).forEach((k, j) => out.push({ w, j, n, k, bits: tokenBits(k) })));
+  return out;
+}
+const slotName = (s) => `${s.j === 0 ? "first" : s.k === "e" ? "last" : ORDINALS[s.j]} token of the ${ORDINALS[s.w]} word`;
+
+function tokenStep() {
+  if (nextStep()) return null;
+  const at = state.tokens.length;
+  const slots = tokenSlots();
+  if (at >= slots.length) return null;
+  const slot = slots[at];
+  if (slot.k === "b") return beginningPage(slot);
+  return followPage(slot, state.tokens[at - 1]);
+}
+
+function beginningPage(slot) {
+  const pick = BEGIN_PAGE.filter((e) => e.i !== undefined).sort((a, b) => a.t.localeCompare(b.t));
+  const less = BEGIN_PAGE.filter((e) => e.less).sort((a, b) => b.words - a.words || a.t.localeCompare(b.t));
+  const banned = BANNED_BEGIN.map(([t, words, term]) => ({ t, words, ...termOf(term) }));
+  const [short, long] = BEGIN_EXAMPLE;
+  return {
+    slot, size: BEGIN.length, width: Math.log2(BEGIN.length), pick,
+    pickTip: (e) => `number ${e.i} of ${BEGIN.length} · starts ${e.words} words`,
+    origin: (e) => originSentence(e, "b"),
+    prompt: `${slot.w === 0 ? "Now the tokens. " : ""}The <b>${ORDINALS[slot.w]} word</b> starts with a <b>beginning</b>: one of ${BEGIN.length}, `
+      + `so it stores log₂ ${BEGIN.length} = ${bitWord(Math.log2(BEGIN.length))}.`,
+    note: slot.w > 0 ? `<b>The same ${BEGIN.length} as for the first word.</b> A beginning doesn’t depend on the word before it, `
+      + `so every word picks from the same list.` : `<b>Where the ${BEGIN.length} come from.</b> They are the most common ways a word starts, `
+      + `in a word list made of the common words of ${LANGUAGES} languages, most of them easy to say. `
+      + `Tokens use only the letters a to z, so the words are read that way: onların as onlarin, Straße as strasse. `
+      + `Words in other scripts show that form next to them: μάθει (mathei). `
+      + `No beginning may start another one: with both <b>${short}</b> and <b>${long}</b>, a reader seeing “${long}…” couldn’t tell `
+      + `where the beginning ends. So the ${BEGIN_PAGE.length} candidates are word starts that don’t start one another, `
+      + `the more common one kept each time. Word starts on an offensive-word list are never candidates, however common. `
+      + `Once ${BEGIN.length} are chosen the list is full; the rest start ${BEGIN_LAST} words or fewer.`,
+    groups: [
+      { reason: "banned", items: banned, title: `On an offensive-word list: ${plural(banned.length, "word start")}`,
+        why: "these are dropped before the candidates are chosen, however many words they start",
+        chip: (e) => e.link, tip: (e) => `${e.t === e.term ? `${e.t} is` : `${e.t} starts with “${e.term}”,`} `
+          + `${listsText(e.lists)}; it starts ${e.words} words` },
+      { reason: "less", items: less, title: `Less common here: ${plural(less.length, "token")}`,
+        why: `the list already had its ${BEGIN.length}; each of these starts at most ${BEGIN_LAST} words`,
+        chip: (e) => String(e.words), tip: (e) => `less common here: starts ${e.words} words; the list was full` },
+    ].filter((g) => g.items.length),
+  };
+}
+
+// A middle or an ending: its list depends on the token before it. Reasons are checked in the order the
+// table compiler applies its rules: banned after this token, no vowel, three in a row, letters that don't fit, a
+// clash, then a full list.
+function followPage(slot, previous) {
+  const prev = previous.t;
+  const row = rowOf(previous.id);
+  const middles = TABLE_MIDDLE[row], endings = TABLE_END32[row];
+  const bannedList = TABLE_BANNED[String(previous.id)] || [];
+  const banned = new Set(bannedList);
+  const banTerms = (BAN_TERMS[String(previous.id)] || "").split(" ").map((x) => parseInt(x, 36) - 1);
+  const list = slot.k === "c" ? middles : endings;
+  const size = list.length;
+  const firstMiddle = slot.k === "c" && state.tokens.length === tokenSlots().findIndex((s) => s.k === "c");
+  const needsVowel = previous.id < 256 && !hasVowel(prev);
+  const union = [...middles, ...endings];
+  const ids = slot.k === "c" ? [...Array(512).keys()].map((x) => x + 512) : [...Array(256).keys()].map((x) => x + 256);
+  const pick = [], groups = { blocked: [], vowel: [], triple: [], join: [], clash: [], less: [] };
+  for (const id of ids) {
+    const e = { id, t: TABLE_TOKENS[id] };
+    const index = list.indexOf(id);
+    if (index >= 0) pick.push({ ...e, i: index });
+    else if (banned.has(id)) {
+      const found = termOf(banTerms[bannedList.indexOf(id)]);
+      Object.assign(e, found || { term: null, lists: [], link: "" });
+      groups.blocked.push(e);
+    }
+    else if (needsVowel && !hasVowel(e.t)) groups.vowel.push(e);
+    else if ((e.run = tripleRun(prev, e.t))) groups.triple.push(e);
+    else if ((e.bad = badJoin(prev, e.t))) groups.join.push(e);
+    else if ((e.partner = union.find((u) => conflicts(TABLE_TOKENS[u], e.t))) !== undefined) {
+      e.with = TABLE_TOKENS[e.partner];
+      e.withKind = middles.includes(e.partner) ? "middle" : "ending";
+      groups.clash.push(e);
+    }
+    else groups.less.push(e);
+  }
+  pick.sort((a, b) => a.t.localeCompare(b.t));
+  for (const k of ["blocked", "vowel", "triple", "join", "less"]) groups[k].sort((a, b) => a.t.localeCompare(b.t));
+  groups.clash.sort((a, b) => a.with.localeCompare(b.with) || a.t.localeCompare(b.t));
+  const role = slot.k === "c" ? "middle" : "ending";
+  const roles = slot.k === "c" ? "middles" : "endings";
+  const joinExample = groups.join[0];
+  return {
+    slot, size, width: slot.bits, pick,
+    pickTip: (e) => `number ${e.i} of ${size} after ${prev}`,
+    origin: (e) => originSentence(e, slot.k, previous),
+    prompt: `The ${slotName(slot)} is ${slot.k === "c" ? "a" : "an"} <b>${role}</b>. Its list depends on the token before it, `
+      + `<b>${prev}</b>: one of ${size}, so it stores log₂ ${size} = ${bitWord(slot.bits)}.`,
+    note: `<b>Where these ${size} come from.</b> First come the ${roles} that follow <b>${prev}</b> in the word list, most common first. `
+      + `If there aren’t enough, the list is topped up with the most common ${roles} overall. `
+      + `A ${role} is out if a word could then contain an offensive word, `
+      + `${needsVowel ? `if it has no vowel (${prev} has none, and every word needs one), ` : ""}`
+      + `${groups.triple.length ? "if the same letter, or three vowels, would appear in a row, " : ""}`
+      + `if its letters don’t fit after ${prev}, or if it clashes with a middle or ending already on ${prev}’s lists. `
+      + `The rest didn’t make the list.`
+      + (firstMiddle ? `<br><br>${whyMiddles()}` : ""),
+    groups: [
+      { reason: "blocked", items: groups.blocked, title: `Could spell an offensive word: ${plural(groups.blocked.length, "token")}`,
+        why: `after ${prev}, some word would then contain a word from the offensive-word lists of ${LIST_NAMES.length} languages`,
+        chip: (e) => e.link, tip: (e) => banTip(prev, e) },
+      { reason: "vowel", items: groups.vowel, title: `No vowel: ${plural(groups.vowel.length, "token")}`,
+        why: `${prev} has no vowel, so the next token must have one, or the word would have none`,
+        chip: () => "", tip: (e) => `no vowel: ${prev}${e.t} would have none` },
+      { reason: "triple", items: groups.triple, title: `Three in a row: ${plural(groups.triple.length, "token")}`,
+        why: `after ${prev}, the same letter or three vowels would appear in a row (no word is all vowels)`,
+        chip: (e) => e.run, tip: (e) => `three in a row: ${prev}${e.t} has “${e.run}”` },
+      { reason: "join", items: groups.join, title: `Letters don’t fit together: ${plural(groups.join.length, "token")}`,
+        why: joinExample ? `some 3 letters across the join, like “${joinExample.bad}” in ${prev}${joinExample.t}, are in fewer than ${plural(MIN_TRIGRAM_WORDS, "word")} of the list` : "",
+        chip: (e) => e.bad, tip: (e) => `letters don’t fit together: “${e.bad}” is in fewer than ${plural(MIN_TRIGRAM_WORDS, "word")} of the list` },
+      { reason: "clash", items: groups.clash, title: `Clashes with a token on ${prev}’s lists: ${plural(groups.clash.length, "token")}`,
+        why: "one starts the other, so the reader couldn’t tell where this token ends",
+        chip: (e) => e.with, tip: (e) => `clashes with the ${e.withKind} ${e.with}: `
+          + (e.t === e.with ? `${e.t} is already on ${prev}’s ${e.withKind} list`
+            : e.t.startsWith(e.with) ? `${e.t} starts with ${e.with}` : `${e.with} starts with ${e.t}`) },
+      { reason: "less", items: groups.less, title: `Less common here: ${plural(groups.less.length, "token")}`,
+        why: `the list after ${prev} already had its ${list.length}`,
+        chip: () => "", tip: () => `less common here: the list after ${prev} was full` },
+    ].filter((g) => g.items.length),
+  };
+}
+
+// The sentence for the token just picked: its number on the list, written in bits.
+function pickedSentence() {
+  const e = state.tokens[state.tokens.length - 1];
+  const slot = tokenSlots()[state.tokens.length - 1];
+  const the = slot.j === 0 ? `The ${ORDINALS[slot.w]} word begins with` : `The ${slotName(slot)} is`;
+  const done = slot.j === slot.n - 1
+    ? ` The ${ORDINALS[slot.w]} word is done: <b>${wordText(slot.w)}</b>.` : "";
+  return `${the} <b>${e.t}</b>. It is number ${e.index} on the list of ${e.size} (0 to ${e.size - 1}), `
+    + `so it stores the ${bitWord(e.width)} <b>${binary(e.index, e.width)}</b>. ${e.origin || ""}${done}`;
+}
+
+// The picked tokens of word w, joined.
+function wordText(w) {
+  return tokenSlots().map((s, i) => (s.w === w && i < state.tokens.length ? state.tokens[i].t : "")).join("");
+}
+
+// The finished phrase as the encoder stores it: the layout (its number in LAYOUT_LIST) in the lowest 4 bits, then each
+// token's number, left to right, each above the one before.
+const LAYOUT_BITS = Math.log2(LAYOUT_LIST.length);
+function phraseNumber() {
+  const lengths = layout();
+  const index = LAYOUT_LIST.findIndex((l) => l.join() === lengths.join());
+  const parts = [{ label: "layout", bits: binary(index, LAYOUT_BITS) }];
+  let value = BigInt(index), offset = LAYOUT_BITS;
+  for (const e of state.tokens) {
+    value |= BigInt(e.index) << BigInt(offset);
+    offset += e.width;
+    parts.push({ label: e.t, bits: binary(e.index, e.width) });
+  }
+  return { value, offset, index, parts };
+}
+
+function finalSummary() {
+  const words = layout().map((_, w) => wordText(w));
+  const { value, offset, index, parts } = phraseNumber();
+  const hex = "0x" + value.toString(16).padStart(16, "0");
+  return `The phrase is done: <b class="final">${words.join(" ")}</b>. `
+    + `The layout ${layout().join(" + ")} is number ${index} of ${ALL_LAYOUTS}, the lowest ${LAYOUT_BITS} bits. `
+    + `Then each token’s number, left to right: ${parts.map((p) => `${p.label} <b>${p.bits}</b>`).join(", ")}. `
+    + `That’s ${offset} bits, the number <b class="value">${hex}</b> (${value}). `
+    + `<code>readable_hash::encode_u64</code> turns this number into exactly this phrase, and <code>decode_u64</code> turns the phrase back into the number.`;
+}
+
+const bits = [];
+for (let i = 0; i < 64; i++) { const b = el("div", "bit"); b.title = "bit " + (i + 1); $("gauge").append(b); bits.push(b); }
+
+function renderKey() {
+  const key = $("key");
+  const row = (color, name, role, choices, size) => {
+    const swatch = el("i");
+    swatch.style.background = color;
+    key.append(swatch, el("b", null, name), el("span", null, role), el("span", null, choices), el("span", null, size), el("span"));
+  };
+  row(LENGTH_COLOR, "Orange", "word lengths", `${ALL_LAYOUTS} layouts`, `${bitWord(Math.log2(ALL_LAYOUTS))} in all`);
+  for (const k of Object.keys(TOKENS)) {
+    const t = TOKENS[k];
+    row(t.color, t.name, t.role, `${t.pool.length} choices`, bitWord(tokenBits(k)));
+  }
+  const paleSwatch = el("i");
+  paleSwatch.style.background = pale(TOKENS.b.color);
+  key.append(paleSwatch, el("span", "note", "Pale: bits a word will take once its tokens are picked."));
+  const middleSwatch = el("i");
+  middleSwatch.style.background = TOKENS.c.color;
+  key.append(middleSwatch, el("span", "note", `A beginning and an ending take ${bitWord(tokenBits("b") + tokenBits("e"))} together, `
+    + `as much as 2 middles, so every layout is exactly 64 bits.`));
+}
+
+function paint(box, i, ranges, total) {
+  const parts = [];
+  for (const r of ranges) {
+    const a = Math.max(r.a, i), b = Math.min(r.b, i + 1);
+    if (b > a) parts.push(`${r.c} ${((a - i) * 100).toFixed(1)}% ${((b - i) * 100).toFixed(1)}%`);
+  }
+  const fill = Math.min(1, Math.max(0, total - i));
+  if (!parts.length) { box.style.background = ""; box.classList.remove("on"); return; }
+  if (fill < 1) parts.push(`transparent ${(fill * 100).toFixed(1)}% 100%`);
+  box.style.background = `linear-gradient(to right, ${parts.join(", ")}), var(--box)`;
+  box.classList.toggle("on", fill >= 1);
+}
+
+// Each word adds the bits of its length choice, then the bits its tokens will take.
+function renderGauge() {
+  const segs = [];
+  const terms = [];
+  let position = 0;  // token position across the phrase; picked tokens are solid, the rest pale
+  const lengths = layout();
+  lengths.forEach((n, w) => {
+    const entry = state.history[w];
+    const choice = entry ? entry.bits : 0;
+    if (choice) segs.push({ c: LENGTH_COLOR, bits: choice });
+    terms.push(fmt(choice));
+    const kinds = wordKinds(n);
+    kinds.forEach((k) => {
+      const picked = position++ < state.tokens.length;
+      segs.push({ c: picked ? TOKENS[k].color : pale(TOKENS[k].color), bits: tokenBits(k) });
+    });
+    const parts = kinds.map((k) => fmt(tokenBits(k)));
+    terms.push(parts.length > 1 ? `(${parts.join(" + ")})` : parts[0]);
+  });
+  let pos = 0;
+  const ranges = segs.map((s) => { const r = { c: s.c, a: pos, b: pos + s.bits }; pos = r.b; return r; });
+  pos = round(pos);
+  bits.forEach((box, i) => paint(box, i, ranges, pos));
+  $("count").textContent = fmt(pos);
+  $("gauge").setAttribute("aria-valuenow", pos.toFixed(2));
+  $("formula").textContent = terms.length ? terms.join(" + ") + " = " + fmt(pos) + " bits" : "";
+}
+
+function renderPhrase() {
+  const box = $("phrase");
+  box.replaceChildren();
+  const words = layout().map((n) => ({ n, preview: false }));
+  // The word being decided right now: a "?" placeholder, or a faded preview while hovering an option.
+  if (nextStep()) words.push({ n: state.preview, preview: true });
+  let position = 0;
+  words.forEach(({ n, preview }, w) => {
+    if (w > 0) box.append(el("div", "space", "␣"));
+    const word = el("div", "word");
+    if (!n) {
+      word.append(el("div", "slot unknown", "?"));
+    } else {
+      for (const k of wordKinds(n)) {
+        const slot = el("div", "slot " + k);
+        if (preview) slot.classList.add("preview");
+        const at = position++;
+        if (at < state.tokens.length) slot.textContent = state.tokens[at].t;
+        else if (at === state.tokens.length && state.tokenPreview) {
+          slot.textContent = state.tokenPreview;
+          slot.classList.add("preview", "text");
+        }
+        word.append(slot);
+      }
+    }
+    box.append(word);
+  });
+}
+
+function renderPanel() {
+  const panel = $("panel");
+  panel.replaceChildren();
+  const step = nextStep();
+  if (!step) {
+    renderTokenPanel();
+    return;
+  }
+  renderLayoutPanel(step);
+}
+
+// The layout summary, shown on the token pages once all word lengths are known.
+function layoutSummary() {
+  const lengths = layout();
+  const parts = [];
+  const lastChosen = forcedFrom() - 1;
+  if (lastChosen >= 0) parts.push(`The ${ORDINALS[lastChosen]} word is ${describeWord(lengths, lastChosen)}.`);
+  lengths.slice(forcedFrom()).forEach((n, i) => {
+    const w = forcedFrom() + i;
+    parts.push(`The ${ORDINALS[w]} word takes the remaining ${n} tokens. Only one layout was left, so its length adds 0 bits; its tokens add ${bitWord(wordBits(lengths, w))}.`);
+  });
+  const lengthBits = state.history.map((e) => fmt(e.bits));
+  parts.push(`The layout is ${lengths.join(" + ")}, one of ${ALL_LAYOUTS}: its length choices add up to ${lengthBits.join(" + ")} = ${bitWord(Math.log2(ALL_LAYOUTS))}, whichever way you got here.`);
+  const words = lengths.length, middles = TOTAL_TOKENS - 2 * words;
+  const [B, C, E] = ["b", "c", "e"].map(tokenBits);
+  parts.push(`With ${words} words there are ${words} beginnings, ${plural(middles, "middle")} and ${words} endings: `
+    + `${words}×${B} + ${middles}×${C} + ${words}×${E} = ${bitWord(words * B + middles * C + words * E)}, plus ${bitWord(Math.log2(ALL_LAYOUTS))} of layout.`);
+  parts.push("<b>Exactly 64 bits.</b>");
+  return parts.join(" ");
+}
+
+const originHint = () => (origins() ? "Point at a token to see which languages’ words it comes from."
+  : "Loading which languages each token comes from…");
+// When the language data arrives after a token page is shown, update its hint line.
+window.onSpaceGameOrigins = () => { for (const p of document.querySelectorAll(".origin")) p.innerHTML = originHint(); };
+function renderTokenPanel() {
+  const panel = $("panel");
+  const page = tokenStep();
+  const before = state.tokens.length ? pickedSentence() : layoutSummary();
+  if (!page) {
+    $("msg").innerHTML = `${before} ${finalSummary()}`;
+    return;
+  }
+  $("msg").innerHTML = `${before} ${page.prompt}`;
+  const why = el("p", "why");
+  why.innerHTML = page.note;
+  panel.append(why);
+  const key = el("div", "tkey");
+  const keyRow = (color, name, count, detail) => {
+    const swatch = el("i");
+    swatch.style.setProperty("--c", color);
+    key.append(swatch, el("b", null, name), el("span", null, count), el("span", null, detail));
+  };
+  keyRow("var(--ink)", "can be picked", `${page.pick.length}`, `${bitWord(page.width)} each`);
+  for (const g of page.groups) keyRow(REASONS[g.reason].color, REASONS[g.reason].key, `${g.items.length}`, "0 bits: can’t be picked");
+  panel.append(key);
+  const grid = el("div", "tokens");
+  for (const e of page.pick) {
+    const btn = el("button", null, e.t);
+    btn.type = "button";
+    btn.title = page.pickTip(e);
+    btn.addEventListener("click", () => chooseToken(page, e));
+    const show = () => { state.tokenPreview = e.t; renderPhrase(); origin.innerHTML = page.origin(e); };
+    btn.addEventListener("mouseenter", show);
+    btn.addEventListener("focus", show);
+    // The origin line keeps the last token pointed at, so the reader can move to it and click a language.
+    const hide = () => { state.tokenPreview = null; renderPhrase(); };
+    btn.addEventListener("mouseleave", hide);
+    btn.addEventListener("blur", hide);
+    grid.append(btn);
+  }
+  const origin = el("p", "origin");
+  origin.innerHTML = originHint();
+  panel.append(grid, origin);
+  for (const g of page.groups) {
+    const box = el("details", "group " + g.reason);
+    box.style.setProperty("--c", REASONS[g.reason].color);
+    const summary = el("summary");
+    summary.innerHTML = `<b>${g.title}</b>: ${g.why}.`;
+    const chips = el("div", "chips");
+    for (const e of g.items) {
+      const chip = el("span", "chip", e.t);
+      const note = g.chip(e);
+      if (note) { const small = el("small"); small.innerHTML = note; chip.append(small); }  // may hold a link
+      chip.title = g.tip(e);
+      chips.append(chip);
+    }
+    box.append(summary, chips);
+    panel.append(box);
+  }
+}
+
+function renderLayoutPanel(step) {
+  const panel = $("panel");
+  $("msg").innerHTML = step.prompt;
+  if (step.note) {
+    const why = el("p", "why");
+    why.innerHTML = step.note;
+    panel.append(why);
+  }
+  const grid = el("div", "choices");
+  step.options.forEach((option) => {
+    const btn = el("button");
+    btn.type = "button";
+    const mini = el("span", "mini");
+    option.mini.forEach((k) => mini.append(el("i", k)));
+    btn.append(mini, el("span", null, option.label), el("span", "detail", option.keeps), el("b", "detail", bitWord(option.bits)));
+    btn.addEventListener("click", () => choose(step, option));
+    btn.addEventListener("mouseenter", () => { state.preview = option.value; renderPhrase(); });
+    btn.addEventListener("focus", () => { state.preview = option.value; renderPhrase(); });
+    const hide = () => { state.preview = null; renderPhrase(); };
+    btn.addEventListener("mouseleave", hide);
+    btn.addEventListener("blur", hide);
+    grid.append(btn);
+  });
+  panel.append(grid);
+}
+
+function render() {
+  renderGauge();
+  renderPhrase();
+  renderPanel();
+  $("random").disabled = (!nextStep() && !tokenStep()) || state.timer !== null;
+  $("undo").disabled = state.timer !== null || (state.history.length === 0 && state.tokens.length === 0);
+}
+
+function choose(step, option) {
+  state.history.push({ value: option.value, bits: option.bits });
+  state.preview = null;
+  render();
+}
+function chooseToken(page, e) {
+  state.tokens.push({ id: e.id, t: e.t, index: e.i, size: page.size, width: page.width, origin: page.origin(e) });
+  state.tokenPreview = null;
+  render();
+}
+function stop() { if (state.timer !== null) { clearInterval(state.timer); state.timer = null; } }
+function step() {
+  const s = nextStep();
+  if (!s) {
+    // Token pages: every pickable token is equally likely, as with a random number of that many bits.
+    const page = tokenStep();
+    if (!page) return false;
+    chooseToken(page, page.pick[Math.floor(Math.random() * page.pick.length)]);
+    return tokenStep() !== null;
+  }
+  // Weight each option by the layouts it keeps, so every layout is equally likely, as with a random 4-bit number.
+  let ticket = Math.random() * s.options.reduce((sum, o) => sum + o.leaves, 0);
+  choose(s, s.options.find((o) => (ticket -= o.leaves) < 0) || s.options[s.options.length - 1]);
+  return nextStep() !== null || tokenStep() !== null;
+}
+function fillRandomly() {
+  stop();
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) { while (step()); render(); return; }
+  state.timer = setInterval(() => { if (!step()) { stop(); render(); } }, 260);
+  render();
+}
+$("random").addEventListener("click", fillRandomly);
+$("undo").addEventListener("click", () => {
+  if (state.tokens.length) state.tokens.pop(); else state.history.pop();
+  state.preview = state.tokenPreview = null;  // a keyboard preview would stay in a slot nobody points at
+  render();
+});
+$("reset").addEventListener("click", () => { stop(); state.history = []; state.tokens = []; state.preview = null; state.tokenPreview = null; render(); });
+renderKey();
+render();
+</script>
+</body>
+</html>
