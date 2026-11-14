@@ -23,9 +23,9 @@
 use std::hash::{DefaultHasher, Hasher};
 
 #[cfg(feature = "shake256")]
-use sha3::Shake256;
+use shake::Shake256;
 #[cfg(feature = "shake256")]
-use sha3::digest::{ExtendableOutput, Update as XofUpdate, XofReader};
+use shake::{ExtendableOutput, Update as XofUpdate, XofReader};
 
 pub mod english_word;
 mod english_word_data;
@@ -126,7 +126,7 @@ impl ReadableHasher for Shake256Hasher {
 
 #[cfg(feature = "shake256")]
 pub struct Shake256Reader {
-    reader: sha3::Shake256Reader,
+    reader: shake::Shake256Reader,
 }
 
 #[cfg(feature = "shake256")]
