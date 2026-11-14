@@ -2,7 +2,9 @@ use cucumber::{World as _, given, then, when};
 use futures::executor::block_on;
 #[cfg(feature = "shake256")]
 use readable_hash::Shake256Hasher;
-use readable_hash::{SliceReader, StdHasher, english_word, english_word_hash};
+use readable_hash::{
+    SliceReader, StdHasher, decode_u64, encode_u64, english_word, english_word_hash,
+};
 
 #[derive(Debug, Default, Clone, Copy, PartialEq)]
 enum HasherType {
@@ -18,6 +20,7 @@ struct HashWorld {
     output: String,
     entropy: Vec<u8>,
     hasher_type: HasherType,
+    number: u64,
 }
 
 #[given(expr = "the input {string}")]
@@ -81,6 +84,34 @@ fn set_entropy(world: &mut HashWorld, hex: String) {
 fn generate_word_from_entropy(world: &mut HashWorld) {
     let mut reader = SliceReader::new(&world.entropy);
     world.output = english_word::generate_word(&mut reader);
+}
+
+#[given(expr = "the number {string}")]
+fn set_number(world: &mut HashWorld, number: String) {
+    let digits = number
+        .strip_prefix("0x")
+        .expect("numbers are written in hex, like 0x2a");
+    world.number = u64::from_str_radix(digits, 16).expect("Invalid hex number");
+}
+
+#[when("the number is encoded as a phrase")]
+fn encode_number(world: &mut HashWorld) {
+    world.output = encode_u64(world.number);
+}
+
+#[then("the phrase should decode to the number")]
+fn check_decodes(world: &mut HashWorld) {
+    assert_eq!(decode_u64(&world.output), Some(world.number));
+}
+
+#[given(expr = "the phrase {string}")]
+fn set_phrase(world: &mut HashWorld, phrase: String) {
+    world.output = phrase;
+}
+
+#[then("the phrase should not decode")]
+fn check_rejected(world: &mut HashWorld) {
+    assert_eq!(decode_u64(&world.output), None, "{:?}", world.output);
 }
 
 fn main() {
